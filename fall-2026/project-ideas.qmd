@@ -466,6 +466,9 @@ question that needs one.
 
 Nothing stops you using something else entirely --- the catalogue has 84.
 
+*(Instructor: these print as cut-out cards, with the rotating question
+sheet, from the [relay handout](handouts/relay-cards.qmd).)*
+
 ## How to use any of this
 
 Take one line above --- or better, one of your own --- and run it

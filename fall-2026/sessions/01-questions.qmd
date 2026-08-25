@@ -490,6 +490,8 @@ Groups of four. Three rounds. Points.
 | **R2** | A new dataset **+** somebody's question | **Break their question**, then write your own |
 | **R3** | A new dataset **+** somebody's question | Break it, then **combine** any two datasets you have held |
 
+[Dataset cards and question sheet →](../handouts/relay-cards.qmd)
+
 ::: {.notes}
 Groups of four, six groups. Say out loud that this grouping is TEMPORARY
 — real teams form from the statements of interest before meeting 2, or
@@ -730,8 +732,10 @@ questions usually live in those joins.
 point for every break you land, two points for the best combination
 question. "I don't like it" is not a break — you have to name the filter.
 
-The nine dataset cards are on the [project ideas](../project-ideas.qmd)
-page, along with what each one joins on. Cross out the failures and name
+The nine dataset cards and the question sheet are a
+[printable handout](../handouts/relay-cards.qmd); the same nine, with what
+each joins on, are also listed on the
+[project ideas](../project-ideas.qmd) page. Cross out the failures and name
 which filter killed them.
 
 Your team's output is submitted before you leave.

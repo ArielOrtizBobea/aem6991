@@ -1,0 +1,189 @@
+---
+title: "Question relay — dataset cards"
+pagetitle: "AEM 6991 · Relay cards"
+sidebar: false
+toc: false
+page-layout: full
+---
+
+```{=html}
+<style>
+.print-note { font-size: 0.85rem; color: #6b6b6b; margin: 0 0 1rem; }
+.sheetwrap { max-width: 8in; margin: 0 auto; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.13in;
+}
+.card {
+  border: 1px dashed #9a9a94;
+  border-radius: 3px;
+  padding: 0.14in 0.16in;
+  min-height: 2.85in;
+  break-inside: avoid;
+  display: flex;
+  flex-direction: column;
+}
+.card .n { font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: #b31b1b; font-weight: 700; }
+.card h3 { font-size: 0.94rem; font-weight: 700; margin: 0.12rem 0 0.4rem; line-height: 1.2; border: none; }
+.card dl { margin: 0; font-size: 0.72rem; line-height: 1.42; }
+.card dt { font-weight: 700; color: #55554f; margin-top: 0.3rem; }
+.card dd { margin: 0 0 0 0; color: #333; }
+.card .joins { margin-top: auto; padding-top: 0.35rem; border-top: 1px solid #e3e3de; font-size: 0.7rem; }
+.card .joins b { color: #b31b1b; }
+
+/* The rotating question sheet, one per group. */
+.qsheet { border: 1px solid #55554f; border-radius: 4px; padding: 0.28in; margin-top: 0.3in; break-inside: avoid; }
+.qsheet h3 { margin: 0 0 0.5rem; font-size: 1rem; border: none; }
+.qsheet .row { border-bottom: 1px solid #cfcfc9; min-height: 0.42in; margin-bottom: 0.16in; }
+.qsheet .lbl { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: #6b6b6b; font-weight: 700; }
+.qsheet .filters { font-size: 0.72rem; color: #333; line-height: 1.5; }
+.pagebreak { break-before: page; }
+
+@media print {
+  .print-note, #quarto-header, #quarto-sidebar, .nav-page, footer, #quarto-margin-sidebar { display: none !important; }
+  @page { size: letter portrait; margin: 0.4in; }
+  body { background: #fff; }
+  .sheetwrap { max-width: none; }
+}
+</style>
+
+<p class="print-note">Print this page. Nine cards, one per group — cut along
+the dashed lines. The question sheet on page&nbsp;2 is what rotates.</p>
+
+<div class="sheetwrap">
+<div class="cards">
+
+  <div class="card">
+    <span class="n">Card 1</span>
+    <h3>Real Estate Transaction Data</h3>
+    <dl>
+      <dt>One row</dt><dd>A parcel, a sale, or an assessment</dd>
+      <dt>Coverage</dt><dd>United States, 2011 to now</dd>
+      <dt>Carries</dt><dd>Ownership, price, property characteristics, distress, coordinates</dd>
+    </dl>
+    <div class="joins">Joins on <b>lat/long · ZIP · address</b></div>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 2</span>
+    <h3>US Climate Risk Data</h3>
+    <dl>
+      <dt>One row</dt><dd>One ZIP code</dd>
+      <dt>Coverage</dt><dd>United States</dd>
+      <dt>Carries</dt><dd>Ratings 1–100 for heat, precipitation, drought, flooding, fire</dd>
+    </dl>
+    <div class="joins">Joins on <b>ZIP</b></div>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 3</span>
+    <h3>Weekly Patterns Plus</h3>
+    <dl>
+      <dt>One row</dt><dd>One place, one Mon–Sun week</dd>
+      <dt>Coverage</dt><dd>US &amp; Canada, 2017 to now</dd>
+      <dt>Carries</dt><dd>Visit and visitor counts, visitor home areas, dwell time</dd>
+    </dl>
+    <div class="joins">Joins on <b>lat/long · brand · NAICS</b></div>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 4</span>
+    <h3>EV Charging &amp; Alt. Fuel Stations</h3>
+    <dl>
+      <dt>One row</dt><dd>One charging station</dd>
+      <dt>Coverage</dt><dd>US &amp; Canada, 200,000+ ports</dd>
+      <dt>Carries</dt><dd>Name, geocoded location, network, connector types</dd>
+    </dl>
+    <div class="joins">Joins on <b>lat/long · ZIP</b></div>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 5</span>
+    <h3>Job Postings</h3>
+    <dl>
+      <dt>One row</dt><dd>One job posting</dd>
+      <dt>Coverage</dt><dd>United States, 2016–2025</dd>
+      <dt>Carries</dt><dd>Role, employer, city/state/ZIP, coordinates, <b>salary</b></dd>
+    </dl>
+    <div class="joins">Joins on <b>company · ZIP · lat/long</b></div>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 6</span>
+    <h3>Layoff Data (WARN)</h3>
+    <dl>
+      <dt>One row</dt><dd>One layoff notice filed by an employer</dd>
+      <dt>Coverage</dt><dd>United States, 1996 to now</dd>
+      <dt>Carries</dt><dd>Employer, site, date, workers affected — detail varies by state</dd>
+    </dl>
+    <div class="joins">Joins on <b>company · state · date</b></div>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 7</span>
+    <h3>Convenience Store Transactions</h3>
+    <dl>
+      <dt>One row</dt><dd>One SKU in one transaction</dd>
+      <dt>Coverage</dt><dd>US independents, 2024 to now</dd>
+      <dt>Carries</dt><dd>Product, price, quantity, store, timestamp</dd>
+    </dl>
+    <div class="joins">Joins on <b>brand · product</b></div>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 8</span>
+    <h3>Brand Tracker</h3>
+    <dl>
+      <dt>One row</dt><dd>One brand, one period of card spend</dd>
+      <dt>Coverage</dt><dd>US, 2018 to now, ~13,000 merchants</dd>
+      <dt>Carries</dt><dd>Spend online, offline and third-party, from 100M+ cards</dd>
+    </dl>
+    <div class="joins">Joins on <b>brand · ticker</b></div>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 9</span>
+    <h3>CDC PLACES</h3>
+    <dl>
+      <dt>One row</dt><dd>One census tract or ZCTA</dd>
+      <dt>Coverage</dt><dd>United States</dd>
+      <dt>Carries</dt><dd>36 modelled health and behavioural measures</dd>
+    </dl>
+    <div class="joins">Joins on <b>ZIP · tract</b></div>
+  </div>
+
+</div>
+
+<div class="pagebreak"></div>
+
+<div class="qsheet">
+  <h3>Question sheet — group <span style="color:#b31b1b">______</span></h3>
+
+  <p class="lbl">Round 1 · dataset held</p>
+  <div class="row"></div>
+  <p class="lbl">Our question · and its archetype (1–5)</p>
+  <div class="row"></div>
+  <div class="row"></div>
+
+  <p class="lbl">Round 2 · we received this question — does it survive?</p>
+  <p class="filters">Circle the filter that kills it, or write <b>SURVIVES</b>:
+  &nbsp; <b>1</b> doable by 3–5 people in one semester &nbsp;·&nbsp;
+  <b>2</b> data named and <i>checked</i> &nbsp;·&nbsp;
+  <b>3</b> could come out either way &nbsp;·&nbsp;
+  <b>4</b> somebody would act on it</p>
+  <div class="row"></div>
+  <p class="lbl">Round 2 · our new question, new dataset</p>
+  <div class="row"></div>
+  <div class="row"></div>
+
+  <p class="lbl">Round 3 · we received this question — does it survive?</p>
+  <div class="row"></div>
+  <p class="lbl">Round 3 · our combination question — which two datasets, and what joins them?</p>
+  <div class="row"></div>
+  <div class="row"></div>
+
+  <p class="lbl">Score &nbsp; survived ____ &nbsp;+&nbsp; breaks landed ____ &nbsp;+&nbsp; combination bonus ____</p>
+</div>
+</div>
+```

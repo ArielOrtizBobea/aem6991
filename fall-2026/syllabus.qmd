@@ -220,6 +220,12 @@ One to two pages, due before the second meeting. What you might want to
 work on, why it matters, and what you would want out of it
 professionally. Teams are formed from these, by the instructor.
 
+Name **which of the five project archetypes** your idea would be --- and
+why. The archetypes are introduced in meeting 1 and listed on that
+meeting's page. Getting this wrong costs you nothing; not being able to
+pick one at all is the useful signal, for you and for me, that the idea
+is still a topic rather than a question.
+
 ### Data exercises (15 %)
 
 Two short individual exercises. They exist so that every student

@@ -76,9 +76,9 @@ meetings:
     date: 2026-08-26
     part: 1
     title: "Where questions come from"
-    desc: "Several routes from an interest to a question that can be answered: gaps in what is known, extending or contesting a published result, an anomaly in the news, a decision someone has to make, an unexamined dataset. Then how to search the literature well enough to tell which route you are on."
-    a: "The capstone arc into AEM 6992. Several routes to a question: gaps in what is known, extending or contesting a published result, an anomaly in the news, a decision somebody actually has to make, a dataset that exists and nobody has looked at. What separates a topic from a question that can be answered — scope, unit, population, decision relevance. Ground rules for AI use, disclosure, and the fabricated-citation problem"
-    b: "Literature workshop: searching systematically, screening what you find, and building a synthesis matrix. Then run each route against your own interests and write five candidate questions. Every reference verified by opening it"
+    desc: "What a capstone is and is not, and the five shapes a good one takes: evaluation, preference and pricing, prediction and risk, diagnosis and benchmarking, feasibility and landscape. The anti-patterns, the feasibility filter, and how to search the literature well enough to know your question has not already been answered."
+    a: "The capstone arc into AEM 6992, and what this is not: you are not writing a paper for a journal, you are building the analysis a competent team needs before a decision that costs real money. Five project archetypes — evaluation, preference and pricing, prediction and risk, diagnosis and benchmarking, feasibility and landscape — with what each can claim, what design it needs, and how each fails. The anti-patterns, and the four-question feasibility filter. Ground rules for AI use, disclosure, and the fabricated-citation problem"
+    b: "Literature workshop: searching systematically, screening what you find, and verifying every reference by opening it. Then write five candidate questions from your own interests — each labeled with its archetype and run through the feasibility filter"
     quizzes: 0
     reading: "None"
     due: "Statement of interest, before meeting 2"

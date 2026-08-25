@@ -62,3 +62,48 @@ $code-block-font-size:        0.55em;
   color: #6b6b6b;
   background: transparent;
 }
+
+// Welcome slide: instructor-specified order and hierarchy (2026-08-24):
+// AEM 6991 / course title (dominant) / instructor, then lecture number +
+// title / date, then the Cornell seal at the bottom. Second tier = the
+// course number and the lecture title at the same size; instructor = date
+// size. Content comes from title-slide.html, shared by every deck.
+.reveal .slides section#title-slide {
+  text-align: center;
+
+  .ttl-number {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #6b6b6b;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin: 0 0 0.15em 0;
+  }
+  .ttl-course {
+    color: $carnelian;
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.15;
+    margin: 0 0 0.35em 0;
+  }
+  .ttl-prof {
+    font-size: 0.6em;
+    color: #343a40;
+    margin: 0 0 2em 0;
+  }
+  h1.title {
+    border-bottom: none;
+    font-size: 0.8em;
+    margin: 0 0 0.15em 0;
+  }
+  p.subtitle {
+    color: #6b6b6b;
+    font-size: 0.6em;
+    margin: 0 0 1.8em 0;
+  }
+  .ttl-seal {
+    display: block;
+    height: 78px;
+    margin: 0 auto;
+  }
+}

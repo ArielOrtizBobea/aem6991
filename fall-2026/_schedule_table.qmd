@@ -8,7 +8,7 @@
 
 <tr class="g-first g-last g01"><td class="g-rail" rowspan="1"><span>The question</span></td><td>Wed Aug 26</td>
   <td class="topic"><a href="sessions/01-questions.html">1 · Where questions come from</a>
-    <span class="t-desc">Several routes from an interest to a question that can be answered: gaps in what is known, extending or contesting a published result, an anomaly in the news, a decision someone has to make, an unexamined dataset. Then how to search the literature well enough to tell which route you are on.</span></td>
+    <span class="t-desc">What a capstone is and is not, and the five shapes a good one takes: evaluation, preference and pricing, prediction and risk, diagnosis and benchmarking, feasibility and landscape. The anti-patterns, the feasibility filter, and how to search the literature well enough to know your question has not already been answered.</span></td>
   <td class="hw">Statement of interest, before meeting 2</td></tr>
 
 <tr class="g-first g02"><td class="g-rail" rowspan="4"><span>Evidence &amp; inference</span></td><td>Wed Sep 2</td>

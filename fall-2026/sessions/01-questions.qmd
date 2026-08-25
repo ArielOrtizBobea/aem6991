@@ -2,11 +2,28 @@
 title: "1 · Where questions come from"
 subtitle: "Wednesday, August 26, 2026 · Meeting 1"
 pagetitle: "AEM 6991 · 1 Where questions come from"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+  revealjs:
+    output-file: 01-questions-slides.html
+    theme: [default, slides.scss]
+    template-partials:
+      - title-slide.html
+    footer: "AEM 6991 · Meeting 1"
+    slide-number: c/t
+    incremental: false
+    history: false
+    link-external-newwindow: true
 ---
 
-::: {.callout-note appearance="simple"}
-This page is a stub. Materials appear here before the meeting.
-:::
+:::: {.content-hidden when-format="revealjs"}
+
+[Slides](01-questions-slides.html) · [Syllabus](../syllabus.qmd)
+
+This page is the manual for the meeting. The slides are the same material
+in condensed form. Everything here stays up after class.
 
 ## Before class
 
@@ -14,16 +31,524 @@ This page is a stub. Materials appear here before the meeting.
 
 No quiz this meeting — quizzes begin at meeting 2.
 
+## Due
+
+**Statement of interest**, before meeting 2 (September 2). One to two
+pages: what you might want to work on, why it matters, what you want out
+of it professionally, and **which of the five archetypes below your idea
+would be**. Teams are formed from these.
+
+::::
+
+:::: {.content-visible when-format="revealjs"}
+
+## Today {.smaller}
+
+**Session A** — what a capstone is, what it is not, and the five shapes a
+good one takes.
+
+**Session B** — the literature workshop, and you leave with five candidate
+questions of your own.
+
+**No quiz today.** Quizzes start next week.
+
+::: {.notes}
+Room is Riley-Robb B15 all semester. TA to be announced.
+Point at the site once — arielortizbobea.github.io/aem6991 — and say the
+syllabus lives there, not on a handout. Then move on; do not walk the
+syllabus. That is 20 minutes nobody remembers.
+:::
+
+
+# The arc
+
+## Two courses, one project
+
+**AEM 6991 (fall).** You produce a *plan* — a question, a design, and
+evidence that the data exists.
+
+**AEM 6992 (spring).** You *execute* that plan.
+
+The deliverable in December is a proposal somebody could actually hand to a
+team in January. That is the hardest constraint in this course, and every
+decision in it follows from that constraint.
+
+::: {.notes}
+Say plainly: everything you commit to in the fall, you live with in the
+spring. A question that is vague in October is a disaster in March.
+:::
+
+## What this is not
+
+You are **not** writing a paper for a journal.
+
+- No gap in the literature to fill
+- No contribution to claim
+- Nobody is going to referee this for *AJAE*
+
+::: {.notes}
+This is the single most common misunderstanding. Students hear "research
+design" in the learning outcomes and reach for the genre they have seen in
+seminars. Kill it here.
+:::
+
+## What it is
+
+> You are building the analysis a competent team would need before making a
+> decision that costs real money.
+>
+> The standard for "competent" is the same standard a referee would apply.
+
+**Rigor and genre are different axes.** The rigor bar does not move. The
+genre does.
+
+::: {.notes}
+If the design would not survive a referee, it does not survive here. But
+the audience is a decision-maker, not a discipline.
+
+This also rescues the literature review from feeling academic: you read the
+literature to find out whether your question is already answered and how
+people have answered questions like it. Not to find a gap.
+:::
+
+## Where you are actually going {.smaller}
+
+MPS AEM, class of 2025:
+
+| Job function | Share | | Industry | Share |
+|:--|--:|:--|:--|--:|
+| Finance | 40% | | Financial services | 38% |
+| Marketing / sales | 21% | | Technology | 22% |
+| General management | 15% | | Manufacturing | 11% |
+| Consulting | 13% | | Consumer packaged goods | 5% |
+| Data / analytics | 6% | | Other | 24% |
+
+Goldman · JPMorgan · Morgan Stanley · Citi · HSBC · Tencent · Alibaba ·
+P&G · PwC · KPMG
+
+[Source: Cornell SC Johnson, MPS AEM career outcomes. 82% received offers
+within six months.]{style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Essentially none of these are research jobs. That is the argument for the
+framing on the previous slide — not my taste, the placement data.
+
+Say the useful version out loud: the skill that transfers to every one of
+those jobs is being able to say what kind of claim you are making and what
+would make it wrong.
+:::
+
+# What shape is a good project?
+
+## First, where ideas come from {.smaller}
+
+Five routes into a topic:
+
+1. A **gap** in what is known
+2. **Extending or contesting** a published result
+3. An **anomaly** — something in the news that should not be true
+4. A **decision** somebody actually has to make
+5. A **dataset** that exists and nobody has looked at properly
+
+Route 5 is the most dangerous, and we will come back to why.
+
+::: {.notes}
+Routes are about where the idea comes from. That is not the same as what
+shape it has to take — which is the next 25 minutes, and the part that
+actually constrains you.
+:::
+
+## The five archetypes {.smaller}
+
+Every project should be able to say, in one sentence, which of these it is.
+
+| | Archetype | The question |
+|:--|:--|:--|
+| 1 | **Evaluation** | Did it work? |
+| 2 | **Preference & pricing** | What would people choose, and pay? |
+| 3 | **Prediction & risk** | What happens next, and how wrong could we be? |
+| 4 | **Diagnosis & benchmarking** | Where is the gap, and what explains it? |
+| 5 | **Feasibility & landscape** | Is this opportunity real? |
+
+**A project that cannot pick one is not yet a project.**
+
+::: {.notes}
+The point of this list is subtraction. "I'm interested in sustainable
+packaging" is a topic. Run it through five archetypes and you get five
+specific questions you could pursue — and four you should drop.
+
+The most consistent complaint students make about capstone courses is
+that the freedom is paralyzing. This list is the answer to it.
+:::
+
+## 1 · Evaluation {.smaller}
+
+**Did it work?** A decision has already been made somewhere. Estimate its
+effect.
+
+- **Claim:** causal, retrospective
+- **Design:** difference-in-differences, event study, regression
+  discontinuity, IV — *meetings 7–8*
+- **Data:** outcomes before and after, for a treated group **and** a
+  credible comparison group
+- **Fails when:** no comparison group — or the "treatment" was adopted
+  precisely by the units already changing
+
+*Did a loyalty-program relaunch change basket size? Did a tariff change
+shift import composition? Did a platform fee change move seller behavior?*
+
+::: {.notes}
+The single most common failure in the entire course lives on this slide:
+selection into treatment. Flag it now, pay it off in meeting 5.
+:::
+
+## 2 · Preference & pricing {.smaller}
+
+**What would people choose, and what would they pay?** The decision is not
+yet made; the input needed is what people value.
+
+- **Claim:** causal, but about *elicited* choices — a real limitation, not
+  a footnote
+- **Design:** choice experiments and conjoint, randomized price or message
+  tests, demand estimation — *meeting 7*
+- **Data:** usually collected by you — an instrument you design
+- **Fails when:** stated preference reported as revealed preference; or
+  n = 40 classmates generalized to a market
+
+*Willingness to pay for a sustainability claim. Which fee structure a
+retail investor picks.*
+
+## 3 · Prediction & risk {.smaller}
+
+**What happens next, and how wrong could we be?** The decision needs a
+number about the future, not a cause.
+
+- **Claim:** predictive — **explicitly not causal**, and saying so is part
+  of the grade
+- **Design:** out-of-sample validation, backtesting, honest baselines
+- **Data:** panel or time series with enough history to hold out a test
+  period
+- **Fails when:** no out-of-sample test; look-ahead bias; or the team
+  quietly starts making causal recommendations off a predictive model
+
+*Default risk. Demand forecasting. Churn. Commodity price exposure.*
+
+::: {.notes}
+40% of this class goes into finance, where this is often the honest
+project. I am not banning it. But the discipline is naming it: "this is
+predictive, here is why that is right for this decision, here is what I
+therefore cannot conclude." That sentence is the whole course.
+:::
+
+## 4 · Diagnosis & benchmarking {.smaller}
+
+**Where is the gap, and what explains it?** Something varies more than it
+should and nobody knows why.
+
+- **Claim:** descriptive, hypothesis-generating — honest about being a
+  first step
+- **Design:** decomposition, benchmarking against a reference group,
+  careful description — *meetings 11–12*
+- **Data:** operational or administrative records at the unit where the
+  variation lives
+- **Fails when:** description dressed up as a cause; or it stops at "here
+  is a dashboard" with no decision attached
+
+*Why conversion differs threefold across regions. Where a hiring funnel
+leaks.*
+
+## 5 · Feasibility & landscape {.smaller}
+
+**Is this opportunity real, and what constrains it?**
+
+- **Claim:** descriptive synthesis **plus at least one original empirical
+  component**
+- **Design:** market sizing from official statistics, competitive
+  benchmarking, regulatory and cost constraints
+- **Fails when:** it becomes a deck of secondary research with no empirical
+  claim of your own
+
+::: {.callout-warning appearance="simple"}
+**The dangerous one.** Approved only if it contains a specific, checkable
+empirical question you answer with data you analyze yourselves.
+:::
+
+::: {.notes}
+This is the type most likely to produce a bad capstone, and the one
+consulting-bound students gravitate to. Be explicit that the guardrail is
+real and it will be enforced at the feasibility memo in meeting 9.
+:::
+
+# What a bad project looks like
+
+## Six anti-patterns {.smaller}
+
+1. **The topic with no question.** "AI in finance." A topic names a
+   subject; a question names an answer that could come out either way.
+2. **The dataset in search of a question.** You found a nice dataset in
+   week 2 and have been reverse-engineering a question onto it since.
+3. **The consulting deck.** Archetype 5 without the empirical component.
+4. **The unobtainable-data project.** Beautiful design; requires
+   proprietary data from a firm nobody on the team knows.
+5. **The dissertation.** Correctly scoped for three years and four
+   co-authors.
+6. **The already-answered question.** This is what the literature review
+   is *for*.
+
+::: {.notes}
+Number 2 is why this course is ordered the way it is — question, then
+design, then data. Teams who find data first rationalize a question around
+whatever they found, every single time.
+
+Number 4 has to die in meeting 9, at the feasibility memo. Not in January.
+:::
+
+## The feasibility filter {.smaller}
+
+Four questions. A "no" on any one is fatal — and cheap to discover *now*.
+
+1. Could a team of 3–5 execute this in **one spring semester**?
+2. Can you name the **specific dataset**, who holds it, and how you get
+   it — *checked, not assumed*?
+3. Does the design produce an answer that **could come out either way**?
+4. Would somebody **actually act differently** depending on the answer?
+
+::: {.notes}
+Question 2 is the one they will fudge. Push on "checked, not assumed" —
+have you opened the page, found the access terms, seen the actual columns?
+:::
+
+# Ground rules for AI
+
+## The policy {.smaller}
+
+**Permitted by default. Disclosure is mandatory. Verification is graded.**
+
+This section is deliberately different from the others. The reason is that
+writing the code and drafting the prose are no longer the scarce skills —
+knowing what to ask for, and noticing when the answer is wrong, is.
+
+From meeting 10 you work with real data through an assistant. **What is
+graded is the questions you ask and the checks you run, never code you
+wrote.**
+
+::: {.notes}
+Say plainly that policies differ across sections and that this one is
+deliberately permissive, then give the reason: they are going into jobs
+where AI-assisted analysis is baseline, and the scarce skill is checking.
+:::
+
+## The one that will bite you {.smaller}
+
+Ask an assistant for references on your topic. Right now.
+
+Then **open every single one**.
+
+::: {.callout-important appearance="simple"}
+A fabricated citation in your literature review is an academic integrity
+violation. "The AI generated it" is not a defense — it is an admission you
+submitted something you never read.
+:::
+
+::: {.notes}
+LIVE DEMO — 5 minutes, do not skip it. Take a topic from the room, ask an
+assistant for five references with DOIs, then check them together on the
+screen. Some will be real. Some will be plausible and wrong: real authors,
+real journal, invented title or year.
+
+The lesson is not "AI is bad." It is that verification is a step you can
+never delegate, which is the same lesson as meeting 11.
+:::
+
+## Session A ends {.smaller}
+
+**Break — back at 3:35.**
+
+Coming up in session B: how to search the literature so you can tell
+whether your question is already answered, and then you write five
+candidate questions of your own.
+
+# Session B · The literature
+
+## Why you search {.smaller}
+
+Not to find a gap. To answer two questions:
+
+1. **Has somebody already answered this?** If yes, that is good news found
+   cheaply — change the question now, not in November.
+2. **How do people answer questions like this?** The design, the data
+   source, the unit of analysis. You are shopping for a method.
+
+::: {.notes}
+Frame it as reconnaissance, not scholarship. That reframing is what makes
+it tolerable for students who did not come here to read journals.
+:::
+
+## How to search {.smaller}
+
+- **Start broad, then chase citations.** One good recent paper gives you
+  its reference list *and* everything that has cited it since.
+- **Google Scholar, then the library.** Cornell has access to nearly
+  everything; use the library proxy rather than paying anyone.
+- **Read in this order:** abstract → figures and tables → conclusion →
+  method. Most papers are decided in the first three.
+- **Business sources count.** Industry reports, trade press, company
+  filings. For most of your archetypes these matter more than journals.
+
+## How to screen {.smaller}
+
+For each candidate, one line:
+
+| Question | Design | Data | What they found | Why it matters to us |
+|:--|:--|:--|:--|:--|
+
+Five to eight rows is a literature review at this stage. Eighty is
+procrastination.
+
+::: {.callout-important appearance="simple"}
+**Every reference gets opened.** Not the abstract someone quoted at you.
+The paper.
+:::
+
+## Your turn {.smaller}
+
+In teams of 3–4, from your own interests:
+
+1. Write **five candidate questions**
+2. Label each with its **archetype** (1–5)
+3. Run each through the **feasibility filter** — all four questions
+4. Cross out the ones that fail, and say *which* filter killed them
+
+::: {.callout-note appearance="simple"}
+Your team's output is submitted before you leave. A question you kill today
+is a month you do not lose in the spring.
+:::
+
+::: {.notes}
+Say out loud that today's grouping is TEMPORARY — real teams are formed
+from the statements of interest before meeting 2. Otherwise some of them
+spend the hour negotiating instead of working.
+
+30 minutes of work time. Circulate. The two failure modes to catch early:
+questions that are still topics, and archetype-5 projects with no
+empirical component.
+
+Last 10 minutes: two or three teams read out one question they killed and
+which filter killed it. The killing is the lesson, not the surviving
+question.
+:::
+
+## Before next week {.smaller}
+
+**Statement of interest** — one to two pages, due before meeting 2.
+
+- What you might want to work on, and why it matters
+- What you want out of it professionally
+- **Which archetype**, and why
+
+**Teams are formed from these.** Meeting 2 is causal language and your team
+charter.
+
+::: {.notes}
+Say explicitly: not being able to pick an archetype is useful information,
+not a failure. It means the idea is still a topic. Write that down and I
+will help.
+:::
+
+::::
+
+:::: {.content-hidden when-format="revealjs"}
+
 ## Session A · 2:05–3:15
 
-The capstone arc into AEM 6992. Several routes to a question: gaps in what is known, extending or contesting a published result, an anomaly in the news, a decision somebody actually has to make, a dataset that exists and nobody has looked at. What separates a topic from a question that can be answered — scope, unit, population, decision relevance. Ground rules for AI use, disclosure, and the fabricated-citation problem
+### The arc
+
+AEM 6991 produces a *plan*; AEM 6992 *executes* it. The deliverable in
+December is a proposal somebody could hand to a team in January.
+
+### What this is, and is not
+
+You are not writing a paper for a journal — there is no gap to fill and no
+contribution to claim. You are building the analysis a competent team would
+need before making a decision that costs real money, and the standard for
+"competent" is the same standard a referee would apply. Rigor and genre are
+different axes: the rigor bar does not move, the genre does.
+
+This is also why the literature matters without the project being a
+literature project. You read to find out whether your question is already
+answered, and how people have answered questions like it.
+
+For context, MPS AEM class of 2025: 40% into finance, 21% marketing and
+sales, 15% general management, 13% consulting, 6% data and analytics.
+Essentially none into research.
+
+### Where ideas come from
+
+Five routes: a gap in what is known; extending or contesting a published
+result; an anomaly; a decision somebody has to make; a dataset nobody has
+looked at properly. The last is the most dangerous.
+
+### The five archetypes
+
+Every project should be able to say in one sentence which of these it is. A
+project that cannot pick one is not yet a project.
+
+| | Archetype | Question | Claim | Design | Fails when |
+|:--|:--|:--|:--|:--|:--|
+| 1 | Evaluation | Did it work? | Causal, retrospective | DiD, event study, RD, IV | No credible comparison group |
+| 2 | Preference & pricing | What would they choose and pay? | Causal, but elicited | Choice experiments, conjoint | Stated read as revealed |
+| 3 | Prediction & risk | What happens next? | Predictive, *not causal* | Out-of-sample validation | Causal claims off a predictive model |
+| 4 | Diagnosis & benchmarking | Where is the gap? | Descriptive | Decomposition, benchmarking | Description dressed as cause |
+| 5 | Feasibility & landscape | Is this real? | Synthesis + original work | Market sizing, benchmarking | No empirical component |
+
+Archetype 5 is approved only if it contains a specific, checkable empirical
+question you answer with data you analyze yourselves.
+
+### Six anti-patterns
+
+The topic with no question; the dataset in search of a question; the
+consulting deck; the unobtainable-data project; the dissertation; the
+already-answered question.
+
+### The feasibility filter
+
+1. Could a team of 3–5 execute this in one spring semester?
+2. Can you name the specific dataset, who holds it, and how you get it —
+   checked, not assumed?
+3. Does the design produce an answer that could come out either way?
+4. Would somebody actually act differently depending on the answer?
+
+### AI ground rules
+
+Permitted by default, disclosure mandatory, verification graded. From
+meeting 10 you work with real data through an assistant, and what is graded
+is the questions you ask and the checks you run — never code you wrote.
+
+**Every reference gets opened.** A fabricated citation is an academic
+integrity violation, and "the AI generated it" is an admission that you
+submitted something you never read.
 
 ## Session B · 3:35–4:30
 
-Literature workshop: searching systematically, screening what you find, and building a synthesis matrix. Then run each route against your own interests and write five candidate questions. Every reference verified by opening it
+### The literature workshop
+
+You search for two reasons: to find out whether somebody has already
+answered your question, and to see how people answer questions like it.
+
+Start broad, then chase citations — one good recent paper gives you its
+reference list and everything citing it since. Read abstract, then figures
+and tables, then conclusion, then method. Business sources count; for most
+archetypes they matter more than journals.
+
+Screen with one line per paper: question, design, data, what they found,
+why it matters to us. Five to eight rows is enough at this stage.
+
+### Team output
+
+In teams of 3–4: five candidate questions, each labeled with its archetype
+and run through all four filter questions. Cross out the failures and name
+which filter killed them.
 
 Your team's output is submitted before you leave.
 
-## Due
-
-Statement of interest, before meeting 2
+::::

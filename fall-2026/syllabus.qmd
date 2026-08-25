@@ -1,0 +1,374 @@
+---
+title: "Syllabus"
+pagetitle: "AEM 6991 · Fall 2026 · Syllabus"
+toc: true
+toc-depth: 3
+editor:
+  markdown:
+    wrap: 72
+---
+
+::: {.callout-note appearance="simple"}
+**Draft.** Settled in structure, not in every detail. Meeting dates
+follow the Cornell Fall 2026 academic calendar. Anything marked "to be
+announced" is filled in here as it is confirmed, and each meeting page
+carries the current version for that day.
+:::
+
+## Course
+
+**AEM 6991 --- MPS Capstone Project I**
+
+**Fall 2026.** Wednesdays, 2:00--4:30 pm. First meeting: August 26,
+2026. Last meeting: December 2, 2026. Location: Riley-Robb Hall B15.
+Section: LEC 004 (to be confirmed).
+
+**Instructor.** Prof. Ariel Ortiz-Bobea. Office: 450B Warren Hall.
+Email: [ao332\@cornell.edu](mailto:ao332@cornell.edu){.email}. Office
+phone: (607) 255-0220.
+
+**Teaching assistant.** To be announced; posted here and on Canvas
+once assigned.
+
+**Office hours.** To be announced in week 1 and posted on Canvas;
+also by appointment.
+
+**Credit hours.** 3. Enrollment limited to AEM MPS students.
+
+## Course description
+
+AEM 6991 is the first half of the MPS capstone sequence. Over the
+semester each team moves from a vague interest to a research plan that
+can actually be executed in AEM 6992 in the spring. The deliverable is
+that plan.
+
+This section builds that plan in the order the work actually happens.
+First, turn an interest into a question that can be answered. Then work
+out **what evidence would answer it** --- which means commanding the
+causal language applied economists use: counterfactuals and causal
+graphs, what the standard models estimate, where uncertainty and
+p-values come from, how inference goes wrong, and the designs that get
+around each failure. Only then go looking for data, because the design
+is what tells you which data you need. Teams who find data first end up
+rationalizing a question around whatever they found, and that is the
+most common way a capstone goes wrong.
+
+The whole conceptual half is taught on examples from industry and the
+news, before anyone opens a dataset. The back half is judgment about
+data: knowing what to ask of a dataset, driving an AI assistant to
+answer it, checking whether the answer is credible, seeing what a
+figure shows and what it hides, and keeping a project and a team
+functional. None of it assumes prior econometrics or programming.
+
+**This is not a coding course.** You will work with real data every
+week from meeting 10 onward, and you will do it through an AI
+assistant. What is graded is the questions you ask and the checks you
+run --- never code you wrote. The reason is that writing the code is no
+longer the scarce skill; knowing which analysis to ask for, and
+noticing when the answer that comes back is wrong, is. Students who
+want to build the pipeline themselves should take AEM 6850, which
+teaches exactly that and cannot be compressed into three hours here.
+
+## Audience and prerequisites
+
+Open to, and required of, AEM MPS students. **No formal prerequisites:**
+no econometrics, no prior programming, and none is taught. Where the
+course touches data directly it does so through an AI assistant, so no
+student is blocked by tooling. Students arriving with statistics or
+coding experience will find the data work easy; the design vocabulary
+and the verification habit will be new regardless of background.
+
+## Learning outcomes
+
+The registrar's outcomes for AEM 6991 are unchanged. By the end of the
+semester students will be able to:
+
+1.  **Teamwork.** Work effectively in small groups, complete tasks on
+    time, and allocate work equitably among team members.
+2.  **Problem focus.** Select and define a project problem that
+    demonstrates relevant knowledge and articulates the significance of
+    the problem.
+3.  **Project design and workplan.** Develop a methodologically
+    rigorous research design and identify key project tasks and
+    outputs.
+4.  **Presentation of progress.** Write about, present, and discuss the
+    project in class with analytical rigor.
+
+This section adds two outcomes that serve the four above:
+
+5.  **Evidence sourcing.** Establish that the data a project needs
+    exists, can be obtained on the project's timeline, and measures what
+    the research question requires.
+6.  **Design vocabulary.** State what identification strategy a project
+    relies on, what it assumes, and what it therefore can and cannot
+    claim.
+
+## Software and tools
+
+**There is nothing to install.** Everything runs in a browser.
+
+-   One **AI assistant** that accepts file uploads --- Claude, ChatGPT,
+    or Gemini. A free tier is sufficient.
+-   A browser, and whatever you already write in.
+
+That is the whole stack. Meetings 1--9 need no software at all.
+Meetings 10--12 work on real data, and you will do that by uploading a
+file to an assistant and interrogating it --- which is also how the
+"do not upload restricted data" rule in the AI policy below stops being
+abstract.
+
+Version control is covered at awareness level in meeting 13: what it is
+for and when it is worth the cost. You are not required to use it.
+
+## AI policy
+
+Generative AI tools are **permitted by default** for all coursework.
+Students are expected to use them, and to use them well. Three rules
+apply to every deliverable:
+
+1.  **Disclose what you used.** Every submitted deliverable carries a
+    short disclosure block: which tools, on which parts of the work.
+    The form is brief; what matters is that it exists.
+2.  **Verify what the AI produced.** AI output is your work, exactly as
+    code from a colleague would be. Two failure modes are graded
+    against explicitly, because they are the ones that destroy a
+    research proposal:
+    -   **Fabricated citations.** Recent audits find invented
+        references at high rates across leading models. Every reference
+        in every submission must be one you have opened. A citation to
+        a paper that does not exist is treated as a fabrication, not a
+        typo.
+    -   **Plausible-but-wrong design advice.** Models confidently
+        recommend estimators whose assumptions your data violates. You
+        are responsible for the design you propose.
+3.  **Do not paste restricted data into a public chatbot.**
+    Confidential, IRB-restricted, and proprietary data stay on your
+    machine.
+
+Failure to disclose is an academic integrity violation under the
+Cornell Code. Failure to verify is graded against the rubric like any
+other error.
+
+::: {.callout-note appearance="simple"}
+**Note.** Other sections of AEM 6991 restrict generative AI. This
+section takes the opposite posture deliberately: the deliverable here is
+a research proposal, which is precisely the genre where unverified AI
+output does the most damage, and the skill worth teaching is
+verification rather than abstinence.
+:::
+
+## Assessment
+
+Half the grade is individual and half is team-based, so that no student
+can be carried and no student is sunk by a team.
+
+| Component | Weight | Type |
+|:---|---:|:---|
+| In-class quizzes | 10 % | Individual |
+| Statement of interest | 5 % | Individual |
+| Data exercises (2 × 7.5 %) | 15 % | Individual |
+| Midterm | 15 % | Individual |
+| Referee report | 5 % | Individual |
+| *Individual subtotal* | *50 %* | |
+| Research problem presentation | 5 % | Team |
+| Problem statement & literature review | 10 % | Team |
+| Data feasibility memo | 5 % | Team |
+| Research design paper | 20 % | Team |
+| Final presentation & artifact | 10 % | Team |
+| *Team subtotal* | *50 %* | |
+
+Grading scale: A+ (≥ 98), A (≥ 92), A- (≥ 88), B+ (≥ 85), B (≥ 80),
+B- (≥ 75), C+ (≥ 70), C (≥ 65), C- (≥ 60), D (≥ 50), F (\< 50).
+
+**Peer evaluation.** Team members evaluate each other twice in the
+semester on a fixed template. Results adjust individual grades on team
+deliverables. A student who does not contribute does not receive the
+team's grade.
+
+### In-class quizzes (10 %)
+
+Short quizzes delivered to your own device, at 2:05 on the assigned
+reading and --- on most meetings --- again at 3:35 on the first half of
+the session. Three to five questions each, three minutes.
+
+Many of them are scenario questions rather than definitions: *here is a
+situation and a question --- which design fits, and what would have to
+be true?*; *here is a design --- what would break it?*; *here is a
+figure --- what is it hiding?*; *here is a step an AI just did for you
+--- how would you check it without reading the code?* Those are the
+questions worth asking, and they are the ones a chatbot cannot answer
+for a student who was not paying attention.
+
+The quizzes serve three purposes at once. They are the reading check
+--- which is why this section does not assign Reading Notes. They are
+the attendance record, taken twice so that leaving at the break is
+visible. And they surface confusion while there is still an hour of
+class left to fix it.
+
+Quizzes begin at meeting 2; there is no quiz in the first meeting.
+
+**The lowest four quiz scores are dropped, and there are no make-ups.**
+That covers illness, interviews, travel, and a dead laptop battery
+without anybody having to email about it.
+
+Quizzes are tied to your netid and timestamped. See *Data practices*
+below.
+
+### Statement of interest (5 %)
+
+One to two pages, due before the second meeting. What you might want to
+work on, why it matters, and what you would want out of it
+professionally. Teams are formed from these, by the instructor.
+
+### Data exercises (15 %)
+
+Two short individual exercises. They exist so that every student
+personally handles data rather than delegating it to whoever on the
+team seems most comfortable with it. Both are done with an AI
+assistant, and neither is graded on code.
+
+1.  **Interrogate a dataset.** Given a dataset you have not seen,
+    submit the questions you asked of it, the answers you got, the
+    checks you ran to confirm those answers, and the one thing you
+    found that was wrong with it. Every dataset handed out has
+    something wrong with it.
+2.  **Rebuild and critique a figure.** Given a published figure and the
+    data behind it, have the assistant rebuild it. Then produce the
+    version you think is more honest, and say in three sentences what
+    the original was hiding and whether it was hiding it on purpose.
+
+What earns the marks is the interrogation and the verification --- a
+correct output you cannot justify scores badly, and a wrong output you
+caught yourself scores well.
+
+### Midterm (15 %)
+
+In class, first half of week 12. Open note, application-oriented short
+answers. It tests whether you can apply the design vocabulary to
+situations you have not seen --- not whether you memorized definitions.
+
+### Referee report (5 %)
+
+Each student writes a referee report on another team's research design
+paper: what the project is, what is strong, what would have to change.
+Reading someone else's design critically is the fastest way to see the
+holes in your own.
+
+### Team deliverables (50 %)
+
+The sequence is the same one used across AEM 6991 sections, because it
+is what AEM 6992 needs in January.
+
+| \# | Deliverable | Description | Due |
+|:---|:---|:---|:---|
+| 1 | Research problem presentation | 3 slides, 10 min: the problem, why it matters, what is already known. | Week 4, in class |
+| 2 | Problem statement & literature review | ~5 pages: the problem, practical and theoretical justification, conceptual model, what the literature establishes, work plan. | End of week 6 |
+| 3 | Data feasibility memo | ~2 pages: the exact data you will use, who holds it, how you get it, what it costs, what it measures, and your fallback if it falls through. | End of week 8 |
+| 4 | Research design paper | ~5 pages: question, identification strategy and its assumptions, unit of analysis and sample, data, threats to internal validity, external validity, work plan for the spring. | End of week 13 |
+| 5 | Final presentation & artifact | 10-minute presentation plus a consolidating artifact --- poster or written plan, format announced by week 10. | Week 14, in class |
+
+**The data feasibility memo is specific to this section.** It exists
+because the most common way an MPS capstone fails is not a bad question
+--- it is a good question whose data never arrives. Requiring the team
+to prove the data is real, in week 8, while there is still time to
+change course, is the single highest-return deadline in the course.
+
+**Late policy.** Team deliverables lose 10 % up to 8 hours late, 50 %
+from 8 to 72 hours, and are not accepted after 72 hours. Notify the
+instructor before the deadline if something has gone wrong.
+
+## Course schedule
+
+Fourteen meetings. Each runs the same shape:
+
+| Time | |
+|:---|:---|
+| 2:00--2:05 | Opening quiz on the reading |
+| 2:05--3:15 | Session A --- the concept, on worked examples |
+| 3:15--3:30 | Break |
+| 3:30--3:35 | Second quiz on session A |
+| 3:35--4:30 | Session B --- **your own project**, submitted before you leave |
+
+Session B is not a lab exercise on someone else's data. It applies the
+day's work to the team's actual project: conceptual clinics early in the
+term --- draw your graph, name your design, work out what data it needs
+--- and hands-on work once R arrives. The output is submitted the same
+day. Fourteen of these, accumulated, are most of the research design
+paper.
+
+Every meeting has its own page, reachable from the sidebar, carrying the
+readings, slides, and materials for that day. The table below, the front
+page, and the sidebar are all generated from one file, so they cannot
+disagree.
+
+::: {.tight-cols}
+{{< include _schedule_list.qmd >}}
+:::
+
+*Thanksgiving recess falls on Wednesday, November 25 --- no class. The
+referee report is due in the exam period; the final artifact due date
+is to be announced.*
+
+## Readings
+
+Readings are assigned per meeting and posted on that meeting's page,
+where the opening quiz is drawn from them. Everything assigned is free,
+either through the Cornell library or openly online; there is no book to
+buy. The full term list is settled in the first weeks and announced
+here.
+
+Two open texts carry most of Part II and are worth knowing about now:
+Cunningham, *Causal Inference: The Mixtape*, and Huntington-Klein, *The
+Effect*. Both are readable without prior econometrics, which is the
+binding constraint in this course. Adams, Khan, Raeside & White (2007),
+*Research Methods for Graduate Business and Social Science Students*
+(SAGE), is the shared text across AEM 6991 sections and is free through
+the Cornell library.
+
+Recurring readings: Sandberg & Alvesson (2020) on problematization; Haas &
+Mortensen (HBR) on teams; Stanley & Castles, *The So What Strategy*;
+Zelazny, *Say It With Charts*.
+
+## Attendance
+
+The once-weekly format means missing one meeting is missing two
+sessions. Attendance is recorded through the two quizzes each meeting.
+Four dropped quiz scores absorb two full absences without penalty and
+without a conversation. Beyond that, missed quizzes score zero.
+
+If you are going to miss more than two meetings, talk to me early
+rather than late.
+
+## Data practices
+
+Quiz submissions are tied to your netid and timestamped, and are used
+for grading and attendance. The roster, submissions, and any
+per-student credentials are held in Cornell-managed or
+instructor-controlled storage and are not published. Course materials
+in the public repository never contain student-identifying data.
+
+## Academic integrity
+
+Every student is expected to abide by the Cornell University Code of
+Academic Integrity. Work submitted for credit is your own. AI
+assistance is permitted under the AI policy above; **failure to
+disclose AI use is a violation**, as is submitting a fabricated
+citation as a real one. Collaboration is expected on team assignments
+and not permitted on individual ones.
+
+## Accommodations
+
+Students requesting academic accommodations should contact Cornell
+Student Disability Services and give me their accommodation letter as
+early in the semester as possible so arrangements can be made.
+
+## Course materials
+
+Slides, readings, assignment specifications, and the schedule live on
+this site, which is generated from a public repository and updated
+through the term. Canvas carries grades and submissions.
+
+------------------------------------------------------------------------
+
+*Last updated: 2026-08-12. This is a draft skeleton; schedule and
+policies will change before the start of term.*

@@ -1,0 +1,9 @@
+/* AEM 6991 — page-level bits that don't belong in the theme layer.
+   Kept deliberately small; the visual system lands in DESIGN.md later. */
+
+:root {
+  --carnelian: #b31b1b;
+  --muted: #6b6b6b;
+  --rule: #e3e3de;
+  --panel: #fafaf7;
+}

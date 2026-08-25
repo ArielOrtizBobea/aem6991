@@ -1,0 +1,29 @@
+---
+title: "1 · Where questions come from"
+subtitle: "Wednesday, August 26, 2026 · Meeting 1"
+pagetitle: "AEM 6991 · 1 Where questions come from"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** None
+
+No quiz this meeting — quizzes begin at meeting 2.
+
+## Session A · 2:05–3:15
+
+The capstone arc into AEM 6992. Several routes to a question: gaps in what is known, extending or contesting a published result, an anomaly in the news, a decision somebody actually has to make, a dataset that exists and nobody has looked at. What separates a topic from a question that can be answered — scope, unit, population, decision relevance. Ground rules for AI use, disclosure, and the fabricated-citation problem
+
+## Session B · 3:35–4:30
+
+Literature workshop: searching systematically, screening what you find, and building a synthesis matrix. Then run each route against your own interests and write five candidate questions. Every reference verified by opening it
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Statement of interest, before meeting 2

@@ -1,0 +1,50 @@
+### Part 1 --- The question
+
+Turn an interest into a question that can actually be answered — and learn to read the literature well enough to know whether it has been.
+
+| \# | Date | Meeting | Due |
+|:---|:---|:---|:---|
+| 1 | Aug 26 | **Where questions come from**<br><span class='sess'>A · 2:05</span> The capstone arc into AEM 6992. Several routes to a question: gaps in what is known, extending or contesting a published result, an anomaly in the news, a decision somebody actually has to make, a dataset that exists and nobody has looked at. What separates a topic from a question that can be answered — scope, unit, population, decision relevance. Ground rules for AI use, disclosure, and the fabricated-citation problem<br><span class='sess'>B · 3:35</span> Literature workshop: searching systematically, screening what you find, and building a synthesis matrix. Then run each route against your own interests and write five candidate questions. Every reference verified by opening it | Statement of interest, before meeting 2 |
+
+### Part 2 --- Evidence, models, and inference
+
+The conceptual core. What a causal claim is, what the standard models estimate, where uncertainty and p-values come from, and how inference goes wrong. Taught on examples from industry and the news, before anyone opens a dataset.
+
+| \# | Date | Meeting | Due |
+|:---|:---|:---|:---|
+| 2 | Sep 2 | **Causal language**<br><span class='sess'>A · 2:05</span> Counterfactuals and potential outcomes; why every comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, back-door reasoning — and why controlling for everything makes things worse<br><span class='sess'>B · 3:35</span> Team formation and team charter; draw the graph for your own interest | Team charter, same day |
+| 3 | Sep 9 | **What the standard models do**<br><span class='sess'>A · 2:05</span> Linear regression, non-linear models (logit, probit), and count models — described, not derived. What each one estimates, what shape of outcome each is for, and how to read a coefficient in the units of the problem<br><span class='sess'>B · 3:35</span> Model clinic: for each team's outcome, which form fits — and what would the coefficient actually mean in that project's units? | — |
+| 4 | Sep 16 | **Where uncertainty comes from**<br><span class='sess'>A · 2:05</span> What is random and what is not. Residuals and errors; sampling variation; what a standard error is a statement about; where p-values come from and what they are not. How sample size, and how much the explanatory variable actually varies, move standard errors<br><span class='sess'>B · 3:35</span> Simulation lab: draw from a world you control, watch the p-value distribution under the null, then change the sample size and the variation and watch it move. Nothing to install, no code to write | — |
+| 5 | Sep 23 | **How inference goes wrong**<br><span class='sess'>A · 2:05</span> Bias: omitted variables, sorting and selection, measurement error (classical and not), reverse causality — what each does to the estimate and in which direction. False precision: dependence ignored, multiple testing, specification search<br><span class='sess'>B · 3:35</span> Take a published claim apart: which failure is doing the damage, and would more data fix it? | Research problem presentation, in class |
+
+### Part 3 --- Designs, and the data they require
+
+The ways applied economists get a credible estimate, from conditioning on observables to designs built on found variation — and then the step most projects skip: working out what data the chosen design actually demands, and whether you are allowed to have it.
+
+| \# | Date | Meeting | Due |
+|:---|:---|:---|:---|
+| 6 | Sep 30 | **Conditioning on what you can observe**<br><span class='sess'>A · 2:05</span> What it means to identify an effect by conditioning on observables: controls, matching, and when a regression coefficient can be read causally. Why 'I added controls' is a claim about the graph rather than a technique, and exactly what would have to be true for it to hold<br><span class='sess'>B · 3:35</span> Back to the graph you drew in meeting 2: could you close every back door with data you could actually obtain? | Problem statement & literature review, end of week |
+| 7 | Oct 7 | **Research designs I**<br><span class='sess'>A · 2:05</span> Experiments; instrumental variables; regression discontinuity. What variation each exploits, what each assumes, how each fails, and what it looks like when it is done well<br><span class='sess'>B · 3:35</span> Scenario clinic: given a question, would any of these three work here? | — |
+| 8 | Oct 14 | **Research designs II**<br><span class='sess'>A · 2:05</span> Difference-in-differences; panel data with local fixed effects; event studies. What identifying variation survives once the fixed effects are in, and what assumption you are leaning on<br><span class='sess'>B · 3:35</span> Name your own project's design, and the assumption you would have to defend | — |
+| 9 | Oct 21 | **What the design needs, and what you are allowed to have**<br><span class='sess'>A · 2:05</span> Working backwards from a design to its data requirements: unit of observation, level of aggregation, time frequency, span, coverage, and which comparisons the data has to contain. Can this be done with county-level data, or does it need individuals? Then the landscape — administrative records, official statistics, firm and platform data — and what each costs in money and time<br><span class='sess'>B · 3:35</span> Research ethics, the Cornell IRB, and data-use agreements: what needs approval, what does not, and how long it takes. Then work out whether your own project needs it — while there is still time to change course | Data feasibility memo assigned |
+
+### Part 4 --- Working with data
+
+Not a coding course. The skills here are knowing what to ask of a dataset, driving an assistant to answer it, checking whether the answer is credible, and seeing what a figure shows and hides.
+
+| \# | Date | Meeting | Due |
+|:---|:---|:---|:---|
+| 10 | Oct 28 | **Midterm; what to ask of a dataset**<br><span class='sess'>A · 2:05</span> **Midterm** — you are given a situation and asked to design a study to evaluate it, in writing: the question, the design, what data it requires, and what would undermine it<br><span class='sess'>B · 3:35</span> What to ask of a dataset, before trusting anything it says: what is one row? how many are there? what is missing, and is it missing at random? what is the range, and are the extremes real? what changed over time, and did the definition change with it? | Data feasibility memo, end of week |
+| 11 | Nov 4 | **Interrogating data with an assistant**<br><span class='sess'>A · 2:05</span> Getting real data in front of you and putting the checklist to work through an assistant: summaries, joins, quick plots. Then the harder half — knowing whether the answer is right without reading the code. Row counts across a join, totals against a published figure, five raw records read by hand. What not to upload, and why<br><span class='sess'>B · 3:35</span> Interrogate your own team's data and report the first thing that surprised you | Exercise 1 — interrogate a dataset |
+| 12 | Nov 11 | **Seeing what is in the data**<br><span class='sess'>A · 2:05</span> Which figure answers which question, and why. Exploring distributions, time, and space; developing the instinct to be curious about a dataset before modelling it. Then the flip side: what figures hide — aggregation, scale, binning, projection, cherry-picked windows — and how to read a published figure for what it is not showing<br><span class='sess'>B · 3:35</span> Rebuild a published figure from its underlying data, then produce the version you think is more honest | Exercise 2 — rebuild and critique a figure |
+
+### Part 5 --- Collaboration and the pitch
+
+Keeping a project reproducible and a team functional, and the proposal that carries into AEM 6992.
+
+| \# | Date | Meeting | Due |
+|:---|:---|:---|:---|
+| 13 | Nov 18 | **Collaboration, technical and human**<br><span class='sess'>A · 2:05</span> Keeping a project reproducible: where files live, naming, what 'the final version' actually means, and why a shared folder is not a plan. Version control at awareness level — what it is for, and when it is worth the cost. Then the part no tool solves: accountability, professionalism, and what to do when a teammate will not move. Conflict case studies<br><span class='sess'>B · 3:35</span> Workshop the design paper; peer critique in rotation | Research design paper, end of week |
+| | Nov 25 | *Thanksgiving recess — no class* | |
+| 14 | Dec 2 | **The pitch**<br><span class='sess'>A · 2:05</span> Final presentations and peer review<br><span class='sess'>B · 3:35</span> The handoff to AEM 6992: what each team does over the break | Final presentation & artifact, in class · Referee report in exam period |
+

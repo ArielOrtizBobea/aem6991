@@ -1,0 +1,29 @@
+---
+title: "4 · Where uncertainty comes from"
+subtitle: "Wednesday, September 16, 2026 · Meeting 4"
+pagetitle: "AEM 6991 · 4 Where uncertainty comes from"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+What is random and what is not. Residuals and errors; sampling variation; what a standard error is a statement about; where p-values come from and what they are not. How sample size, and how much the explanatory variable actually varies, move standard errors
+
+## Session B · 3:35–4:30
+
+Simulation lab: draw from a world you control, watch the p-value distribution under the null, then change the sample size and the variation and watch it move. Nothing to install, no code to write
+
+Your team's output is submitted before you leave.
+
+## Due
+
+—

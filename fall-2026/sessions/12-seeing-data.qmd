@@ -1,0 +1,29 @@
+---
+title: "12 · Seeing what is in the data"
+subtitle: "Wednesday, November 11, 2026 · Meeting 12"
+pagetitle: "AEM 6991 · 12 Seeing what is in the data"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+Which figure answers which question, and why. Exploring distributions, time, and space; developing the instinct to be curious about a dataset before modelling it. Then the flip side: what figures hide — aggregation, scale, binning, projection, cherry-picked windows — and how to read a published figure for what it is not showing
+
+## Session B · 3:35–4:30
+
+Rebuild a published figure from its underlying data, then produce the version you think is more honest
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Exercise 2 — rebuild and critique a figure

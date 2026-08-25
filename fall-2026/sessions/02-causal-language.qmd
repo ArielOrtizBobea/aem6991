@@ -1,0 +1,29 @@
+---
+title: "2 · Causal language"
+subtitle: "Wednesday, September 2, 2026 · Meeting 2"
+pagetitle: "AEM 6991 · 2 Causal language"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+Counterfactuals and potential outcomes; why every comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, back-door reasoning — and why controlling for everything makes things worse
+
+## Session B · 3:35–4:30
+
+Team formation and team charter; draw the graph for your own interest
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Team charter, same day

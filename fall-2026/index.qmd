@@ -1,0 +1,39 @@
+---
+pagetitle: "AEM 6991 · Fall 2026"
+toc: false
+---
+
+```{=html}
+<div class="aem-hero">
+  <p class="hero-number">AEM 6991</p>
+  <p class="hero-title">MPS Capstone Project I</p>
+  <p class="hero-instructors">Taught by
+    <a href="https://arielortizbobea.github.io">Prof.&nbsp;Ariel Ortiz-Bobea</a></p>
+  <div class="hero-meta">
+    Fall 2026 · Wednesdays 2:00 to 4:30 pm · Riley-Robb Hall B15<br>
+    Office hours: TBA in week 1, posted on Canvas
+  </div>
+</div>
+
+<div class="hero-brand">
+  <img src="images/cornell_seal.svg" alt="Cornell University" class="cornell-seal">
+</div>
+
+<div class="hero-summary">
+  <p>A capstone begins with an interest and has to end, by January, with a plan
+  somebody could actually execute. This course builds that plan in the order the
+  work really happens: form a question, work out what evidence would answer it,
+  and only then go looking for data — because the design is what tells you which
+  data you need, and teams who find data first end up rationalizing a question
+  around whatever they found. The conceptual core is the causal language
+  economists use — counterfactuals, graphs, the standard threats, and the
+  designs that get around them — taught on examples from industry and the news
+  before anyone opens a dataset. The back half is judgment about data: knowing
+  what to ask of a dataset, driving an AI assistant to answer it, checking
+  whether the answer is credible, and seeing what a figure shows and hides. It
+  is not a coding course — no prior econometrics or programming is assumed, and
+  none is taught.</p>
+</div>
+```
+
+{{< include _schedule_table.qmd >}}

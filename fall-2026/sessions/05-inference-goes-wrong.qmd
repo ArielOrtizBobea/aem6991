@@ -1,0 +1,29 @@
+---
+title: "5 · How inference goes wrong"
+subtitle: "Wednesday, September 23, 2026 · Meeting 5"
+pagetitle: "AEM 6991 · 5 How inference goes wrong"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+Bias: omitted variables, sorting and selection, measurement error (classical and not), reverse causality — what each does to the estimate and in which direction. False precision: dependence ignored, multiple testing, specification search
+
+## Session B · 3:35–4:30
+
+Take a published claim apart: which failure is doing the damage, and would more data fix it?
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Research problem presentation, in class

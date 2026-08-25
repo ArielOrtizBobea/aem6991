@@ -1,0 +1,64 @@
+/*-- scss:defaults --*/
+// Provisional slide layer for the session decks. Deliberately thin: one
+// accent, readable code, room for a full console dump. The real tokens land
+// with DESIGN.md after the design session -- replace this file then, not now.
+
+$carnelian: #b31b1b;
+
+$body-bg:          #ffffff;
+$body-color:       #1b1b1b;
+$link-color:       $carnelian;
+$selection-bg:     #f3dede;
+
+$presentation-font-size-root: 34px;
+$presentation-h1-font-size:   1.7em;
+$presentation-h2-font-size:   1.25em;
+$presentation-heading-color:  #1b1b1b;
+$presentation-heading-font-weight: 700;
+$code-block-font-size:        0.55em;
+
+/*-- scss:rules --*/
+
+// Section titles carry a carnelian rule so slide boundaries read at a glance.
+.reveal h2 {
+  border-bottom: 3px solid #{$carnelian};
+  padding-bottom: 0.25em;
+  margin-bottom: 0.6em;
+  text-align: left;
+}
+
+.reveal .slides section {
+  text-align: left;
+}
+
+.reveal .slide blockquote {
+  border-left: 4px solid #{$carnelian};
+  background: #fafaf7;
+  padding: 0.5em 0.9em;
+  font-style: normal;
+}
+
+// Console output can run long; give it a scrollbar instead of a broken slide.
+.reveal pre code,
+.reveal div.cell-output pre code {
+  max-height: 480px;
+}
+
+.reveal div.cell-output pre code {
+  color: #444;
+}
+
+// Tables: dense and quiet, matching the manual pages.
+.reveal table {
+  font-size: 0.62em;
+}
+
+.reveal .callout {
+  font-size: 0.8em;
+}
+
+.reveal .slide-number {
+  font-size: 0.5em;
+  color: #6b6b6b;
+  background: transparent;
+}

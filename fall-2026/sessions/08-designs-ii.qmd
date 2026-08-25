@@ -1,0 +1,29 @@
+---
+title: "8 · Research designs II"
+subtitle: "Wednesday, October 14, 2026 · Meeting 8"
+pagetitle: "AEM 6991 · 8 Research designs II"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+Difference-in-differences; panel data with local fixed effects; event studies. What identifying variation survives once the fixed effects are in, and what assumption you are leaning on
+
+## Session B · 3:35–4:30
+
+Name your own project's design, and the assumption you would have to defend
+
+Your team's output is submitted before you leave.
+
+## Due
+
+—

@@ -1,0 +1,29 @@
+---
+title: "7 · Research designs I"
+subtitle: "Wednesday, October 7, 2026 · Meeting 7"
+pagetitle: "AEM 6991 · 7 Research designs I"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+Experiments; instrumental variables; regression discontinuity. What variation each exploits, what each assumes, how each fails, and what it looks like when it is done well
+
+## Session B · 3:35–4:30
+
+Scenario clinic: given a question, would any of these three work here?
+
+Your team's output is submitted before you leave.
+
+## Due
+
+—

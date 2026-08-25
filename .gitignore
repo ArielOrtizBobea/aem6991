@@ -1,0 +1,16 @@
+/_site/
+/.quarto/
+.DS_Store
+
+**/*.quarto_ipynb
+
+# R
+.Rhistory
+.Rproj.user/
+
+# Student-identifying material never enters version control, in either repo.
+/_roster/
+**/roster*.csv
+**/tokens*.csv
+**/*_secret*
+.env

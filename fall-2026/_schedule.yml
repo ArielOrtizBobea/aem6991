@@ -1,0 +1,243 @@
+# AEM 6991 · Fall 2026 — single source of truth for the meeting schedule.
+#
+# The front-door table, the syllabus table, the _quarto.yml sidebar, and the
+# session pages are all generated from this file by _tools/build_site.R.
+# Edit here and re-run; never edit the generated artifacts by hand.
+#
+# To start a new year: copy this file into the new offering's folder, shift
+# the dates, and edit forward. The diff is the year-over-year change log.
+#
+# Fields
+#   num       meeting number; omit for a non-meeting row (recess)
+#             (the key is `num`, not `n` — YAML 1.1 reads a bare `n` as false)
+#   date      ISO date of the meeting
+#   part      part of the course this meeting belongs to
+#   title     full title, used as the session page heading
+#   short     compressed title for the sidebar (falls back to title)
+#   slug      session page filename, fall-2026/sessions/<slug>.qmd
+#   desc      one-to-two sentence description for the front-door table
+#   a         session A (2:05–3:15) — concept, with worked examples
+#   b         session B (3:35–4:30) — applied to the team's own project
+#   quizzes   how many quizzes this meeting (0, 1, or 2); default 2
+#   reading   assigned reading, quizzed at 2:05
+#   due       anything due on or around this meeting
+#   note      free text, used for recess rows
+
+term: "Fall 2026"
+meets: "Wednesdays, 2:00–4:30 pm"
+
+parts:
+  - id: 1
+    tab: "The question"
+    title: "The question"
+    blurb: >
+      Turn an interest into a question that can actually be answered — and
+      learn to read the literature well enough to know whether it has been.
+
+  - id: 2
+    tab: "Evidence & inference"
+    title: "Evidence, models, and inference"
+    blurb: >
+      The conceptual core. What a causal claim is, what the standard models
+      estimate, where uncertainty and p-values come from, and how inference
+      goes wrong. Taught on examples from industry and the news, before
+      anyone opens a dataset.
+
+  - id: 3
+    tab: "Designs & data"
+    title: "Designs, and the data they require"
+    blurb: >
+      The ways applied economists get a credible estimate, from conditioning
+      on observables to designs built on found variation — and then the step
+      most projects skip: working out what data the chosen design actually
+      demands, and whether you are allowed to have it.
+
+  - id: 4
+    tab: "Working with data"
+    title: "Working with data"
+    blurb: >
+      Not a coding course. The skills here are knowing what to ask of a
+      dataset, driving an assistant to answer it, checking whether the
+      answer is credible, and seeing what a figure shows and hides.
+
+  - id: 5
+    tab: "Teams & pitch"
+    title: "Collaboration and the pitch"
+    blurb: >
+      Keeping a project reproducible and a team functional, and the proposal
+      that carries into AEM 6992.
+
+meetings:
+  - num: 1
+    slug: "01-questions"
+    short: "Questions & the literature"
+    date: 2026-08-26
+    part: 1
+    title: "Where questions come from"
+    desc: "Several routes from an interest to a question that can be answered: gaps in what is known, extending or contesting a published result, an anomaly in the news, a decision someone has to make, an unexamined dataset. Then how to search the literature well enough to tell which route you are on."
+    a: "The capstone arc into AEM 6992. Several routes to a question: gaps in what is known, extending or contesting a published result, an anomaly in the news, a decision somebody actually has to make, a dataset that exists and nobody has looked at. What separates a topic from a question that can be answered — scope, unit, population, decision relevance. Ground rules for AI use, disclosure, and the fabricated-citation problem"
+    b: "Literature workshop: searching systematically, screening what you find, and building a synthesis matrix. Then run each route against your own interests and write five candidate questions. Every reference verified by opening it"
+    quizzes: 0
+    reading: "None"
+    due: "Statement of interest, before meeting 2"
+
+  - num: 2
+    slug: "02-causal-language"
+    short: "Causal language"
+    date: 2026-09-02
+    part: 2
+    title: "Causal language"
+    desc: "Counterfactuals and potential outcomes, and why a comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, and back-door reasoning."
+    a: "Counterfactuals and potential outcomes; why every comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, back-door reasoning — and why controlling for everything makes things worse"
+    b: "Team formation and team charter; draw the graph for your own interest"
+    reading: "TBD"
+    due: "Team charter, same day"
+
+  - num: 3
+    slug: "03-models"
+    short: "What the models do"
+    date: 2026-09-09
+    part: 2
+    title: "What the standard models do"
+    desc: "Linear regression, logit and probit, and count models, described rather than derived: what each estimates, which outcomes each suits, and how to read a coefficient."
+    a: "Linear regression, non-linear models (logit, probit), and count models — described, not derived. What each one estimates, what shape of outcome each is for, and how to read a coefficient in the units of the problem"
+    b: "Model clinic: for each team's outcome, which form fits — and what would the coefficient actually mean in that project's units?"
+    reading: "TBD"
+    due: ~
+
+  - num: 4
+    slug: "04-uncertainty"
+    short: "Uncertainty & p-values"
+    date: 2026-09-16
+    part: 2
+    title: "Where uncertainty comes from"
+    desc: "What is random and what is not; residuals and errors; what a standard error states; where p-values come from. How sample size and the variation in the explanatory variable move standard errors."
+    a: "What is random and what is not. Residuals and errors; sampling variation; what a standard error is a statement about; where p-values come from and what they are not. How sample size, and how much the explanatory variable actually varies, move standard errors"
+    b: "Simulation lab: draw from a world you control, watch the p-value distribution under the null, then change the sample size and the variation and watch it move. Nothing to install, no code to write"
+    reading: "TBD"
+    due: ~
+
+  - num: 5
+    slug: "05-inference-goes-wrong"
+    short: "How inference goes wrong"
+    date: 2026-09-23
+    part: 2
+    title: "How inference goes wrong"
+    desc: "Bias from omitted variables, sorting and selection, measurement error, and reverse causality — and false precision from ignored dependence, multiple testing, and specification search."
+    a: "Bias: omitted variables, sorting and selection, measurement error (classical and not), reverse causality — what each does to the estimate and in which direction. False precision: dependence ignored, multiple testing, specification search"
+    b: "Take a published claim apart: which failure is doing the damage, and would more data fix it?"
+    reading: "TBD"
+    due: "Research problem presentation, in class"
+
+  - num: 6
+    slug: "06-selection-on-observables"
+    short: "Conditioning on observables"
+    date: 2026-09-30
+    part: 3
+    title: "Conditioning on what you can observe"
+    desc: "Identifying an effect by controlling for what you can measure: controls, matching, and the causal reading of a regression coefficient. The workhorse of applied work — and the assumption it rests on, which is also its ceiling."
+    a: "What it means to identify an effect by conditioning on observables: controls, matching, and when a regression coefficient can be read causally. Why 'I added controls' is a claim about the graph rather than a technique, and exactly what would have to be true for it to hold"
+    b: "Back to the graph you drew in meeting 2: could you close every back door with data you could actually obtain?"
+    reading: "TBD"
+    due: "Problem statement & literature review, end of week"
+
+  - num: 7
+    slug: "07-designs-i"
+    short: "Research designs I"
+    date: 2026-10-07
+    part: 3
+    title: "Research designs I"
+    desc: "Experiments, instrumental variables, and regression discontinuity: the variation each exploits, the assumption each requires, and how each fails."
+    a: "Experiments; instrumental variables; regression discontinuity. What variation each exploits, what each assumes, how each fails, and what it looks like when it is done well"
+    b: "Scenario clinic: given a question, would any of these three work here?"
+    reading: "TBD"
+    due: ~
+
+  - num: 8
+    slug: "08-designs-ii"
+    short: "Research designs II"
+    date: 2026-10-14
+    part: 3
+    title: "Research designs II"
+    desc: "Difference-in-differences, panel data with local fixed effects, and event studies: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate."
+    a: "Difference-in-differences; panel data with local fixed effects; event studies. What identifying variation survives once the fixed effects are in, and what assumption you are leaning on"
+    b: "Name your own project's design, and the assumption you would have to defend"
+    reading: "TBD"
+    due: ~
+
+  - num: 9
+    slug: "09-data-and-ethics"
+    short: "Data needs, ethics & IRB"
+    date: 2026-10-21
+    part: 3
+    title: "What the design needs, and what you are allowed to have"
+    desc: "Working backwards from a design to its data requirements — unit, aggregation, frequency, span, coverage — then the landscape of sources. And the gate most projects discover too late: research ethics, the Cornell IRB, and data-use agreements."
+    a: "Working backwards from a design to its data requirements: unit of observation, level of aggregation, time frequency, span, coverage, and which comparisons the data has to contain. Can this be done with county-level data, or does it need individuals? Then the landscape — administrative records, official statistics, firm and platform data — and what each costs in money and time"
+    b: "Research ethics, the Cornell IRB, and data-use agreements: what needs approval, what does not, and how long it takes. Then work out whether your own project needs it — while there is still time to change course"
+    reading: "TBD"
+    due: "Data feasibility memo assigned"
+
+  - num: 10
+    slug: "10-midterm-asking-data"
+    short: "Midterm & asking of data"
+    date: 2026-10-28
+    part: 4
+    title: "Midterm; what to ask of a dataset"
+    desc: "The midterm asks you to design a study for a given situation in writing. Then the interrogation checklist every dataset should face before anyone models it."
+    a: "**Midterm** — you are given a situation and asked to design a study to evaluate it, in writing: the question, the design, what data it requires, and what would undermine it"
+    b: "What to ask of a dataset, before trusting anything it says: what is one row? how many are there? what is missing, and is it missing at random? what is the range, and are the extremes real? what changed over time, and did the definition change with it?"
+    quizzes: 1
+    reading: "Review"
+    due: "Data feasibility memo, end of week"
+
+  - num: 11
+    slug: "11-interrogating-data"
+    short: "Interrogating data"
+    date: 2026-11-04
+    part: 4
+    title: "Interrogating data with an assistant"
+    desc: "Driving an AI assistant to summarize, join, and plot real data — and the checks that catch a wrong answer. You are graded on the questions you ask and the checks you run, never on code you wrote."
+    a: "Getting real data in front of you and putting the checklist to work through an assistant: summaries, joins, quick plots. Then the harder half — knowing whether the answer is right without reading the code. Row counts across a join, totals against a published figure, five raw records read by hand. What not to upload, and why"
+    b: "Interrogate your own team's data and report the first thing that surprised you"
+    reading: "TBD"
+    due: "Exercise 1 — interrogate a dataset"
+
+  - num: 12
+    slug: "12-seeing-data"
+    short: "Seeing the data"
+    date: 2026-11-11
+    part: 4
+    title: "Seeing what is in the data"
+    desc: "Which figure answers which question, and why. Exploring distributions, time, and space — then the flip side: what figures hide through aggregation, scale, binning, projection, and chosen windows."
+    a: "Which figure answers which question, and why. Exploring distributions, time, and space; developing the instinct to be curious about a dataset before modelling it. Then the flip side: what figures hide — aggregation, scale, binning, projection, cherry-picked windows — and how to read a published figure for what it is not showing"
+    b: "Rebuild a published figure from its underlying data, then produce the version you think is more honest"
+    reading: "TBD"
+    due: "Exercise 2 — rebuild and critique a figure"
+
+  - num: 13
+    slug: "13-collaboration"
+    short: "Collaboration"
+    date: 2026-11-18
+    part: 5
+    title: "Collaboration, technical and human"
+    desc: "Keeping a project reproducible and a team functional: where files live, what 'the final version' means, and what to do when a teammate will not move."
+    a: "Keeping a project reproducible: where files live, naming, what 'the final version' actually means, and why a shared folder is not a plan. Version control at awareness level — what it is for, and when it is worth the cost. Then the part no tool solves: accountability, professionalism, and what to do when a teammate will not move. Conflict case studies"
+    b: "Workshop the design paper; peer critique in rotation"
+    reading: "TBD"
+    due: "Research design paper, end of week"
+
+  - date: 2026-11-25
+    note: "Thanksgiving recess — no class"
+
+  - num: 14
+    slug: "14-pitch"
+    short: "The pitch"
+    date: 2026-12-02
+    part: 5
+    title: "The pitch"
+    desc: "Final presentations and peer review, then the handoff to AEM 6992."
+    a: "Final presentations and peer review"
+    b: "The handoff to AEM 6992: what each team does over the break"
+    quizzes: 1
+    reading: "None"
+    due: "Final presentation & artifact, in class · Referee report in exam period"

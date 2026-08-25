@@ -1,0 +1,448 @@
+/*-- scss:defaults --*/
+// AEM 6991 — minimal theme layer over cosmo.
+// Typography and chrome are matched to r4ds.hadley.nz, read off the rendered
+// page rather than guessed: Source Sans Pro, 18px root, 1.5 line height,
+// #343a40 body text, white sidebar 250px wide, sidebar links 0.925rem #595959.
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap";
+
+$font-family-sans-serif: "Source Sans Pro", -apple-system, "system-ui", "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+
+$font-size-root:   18px;
+$line-height-base: 1.5;
+
+$body-color: #343a40;
+$body-bg:    #ffffff;
+
+$h1-font-size: 2rem;
+$headings-font-weight: 600;
+
+// One accent token, used as a state signal — never as decoration.
+$carnelian: #b31b1b;
+$primary:    $carnelian;
+$link-color: $carnelian;
+
+// Chrome stays white, as on the reference site; no grey sidebar panel.
+$sidebar-bg:         #ffffff;
+$sidebar-fg:         #595959;
+$navbar-bg:          #ffffff;
+$body-secondary-bg:  #ffffff;
+$border-color:       #e3e3de;
+$table-border-color: #dee2e6;
+
+// 250px matches r4ds, but the numbered labels carry a figure-space pad and an
+// en-space gap (instructor request, 2026-08-21), which pushed the three
+// longest labels into a wrap at 250. 270 holds every label on one line.
+$grid-sidebar-width: 270px;
+
+/*-- scss:rules --*/
+
+// The sidebar is the only navigation surface; keep it flat and white so the
+// content column, not a shaded panel, is what the eye lands on.
+#quarto-sidebar,
+.sidebar-navigation,
+#quarto-margin-sidebar,
+.quarto-sidebar-collapse-item {
+  background-color: #fff;
+}
+
+#quarto-sidebar {
+  border-right: 1px solid #e9ecef;
+}
+
+// Sidebar entries: r4ds sizing, quiet grey, tight leading so a 40-item list
+// stays scannable.
+.sidebar-navigation .sidebar-item .sidebar-item-container .sidebar-item-text {
+  font-size: 0.925rem;
+  line-height: 1.25;
+  color: #595959;
+  // Hanging indent: if a label ever does wrap, the second line starts under
+  // the title text, not flush under the number.
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.sidebar-navigation .sidebar-item {
+  margin-bottom: 0.15rem;
+}
+
+// Accent marks the current page only.
+.sidebar-navigation .sidebar-item-container .active,
+.sidebar-navigation .sidebar-item-container .show > .sidebar-link {
+  color: $carnelian;
+  font-weight: 600;
+}
+
+// Section headers ("Act I — The workbench") read as labels, not as links.
+.sidebar-navigation .sidebar-item-section > .sidebar-item-container > .sidebar-item-text,
+.sidebar-navigation .sidebar-item-section > .sidebar-item-container > .sidebar-link {
+  font-size: 0.95rem;
+  color: #343a40;
+}
+
+// Sidebar masthead: same feel as the front-door hero — centered,
+// letterspaced course number with the official catalog title in carnelian
+// beneath. The title line is injected with ::after so the whole block stays
+// one home link and _quarto.yml keeps a plain-text sidebar title.
+.sidebar-header {
+  text-align: center !important;
+}
+.sidebar .sidebar-title a {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b6b6b;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.sidebar .sidebar-title a::after {
+  content: "MPS Capstone Project I";
+  display: block;
+  margin-top: 0.35rem;
+  color: $carnelian;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+// Right-hand contents list.
+.sidebar nav[role="doc-toc"] > h2,
+#toc-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a {
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a.active {
+  border-left-color: $carnelian;
+  color: $carnelian;
+}
+
+// Narrow-leading-column tables. Pandoc derives column widths from the dash
+// counts in the source and writes them as inline styles on the <col> elements,
+// which routinely hands 37% to a "Date" column and starves the prose column.
+// This hits every table shaped label · label · prose — the shared schedule and
+// homework partials, and the run-of-show tables in session pages.
+//
+// Wrap such a table and every column but the last shrinks to its content while
+// the last column absorbs the remainder. Works at any column count:
+//
+//     ::: {.tight-cols}
+//     | # | Date | Topic |
+//     ...
+//     :::
+//
+// `.schedule` is the original name, kept because pages already use it.
+.schedule table,
+.tight-cols table {
+  width: 100%;
+}
+
+// !important: pandoc's inline <col> styles outrank a stylesheet rule.
+.schedule table col,
+.tight-cols table col {
+  width: auto !important;
+}
+
+// width:1% is shrink-to-fit under auto table layout. :not(:last-child) rather
+// than a fixed nth-child count, so the same rule serves any table whose last
+// column is the prose one.
+.schedule table th:not(:last-child),
+.schedule table td:not(:last-child),
+.tight-cols table th:not(:last-child),
+.tight-cols table td:not(:last-child) {
+  width: 1%;
+}
+
+// Data cells never wrap: a date broken across lines is unreadable.
+.schedule table td:not(:last-child),
+.tight-cols table td:not(:last-child) {
+  white-space: nowrap;
+}
+
+// Headers are a separate case. They are often longer than what they label
+// ("Due (Thu 8:40)" over "Sep 10"), and holding one on a single line sets the
+// whole column to the header's width. On a 375px screen that stole ~57px from
+// the prose column and pushed every homework row to three or more lines, so
+// narrow viewports let headers wrap. Wide ones have the room and read better
+// with headers intact, hence the one media query — measured, not assumed:
+// 375px prose column 103px -> 171px, worst row 5 lines -> 2.
+@media (min-width: 768px) {
+  .schedule table th,
+  .tight-cols table th {
+    white-space: nowrap;
+  }
+}
+
+table {
+  font-size: 0.94rem;
+}
+
+thead th {
+  border-bottom: 2px solid #cfcfc9;
+  font-weight: 600;
+}
+
+// ---------------------------------------------------------------------------
+// Front door (fall-2026/index.qmd only). The hero and the course-in-blocks
+// grid follow the instructor's AEM 7010 landing page, values read off that
+// page's own stylesheet: centered letterspaced course number over a carnelian
+// course title, muted meta lines, then color-coded blocks whose mini-cards
+// link to sessions. Unlike 7010 the sidebar stays visible — it is this site's
+// only navigation — so the grid auto-fits the narrower content column.
+.aem-hero {
+  text-align: center;
+  padding: 1.75rem 1rem 0.75rem;
+}
+.aem-hero .hero-number {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6b6b6b;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 0.6rem;
+  line-height: 1.2;
+}
+.aem-hero .hero-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: $carnelian;
+  margin: 0 0 0.5rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+.aem-hero .hero-instructors {
+  font-size: 0.92rem;
+  color: #6b6b6b;
+  max-width: 620px;
+  margin: 0 auto 0.9rem;
+  line-height: 1.5;
+}
+.aem-hero .hero-instructors a { color: $carnelian; }
+.aem-hero .hero-meta {
+  font-size: 0.92rem;
+  color: #6b6b6b;
+  line-height: 1.6;
+}
+// Cornell seal between the hero and the table — the page's one branding mark.
+.hero-brand {
+  text-align: center;
+  margin: 0.25rem 0 1.6rem;
+}
+.hero-brand .cornell-seal {
+  height: 64px;
+  width: auto;
+}
+.hero-summary {
+  max-width: 44rem;
+  margin: 0 auto 2rem;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: #343a40;
+}
+.hero-summary p { margin: 0; }
+
+// The one course table. Deliberately line-free (instructor: "too many
+// horizontal lines"): no cell borders, three content columns — date, topic,
+// homework — and a colored rail cell that spans each lecture group's rows.
+.grouped-schedule {
+  margin-bottom: 1.25rem;
+}
+// Phones scroll the table sideways; wider viewports must NOT get a scroll
+// container, or the sticky header would stick to the wrapper instead of the
+// viewport. 680 ≈ the table's 640px minimum plus margin.
+@media (max-width: 679.98px) {
+  .grouped-schedule { overflow-x: auto; }
+}
+.grouped-schedule table {
+  width: 100%;
+  // Fixed layout + the colgroup in index.qmd: the topic column gets the
+  // leftover width instead of being squeezed by the homework column's
+  // intrinsic size. min-width makes phones scroll the table sideways rather
+  // than crush the topic column.
+  table-layout: fixed;
+  min-width: 640px;
+  font-size: 0.92rem;
+  // separate, not collapse: collapsed borders detach from position:sticky
+  // headers in Chrome. All cell borders are off anyway.
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.grouped-schedule th,
+.grouped-schedule td {
+  padding: 0.4rem 0.9rem 0.4rem 0.55rem;
+  vertical-align: top;
+  border: none !important;
+  background: none;
+}
+// Column widths live on the header cells: under table-layout fixed the
+// first row defines the columns, and pandoc strips a <colgroup> out of raw
+// HTML blocks, so CSS is the only reliable carrier.
+.grouped-schedule thead th:nth-child(1) { width: 2.6rem; }
+.grouped-schedule thead th:nth-child(2) { width: 6.4rem; }
+.grouped-schedule thead th:nth-child(4) { width: 18rem; }
+.grouped-schedule thead th {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b6b6b;
+  padding-bottom: 0.5rem;
+  // The header sticks to the viewport while the semester scrolls under it.
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 1px 0 #e3e3de;  // border-bottom detaches when sticky
+}
+// Group tabs: full-height sideways labels, one per lecture group. The
+// palette rotates through six muted families of matched intensity —
+// slate blue, teal, olive gold, carnelian, plum, warm grey — restarting
+// the cycle at Part II. All are white-text safe.
+$group-colors: (
+  g01: #4a6584, g02: #3d7068, g03: #8a6f2f,
+  g04: #b31b1b, g05: #7a4f6d, g06: #6b6558,
+  g07: #4a6584, g08: #3d7068, g09: #8a6f2f,
+  g10: #b31b1b, g11: #7a4f6d
+);
+.grouped-schedule .g-rail {
+  position: relative;
+  padding: 0 !important;
+}
+// The tab fills its cell exactly: flush square right edge against the
+// content column, so a row highlight meets it with no gap and no corner
+// notch. Rounding stays on the outer (left) side only.
+.grouped-schedule .g-rail span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);   // vertical-rl reads down; flipped reads up
+  overflow: hidden;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
+  // The span is rotated 180°, so corner values are mirrored: this renders as
+  // VISUALLY rounded outer (left) corners and sharp inner (right) corners —
+  // a proper tab. Sits above the highlight extension that tucks underneath.
+  border-radius: 0 10px 10px 0;
+  z-index: 2;
+}
+// No dividing lines between groups: the full-height tabs delimit them, and
+// whitespace does the separating (instructor, 2026-08-22).
+@each $g, $c in $group-colors {
+  .grouped-schedule tr.g-first.#{$g} .g-rail span { background: $c; }
+}
+// Breathing room where a new group starts. The gap is a white BORDER, not
+// padding, so a row highlight's background can never bleed into it — the
+// band's top edge and the tab's top edge land on the same line.
+.grouped-schedule .g-first td {
+  border-top: 1.05rem solid #fff !important;
+  padding-top: 0.35rem;
+}
+.grouped-schedule .g-first td.g-rail {
+  border-top: 1.05rem solid #fff !important;
+}
+// Date column: quiet, fixed, never wraps.
+.grouped-schedule td:nth-child(2):not(.topic),
+.grouped-schedule tr:not(.g-first):not(.part-row) td:first-child {
+  white-space: nowrap;
+  width: 1%;
+  color: #6b6b6b;
+  font-variant-numeric: tabular-nums;
+}
+// Topic cell: a short title on its own line, then an understated grey
+// description. The title reads as text; the accent appears on hover.
+.grouped-schedule .topic a {
+  display: block;
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+.grouped-schedule .topic a:hover {
+  color: $carnelian;
+  text-decoration: underline;
+}
+.grouped-schedule .topic .t-desc {
+  display: block;
+  margin-top: 0.1rem;
+  color: #8e8e89;
+  line-height: 1.4;
+}
+.grouped-schedule td.hw {
+  font-size: 0.88rem;
+  min-width: 11rem;
+  padding-right: 0;
+}
+.grouped-schedule td.hw a { font-weight: 600; }
+.grouped-schedule .due {
+  color: #6b6b6b;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+// "Part I — Foundations" separator rows.
+.grouped-schedule .part-row td {
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6b6b6b;
+  padding: 1.6rem 0 0.6rem;
+}
+// Break days: quiet grey text, no band, no italics.
+.grouped-schedule .break-row td {
+  color: #8e8e89;
+}
+// The upcoming lecture — a script on the front door highlights the next
+// class day during the term (inert in any other year). The soft carnelian
+// band is the only highlight in the table.
+.grouped-schedule tr.next-class td:not(.g-rail) {
+  background: #f0f0ec;
+}
+.grouped-schedule td.today-cell {
+  position: relative;
+}
+.grouped-schedule td.today-cell::before {
+  content: "next class";
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $carnelian;
+  line-height: 1.2;
+  margin-bottom: 0.15rem;
+}
+// The band slides half a tab-width under the tab, so it reads as ending
+// where the tab begins. The tab (z-index 2) paints over it.
+.grouped-schedule td.today-cell::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1.3rem;
+  width: 1.3rem;
+  background: #f0f0ec;
+  z-index: 1;
+}

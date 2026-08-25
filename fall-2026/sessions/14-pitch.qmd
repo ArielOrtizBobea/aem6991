@@ -1,0 +1,29 @@
+---
+title: "14 · The pitch"
+subtitle: "Wednesday, December 2, 2026 · Meeting 14"
+pagetitle: "AEM 6991 · 14 The pitch"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** None
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+Final presentations and peer review
+
+## Session B · 3:35–4:30
+
+The handoff to AEM 6992: what each team does over the break
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Final presentation & artifact, in class · Referee report in exam period

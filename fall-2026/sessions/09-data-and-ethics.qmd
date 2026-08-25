@@ -1,0 +1,29 @@
+---
+title: "9 · What the design needs, and what you are allowed to have"
+subtitle: "Wednesday, October 21, 2026 · Meeting 9"
+pagetitle: "AEM 6991 · 9 What the design needs, and what you are allowed to have"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+Working backwards from a design to its data requirements: unit of observation, level of aggregation, time frequency, span, coverage, and which comparisons the data has to contain. Can this be done with county-level data, or does it need individuals? Then the landscape — administrative records, official statistics, firm and platform data — and what each costs in money and time
+
+## Session B · 3:35–4:30
+
+Research ethics, the Cornell IRB, and data-use agreements: what needs approval, what does not, and how long it takes. Then work out whether your own project needs it — while there is still time to change course
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Data feasibility memo assigned

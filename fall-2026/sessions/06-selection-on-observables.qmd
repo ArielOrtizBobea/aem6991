@@ -1,0 +1,29 @@
+---
+title: "6 · Conditioning on what you can observe"
+subtitle: "Wednesday, September 30, 2026 · Meeting 6"
+pagetitle: "AEM 6991 · 6 Conditioning on what you can observe"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+What it means to identify an effect by conditioning on observables: controls, matching, and when a regression coefficient can be read causally. Why 'I added controls' is a claim about the graph rather than a technique, and exactly what would have to be true for it to hold
+
+## Session B · 3:35–4:30
+
+Back to the graph you drew in meeting 2: could you close every back door with data you could actually obtain?
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Problem statement & literature review, end of week

@@ -1,0 +1,29 @@
+---
+title: "10 · Midterm; what to ask of a dataset"
+subtitle: "Wednesday, October 28, 2026 · Meeting 10"
+pagetitle: "AEM 6991 · 10 Midterm; what to ask of a dataset"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** Review
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+**Midterm** — you are given a situation and asked to design a study to evaluate it, in writing: the question, the design, what data it requires, and what would undermine it
+
+## Session B · 3:35–4:30
+
+What to ask of a dataset, before trusting anything it says: what is one row? how many are there? what is missing, and is it missing at random? what is the range, and are the extremes real? what changed over time, and did the definition change with it?
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Data feasibility memo, end of week

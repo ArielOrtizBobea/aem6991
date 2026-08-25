@@ -1,7 +1,7 @@
 ---
-title: "12 · Seeing what is in the data"
+title: "12 · Seeing the data"
 subtitle: "Wednesday, November 11, 2026 · Meeting 12"
-pagetitle: "AEM 6991 · 12 Seeing what is in the data"
+pagetitle: "AEM 6991 · 12 Seeing the data"
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -22,9 +22,9 @@ Which figure answers which question, and why. Exploring distributions, time, and
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
 Rebuild a published figure from its underlying data, then produce the version you think is more honest
 

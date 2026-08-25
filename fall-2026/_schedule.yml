@@ -20,7 +20,7 @@
 #             written as a capability, not a topic list.
 #   a         session A (2:05–3:15) — concept, with worked examples
 #   b         session B (3:35–4:30) — applied to the team's own project.
-#             Every session B opens with a ten-minute team stand-up.
+#             Every session B opens with a ten-minute team check-in.
 #   quizzes   how many quizzes this meeting (0 or 1); default 1
 #   reading   assigned reading, quizzed at 2:05
 #   due       anything due on or around this meeting
@@ -40,7 +40,7 @@ parts:
       has been.
 
   - id: 2
-    tab: "Evidence & inference"
+    tab: "Inference"
     title: "Evidence, models, and inference"
     blurb: >
       The conceptual core. What a causal claim is, what the standard models
@@ -69,7 +69,7 @@ parts:
       and cannot get you.
 
   - id: 5
-    tab: "Reporting & pitch"
+    tab: "Reporting"
     title: "Seeing, writing, and pitching"
     blurb: >
       Seeing what a figure shows and hides, writing the design paper,
@@ -112,7 +112,7 @@ deliverables:
     weight: "5 %"
     due_meeting: 6
     when: "in class"
-    desc: "5 slides, 5 minutes: the problem, why it matters, what is already known, and which archetype it is. Milestone 1."
+    desc: "5 slides, 5 minutes: the problem, why it matters, what is already known, and which archetype it is. The first of your two in-class presentations."
 
   - num: 2
     name: "Problem and literature"
@@ -161,46 +161,43 @@ deliverables:
         desc: "~5 pages, written out from the workshopped sketch."
 
   - num: 5
-    name: "Final presentation & artifact"
+    name: "Final presentation, and the thing you leave behind"
     weight: "5 %"
     due_meeting: 14
     when: "in class"
-    desc: "10-minute presentation plus a consolidating artifact — poster or written plan, format announced by week 10."
+    desc: "A 10-minute presentation, plus one thing that pulls the whole semester together — a poster or a written plan. Which one is announced by week 10."
 
 meetings:
   - num: 1
     slug: "01-questions"
-    short: "Questions & the literature"
     date: 2026-08-26
     part: 1
-    title: "Where questions come from"
+    title: "Finding a question"
     desc: "What a capstone is and is not, and the five shapes a good one takes: evaluation, preference and pricing, prediction and risk, diagnosis and benchmarking, feasibility and landscape. The anti-patterns, the feasibility filter, and how to search the literature well enough to know your question has not already been answered."
     goal: "Turn a dataset you did not choose into a question worth asking, break somebody else's question by naming the filter it fails, and know where to look for data you already have access to."
     a: "The capstone arc into AEM 6992, and what this is not: you are not writing a paper for a journal, you are building the analysis a competent team needs before a decision that costs real money. Five project archetypes — evaluation, preference and pricing, prediction and risk, diagnosis and benchmarking, feasibility and landscape — with what each can claim, what design it needs, and how each fails. The anti-patterns, and the four-question feasibility filter. Ground rules for AI use, disclosure, and the fabricated-citation problem"
     b: "Where to look: the Cornell library's licensed holdings and the Dewey marketplace the Johnson College subscribes to, browsed live. Then the question relay, in groups and against the clock. Each group gets a dataset and writes the best question it can. Datasets and questions then rotate: your next job is to break the question you inherit, naming which filter kills it, before writing your own on a dataset you have not seen. Third round you may combine any two datasets you have held. Points for questions that survive and for breaks that land"
     quizzes: 0
     reading: "None"
-    due: "Statement of interest, before meeting 2"
+    due: "One page on what you want to work on and why — before meeting 2"
 
   - num: 2
     slug: "02-causal-language"
-    short: "Causal language"
     date: 2026-09-02
     part: 2
     title: "Causal language"
     desc: "Counterfactuals and potential outcomes, and why a comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, and back-door reasoning."
-    goal: "Draw your own project's causal graph, say which variable you must condition on and which you must not touch, and leave with a signed team charter."
+    goal: "Draw your own project's causal graph, say which variable you must condition on and which you must not touch, and leave with your team's ground rules agreed in writing."
     a: "Counterfactuals and potential outcomes; why every comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, back-door reasoning — and why controlling for everything makes things worse. Then the map for the rest of this half: every design we meet is a different way of closing a back door, and you will draw each one before you hear what it is called"
-    b: "Team formation and the team charter. The conflict protocol and the division of labour, agreed in writing now rather than negotiated in November: who does what, what happens when somebody misses a deadline, and when to escalate to me. The weekly stand-up starts today"
+    b: "Teams are formed, and then each team writes down its own ground rules — while everybody still gets along, rather than negotiating it in November. Who does what. What happens when somebody misses a deadline. How you settle a disagreement, and when to bring it to me. One page, signed by everyone, handed in before you leave. The weekly check-in starts today"
     reading: "TBD"
-    due: "Team charter, same day"
+    due: "Your team's written ground rules — agreed and handed in today"
 
   - num: 3
     slug: "03-models-uncertainty"
-    short: "Models & uncertainty"
     date: 2026-09-09
     part: 2
-    title: "Models, uncertainty, and prediction"
+    title: "Models and uncertainty"
     desc: "What the standard models estimate and how to read a coefficient in the units of the problem. Where uncertainty comes from and what a p-value is not. And the distinction that decides half your projects: explaining versus predicting."
     goal: "Read a coefficient in the units of the problem, say what a p-value does and does not tell you, and tell an explanatory question apart from a predictive one."
     a: "Linear regression, non-linear models, and count models — described, not derived: what each estimates and how to read a coefficient in the units of the problem. Then where uncertainty comes from: residuals and errors, sampling variation, what a standard error states, where p-values come from and what they are not. Finally the distinction that decides half the projects in this room — explaining versus predicting, and why a model that predicts well may tell you nothing about what to do"
@@ -210,10 +207,9 @@ meetings:
 
   - num: 4
     slug: "04-inference-goes-wrong"
-    short: "How inference goes wrong"
     date: 2026-09-16
     part: 2
-    title: "How inference goes wrong"
+    title: "How inference fails"
     desc: "Bias from omitted variables, sorting and selection, measurement error, and reverse causality — and false precision from ignored dependence, multiple testing, and specification search."
     goal: "Take a published claim apart: name the specific failure, say which direction it pushes the estimate, and say whether more data would fix it."
     a: "Bias: omitted variables, sorting and selection, measurement error (classical and not), reverse causality — what each does to the estimate and in which direction. False precision: dependence ignored, multiple testing, specification search"
@@ -223,10 +219,9 @@ meetings:
 
   - num: 5
     slug: "05-selection-on-observables"
-    short: "Conditioning on observables"
     date: 2026-09-23
     part: 2
-    title: "Conditioning on what you can observe"
+    title: "Controls and matching"
     desc: "Identifying an effect by controlling for what you can measure: controls, matching, and the causal reading of a regression coefficient. The workhorse of applied work — and the assumption it rests on, which is also its ceiling."
     goal: "Draw the back doors a set of controls closes, and state exactly what would have to be true for your regression coefficient to be read causally."
     a: "We start where every design meeting from here starts — at the graph. Conditioning on observables, drawn: which back doors a set of controls closes, and the one you cannot see well enough to close. Then controls and matching in practice, and when a regression coefficient can be read causally. Why 'I added controls' is a claim about the graph rather than a technique, and exactly what would have to be true for it to hold"
@@ -237,20 +232,18 @@ meetings:
 
   - num: 6
     slug: "06-writing-the-problem"
-    short: "Writing the problem"
     date: 2026-09-30
     part: 2
-    title: "Writing the problem, and presenting it"
+    title: "Writing the problem"
     desc: "The conceptual half is done and the first paper is due, so this is where writing gets taught. What a problem statement does, how a pile of sources becomes an argument, and then each team presents its problem to the room."
     goal: "Reconstruct the outline behind somebody else's paper, build your own the same way — topic sentence by topic sentence — and defend your research problem in front of the room."
     a: "Academic writing I — the method. A paper is built outline first: one topic sentence per paragraph, in order, before any prose exists. We start backwards, taking a published paper apart into the outline that must have produced it — which is also this week's exercise, and the fastest way to see that good writing has a skeleton. Then forwards: outline, then sketch, then full text. Every written product in this course is submitted in those stages, so the argument is fixed before the sentences are. Then what a problem statement in particular has to do — scope, unit, population, and the 'so what' in the first sentence rather than the fourth paragraph — and the failure modes: the topic with no question, hedging, the buried claim, the review that reviews without arguing"
-    b: "Milestone 1: each team presents its research problem in five minutes and takes questions from the room — the feedback you get here is what you write up this week. Then the first peer evaluation"
+    b: "Each team presents its research problem to the room in five minutes and takes questions — the feedback you get here is what you write up this week. Then you rate your teammates for the first time"
     reading: "TBD"
-    due: "Research problem presentation, in class · Peer evaluation 1"
+    due: "Present your research problem, in class · Rate your teammates"
 
   - num: 7
     slug: "07-designs-i"
-    short: "Research designs I"
     date: 2026-10-07
     part: 3
     title: "Research designs I"
@@ -263,7 +256,6 @@ meetings:
 
   - num: 8
     slug: "08-designs-ii"
-    short: "Research designs II"
     date: 2026-10-14
     part: 3
     title: "Research designs II"
@@ -276,10 +268,9 @@ meetings:
 
   - num: 9
     slug: "09-measurement"
-    short: "Measurement & data needs"
     date: 2026-10-21
     part: 4
-    title: "Measurement, and what the design demands"
+    title: "Measurement and data"
     desc: "Turning a construct into something a dataset can hold — the step where most capstones actually die. Then working backwards from the chosen design to the data it requires: unit, aggregation, frequency, span, and coverage."
     goal: "Turn your central construct into a variable somebody could actually record, and specify the unit, frequency, span, and coverage your design demands."
     a: "Constructs and operationalization: how you turn 'sustainability', 'financial literacy', or 'market power' into a variable somebody could actually record, and what makes that measure defensible or indefensible. Validity, and what a proxy costs you. Then working backwards from the design to its data requirements: unit of observation, level of aggregation, time frequency, span, coverage, and which comparisons the data has to contain — can this be done with county-level data, or does it need individuals?"
@@ -290,10 +281,9 @@ meetings:
 
   - num: 10
     slug: "10-getting-data"
-    short: "Getting the data"
     date: 2026-10-28
     part: 4
-    title: "Getting hold of the data"
+    title: "Getting the data"
     desc: "The practical business of obtaining data: what exists and who holds it, what proprietary access and a data-use agreement really cost in time, what the IRB needs and when, and what scraping and APIs can and cannot get you. Then how to write the memo that proves your data is real."
     goal: "Name your data source, its access route, its timeline, and your plan B — and know whether you need IRB approval or a data-use agreement before January."
     a: "The landscape: administrative records, official statistics, firm and platform data, purchased panels — what each costs in money and in months. Start with what Cornell already pays for: the library's licensed holdings and the Dewey marketplace through the Johnson College membership, met in meeting 1 and worked properly here. A surprising number of capstones propose buying data the College already subscribes to. Proprietary access and data-use agreements: who signs, how long it takes, and what they forbid you from publishing. Research ethics and the Cornell IRB: what needs approval, what does not, and how long it takes. Then scraping and APIs at awareness level — what they are, what they can and cannot get you, what the terms of service and the law actually say, and when paying for a licence is the cheaper answer. We do not write scrapers in this course; you need to know what to ask for and what it costs"
@@ -303,10 +293,9 @@ meetings:
 
   - num: 11
     slug: "11-midterm-interrogating-data"
-    short: "Midterm & interrogating data"
     date: 2026-11-04
     part: 4
-    title: "Midterm; interrogating data with an assistant"
+    title: "Midterm and using data"
     desc: "The midterm asks you to design a study for a given situation in writing. Then the hands-on half: driving an assistant across real data, and the checks that catch a wrong answer without reading the code."
     goal: "Design a study in writing under exam conditions; then interrogate a real dataset through an assistant and catch something that is wrong with it."
     a: "**Midterm** — you are given a situation and asked to design a study to evaluate it, in writing: the question, the design, what data it requires, and what would undermine it"
@@ -317,10 +306,9 @@ meetings:
 
   - num: 12
     slug: "12-seeing-data"
-    short: "Seeing the data"
     date: 2026-11-11
     part: 5
-    title: "Seeing what is in the data"
+    title: "Seeing the data"
     desc: "Which figure answers which question, and why. Exploring distributions, time, and space — then the flip side: what figures hide through aggregation, scale, binning, projection, and chosen windows."
     goal: "Choose the figure that answers your question, and read a published figure for what it is not showing."
     a: "Which figure answers which question, and why. Exploring distributions, time, and space; developing the instinct to be curious about a dataset before modelling it. Then the flip side: what figures hide — aggregation, scale, binning, projection, cherry-picked windows — and how to read a published figure for what it is not showing"
@@ -330,16 +318,15 @@ meetings:
 
   - num: 13
     slug: "13-writing-collaboration"
-    short: "Writing the design paper"
     date: 2026-11-18
     part: 5
-    title: "Writing the design paper; collaboration"
+    title: "Writing the design paper"
     desc: "The design paper as a genre: how to write an identification section, and how to state a limitation without gutting your own project. Then how to referee somebody else's — which is the same skill from the other side — and how to keep a project reproducible."
     goal: "Write an identification section that names your design, its assumption, and what would break it — and state a limitation without gutting your own project."
     a: "Academic writing III — the design paper. The same method on a harder object: you outlined this two weeks ago, so today is what the identification section has to contain — the graph you drew in meeting 8, your design named, its assumption stated, and what would break it — and how to state a limitation without gutting your own project. Then reading for the skeleton one last time: what a referee actually looks for, which is how you will write your own referee report. If you cannot reconstruct a paper's outline, that is the finding. Then reproducibility at awareness level: where files live, naming, what 'the final version' means, and when version control is worth the cost"
-    b: "Bring your sketch — topic sentences with the evidence noted under each, not prose. Workshop it in rotation: somebody else reads your skeleton and tells you where the argument jumps. Then Milestone 2, each team presenting its design and the assumption it is defending, and the second peer evaluation"
+    b: "Bring your sketch — topic sentences with the evidence noted under each, not prose. Workshop it in rotation: somebody else reads your skeleton and tells you where the argument jumps. Then each team presents its design and the assumption it is defending, and you rate your teammates for the second time"
     reading: "TBD"
-    due: "Design paper — sketch, workshopped in class · Milestone 2 presentation · Peer evaluation 2 · Exercise 2 — rebuild and critique a figure, end of week"
+    due: "Design paper — sketch, marked up in class · Present your design · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week"
     reschedule: "Instructor traveling — moves to Nov 17 or Nov 19; date to be confirmed"
 
   - date: 2026-11-25
@@ -347,14 +334,13 @@ meetings:
 
   - num: 14
     slug: "14-pitch"
-    short: "The pitch"
     date: 2026-12-02
     part: 5
     title: "The pitch"
-    desc: "Final presentations and peer review, then the handoff to AEM 6992."
+    desc: "Final presentations, and each team reviews another team's work. Then what your team owes AEM 6992 over the break."
     goal: "Present a plan somebody could pick up and execute in January, and know what your team owes AEM 6992 over the break."
     a: "Final presentations and peer review"
     b: "The handoff to AEM 6992: what each team does over the break"
     quizzes: 0
     reading: "None"
-    due: "Design paper — full, Dec 1 · Final presentation & artifact, in class · Referee report, Dec 15"
+    due: "Design paper — full, Dec 1 · Final presentation and poster or plan, in class · Your review of another team's paper, Dec 15"

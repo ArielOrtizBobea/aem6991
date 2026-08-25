@@ -1,7 +1,7 @@
 ---
-title: "1 · Where questions come from"
+title: "1 · Finding a question"
 subtitle: "Wednesday, August 26, 2026 · Meeting 1"
-pagetitle: "AEM 6991 · 1 Where questions come from"
+pagetitle: "AEM 6991 · 1 Finding a question"
 format:
   html:
     toc: true
@@ -592,8 +592,8 @@ this room already thinks like this.
 - What you want out of it professionally
 - **Which archetype**, and why
 
-**Teams are formed from these.** Meeting 2 is causal language and your team
-charter.
+**I form the teams from these.** Meeting 2 is causal language, and your
+team writes down its own ground rules.
 
 ::: {.notes}
 Say explicitly: not being able to pick an archetype is useful information,

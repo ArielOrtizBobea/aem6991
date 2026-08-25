@@ -1,7 +1,7 @@
 ---
-title: "11 · Midterm; interrogating data with an assistant"
+title: "11 · Midterm and using data"
 subtitle: "Wednesday, November 4, 2026 · Meeting 11"
-pagetitle: "AEM 6991 · 11 Midterm; interrogating data with an assistant"
+pagetitle: "AEM 6991 · 11 Midterm and using data"
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -22,9 +22,9 @@ No quiz this meeting.
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
 Real data in front of you, and the checklist from meeting 9 put to work through an assistant: summaries, joins, quick plots. Then the harder half — knowing whether the answer is right without reading the code. Row counts across a join, totals against a published figure, five raw records read by hand. What not to upload, and why
 

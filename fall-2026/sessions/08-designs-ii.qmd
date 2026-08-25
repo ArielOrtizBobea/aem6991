@@ -22,9 +22,9 @@ The same discipline on harder designs, each drawn first. Difference-in-differenc
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
 Draw your own project's design and mark the assumption carrying it — the one you would have to defend to a sceptic. This is the figure that goes in your design paper's identification section, so draw it to keep
 

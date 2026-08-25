@@ -8,7 +8,7 @@ pagetitle: "AEM 6991 · 2 Causal language"
 This page is a stub. Materials appear here before the meeting.
 :::
 
-**What you should be able to do after this meeting.** Draw your own project's causal graph, say which variable you must condition on and which you must not touch, and leave with a signed team charter.
+**What you should be able to do after this meeting.** Draw your own project's causal graph, say which variable you must condition on and which you must not touch, and leave with your team's ground rules agreed in writing.
 
 ## Before class
 
@@ -22,14 +22,14 @@ Counterfactuals and potential outcomes; why every comparison is a claim about a 
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
-Team formation and the team charter. The conflict protocol and the division of labour, agreed in writing now rather than negotiated in November: who does what, what happens when somebody misses a deadline, and when to escalate to me. The weekly stand-up starts today
+Teams are formed, and then each team writes down its own ground rules — while everybody still gets along, rather than negotiating it in November. Who does what. What happens when somebody misses a deadline. How you settle a disagreement, and when to bring it to me. One page, signed by everyone, handed in before you leave. The weekly check-in starts today
 
 Your team's output is submitted before you leave.
 
 ## Due
 
-Team charter, same day
+Your team's written ground rules — agreed and handed in today

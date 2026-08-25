@@ -30,17 +30,17 @@ website:
         # >>> BEGIN GENERATED MEETINGS — edit fall-2026/_schedule.yml, then
         - section: "Part 1 — The question"
           contents:
-            - text: " 1 Questions & the literature"
+            - text: " 1 Finding a question"
               href: fall-2026/sessions/01-questions.qmd
-        - section: "Part 2 — Evidence & inference"
+        - section: "Part 2 — Inference"
           contents:
             - text: " 2 Causal language"
               href: fall-2026/sessions/02-causal-language.qmd
-            - text: " 3 Models & uncertainty"
+            - text: " 3 Models and uncertainty"
               href: fall-2026/sessions/03-models-uncertainty.qmd
-            - text: " 4 How inference goes wrong"
+            - text: " 4 How inference fails"
               href: fall-2026/sessions/04-inference-goes-wrong.qmd
-            - text: " 5 Conditioning on observables"
+            - text: " 5 Controls and matching"
               href: fall-2026/sessions/05-selection-on-observables.qmd
             - text: " 6 Writing the problem"
               href: fall-2026/sessions/06-writing-the-problem.qmd
@@ -52,13 +52,13 @@ website:
               href: fall-2026/sessions/08-designs-ii.qmd
         - section: "Part 4 — Data & access"
           contents:
-            - text: " 9 Measurement & data needs"
+            - text: " 9 Measurement and data"
               href: fall-2026/sessions/09-measurement.qmd
             - text: "10 Getting the data"
               href: fall-2026/sessions/10-getting-data.qmd
-            - text: "11 Midterm & interrogating data"
+            - text: "11 Midterm and using data"
               href: fall-2026/sessions/11-midterm-interrogating-data.qmd
-        - section: "Part 5 — Reporting & pitch"
+        - section: "Part 5 — Reporting"
           contents:
             - text: "12 Seeing the data"
               href: fall-2026/sessions/12-seeing-data.qmd

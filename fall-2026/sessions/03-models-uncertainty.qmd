@@ -1,7 +1,7 @@
 ---
-title: "3 · Models, uncertainty, and prediction"
+title: "3 · Models and uncertainty"
 subtitle: "Wednesday, September 9, 2026 · Meeting 3"
-pagetitle: "AEM 6991 · 3 Models, uncertainty, and prediction"
+pagetitle: "AEM 6991 · 3 Models and uncertainty"
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -22,9 +22,9 @@ Linear regression, non-linear models, and count models — described, not derive
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
 Simulation lab: draw from a world you control. Watch the p-value distribution under the null, then change the sample size and the variation and watch it move. Then fit the same world in-sample and out-of-sample, and watch a model that looks excellent fail on data it has not seen. Nothing to install, no code to write
 

@@ -66,9 +66,10 @@ and what it hides.
 **Writing runs through the whole term rather than sitting at the end.**
 The research problem is taught in meeting 2, the memo in meeting 10,
 and the design paper in meeting 13, each with a short individual piece
-attached. So does teamwork: the charter and the conflict protocol are
-agreed in meeting 2, and every second session opens with a ten-minute
-stand-up that is written down and graded. None of this assumes prior
+attached. So does teamwork: each team writes down its own ground
+rules in meeting 2 --- who does what, and what happens when somebody
+misses a deadline --- and every second session opens with a ten-minute
+check-in that is written down and graded. None of this assumes prior
 econometrics or programming.
 
 **This is not a coding course.** You will work with real data from
@@ -188,7 +189,7 @@ can be carried and no student is sunk by a team.
 | Problem statement & literature review | 10 % | Team |
 | Data feasibility memo | 5 % | Team |
 | Research design paper | 15 % | Team |
-| Final presentation & artifact | 5 % | Team |
+| Final presentation, and the poster or plan | 5 % | Team |
 | *Team subtotal* | *50 %* | |
 
 Grading scale: A+ (≥ 98), A (≥ 92), A- (≥ 88), B+ (≥ 85), B (≥ 80),
@@ -223,9 +224,10 @@ below.
 
 ### Statement of interest (5 %)
 
-One to two pages, due before the second meeting. What you might want to
-work on, why it matters, and what you would want out of it
-professionally. Teams are formed from these, by the instructor.
+One to two pages, due before the second meeting --- **what you might
+want to work on, and why.** What the topic is, why it matters, and what
+you would want out of it professionally. I form the teams from these, so
+write it for me rather than for a grader.
 
 Name **which of the five project archetypes** your idea would be --- and
 why. The archetypes are introduced in meeting 1 and listed on that
@@ -284,14 +286,15 @@ The course description calls team leadership and management a major
 component of this course, so it is graded as one rather than left to
 goodwill.
 
-- **The weekly stand-up.** Every session B opens with ten minutes:
-  what you did since last week, what is blocked, and who does what
-  next. It is written down and submitted with that session's output.
-  The record is what makes an uneven division of labour visible in
-  week 4 rather than week 13.
-- **The charter.** Agreed in meeting 2, including the conflict
-  protocol and how work is divided. You are graded on whether you
-  actually followed it, not on how it reads.
+- **The weekly check-in.** Every session B opens with ten minutes:
+  what you did since last week, what is stuck, and who is doing what
+  next. Written down, and handed in with that session's work. The
+  record is what makes an uneven split of the work visible in week 4
+  rather than week 13.
+- **Your team's ground rules.** One page, agreed and signed in meeting
+  2: who does what, what happens when somebody misses a deadline, and
+  how you settle a disagreement. You are graded on whether you actually
+  followed it, not on how well it reads.
 - **Two peer evaluations**, in meetings 6 and 13, on a fixed template.
 
 This component is team-based in subject and individual in grade: two
@@ -354,8 +357,8 @@ disagree.
 :::
 
 *Thanksgiving recess falls on Wednesday, November 25 --- no class. The
-referee report is due in the exam period; the final artifact due date
-is to be announced.*
+review of another team's paper is due in the exam period; the date for
+the final poster or plan is to be announced.*
 
 ## Readings
 
@@ -381,9 +384,9 @@ Zelazny, *Say It With Charts*.
 
 The once-weekly format means missing one meeting is missing two
 sessions. Attendance is recorded through the opening quiz and through
-the session-B stand-up. Two dropped quiz scores absorb two full
+the session-B check-in. Two dropped quiz scores absorb two full
 absences without penalty and without a conversation. Beyond that,
-missed quizzes score zero, and a stand-up you were not present for
+missed quizzes score zero, and a check-in you were not present for
 cannot be filed retrospectively.
 
 If you are going to miss more than two meetings, talk to me early

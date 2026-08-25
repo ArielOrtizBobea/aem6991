@@ -1,7 +1,7 @@
 ---
-title: "9 · Measurement, and what the design demands"
+title: "9 · Measurement and data"
 subtitle: "Wednesday, October 21, 2026 · Meeting 9"
-pagetitle: "AEM 6991 · 9 Measurement, and what the design demands"
+pagetitle: "AEM 6991 · 9 Measurement and data"
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -26,9 +26,9 @@ Constructs and operationalization: how you turn 'sustainability', 'financial lit
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
 What to ask of a dataset before trusting anything it says: what is one row? how many are there? what is missing, and is it missing at random? what is the range, and are the extremes real? what changed over time, and did the definition change with it? Then the measurement clinic — the variable your question actually needs, and whether anything on earth measures it
 

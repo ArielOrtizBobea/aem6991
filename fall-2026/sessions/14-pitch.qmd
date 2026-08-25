@@ -22,9 +22,9 @@ Final presentations and peer review
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
 The handoff to AEM 6992: what each team does over the break
 
@@ -32,4 +32,4 @@ Your team's output is submitted before you leave.
 
 ## Due
 
-Design paper — full, Dec 1 · Final presentation & artifact, in class · Referee report, Dec 15
+Design paper — full, Dec 1 · Final presentation and poster or plan, in class · Your review of another team's paper, Dec 15

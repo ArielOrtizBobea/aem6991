@@ -1,7 +1,7 @@
 ---
-title: "10 · Getting hold of the data"
+title: "10 · Getting the data"
 subtitle: "Wednesday, October 28, 2026 · Meeting 10"
-pagetitle: "AEM 6991 · 10 Getting hold of the data"
+pagetitle: "AEM 6991 · 10 Getting the data"
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -22,9 +22,9 @@ The landscape: administrative records, official statistics, firm and platform da
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
 Academic writing II — the memo. Writing to a decision-maker rather than an examiner: the two-page discipline, the bottom line first, and the fallback that shows you thought about failure. Then the acquisition clinic: each team names its source, its access route, its timeline, and its plan B
 

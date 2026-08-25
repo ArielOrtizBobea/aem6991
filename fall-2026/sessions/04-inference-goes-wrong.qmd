@@ -1,7 +1,7 @@
 ---
-title: "4 · How inference goes wrong"
+title: "4 · How inference fails"
 subtitle: "Wednesday, September 16, 2026 · Meeting 4"
-pagetitle: "AEM 6991 · 4 How inference goes wrong"
+pagetitle: "AEM 6991 · 4 How inference fails"
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -22,9 +22,9 @@ Bias: omitted variables, sorting and selection, measurement error (classical and
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
 Take a published claim apart: which failure is doing the damage, and would more data fix it?
 

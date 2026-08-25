@@ -1,7 +1,7 @@
 ---
-title: "13 · Writing the design paper; collaboration"
+title: "13 · Writing the design paper"
 subtitle: "Wednesday, November 18, 2026 · Meeting 13"
-pagetitle: "AEM 6991 · 13 Writing the design paper; collaboration"
+pagetitle: "AEM 6991 · 13 Writing the design paper"
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -26,14 +26,14 @@ Academic writing III — the design paper. The same method on a harder object: y
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
-Bring your sketch — topic sentences with the evidence noted under each, not prose. Workshop it in rotation: somebody else reads your skeleton and tells you where the argument jumps. Then Milestone 2, each team presenting its design and the assumption it is defending, and the second peer evaluation
+Bring your sketch — topic sentences with the evidence noted under each, not prose. Workshop it in rotation: somebody else reads your skeleton and tells you where the argument jumps. Then each team presents its design and the assumption it is defending, and you rate your teammates for the second time
 
 Your team's output is submitted before you leave.
 
 ## Due
 
-Design paper — sketch, workshopped in class · Milestone 2 presentation · Peer evaluation 2 · Exercise 2 — rebuild and critique a figure, end of week
+Design paper — sketch, marked up in class · Present your design · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week

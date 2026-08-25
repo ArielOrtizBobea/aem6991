@@ -22,9 +22,9 @@ Three designs, each drawn before it is described. Experiments: randomisation cut
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
 Scenario clinic: given a question, draw the graph first and then say whether any of these three could work here — and if not, what you would need to have that you do not
 

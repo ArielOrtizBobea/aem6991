@@ -1,7 +1,7 @@
 ---
-title: "5 · Conditioning on what you can observe"
+title: "5 · Controls and matching"
 subtitle: "Wednesday, September 23, 2026 · Meeting 5"
-pagetitle: "AEM 6991 · 5 Conditioning on what you can observe"
+pagetitle: "AEM 6991 · 5 Controls and matching"
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -26,9 +26,9 @@ We start where every design meeting from here starts — at the graph. Condition
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
 Back to the graph you drew in meeting 2: could you close every back door with data you could actually obtain? Breakout rooms, then report back
 

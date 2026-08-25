@@ -1,7 +1,7 @@
 ---
-title: "6 · Writing the problem, and presenting it"
+title: "6 · Writing the problem"
 subtitle: "Wednesday, September 30, 2026 · Meeting 6"
-pagetitle: "AEM 6991 · 6 Writing the problem, and presenting it"
+pagetitle: "AEM 6991 · 6 Writing the problem"
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -22,14 +22,14 @@ Academic writing I — the method. A paper is built outline first: one topic sen
 
 ## Session B · 3:35–4:30
 
-Every session B opens with a ten-minute team stand-up: what you did,
-what is blocked, and who does what next — in writing, submitted with
-the session output.
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
 
-Milestone 1: each team presents its research problem in five minutes and takes questions from the room — the feedback you get here is what you write up this week. Then the first peer evaluation
+Each team presents its research problem to the room in five minutes and takes questions — the feedback you get here is what you write up this week. Then you rate your teammates for the first time
 
 Your team's output is submitted before you leave.
 
 ## Due
 
-Research problem presentation, in class · Peer evaluation 1
+Present your research problem, in class · Rate your teammates

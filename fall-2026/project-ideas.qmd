@@ -57,6 +57,72 @@ filter 2 --- "can you name the specific dataset, who holds it, and how
 you get it, *checked not assumed*" --- and doing it takes ten minutes in
 September instead of sinking a project in March.
 
+## Beyond Dewey: what else Cornell already pays for
+
+Dewey is one subscription among many. The library's own guides list the
+rest, and most of it you can open today with a netID.
+
+**Financial and company data.** **WRDS** (Wharton Research Data
+Services) is the standard academic host for historical finance and
+accounting data --- extensive, with use restrictions, so talk to a
+librarian before pulling anything large. **Capital IQ** covers 88,000
+public and 825,000 private companies. **Refinitiv Workspace** carries
+financials, market data, transactions and analyst reports (register with
+your Cornell email). **PitchBook** covers private equity and venture
+capital deals (log in via SSO). **Mergent Intellect** and **Data Axle**
+cover private companies. **EDGAR** is free and public.
+
+**Bloomberg terminals** are physical: three at Mann Library on the main
+level, plus the Management, Hotel and Law libraries. Worth an hour of
+anyone's time even if your project never uses one.
+
+**Market and industry research.** **Mintel**, **Passport**
+(Euromonitor), **Statista**, **IBISWorld** (700+ US industries),
+**Frost & Sullivan**, **Technavio** (20 downloads per Cornell email per
+month), plus **Business Source Complete** and **ABI/Inform** for the
+journals and trade press.
+
+**Demographics and geography.** **SimplyAnalytics** builds thematic maps
+and reports from US demographic, business and marketing data --- fast
+for a feasibility check. Then the free federal sources:
+**data.census.gov**, **BLS**, and the **Consumer Expenditure Survey**.
+
+### Nielsen, and the ladder that matters
+
+The **Cornell Center for Social Sciences** holds Cornell's subscription
+to the **Nielsen datasets at the Kilts Center** --- Consumer Panel Data,
+**Retail Scanner Data** (weekly price and volume from 90+ retail chains
+across all US markets), Ad Intel advertising data from 2010, and the
+PanelViews surveys. For anybody in Business of Food or Behavioral
+Marketing, that is close to the best data in the world for the question.
+
+There is a catch, and it is the most useful thing on this page.
+
+| You want | How you get it | How long |
+|:--|:--|:--|
+| Library databases, Statista, IBISWorld, SimplyAnalytics | netID | **Now** |
+| Dewey | Register, then wait for approval | **Days** |
+| The limited Nielsen Retail Scanner subset | netID plus a signed agreement | **Days** |
+| Full Nielsen / Kilts data | Project application via Cornell Research Services, then space in the Regulated Research Environment | **Months** |
+| Census, BLS or NCHS confidential microdata via the **FSRDC** | Federal project approval | **Longer than this degree** |
+
+::: {.callout-important appearance="simple"}
+**Read that table as the course in miniature.** Cornell holds data that
+would answer your question beautifully and that you cannot obtain on a
+capstone timeline. Knowing which row you are in is
+[feasibility filter 2](sessions/01-questions.qmd), and getting it wrong
+is the single most common way a capstone dies. This is what
+[meeting 10](sessions/10-getting-data.qmd) is about.
+
+Note the second Nielsen row: there is a **limited subset of the Retail
+Scanner data open to Cornell students** with a netID and a signature.
+That is days, not months. Start there.
+:::
+
+**Ask a librarian.** Tom Ottaviano covers agriculture, business and
+economics for Mann Library and takes appointments. Fifteen minutes with
+him in September is worth more than a week of guessing in November.
+
 ## A worked family: housing and place
 
 Housing is a good family to think in. The outcome is a price everybody
@@ -250,6 +316,155 @@ Data** and **Professional Football Club Financial Data** cover the top
 five European leagues and their second divisions. Sports data is a
 perfectly respectable place to learn a design --- the questions are
 sharp and the outcomes are measured.
+
+## Entry points by concentration
+
+::: {.callout-note appearance="simple"}
+**These are doors, not fences.** Teams here are formed *across*
+concentrations, not within them, so your team will almost certainly mix
+three or four of these. Some of the best capstones come from somebody
+applying their concentration's lens to a subject that belongs to
+somebody else's. Read your own heading first, then go and read a
+different one.
+:::
+
+### Behavioral Finance
+
+*Datasets:* Global Equity End of Day Pricing (170+ exchanges) · Bond
+Prices and Liquidity Indicators · Credit Curves · Social Sentiment
+Metrics for Equities (Twitter-derived, daily, 2011–) · Public Company
+Benefits and Financials · Daily Consumer Spend by Company · SBA Loans
+
+- **Does retail attention move prices, or follow them?** Social
+  Sentiment × equity prices. *The whole project is the reverse-causality
+  problem* — sentiment spikes after moves at least as often as before.
+- **Can card spending nowcast earnings?** Daily Consumer Spend by
+  Company carries 80+ same-store-sales metrics, ticker-mapped.
+  *Prediction (arch. 3)* — and the real question is whether the market
+  has already priced it, which is what makes it a decision rather than a
+  demo.
+- **Did PPP loans change small-business survival?** SBA Loans (13.4M
+  transactions) × Business Entity registries. *Evaluation (arch. 1)*,
+  with a well-developed literature to read first.
+
+### Behavioral Marketing
+
+*Datasets:* Brand Tracker (card spend, 13,000 merchants) · card panels
+(100M+ cards) · Consumer Insights Survey Data · Convenience Store
+Transaction Data (SKU level) · Desktop Search Keywords · Website Traffic
+Visits · Daily App Engagement
+
+- **How wrong is stated preference?** You have both here: Consumer
+  Insights Survey (what people say) and the card panel (what they did),
+  for overlapping brands. *A methods project with a real payoff* — and
+  the most concentration-appropriate question on this page.
+- **Does search interest predict purchase, or only awareness?** Desktop
+  Search Keywords × Brand Tracker. *Prediction (arch. 3)*.
+- **What actually substitutes when a price rises?** Convenience Store
+  Transaction Data is SKU-level, so you can watch the switch happen
+  inside a category. *Evaluation (arch. 1)*.
+
+### Sustainable Business and Economic Policy
+
+*Datasets:* US Climate Risk Data (5 hazards × ZIP) · Weather Data
+(daily, 1970–) · Nature Score · ESG Company Scores (UNEP FI criteria) ·
+Global Green Government Contracts · EV Charging & Alternative Fuel
+Stations (200,000+ ports, geocoded) · Compass Automotive (VIN-level
+listings and inferred sales)
+
+- **Did charger rollout change what people buy?** EV Charging Stations
+  gives you geocoded openings over time; Compass Automotive gives
+  VIN-level dealership listings and inferred sales. *That is a
+  difference-in-differences sitting in the open (arch. 1)* — and the
+  obvious threat is that chargers go where EV buyers already are.
+- **Do ESG scores predict anything, or describe disclosure?** ESG
+  Company Scores × Public Company Financials. *Diagnosis (arch. 4)*, and
+  the measurement problem is the project: a score built from voluntary
+  disclosure partly measures willingness to disclose.
+- **Who actually wins green procurement?** Global Green Government
+  Contracts, worldwide.
+
+### Business of Food
+
+*Datasets:* Convenience Store Transaction Data (SKU level) · Spend
+Patterns · Brand Tracker · Weekly Patterns Plus · Delivery Service
+Provider card transactions · Global Places (NAICS-coded POIs) · CDC
+PLACES · ACS block-group tables
+
+- **Did delivery cannibalise dine-in, or grow the category?** Delivery
+  Service Provider transactions × restaurant visits in Weekly Patterns
+  Plus. *Evaluation (arch. 1)*.
+- **Food access and health outcomes.** Global Places lets you separate
+  grocery from convenience by NAICS code; CDC PLACES gives 36 modelled
+  health measures by tract. *Diagnosis (arch. 4)* — and "food desert" is
+  a **construct**, which makes [meeting 9](sessions/09-measurement.qmd)
+  bite hard here.
+- **What happens to a basket when prices move?** SKU-level convenience
+  store data, again.
+
+### International Development Economics
+
+*Datasets:* Unified Government Contract Awards (120M+ awards, 65+
+countries) · Daily Macro Government Contracting (44 countries) · Port
+Performance (global) · Global FX Rates · Company and Office Data ·
+Firmographics · Job Records (global) · Global Places
+
+::: {.callout-warning appearance="simple"}
+**Be honest about coverage.** Dewey's catalogue is heavily
+U.S.-weighted, and this is the concentration it serves least well. That
+is useful feasibility information, not a discouragement — it means you
+should plan to lean on public international sources (World Bank, IMF,
+UN Comtrade, DHS surveys) and use Dewey where it genuinely adds
+something.
+:::
+
+- **Does port efficiency shape trade flows?** Port Performance covers
+  container processing times at global ocean ports from 2021, which
+  spans the congestion shock. *Evaluation or diagnosis*.
+- **Is procurement more concentrated where institutions are weaker?**
+  Unified Government Contract Awards across 65+ countries. *Diagnosis
+  (arch. 4)*, and measuring "institutional quality" is the hard part.
+- **Where do multinationals actually put offices, and what follows?**
+  Company and Office Data covers 200M+ companies globally.
+
+### Technology Management
+
+*Datasets:* Daily App Engagement (installs, sessions, DAU) · Website
+Traffic Visits · Desktop Search Keywords · Company Insights (headcount,
+tenure, growth, churn for 30M+ firms) · Job Postings (US, with salary) ·
+Job Records (global, 2007–) · People and Resume · Layoff Data (WARN,
+1996–)
+
+- **Where does talent go after a layoff?** Layoff Data gives you WARN
+  notices with dates and employers; People and Resume gives individual
+  job histories. *Follow the people (arch. 4, or arch. 1 if you treat
+  the notice as the event).* One of the strongest ideas on this page.
+- **Did an AI product launch change who firms hire?** Job Postings
+  carries role, location and salary; Company Insights carries headcount
+  and churn. *Evaluation (arch. 1)*, and very current.
+- **What happens to engagement after a competitor launches?** Daily App
+  Engagement, thousands of apps, daily. *Evaluation or prediction.*
+
+## The relay cards
+
+These nine are what circulate in the meeting-1 relay. They were picked to
+span the concentrations **and to join to each other** --- the last column
+is the point. A question that needs two of these is usually better than a
+question that needs one.
+
+| Dataset | What one row is | Coverage | Joins on |
+|:--|:--|:--|:--|
+| **Real Estate Transaction Data** | A parcel, a sale, or an assessment | US, 2011– | lat/long, ZIP, address |
+| **US Climate Risk Data** | A ZIP code's rating on 5 hazards (1–100) | US | ZIP |
+| **Weekly Patterns Plus** | One place, one Mon–Sun week of visits | US + Canada, 2017– | lat/long, brand, NAICS |
+| **EV Charging & Alt. Fuel Stations** | One charging station | US + Canada | lat/long, ZIP |
+| **Job Postings** | One job posting, with salary | US, 2016–2025 | company, ZIP, lat/long |
+| **Layoff Data (WARN)** | One layoff notice filed by an employer | US, 1996– | company, state, date |
+| **Convenience Store Transactions** | One SKU sold, one transaction | US, 2024– | brand, product |
+| **Brand Tracker** | One brand's card spend, one period | US, 2018– | brand, ticker |
+| **CDC PLACES** | One tract or ZCTA, 36 health measures | US | ZIP, tract |
+
+Nothing stops you using something else entirely --- the catalogue has 84.
 
 ## How to use any of this
 

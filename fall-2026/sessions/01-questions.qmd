@@ -477,34 +477,109 @@ your own the same way. Reverse-engineering is a method here, not a
 trick.
 :::
 
-## Your turn {.smaller}
+## The question relay {.smaller}
 
-In teams of 3–4, from your own interests:
+Groups of four. Three rounds. Points.
 
-1. Write **five candidate questions**
-2. Label each with its **archetype** (1–5)
-3. Run each through the **feasibility filter** — all four questions
-4. Cross out the ones that fail, and say *which* filter killed them
+**Each round your group holds one dataset card** — and after each round,
+**the datasets move one way and the question sheets move the other.**
 
-For at least one, check filter 2 for real: go and look for the data.
+| | You get | You do |
+|:--|:--|:--|
+| **R1** | A dataset | Write the best question it could answer |
+| **R2** | A new dataset **+** somebody's question | **Break their question**, then write your own |
+| **R3** | A new dataset **+** somebody's question | Break it, then **combine** any two datasets you have held |
 
-::: {.callout-note appearance="simple"}
-Your team's output is submitted before you leave. A question you kill today
-is a month you do not lose in the spring.
+::: {.notes}
+Groups of four, six groups. Say out loud that this grouping is TEMPORARY
+— real teams form from the statements of interest before meeting 2, or
+some of them will spend the hour negotiating instead of working.
+
+Cards: the nine datasets on the project-ideas page, printed. Pass
+datasets clockwise and sheets anticlockwise so nobody ever breaks their
+own question.
+:::
+
+## Scoring {.smaller}
+
+- **+1** every time a question of yours **survives** a break attempt
+- **+1** every break you **land** — you must name *which* filter kills it
+- **+2** for the best **combination** question, decided by the room
+
+::: {.callout-important appearance="simple"}
+"I don't like it" is not a break. Name the filter:
+**scope** · **data you can actually get** · **could come out either way**
+· **somebody would act on it**
 :::
 
 ::: {.notes}
-Say out loud that today's grouping is TEMPORARY — real teams are formed
-from the statements of interest before meeting 2. Otherwise some of them
-spend the hour negotiating instead of working.
+The scoring is doing real work, so do not soften it. Points for breaking
+teach the filter faster than points for building — and it rehearses the
+referee report they write in December.
 
-30 minutes of work time. Circulate. The two failure modes to catch early:
-questions that are still topics, and archetype-5 projects with no
-empirical component.
+Round 3's combination bonus is the real prize. Dewey's datasets join on
+lat/long, ZIP, brand, company and ticker, so the good questions live in
+the joins. Say so before round 3 starts.
+:::
 
-Last 10 minutes: two or three teams read out one question they killed and
-which filter killed it. The killing is the lesson, not the surviving
-question.
+## Round 1 · 12 minutes {.smaller}
+
+**What could this data answer?**
+
+Write three candidates. Then pick your best, put it at the top of the
+sheet, and label its **archetype**.
+
+::: {.callout-note appearance="simple"}
+You did not choose this dataset. That is the point — it is the same move
+you make when somebody hands you a business problem you did not pick.
+:::
+
+::: {.notes}
+Circulate. Two failure modes to catch early: questions that are still
+topics ("housing affordability"), and questions the dataset cannot
+actually speak to.
+
+At 10 minutes call the last two, then rotate firmly. The clock is part
+of the exercise.
+:::
+
+## Rounds 2 and 3 · 14 minutes each {.smaller}
+
+**First, break the question you inherited.** Four filters, six minutes.
+Write which one kills it — or write *survives*, honestly.
+
+**Then build.** Round 2: your new dataset. Round 3: **any two datasets
+your group has held**.
+
+::: {.notes}
+In round 3, walk the room saying the join keys out loud — parcels and
+stores and chargers all carry lat/long; postings and layoffs carry
+company; scanner and card data carry brand. That hint is what turns
+round 3 from harder into better.
+
+Watch for the group that breaks everything on filter 2 because "we
+can't get the data." Push: you have the dataset in your hand. Filter 2
+is about *this* data, not imaginary data.
+:::
+
+## Read-outs {.smaller}
+
+**The two best combination questions.** And **one good kill** — the
+question, and which filter did it.
+
+::: {.callout-note appearance="simple"}
+A question you kill in August is a month you do not lose in March.
+:::
+
+::: {.notes}
+Ten minutes. Do the kill LAST and dwell on it — the killing is the
+lesson, not the winner.
+
+If nothing got killed all afternoon, say so plainly: it means the filter
+was applied too gently, and promise to push harder next week.
+
+Collect every sheet. They are the artifact, and they tell you who in
+this room already thinks like this.
 :::
 
 ## Before next week {.smaller}
@@ -634,11 +709,29 @@ on, and what does it not contain that you would need? The question still has
 to survive the filter, and you are still allowed to walk away from the data.
 Route 5 done badly is anti-pattern 2.
 
-### Team output
+### The question relay
 
-In teams of 3–4: five candidate questions, each labeled with its archetype
-and run through all four filter questions. For at least one of them, check
-filter 2 for real rather than assuming. Cross out the failures and name
+Groups of four, three rounds, and both the datasets and the question sheets
+rotate between rounds.
+
+**Round 1.** You are handed a dataset you did not choose. What could it
+answer? Write three candidates, pick your best, label its archetype.
+
+**Round 2.** You get a new dataset *and* somebody else's question. Break
+their question first — name which of the four filters kills it, or record
+honestly that it survives. Then write your own on the new dataset.
+
+**Round 3.** Break again, then combine: build the best question you can
+from **any two datasets your group has held**. Dewey's datasets join on
+latitude and longitude, ZIP, brand, company and ticker, and the good
+questions usually live in those joins.
+
+**Scoring.** One point each time a question of yours survives a break, one
+point for every break you land, two points for the best combination
+question. "I don't like it" is not a break — you have to name the filter.
+
+The nine dataset cards are on the [project ideas](../project-ideas.qmd)
+page, along with what each one joins on. Cross out the failures and name
 which filter killed them.
 
 Your team's output is submitted before you leave.

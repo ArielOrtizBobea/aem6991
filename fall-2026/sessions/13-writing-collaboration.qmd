@@ -22,7 +22,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-Academic writing III — the research design paper. Structure, and what each section is for. Writing the identification section: naming your design, its assumption, and what would break it. Stating a limitation honestly without gutting the project. What a referee actually looks for — which is also how you will write your own referee report. Then reproducibility at awareness level: where files live, naming, what 'the final version' means, and when version control is worth the cost
+Academic writing III — the design paper. The same method on a harder object: you outlined this two weeks ago, so today is what the identification section has to contain — your design named, its assumption stated, and what would break it — and how to state a limitation without gutting your own project. Then reading for the skeleton one last time: what a referee actually looks for, which is how you will write your own referee report. If you cannot reconstruct a paper's outline, that is the finding. Then reproducibility at awareness level: where files live, naming, what 'the final version' means, and when version control is worth the cost
 
 ## Session B · 3:35–4:30
 
@@ -30,10 +30,10 @@ Every session B opens with a ten-minute team stand-up: what you did,
 what is blocked, and who does what next — in writing, submitted with
 the session output.
 
-Bring a draft. Workshop the design paper in rotation, then Milestone 2: each team presents its design and the assumption it is defending. Second peer evaluation
+Bring your sketch — topic sentences with the evidence noted under each, not prose. Workshop it in rotation: somebody else reads your skeleton and tells you where the argument jumps. Then Milestone 2, each team presenting its design and the assumption it is defending, and the second peer evaluation
 
 Your team's output is submitted before you leave.
 
 ## Due
 
-Design paper draft, in class · Milestone 2 presentation · Peer evaluation 2 · Research design paper, end of week
+Design paper — sketch, workshopped in class · Milestone 2 presentation · Peer evaluation 2 · Exercise 2 — rebuild and critique a figure, end of week

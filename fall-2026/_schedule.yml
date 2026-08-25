@@ -77,17 +77,20 @@ parts:
       into AEM 6992.
 
 # Individual writing pieces, assessed together as the writing portfolio.
+# Two of them are reverse-outlining: going from a finished text back to the
+# outline that must have produced it. You cannot build an outline until you
+# can see one.
 writing:
   - num: 1
-    name: "Problem statement"
+    name: "Reverse outline"
     len: "1 page"
     due_meeting: 7
-    desc: "Your project's problem in one page: what the question is, why it matters, and what the answer would change. Peer-swapped and critiqued in class the day it is due."
+    desc: "Take an assigned published paper and reconstruct its outline: one topic sentence per paragraph, in order, in your own words. Then say in three lines what the argument actually is."
   - num: 2
-    name: "Limitation paragraph"
-    len: "½ page"
+    name: "Reverse outline and repair"
+    len: "1 page"
     due_meeting: 9
-    desc: "The single biggest threat to your team's design, stated plainly, and what you would do about it. Written after the designs are on the table and before the data is."
+    desc: "A badly organised passage. Give its real outline, then the outline it should have had, and say what moved and why."
   - num: 3
     name: "Plain-language summary"
     len: "1 page"
@@ -96,11 +99,13 @@ writing:
   - num: 4
     name: "Referee report"
     len: "2 pages"
-    due_meeting: 15
-    desc: "A structured critique of another team's design paper, on the template used in class. Due in the exam period."
+    due_date: 2026-12-15
+    desc: "A structured critique of another team's design paper, on the template used in class. Start from its outline: if you cannot reconstruct one, that is the finding."
 
-# Team deliverables. The syllabus table is generated from this block, so the
-# dates cannot drift from the meeting schedule.
+# Team deliverables. Nothing is submitted as a finished paper out of nowhere:
+# each written product is built in stages — the outline is fixed before the
+# sketch, and the sketch before the prose. The syllabus table is generated
+# from this block, so the dates cannot drift from the meeting schedule.
 deliverables:
   - num: 1
     name: "Research problem presentation"
@@ -108,24 +113,53 @@ deliverables:
     due_meeting: 6
     when: "in class"
     desc: "5 slides, 5 minutes: the problem, why it matters, what is already known, and which archetype it is. Milestone 1."
+
   - num: 2
-    name: "Problem statement & literature review"
+    name: "Problem and literature"
     weight: "10 %"
-    due_meeting: 7
-    when: "end of week"
-    desc: "~5 pages: the problem, practical and theoretical justification, conceptual model, what the literature establishes, work plan."
+    desc: "The research problem, its practical and theoretical justification, the conceptual model, and what the literature establishes. Built in three stages."
+    stages:
+      - stage: "Outline"
+        due_meeting: 7
+        desc: "One topic sentence per paragraph, in order, and nothing else. If the argument does not work here it will not work at 5,000 words."
+      - stage: "Sketch"
+        due_meeting: 8
+        desc: "Each topic sentence with its evidence underneath in note form — the citation, the number, the figure you will point at. Still not prose."
+      - stage: "Full"
+        due_meeting: 9
+        when: "end of week"
+        desc: "~5 pages. The sketch written out, plus the work plan and references."
+
   - num: 3
     name: "Data feasibility memo"
     weight: "5 %"
-    due_meeting: 11
-    when: "end of week"
-    desc: "~2 pages: the exact data you will use, who holds it, how you get it, what it costs, what it measures, and your fallback if it falls through."
+    desc: "The exact data you will use, who holds it, how you get it, what it costs, what it measures, and your fallback if it falls through."
+    stages:
+      - stage: "Outline"
+        due_meeting: 10
+        when: "in class"
+        desc: "Six topic sentences, drafted in the session where the memo is taught. A memo is short enough to outline in the room."
+      - stage: "Full"
+        due_meeting: 11
+        when: "end of week"
+        desc: "~2 pages, bottom line first."
+
   - num: 4
     name: "Research design paper"
     weight: "15 %"
-    due_meeting: 13
-    when: "end of week; draft workshopped in class"
-    desc: "~5 pages: question, identification strategy and its assumptions, unit of analysis and sample, data, threats to internal validity, external validity, work plan for the spring."
+    desc: "Question, identification strategy and its assumptions, unit of analysis and sample, data, threats to internal validity, external validity, and the work plan for the spring."
+    stages:
+      - stage: "Outline"
+        due_meeting: 12
+        desc: "Topic sentences only. The identification section is the one to get right here."
+      - stage: "Sketch"
+        due_meeting: 13
+        when: "in class"
+        desc: "Brought to class and workshopped in rotation. Evidence under each topic sentence, still in note form."
+      - stage: "Full"
+        due_date: 2026-12-01
+        desc: "~5 pages, written out from the workshopped sketch."
+
   - num: 5
     name: "Final presentation & artifact"
     weight: "5 %"
@@ -141,9 +175,9 @@ meetings:
     part: 1
     title: "Where questions come from"
     desc: "What a capstone is and is not, and the five shapes a good one takes: evaluation, preference and pricing, prediction and risk, diagnosis and benchmarking, feasibility and landscape. The anti-patterns, the feasibility filter, and how to search the literature well enough to know your question has not already been answered."
-    goal: "Leave with five candidate questions of your own, each labelled with its archetype and run through the feasibility filter — and be able to say what makes a question answerable rather than merely interesting."
+    goal: "Leave with five candidate questions of your own, each labelled with its archetype and run through the feasibility filter — and know where to look for data you already have access to."
     a: "The capstone arc into AEM 6992, and what this is not: you are not writing a paper for a journal, you are building the analysis a competent team needs before a decision that costs real money. Five project archetypes — evaluation, preference and pricing, prediction and risk, diagnosis and benchmarking, feasibility and landscape — with what each can claim, what design it needs, and how each fails. The anti-patterns, and the four-question feasibility filter. Ground rules for AI use, disclosure, and the fabricated-citation problem"
-    b: "Literature workshop: searching systematically, screening what you find, and verifying every reference by opening it. Then write five candidate questions from your own interests — each labeled with its archetype and run through the feasibility filter"
+    b: "Literature workshop: searching systematically, screening what you find, and verifying every reference by opening it. Then what you already have access to — the Cornell library's licensed holdings, and the Dewey data marketplace the Johnson College subscribes to, which you can use at no cost. We browse it live, take a dataset nobody in the room picked, and reverse-engineer questions out of it: what could this answer, and which of those would anybody act on? Then write five candidate questions from your own interests — each labeled with its archetype and run through the feasibility filter"
     quizzes: 0
     reading: "None"
     due: "Statement of interest, before meeting 2"
@@ -208,11 +242,11 @@ meetings:
     part: 2
     title: "Writing the problem, and presenting it"
     desc: "The conceptual half is done and the first paper is due, so this is where writing gets taught. What a problem statement does, how a pile of sources becomes an argument, and then each team presents its problem to the room."
-    goal: "Write a problem statement that puts the claim in the first sentence, and defend your research problem in front of the room."
-    a: "Academic writing I — the research problem and the literature review. What a problem statement does and what it is not: scope, unit, population, and the 'so what' in the first sentence rather than the fourth paragraph. How a synthesis matrix becomes an argument rather than an annotated list. The failure modes on the page — the topic with no question, hedging, the buried claim, the review that reviews without arguing. Worked on real examples, including bad ones"
+    goal: "Reconstruct the outline behind somebody else's paper, build your own the same way — topic sentence by topic sentence — and defend your research problem in front of the room."
+    a: "Academic writing I — the method. A paper is built outline first: one topic sentence per paragraph, in order, before any prose exists. We start backwards, taking a published paper apart into the outline that must have produced it — which is also this week's exercise, and the fastest way to see that good writing has a skeleton. Then forwards: outline, then sketch, then full text. Every written product in this course is submitted in those stages, so the argument is fixed before the sentences are. Then what a problem statement in particular has to do — scope, unit, population, and the 'so what' in the first sentence rather than the fourth paragraph — and the failure modes: the topic with no question, hedging, the buried claim, the review that reviews without arguing"
     b: "Milestone 1: each team presents its research problem in five minutes and takes questions from the room — the feedback you get here is what you write up this week. Then the first peer evaluation"
     reading: "TBD"
-    due: "Research problem presentation, in class · Peer evaluation 1 · Writing 1 assigned"
+    due: "Research problem presentation, in class · Peer evaluation 1"
 
   - num: 7
     slug: "07-designs-i"
@@ -225,7 +259,7 @@ meetings:
     a: "Experiments; instrumental variables; regression discontinuity. What variation each exploits, what each assumes, how each fails, and what it looks like when it is done well"
     b: "Scenario clinic: given a question, would any of these three work here?"
     reading: "TBD"
-    due: ~
+    due: "Problem & literature — outline · Writing 1 — reverse outline"
 
   - num: 8
     slug: "08-designs-ii"
@@ -238,7 +272,7 @@ meetings:
     a: "Difference-in-differences; panel data with local fixed effects; event studies. What identifying variation survives once the fixed effects are in, and what assumption you are leaning on"
     b: "Name your own project's design, and the assumption you would have to defend"
     reading: "TBD"
-    due: ~
+    due: "Problem & literature — sketch"
 
   - num: 9
     slug: "09-measurement"
@@ -251,7 +285,7 @@ meetings:
     a: "Constructs and operationalization: how you turn 'sustainability', 'financial literacy', or 'market power' into a variable somebody could actually record, and what makes that measure defensible or indefensible. Validity, and what a proxy costs you. Then working backwards from the design to its data requirements: unit of observation, level of aggregation, time frequency, span, coverage, and which comparisons the data has to contain — can this be done with county-level data, or does it need individuals?"
     b: "What to ask of a dataset before trusting anything it says: what is one row? how many are there? what is missing, and is it missing at random? what is the range, and are the extremes real? what changed over time, and did the definition change with it? Then the measurement clinic — the variable your question actually needs, and whether anything on earth measures it"
     reading: "TBD"
-    due: "Writing 2 — limitation paragraph"
+    due: "Problem & literature — full, end of week · Writing 2 — reverse outline and repair"
     reschedule: "Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed"
 
   - num: 10
@@ -262,10 +296,10 @@ meetings:
     title: "Getting hold of the data"
     desc: "The practical business of obtaining data: what exists and who holds it, what proprietary access and a data-use agreement really cost in time, what the IRB needs and when, and what scraping and APIs can and cannot get you. Then how to write the memo that proves your data is real."
     goal: "Name your data source, its access route, its timeline, and your plan B — and know whether you need IRB approval or a data-use agreement before January."
-    a: "The landscape: administrative records, official statistics, firm and platform data, purchased panels — what each costs in money and in months. Proprietary access and data-use agreements: who signs, how long it takes, and what they forbid you from publishing. Research ethics and the Cornell IRB: what needs approval, what does not, and how long it takes. Then scraping and APIs at awareness level — what they are, what they can and cannot get you, what the terms of service and the law actually say, and when paying for a licence is the cheaper answer. We do not write scrapers in this course; you need to know what to ask for and what it costs"
+    a: "The landscape: administrative records, official statistics, firm and platform data, purchased panels — what each costs in money and in months. Start with what Cornell already pays for: the library's licensed holdings and the Dewey marketplace through the Johnson College membership, met in meeting 1 and worked properly here. A surprising number of capstones propose buying data the College already subscribes to. Proprietary access and data-use agreements: who signs, how long it takes, and what they forbid you from publishing. Research ethics and the Cornell IRB: what needs approval, what does not, and how long it takes. Then scraping and APIs at awareness level — what they are, what they can and cannot get you, what the terms of service and the law actually say, and when paying for a licence is the cheaper answer. We do not write scrapers in this course; you need to know what to ask for and what it costs"
     b: "Academic writing II — the memo. Writing to a decision-maker rather than an examiner: the two-page discipline, the bottom line first, and the fallback that shows you thought about failure. Then the acquisition clinic: each team names its source, its access route, its timeline, and its plan B"
     reading: "TBD"
-    due: "Data feasibility memo assigned"
+    due: "Data feasibility memo — outline, in class"
 
   - num: 11
     slug: "11-midterm-interrogating-data"
@@ -279,7 +313,7 @@ meetings:
     b: "Real data in front of you, and the checklist from meeting 9 put to work through an assistant: summaries, joins, quick plots. Then the harder half — knowing whether the answer is right without reading the code. Row counts across a join, totals against a published figure, five raw records read by hand. What not to upload, and why"
     quizzes: 0
     reading: "Review"
-    due: "Data feasibility memo, end of week"
+    due: "Data feasibility memo — full, end of week"
 
   - num: 12
     slug: "12-seeing-data"
@@ -292,7 +326,7 @@ meetings:
     a: "Which figure answers which question, and why. Exploring distributions, time, and space; developing the instinct to be curious about a dataset before modelling it. Then the flip side: what figures hide — aggregation, scale, binning, projection, cherry-picked windows — and how to read a published figure for what it is not showing"
     b: "Rebuild a published figure from its underlying data, then produce the version you think is more honest"
     reading: "TBD"
-    due: "Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week"
+    due: "Design paper — outline · Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week"
 
   - num: 13
     slug: "13-writing-collaboration"
@@ -302,10 +336,10 @@ meetings:
     title: "Writing the design paper; collaboration"
     desc: "The design paper as a genre: how to write an identification section, and how to state a limitation without gutting your own project. Then how to referee somebody else's — which is the same skill from the other side — and how to keep a project reproducible."
     goal: "Write an identification section that names your design, its assumption, and what would break it — and state a limitation without gutting your own project."
-    a: "Academic writing III — the research design paper. Structure, and what each section is for. Writing the identification section: naming your design, its assumption, and what would break it. Stating a limitation honestly without gutting the project. What a referee actually looks for — which is also how you will write your own referee report. Then reproducibility at awareness level: where files live, naming, what 'the final version' means, and when version control is worth the cost"
-    b: "Bring a draft. Workshop the design paper in rotation, then Milestone 2: each team presents its design and the assumption it is defending. Second peer evaluation"
+    a: "Academic writing III — the design paper. The same method on a harder object: you outlined this two weeks ago, so today is what the identification section has to contain — your design named, its assumption stated, and what would break it — and how to state a limitation without gutting your own project. Then reading for the skeleton one last time: what a referee actually looks for, which is how you will write your own referee report. If you cannot reconstruct a paper's outline, that is the finding. Then reproducibility at awareness level: where files live, naming, what 'the final version' means, and when version control is worth the cost"
+    b: "Bring your sketch — topic sentences with the evidence noted under each, not prose. Workshop it in rotation: somebody else reads your skeleton and tells you where the argument jumps. Then Milestone 2, each team presenting its design and the assumption it is defending, and the second peer evaluation"
     reading: "TBD"
-    due: "Design paper draft, in class · Milestone 2 presentation · Peer evaluation 2 · Research design paper, end of week"
+    due: "Design paper — sketch, workshopped in class · Milestone 2 presentation · Peer evaluation 2 · Exercise 2 — rebuild and critique a figure, end of week"
     reschedule: "Instructor traveling — moves to Nov 17 or Nov 19; date to be confirmed"
 
   - date: 2026-11-25
@@ -323,4 +357,4 @@ meetings:
     b: "The handoff to AEM 6992: what each team does over the break"
     quizzes: 0
     reading: "None"
-    due: "Exercise 2 — rebuild and critique a figure, Dec 1 · Final presentation & artifact, in class · Writing 4 — referee report, exam period"
+    due: "Design paper — full, Dec 1 · Final presentation & artifact, in class · Referee report, Dec 15"

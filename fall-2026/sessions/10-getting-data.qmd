@@ -18,7 +18,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-The landscape: administrative records, official statistics, firm and platform data, purchased panels — what each costs in money and in months. Proprietary access and data-use agreements: who signs, how long it takes, and what they forbid you from publishing. Research ethics and the Cornell IRB: what needs approval, what does not, and how long it takes. Then scraping and APIs at awareness level — what they are, what they can and cannot get you, what the terms of service and the law actually say, and when paying for a licence is the cheaper answer. We do not write scrapers in this course; you need to know what to ask for and what it costs
+The landscape: administrative records, official statistics, firm and platform data, purchased panels — what each costs in money and in months. Start with what Cornell already pays for: the library's licensed holdings and the Dewey marketplace through the Johnson College membership, met in meeting 1 and worked properly here. A surprising number of capstones propose buying data the College already subscribes to. Proprietary access and data-use agreements: who signs, how long it takes, and what they forbid you from publishing. Research ethics and the Cornell IRB: what needs approval, what does not, and how long it takes. Then scraping and APIs at awareness level — what they are, what they can and cannot get you, what the terms of service and the law actually say, and when paying for a licence is the cheaper answer. We do not write scrapers in this course; you need to know what to ask for and what it costs
 
 ## Session B · 3:35–4:30
 
@@ -32,4 +32,4 @@ Your team's output is submitted before you leave.
 
 ## Due
 
-Data feasibility memo assigned
+Data feasibility memo — outline, in class

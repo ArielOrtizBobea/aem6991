@@ -235,11 +235,14 @@ is still a topic rather than a question.
 
 ### Writing portfolio (10 %)
 
-Writing is taught in this course rather than assumed. Meeting 2 covers
-the research problem, meeting 10 the memo, and meeting 13 the design
-paper and the referee's craft. Four short individual pieces track those
-sessions --- each one a different genre, and each one a genre you will
-write again in industry.
+Writing is taught in this course rather than assumed, and it is taught
+as a method rather than as advice. A piece of writing is built outline
+first: one topic sentence per paragraph, in order, before any prose
+exists. The fastest way to learn that is backwards, so two of the four
+pieces below are **reverse outlines** --- you take a finished text and
+reconstruct the skeleton that must have produced it. Meeting 6 teaches
+the method, meeting 10 applies it to the memo, and meeting 13 to the
+design paper.
 
 {{< include _writing.qmd >}}
 
@@ -299,7 +302,13 @@ team's grade.
 ### Team deliverables (40 %)
 
 The sequence is the same one used across AEM 6991 sections, because it
-is what AEM 6992 needs in January.
+is what AEM 6992 needs in January. **Nothing is submitted as a finished
+paper out of nowhere.** Each written product is built in stages: the
+**outline** first --- topic sentences only, in order --- then the
+**sketch**, where each topic sentence gets its evidence in note form,
+and only then the full text. Each stage is submitted and graded as part
+of that deliverable's weight, so a broken argument is caught at the
+outline, where fixing it costs an afternoon rather than a week.
 
 {{< include _deliverables.qmd >}}
 

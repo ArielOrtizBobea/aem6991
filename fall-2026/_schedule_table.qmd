@@ -30,43 +30,43 @@
 <tr class="g-last g02"><td>Wed Sep 30</td>
   <td class="topic"><a href="sessions/06-writing-the-problem.html">6 · Writing the problem, and presenting it</a>
     <span class="t-desc">The conceptual half is done and the first paper is due, so this is where writing gets taught. What a problem statement does, how a pile of sources becomes an argument, and then each team presents its problem to the room.</span></td>
-  <td class="hw">Research problem presentation, in class · Peer evaluation 1 · Writing 1 assigned</td></tr>
+  <td class="hw">Research problem presentation, in class · Peer evaluation 1</td></tr>
 
 <tr class="g-first g03"><td class="g-rail" rowspan="2"><span>Designs</span></td><td>Wed Oct 7</td>
   <td class="topic"><a href="sessions/07-designs-i.html">7 · Research designs I</a>
     <span class="t-desc">Experiments, instrumental variables, and regression discontinuity: the variation each exploits, the assumption each requires, and how each fails.</span></td>
-  <td class="hw"></td></tr>
+  <td class="hw">Problem &amp; literature — outline · Writing 1 — reverse outline</td></tr>
 <tr class="g-last g03"><td>Wed Oct 14</td>
   <td class="topic"><a href="sessions/08-designs-ii.html">8 · Research designs II</a>
     <span class="t-desc">Difference-in-differences, panel data with local fixed effects, and event studies: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate.</span></td>
-  <td class="hw"></td></tr>
+  <td class="hw">Problem &amp; literature — sketch</td></tr>
 
 <tr class="g-first g04"><td class="g-rail" rowspan="3"><span>Data &amp; access</span></td><td>Wed Oct 21<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/09-measurement.html">9 · Measurement, and what the design demands</a>
     <span class="t-desc">Turning a construct into something a dataset can hold — the step where most capstones actually die. Then working backwards from the chosen design to the data it requires: unit, aggregation, frequency, span, and coverage.</span></td>
-  <td class="hw">Writing 2 — limitation paragraph</td></tr>
+  <td class="hw">Problem &amp; literature — full, end of week · Writing 2 — reverse outline and repair</td></tr>
 <tr><td>Wed Oct 28</td>
   <td class="topic"><a href="sessions/10-getting-data.html">10 · Getting hold of the data</a>
     <span class="t-desc">The practical business of obtaining data: what exists and who holds it, what proprietary access and a data-use agreement really cost in time, what the IRB needs and when, and what scraping and APIs can and cannot get you. Then how to write the memo that proves your data is real.</span></td>
-  <td class="hw">Data feasibility memo assigned</td></tr>
+  <td class="hw">Data feasibility memo — outline, in class</td></tr>
 <tr class="g-last g04"><td>Wed Nov 4</td>
   <td class="topic"><a href="sessions/11-midterm-interrogating-data.html">11 · Midterm; interrogating data with an assistant</a>
     <span class="t-desc">The midterm asks you to design a study for a given situation in writing. Then the hands-on half: driving an assistant across real data, and the checks that catch a wrong answer without reading the code.</span></td>
-  <td class="hw">Data feasibility memo, end of week</td></tr>
+  <td class="hw">Data feasibility memo — full, end of week</td></tr>
 
 <tr class="g-first g05"><td class="g-rail" rowspan="4"><span>Reporting &amp; pitch</span></td><td>Wed Nov 11</td>
   <td class="topic"><a href="sessions/12-seeing-data.html">12 · Seeing what is in the data</a>
     <span class="t-desc">Which figure answers which question, and why. Exploring distributions, time, and space — then the flip side: what figures hide through aggregation, scale, binning, projection, and chosen windows.</span></td>
-  <td class="hw">Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week</td></tr>
+  <td class="hw">Design paper — outline · Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week</td></tr>
 <tr><td>Wed Nov 18<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/13-writing-collaboration.html">13 · Writing the design paper; collaboration</a>
     <span class="t-desc">The design paper as a genre: how to write an identification section, and how to state a limitation without gutting your own project. Then how to referee somebody else's — which is the same skill from the other side — and how to keep a project reproducible.</span></td>
-  <td class="hw">Design paper draft, in class · Milestone 2 presentation · Peer evaluation 2 · Research design paper, end of week</td></tr>
+  <td class="hw">Design paper — sketch, workshopped in class · Milestone 2 presentation · Peer evaluation 2 · Exercise 2 — rebuild and critique a figure, end of week</td></tr>
 <tr class="break-row"><td>Wed Nov 25</td><td>Thanksgiving recess — no class</td><td class="hw"></td></tr>
 <tr class="g-last g05"><td>Wed Dec 2</td>
   <td class="topic"><a href="sessions/14-pitch.html">14 · The pitch</a>
     <span class="t-desc">Final presentations and peer review, then the handoff to AEM 6992.</span></td>
-  <td class="hw">Exercise 2 — rebuild and critique a figure, Dec 1 · Final presentation &amp; artifact, in class · Writing 4 — referee report, exam period</td></tr>
+  <td class="hw">Design paper — full, Dec 1 · Final presentation &amp; artifact, in class · Referee report, Dec 15</td></tr>
 </tbody>
 </table>
 </div>

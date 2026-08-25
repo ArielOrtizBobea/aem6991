@@ -410,6 +410,62 @@ procrastination.
 The paper.
 :::
 
+## What you already have {.smaller}
+
+Before you assume data has to be bought, found, or scraped:
+
+- **The Cornell library's licensed holdings.** Far more than most
+  students realise, and already paid for.
+- **Dewey** — a commercial data marketplace the Johnson College
+  subscribes to. **You have access at no cost.**
+
+::: {.callout-note appearance="simple"}
+A surprising number of capstone teams propose buying data the College
+already subscribes to, or abandon a good question because they assumed
+the data was out of reach.
+:::
+
+::: {.notes}
+Browse Dewey live on the projector — confirm the access route before
+class so the login is not the thing that eats five minutes.
+
+The point is filter question 2, from session A: "can you name the
+specific dataset, who holds it, and how you get it — checked, not
+assumed." For a lot of questions the honest answer changes once you
+know what you already have.
+:::
+
+## Working backwards from a dataset {.smaller}
+
+Pick one nobody in the room chose. Then:
+
+1. What could this data **answer**?
+2. Which of those would anybody **act on**?
+3. What does it **not** contain that you would need?
+
+::: {.callout-important appearance="simple"}
+This is route 5 done properly. Route 5 done badly is anti-pattern 2 —
+finding a dataset and rationalising a question onto it. The difference
+is that here the question still has to survive the filter, and you are
+allowed to walk away from the data.
+:::
+
+::: {.notes}
+Do this live, as a room. Ten minutes.
+
+The tension is real and worth naming out loud: I spent session A saying
+design before data, and now I am showing you a data catalogue in the
+first meeting. The resolution is that knowing what you can get changes
+which questions are *feasible* — it does not change what makes a
+question good. You still start from the question. You just stop
+proposing ones whose data you will never hold.
+
+Note the symmetry with how we will do writing later in the term: take
+the finished artifact apart to see the structure underneath, then build
+your own the same way. Reverse-engineering is a method here, not a
+trick.
+:::
+
 ## Your turn {.smaller}
 
 In teams of 3–4, from your own interests:
@@ -418,6 +474,8 @@ In teams of 3–4, from your own interests:
 2. Label each with its **archetype** (1–5)
 3. Run each through the **feasibility filter** — all four questions
 4. Cross out the ones that fail, and say *which* filter killed them
+
+For at least one, check filter 2 for real: go and look for the data.
 
 ::: {.callout-note appearance="simple"}
 Your team's output is submitted before you leave. A question you kill today
@@ -543,10 +601,25 @@ archetypes they matter more than journals.
 Screen with one line per paper: question, design, data, what they found,
 why it matters to us. Five to eight rows is enough at this stage.
 
+### What you already have access to
+
+Before assuming data must be bought or scraped: the Cornell library's
+licensed holdings, and **Dewey**, a commercial data marketplace the Johnson
+College of Business subscribes to and which you can use at no cost. Teams
+routinely propose buying data the College already has, or drop a good
+question because they assumed the data was unreachable.
+
+Working backwards from a dataset is legitimate — it is route 5 — provided
+you do it honestly: what could this answer, which of those would anybody act
+on, and what does it not contain that you would need? The question still has
+to survive the filter, and you are still allowed to walk away from the data.
+Route 5 done badly is anti-pattern 2.
+
 ### Team output
 
 In teams of 3–4: five candidate questions, each labeled with its archetype
-and run through all four filter questions. Cross out the failures and name
+and run through all four filter questions. For at least one of them, check
+filter 2 for real rather than assuming. Cross out the failures and name
 which filter killed them.
 
 Your team's output is submitted before you leave.

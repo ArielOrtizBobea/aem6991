@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Draw your own project's design and mark the assumption carrying it — the one you would have to defend to a sceptic. This is the figure that goes in your design paper's identification section, so draw it to keep
+Same format, higher stakes. First a card apiece — a staggered rollout, a state border, a fee that changed for accounts opened after a date — fifteen minutes to draw it and name the design. Then the part that counts: each team puts up its OWN project's design, draws the graph, states the assumption carrying the estimate, and defends it while the room tries to break it. Whatever survives is the figure that goes in your identification section, so draw it to keep — and write down the attack that landed, because that is your limitations paragraph
 
 Your team's output is submitted before you leave.
 

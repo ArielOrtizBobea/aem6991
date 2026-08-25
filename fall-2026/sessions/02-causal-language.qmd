@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Teams are formed, and then each team writes down its own ground rules — while everybody still gets along, rather than negotiating it in November. Who does what. What happens when somebody misses a deadline. How you settle a disagreement, and when to bring it to me. One page, signed by everyone, handed in before you leave. The weekly check-in starts today
+First, teams. You are put into one, and it writes down its own ground rules while everybody still gets along rather than negotiating in November — who does what, what happens when somebody misses a deadline, how you settle a disagreement. One page, signed, handed in. Then your team's first job together: each team draws a card carrying a real causal claim somebody is acting on — a board paper, a marketing deck, a widely shared post — and every card is broken in a different way. Draw the graph behind it, then name the failure in this morning's vocabulary: confounder, collider, mediator, selection, reverse causality. Then defend the diagnosis at the front while the room attacks it. Card 3 is a collider and card 5 is a mediator, and those two are where the morning either landed or did not
 
 Your team's output is submitted before you leave.
 

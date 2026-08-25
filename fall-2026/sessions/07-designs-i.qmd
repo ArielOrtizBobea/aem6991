@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Scenario clinic: given a question, draw the graph first and then say whether any of these three could work here — and if not, what you would need to have that you do not
+Each team draws a setting nobody in the room owns — a bank with an email list, a scholarship cutoff, an NGO that gave filters to whoever asked. Fifteen minutes to draw the graph, name a design, and state the assumption carrying it. Then you defend it at the front for four minutes while the room attacks: what breaks this? One card cannot be answered honestly at all, and the team holding it has to be willing to say so. Last: is an experiment, an instrument, or a discontinuity actually open to your own project? Most teams find the answer is no, and finding that out today rather than in November is the point
 
 Your team's output is submitted before you leave.
 

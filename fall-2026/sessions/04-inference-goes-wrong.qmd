@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Take a published claim apart: which failure is doing the damage, and would more data fix it?
+First, together: one published claim, taken apart. Which failure is doing the damage, and would more data fix it? Then the same move on a paper from your own project's literature — and write down the one threat your own design will have to survive, because you will be answering it in November
 
 Your team's output is submitted before you leave.
 

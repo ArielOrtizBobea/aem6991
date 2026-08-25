@@ -1,0 +1,137 @@
+---
+title: "Causal claims — diagnosis cards"
+pagetitle: "AEM 6991 · Causal claims"
+sidebar: false
+toc: false
+page-layout: full
+---
+
+```{=html}
+<style>
+.print-note { font-size: 0.85rem; color: #6b6b6b; margin: 0 0 1rem; }
+.sheetwrap { max-width: 8in; margin: 0 auto; }
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.15in; }
+.card { border: 1px dashed #9a9a94; border-radius: 3px; padding: 0.16in 0.18in;
+        min-height: 2.35in; break-inside: avoid; display: flex; flex-direction: column; }
+.card .n { font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: #b31b1b; font-weight: 700; }
+.card h3 { font-size: 0.9rem; font-weight: 700; margin: 0.12rem 0 0.35rem; line-height: 1.2; border: none; }
+.card .claim { font-size: 0.78rem; line-height: 1.45; margin: 0 0 0.35rem; font-style: italic;
+               border-left: 3px solid #e3e3de; padding-left: 0.5rem; }
+.card .who { font-size: 0.7rem; color: #6b6b6b; margin: 0 0 0.3rem; }
+.card .ask { margin-top: auto; padding-top: 0.32rem; border-top: 1px solid #e3e3de; font-size: 0.72rem; }
+.card .ask b { color: #b31b1b; }
+.pagebreak { break-before: page; }
+.defence { border: 1px solid #55554f; border-radius: 4px; padding: 0.28in; margin-top: 0.3in; break-inside: avoid; }
+.defence h3 { margin: 0 0 0.5rem; font-size: 1rem; border: none; }
+.defence .lbl { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: #6b6b6b; font-weight: 700; margin-bottom: 0.1rem; }
+.defence .row { border-bottom: 1px solid #cfcfc9; min-height: 0.42in; margin-bottom: 0.18in; }
+.defence .big { min-height: 1.6in; border: 1px solid #cfcfc9; border-radius: 3px; margin-bottom: 0.18in; }
+.defence .vocab { font-size: 0.72rem; color: #333; line-height: 1.6; margin-bottom: 0.2in; }
+.defence .vocab b { color: #b31b1b; }
+@media print {
+  .print-note, #quarto-header, #quarto-sidebar, .nav-page, footer, #quarto-margin-sidebar { display: none !important; }
+  @page { size: letter portrait; margin: 0.4in; }
+  body { background: #fff; }
+  .sheetwrap { max-width: none; }
+}
+</style>
+
+<p class="print-note">Eight claims, each broken in a different way. Cut along
+the dashed lines and deal one per team. Page&nbsp;2 is the diagnosis sheet.</p>
+
+<div class="sheetwrap">
+<div class="cards">
+
+  <div class="card">
+    <span class="n">Card 1</span>
+    <h3>Breakfast</h3>
+    <p class="claim">"Students who eat breakfast score higher. Schools should serve breakfast."</p>
+    <p class="who">A school district, proposing a budget line</p>
+    <p class="ask"><b>Diagnose</b> using this morning's vocabulary. Draw it.</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 2</span>
+    <h3>The consultants</h3>
+    <p class="claim">"Firms that hire consultants grow faster than firms that don't. So hire consultants."</p>
+    <p class="who">A consulting firm's own marketing deck</p>
+    <p class="ask"><b>Diagnose</b> using this morning's vocabulary. Draw it.</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 3</span>
+    <h3>The hiring puzzle</h3>
+    <p class="claim">"Among the people we hired, the ones with the best test scores had the worst interviews. Our test must be measuring the wrong thing."</p>
+    <p class="who">A head of recruiting, about to scrap the test</p>
+    <p class="ask"><b>Diagnose.</b> This one is not what it looks like.</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 4</span>
+    <h3>The loyalty app</h3>
+    <p class="claim">"Customers on our app spend 40% more. Getting the other half onto the app would raise revenue 40%."</p>
+    <p class="who">A retailer's board paper</p>
+    <p class="ask"><b>Diagnose</b> using this morning's vocabulary. Draw it.</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 5</span>
+    <h3>The promotion gap</h3>
+    <p class="claim">"Once we control for salary band, the gender gap in promotion disappears. So there is no bias in promotion."</p>
+    <p class="who">An HR review, closing the matter</p>
+    <p class="ask"><b>Diagnose.</b> Controlling for the wrong thing is also a mistake.</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 6</span>
+    <h3>The founders</h3>
+    <p class="claim">"Nine of the ten most valuable startups were founded by people who dropped out. Dropping out is an advantage."</p>
+    <p class="who">A widely shared post</p>
+    <p class="ask"><b>Diagnose.</b> Who is missing from this comparison?</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 7</span>
+    <h3>The turnaround team</h3>
+    <p class="claim">"We send the turnaround team to our worst-performing stores. Those stores improve. The programme works."</p>
+    <p class="who">An operations VP, requesting more budget</p>
+    <p class="ask"><b>Diagnose.</b> What would have happened anyway?</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 8</span>
+    <h3>The crime wave</h3>
+    <p class="claim">"Reported cybercrime doubled after 2019. Cybercrime is out of control."</p>
+    <p class="who">A vendor selling security software</p>
+    <p class="ask"><b>Diagnose.</b> What changed besides the world?</p>
+  </div>
+
+</div>
+
+<div class="pagebreak"></div>
+
+<div class="defence">
+  <h3>Diagnosis sheet — team <span style="color:#b31b1b">______</span> &nbsp;·&nbsp; card <span style="color:#b31b1b">____</span></h3>
+
+  <p class="lbl">The graph behind the claim — draw it</p>
+  <div class="big"></div>
+
+  <p class="vocab">Name it with the vocabulary: <b>confounder</b> ·
+  <b>collider</b> · <b>mediator</b> · <b>selection</b> ·
+  <b>reverse causality</b> · <b>survivorship</b> ·
+  <b>regression to the mean</b> · <b>the measure changed</b></p>
+
+  <p class="lbl">What is actually wrong here</p>
+  <div class="row"></div>
+
+  <p class="lbl">What would you have to condition on — and what must you leave alone?</p>
+  <div class="row"></div>
+
+  <p class="lbl">What comparison would settle it, if you could run any study you liked?</p>
+  <div class="row"></div>
+
+  <p class="lbl">From the floor: the objection that landed</p>
+  <div class="row"></div>
+</div>
+</div>
+```

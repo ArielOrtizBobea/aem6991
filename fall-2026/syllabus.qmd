@@ -302,6 +302,22 @@ members of the same team can receive different marks for it, and
 routinely will. A student who does not contribute does not receive the
 team's grade.
 
+### How the design paper gets built
+
+**You do not write the design paper in November.** You accumulate it.
+
+Every meeting is two halves: session A introduces a concept, and session
+B makes you use it --- first on a shared case, so the whole room can be
+compared and corrected, then on your own project. **That second half is
+what you hand in before you leave, and it is a piece of your paper.**
+
+{{< include _builds.qmd >}}
+
+By meeting 13 the paper is not a blank page. It is thirteen artifacts
+you already made, argued about in the room the week you made them, and
+the job that week is assembling and writing them --- which is what
+meeting 13 teaches.
+
 ### Team deliverables (40 %)
 
 The sequence is the same one used across AEM 6991 sections, because it

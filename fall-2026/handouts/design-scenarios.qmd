@@ -1,0 +1,145 @@
+---
+title: "Design scenarios — defence cards"
+pagetitle: "AEM 6991 · Design scenarios"
+sidebar: false
+toc: false
+page-layout: full
+---
+
+```{=html}
+<style>
+.print-note { font-size: 0.85rem; color: #6b6b6b; margin: 0 0 1rem; }
+.sheetwrap { max-width: 8in; margin: 0 auto; }
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.15in; }
+.card {
+  border: 1px dashed #9a9a94; border-radius: 3px;
+  padding: 0.16in 0.18in; min-height: 2.5in;
+  break-inside: avoid; display: flex; flex-direction: column;
+}
+.card .n { font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: #b31b1b; font-weight: 700; }
+.card .n span { color: #8e8e89; font-weight: 600; letter-spacing: 0.04em; text-transform: none; }
+.card h3 { font-size: 0.92rem; font-weight: 700; margin: 0.12rem 0 0.35rem; line-height: 1.2; border: none; }
+.card p { font-size: 0.75rem; line-height: 1.45; margin: 0 0 0.35rem; }
+.card .ask { margin-top: auto; padding-top: 0.35rem; border-top: 1px solid #e3e3de; font-size: 0.73rem; }
+.card .ask b { color: #b31b1b; }
+.pagebreak { break-before: page; }
+.defence { border: 1px solid #55554f; border-radius: 4px; padding: 0.28in; margin-top: 0.3in; break-inside: avoid; }
+.defence h3 { margin: 0 0 0.5rem; font-size: 1rem; border: none; }
+.defence .lbl { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: #6b6b6b; font-weight: 700; margin-bottom: 0.1rem; }
+.defence .row { border-bottom: 1px solid #cfcfc9; min-height: 0.42in; margin-bottom: 0.18in; }
+.defence .big { min-height: 1.5in; border: 1px solid #cfcfc9; border-radius: 3px; margin-bottom: 0.18in; }
+@media print {
+  .print-note, #quarto-header, #quarto-sidebar, .nav-page, footer, #quarto-margin-sidebar { display: none !important; }
+  @page { size: letter portrait; margin: 0.4in; }
+  body { background: #fff; }
+  .sheetwrap { max-width: none; }
+}
+</style>
+
+<p class="print-note">Eight settings. Cut along the dashed lines and deal one
+per team. Cards 1–4 suit meeting 7 (experiments, instruments,
+discontinuities); cards 5–8 suit meeting 8 (difference-in-differences, fixed
+effects, event studies). Page&nbsp;2 is the defence sheet.</p>
+
+<div class="sheetwrap">
+<div class="cards">
+
+  <div class="card">
+    <span class="n">Card 1 · <span>meeting 7</span></span>
+    <h3>The savings nudge</h3>
+    <p>A bank wants to know whether its monthly financial-literacy email
+    makes customers save more. It has 400,000 customers on the list, it
+    controls who receives what, and it can wait six months.</p>
+    <p class="ask"><b>Defend:</b> what design, and what does it cost them to run it properly?</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 2 · <span>meeting 7</span></span>
+    <h3>The scholarship cutoff</h3>
+    <p>A university awards a scholarship to every applicant scoring above
+    1200 on an entrance test, and to nobody below. Administrators want to
+    know whether the money raises graduation rates.</p>
+    <p class="ask"><b>Defend:</b> what design — and who exactly does your estimate apply to?</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 3 · <span>meeting 7</span></span>
+    <h3>The water filters</h3>
+    <p>An NGO distributed water filters to the villages that asked for
+    them. Diarrhoea rates fell in those villages and not in others. The
+    donor wants to know whether the filters worked.</p>
+    <p class="ask"><b>Defend:</b> a design — or defend the claim that this cannot honestly be answered.</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 4 · <span>meeting 7</span></span>
+    <h3>The local label</h3>
+    <p>A food company is deciding whether to put "locally sourced" on a
+    package. It wants to know what that claim is worth in cents per unit
+    before it commits to the supply chain.</p>
+    <p class="ask"><b>Defend:</b> what design, and what is the gap between what it measures and what they want?</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 5 · <span>meeting 8</span></span>
+    <h3>The self-checkout rollout</h3>
+    <p>A grocery chain installed self-checkout in 340 of its 900 stores
+    over eighteen months, region by region, in an order set by an old
+    refurbishment schedule. Did basket size change?</p>
+    <p class="ask"><b>Defend:</b> what design — and what does "region by region" buy you?</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 6 · <span>meeting 8</span></span>
+    <h3>The border wage</h3>
+    <p>One state raised its minimum wage on 1 January; the state across
+    the river did not. There are fast-food restaurants within two miles
+    of the border on both sides.</p>
+    <p class="ask"><b>Defend:</b> what design, and what has to be true about the two sides?</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 7 · <span>meeting 8</span></span>
+    <h3>The light rail</h3>
+    <p>A city opened a light-rail line four years ago. House prices within
+    half a mile of the new stations are up 22% since. The transit
+    authority would like to claim credit.</p>
+    <p class="ask"><b>Defend:</b> what design — and why is the naive comparison almost certainly wrong?</p>
+  </div>
+
+  <div class="card">
+    <span class="n">Card 8 · <span>meeting 8</span></span>
+    <h3>The seller fee</h3>
+    <p>A platform raised its commission for seller accounts created on or
+    after 1 March, leaving older accounts on the old rate. It wants to
+    know whether the higher fee drove sellers away.</p>
+    <p class="ask"><b>Defend:</b> what design, and what would make the two groups not comparable?</p>
+  </div>
+
+</div>
+
+<div class="pagebreak"></div>
+
+<div class="defence">
+  <h3>Defence sheet — team <span style="color:#b31b1b">______</span> &nbsp;·&nbsp; card <span style="color:#b31b1b">____</span></h3>
+
+  <p class="lbl">The graph — draw it</p>
+  <div class="big"></div>
+
+  <p class="lbl">Our design, named</p>
+  <div class="row"></div>
+
+  <p class="lbl">The assumption carrying it — the one we would have to defend</p>
+  <div class="row"></div>
+
+  <p class="lbl">What data this requires that we have not been given</p>
+  <div class="row"></div>
+
+  <p class="lbl">The attack we expect, and our answer to it</p>
+  <div class="row"></div>
+
+  <p class="lbl">From the floor: the attack that actually landed</p>
+  <div class="row"></div>
+</div>
+</div>
+```

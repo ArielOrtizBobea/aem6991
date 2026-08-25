@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Each team presents its research problem to the room in five minutes and takes questions — the feedback you get here is what you write up this week. Then you rate your teammates for the first time
+Each team presents its research problem in five minutes — and the presentation is this morning's method under test, because your five slides are an outline. One topic sentence per slide, no bullet lists. If the argument does not stand up as five sentences it will not stand up at five pages, and everyone in the room will see which it is. Questions are aimed at the skeleton: where does the argument jump? Then you rate your teammates for the first time
 
 Your team's output is submitted before you leave.
 

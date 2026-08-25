@@ -36,6 +36,8 @@ website:
           contents:
             - text: " 2 Causal language"
               href: fall-2026/sessions/02-causal-language.qmd
+            - text: "   Causal claim cards"
+              href: fall-2026/handouts/causal-claims.qmd
             - text: " 3 Models and uncertainty"
               href: fall-2026/sessions/03-models-uncertainty.qmd
             - text: " 4 How inference fails"
@@ -48,6 +50,8 @@ website:
           contents:
             - text: " 7 Research designs I"
               href: fall-2026/sessions/07-designs-i.qmd
+            - text: "   Design scenarios"
+              href: fall-2026/handouts/design-scenarios.qmd
             - text: " 8 Research designs II"
               href: fall-2026/sessions/08-designs-ii.qmd
         - section: "Part 4 — Data & access"

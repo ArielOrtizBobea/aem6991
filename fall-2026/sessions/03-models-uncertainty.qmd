@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Simulation lab: draw from a world you control. Watch the p-value distribution under the null, then change the sample size and the variation and watch it move. Then fit the same world in-sample and out-of-sample, and watch a model that looks excellent fail on data it has not seen. Nothing to install, no code to write
+Simulation lab: draw from a world you control. Watch the p-value distribution under the null, then change the sample size and the variation and watch it move. Then fit the same world in-sample and out-of-sample, and watch a model that looks excellent fail on data it has not seen. Nothing to install, no code to write. Then turn it on yourselves: given how much variation your own project's explanatory variable is likely to have, how big a sample would it take to see an effect worth caring about?
 
 Your team's output is submitted before you leave.
 

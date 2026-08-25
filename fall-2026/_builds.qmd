@@ -1,0 +1,15 @@
+| Meeting | Session B leaves you with |
+|:---|:---|
+| **1** &nbsp;Finding a question | Five candidate questions, filtered — one of which becomes the project |
+| **2** &nbsp;Causal language | Your team's ground rules, and a diagnosed causal graph |
+| **3** &nbsp;Models and uncertainty | How big a sample your question would need |
+| **4** &nbsp;How inference fails | The one threat your design will have to survive |
+| **5** &nbsp;Controls and matching | Which back doors you can close, and with what data |
+| **6** &nbsp;Writing the problem | Your problem statement, as an outline |
+| **7** &nbsp;Research designs I | Whether an experiment, instrument or discontinuity is open to you |
+| **8** &nbsp;Research designs II | Your design defended in public, plus the attack that landed — the identification section and the limitation |
+| **9** &nbsp;Measurement and data | Your key variable, operationalised, and what data the design demands |
+| **10** &nbsp;Getting the data | Your data source, access route, timeline and plan B — the memo |
+| **11** &nbsp;Midterm and using data | Your own data, interrogated, and what is wrong with it |
+| **12** &nbsp;Seeing the data | The one figure your project lives or dies on |
+| **13** &nbsp;Writing the design paper | The whole paper, as a sketch, marked up by somebody else |

@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Rebuild a published figure from its underlying data, then produce the version you think is more honest
+Rebuild a published figure from its underlying data, then produce the version you think is more honest. Then make the one figure your own project will live or die on — the picture that would show your effect if it is there — and bring it to the room
 
 Your team's output is submitted before you leave.
 

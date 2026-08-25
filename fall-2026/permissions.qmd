@@ -1,12 +1,19 @@
 ---
-title: "Research ethics and the IRB"
-pagetitle: "AEM 6991 · Research ethics and the IRB"
+title: "Permissions and ethics"
+pagetitle: "AEM 6991 · Permissions and ethics"
 toc: true
 toc-depth: 2
 editor:
   markdown:
     wrap: 72
 ---
+
+Two gates stand between a design and the data it needs, and they are not
+the same kind of thing. The **IRB** is an ethics review, and it governs
+research involving people. A **data-use agreement** is a contract, and it
+governs somebody else's proprietary data. Both take longer than teams
+expect, both have to start in the autumn, and neither is something you
+can grant yourself.
 
 ::: {.callout-important appearance="simple"}
 **If your project collects data from people --- a survey, an interview,
@@ -114,10 +121,12 @@ Writing the instrument early is not bureaucracy tax. It forces you to
 decide what you are actually measuring, which is
 [meeting 9](sessions/09-measurement.qmd).
 
-## Data-use agreements — a different thing
+## Data-use agreements
 
-A DUA is a **contract**, not an ethics review, and it is signed by the
-university rather than by you. If a firm gives you proprietary data,
+The second gate, and a different animal. A DUA is a **contract**, not an
+ethics review, and it is signed by **the university** rather than by
+you — which is why you cannot simply accept a firm's terms on your
+team's behalf, however reasonable they look. If a firm gives you proprietary data,
 expect legal review on both sides, expect it to take months, and expect
 restrictions on what you may publish.
 

@@ -15,11 +15,11 @@ obtain on this timeline --- and the difference between "available in
 minutes" and "available in months" is not obvious from the outside.
 :::
 
-## Dewey — start here
+## Dewey
 
 [**app.deweydata.io**](https://app.deweydata.io) · a commercial data
-marketplace the Johnson College subscribes to. Roughly **84 datasets**,
-free to you.
+marketplace **Cornell JCB** subscribes to. Roughly **84 datasets**, free
+to you.
 
 **Getting an account.** Register **with your Cornell email address** ---
 a personal address will not match the subscription. Your account sits in
@@ -100,16 +100,28 @@ The [**Cornell Center for Social Sciences**](https://socialsciences.cornell.edu/
 runs Cornell's secure data services, and holds things you cannot get any
 other way.
 
-- **Nielsen datasets via the Kilts Center** --- Consumer Panel, **Retail
-  Scanner** (weekly price and volume from 90+ retail chains across all
-  US markets), Ad Intel advertising data from 2010, PanelViews surveys.
-  For Business of Food or Behavioral Marketing this is close to the best
-  data in the world for the question. Housed in the Regulated Research
-  Environment; **full access needs a project application through Cornell
-  Research Services and takes months.**
-- **But note:** Cornell faculty and students have access to a **limited
-  subset of the Nielsen Retail Scanner data** with a netID and a signed
-  agreement. Days, not months. Start there.
+- [**Kilts-Nielsen marketing
+  data**](https://socialsciences.cornell.edu/computing-and-data/data-discovery-and-replication/data-resources/kilts-nielsen)
+  --- Consumer Panel, **Retail Scanner** (weekly price and volume from
+  90+ retail chains across all US markets), Ad Intel advertising data
+  from 2010, and the PanelViews surveys. For Business of Food or
+  Behavioral Marketing this is close to the best data in the world for
+  the question.
+
+  **Getting it is a project, not a download.** The data lives in CCSS's
+  Regulated Research Environment, and access means applying through
+  Cornell Research Services and requesting project space. Budget
+  **months**, and start by emailing
+  [socialsciences@cornell.edu](mailto:socialsciences@cornell.edu).
+
+  ::: {.callout-warning appearance="simple"}
+  There is also a [**public-use extract**](https://archive.ciser.cornell.edu/studies/2834)
+  in the CCSS archive, open to any Cornell netID. Be clear about what it
+  is: retail sales of **coffee, laundry detergent and shampoo**, by US
+  region, brand, size, packaging, UPC and price, **for 2019 only**. That
+  is a dataset for practising on, not one to build a capstone on. Do not
+  plan a project around it.
+  :::
 - **FSRDC** --- confidential Census, BLS and NCHS microdata, through one
   of 30 Federal Statistical Research Data Centers. Requires federal
   project approval and takes **longer than this degree**.
@@ -131,8 +143,12 @@ other way.
 - [**Zillow research data**](https://www.zillow.com/research/data/) and
   the [**Redfin Data Center**](https://www.redfin.com/news/data-center/)
   --- free housing indices at ZIP and metro level.
-- County **assessor and deeds records** --- public in most US counties,
-  and the raw material behind commercial property data.
+- County **assessor and deeds records** --- public in most US counties.
+  Worth knowing that this is precisely what ATTOM, the source behind
+  Dewey's Real Estate Transaction Data, already packages nationally and
+  cleans for you. Going to a county directly is worth it only for a
+  specific reason: one county in unusual depth, a longer history than
+  ATTOM carries, or a field it does not hold.
 
 ## Collecting it yourself
 
@@ -149,8 +165,8 @@ That is a good sign, not a problem.
   talked a soda company into donating thousands of cans for a field
   experiment. People say yes more often than students expect.
 
-**All of this needs IRB clearance** --- see [the IRB
-page](irb.qmd), and start it early.
+**All of this needs IRB clearance** --- see [permissions and
+ethics](permissions.qmd), and start it early.
 
 ## The access ladder — read this one
 
@@ -158,9 +174,9 @@ page](irb.qmd), and start it early.
 |:--|:--|:--|
 | Library databases, Statista, IBISWorld, SimplyAnalytics, FRED, EDGAR | netID, or nothing | **Now** |
 | Dewey | Register with a Cornell address, wait for approval | **Days** |
-| Limited Nielsen Retail Scanner subset | netID plus a signed agreement | **Days** |
+| The Nielsen public-use extract (2019, three product categories) | netID | **Now** — but it is a practice dataset |
 | Your own survey or online experiment | IRB, then field it | **Weeks** |
-| Full Nielsen / Kilts data | Project application, then space in the Regulated Research Environment | **Months** |
+| Full Kilts-Nielsen data | Project application through Cornell Research Services, then space in the Regulated Research Environment | **Months** |
 | A data-use agreement with a firm | Legal review on both sides | **Months, and it may fail** |
 | Census, BLS or NCHS confidential microdata via FSRDC | Federal project approval | **Longer than this degree** |
 
@@ -170,6 +186,11 @@ is the most common way an MPS capstone dies. [Meeting
 
 ## Ask a librarian
 
-**Tom Ottaviano** covers agriculture, business and economics for Mann
-Library and takes appointments. Fifteen minutes with him in September is
-worth more than a week of guessing in November.
+[**Tom Ottaviano**](https://guides.library.cornell.edu/prf.php?account_id=9348)
+is Mann Library's business and economics librarian ---
+[tjo65@cornell.edu](mailto:tjo65@cornell.edu), and his profile page has
+a booking link for appointments. Fifteen minutes with him in September
+is worth more than a week of guessing in November.
+
+For the library generally, [mann-ref@cornell.edu](mailto:mann-ref@cornell.edu)
+reaches the Mann reference desk.

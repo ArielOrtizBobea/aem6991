@@ -59,8 +59,8 @@
 resources:
   - text: "Where to get data"
     href: fall-2026/data-sources.qmd
-  - text: "Ethics and the IRB"
-    href: fall-2026/irb.qmd
+  - text: "Permissions and ethics"
+    href: fall-2026/permissions.qmd
   - text: "Working in a team"
     href: fall-2026/teamwork.qmd
 

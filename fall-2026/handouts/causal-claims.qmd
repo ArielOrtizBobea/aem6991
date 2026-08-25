@@ -113,6 +113,13 @@ the dashed lines and deal one per team. Page&nbsp;2 is the diagnosis sheet.</p>
 <div class="defence">
   <h3>Diagnosis sheet — team <span style="color:#b31b1b">______</span> &nbsp;·&nbsp; card <span style="color:#b31b1b">____</span></h3>
 
+  <p class="lbl" style="margin-top:0.1in">How this runs</p>
+  <p class="vocab" style="font-style:normal">Every team works its card at
+  the same time. Then <b>one team is drawn at random</b> to defend at the
+  front while everyone else attacks — and we draw again, and again. You
+  will not know whether you are up, so be ready. <b>Points for an attack
+  that lands</b>, and you have to name what is wrong, not just dislike it.</p>
+
   <p class="lbl">The graph behind the claim — draw it</p>
   <div class="big"></div>
 

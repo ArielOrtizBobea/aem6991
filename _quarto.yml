@@ -36,6 +36,8 @@ website:
           contents:
             - text: " 2 Causal language"
               href: fall-2026/sessions/02-causal-language.qmd
+            - text: "   Working in a team"
+              href: fall-2026/teamwork.qmd
             - text: "   Causal claim cards"
               href: fall-2026/handouts/causal-claims.qmd
             - text: " 3 Models and uncertainty"

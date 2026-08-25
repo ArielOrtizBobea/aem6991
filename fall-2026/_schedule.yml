@@ -32,6 +32,15 @@
 #             inside B; they never replace it. Deliberate exceptions:
 #             meeting 11 (A is the midterm) and meeting 14 (the pitch).
 #             Every session B opens with a ten-minute team check-in.
+#
+#             THE DEFENCE, used in meetings 2, 3, 7 and 8: every team
+#             works its own card at the same time, then ONE team is drawn
+#             AT RANDOM to defend at the front while the rest of the room
+#             attacks. Draw again, and again, as far as the clock allows.
+#             Random is the whole point — nobody knows whether they are
+#             up, so every team has to be ready, and being ready is the
+#             thing being taught. Points for attacks that land, as in the
+#             meeting-1 relay.
 #   builds    what this meeting's session B contributes to the team's
 #             final design paper. Generates the "how your paper gets
 #             built" table in the syllabus.
@@ -210,11 +219,13 @@ meetings:
     desc: "Counterfactuals and potential outcomes, and why a comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, and back-door reasoning."
     goal: "Draw your own project's causal graph, say which variable you must condition on and which you must not touch, and leave with your team's ground rules agreed in writing."
     a: "Counterfactuals and potential outcomes; why every comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, back-door reasoning — and why controlling for everything makes things worse. Then the map for the rest of this half: every design we meet is a different way of closing a back door, and you will draw each one before you hear what it is called"
-    b: "First, teams. You are put into one, and it writes down its own ground rules while everybody still gets along rather than negotiating in November — who does what, what happens when somebody misses a deadline, how you settle a disagreement. One page, signed, handed in. Then your team's first job together: each team draws a card carrying a real causal claim somebody is acting on — a board paper, a marketing deck, a widely shared post — and every card is broken in a different way. Draw the graph behind it, then name the failure in this morning's vocabulary: confounder, collider, mediator, selection, reverse causality. Then defend the diagnosis at the front while the room attacks it. Card 3 is a collider and card 5 is a mediator, and those two are where the morning either landed or did not"
+    b: "First, teams. You are put into one, and it writes down its own ground rules while everybody still gets along rather than negotiating in November — who does what, what happens when somebody misses a deadline, how you settle a disagreement. One page, signed, handed in. Then your team's first job together: each team draws a card carrying a real causal claim somebody is acting on — a board paper, a marketing deck, a widely shared post — and every card is broken in a different way. Draw the graph behind it, then name the failure in this morning's vocabulary: confounder, collider, mediator, selection, reverse causality. Then a team is drawn at random to defend its diagnosis at the front while the rest of the room attacks, and we draw again as the clock allows — you will not know whether you are up, which is the point. Card 3 is a collider and card 5 is a mediator, and those two are where the morning either landed or did not"
     builds: "Your team's ground rules, and a diagnosed causal graph"
     reading: "TBD"
     due: "Your team's written ground rules — agreed and handed in today"
     links:
+      - text: "Working in a team"
+        href: fall-2026/teamwork.qmd
       - text: "Causal claim cards"
         href: fall-2026/handouts/causal-claims.qmd
 
@@ -226,7 +237,7 @@ meetings:
     desc: "What the standard models estimate and how to read a coefficient in the units of the problem. Where uncertainty comes from and what a p-value is not. And the distinction that decides half your projects: explaining versus predicting."
     goal: "Read a coefficient in the units of the problem, say what a p-value does and does not tell you, and tell an explanatory question apart from a predictive one."
     a: "Linear regression, non-linear models, and count models — described, not derived: what each estimates and how to read a coefficient in the units of the problem. Then where uncertainty comes from: residuals and errors, sampling variation, what a standard error states, where p-values come from and what they are not. Finally the distinction that decides half the projects in this room — explaining versus predicting, and why a model that predicts well may tell you nothing about what to do"
-    b: "Ten minutes of simulation first, driven from the front: draw from a world you control, watch the p-value distribution under the null, move the sample size and the variation and watch it shift, then fit the same world in and out of sample and watch an excellent-looking model fail on data it has not seen. Nothing to install, no code to write. Then the cards. Each team gets an analyst who has run something and said something about it, and every one of them overclaims in a different way — a count outcome fitted by OLS and predicted below zero, a 0.03% lift called highly significant across two million users, a wide interval called no effect, an elasticity estimated off two price changes in three years, a churn probability of 112%. Work out what they are actually entitled to claim, then defend that at the front while the room pushes back. Last line on the sheet is the one that matters: is your own project at risk of the same error?"
+    b: "Ten minutes of simulation first, driven from the front: draw from a world you control, watch the p-value distribution under the null, move the sample size and the variation and watch it shift, then fit the same world in and out of sample and watch an excellent-looking model fail on data it has not seen. Nothing to install, no code to write. Then the cards. Each team gets an analyst who has run something and said something about it, and every one of them overclaims in a different way — a count outcome fitted by OLS and predicted below zero, a 0.03% lift called highly significant across two million users, a wide interval called no effect, an elasticity estimated off two price changes in three years, a churn probability of 112%. Work out what they are actually entitled to claim. Then a team is drawn at random to defend that at the front while the room pushes back, and we draw again while the clock allows. Last line on the sheet is the one that matters: is your own project at risk of the same error?"
     builds: "The overclaim your own project is most at risk of making"
     reading: "TBD"
     due: ~
@@ -282,7 +293,7 @@ meetings:
     desc: "Experiments, instrumental variables, and regression discontinuity: the variation each exploits, the assumption each requires, and how each fails."
     goal: "Draw the graph for an experiment, an instrument, and a discontinuity, and say whether any of the three could work for your question."
     a: "Three designs, each drawn before it is described. Experiments: randomisation cuts every arrow into treatment, so there is no back door left to close. Instrumental variables: an arrow into treatment and none into the outcome except through it — the exclusion restriction is that missing arrow, which is why it cannot be tested. Regression discontinuity: nothing else jumps at the cutoff. For each: what variation it exploits, what it assumes, how it fails, and what it looks like done well"
-    b: "Each team draws a setting nobody in the room owns — a bank with an email list, a scholarship cutoff, an NGO that gave filters to whoever asked. Fifteen minutes to draw the graph, name a design, and state the assumption carrying it. Then you defend it at the front for four minutes while the room attacks: what breaks this? One card cannot be answered honestly at all, and the team holding it has to be willing to say so. Last: is an experiment, an instrument, or a discontinuity actually open to your own project? Most teams find the answer is no, and finding that out today rather than in November is the point"
+    b: "Each team draws a setting nobody in the room owns — a bank with an email list, a scholarship cutoff, an NGO that gave filters to whoever asked. Fifteen minutes to draw the graph, name a design, and state the assumption carrying it. Then teams are drawn at random to defend for four minutes while the room attacks: what breaks this? Nobody knows in advance whether they are up. One card cannot be answered honestly at all, and the team holding it has to be willing to say so. Last: is an experiment, an instrument, or a discontinuity actually open to your own project? Most teams find the answer is no, and finding that out today rather than in November is the point"
     builds: "Whether an experiment, instrument or discontinuity is open to you"
     reading: "TBD"
     due: "Problem & literature — outline · Writing 1 — reverse outline"
@@ -298,7 +309,7 @@ meetings:
     desc: "Difference-in-differences, panel data with local fixed effects, and event studies: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate."
     goal: "Draw your own project's design as a graph and name the single assumption carrying the estimate — the one you would have to defend to a sceptic."
     a: "The same discipline on harder designs, each drawn first. Difference-in-differences: the confounders you cannot measure are the ones that do not move, and parallel trends is what that assumption looks like on the graph. Panel data with local fixed effects: which arrows the fixed effects erase, and which survive them untouched. Event studies: the same picture with time on it. For each, what identifying variation is left once the fixed effects are in, and what assumption is carrying the estimate"
-    b: "Same format, higher stakes. First a card apiece — a staggered rollout, a state border, a fee that changed for accounts opened after a date — fifteen minutes to draw it and name the design. Then the part that counts: each team puts up its OWN project's design, draws the graph, states the assumption carrying the estimate, and defends it while the room tries to break it. Whatever survives is the figure that goes in your identification section, so draw it to keep — and write down the attack that landed, because that is your limitations paragraph"
+    b: "Same format, higher stakes. First a card apiece — a staggered rollout, a state border, a fee that changed for accounts opened after a date — fifteen minutes to draw it and name the design. Then the part that counts: teams are drawn at random to put up their OWN project's design, draw the graph, state the assumption carrying the estimate, and defend it while the room tries to break it. Everyone presents eventually, but nobody knows when. Whatever survives is the figure that goes in your identification section, so draw it to keep — and write down the attack that landed, because that is your limitations paragraph"
     builds: "Your design defended in public, plus the attack that landed — the identification section and the limitation"
     reading: "TBD"
     due: "Problem & literature — sketch"

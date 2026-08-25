@@ -26,6 +26,8 @@ page-layout: full
 .defence { border: 1px solid #55554f; border-radius: 4px; padding: 0.28in; margin-top: 0.3in; break-inside: avoid; }
 .defence h3 { margin: 0 0 0.5rem; font-size: 1rem; border: none; }
 .defence .lbl { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: #6b6b6b; font-weight: 700; margin-bottom: 0.1rem; }
+.defence .vocab { font-size: 0.72rem; color:#333; line-height:1.6; background:#fafaf7; border:1px solid #e3e3de; border-radius:3px; padding:0.12in 0.14in; margin-bottom:0.2in; }
+.defence .vocab b { color:#b31b1b; }
 .defence .row { border-bottom: 1px solid #cfcfc9; min-height: 0.42in; margin-bottom: 0.18in; }
 .defence .big { min-height: 1.5in; border: 1px solid #cfcfc9; border-radius: 3px; margin-bottom: 0.18in; }
 @media print {
@@ -122,6 +124,13 @@ effects, event studies). Page&nbsp;2 is the defence sheet.</p>
 
 <div class="defence">
   <h3>Defence sheet — team <span style="color:#b31b1b">______</span> &nbsp;·&nbsp; card <span style="color:#b31b1b">____</span></h3>
+
+  <p class="lbl" style="margin-top:0.1in">How this runs</p>
+  <p class="vocab" style="font-style:normal">Every team works its card at
+  the same time. Then <b>one team is drawn at random</b> to defend at the
+  front while everyone else attacks — and we draw again, and again. You
+  will not know whether you are up, so be ready. <b>Points for an attack
+  that lands</b>, and you have to name what is wrong, not just dislike it.</p>
 
   <p class="lbl">The graph — draw it</p>
   <div class="big"></div>

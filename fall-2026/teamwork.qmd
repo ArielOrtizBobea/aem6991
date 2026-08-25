@@ -1,0 +1,143 @@
+---
+title: "Working in a team"
+pagetitle: "AEM 6991 · Working in a team"
+toc: true
+toc-depth: 2
+editor:
+  markdown:
+    wrap: 72
+---
+
+::: {.callout-note appearance="simple"}
+Half your grade is team-based, and when employers were asked in 2026
+what they value in graduates, **communication came first** and
+problem-solving second. They also said fewer than half of recent
+graduates arrive well-prepared on grit, emotional intelligence, or
+managing people.
+
+So this page is not a nicety. It is a short toolkit, with sources, for
+the part of the course that most often goes wrong.
+:::
+
+## The four things that actually go wrong
+
+Across every capstone course, the same four:
+
+1. **Nobody wrote down who does what**, so the conscientious person does
+   it all and resents it by October.
+2. **A deadline slips and nothing happens**, because there was no agreed
+   consequence and no one wants to be the person who raises it.
+3. **The team never says the hard thing** --- that the question is
+   vague, that the data is not going to arrive --- because it is easier
+   not to.
+4. **Everyone finds out in November** that the split of work was uneven,
+   when it is too late to fix.
+
+Everything below is aimed at one of those four.
+
+## Tools worth using
+
+### The ground rules, and RACI
+
+You write ground rules in meeting 2. The part teams skip is the **split
+of work**, and the standard tool for it is a **RACI matrix** --- for
+each task, who is *Responsible* (does it), *Accountable* (one person,
+owns whether it happened), *Consulted*, and *Informed*.
+
+It sounds bureaucratic for a five-person team. It takes fifteen minutes
+and it prevents failure 1 and failure 4, because "Accountable" is a
+single named person for every deliverable.
+
+### The weekly check-in
+
+Ten minutes at the start of every session B: what you did, what is
+stuck, who does what next. In writing, handed in.
+
+This is a **stand-up**, borrowed from agile practice, and its purpose
+here is not ceremony --- it is that the written record makes an uneven
+split visible in week 4 rather than week 13. See Derby & Larsen,
+*Agile Retrospectives* (2006), for the family of practices it belongs
+to.
+
+### The decision log
+
+One shared document. Every time the team decides something --- the
+question, the outcome variable, the data source --- one line: **what was
+decided, when, and why.**
+
+Costs nothing, and it is the single best defence against the November
+conversation that begins "I thought we agreed...". It also becomes the
+spine of your work plan, because a decision log read backwards *is* a
+methods section.
+
+### Psychological safety
+
+The best-evidenced finding in this whole area: teams perform better when
+members believe they can say something wrong, or admit they are lost,
+without being punished for it. That is **psychological safety**, from
+Amy Edmondson's work --- *Psychological Safety and Learning Behavior in
+Work Teams*, Administrative Science Quarterly (1999), and her book *The
+Fearless Organization* (2018). Google's internal Project Aristotle study
+found it the strongest predictor of team effectiveness among the factors
+it examined.
+
+The practical version for a five-person team: **the person who says "I
+don't understand what we're doing" is doing the team a favour.** Say so
+out loud in meeting 2, and then behave as if it is true.
+
+### Conflict, when it comes
+
+Fisher & Ury, *Getting to Yes* (1981), is the standard reference, and
+its central move is the useful one here: **argue about interests, not
+positions.** "I want to use this dataset" is a position. "I want us to
+finish on time and I don't trust the other source to arrive" is an
+interest, and interests can be traded.
+
+Your ground rules should already say when a disagreement comes to me.
+Use it earlier than feels comfortable.
+
+## What we will use to assess it
+
+Peer evaluation runs twice, at meetings 6 and 13, on **CATME** --- the
+Comprehensive Assessment of Team Member Effectiveness, developed at
+Purdue and used by around 17,000 instructors at 2,200 institutions. It
+scores five dimensions that research has found matter: contributing to
+the team's work, interacting with teammates, keeping the team on track,
+expecting quality, and having the relevant knowledge and skills.
+
+See Loughry, Ohland & Moore, *Educational and Psychological Measurement*
+(2007), and Ohland et al., *Academy of Management Learning & Education*
+(2012).
+
+Two things follow. Your rating of your teammates is **not** a formality
+--- it adjusts individual grades on team work. And the five dimensions
+are published, so you know in advance what you are being rated on. Read
+them in week 1 and behave accordingly.
+
+## Frameworks you will hear about — and what they are worth
+
+Business school will hand you several of these. They are not equally
+supported, and knowing which is which is itself part of the course.
+
+| Framework | What it says | What it is worth |
+|:--|:--|:--|
+| **Psychological safety** (Edmondson) | Teams do better when it is safe to be wrong out loud | **Strong.** Extensively replicated, and the mechanism is clear |
+| **CATME dimensions** (Ohland et al.) | Five measurable facets of member effectiveness | **Strong.** Validated instrument, large samples |
+| **Conditions for team effectiveness** (Haas & Mortensen, HBR 2016) | Compelling direction, strong structure, supportive context, shared mindset | **Good.** Practitioner synthesis of a real literature |
+| **Tuckman's stages** — forming, storming, norming, performing (1965) | Teams pass through predictable phases | **Useful vocabulary, weak evidence.** Teams do not reliably move in that order. Use it to name what is happening, not to predict |
+| **Belbin team roles** (1981) | Nine roles; balance them | **Popular, poorly supported.** The psychometrics have not held up well. Treat as a conversation starter, not a diagnosis |
+
+That last row is worth pausing on. **A framework being widely used in
+business is not evidence that it works** --- which is the same lesson as
+the rest of this course, applied to management rather than to data.
+
+## Reading
+
+- Haas, M. & Mortensen, M. (2016), "The Secrets of Great Teamwork,"
+  *Harvard Business Review*.
+- Edmondson, A. (1999), "Psychological Safety and Learning Behavior in
+  Work Teams," *Administrative Science Quarterly* 44(2).
+- Ohland, M. et al. (2012), "The Comprehensive Assessment of Team Member
+  Effectiveness," *Academy of Management Learning & Education* 11(4).
+- Fisher, R. & Ury, W. (1981), *Getting to Yes*.
+- Katzenbach, J. & Smith, D. (1993), *The Wisdom of Teams*.

@@ -12,7 +12,7 @@ This page is a stub. Materials appear here before the meeting.
 **Date not final.** Instructor traveling — this meeting is held remotely.
 :::
 
-**What you should be able to do after this meeting.** State exactly what would have to be true for your regression coefficient to be read causally.
+**What you should be able to do after this meeting.** Draw the back doors a set of controls closes, and state exactly what would have to be true for your regression coefficient to be read causally.
 
 ## Before class
 
@@ -22,7 +22,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-What it means to identify an effect by conditioning on observables: controls, matching, and when a regression coefficient can be read causally. Why 'I added controls' is a claim about the graph rather than a technique, and exactly what would have to be true for it to hold
+We start where every design meeting from here starts — at the graph. Conditioning on observables, drawn: which back doors a set of controls closes, and the one you cannot see well enough to close. Then controls and matching in practice, and when a regression coefficient can be read causally. Why 'I added controls' is a claim about the graph rather than a technique, and exactly what would have to be true for it to hold
 
 ## Session B · 3:35–4:30
 

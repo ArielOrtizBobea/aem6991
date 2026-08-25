@@ -22,7 +22,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-Academic writing III — the design paper. The same method on a harder object: you outlined this two weeks ago, so today is what the identification section has to contain — your design named, its assumption stated, and what would break it — and how to state a limitation without gutting your own project. Then reading for the skeleton one last time: what a referee actually looks for, which is how you will write your own referee report. If you cannot reconstruct a paper's outline, that is the finding. Then reproducibility at awareness level: where files live, naming, what 'the final version' means, and when version control is worth the cost
+Academic writing III — the design paper. The same method on a harder object: you outlined this two weeks ago, so today is what the identification section has to contain — the graph you drew in meeting 8, your design named, its assumption stated, and what would break it — and how to state a limitation without gutting your own project. Then reading for the skeleton one last time: what a referee actually looks for, which is how you will write your own referee report. If you cannot reconstruct a paper's outline, that is the finding. Then reproducibility at awareness level: where files live, naming, what 'the final version' means, and when version control is worth the cost
 
 ## Session B · 3:35–4:30
 

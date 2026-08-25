@@ -8,7 +8,7 @@ pagetitle: "AEM 6991 · 8 Research designs II"
 This page is a stub. Materials appear here before the meeting.
 :::
 
-**What you should be able to do after this meeting.** Name your own project's design and the single assumption you would have to defend to a sceptic.
+**What you should be able to do after this meeting.** Draw your own project's design as a graph and name the single assumption carrying the estimate — the one you would have to defend to a sceptic.
 
 ## Before class
 
@@ -18,7 +18,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-Difference-in-differences; panel data with local fixed effects; event studies. What identifying variation survives once the fixed effects are in, and what assumption you are leaning on
+The same discipline on harder designs, each drawn first. Difference-in-differences: the confounders you cannot measure are the ones that do not move, and parallel trends is what that assumption looks like on the graph. Panel data with local fixed effects: which arrows the fixed effects erase, and which survive them untouched. Event studies: the same picture with time on it. For each, what identifying variation is left once the fixed effects are in, and what assumption is carrying the estimate
 
 ## Session B · 3:35–4:30
 
@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team stand-up: what you did,
 what is blocked, and who does what next — in writing, submitted with
 the session output.
 
-Name your own project's design, and the assumption you would have to defend
+Draw your own project's design and mark the assumption carrying it — the one you would have to defend to a sceptic. This is the figure that goes in your design paper's identification section, so draw it to keep
 
 Your team's output is submitted before you leave.
 

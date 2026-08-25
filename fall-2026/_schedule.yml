@@ -190,7 +190,7 @@ meetings:
     title: "Causal language"
     desc: "Counterfactuals and potential outcomes, and why a comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, and back-door reasoning."
     goal: "Draw your own project's causal graph, say which variable you must condition on and which you must not touch, and leave with a signed team charter."
-    a: "Counterfactuals and potential outcomes; why every comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, back-door reasoning — and why controlling for everything makes things worse"
+    a: "Counterfactuals and potential outcomes; why every comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, back-door reasoning — and why controlling for everything makes things worse. Then the map for the rest of this half: every design we meet is a different way of closing a back door, and you will draw each one before you hear what it is called"
     b: "Team formation and the team charter. The conflict protocol and the division of labour, agreed in writing now rather than negotiated in November: who does what, what happens when somebody misses a deadline, and when to escalate to me. The weekly stand-up starts today"
     reading: "TBD"
     due: "Team charter, same day"
@@ -228,8 +228,8 @@ meetings:
     part: 2
     title: "Conditioning on what you can observe"
     desc: "Identifying an effect by controlling for what you can measure: controls, matching, and the causal reading of a regression coefficient. The workhorse of applied work — and the assumption it rests on, which is also its ceiling."
-    goal: "State exactly what would have to be true for your regression coefficient to be read causally."
-    a: "What it means to identify an effect by conditioning on observables: controls, matching, and when a regression coefficient can be read causally. Why 'I added controls' is a claim about the graph rather than a technique, and exactly what would have to be true for it to hold"
+    goal: "Draw the back doors a set of controls closes, and state exactly what would have to be true for your regression coefficient to be read causally."
+    a: "We start where every design meeting from here starts — at the graph. Conditioning on observables, drawn: which back doors a set of controls closes, and the one you cannot see well enough to close. Then controls and matching in practice, and when a regression coefficient can be read causally. Why 'I added controls' is a claim about the graph rather than a technique, and exactly what would have to be true for it to hold"
     b: "Back to the graph you drew in meeting 2: could you close every back door with data you could actually obtain? Breakout rooms, then report back"
     reading: "TBD"
     due: ~
@@ -255,9 +255,9 @@ meetings:
     part: 3
     title: "Research designs I"
     desc: "Experiments, instrumental variables, and regression discontinuity: the variation each exploits, the assumption each requires, and how each fails."
-    goal: "Say whether an experiment, an instrument, or a discontinuity could work for your question, and what each one would require you to have."
-    a: "Experiments; instrumental variables; regression discontinuity. What variation each exploits, what each assumes, how each fails, and what it looks like when it is done well"
-    b: "Scenario clinic: given a question, would any of these three work here?"
+    goal: "Draw the graph for an experiment, an instrument, and a discontinuity, and say whether any of the three could work for your question."
+    a: "Three designs, each drawn before it is described. Experiments: randomisation cuts every arrow into treatment, so there is no back door left to close. Instrumental variables: an arrow into treatment and none into the outcome except through it — the exclusion restriction is that missing arrow, which is why it cannot be tested. Regression discontinuity: nothing else jumps at the cutoff. For each: what variation it exploits, what it assumes, how it fails, and what it looks like done well"
+    b: "Scenario clinic: given a question, draw the graph first and then say whether any of these three could work here — and if not, what you would need to have that you do not"
     reading: "TBD"
     due: "Problem & literature — outline · Writing 1 — reverse outline"
 
@@ -268,9 +268,9 @@ meetings:
     part: 3
     title: "Research designs II"
     desc: "Difference-in-differences, panel data with local fixed effects, and event studies: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate."
-    goal: "Name your own project's design and the single assumption you would have to defend to a sceptic."
-    a: "Difference-in-differences; panel data with local fixed effects; event studies. What identifying variation survives once the fixed effects are in, and what assumption you are leaning on"
-    b: "Name your own project's design, and the assumption you would have to defend"
+    goal: "Draw your own project's design as a graph and name the single assumption carrying the estimate — the one you would have to defend to a sceptic."
+    a: "The same discipline on harder designs, each drawn first. Difference-in-differences: the confounders you cannot measure are the ones that do not move, and parallel trends is what that assumption looks like on the graph. Panel data with local fixed effects: which arrows the fixed effects erase, and which survive them untouched. Event studies: the same picture with time on it. For each, what identifying variation is left once the fixed effects are in, and what assumption is carrying the estimate"
+    b: "Draw your own project's design and mark the assumption carrying it — the one you would have to defend to a sceptic. This is the figure that goes in your design paper's identification section, so draw it to keep"
     reading: "TBD"
     due: "Problem & literature — sketch"
 
@@ -336,7 +336,7 @@ meetings:
     title: "Writing the design paper; collaboration"
     desc: "The design paper as a genre: how to write an identification section, and how to state a limitation without gutting your own project. Then how to referee somebody else's — which is the same skill from the other side — and how to keep a project reproducible."
     goal: "Write an identification section that names your design, its assumption, and what would break it — and state a limitation without gutting your own project."
-    a: "Academic writing III — the design paper. The same method on a harder object: you outlined this two weeks ago, so today is what the identification section has to contain — your design named, its assumption stated, and what would break it — and how to state a limitation without gutting your own project. Then reading for the skeleton one last time: what a referee actually looks for, which is how you will write your own referee report. If you cannot reconstruct a paper's outline, that is the finding. Then reproducibility at awareness level: where files live, naming, what 'the final version' means, and when version control is worth the cost"
+    a: "Academic writing III — the design paper. The same method on a harder object: you outlined this two weeks ago, so today is what the identification section has to contain — the graph you drew in meeting 8, your design named, its assumption stated, and what would break it — and how to state a limitation without gutting your own project. Then reading for the skeleton one last time: what a referee actually looks for, which is how you will write your own referee report. If you cannot reconstruct a paper's outline, that is the finding. Then reproducibility at awareness level: where files live, naming, what 'the final version' means, and when version control is worth the cost"
     b: "Bring your sketch — topic sentences with the evidence noted under each, not prose. Workshop it in rotation: somebody else reads your skeleton and tells you where the argument jumps. Then Milestone 2, each team presenting its design and the assumption it is defending, and the second peer evaluation"
     reading: "TBD"
     due: "Design paper — sketch, workshopped in class · Milestone 2 presentation · Peer evaluation 2 · Exercise 2 — rebuild and critique a figure, end of week"

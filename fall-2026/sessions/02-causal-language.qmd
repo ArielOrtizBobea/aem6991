@@ -18,7 +18,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-Counterfactuals and potential outcomes; why every comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, back-door reasoning — and why controlling for everything makes things worse
+Counterfactuals and potential outcomes; why every comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, back-door reasoning — and why controlling for everything makes things worse. Then the map for the rest of this half: every design we meet is a different way of closing a back door, and you will draw each one before you hear what it is called
 
 ## Session B · 3:35–4:30
 

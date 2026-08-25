@@ -8,7 +8,7 @@ pagetitle: "AEM 6991 · 7 Research designs I"
 This page is a stub. Materials appear here before the meeting.
 :::
 
-**What you should be able to do after this meeting.** Say whether an experiment, an instrument, or a discontinuity could work for your question, and what each one would require you to have.
+**What you should be able to do after this meeting.** Draw the graph for an experiment, an instrument, and a discontinuity, and say whether any of the three could work for your question.
 
 ## Before class
 
@@ -18,7 +18,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-Experiments; instrumental variables; regression discontinuity. What variation each exploits, what each assumes, how each fails, and what it looks like when it is done well
+Three designs, each drawn before it is described. Experiments: randomisation cuts every arrow into treatment, so there is no back door left to close. Instrumental variables: an arrow into treatment and none into the outcome except through it — the exclusion restriction is that missing arrow, which is why it cannot be tested. Regression discontinuity: nothing else jumps at the cutoff. For each: what variation it exploits, what it assumes, how it fails, and what it looks like done well
 
 ## Session B · 3:35–4:30
 
@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team stand-up: what you did,
 what is blocked, and who does what next — in writing, submitted with
 the session output.
 
-Scenario clinic: given a question, would any of these three work here?
+Scenario clinic: given a question, draw the graph first and then say whether any of these three could work here — and if not, what you would need to have that you do not
 
 Your team's output is submitted before you leave.
 

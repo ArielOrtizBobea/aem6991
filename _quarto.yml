@@ -76,6 +76,10 @@ website:
               href: fall-2026/sessions/14-pitch.qmd
         - section: "Resources"
           contents:
+            - text: "Where to get data"
+              href: fall-2026/data-sources.qmd
+            - text: "Ethics and the IRB"
+              href: fall-2026/irb.qmd
             - text: "Working in a team"
               href: fall-2026/teamwork.qmd
         # <<< END GENERATED MEETINGS

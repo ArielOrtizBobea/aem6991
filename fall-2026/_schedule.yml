@@ -57,6 +57,10 @@
 # Material that belongs to the whole course rather than one meeting.
 # Emitted as its own sidebar section after the parts.
 resources:
+  - text: "Where to get data"
+    href: fall-2026/data-sources.qmd
+  - text: "Ethics and the IRB"
+    href: fall-2026/irb.qmd
   - text: "Working in a team"
     href: fall-2026/teamwork.qmd
 

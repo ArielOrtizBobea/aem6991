@@ -1,0 +1,175 @@
+---
+title: "Where to get data"
+pagetitle: "AEM 6991 · Where to get data"
+toc: true
+toc-depth: 3
+editor:
+  markdown:
+    wrap: 72
+---
+
+::: {.callout-important appearance="simple"}
+**Read the last section first** if you are short of time. The single most
+expensive mistake in a capstone is designing around data you cannot
+obtain on this timeline --- and the difference between "available in
+minutes" and "available in months" is not obvious from the outside.
+:::
+
+## Dewey — start here
+
+[**app.deweydata.io**](https://app.deweydata.io) · a commercial data
+marketplace the Johnson College subscribes to. Roughly **84 datasets**,
+free to you.
+
+**Getting an account.** Register **with your Cornell email address** ---
+a personal address will not match the subscription. Your account sits in
+a **pending** state until an administrator approves it, which takes
+days. Register in week 1, not the night you need it. There is no
+IP-based access and no shared login.
+
+**What is in it**, by family:
+
+| Family | Examples | Typical unit |
+|:--|:--|:--|
+| **Property** | Real Estate Transaction Data (assessor, sales, distress, 2011–); Commercial Real Estate Listings; Rental Data (41,702 ZIPs, 2014–); Dwellsy rent indices | Parcel, listing, ZIP |
+| **Foot traffic** | Weekly Patterns Plus (US + Canada, 2017–); Daily Store Visits; Neighborhood Patterns; Global Places (POI, NAICS) | Place × week/day |
+| **Spending** | Card panels (100M+ cards, ~13k merchants); Brand Tracker; Spend Patterns; Convenience Store Transactions (SKU level) | Brand, POI, SKU |
+| **Labour** | Job Postings (US, with salary, 2016–2025); Job Records (global, 2007–); Layoff Data (WARN, 1996–); Occupational Wages; People and Resume | Posting, notice, person |
+| **Firms** | Company Insights (30M+ firms, headcount, churn); Business Entity (50-state registries); Public Company Financials; ESG Scores | Company |
+| **Markets** | Global Equity EOD (170+ exchanges); Bond Prices & Liquidity; Credit Curves; Futures & Options; Social Sentiment | Security × day |
+| **Place & risk** | US Climate Risk (5 hazards × ZIP); Weather (daily, 1970–); Nature Score; CDC PLACES; ACS block-group tables | ZIP, tract, block group |
+| **Health & policy** | Payer Rates (negotiated rates, 293 codes); SBA Loans (13.4M PPP/504/7a); US Lobbying (1999–); government contract awards | Claim code, loan, award |
+
+Each dataset's own page carries the schema, coverage and date range.
+**Read it before you build a question on it** --- that is feasibility
+filter 2, and it takes ten minutes.
+
+## Through the Cornell library
+
+All of these need only a netID.
+
+### Companies and finance
+
+- [**WRDS**](https://wrds-www.wharton.upenn.edu/) (Wharton Research Data
+  Services) --- the standard academic host for historical finance and
+  accounting data. Extensive, with use restrictions; talk to a librarian
+  before pulling anything large.
+- [**Capital IQ**](https://www.capitaliq.spglobal.com/) --- 88,000
+  public and 825,000 private companies: financials, transactions,
+  people.
+- [**Refinitiv Workspace**](https://www.lseg.com/en/data-analytics/products/workspace)
+  --- company financials, market data, transactions, analyst reports.
+  Register with your Cornell email.
+- [**PitchBook**](https://pitchbook.com/) --- private equity and venture
+  capital deals, investors, comparables. Log in with SSO using your
+  Cornell address.
+- **Mergent Intellect** and **Data Axle Reference Solutions** --- private
+  company directories, US and international.
+- [**EDGAR**](https://www.sec.gov/edgar) --- every SEC filing, free and
+  public, no login at all.
+
+**Bloomberg terminals** are physical machines: three at **Mann Library**
+on the main level, plus the Management, Hotel and Law libraries. Worth an
+hour even if your project never uses one.
+
+### Markets and industries
+
+[**Mintel**](https://www.mintel.com/) · [**Passport**
+(Euromonitor)](https://www.euromonitor.com/our-expertise/passport) ·
+[**Statista**](https://www.statista.com/) ·
+[**IBISWorld**](https://www.ibisworld.com/) (700+ US industries) ·
+**Frost & Sullivan** · **Technavio** (20 downloads per Cornell email per
+month) · **Business Source Complete** · **ABI/Inform**.
+
+These are *reports*, not microdata. Excellent for sizing a market and
+for the background half of a feasibility memo; they will not give you
+something to estimate on.
+
+### Demographics and geography
+
+**SimplyAnalytics** builds thematic maps and reports from US
+demographic, business and marketing data --- the fastest way to check
+whether a geographic question is even viable. Then the free federal
+sources: [**data.census.gov**](https://data.census.gov),
+[**BLS**](https://www.bls.gov/data/), and the [**Consumer Expenditure
+Survey**](https://www.bls.gov/cex/).
+
+## Restricted data, through CCSS
+
+The [**Cornell Center for Social Sciences**](https://socialsciences.cornell.edu/)
+runs Cornell's secure data services, and holds things you cannot get any
+other way.
+
+- **Nielsen datasets via the Kilts Center** --- Consumer Panel, **Retail
+  Scanner** (weekly price and volume from 90+ retail chains across all
+  US markets), Ad Intel advertising data from 2010, PanelViews surveys.
+  For Business of Food or Behavioral Marketing this is close to the best
+  data in the world for the question. Housed in the Regulated Research
+  Environment; **full access needs a project application through Cornell
+  Research Services and takes months.**
+- **But note:** Cornell faculty and students have access to a **limited
+  subset of the Nielsen Retail Scanner data** with a netID and a signed
+  agreement. Days, not months. Start there.
+- **FSRDC** --- confidential Census, BLS and NCHS microdata, through one
+  of 30 Federal Statistical Research Data Centers. Requires federal
+  project approval and takes **longer than this degree**.
+- **IAB@Cornell** --- German administrative labour-market microdata.
+
+## Free and public, worth knowing
+
+- [**FRED**](https://fred.stlouisfed.org/) --- 800,000+ economic series,
+  the fastest macro source there is.
+- [**IPUMS**](https://www.ipums.org/) --- harmonised census and survey
+  microdata, US and international. Free with registration.
+- [**ICPSR**](https://www.icpsr.umich.edu/) --- the largest social
+  science data archive; Cornell is a member.
+- [**Roper Center**](https://ropercenter.cornell.edu/) --- public opinion
+  polling, **hosted at Cornell**.
+- [**World Bank Open Data**](https://data.worldbank.org/) and
+  [**UN Comtrade**](https://comtrade.un.org/) --- the backbone for
+  International Development Economics, where Dewey is weakest.
+- [**Zillow research data**](https://www.zillow.com/research/data/) and
+  the [**Redfin Data Center**](https://www.redfin.com/news/data-center/)
+  --- free housing indices at ZIP and metro level.
+- County **assessor and deeds records** --- public in most US counties,
+  and the raw material behind commercial property data.
+
+## Collecting it yourself
+
+Sometimes nobody has your data because nobody has asked your question.
+That is a good sign, not a problem.
+
+- **Surveys.** Cornell provides [**Qualtrics**](https://cornell.qualtrics.com)
+  to all students. Fielding to a paid sample through
+  [**Prolific**](https://www.prolific.com/) or MTurk costs real but small
+  money and needs **no programming**.
+- **Online experiments.** A message test, a price test, or a conjoint
+  task can be built in Qualtrics and fielded the same way.
+- **Asking a firm.** The most ambitious project anyone here remembers
+  talked a soda company into donating thousands of cans for a field
+  experiment. People say yes more often than students expect.
+
+**All of this needs IRB clearance** --- see [the IRB
+page](irb.qmd), and start it early.
+
+## The access ladder — read this one
+
+| You want | How you get it | How long |
+|:--|:--|:--|
+| Library databases, Statista, IBISWorld, SimplyAnalytics, FRED, EDGAR | netID, or nothing | **Now** |
+| Dewey | Register with a Cornell address, wait for approval | **Days** |
+| Limited Nielsen Retail Scanner subset | netID plus a signed agreement | **Days** |
+| Your own survey or online experiment | IRB, then field it | **Weeks** |
+| Full Nielsen / Kilts data | Project application, then space in the Regulated Research Environment | **Months** |
+| A data-use agreement with a firm | Legal review on both sides | **Months, and it may fail** |
+| Census, BLS or NCHS confidential microdata via FSRDC | Federal project approval | **Longer than this degree** |
+
+**Which row you are in is feasibility filter 2**, and getting it wrong
+is the most common way an MPS capstone dies. [Meeting
+10](sessions/10-getting-data.qmd) is about this.
+
+## Ask a librarian
+
+**Tom Ottaviano** covers agriculture, business and economics for Mann
+Library and takes appointments. Fifteen minutes with him in September is
+worth more than a week of guessing in November.

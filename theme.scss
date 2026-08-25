@@ -70,11 +70,16 @@ $grid-sidebar-width: 270px;
   margin-bottom: 0.15rem;
 }
 
-// Accent marks the current page only.
+// Accent marks the current page only — by colour, never by weight.
+// Bolding one entry makes the whole column look ragged, and the label
+// widths were chosen to sit on one line each.
+// The link-colour rule below is four classes deep, so the accent has to
+// match it or the current page gets no marker at all.
 .sidebar-navigation .sidebar-item-container .active,
-.sidebar-navigation .sidebar-item-container .show > .sidebar-link {
+.sidebar-navigation .sidebar-item-container .show > .sidebar-link,
+.sidebar-navigation .sidebar-item .sidebar-item-container .sidebar-item-text.active {
   color: $carnelian;
-  font-weight: 600;
+  font-weight: inherit;
 }
 
 // Section headers ("Act I — The workbench") read as labels, not as links.

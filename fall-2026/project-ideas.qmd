@@ -64,7 +64,8 @@ narrower than the shelf of business books suggests.
 
 ### Start from what you have, not from what you want
 
-The strongest idea here is **effectuation**, from Saras Sarasvathy's work
+The strongest idea here is **effectuation**, from Saras Sarasvathy's
+["Causation and Effectuation"](https://doi.org/10.5465/amr.2001.4378020)
 (*Academy of Management Review*, 2001), built on think-aloud studies of
 expert entrepreneurs and replicated since. Its central finding is that
 experts do not start from a goal and search for means. They start from
@@ -83,7 +84,10 @@ precisely when you stop being willing to walk away from the means.
 
 ### Start from the job, not the product
 
-**Jobs to be Done**, associated with Clayton Christensen (*HBR*, 2016),
+**Jobs to be Done**, associated with Clayton Christensen
+(["Know Your Customers' Jobs to Be
+Done"](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done),
+*HBR*, 2016),
 reframes every question from "what does this product do" to "what is the
 customer **hiring** it to accomplish." For your purposes the useful
 translation is: *what decision does somebody have to make, and what would
@@ -103,7 +107,8 @@ separately on each.
 
 ### For research questions specifically
 
-**Sandberg and Alvesson** distinguish **gap-spotting** --- finding
+[**Sandberg and Alvesson**](https://doi.org/10.1177/1350508410372151)
+distinguish **gap-spotting** --- finding
 something the literature has not covered --- from **problematization**,
 which challenges an assumption the literature shares. Gap-spotting is
 easier and produces most published work; problematization produces the
@@ -115,9 +120,9 @@ you claiming more than you have.
 
 | Approach | What it is worth |
 |:--|:--|
-| **Effectuation** (Sarasvathy) | **Strong.** Grounded in think-aloud studies of experts, replicated independently |
+| [**Effectuation**](https://doi.org/10.5465/amr.2001.4378020) (Sarasvathy) | **Strong.** Grounded in think-aloud studies of experts, replicated independently |
 | **Diverge-then-converge** | **Strong.** Robust finding across the ideation literature |
-| **Jobs to be Done** | **Useful reframing, thin evidence.** No real body of tests; valuable as a question, not a theory |
+| [**Jobs to be Done**](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done) | **Useful reframing, thin evidence.** No real body of tests; valuable as a question, not a theory |
 | **Design thinking** as a full method | **Popular, contested.** Widely taught, and the empirical case for the branded five-step version is weak |
 | **Lean startup / MVP** (Ries) | **Practical, lightly evidenced.** The build-measure-learn loop is sensible; the claims made for it outrun the tests |
 
@@ -128,15 +133,20 @@ not because anybody has demonstrated they produce better ideas.
 
 ### Reading
 
-- Sarasvathy, S. (2001), "Causation and Effectuation," *Academy of
+- Sarasvathy, S. (2001), ["Causation and Effectuation: Toward a
+  Theoretical Shift from Economic Inevitability to Entrepreneurial
+  Contingency"](https://doi.org/10.5465/amr.2001.4378020), *Academy of
   Management Review* 26(2).
-- Christensen, C. et al. (2016), "Know Your Customers' Jobs to Be Done,"
+- Christensen, C. et al. (2016), ["Know Your Customers' Jobs to Be
+  Done"](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done),
   *Harvard Business Review*.
-- Alvesson, M. & Sandberg, J., on gap-spotting versus problematization ---
-  the piece assigned in this course's reading list.
+- Sandberg, J. & Alvesson, M. (2011), ["Ways of constructing research
+  questions: gap-spotting or
+  problematization?"](https://doi.org/10.1177/1350508410372151),
+  *Organization* 18(1).
 - Osterwalder, A. & Pigneur, Y. (2010), *Business Model Generation* ---
-  for the Business Model and Value Proposition canvases, if you want a
-  template to structure a commercial idea.
+  the canvases are free at
+  [strategyzer.com](https://www.strategyzer.com/library).
 
 ## Beyond Dewey: what else Cornell already pays for
 

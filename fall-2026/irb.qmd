@@ -1,0 +1,135 @@
+---
+title: "Research ethics and the IRB"
+pagetitle: "AEM 6991 · Research ethics and the IRB"
+toc: true
+toc-depth: 2
+editor:
+  markdown:
+    wrap: 72
+---
+
+::: {.callout-important appearance="simple"}
+**If your project collects data from people --- a survey, an interview,
+an experiment --- start this in October.** Not February. The review
+itself is often quick; assembling what it needs is not, and training has
+to be finished before anything can be approved.
+
+If your project uses only existing datasets about firms, prices, places
+or securities, you almost certainly need none of this. Read the first
+section anyway, because "existing data about people" is a case that
+catches teams out.
+:::
+
+## Does this apply to us?
+
+The IRB governs **research with human participants.** Two questions
+decide it:
+
+1. **Is it research?** A systematic investigation designed to produce
+   generalisable knowledge. A capstone intended to inform one firm's
+   decision may not be; one written to say something about people in
+   general is.
+2. **Are there human participants?** Either you interact with living
+   people --- surveys, interviews, experiments, focus groups --- or you
+   use **identifiable private information** about them.
+
+That second half is the one teams miss. Scraped social media posts,
+purchased consumer records, and administrative microdata can all count
+if individuals are identifiable. Foot-traffic and card-spend data of the
+kind on Dewey arrive aggregated and de-identified, which is normally
+what keeps them outside the definition --- but **you do not get to make
+that call yourself.** When in doubt, ask, and ask early.
+
+::: {.callout-note appearance="simple"}
+**You are not the one who decides you are exempt.** Even exempt research
+needs a determination *from the IRB*. "We decided it was exempt" is not
+a category.
+:::
+
+## How it works at Cornell
+
+The IRB is administered by [**Cornell Research
+Services**](https://researchservices.cornell.edu/offices/IRB), East Hill
+Office Building.
+
+**Submissions go through RASS-IRB** — [rass.cornell.edu/irb](https://rass.cornell.edu/irb),
+with step-by-step guidance at
+[guide.rass.cornell.edu](https://guide.rass.cornell.edu).
+
+**Training comes first, and it applies to everyone.** Every person listed
+on a protocol must complete [**CITI Program**](https://researchservices.cornell.edu/training/citi-online-courses-cornell-researchers-coi-irb-rcr-export-control)
+human-participants training — **including for exempt protocols**, a
+requirement since October 2022. It lasts five years. **The IRB will not
+issue an approval or exemption letter until every listed person has
+finished it**, so one teammate who has not done the modules holds up the
+whole team.
+
+Do the CITI modules in **week 2 or 3**, before you know whether you need
+them. They take a couple of hours and they remove the most common cause
+of delay.
+
+**Three levels of review:**
+
+| Level | Roughly | What it covers |
+|:--|:--|:--|
+| **Exempt** | Most classroom surveys of adults on non-sensitive topics | Still requires an IRB determination |
+| **Expedited** | Minimal-risk research not fitting an exempt category | Reviewed by a member, not the full board |
+| **Full board** | More than minimal risk, or vulnerable populations | Meets on a schedule — plan around it |
+
+Cornell's own guidance for studies enrolling students asks for
+submission **at least four weeks before** enrolment begins, and warns
+that anything needing an ancillary review takes longer.
+
+## What this means for your timeline
+
+| When | What |
+|:--|:--|
+| **Week 2–3** | Everyone on the team completes CITI training |
+| **Meeting 9–10 (late Oct)** | You know whether your design needs human participants |
+| **Late Oct / early Nov** | Draft the protocol: instrument, consent language, recruitment, data handling |
+| **November** | Submit through RASS-IRB |
+| **Spring (AEM 6992)** | Collect |
+
+The point of doing it in the fall is that **AEM 6992 is where you
+execute.** A protocol still in review in February costs you a third of
+the semester you were going to run the study in.
+
+## What a protocol actually asks for
+
+Less than students fear, but all of it in writing:
+
+- **What you will do**, step by step, from recruitment to analysis
+- **Who your participants are**, how many, and how you find them
+- **The instrument itself** — the actual survey, the actual script
+- **Consent language** — what you tell people before they agree
+- **Risks and benefits**, stated honestly. For most survey work the risk
+  is boredom and a small privacy exposure; say so rather than claiming
+  zero
+- **Data handling** — where it lives, who sees it, whether it is
+  identifiable, when it is destroyed
+- **A faculty member**, since students generally cannot serve as
+  principal investigator on their own. Talk to me before you submit
+
+Writing the instrument early is not bureaucracy tax. It forces you to
+decide what you are actually measuring, which is
+[meeting 9](sessions/09-measurement.qmd).
+
+## Data-use agreements — a different thing
+
+A DUA is a **contract**, not an ethics review, and it is signed by the
+university rather than by you. If a firm gives you proprietary data,
+expect legal review on both sides, expect it to take months, and expect
+restrictions on what you may publish.
+
+Two consequences worth planning around: **you may not be able to show
+your results**, and the agreement may not be signed in time. If your
+project depends on a DUA, it needs a plan B by
+[meeting 10](sessions/10-getting-data.qmd).
+
+## Where to ask
+
+- The IRB office answers questions before submission, and would much
+  rather hear from you early than fix a protocol later.
+- Ask me first if you are unsure whether any of this applies. Usually it
+  does not take long to find out, and the answer changes what you can
+  design.

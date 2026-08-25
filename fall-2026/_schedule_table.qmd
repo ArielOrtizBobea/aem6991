@@ -55,8 +55,8 @@
   <td class="hw">Data feasibility memo — full, end of week</td></tr>
 
 <tr class="g-first g05"><td class="g-rail" rowspan="4"><span>Reporting</span></td><td>Wed Nov 11</td>
-  <td class="topic"><a href="sessions/12-seeing-data.html">12 · Seeing the data</a>
-    <span class="t-desc">Which figure answers which question, and why. Exploring distributions, time, and space — then the flip side: what figures hide through aggregation, scale, binning, projection, and chosen windows.</span></td>
+  <td class="topic"><a href="sessions/12-seeing-data.html">12 · Seeing and showing</a>
+    <span class="t-desc">Which figure answers which question, and why. Exploring distributions, time, and space — then the flip side: what figures hide through aggregation, scale, binning, projection, and chosen windows. And the harder question underneath both: how do you make a point convincingly without misleading anybody?</span></td>
   <td class="hw">Design paper — outline · Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week</td></tr>
 <tr><td>Wed Nov 18<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/13-writing-collaboration.html">13 · Writing the design paper</a>

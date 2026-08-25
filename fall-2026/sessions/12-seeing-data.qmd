@@ -1,14 +1,14 @@
 ---
-title: "12 · Seeing the data"
+title: "12 · Seeing and showing"
 subtitle: "Wednesday, November 11, 2026 · Meeting 12"
-pagetitle: "AEM 6991 · 12 Seeing the data"
+pagetitle: "AEM 6991 · 12 Seeing and showing"
 ---
 
 ::: {.callout-note appearance="simple"}
 This page is a stub. Materials appear here before the meeting.
 :::
 
-**What you should be able to do after this meeting.** Choose the figure that answers your question, and read a published figure for what it is not showing.
+**What you should be able to do after this meeting.** Name the trick in a figure built to mislead you, redraw it honestly without losing the point, and make your own project's key figure persuasive without lying with it.
 
 ## Before class
 
@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Rebuild a published figure from its underlying data, then produce the version you think is more honest. Then make the one figure your own project will live or die on — the picture that would show your effect if it is there — and bring it to the room
+Six figures, each lying in a different way, one per team — a truncated axis, two axes manufacturing a correlation, a cherry-picked window, an aggregate moving opposite to every subgroup, area scaled by radius, counts where you needed a rate. Name the trick, then redraw it honestly — and the honest version still has to make a point, which is the hard half and the one nobody practises. Teams are drawn at random to put both versions up while the room attacks. Then the one that counts: make the figure your own project lives or dies on, the picture that would show your effect if it is there
 
 Your team's output is submitted before you leave.
 

@@ -57,6 +57,87 @@ filter 2 --- "can you name the specific dataset, who holds it, and how
 you get it, *checked not assumed*" --- and doing it takes ten minutes in
 September instead of sinking a project in March.
 
+## Is there a method for coming up with ideas?
+
+Partly, yes --- and the honest answer is that the well-evidenced part is
+narrower than the shelf of business books suggests.
+
+### Start from what you have, not from what you want
+
+The strongest idea here is **effectuation**, from Saras Sarasvathy's work
+(*Academy of Management Review*, 2001), built on think-aloud studies of
+expert entrepreneurs and replicated since. Its central finding is that
+experts do not start from a goal and search for means. They start from
+**means** --- who I am, what I know, whom I know --- and work forward to
+whatever goals those means can reach. Sarasvathy's phrase is that they
+**make** opportunities rather than find them.
+
+That is exactly the move on this page. You have a Dewey account, a
+concentration, and a team with particular backgrounds. Working forward
+from those to a question you can actually answer is not a lesser way of
+doing it; it is what expertise looks like.
+
+The discipline that keeps it honest is the feasibility filter. Means-driven
+reasoning becomes anti-pattern 2 --- a dataset in search of a question ---
+precisely when you stop being willing to walk away from the means.
+
+### Start from the job, not the product
+
+**Jobs to be Done**, associated with Clayton Christensen (*HBR*, 2016),
+reframes every question from "what does this product do" to "what is the
+customer **hiring** it to accomplish." For your purposes the useful
+translation is: *what decision does somebody have to make, and what would
+change their mind?* That is feasibility filter 4, arrived at from a
+different direction.
+
+### Diverge, then converge, and do not mix them
+
+The one structural idea shared by design thinking, the double diamond, and
+most ideation methods: **generate without judging, then judge without
+generating.** Teams that evaluate while brainstorming produce fewer and
+safer ideas.
+
+The meeting-1 relay is built on this. Round 1 generates. Rounds 2 and 3
+attack. The two are deliberately not the same activity, and you are scored
+separately on each.
+
+### For research questions specifically
+
+**Sandberg and Alvesson** distinguish **gap-spotting** --- finding
+something the literature has not covered --- from **problematization**,
+which challenges an assumption the literature shares. Gap-spotting is
+easier and produces most published work; problematization produces the
+interesting work and is riskier. For a one-semester capstone, gap-spotting
+is usually the right call, and knowing that you are doing it is what stops
+you claiming more than you have.
+
+### What these are worth
+
+| Approach | What it is worth |
+|:--|:--|
+| **Effectuation** (Sarasvathy) | **Strong.** Grounded in think-aloud studies of experts, replicated independently |
+| **Diverge-then-converge** | **Strong.** Robust finding across the ideation literature |
+| **Jobs to be Done** | **Useful reframing, thin evidence.** No real body of tests; valuable as a question, not a theory |
+| **Design thinking** as a full method | **Popular, contested.** Widely taught, and the empirical case for the branded five-step version is weak |
+| **Lean startup / MVP** (Ries) | **Practical, lightly evidenced.** The build-measure-learn loop is sensible; the claims made for it outrun the tests |
+
+The same caution as everywhere else in this course: **being taught in
+every business school is not evidence that something works.** Two of the
+five rows above are on this page because they are useful ways to think,
+not because anybody has demonstrated they produce better ideas.
+
+### Reading
+
+- Sarasvathy, S. (2001), "Causation and Effectuation," *Academy of
+  Management Review* 26(2).
+- Christensen, C. et al. (2016), "Know Your Customers' Jobs to Be Done,"
+  *Harvard Business Review*.
+- Alvesson, M. & Sandberg, J., on gap-spotting versus problematization ---
+  the piece assigned in this course's reading list.
+- Osterwalder, A. & Pigneur, Y. (2010), *Business Model Generation* ---
+  for the Business Model and Value Proposition canvases, if you want a
+  template to structure a commercial idea.
+
 ## Beyond Dewey: what else Cornell already pays for
 
 Dewey is one subscription among many. The library's own guides list the

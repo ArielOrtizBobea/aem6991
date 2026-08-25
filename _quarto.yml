@@ -36,8 +36,6 @@ website:
           contents:
             - text: " 2 Causal language"
               href: fall-2026/sessions/02-causal-language.qmd
-            - text: "   Working in a team"
-              href: fall-2026/teamwork.qmd
             - text: "   Causal claim cards"
               href: fall-2026/handouts/causal-claims.qmd
             - text: " 3 Models and uncertainty"
@@ -68,12 +66,18 @@ website:
               href: fall-2026/sessions/11-midterm-interrogating-data.qmd
         - section: "Part 5 — Reporting"
           contents:
-            - text: "12 Seeing the data"
+            - text: "12 Seeing and showing"
               href: fall-2026/sessions/12-seeing-data.qmd
+            - text: "   Figure critique cards"
+              href: fall-2026/handouts/figure-tricks.qmd
             - text: "13 Writing the design paper"
               href: fall-2026/sessions/13-writing-collaboration.qmd
             - text: "14 The pitch"
               href: fall-2026/sessions/14-pitch.qmd
+        - section: "Resources"
+          contents:
+            - text: "Working in a team"
+              href: fall-2026/teamwork.qmd
         # <<< END GENERATED MEETINGS
 
 format:

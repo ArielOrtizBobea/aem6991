@@ -54,6 +54,12 @@
 #   reschedule  set when instructor travel puts this date in question. Marks
 #             the date with an asterisk everywhere and prints the footnote.
 
+# Material that belongs to the whole course rather than one meeting.
+# Emitted as its own sidebar section after the parts.
+resources:
+  - text: "Working in a team"
+    href: fall-2026/teamwork.qmd
+
 term: "Fall 2026"
 meets: "Wednesdays, 2:00–4:30 pm"
 parts:
@@ -224,8 +230,6 @@ meetings:
     reading: "TBD"
     due: "Your team's written ground rules — agreed and handed in today"
     links:
-      - text: "Working in a team"
-        href: fall-2026/teamwork.qmd
       - text: "Causal claim cards"
         href: fall-2026/handouts/causal-claims.qmd
 
@@ -359,14 +363,17 @@ meetings:
     slug: "12-seeing-data"
     date: 2026-11-11
     part: 5
-    title: "Seeing the data"
-    desc: "Which figure answers which question, and why. Exploring distributions, time, and space — then the flip side: what figures hide through aggregation, scale, binning, projection, and chosen windows."
-    goal: "Choose the figure that answers your question, and read a published figure for what it is not showing."
+    title: "Seeing and showing"
+    desc: "Which figure answers which question, and why. Exploring distributions, time, and space — then the flip side: what figures hide through aggregation, scale, binning, projection, and chosen windows. And the harder question underneath both: how do you make a point convincingly without misleading anybody?"
+    goal: "Name the trick in a figure built to mislead you, redraw it honestly without losing the point, and make your own project's key figure persuasive without lying with it."
     a: "Which figure answers which question, and why. Exploring distributions, time, and space; developing the instinct to be curious about a dataset before modelling it. Then the flip side: what figures hide — aggregation, scale, binning, projection, cherry-picked windows — and how to read a published figure for what it is not showing"
-    b: "Rebuild a published figure from its underlying data, then produce the version you think is more honest. Then make the one figure your own project will live or die on — the picture that would show your effect if it is there — and bring it to the room"
-    builds: "The one figure your project lives or dies on"
+    b: "Six figures, each lying in a different way, one per team — a truncated axis, two axes manufacturing a correlation, a cherry-picked window, an aggregate moving opposite to every subgroup, area scaled by radius, counts where you needed a rate. Name the trick, then redraw it honestly — and the honest version still has to make a point, which is the hard half and the one nobody practises. Teams are drawn at random to put both versions up while the room attacks. Then the one that counts: make the figure your own project lives or dies on, the picture that would show your effect if it is there"
+    builds: "The one figure your project lives or dies on — honest, and still persuasive"
     reading: "TBD"
     due: "Design paper — outline · Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week"
+    links:
+      - text: "Figure critique cards"
+        href: fall-2026/handouts/figure-tricks.qmd
 
   - num: 13
     slug: "13-writing-collaboration"

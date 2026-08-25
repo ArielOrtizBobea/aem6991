@@ -8,6 +8,11 @@ pagetitle: "AEM 6991 · 5 How inference goes wrong"
 This page is a stub. Materials appear here before the meeting.
 :::
 
+::: {.callout-warning appearance="simple"}
+**Date not final.** I am traveling for a seminar this week; this meeting
+is held remotely. Details on Canvas.
+:::
+
 ## Before class
 
 **Reading.** TBD

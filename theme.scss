@@ -389,6 +389,23 @@ $group-colors: (
   color: #8e8e89;
   line-height: 1.4;
 }
+
+// A meeting whose date may still move (instructor travel) is asterisked by
+// the schedule generator, which also emits the note listing them.
+.grouped-schedule .resched {
+  color: $carnelian;
+  font-weight: 700;
+  margin-left: 0.08rem;
+}
+.sched-note {
+  margin: 0.9rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: #8e8e89;
+
+  .resched { color: $carnelian; font-weight: 700; }
+  strong { color: #55554f; font-weight: 600; }
+}
 .grouped-schedule td.hw {
   font-size: 0.88rem;
   min-width: 11rem;

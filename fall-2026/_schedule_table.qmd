@@ -23,7 +23,7 @@
   <td class="topic"><a href="sessions/04-uncertainty.html">4 · Where uncertainty comes from</a>
     <span class="t-desc">What is random and what is not; residuals and errors; what a standard error states; where p-values come from. How sample size and the variation in the explanatory variable move standard errors.</span></td>
   <td class="hw"></td></tr>
-<tr class="g-last g02"><td>Wed Sep 23</td>
+<tr class="g-last g02"><td>Wed Sep 23<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/05-inference-goes-wrong.html">5 · How inference goes wrong</a>
     <span class="t-desc">Bias from omitted variables, sorting and selection, measurement error, and reverse causality — and false precision from ignored dependence, multiple testing, and specification search.</span></td>
   <td class="hw">Research problem presentation, in class</td></tr>
@@ -40,7 +40,7 @@
   <td class="topic"><a href="sessions/08-designs-ii.html">8 · Research designs II</a>
     <span class="t-desc">Difference-in-differences, panel data with local fixed effects, and event studies: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate.</span></td>
   <td class="hw"></td></tr>
-<tr class="g-last g03"><td>Wed Oct 21</td>
+<tr class="g-last g03"><td>Wed Oct 21<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/09-data-and-ethics.html">9 · What the design needs, and what you are allowed to have</a>
     <span class="t-desc">Working backwards from a design to its data requirements — unit, aggregation, frequency, span, coverage — then the landscape of sources. And the gate most projects discover too late: research ethics, the Cornell IRB, and data-use agreements.</span></td>
   <td class="hw">Data feasibility memo assigned</td></tr>
@@ -58,7 +58,7 @@
     <span class="t-desc">Which figure answers which question, and why. Exploring distributions, time, and space — then the flip side: what figures hide through aggregation, scale, binning, projection, and chosen windows.</span></td>
   <td class="hw">Exercise 2 — rebuild and critique a figure</td></tr>
 
-<tr class="g-first g05"><td class="g-rail" rowspan="3"><span>Teams &amp; pitch</span></td><td>Wed Nov 18</td>
+<tr class="g-first g05"><td class="g-rail" rowspan="3"><span>Teams &amp; pitch</span></td><td>Wed Nov 18<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/13-collaboration.html">13 · Collaboration, technical and human</a>
     <span class="t-desc">Keeping a project reproducible and a team functional: where files live, what 'the final version' means, and what to do when a teammate will not move.</span></td>
   <td class="hw">Research design paper, end of week</td></tr>
@@ -70,6 +70,10 @@
 </tbody>
 </table>
 </div>
+<p class="sched-note">
+<span class="resched">*</span> These dates are not final:
+<strong>Sep 23</strong> &mdash; Instructor traveling — this meeting is held remotely &middot; <strong>Oct 21</strong> &mdash; Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed &middot; <strong>Nov 18</strong> &mdash; Instructor traveling — moves to Nov 17 or Nov 19; date to be confirmed
+</p>
 
 <script>
 (function () {
@@ -83,7 +87,7 @@
     var cells = rows[i].cells;
     for (var j = 0; j < cells.length; j++) {
       var m = cells[j].textContent.trim()
-        .match(/^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun) ([A-Z][a-z]{2}) (\d{1,2})$/);
+        .match(/^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun) ([A-Z][a-z]{2}) (\d{1,2})\*?$/);
       if (!m) continue;
       if (new Date(2026, months[m[1]], +m[2]) >= today) {
         rows[i].classList.add('next-class');

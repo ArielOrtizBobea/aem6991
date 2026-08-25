@@ -20,19 +20,20 @@ toc: false
 </div>
 
 <div class="hero-summary">
-  <p>A capstone begins with an interest and has to end, by January, with a plan
-  somebody could actually execute. This course builds that plan in the order the
-  work really happens: form a question, work out what evidence would answer it,
-  and only then go looking for data — because the design is what tells you which
-  data you need, and teams who find data first end up rationalizing a question
-  around whatever they found. The conceptual core is the causal language
-  economists use — counterfactuals, graphs, the standard threats, and the
-  designs that get around them — taught on examples from industry and the news
-  before anyone opens a dataset. The back half is judgment about data: knowing
-  what to ask of a dataset, driving an AI assistant to answer it, checking
-  whether the answer is credible, and seeing what a figure shows and hides. It
-  is not a coding course — no prior econometrics or programming is assumed, and
-  none is taught.</p>
+  <p>
+  This is a core course for Master of Professional Studies (MPS) in Applied
+  Economics and Management. It provides students with the opportunity to
+  explore strategies for behavioral, quantitative, and qualitative
+  problem-solving projects. We consider the conceptual challenges associated
+  with identifying and defining a project topic and examine the practical
+  tasks of selecting or collecting data, analyzing data, and reporting the
+  results, including visualization and writing. The objective of the course is
+  for students to understand how problems associated with different kinds of
+  projects can be addressed with empirical methods. Many course activities
+  will be structured as teamwork, and team leadership and management skills
+  are a major component of the course. The course topics are introduced
+  through readings, class discussion, and independent team-based research.
+  </p>
 </div>
 ```
 

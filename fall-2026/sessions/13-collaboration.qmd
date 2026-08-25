@@ -8,6 +8,11 @@ pagetitle: "AEM 6991 · 13 Collaboration, technical and human"
 This page is a stub. Materials appear here before the meeting.
 :::
 
+::: {.callout-warning appearance="simple"}
+**Date not final.** I am traveling for a seminar this week; this meeting
+moves to Nov 17 or Nov 19. The date is confirmed in class beforehand.
+:::
+
 ## Before class
 
 **Reading.** TBD

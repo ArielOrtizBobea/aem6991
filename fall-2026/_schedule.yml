@@ -22,6 +22,8 @@
 #   reading   assigned reading, quizzed at 2:05
 #   due       anything due on or around this meeting
 #   note      free text, used for recess rows
+#   reschedule  set when instructor travel puts this date in question. Marks
+#             the date with an asterisk everywhere and prints the footnote.
 
 term: "Fall 2026"
 meets: "Wednesdays, 2:00–4:30 pm"
@@ -128,6 +130,7 @@ meetings:
     b: "Take a published claim apart: which failure is doing the damage, and would more data fix it?"
     reading: "TBD"
     due: "Research problem presentation, in class"
+    reschedule: "Instructor traveling — this meeting is held remotely"
 
   - num: 6
     slug: "06-selection-on-observables"
@@ -176,6 +179,7 @@ meetings:
     b: "Research ethics, the Cornell IRB, and data-use agreements: what needs approval, what does not, and how long it takes. Then work out whether your own project needs it — while there is still time to change course"
     reading: "TBD"
     due: "Data feasibility memo assigned"
+    reschedule: "Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed"
 
   - num: 10
     slug: "10-midterm-asking-data"
@@ -225,6 +229,7 @@ meetings:
     b: "Workshop the design paper; peer critique in rotation"
     reading: "TBD"
     due: "Research design paper, end of week"
+    reschedule: "Instructor traveling — moves to Nov 17 or Nov 19; date to be confirmed"
 
   - date: 2026-11-25
     note: "Thanksgiving recess — no class"

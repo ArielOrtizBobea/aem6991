@@ -392,10 +392,13 @@ $group-colors: (
 
 // A meeting whose date may still move (instructor travel) is asterisked by
 // the schedule generator, which also emits the note listing them.
-.grouped-schedule .resched {
+// Target the element, not the class: pandoc strips class attributes off
+// inline tags inside a raw-HTML table, so `.resched` does not survive here.
+.grouped-schedule td sup {
   color: $carnelian;
   font-weight: 700;
   margin-left: 0.08rem;
+  top: -0.35em;
 }
 .sched-note {
   margin: 0.9rem 0 0;

@@ -425,12 +425,20 @@ already subscribes to, or abandon a good question because they assumed
 the data was out of reach.
 :::
 
+**Register tonight** at app.deweydata.io with your **Cornell email** —
+approval is a human step, so you will not have access this minute.
+
 Worked examples of getting from a dataset to a question:
 [**Project ideas**](../project-ideas.qmd)
 
 ::: {.notes}
-Browse Dewey live on the projector — confirm the access route before
-class so the login is not the thing that eats five minutes.
+Browse Dewey live on the projector — from YOUR account. Students will
+not have access yet: registration needs a Cornell email and then a manual
+approval by an institutional admin, which takes days. So today is a
+demonstration, not a hands-on. Tell them to register tonight so they are
+approved in time for the feasibility work.
+
+Confirm the login works on the room machine before class.
 
 The point is filter question 2, from session A: "can you name the
 specific dataset, who holds it, and how you get it — checked, not
@@ -611,6 +619,10 @@ licensed holdings, and **Dewey**, a commercial data marketplace the Johnson
 College of Business subscribes to and which you can use at no cost. Teams
 routinely propose buying data the College already has, or drop a good
 question because they assumed the data was unreachable.
+
+**Register at [app.deweydata.io](https://app.deweydata.io) with your
+Cornell email**, in week 1. Your account sits pending until an
+administrator approves it, so do not leave it until you need the data.
 
 A set of worked examples — housing and place, foot traffic, spending,
 labour, firms — is on the [project ideas](../project-ideas.qmd) page. It is

@@ -30,6 +30,27 @@ Before assuming data must be bought, found, or scraped:
 - **Public sources** --- county assessor and deeds records, the Census
   and ACS, FHFA, and the public research files from Zillow and Redfin.
 
+### Getting an account
+
+Dewey needs an **individual account** for every user. There is no shared
+login, and no IP-based access just because you are on the campus network.
+
+1. Go to **[app.deweydata.io](https://app.deweydata.io)** and register
+   **with your Cornell email address.** A personal Gmail will not work
+   --- the subscription is matched on the university domain.
+2. Your account starts in a **pending** state. An administrator at
+   Cornell has to approve it.
+3. You get an email when you are approved. Then you are in, and
+   everything on this page is available to you.
+
+::: {.callout-warning appearance="simple"}
+**Register in week 1, not the night before you need it.** The approval
+is a human step, and humans do not approve accounts at 2 a.m. If you are
+still pending after a few days, tell me and I will chase it.
+:::
+
+### Reading the catalogue
+
 Coverage, date ranges, and the exact columns are on each dataset's own
 page in the catalogue. **Go and read them.** That check is feasibility
 filter 2 --- "can you name the specific dataset, who holds it, and how

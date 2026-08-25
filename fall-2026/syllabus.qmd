@@ -129,10 +129,18 @@ file to an assistant and interrogating it --- which is also how the
 "do not upload restricted data" rule in the AI policy below stops being
 abstract.
 
-Scraping, APIs, and version control are covered at awareness level, in
+**Code is discussed even though it is not taught.** Meeting 10 spends
+its first half on what a programming language actually is, why R, Python,
+Stata and SQL exist and differ, and the argument that matters: code is
+the only form of an analysis that can be checked, repeated, and handed to
+somebody else. You will drive it through an assistant --- but you cannot
+check what you cannot read at all. Meeting 11 covers the AI modalities and
+how each one fails.
+
+Scraping, APIs, and version control are covered at the same level, in
 meetings 10 and 13: what they are, what they cost, and when they are
-worth it. You are not required to use any of them, and we write no
-scrapers in this course.
+worth it. You are not required to use any of them. We break a scraper in
+class rather than building one.
 
 ## AI policy
 

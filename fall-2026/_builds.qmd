@@ -9,7 +9,7 @@
 | **7** &nbsp;Research designs I | Whether an experiment, instrument or discontinuity is open to you |
 | **8** &nbsp;Research designs II | Your design defended in public, plus the attack that landed — the identification section and the limitation |
 | **9** &nbsp;Measurement and data | Your key variable, operationalised, and what data the design demands |
-| **10** &nbsp;Getting the data | Your data source, access route, timeline and plan B — the memo |
+| **10** &nbsp;Getting the data | Your data source, access route, timeline and plan B — the memo outline |
 | **11** &nbsp;Midterm and using data | Your own data, interrogated, and what is wrong with it |
 | **12** &nbsp;Seeing and showing | The one figure your project lives or dies on — honest, and still persuasive |
 | **13** &nbsp;Writing the design paper | The whole paper, as a sketch, marked up by somebody else |

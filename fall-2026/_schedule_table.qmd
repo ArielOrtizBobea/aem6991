@@ -48,7 +48,7 @@
 <tr><td>Wed Oct 28</td>
   <td class="topic"><a href="sessions/10-getting-data.html">10 · Getting the data</a>
     <span class="t-desc">The practical business of obtaining data: what exists and who holds it, what proprietary access and a data-use agreement really cost in time, what the IRB needs and when, and what scraping and APIs can and cannot get you. Then how to write the memo that proves your data is real.</span></td>
-  <td class="hw">Data feasibility memo — outline, in class</td></tr>
+  <td class="hw">Data feasibility memo — outline, end of week</td></tr>
 <tr class="g-last g04"><td>Wed Nov 4</td>
   <td class="topic"><a href="sessions/11-midterm-interrogating-data.html">11 · Midterm and using data</a>
     <span class="t-desc">The midterm asks you to design a study for a given situation in writing. Then the hands-on half: driving an assistant across real data, and the checks that catch a wrong answer without reading the code.</span></td>

@@ -209,6 +209,12 @@ P&G · PwC · KPMG
 [Source: Cornell SC Johnson, MPS AEM career outcomes. 82% received offers
 within six months.]{style="font-size:0.55em; color:#6b6b6b"}
 
+::: {.callout-note appearance="simple"}
+And what employers said in 2026 they value: **communication** first,
+**problem-solving** second, **data analysis and interpretation**
+fourth — up from tenth in a single year.
+:::
+
 ::: {.notes}
 Essentially none of these are research jobs. That is the argument for the
 framing on the previous slide — not my taste, the placement data.
@@ -279,7 +285,7 @@ shift import composition? Did a platform fee change move seller behavior?*
 
 ::: {.notes}
 The single most common failure in the entire course lives on this slide:
-selection into treatment. Flag it now, pay it off in meeting 5.
+selection into treatment. Flag it now, pay it off in meeting 4.
 :::
 
 ## 2 · Preference & pricing {.smaller}
@@ -356,7 +362,7 @@ empirical question you answer with data you analyze yourselves.
 ::: {.notes}
 This is the type most likely to produce a bad capstone, and the one
 consulting-bound students gravitate to. Be explicit that the guardrail is
-real and it will be enforced at the feasibility memo in meeting 9.
+real and it will be enforced at the feasibility memo in meeting 10.
 :::
 
 # What a bad project looks like
@@ -408,14 +414,29 @@ This section is deliberately different from the others. The reason is that
 writing the code and drafting the prose are no longer the scarce skills —
 knowing what to ask for, and noticing when the answer is wrong, is.
 
-From meeting 10 you work with real data through an assistant. **What is
+From meeting 11 you work with real data through an assistant. **What is
 graded is the questions you ask and the checks you run, never code you
 wrote.**
 
+::: {.callout-note appearance="simple"}
+McKinsey now runs analyst interviews where you work a problem live on
+their AI platform, and they score **how you prompt it, how you catch it
+being wrong, and how you turn that into a recommendation.**
+
+That is this slide, at an interview.
+:::
+
 ::: {.notes}
 Say plainly that policies differ across sections and that this one is
-deliberately permissive, then give the reason: they are going into jobs
-where AI-assisted analysis is baseline, and the scarce skill is checking.
+deliberately permissive — and the McKinsey fact IS the reason, so do not
+rush past it. Employers put "skills using AI tools" FIRST on what they
+expect to value in five years, while ranking it 14th today. That gap is
+the whole argument.
+
+Do NOT bring the grim version into week 1 — entry-level postings down
+35%, a third of employers already substituting AI. True, and it will
+flatten the room. It belongs in meeting 14. See
+_planning/employer_demand.md.
 :::
 
 ## The one that will bite you {.smaller}
@@ -747,7 +768,7 @@ already-answered question.
 ### AI ground rules
 
 Permitted by default, disclosure mandatory, verification graded. From
-meeting 10 you work with real data through an assistant, and what is graded
+meeting 11 you work with real data through an assistant, and what is graded
 is the questions you ask and the checks you run — never code you wrote.
 
 **Every reference gets opened.** A fabricated citation is an academic

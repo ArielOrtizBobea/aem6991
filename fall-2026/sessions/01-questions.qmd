@@ -367,6 +367,47 @@ real and it will be enforced at the feasibility memo in meeting 10.
 
 # What a bad project looks like
 
+## What the last two cohorts did {.smaller}
+
+**2026**
+
+ESG strategy → return on equity · inventory turnover → performance ·
+investor sentiment → S&P return · Wikipedia pageviews → stock returns ·
+what drives engagement on TikTok
+
+**2023**
+
+Twitter sentiment → NFT returns · social media sentiment → stock return ·
+weather → stock return · ESG score → annual return · organic food choices ·
+sustainability and Gen Z purchasing · a digital marketing strategy
+
+::: {.callout-important appearance="simple"}
+**Four of the five 2026 projects are the same project.** What is it?
+:::
+
+::: {.notes}
+Give the room ninety seconds. Do not answer it for them — someone will
+get there, and it lands infinitely harder from a student than from me.
+
+The answer: take a public signal anybody can download, regress a
+financial outcome on it, report a coefficient. Free data, no design, no
+decision attached, and every team that pulls the same feeds converges on
+the same five questions.
+
+Then the second question, which is the one that matters: WHY did that
+happen? Not because they were lazy. Because the data was free and
+available and the question got shaped to fit it. That is anti-pattern 2,
+and it is the default outcome unless you actively resist it.
+
+Then say the thing they need permission to hear: the most ambitious
+project anyone here remembers ran online experiments on brand
+recognition, then talked a soda company into donating thousands of cans
+and ran a field experiment in dining halls. Nine-month MPS team. That
+took no econometrics — it took nerve, and knowing it was allowed.
+
+It is allowed.
+:::
+
 ## Six anti-patterns {.smaller}
 
 1. **The topic with no question.** "AI in finance." A topic names a

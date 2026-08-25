@@ -24,6 +24,9 @@
 #   quizzes   how many quizzes this meeting (0 or 1); default 1
 #   reading   assigned reading, quizzed at 2:05
 #   due       anything due on or around this meeting
+#   links     extra sidebar entries belonging to this meeting, each with
+#             `text` and `href`. They sit under the meeting, indented to
+#             align with the meeting titles.
 #   note      free text, used for recess rows
 #   reschedule  set when instructor travel puts this date in question. Marks
 #             the date with an asterisk everywhere and prints the footnote.
@@ -180,6 +183,9 @@ meetings:
     quizzes: 0
     reading: "None"
     due: "One page on what you want to work on and why — before meeting 2"
+    links:
+      - text: "Project ideas"
+        href: fall-2026/project-ideas.qmd
 
   - num: 2
     slug: "02-causal-language"

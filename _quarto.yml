@@ -26,22 +26,22 @@ website:
         - text: "Syllabus"
           href: fall-2026/syllabus.qmd
         # >>> BEGIN GENERATED MEETINGS — edit fall-2026/_schedule.yml, then
-        - section: "Part 1 — Question & team"
+        - section: "Part 1 — The question"
           contents:
             - text: " 1 Questions & the literature"
               href: fall-2026/sessions/01-questions.qmd
-            - text: " 2 Writing the problem; teams"
-              href: fall-2026/sessions/02-problem-and-teams.qmd
         - section: "Part 2 — Evidence & inference"
           contents:
-            - text: " 3 Causal language"
-              href: fall-2026/sessions/03-causal-language.qmd
-            - text: " 4 Models & uncertainty"
-              href: fall-2026/sessions/04-models-uncertainty.qmd
-            - text: " 5 How inference goes wrong"
-              href: fall-2026/sessions/05-inference-goes-wrong.qmd
-            - text: " 6 Conditioning on observables"
-              href: fall-2026/sessions/06-selection-on-observables.qmd
+            - text: " 2 Causal language"
+              href: fall-2026/sessions/02-causal-language.qmd
+            - text: " 3 Models & uncertainty"
+              href: fall-2026/sessions/03-models-uncertainty.qmd
+            - text: " 4 How inference goes wrong"
+              href: fall-2026/sessions/04-inference-goes-wrong.qmd
+            - text: " 5 Conditioning on observables"
+              href: fall-2026/sessions/05-selection-on-observables.qmd
+            - text: " 6 Writing the problem"
+              href: fall-2026/sessions/06-writing-the-problem.qmd
         - section: "Part 3 — Designs"
           contents:
             - text: " 7 Research designs I"

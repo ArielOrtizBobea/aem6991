@@ -8,6 +8,8 @@ pagetitle: "AEM 6991 · 7 Research designs I"
 This page is a stub. Materials appear here before the meeting.
 :::
 
+**What you should be able to do after this meeting.** Say whether an experiment, an instrument, or a discontinuity could work for your question, and what each one would require you to have.
+
 ## Before class
 
 **Reading.** TBD

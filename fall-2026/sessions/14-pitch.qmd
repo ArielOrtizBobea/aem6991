@@ -8,6 +8,8 @@ pagetitle: "AEM 6991 · 14 The pitch"
 This page is a stub. Materials appear here before the meeting.
 :::
 
+**What you should be able to do after this meeting.** Present a plan somebody could pick up and execute in January, and know what your team owes AEM 6992 over the break.
+
 ## Before class
 
 **Reading.** None

@@ -1,12 +1,18 @@
 ---
-title: "6 · Conditioning on what you can observe"
-subtitle: "Wednesday, September 30, 2026 · Meeting 6"
-pagetitle: "AEM 6991 · 6 Conditioning on what you can observe"
+title: "5 · Conditioning on what you can observe"
+subtitle: "Wednesday, September 23, 2026 · Meeting 5"
+pagetitle: "AEM 6991 · 5 Conditioning on what you can observe"
 ---
 
 ::: {.callout-note appearance="simple"}
 This page is a stub. Materials appear here before the meeting.
 :::
+
+::: {.callout-warning appearance="simple"}
+**Date not final.** Instructor traveling — this meeting is held remotely.
+:::
+
+**What you should be able to do after this meeting.** State exactly what would have to be true for your regression coefficient to be read causally.
 
 ## Before class
 
@@ -24,10 +30,10 @@ Every session B opens with a ten-minute team stand-up: what you did,
 what is blocked, and who does what next — in writing, submitted with
 the session output.
 
-Milestone 1: each team presents its research problem in five minutes and takes questions from the room. Then the first peer evaluation
+Back to the graph you drew in meeting 2: could you close every back door with data you could actually obtain? Breakout rooms, then report back
 
 Your team's output is submitted before you leave.
 
 ## Due
 
-Research problem presentation, in class · Peer evaluation 1 · Problem statement & literature review, end of week
+—

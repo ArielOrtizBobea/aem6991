@@ -8,6 +8,8 @@ pagetitle: "AEM 6991 · 12 Seeing what is in the data"
 This page is a stub. Materials appear here before the meeting.
 :::
 
+**What you should be able to do after this meeting.** Choose the figure that answers your question, and read a published figure for what it is not showing.
+
 ## Before class
 
 **Reading.** TBD

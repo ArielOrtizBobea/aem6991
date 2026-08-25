@@ -12,6 +12,8 @@ This page is a stub. Materials appear here before the meeting.
 **Date not final.** Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed.
 :::
 
+**What you should be able to do after this meeting.** Turn your central construct into a variable somebody could actually record, and specify the unit, frequency, span, and coverage your design demands.
+
 ## Before class
 
 **Reading.** TBD

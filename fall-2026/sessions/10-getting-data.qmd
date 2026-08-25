@@ -8,6 +8,8 @@ pagetitle: "AEM 6991 · 10 Getting hold of the data"
 This page is a stub. Materials appear here before the meeting.
 :::
 
+**What you should be able to do after this meeting.** Name your data source, its access route, its timeline, and your plan B — and know whether you need IRB approval or a data-use agreement before January.
+
 ## Before class
 
 **Reading.** TBD

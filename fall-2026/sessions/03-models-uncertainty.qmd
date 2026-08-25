@@ -1,12 +1,14 @@
 ---
-title: "4 · Models, uncertainty, and prediction"
-subtitle: "Wednesday, September 16, 2026 · Meeting 4"
-pagetitle: "AEM 6991 · 4 Models, uncertainty, and prediction"
+title: "3 · Models, uncertainty, and prediction"
+subtitle: "Wednesday, September 9, 2026 · Meeting 3"
+pagetitle: "AEM 6991 · 3 Models, uncertainty, and prediction"
 ---
 
 ::: {.callout-note appearance="simple"}
 This page is a stub. Materials appear here before the meeting.
 :::
+
+**What you should be able to do after this meeting.** Read a coefficient in the units of the problem, say what a p-value does and does not tell you, and tell an explanatory question apart from a predictive one.
 
 ## Before class
 

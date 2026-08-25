@@ -6,31 +6,31 @@
 </thead>
 <tbody>
 
-<tr class="g-first g01"><td class="g-rail" rowspan="2"><span>Question &amp; team</span></td><td>Wed Aug 26</td>
+<tr class="g-first g-last g01"><td class="g-rail" rowspan="1"><span>The question</span></td><td>Wed Aug 26</td>
   <td class="topic"><a href="sessions/01-questions.html">1 · Where questions come from</a>
     <span class="t-desc">What a capstone is and is not, and the five shapes a good one takes: evaluation, preference and pricing, prediction and risk, diagnosis and benchmarking, feasibility and landscape. The anti-patterns, the feasibility filter, and how to search the literature well enough to know your question has not already been answered.</span></td>
   <td class="hw">Statement of interest, before meeting 2</td></tr>
-<tr class="g-last g01"><td>Wed Sep 2</td>
-  <td class="topic"><a href="sessions/02-problem-and-teams.html">2 · Writing the problem, and building the team</a>
-    <span class="t-desc">Academic writing starts here, because the first paper is due in four weeks. What a problem statement actually does, and how a pile of sources becomes prose. Then team formation, the charter, and the conflict protocol — agreed while everyone is still getting along.</span></td>
-  <td class="hw">Team charter, same day · Writing 1 assigned</td></tr>
 
-<tr class="g-first g02"><td class="g-rail" rowspan="4"><span>Evidence &amp; inference</span></td><td>Wed Sep 9</td>
-  <td class="topic"><a href="sessions/03-causal-language.html">3 · Causal language</a>
+<tr class="g-first g02"><td class="g-rail" rowspan="5"><span>Evidence &amp; inference</span></td><td>Wed Sep 2</td>
+  <td class="topic"><a href="sessions/02-causal-language.html">2 · Causal language</a>
     <span class="t-desc">Counterfactuals and potential outcomes, and why a comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, and back-door reasoning.</span></td>
-  <td class="hw">Writing 1 — problem statement</td></tr>
-<tr><td>Wed Sep 16</td>
-  <td class="topic"><a href="sessions/04-models-uncertainty.html">4 · Models, uncertainty, and prediction</a>
+  <td class="hw">Team charter, same day</td></tr>
+<tr><td>Wed Sep 9</td>
+  <td class="topic"><a href="sessions/03-models-uncertainty.html">3 · Models, uncertainty, and prediction</a>
     <span class="t-desc">What the standard models estimate and how to read a coefficient in the units of the problem. Where uncertainty comes from and what a p-value is not. And the distinction that decides half your projects: explaining versus predicting.</span></td>
   <td class="hw"></td></tr>
-<tr><td>Wed Sep 23<sup class="resched">*</sup></td>
-  <td class="topic"><a href="sessions/05-inference-goes-wrong.html">5 · How inference goes wrong</a>
+<tr><td>Wed Sep 16</td>
+  <td class="topic"><a href="sessions/04-inference-goes-wrong.html">4 · How inference goes wrong</a>
     <span class="t-desc">Bias from omitted variables, sorting and selection, measurement error, and reverse causality — and false precision from ignored dependence, multiple testing, and specification search.</span></td>
   <td class="hw"></td></tr>
-<tr class="g-last g02"><td>Wed Sep 30</td>
-  <td class="topic"><a href="sessions/06-selection-on-observables.html">6 · Conditioning on what you can observe</a>
+<tr><td>Wed Sep 23<sup class="resched">*</sup></td>
+  <td class="topic"><a href="sessions/05-selection-on-observables.html">5 · Conditioning on what you can observe</a>
     <span class="t-desc">Identifying an effect by controlling for what you can measure: controls, matching, and the causal reading of a regression coefficient. The workhorse of applied work — and the assumption it rests on, which is also its ceiling.</span></td>
-  <td class="hw">Research problem presentation, in class · Peer evaluation 1 · Problem statement &amp; literature review, end of week</td></tr>
+  <td class="hw"></td></tr>
+<tr class="g-last g02"><td>Wed Sep 30</td>
+  <td class="topic"><a href="sessions/06-writing-the-problem.html">6 · Writing the problem, and presenting it</a>
+    <span class="t-desc">The conceptual half is done and the first paper is due, so this is where writing gets taught. What a problem statement does, how a pile of sources becomes an argument, and then each team presents its problem to the room.</span></td>
+  <td class="hw">Research problem presentation, in class · Peer evaluation 1 · Writing 1 assigned</td></tr>
 
 <tr class="g-first g03"><td class="g-rail" rowspan="2"><span>Designs</span></td><td>Wed Oct 7</td>
   <td class="topic"><a href="sessions/07-designs-i.html">7 · Research designs I</a>

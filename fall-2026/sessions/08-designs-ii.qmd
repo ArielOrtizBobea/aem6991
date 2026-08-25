@@ -8,6 +8,8 @@ pagetitle: "AEM 6991 · 8 Research designs II"
 This page is a stub. Materials appear here before the meeting.
 :::
 
+**What you should be able to do after this meeting.** Name your own project's design and the single assumption you would have to defend to a sceptic.
+
 ## Before class
 
 **Reading.** TBD

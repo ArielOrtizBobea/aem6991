@@ -8,6 +8,8 @@ pagetitle: "AEM 6991 · 11 Midterm; interrogating data with an assistant"
 This page is a stub. Materials appear here before the meeting.
 :::
 
+**What you should be able to do after this meeting.** Design a study in writing under exam conditions; then interrogate a real dataset through an assistant and catch something that is wrong with it.
+
 ## Before class
 
 **Reading.** Review

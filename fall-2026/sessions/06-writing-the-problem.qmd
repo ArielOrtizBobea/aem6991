@@ -1,0 +1,35 @@
+---
+title: "6 · Writing the problem, and presenting it"
+subtitle: "Wednesday, September 30, 2026 · Meeting 6"
+pagetitle: "AEM 6991 · 6 Writing the problem, and presenting it"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+**What you should be able to do after this meeting.** Write a problem statement that puts the claim in the first sentence, and defend your research problem in front of the room.
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+Academic writing I — the research problem and the literature review. What a problem statement does and what it is not: scope, unit, population, and the 'so what' in the first sentence rather than the fourth paragraph. How a synthesis matrix becomes an argument rather than an annotated list. The failure modes on the page — the topic with no question, hedging, the buried claim, the review that reviews without arguing. Worked on real examples, including bad ones
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
+Milestone 1: each team presents its research problem in five minutes and takes questions from the room — the feedback you get here is what you write up this week. Then the first peer evaluation
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Research problem presentation, in class · Peer evaluation 1 · Writing 1 assigned

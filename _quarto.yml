@@ -60,6 +60,8 @@ website:
           contents:
             - text: " 9 Measurement and data"
               href: fall-2026/sessions/09-measurement.qmd
+            - text: "   Instrument critique cards"
+              href: fall-2026/handouts/instrument-cards.qmd
             - text: "10 Getting the data"
               href: fall-2026/sessions/10-getting-data.qmd
             - text: "11 Midterm and using data"

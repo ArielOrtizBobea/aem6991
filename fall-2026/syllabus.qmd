@@ -55,7 +55,9 @@ most common way a capstone goes wrong.
 
 The whole conceptual half is taught on examples from industry and the
 news, before anyone opens a dataset. Then comes the part most capstones
-skip: turning a construct into something a dataset can actually hold,
+skip: turning a construct into something a dataset can actually hold ---
+and, when nothing does, designing the survey or the experiment that
+would measure it and working out how large a sample it needs ---
 and the practical business of getting the data --- who holds it, what a
 data-use agreement costs in months, what the IRB needs, and what
 scraping and an API can and cannot get you. The back half is judgment:

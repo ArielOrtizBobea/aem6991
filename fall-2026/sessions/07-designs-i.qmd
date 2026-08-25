@@ -18,7 +18,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-Three designs, each drawn before it is described. Experiments: randomisation cuts every arrow into treatment, so there is no back door left to close. Instrumental variables: an arrow into treatment and none into the outcome except through it — the exclusion restriction is that missing arrow, which is why it cannot be tested. Regression discontinuity: nothing else jumps at the cutoff. For each: what variation it exploits, what it assumes, how it fails, and what it looks like done well
+Three designs, each drawn before it is described. Experiments: randomisation cuts every arrow into treatment, so there is no back door left to close — and then the decisions that actually make one work. What is the unit you randomise, and is it the person, the store, or the week? How many arms can you afford before each one is too thin? Why you check balance afterwards and what it would mean if it failed. And pre-registration, which is the cheapest honesty device in research: say what you will test before you look, so specification search is not available to you later. Instrumental variables: an arrow into treatment and none into the outcome except through it — the exclusion restriction is that missing arrow, which is why it cannot be tested. Regression discontinuity: nothing else jumps at the cutoff. For each: what variation it exploits, what it assumes, how it fails, and what it looks like done well
 
 ## Session B · 3:35–4:30
 

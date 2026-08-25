@@ -226,10 +226,13 @@ meetings:
     desc: "What the standard models estimate and how to read a coefficient in the units of the problem. Where uncertainty comes from and what a p-value is not. And the distinction that decides half your projects: explaining versus predicting."
     goal: "Read a coefficient in the units of the problem, say what a p-value does and does not tell you, and tell an explanatory question apart from a predictive one."
     a: "Linear regression, non-linear models, and count models — described, not derived: what each estimates and how to read a coefficient in the units of the problem. Then where uncertainty comes from: residuals and errors, sampling variation, what a standard error states, where p-values come from and what they are not. Finally the distinction that decides half the projects in this room — explaining versus predicting, and why a model that predicts well may tell you nothing about what to do"
-    b: "Simulation lab: draw from a world you control. Watch the p-value distribution under the null, then change the sample size and the variation and watch it move. Then fit the same world in-sample and out-of-sample, and watch a model that looks excellent fail on data it has not seen. Nothing to install, no code to write. Then turn it on yourselves: given how much variation your own project's explanatory variable is likely to have, how big a sample would it take to see an effect worth caring about?"
-    builds: "How big a sample your question would need"
+    b: "Ten minutes of simulation first, driven from the front: draw from a world you control, watch the p-value distribution under the null, move the sample size and the variation and watch it shift, then fit the same world in and out of sample and watch an excellent-looking model fail on data it has not seen. Nothing to install, no code to write. Then the cards. Each team gets an analyst who has run something and said something about it, and every one of them overclaims in a different way — a count outcome fitted by OLS and predicted below zero, a 0.03% lift called highly significant across two million users, a wide interval called no effect, an elasticity estimated off two price changes in three years, a churn probability of 112%. Work out what they are actually entitled to claim, then defend that at the front while the room pushes back. Last line on the sheet is the one that matters: is your own project at risk of the same error?"
+    builds: "The overclaim your own project is most at risk of making"
     reading: "TBD"
     due: ~
+    links:
+      - text: "Results critique cards"
+        href: fall-2026/handouts/results-claims.qmd
 
   - num: 4
     slug: "04-inference-goes-wrong"

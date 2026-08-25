@@ -40,6 +40,8 @@ website:
               href: fall-2026/handouts/causal-claims.qmd
             - text: " 3 Models and uncertainty"
               href: fall-2026/sessions/03-models-uncertainty.qmd
+            - text: "   Results critique cards"
+              href: fall-2026/handouts/results-claims.qmd
             - text: " 4 How inference fails"
               href: fall-2026/sessions/04-inference-goes-wrong.qmd
             - text: " 5 Controls and matching"

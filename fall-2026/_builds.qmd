@@ -2,7 +2,7 @@
 |:---|:---|
 | **1** &nbsp;Finding a question | Five candidate questions, filtered — one of which becomes the project |
 | **2** &nbsp;Causal language | Your team's ground rules, and a diagnosed causal graph |
-| **3** &nbsp;Models and uncertainty | How big a sample your question would need |
+| **3** &nbsp;Models and uncertainty | The overclaim your own project is most at risk of making |
 | **4** &nbsp;How inference fails | The one threat your design will have to survive |
 | **5** &nbsp;Controls and matching | Which back doors you can close, and with what data |
 | **6** &nbsp;Writing the problem | Your problem statement, as an outline |

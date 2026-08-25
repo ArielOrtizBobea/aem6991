@@ -1,0 +1,33 @@
+---
+title: "2 · Writing the problem, and building the team"
+subtitle: "Wednesday, September 2, 2026 · Meeting 2"
+pagetitle: "AEM 6991 · 2 Writing the problem, and building the team"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+Academic writing I — the research problem. What a problem statement does and what it is not: scope, unit, population, and the 'so what' in the first sentence rather than the fourth paragraph. How a synthesis matrix becomes prose. The failure modes on the page — the topic with no question, hedging, the buried claim, the literature review that reviews without arguing
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
+Team formation and the team charter. The conflict protocol and the division of labour, agreed in writing now rather than negotiated in November: who does what, what happens when someone misses a deadline, and when to escalate to me. The weekly stand-up starts today
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Team charter, same day · Writing 1 assigned

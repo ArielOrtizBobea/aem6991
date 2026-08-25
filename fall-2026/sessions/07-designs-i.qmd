@@ -20,6 +20,10 @@ Experiments; instrumental variables; regression discontinuity. What variation ea
 
 ## Session B · 3:35–4:30
 
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
 Scenario clinic: given a question, would any of these three work here?
 
 Your team's output is submitted before you leave.

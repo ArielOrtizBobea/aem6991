@@ -20,6 +20,10 @@ Difference-in-differences; panel data with local fixed effects; event studies. W
 
 ## Session B · 3:35–4:30
 
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
 Name your own project's design, and the assumption you would have to defend
 
 Your team's output is submitted before you leave.

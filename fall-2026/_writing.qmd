@@ -1,0 +1,6 @@
+| \# | Piece | Length | What it is | Due |
+|:---|:---|:---|:---|:---|
+| 1 | **Problem statement** | 1 page | Your project's problem in one page: what the question is, why it matters, and what the answer would change. Peer-swapped and critiqued in class the day it is due. | Meeting 3 --- Sep 9 (week 3) |
+| 2 | **Limitation paragraph** | ½ page | The single biggest threat to your team's design, stated plainly, and what you would do about it. Written after the designs are on the table and before the data is. | Meeting 9 --- Oct 21 (week 9)\* |
+| 3 | **Plain-language summary** | 1 page | Your project explained to a decision-maker who is not an economist. No jargon, no hedging, and the 'so what' in the first sentence. | Meeting 12 --- Nov 11 (week 12) |
+| 4 | **Referee report** | 2 pages | A structured critique of another team's design paper, on the template used in class. Due in the exam period. | Exam period |

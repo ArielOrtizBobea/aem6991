@@ -9,8 +9,7 @@ This page is a stub. Materials appear here before the meeting.
 :::
 
 ::: {.callout-warning appearance="simple"}
-**Date not final.** I am traveling for a seminar this week; this meeting
-is held remotely. Details on Canvas.
+**Date not final.** Instructor traveling — this meeting is held remotely.
 :::
 
 ## Before class
@@ -25,10 +24,14 @@ Bias: omitted variables, sorting and selection, measurement error (classical and
 
 ## Session B · 3:35–4:30
 
-Take a published claim apart: which failure is doing the damage, and would more data fix it?
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
+Take a published claim apart in breakouts: which failure is doing the damage, and would more data fix it?
 
 Your team's output is submitted before you leave.
 
 ## Due
 
-Research problem presentation, in class
+—

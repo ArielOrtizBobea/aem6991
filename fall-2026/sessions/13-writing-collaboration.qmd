@@ -1,0 +1,37 @@
+---
+title: "13 · Writing the design paper; collaboration"
+subtitle: "Wednesday, November 18, 2026 · Meeting 13"
+pagetitle: "AEM 6991 · 13 Writing the design paper; collaboration"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+::: {.callout-warning appearance="simple"}
+**Date not final.** Instructor traveling — moves to Nov 17 or Nov 19; date to be confirmed.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+Academic writing III — the research design paper. Structure, and what each section is for. Writing the identification section: naming your design, its assumption, and what would break it. Stating a limitation honestly without gutting the project. What a referee actually looks for — which is also how you will write your own referee report. Then reproducibility at awareness level: where files live, naming, what 'the final version' means, and when version control is worth the cost
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
+Bring a draft. Workshop the design paper in rotation, then Milestone 2: each team presents its design and the assumption it is defending. Second peer evaluation
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Design paper draft, in class · Milestone 2 presentation · Peer evaluation 2 · Research design paper, end of week

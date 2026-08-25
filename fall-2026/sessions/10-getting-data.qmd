@@ -1,0 +1,33 @@
+---
+title: "10 · Getting hold of the data"
+subtitle: "Wednesday, October 28, 2026 · Meeting 10"
+pagetitle: "AEM 6991 · 10 Getting hold of the data"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+The landscape: administrative records, official statistics, firm and platform data, purchased panels — what each costs in money and in months. Proprietary access and data-use agreements: who signs, how long it takes, and what they forbid you from publishing. Research ethics and the Cornell IRB: what needs approval, what does not, and how long it takes. Then scraping and APIs at awareness level — what they are, what they can and cannot get you, what the terms of service and the law actually say, and when paying for a licence is the cheaper answer. We do not write scrapers in this course; you need to know what to ask for and what it costs
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
+Academic writing II — the memo. Writing to a decision-maker rather than an examiner: the two-page discipline, the bottom line first, and the fallback that shows you thought about failure. Then the acquisition clinic: each team names its source, its access route, its timeline, and its plan B
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Data feasibility memo assigned

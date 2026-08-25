@@ -6,67 +6,67 @@
 </thead>
 <tbody>
 
-<tr class="g-first g-last g01"><td class="g-rail" rowspan="1"><span>The question</span></td><td>Wed Aug 26</td>
+<tr class="g-first g01"><td class="g-rail" rowspan="2"><span>Question &amp; team</span></td><td>Wed Aug 26</td>
   <td class="topic"><a href="sessions/01-questions.html">1 · Where questions come from</a>
     <span class="t-desc">What a capstone is and is not, and the five shapes a good one takes: evaluation, preference and pricing, prediction and risk, diagnosis and benchmarking, feasibility and landscape. The anti-patterns, the feasibility filter, and how to search the literature well enough to know your question has not already been answered.</span></td>
   <td class="hw">Statement of interest, before meeting 2</td></tr>
+<tr class="g-last g01"><td>Wed Sep 2</td>
+  <td class="topic"><a href="sessions/02-problem-and-teams.html">2 · Writing the problem, and building the team</a>
+    <span class="t-desc">Academic writing starts here, because the first paper is due in four weeks. What a problem statement actually does, and how a pile of sources becomes prose. Then team formation, the charter, and the conflict protocol — agreed while everyone is still getting along.</span></td>
+  <td class="hw">Team charter, same day · Writing 1 assigned</td></tr>
 
-<tr class="g-first g02"><td class="g-rail" rowspan="4"><span>Evidence &amp; inference</span></td><td>Wed Sep 2</td>
-  <td class="topic"><a href="sessions/02-causal-language.html">2 · Causal language</a>
+<tr class="g-first g02"><td class="g-rail" rowspan="4"><span>Evidence &amp; inference</span></td><td>Wed Sep 9</td>
+  <td class="topic"><a href="sessions/03-causal-language.html">3 · Causal language</a>
     <span class="t-desc">Counterfactuals and potential outcomes, and why a comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, and back-door reasoning.</span></td>
-  <td class="hw">Team charter, same day</td></tr>
-<tr><td>Wed Sep 9</td>
-  <td class="topic"><a href="sessions/03-models.html">3 · What the standard models do</a>
-    <span class="t-desc">Linear regression, logit and probit, and count models, described rather than derived: what each estimates, which outcomes each suits, and how to read a coefficient.</span></td>
-  <td class="hw"></td></tr>
+  <td class="hw">Writing 1 — problem statement</td></tr>
 <tr><td>Wed Sep 16</td>
-  <td class="topic"><a href="sessions/04-uncertainty.html">4 · Where uncertainty comes from</a>
-    <span class="t-desc">What is random and what is not; residuals and errors; what a standard error states; where p-values come from. How sample size and the variation in the explanatory variable move standard errors.</span></td>
+  <td class="topic"><a href="sessions/04-models-uncertainty.html">4 · Models, uncertainty, and prediction</a>
+    <span class="t-desc">What the standard models estimate and how to read a coefficient in the units of the problem. Where uncertainty comes from and what a p-value is not. And the distinction that decides half your projects: explaining versus predicting.</span></td>
   <td class="hw"></td></tr>
-<tr class="g-last g02"><td>Wed Sep 23<sup class="resched">*</sup></td>
+<tr><td>Wed Sep 23<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/05-inference-goes-wrong.html">5 · How inference goes wrong</a>
     <span class="t-desc">Bias from omitted variables, sorting and selection, measurement error, and reverse causality — and false precision from ignored dependence, multiple testing, and specification search.</span></td>
-  <td class="hw">Research problem presentation, in class</td></tr>
-
-<tr class="g-first g03"><td class="g-rail" rowspan="4"><span>Designs &amp; data</span></td><td>Wed Sep 30</td>
+  <td class="hw"></td></tr>
+<tr class="g-last g02"><td>Wed Sep 30</td>
   <td class="topic"><a href="sessions/06-selection-on-observables.html">6 · Conditioning on what you can observe</a>
     <span class="t-desc">Identifying an effect by controlling for what you can measure: controls, matching, and the causal reading of a regression coefficient. The workhorse of applied work — and the assumption it rests on, which is also its ceiling.</span></td>
-  <td class="hw">Problem statement &amp; literature review, end of week</td></tr>
-<tr><td>Wed Oct 7</td>
+  <td class="hw">Research problem presentation, in class · Peer evaluation 1 · Problem statement &amp; literature review, end of week</td></tr>
+
+<tr class="g-first g03"><td class="g-rail" rowspan="2"><span>Designs</span></td><td>Wed Oct 7</td>
   <td class="topic"><a href="sessions/07-designs-i.html">7 · Research designs I</a>
     <span class="t-desc">Experiments, instrumental variables, and regression discontinuity: the variation each exploits, the assumption each requires, and how each fails.</span></td>
   <td class="hw"></td></tr>
-<tr><td>Wed Oct 14</td>
+<tr class="g-last g03"><td>Wed Oct 14</td>
   <td class="topic"><a href="sessions/08-designs-ii.html">8 · Research designs II</a>
     <span class="t-desc">Difference-in-differences, panel data with local fixed effects, and event studies: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate.</span></td>
   <td class="hw"></td></tr>
-<tr class="g-last g03"><td>Wed Oct 21<sup class="resched">*</sup></td>
-  <td class="topic"><a href="sessions/09-data-and-ethics.html">9 · What the design needs, and what you are allowed to have</a>
-    <span class="t-desc">Working backwards from a design to its data requirements — unit, aggregation, frequency, span, coverage — then the landscape of sources. And the gate most projects discover too late: research ethics, the Cornell IRB, and data-use agreements.</span></td>
-  <td class="hw">Data feasibility memo assigned</td></tr>
 
-<tr class="g-first g04"><td class="g-rail" rowspan="3"><span>Working with data</span></td><td>Wed Oct 28</td>
-  <td class="topic"><a href="sessions/10-midterm-asking-data.html">10 · Midterm; what to ask of a dataset</a>
-    <span class="t-desc">The midterm asks you to design a study for a given situation in writing. Then the interrogation checklist every dataset should face before anyone models it.</span></td>
+<tr class="g-first g04"><td class="g-rail" rowspan="3"><span>Data &amp; access</span></td><td>Wed Oct 21<sup class="resched">*</sup></td>
+  <td class="topic"><a href="sessions/09-measurement.html">9 · Measurement, and what the design demands</a>
+    <span class="t-desc">Turning a construct into something a dataset can hold — the step where most capstones actually die. Then working backwards from the chosen design to the data it requires: unit, aggregation, frequency, span, and coverage.</span></td>
+  <td class="hw">Writing 2 — limitation paragraph</td></tr>
+<tr><td>Wed Oct 28</td>
+  <td class="topic"><a href="sessions/10-getting-data.html">10 · Getting hold of the data</a>
+    <span class="t-desc">The practical business of obtaining data: what exists and who holds it, what proprietary access and a data-use agreement really cost in time, what the IRB needs and when, and what scraping and APIs can and cannot get you. Then how to write the memo that proves your data is real.</span></td>
+  <td class="hw">Data feasibility memo assigned</td></tr>
+<tr class="g-last g04"><td>Wed Nov 4</td>
+  <td class="topic"><a href="sessions/11-midterm-interrogating-data.html">11 · Midterm; interrogating data with an assistant</a>
+    <span class="t-desc">The midterm asks you to design a study for a given situation in writing. Then the hands-on half: driving an assistant across real data, and the checks that catch a wrong answer without reading the code.</span></td>
   <td class="hw">Data feasibility memo, end of week</td></tr>
-<tr><td>Wed Nov 4</td>
-  <td class="topic"><a href="sessions/11-interrogating-data.html">11 · Interrogating data with an assistant</a>
-    <span class="t-desc">Driving an AI assistant to summarize, join, and plot real data — and the checks that catch a wrong answer. You are graded on the questions you ask and the checks you run, never on code you wrote.</span></td>
-  <td class="hw">Exercise 1 — interrogate a dataset</td></tr>
-<tr class="g-last g04"><td>Wed Nov 11</td>
+
+<tr class="g-first g05"><td class="g-rail" rowspan="4"><span>Reporting &amp; pitch</span></td><td>Wed Nov 11</td>
   <td class="topic"><a href="sessions/12-seeing-data.html">12 · Seeing what is in the data</a>
     <span class="t-desc">Which figure answers which question, and why. Exploring distributions, time, and space — then the flip side: what figures hide through aggregation, scale, binning, projection, and chosen windows.</span></td>
-  <td class="hw">Exercise 2 — rebuild and critique a figure</td></tr>
-
-<tr class="g-first g05"><td class="g-rail" rowspan="3"><span>Teams &amp; pitch</span></td><td>Wed Nov 18<sup class="resched">*</sup></td>
-  <td class="topic"><a href="sessions/13-collaboration.html">13 · Collaboration, technical and human</a>
-    <span class="t-desc">Keeping a project reproducible and a team functional: where files live, what 'the final version' means, and what to do when a teammate will not move.</span></td>
-  <td class="hw">Research design paper, end of week</td></tr>
+  <td class="hw">Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week</td></tr>
+<tr><td>Wed Nov 18<sup class="resched">*</sup></td>
+  <td class="topic"><a href="sessions/13-writing-collaboration.html">13 · Writing the design paper; collaboration</a>
+    <span class="t-desc">The design paper as a genre: how to write an identification section, and how to state a limitation without gutting your own project. Then how to referee somebody else's — which is the same skill from the other side — and how to keep a project reproducible.</span></td>
+  <td class="hw">Design paper draft, in class · Milestone 2 presentation · Peer evaluation 2 · Research design paper, end of week</td></tr>
 <tr class="break-row"><td>Wed Nov 25</td><td>Thanksgiving recess — no class</td><td class="hw"></td></tr>
 <tr class="g-last g05"><td>Wed Dec 2</td>
   <td class="topic"><a href="sessions/14-pitch.html">14 · The pitch</a>
     <span class="t-desc">Final presentations and peer review, then the handoff to AEM 6992.</span></td>
-  <td class="hw">Final presentation &amp; artifact, in class · Referee report in exam period</td></tr>
+  <td class="hw">Exercise 2 — rebuild and critique a figure, Dec 1 · Final presentation &amp; artifact, in class · Writing 4 — referee report, exam period</td></tr>
 </tbody>
 </table>
 </div>

@@ -1,0 +1,7 @@
+| \# | Deliverable | Description | Weight | Due |
+|:---|:---|:---|---:|:---|
+| 1 | **Research problem presentation** | 5 slides, 5 minutes: the problem, why it matters, what is already known, and which archetype it is. Milestone 1. | 5 % | Meeting 6 --- Sep 30 (week 6), in class |
+| 2 | **Problem statement & literature review** | ~5 pages: the problem, practical and theoretical justification, conceptual model, what the literature establishes, work plan. | 10 % | Meeting 6 --- Sep 30 (week 6), end of week |
+| 3 | **Data feasibility memo** | ~2 pages: the exact data you will use, who holds it, how you get it, what it costs, what it measures, and your fallback if it falls through. | 5 % | Meeting 11 --- Nov 4 (week 11), end of week |
+| 4 | **Research design paper** | ~5 pages: question, identification strategy and its assumptions, unit of analysis and sample, data, threats to internal validity, external validity, work plan for the spring. | 15 % | Meeting 13 --- Nov 18 (week 13), end of week; draft workshopped in class\* |
+| 5 | **Final presentation & artifact** | 10-minute presentation plus a consolidating artifact — poster or written plan, format announced by week 10. | 5 % | Meeting 14 --- Dec 2 (week 15), in class |

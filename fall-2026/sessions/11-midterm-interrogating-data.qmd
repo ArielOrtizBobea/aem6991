@@ -1,0 +1,33 @@
+---
+title: "11 · Midterm; interrogating data with an assistant"
+subtitle: "Wednesday, November 4, 2026 · Meeting 11"
+pagetitle: "AEM 6991 · 11 Midterm; interrogating data with an assistant"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** Review
+
+No quiz this meeting.
+
+## Session A · 2:05–3:15
+
+**Midterm** — you are given a situation and asked to design a study to evaluate it, in writing: the question, the design, what data it requires, and what would undermine it
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
+Real data in front of you, and the checklist from meeting 9 put to work through an assistant: summaries, joins, quick plots. Then the harder half — knowing whether the answer is right without reading the code. Row counts across a join, totals against a published figure, five raw records read by hand. What not to upload, and why
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Data feasibility memo, end of week

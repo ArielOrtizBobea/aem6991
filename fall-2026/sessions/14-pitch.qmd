@@ -12,7 +12,7 @@ This page is a stub. Materials appear here before the meeting.
 
 **Reading.** None
 
-The opening quiz is on this reading.
+No quiz this meeting.
 
 ## Session A · 2:05–3:15
 
@@ -20,10 +20,14 @@ Final presentations and peer review
 
 ## Session B · 3:35–4:30
 
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
 The handoff to AEM 6992: what each team does over the break
 
 Your team's output is submitted before you leave.
 
 ## Due
 
-Final presentation & artifact, in class · Referee report in exam period
+Exercise 2 — rebuild and critique a figure, Dec 1 · Final presentation & artifact, in class · Writing 4 — referee report, exam period

@@ -1,0 +1,33 @@
+---
+title: "4 · Models, uncertainty, and prediction"
+subtitle: "Wednesday, September 16, 2026 · Meeting 4"
+pagetitle: "AEM 6991 · 4 Models, uncertainty, and prediction"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+Linear regression, non-linear models, and count models — described, not derived: what each estimates and how to read a coefficient in the units of the problem. Then where uncertainty comes from: residuals and errors, sampling variation, what a standard error states, where p-values come from and what they are not. Finally the distinction that decides half the projects in this room — explaining versus predicting, and why a model that predicts well may tell you nothing about what to do
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
+Simulation lab: draw from a world you control. Watch the p-value distribution under the null, then change the sample size and the variation and watch it move. Then fit the same world in-sample and out-of-sample, and watch a model that looks excellent fail on data it has not seen. Nothing to install, no code to write
+
+Your team's output is submitted before you leave.
+
+## Due
+
+—

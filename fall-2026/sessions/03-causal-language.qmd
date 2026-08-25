@@ -1,7 +1,7 @@
 ---
-title: "2 · Causal language"
-subtitle: "Wednesday, September 2, 2026 · Meeting 2"
-pagetitle: "AEM 6991 · 2 Causal language"
+title: "3 · Causal language"
+subtitle: "Wednesday, September 9, 2026 · Meeting 3"
+pagetitle: "AEM 6991 · 3 Causal language"
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -20,10 +20,14 @@ Counterfactuals and potential outcomes; why every comparison is a claim about a 
 
 ## Session B · 3:35–4:30
 
-Team formation and team charter; draw the graph for your own interest
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
+Draw the graph for your own project. Then Writing 1 is peer-swapped and critiqued in class — you will read somebody else's problem statement before you read your own again
 
 Your team's output is submitted before you leave.
 
 ## Due
 
-Team charter, same day
+Writing 1 — problem statement

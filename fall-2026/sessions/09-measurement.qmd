@@ -1,0 +1,37 @@
+---
+title: "9 · Measurement, and what the design demands"
+subtitle: "Wednesday, October 21, 2026 · Meeting 9"
+pagetitle: "AEM 6991 · 9 Measurement, and what the design demands"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+::: {.callout-warning appearance="simple"}
+**Date not final.** Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed.
+:::
+
+## Before class
+
+**Reading.** TBD
+
+The opening quiz is on this reading.
+
+## Session A · 2:05–3:15
+
+Constructs and operationalization: how you turn 'sustainability', 'financial literacy', or 'market power' into a variable somebody could actually record, and what makes that measure defensible or indefensible. Validity, and what a proxy costs you. Then working backwards from the design to its data requirements: unit of observation, level of aggregation, time frequency, span, coverage, and which comparisons the data has to contain — can this be done with county-level data, or does it need individuals?
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
+What to ask of a dataset before trusting anything it says: what is one row? how many are there? what is missing, and is it missing at random? what is the range, and are the extremes real? what changed over time, and did the definition change with it? Then the measurement clinic — the variable your question actually needs, and whether anything on earth measures it
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Writing 2 — limitation paragraph

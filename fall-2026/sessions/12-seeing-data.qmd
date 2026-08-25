@@ -20,10 +20,14 @@ Which figure answers which question, and why. Exploring distributions, time, and
 
 ## Session B · 3:35–4:30
 
+Every session B opens with a ten-minute team stand-up: what you did,
+what is blocked, and who does what next — in writing, submitted with
+the session output.
+
 Rebuild a published figure from its underlying data, then produce the version you think is more honest
 
 Your team's output is submitted before you leave.
 
 ## Due
 
-Exercise 2 — rebuild and critique a figure
+Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week

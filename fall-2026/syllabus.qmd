@@ -54,14 +54,25 @@ rationalizing a question around whatever they found, and that is the
 most common way a capstone goes wrong.
 
 The whole conceptual half is taught on examples from industry and the
-news, before anyone opens a dataset. The back half is judgment about
-data: knowing what to ask of a dataset, driving an AI assistant to
-answer it, checking whether the answer is credible, seeing what a
-figure shows and what it hides, and keeping a project and a team
-functional. None of it assumes prior econometrics or programming.
+news, before anyone opens a dataset. Then comes the part most capstones
+skip: turning a construct into something a dataset can actually hold,
+and the practical business of getting the data --- who holds it, what a
+data-use agreement costs in months, what the IRB needs, and what
+scraping and an API can and cannot get you. The back half is judgment:
+what to ask of a dataset, driving an AI assistant to answer it,
+checking whether the answer is credible, and seeing what a figure shows
+and what it hides.
 
-**This is not a coding course.** You will work with real data every
-week from meeting 10 onward, and you will do it through an AI
+**Writing runs through the whole term rather than sitting at the end.**
+The research problem is taught in meeting 2, the memo in meeting 10,
+and the design paper in meeting 13, each with a short individual piece
+attached. So does teamwork: the charter and the conflict protocol are
+agreed in meeting 2, and every second session opens with a ten-minute
+stand-up that is written down and graded. None of this assumes prior
+econometrics or programming.
+
+**This is not a coding course.** You will work with real data from
+meeting 11 onward, and you will do it through an AI
 assistant. What is graded is the questions you ask and the checks you
 run --- never code you wrote. The reason is that writing the code is no
 longer the scarce skill; knowing which analysis to ask for, and
@@ -111,14 +122,16 @@ This section adds two outcomes that serve the four above:
     or Gemini. A free tier is sufficient.
 -   A browser, and whatever you already write in.
 
-That is the whole stack. Meetings 1--9 need no software at all.
-Meetings 10--12 work on real data, and you will do that by uploading a
+That is the whole stack. Meetings 1--10 need no software at all.
+Meetings 11--12 work on real data, and you will do that by uploading a
 file to an assistant and interrogating it --- which is also how the
 "do not upload restricted data" rule in the AI policy below stops being
 abstract.
 
-Version control is covered at awareness level in meeting 13: what it is
-for and when it is worth the cost. You are not required to use it.
+Scraping, APIs, and version control are covered at awareness level, in
+meetings 10 and 13: what they are, what they cost, and when they are
+worth it. You are not required to use any of them, and we write no
+scrapers in this course.
 
 ## AI policy
 
@@ -166,30 +179,25 @@ can be carried and no student is sunk by a team.
 |:---|---:|:---|
 | In-class quizzes | 10 % | Individual |
 | Statement of interest | 5 % | Individual |
-| Data exercises (2 × 7.5 %) | 15 % | Individual |
+| Writing portfolio (4 pieces) | 10 % | Individual |
+| Data exercises (2 × 5 %) | 10 % | Individual |
 | Midterm | 15 % | Individual |
-| Referee report | 5 % | Individual |
 | *Individual subtotal* | *50 %* | |
+| Team process | 10 % | Team-based, graded individually |
 | Research problem presentation | 5 % | Team |
 | Problem statement & literature review | 10 % | Team |
 | Data feasibility memo | 5 % | Team |
-| Research design paper | 20 % | Team |
-| Final presentation & artifact | 10 % | Team |
+| Research design paper | 15 % | Team |
+| Final presentation & artifact | 5 % | Team |
 | *Team subtotal* | *50 %* | |
 
 Grading scale: A+ (≥ 98), A (≥ 92), A- (≥ 88), B+ (≥ 85), B (≥ 80),
 B- (≥ 75), C+ (≥ 70), C (≥ 65), C- (≥ 60), D (≥ 50), F (\< 50).
 
-**Peer evaluation.** Team members evaluate each other twice in the
-semester on a fixed template. Results adjust individual grades on team
-deliverables. A student who does not contribute does not receive the
-team's grade.
-
 ### In-class quizzes (10 %)
 
-Short quizzes delivered to your own device, at 2:05 on the assigned
-reading and --- on most meetings --- again at 3:35 on the first half of
-the session. Three to five questions each, three minutes.
+One short quiz per meeting, delivered to your own device at 2:05, on
+the assigned reading. Three to five questions, three minutes.
 
 Many of them are scenario questions rather than definitions: *here is a
 situation and a question --- which design fits, and what would have to
@@ -201,13 +209,12 @@ for a student who was not paying attention.
 
 The quizzes serve three purposes at once. They are the reading check
 --- which is why this section does not assign Reading Notes. They are
-the attendance record, taken twice so that leaving at the break is
-visible. And they surface confusion while there is still an hour of
-class left to fix it.
+the attendance record. And they surface confusion at 2:05, while there
+are still two hours of class left to fix it.
 
 Quizzes begin at meeting 2; there is no quiz in the first meeting.
 
-**The lowest four quiz scores are dropped, and there are no make-ups.**
+**The lowest two quiz scores are dropped, and there are no make-ups.**
 That covers illness, interviews, travel, and a dead laptop battery
 without anybody having to email about it.
 
@@ -226,9 +233,24 @@ meeting's page. Getting this wrong costs you nothing; not being able to
 pick one at all is the useful signal, for you and for me, that the idea
 is still a topic rather than a question.
 
-### Data exercises (15 %)
+### Writing portfolio (10 %)
 
-Two short individual exercises. They exist so that every student
+Writing is taught in this course rather than assumed. Meeting 2 covers
+the research problem, meeting 10 the memo, and meeting 13 the design
+paper and the referee's craft. Four short individual pieces track those
+sessions --- each one a different genre, and each one a genre you will
+write again in industry.
+
+{{< include _writing.qmd >}}
+
+These are graded on whether the argument survives contact with a
+reader: is the claim in the first sentence, does the evidence support
+it, and could somebody who is not in your team act on it. Length limits
+are limits.
+
+### Data exercises (10 %)
+
+Two short individual exercises, 5 % each. They exist so that every student
 personally handles data rather than delegating it to whoever on the
 team seems most comfortable with it. Both are done with an AI
 assistant, and neither is graded on code.
@@ -249,35 +271,46 @@ caught yourself scores well.
 
 ### Midterm (15 %)
 
-In class, first half of week 12. Open note, application-oriented short
+In class, first half of meeting 11. Open note, application-oriented short
 answers. It tests whether you can apply the design vocabulary to
 situations you have not seen --- not whether you memorized definitions.
 
-### Referee report (5 %)
+### Team process (10 %)
 
-Each student writes a referee report on another team's research design
-paper: what the project is, what is strong, what would have to change.
-Reading someone else's design critically is the fastest way to see the
-holes in your own.
+The course description calls team leadership and management a major
+component of this course, so it is graded as one rather than left to
+goodwill.
 
-### Team deliverables (50 %)
+- **The weekly stand-up.** Every session B opens with ten minutes:
+  what you did since last week, what is blocked, and who does what
+  next. It is written down and submitted with that session's output.
+  The record is what makes an uneven division of labour visible in
+  week 4 rather than week 13.
+- **The charter.** Agreed in meeting 2, including the conflict
+  protocol and how work is divided. You are graded on whether you
+  actually followed it, not on how it reads.
+- **Two peer evaluations**, in meetings 6 and 13, on a fixed template.
+
+This component is team-based in subject and individual in grade: two
+members of the same team can receive different marks for it, and
+routinely will. A student who does not contribute does not receive the
+team's grade.
+
+### Team deliverables (40 %)
 
 The sequence is the same one used across AEM 6991 sections, because it
 is what AEM 6992 needs in January.
 
-| \# | Deliverable | Description | Due |
-|:---|:---|:---|:---|
-| 1 | Research problem presentation | 3 slides, 10 min: the problem, why it matters, what is already known. | Week 4, in class |
-| 2 | Problem statement & literature review | ~5 pages: the problem, practical and theoretical justification, conceptual model, what the literature establishes, work plan. | End of week 6 |
-| 3 | Data feasibility memo | ~2 pages: the exact data you will use, who holds it, how you get it, what it costs, what it measures, and your fallback if it falls through. | End of week 8 |
-| 4 | Research design paper | ~5 pages: question, identification strategy and its assumptions, unit of analysis and sample, data, threats to internal validity, external validity, work plan for the spring. | End of week 13 |
-| 5 | Final presentation & artifact | 10-minute presentation plus a consolidating artifact --- poster or written plan, format announced by week 10. | Week 14, in class |
+{{< include _deliverables.qmd >}}
 
 **The data feasibility memo is specific to this section.** It exists
 because the most common way an MPS capstone fails is not a bad question
 --- it is a good question whose data never arrives. Requiring the team
-to prove the data is real, in week 8, while there is still time to
-change course, is the single highest-return deadline in the course.
+to prove the data is real while there is still time to change course is
+the single highest-return deadline in the course. It is deliberately
+placed after meeting 9 teaches you what to ask of a dataset and meeting
+11 has you do it on real data --- you certify the data having actually
+interrogated some, not from theory.
 
 **Late policy.** Team deliverables lose 10 % up to 8 hours late, 50 %
 from 8 to 72 hours, and are not accepted after 72 hours. Notify the
@@ -338,9 +371,11 @@ Zelazny, *Say It With Charts*.
 ## Attendance
 
 The once-weekly format means missing one meeting is missing two
-sessions. Attendance is recorded through the two quizzes each meeting.
-Four dropped quiz scores absorb two full absences without penalty and
-without a conversation. Beyond that, missed quizzes score zero.
+sessions. Attendance is recorded through the opening quiz and through
+the session-B stand-up. Two dropped quiz scores absorb two full
+absences without penalty and without a conversation. Beyond that,
+missed quizzes score zero, and a stand-up you were not present for
+cannot be filed retrospectively.
 
 If you are going to miss more than two meetings, talk to me early
 rather than late.

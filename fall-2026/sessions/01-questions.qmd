@@ -42,21 +42,101 @@ would be**. Teams are formed from these.
 
 :::: {.content-visible when-format="revealjs"}
 
+## Who I am {.smaller}
+
+**Ariel Ortiz-Bobea.** I am an applied economist in Dyson. My own
+research is on agriculture and climate — what warming has already done
+to productivity, and what adapting to it is worth.
+
+Which means I spend my working life on exactly the problem this course
+is about: **a question somebody cares about, data that was never
+collected to answer it, and the argument in between.**
+
+Office 450B Warren · [ao332@cornell.edu](mailto:ao332@cornell.edu)
+
+::: {.notes}
+Three minutes, not ten. One concrete example of your own work is worth
+more than a CV — pick a result and say what the identification problem
+was, because that is the thing they will be doing all term.
+
+Say the honest version too: you have not taught this section before,
+which is why the survey in a moment actually changes what happens.
+:::
+
+## Who you are {.smaller}
+
+::: {style="text-align:center"}
+**pollev.com/arielortizbobea090**
+
+[or text **arielortizbobea090** to **22333**]{style="font-size:0.7em"}
+:::
+
+A few questions about who is in the room. Nothing is graded and there
+are no wrong answers — I use it to decide how hard to lean on the
+technical half, and to form teams that are not accidentally lopsided.
+
+::: {.notes}
+REPLACE the poll address above with the 6991 one before class.
+
+Run items 1–5 while stragglers arrive, then 6–10. Read each bar chart
+back out loud as it fills — that reading-back IS the introduction, and
+it tells the room who it is faster than 25 people saying their names.
+
+If you sent the survey last night, run only 6–10 here and show last
+night's results for 1–5. Saves six minutes of a tight session A.
+
+PRIVACY: once the Canvas roster is synced these are tied to NetIDs. See
+_quizzes/s01-day-one.md — decide before you walk in.
+:::
+
+## What the room looks like {.smaller}
+
+*(read the results back)*
+
+- Which concentrations are here
+- Who has done statistics, and who has not
+- Who has touched data, and in what
+- Where people want to land
+
+::: {.notes}
+This slide is a placeholder for you talking over the live charts. Say
+what surprises you. Two useful things to name out loud:
+
+— If most of the room has no econometrics: good, none is assumed and
+none is taught. Say it plainly; it is the single biggest anxiety.
+— If most of the room wants finance: flag that the prediction archetype
+is coming in meeting 3, so they know their shape is covered.
+:::
+
+## And a rehearsal {.smaller}
+
+The next one is **not a grade**. Every answer is correct.
+
+It is here so the plumbing is proved before it counts:
+
+- **From next week: one quiz per meeting, at 2:05**
+- Three to five questions, three minutes, on the reading
+- Tied to your NetID — it is also the attendance record
+- **The lowest two are dropped**, so an honest miss costs nothing
+
+::: {.notes}
+Run item 12. Then say: there is no quiz today and no reading for today.
+:::
+
 ## Today {.smaller}
 
 **Session A** — what a capstone is, what it is not, and the five shapes a
 good one takes.
 
-**Session B** — the literature workshop, and you leave with five candidate
-questions of your own.
-
-**No quiz today.** Quizzes start next week.
+**Session B** — where to find data you already have, and the question
+relay.
 
 ::: {.notes}
-Room is Riley-Robb B15 all semester. TA to be announced.
 Point at the site once — arielortizbobea.github.io/aem6991 — and say the
-syllabus lives there, not on a handout. Then move on; do not walk the
-syllabus. That is 20 minutes nobody remembers.
+syllabus and the whole semester plan live there, not on a handout. Then
+move on; do not walk the syllabus. That is 20 minutes nobody remembers.
+
+Room is Riley-Robb B15 all semester. TA to be announced.
 :::
 
 

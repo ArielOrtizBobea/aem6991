@@ -425,6 +425,9 @@ already subscribes to, or abandon a good question because they assumed
 the data was out of reach.
 :::
 
+Worked examples of getting from a dataset to a question:
+[**Project ideas**](../project-ideas.qmd)
+
 ::: {.notes}
 Browse Dewey live on the projector — confirm the access route before
 class so the login is not the thing that eats five minutes.
@@ -608,6 +611,10 @@ licensed holdings, and **Dewey**, a commercial data marketplace the Johnson
 College of Business subscribes to and which you can use at no cost. Teams
 routinely propose buying data the College already has, or drop a good
 question because they assumed the data was unreachable.
+
+A set of worked examples — housing and place, foot traffic, spending,
+labour, firms — is on the [project ideas](../project-ideas.qmd) page. It is
+not a menu; it shows the reasoning, including where each one falls over.
 
 Working backwards from a dataset is legitimate — it is route 5 — provided
 you do it honestly: what could this answer, which of those would anybody act

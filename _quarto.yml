@@ -25,6 +25,8 @@ website:
           href: fall-2026/index.qmd
         - text: "Syllabus"
           href: fall-2026/syllabus.qmd
+        - text: "Project ideas"
+          href: fall-2026/project-ideas.qmd
         # >>> BEGIN GENERATED MEETINGS — edit fall-2026/_schedule.yml, then
         - section: "Part 1 — The question"
           contents:

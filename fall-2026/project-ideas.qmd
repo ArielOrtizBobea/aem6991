@@ -1,0 +1,246 @@
+---
+title: "Project ideas"
+pagetitle: "AEM 6991 · Project ideas"
+toc: true
+toc-depth: 2
+editor:
+  markdown:
+    wrap: 72
+---
+
+::: {.callout-important appearance="simple"}
+**This is not a menu.** Nobody is going to hand you a question. What
+follows are worked examples of the move you have to make yourself ---
+from a dataset, or an interest, to a question that survives the
+[feasibility filter](sessions/01-questions.qmd). Each one shows the
+reasoning, including where it falls over.
+
+The best capstones come from somebody's own curiosity. Read these for
+the *shape* of the reasoning, then go and find your own.
+:::
+
+## Where to look first
+
+Before assuming data must be bought, found, or scraped:
+
+- **Dewey**, the data marketplace the Johnson College subscribes to.
+  **Roughly 84 datasets, available to you at no cost.** Everything named
+  on this page is in that catalogue.
+- **The Cornell library's licensed holdings**, which are extensive.
+- **Public sources** --- county assessor and deeds records, the Census
+  and ACS, FHFA, and the public research files from Zillow and Redfin.
+
+Coverage, date ranges, and the exact columns are on each dataset's own
+page in the catalogue. **Go and read them.** That check is feasibility
+filter 2 --- "can you name the specific dataset, who holds it, and how
+you get it, *checked not assumed*" --- and doing it takes ten minutes in
+September instead of sinking a project in March.
+
+## A worked family: housing and place
+
+Housing is a good family to think in. The outcome is a price everybody
+understands, the characteristics are recorded, and Dewey's coverage
+happens to be unusually deep here. It is also where the difference
+between archetypes is easiest to see: **the same dataset supports at
+least five genuinely different projects, each with a different standard
+of evidence.**
+
+The spine is **Real Estate Transaction Data** --- a nationwide U.S.
+property suite, 9 tables, 2011 to present, covering tax assessor
+records (parcel, ownership, legal description, site address, property
+characteristics), valuations, transactions, distress, and geography
+including latitude and longitude. Because it carries coordinates, it
+joins to almost everything else below.
+
+### 1 · What is a lake view worth?
+
+**Archetype 2 --- preference and pricing.** Not what people say they
+would pay: what they demonstrably did pay.
+
+*The question.* Two otherwise similar houses, one with water frontage or
+a view and one without. How much more does the first sell for --- and
+does the premium hold for lake *access* without frontage, for a dock, or
+for being three streets back?
+
+*The design.* A hedonic regression, and
+[conditioning on observables](sessions/05-selection-on-observables.qmd)
+in its purest form. You want the coefficient on the amenity, holding
+everything else fixed, so the whole of meeting 5 applies directly.
+
+*The data.* Real Estate Transaction Data for prices, characteristics,
+and coordinates. Then amenity measures joined on location: **Nature
+Score** gives a 0--100 rating of the natural environment plus a heat
+risk score, by latitude and longitude. Water proximity you compute from
+the coordinates yourself.
+
+*Where it falls over.* Waterfront houses differ in a hundred ways you
+cannot measure --- lot size, build quality, who the neighbours are, how
+the road runs. Your coefficient quietly absorbs all of it. The good
+versions find variation that is genuinely narrow: units in the *same
+building* on different floors or orientations, parcels either side of a
+ridge line, properties that gained or lost a view when something was
+built. That move --- from "control for things" to "find variation that
+isolates the thing" --- is the entire back half of this course.
+
+*And a second trap.* NatureScore is a *measure of a construct*, not the
+construct. Is it what you mean by "a view"? Meeting 9 is about exactly
+that question, and here it has teeth.
+
+### 2 · Is this house a good deal?
+
+**Archetype 3 --- prediction and risk.** Same data. Same regression.
+Completely different question, and a completely different standard of
+evidence.
+
+*The question.* Build your own valuation model. When a house comes on
+the market, predict what it should sell for. A "deal" is a listing
+priced well below your prediction.
+
+*The design.* Prediction, not identification. You do not care whether
+the coefficient on square footage is causal --- you care whether the
+model is accurate on houses it has never seen. Train on one period, test
+on a later one, and compare against an honest baseline. If you cannot
+beat "the last sale price on this parcel, adjusted for the local index,"
+you do not have a model.
+
+*Where it falls over.* A large negative residual is usually **not** a
+bargain. It is something the model cannot see: a highway behind the
+fence, a failed inspection, a pending assessment, a seller who has to
+close by Friday. The interesting version of this project is going and
+finding out what the residuals actually are. Also watch look-ahead
+bias --- if anything in your training data postdates the sale you are
+predicting, the model is cheating.
+
+::: {.callout-note appearance="simple"}
+**Read 1 and 2 together.** Same file, largely the same model, graded on
+opposite things. In the first, a coefficient has to be believable and
+predictive accuracy is beside the point. In the second, accuracy is
+everything and no coefficient needs to mean anything at all. That
+contrast is [meeting 3](sessions/03-models-uncertainty.qmd) made
+concrete, and being able to say which one you are doing is most of what
+this course is for.
+:::
+
+### 3 · Is climate risk priced into housing yet?
+
+**Archetype 1 or 2, depending how you cut it.** A live question with a
+live literature --- read it first.
+
+*The question.* Do houses in high flood, fire, or heat risk areas sell
+for less, holding their characteristics constant? Has the discount
+grown over time, or after a specific disaster? Do buyers who move *in*
+from elsewhere pay more than locals for the same risk?
+
+*The data.* **US Climate Risk Data** rates five hazards --- heat,
+precipitation, drought, flooding, fire --- 1 to 100 for every U.S. ZIP
+code. Join it to Real Estate Transaction Data. **Weather Data** carries
+daily U.S. observations back to 1970 if you want actual events rather
+than modelled risk. **Nature Score** adds heat risk at coordinate level.
+
+*Where it falls over.* Risky places are also *nice* places --- the
+coast, the wooded hillside. The amenity and the hazard are the same
+geography, and separating them is the whole problem. The published work
+gets at it through timing: what happened to prices after a disaster, or
+after a flood map was redrawn. That is
+[meeting 8](sessions/08-designs-ii.qmd) territory.
+
+### 4 · Which part of the market turns first?
+
+**Archetype 4 --- diagnosis and benchmarking.** Descriptive, and honest
+about it.
+
+*The question.* When a market softens, it does not soften evenly. Which
+price tier, geography, or property type moves first, and by how much?
+Who is exposed?
+
+*The data.* Real Estate Transaction Data for sales, **Rental Data**
+(U.S. residential listings since 2014 across 41,702 ZIP codes, with
+asking rent and property features), and **Dwellsy TrendsIQ** for monthly
+median rent and year-over-year change at ZIP, city, and metro level.
+**ACS 5-Year** block-group tables give you income, race, and age
+composition to cut by.
+
+*Where it falls over.* Composition. If the *mix* of what sells changes,
+a median price can fall while every individual house gains value.
+Handling that honestly is most of the project.
+
+### 5 · Where do people actually move, and why?
+
+**Archetype 4, or 1 if you can find a shock.**
+
+*The data.* **Consumer Address History** carries up to ten prior home
+addresses for U.S. adult consumers --- a migration panel. Join origin
+and destination to **ACS**, **CDC PLACES** (36 modelled health measures
+by tract and ZCTA), **US Climate Risk Data**, or local prices.
+
+*Where it falls over.* This is rich enough to answer almost anything,
+which means it is also rich enough to let you fish. Write the question
+down *before* you open it.
+
+## Other families in the same catalogue
+
+Sketched, not worked out --- deliberately, because that part is yours.
+
+**Retail and foot traffic.** **Weekly Patterns Plus** (POI visits by
+week, U.S. and Canada, 2017--present), **Daily Store Visits**,
+**Neighborhood Patterns Plus** (footfall by census block group),
+**Global Places** (POI with NAICS and coordinates), and **Spend
+Patterns** (monthly card spend at individual POIs). Did a competitor's
+opening cannibalise nearby traffic (*evaluation*)? Which locations
+underperform what their catchment should deliver (*diagnosis*)? Which
+are about to close (*prediction*)?
+
+**Labour markets.** **Job Postings** carries individual U.S. postings
+with role, location, and **salary**; **Job Records** covers global
+postings scraped from employer sites back to 2007; **Layoff Data** has
+WARN Act notices since 1996; **Occupational Wage Data** gives means,
+medians and deciles across 800+ occupations. Which skills are being
+asked for that were not two years ago (*diagnosis*)? What happened to
+local hiring after a plant closure notice (*evaluation*)? Do postings
+that disclose salary fill differently (*evaluation*, and note that
+several states mandated disclosure at different times --- that is a
+natural experiment sitting there)?
+
+**Consumer spending.** Card panels covering 100M+ cards and ~13,000
+merchants, **Brand Tracker**, **Daily Consumer Spend by Company** and
+**by NAICS**, and **Convenience Store Transaction Data** at SKU level.
+Also **Consumer Insights Survey Data**, if you want stated alongside
+revealed.
+
+**Health care prices.** **Payer Rates** carries the rates negotiated
+between insurers and in-network providers for the 293 most commonly
+billed codes. Price transparency is recent, the variation is enormous,
+and almost nobody has looked. Pair with **CDC PLACES**.
+
+**Firms and finance.** **Global Equity End of Day Pricing** across 170+
+exchanges, **Bond Prices and Liquidity Indicators**, **Credit Curves**,
+**Social Sentiment Metrics for Equities**, **Public Company Benefits and
+Financials**, and **Company Insights** with headcount, tenure, growth
+and churn for 30M+ businesses.
+
+**Policy and government.** **U.S. Lobbying Data** since 1999, the
+government contracting suite (awards, subcontracting, terminations), and
+**SBA Loans** --- 13.4 million PPP, 504 and 7(a) transactions, which is
+one of the best-studied natural experiments of the last decade and still
+has corners in it.
+
+**And if you want something lighter.** **Professional Football Salary
+Data** and **Professional Football Club Financial Data** cover the top
+five European leagues and their second divisions. Sports data is a
+perfectly respectable place to learn a design --- the questions are
+sharp and the outcomes are measured.
+
+## How to use any of this
+
+Take one line above --- or better, one of your own --- and run it
+through the four filter questions from meeting 1:
+
+1. Could a team of 3--5 execute it in one spring semester?
+2. Can you name the specific dataset, who holds it, and how you get
+   it --- **checked, not assumed**?
+3. Does the design produce an answer that could come out either way?
+4. Would somebody actually act differently depending on the answer?
+
+If it survives all four, label its archetype and bring it to class. If
+it fails one, say which --- a question you kill in September is a month
+you do not lose in March.

@@ -314,15 +314,29 @@ their AI platform, and they score how you prompt it, how you catch it
 being wrong, and how you turn that into a recommendation.
 :::
 
+::: {.callout-warning appearance="simple"}
+And the other half. In a trial with a thousand students,
+[those who used a plain chatbot to practise scored 17% worse](https://www.pnas.org/doi/10.1073/pnas.2422633122)
+once it was taken away — worse than students who never had it. Those given
+a version that made them work did not.
+
+The midterm is where that shows up.
+:::
+
 ::: {.notes}
 Say plainly that policies differ across sections and that this one is
 deliberately permissive. The McKinsey fact IS the reason, so do not rush
 it. Employers put "skills using AI tools" FIRST on what they expect to
 value in five years, while ranking it 14th today.
 
-Do NOT bring the grim version into week 1 — entry-level postings down
-35%, a third of employers already substituting AI. True, and it will
-flatten the room. It belongs in meeting 14.
+The PNAS study is Bastani et al., ~1,000 high-school maths students. Be
+accurate about it: the harm came from using it as a crutch during
+practice, not from using it at all. The guardrailed version showed no
+harm. That distinction IS the policy — permitted, disclosed, verified.
+
+Do NOT bring the grim labour-market version into week 1 — entry-level
+postings down 35%, a third of employers already substituting AI. True,
+and it will flatten the room. It belongs in meeting 14.
 :::
 
 ## The one that will bite you {.smaller}

@@ -38,6 +38,8 @@ website:
               href: fall-2026/handouts/causal-claims.qmd
             - text: " 3 Finding the question"
               href: fall-2026/sessions/03-questions.qmd
+            - text: "   Question relay cards"
+              href: fall-2026/handouts/relay-cards.qmd
             - text: " 4 Ethics and access"
               href: fall-2026/sessions/04-ethics.qmd
             - text: " 5 Coding tools and AI"

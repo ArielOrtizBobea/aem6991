@@ -186,6 +186,9 @@ meetings:
     builds: "Your team's question slate — three candidate questions, each labelled with an archetype and run through the four filters, with one killed on the record"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 3 on the research cycle and ch. 4 on literature review and critical reading."
     reading: "TBD"
+    links:
+      - text: "Question relay cards"
+        href: fall-2026/handouts/relay-cards.qmd
 
   - num: 4
     slug: "04-ethics"

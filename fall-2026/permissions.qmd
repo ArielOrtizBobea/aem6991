@@ -8,23 +8,27 @@ editor:
     wrap: 72
 ---
 
-Two gates stand between a design and the data it needs, and they are not
-the same kind of thing. The **IRB** is an ethics review, and it governs
-research involving people. A **data-use agreement** is a contract, and it
-governs somebody else's proprietary data. Both take longer than teams
-expect, both have to start in the autumn, and neither is something you
-can grant yourself.
+Two gates stand between your design and your data. They are different
+kinds of thing.
+
+The **IRB** is an ethics review. It governs research involving people.
+
+A **data-use agreement** is a contract. It governs somebody else's
+proprietary data.
+
+Both take longer than teams expect. Both have to start in the autumn.
+Neither is something you can grant yourself.
 
 ::: {.callout-important appearance="simple"}
-**If your project collects data from people --- a survey, an interview,
-an experiment --- start this in October.** Not February. The review
-itself is often quick; assembling what it needs is not, and training has
-to be finished before anything can be approved.
+**Does your project collect data from people?** A survey, an interview,
+an experiment. If so, start this in October, not February.
 
-If your project uses only existing datasets about firms, prices, places
-or securities, you almost certainly need none of this. Read the first
-section anyway, because "existing data about people" is a case that
-catches teams out.
+The review itself is often quick. Assembling what it needs is not. And
+training has to be finished before anything can be approved.
+
+If you use only existing data about firms, prices, places or securities,
+you almost certainly need none of this. Read the first section anyway.
+"Existing data about people" is the case that catches teams out.
 :::
 
 ## Does this apply to us?
@@ -40,12 +44,14 @@ decide it:
    people --- surveys, interviews, experiments, focus groups --- or you
    use **identifiable private information** about them.
 
-That second half is the one teams miss. Scraped social media posts,
-purchased consumer records, and administrative microdata can all count
-if individuals are identifiable. Foot-traffic and card-spend data of the
-kind on Dewey arrive aggregated and de-identified, which is normally
-what keeps them outside the definition --- but **you do not get to make
-that call yourself.** When in doubt, ask, and ask early.
+Teams miss the second half. Scraped social media posts count if
+individuals are identifiable. So do purchased consumer records and
+administrative microdata.
+
+Foot-traffic and card-spend data of the kind on Dewey arrive aggregated
+and de-identified. That is normally what puts them outside the
+definition. But **you do not get to make that call yourself.** When in
+doubt, ask, and ask early.
 
 ::: {.callout-note appearance="simple"}
 **You are not the one who decides you are exempt.** Even exempt research
@@ -63,13 +69,14 @@ Office Building.
 with step-by-step guidance at
 [guide.rass.cornell.edu](https://guide.rass.cornell.edu).
 
-**Training comes first, and it applies to everyone.** Every person listed
-on a protocol must complete [**CITI Program**](https://researchservices.cornell.edu/training/citi-online-courses-cornell-researchers-coi-irb-rcr-export-control)
-human-participants training — **including for exempt protocols**, a
-requirement since October 2022. It lasts five years. **The IRB will not
-issue an approval or exemption letter until every listed person has
-finished it**, so one teammate who has not done the modules holds up the
-whole team.
+**Training comes first, and it applies to everyone.** Every person
+listed on a protocol must complete
+[**CITI Program**](https://researchservices.cornell.edu/training/citi-online-courses-cornell-researchers-coi-irb-rcr-export-control)
+human-participants training. That includes **exempt** protocols, a
+requirement since October 2022. It lasts five years.
+
+**The IRB issues nothing until every listed person has finished.** One
+teammate who skipped the modules holds up the whole team.
 
 Do the CITI modules in **week 2 or 3**, before you know whether you need
 them. They take a couple of hours and they remove the most common cause

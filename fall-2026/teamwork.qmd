@@ -9,29 +9,32 @@ editor:
 ---
 
 ::: {.callout-note appearance="simple"}
-Half your grade is team-based, and when employers were asked in 2026
-what they value in graduates, **communication came first** and
-problem-solving second. They also said fewer than half of recent
-graduates arrive well-prepared on grit, emotional intelligence, or
-managing people.
+In 2026, GMAC asked 1,100 corporate recruiters what they value in
+business graduates. They ranked **communication first**, and
+problem-solving second. I therefore put more emphasis on those
+dimensions in your grade.
+
+The same survey asked where graduates fall short. Fewer than half arrive
+well-prepared on grit, emotional intelligence, or managing people. All
+three are team skills.
 
 So this page is not a nicety. It is a short toolkit, with sources, for
 the part of the course that most often goes wrong.
+[The survey is here.](https://www.gmac.com/market-intelligence-and-research/market-research/corporate-recruiters-survey/the-corporate-recruiters-survey-2026-report)
 :::
 
 ## The four things that actually go wrong
 
-Across every capstone course, the same four:
+The same four, in every capstone course.
 
-1. **Nobody wrote down who does what**, so the conscientious person does
-   it all and resents it by October.
-2. **A deadline slips and nothing happens**, because there was no agreed
-   consequence and no one wants to be the person who raises it.
-3. **The team never says the hard thing** --- that the question is
-   vague, that the data is not going to arrive --- because it is easier
-   not to.
-4. **Everyone finds out in November** that the split of work was uneven,
-   when it is too late to fix.
+1. **Nobody wrote down who does what.** So the conscientious person does
+   it all. By October they resent it.
+2. **A deadline slips and nothing happens.** No consequence was agreed.
+   Nobody wants to be the one who raises it.
+3. **The team never says the hard thing.** The question is vague, or the
+   data will not arrive. Saying so is uncomfortable, so nobody does.
+4. **Everyone finds out in November** that the work was split unevenly.
+   By then it cannot be fixed.
 
 Everything below is aimed at one of those four.
 
@@ -39,14 +42,16 @@ Everything below is aimed at one of those four.
 
 ### The ground rules, and RACI
 
-You write ground rules in meeting 2. The part teams skip is the **split
-of work**, and the standard tool for it is a **RACI matrix** --- for
-each task, who is *Responsible* (does it), *Accountable* (one person,
-owns whether it happened), *Consulted*, and *Informed*.
+You write ground rules in meeting 2. Teams usually skip the **split of
+work**.
 
-It sounds bureaucratic for a five-person team. It takes fifteen minutes
-and it prevents failure 1 and failure 4, because "Accountable" is a
-single named person for every deliverable.
+The standard tool is a **RACI matrix**. For each task, name who is
+*Responsible* (does it), *Accountable* (owns whether it happened),
+*Consulted*, and *Informed*. Accountable is always one person.
+
+It sounds bureaucratic for a team of five. It takes fifteen minutes. It
+prevents failures 1 and 4, because every deliverable has a name against
+it.
 
 ### The weekly check-in
 
@@ -72,18 +77,19 @@ methods section.
 
 ### Psychological safety
 
-The best-evidenced finding in this whole area: teams perform better when
-members believe they can say something wrong, or admit they are lost,
-without being punished for it. That is **psychological safety**, from
+This is the best-evidenced finding in the whole area. Teams perform
+better when members believe they can be wrong out loud. Admitting you
+are lost has to be safe, or people stop admitting it. That is
+**psychological safety**, from
 Amy Edmondson's work --- ["Psychological Safety and Learning Behavior in
 Work Teams"](https://doi.org/10.2307/2666999), *Administrative Science
 Quarterly* (1999), and her book *The Fearless Organization* (2018). Google's internal Project Aristotle study
 found it the strongest predictor of team effectiveness among the factors
 it examined.
 
-The practical version for a five-person team: **the person who says "I
-don't understand what we're doing" is doing the team a favour.** Say so
-out loud in meeting 2, and then behave as if it is true.
+The practical version is one sentence. **The person who says "I don't
+understand what we're doing" is doing the team a favour.** Say that out
+loud in meeting 2. Then behave as if it is true.
 
 ### Conflict, when it comes
 

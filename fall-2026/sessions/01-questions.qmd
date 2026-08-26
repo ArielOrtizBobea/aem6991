@@ -210,9 +210,10 @@ P&G · PwC · KPMG
 within six months.]{style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.callout-note appearance="simple"}
-And what employers said in 2026 they value: **communication** first,
-**problem-solving** second, **data analysis and interpretation**
-fourth — up from tenth in a single year.
+In 2026, [GMAC asked 1,100 corporate recruiters](https://www.gmac.com/market-intelligence-and-research/market-research/corporate-recruiters-survey/the-corporate-recruiters-survey-2026-report) what
+they value in business graduates. **Communication** came first.
+**Problem-solving** second. **Data analysis and interpretation** fourth,
+up from tenth in one year.
 :::
 
 ::: {.notes}

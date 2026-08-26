@@ -9,10 +9,10 @@ editor:
 ---
 
 ::: {.callout-important appearance="simple"}
-**Read the last section first** if you are short of time. The single most
-expensive mistake in a capstone is designing around data you cannot
-obtain on this timeline --- and the difference between "available in
-minutes" and "available in months" is not obvious from the outside.
+**Read the last section first** if you are short of time. The most
+expensive mistake in a capstone is designing around data you cannot get
+in time. Some of what follows takes minutes to obtain. Some takes
+months. You cannot tell which from the outside.
 :::
 
 ## Dewey
@@ -21,11 +21,13 @@ minutes" and "available in months" is not obvious from the outside.
 marketplace **Cornell JCB** subscribes to. Roughly **84 datasets**, free
 to you.
 
-**Getting an account.** Register **with your Cornell email address** ---
-a personal address will not match the subscription. Your account sits in
-a **pending** state until an administrator approves it, which takes
-days. Register in week 1, not the night you need it. There is no
-IP-based access and no shared login.
+**Getting an account.** Register with your **Cornell email address**. A
+personal address will not match the subscription.
+
+Your account then sits **pending** until an administrator approves it.
+That takes days. Register in week 1, not the night you need it.
+
+There is no IP-based access and no shared login.
 
 **What is in it**, by family:
 
@@ -81,9 +83,9 @@ hour even if your project never uses one.
 **Frost & Sullivan** · **Technavio** (20 downloads per Cornell email per
 month) · **Business Source Complete** · **ABI/Inform**.
 
-These are *reports*, not microdata. Excellent for sizing a market and
-for the background half of a feasibility memo; they will not give you
-something to estimate on.
+These are *reports*, not microdata. They are excellent for sizing a
+market and for the background half of a feasibility memo. They will not
+give you anything to estimate on.
 
 ### Demographics and geography
 
@@ -152,8 +154,8 @@ other way.
 
 ## Collecting it yourself
 
-Sometimes nobody has your data because nobody has asked your question.
-That is a good sign, not a problem.
+Sometimes nobody has your data. That usually means nobody has asked
+your question. It is a good sign, not a problem.
 
 - **Surveys.** Cornell provides [**Qualtrics**](https://cornell.qualtrics.com)
   to all students. Fielding to a paid sample through
@@ -180,8 +182,8 @@ ethics](permissions.qmd), and start it early.
 | A data-use agreement with a firm | Legal review on both sides | **Months, and it may fail** |
 | Census, BLS or NCHS confidential microdata via FSRDC | Federal project approval | **Longer than this degree** |
 
-**Which row you are in is feasibility filter 2**, and getting it wrong
-is the most common way an MPS capstone dies. [Meeting
+**Which row you are in is feasibility filter 2.** Getting it wrong is
+the most common way an MPS capstone dies. [Meeting
 10](sessions/10-getting-data.qmd) is about this.
 
 ## Ask a librarian

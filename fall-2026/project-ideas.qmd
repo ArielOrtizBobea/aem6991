@@ -9,14 +9,15 @@ editor:
 ---
 
 ::: {.callout-important appearance="simple"}
-**This is not a menu.** Nobody is going to hand you a question. What
-follows are worked examples of the move you have to make yourself ---
-from a dataset, or an interest, to a question that survives the
-[feasibility filter](sessions/01-questions.qmd). Each one shows the
-reasoning, including where it falls over.
+**This is not a menu.** Nobody is going to hand you a question.
+
+What follows are worked examples of one move: getting from a dataset, or
+an interest, to a question that survives the [feasibility
+filter](sessions/01-questions.qmd). Each shows the reasoning. Each also
+shows where it falls over.
 
 The best capstones come from somebody's own curiosity. Read these for
-the *shape* of the reasoning, then go and find your own.
+the shape, then go and find your own.
 :::
 
 ## Where to look first
@@ -59,8 +60,8 @@ September instead of sinking a project in March.
 
 ## Is there a method for coming up with ideas?
 
-Partly, yes --- and the honest answer is that the well-evidenced part is
-narrower than the shelf of business books suggests.
+Partly, yes. But the well-evidenced part is much narrower than the shelf
+of business books suggests.
 
 ### Start from what you have, not from what you want
 
@@ -73,14 +74,16 @@ experts do not start from a goal and search for means. They start from
 whatever goals those means can reach. Sarasvathy's phrase is that they
 **make** opportunities rather than find them.
 
-That is exactly the move on this page. You have a Dewey account, a
-concentration, and a team with particular backgrounds. Working forward
-from those to a question you can actually answer is not a lesser way of
-doing it; it is what expertise looks like.
+That is the move on this page. You have a Dewey account, a
+concentration, and a team with particular backgrounds. Work forward from
+those.
 
-The discipline that keeps it honest is the feasibility filter. Means-driven
-reasoning becomes anti-pattern 2 --- a dataset in search of a question ---
-precisely when you stop being willing to walk away from the means.
+This is not a lesser way of doing it. It is what expertise looks like.
+
+One discipline keeps it honest: the feasibility filter. Means-driven
+reasoning turns into anti-pattern 2 — a dataset in search of a
+question — the moment you stop being willing to walk away from the
+means.
 
 ### Start from the job, not the product
 
@@ -96,13 +99,13 @@ different direction.
 
 ### Diverge, then converge, and do not mix them
 
-The one structural idea shared by design thinking, the double diamond, and
-most ideation methods: **generate without judging, then judge without
-generating.** Teams that evaluate while brainstorming produce fewer and
-safer ideas.
+One structural idea is shared by design thinking, the double diamond,
+and most ideation methods. **Generate without judging. Then judge
+without generating.** Teams that evaluate while brainstorming produce
+fewer ideas, and safer ones.
 
 The meeting-1 relay is built on this. Round 1 generates. Rounds 2 and 3
-attack. The two are deliberately not the same activity, and you are scored
+attack. They are deliberately not the same activity, and you are scored
 separately on each.
 
 ### For research questions specifically
@@ -126,10 +129,11 @@ you claiming more than you have.
 | **Design thinking** as a full method | **Popular, contested.** Widely taught, and the empirical case for the branded five-step version is weak |
 | **Lean startup / MVP** (Ries) | **Practical, lightly evidenced.** The build-measure-learn loop is sensible; the claims made for it outrun the tests |
 
-The same caution as everywhere else in this course: **being taught in
-every business school is not evidence that something works.** Two of the
-five rows above are on this page because they are useful ways to think,
-not because anybody has demonstrated they produce better ideas.
+The same caution applies here as everywhere in this course. **Being
+taught in every business school is not evidence that something works.**
+
+Two of the five rows above are here because they are useful ways to
+think. Nobody has demonstrated they produce better ideas.
 
 ### Reading
 
@@ -217,11 +221,12 @@ him in September is worth more than a week of guessing in November.
 ## A worked family: housing and place
 
 Housing is a good family to think in. The outcome is a price everybody
-understands, the characteristics are recorded, and Dewey's coverage
-happens to be unusually deep here. It is also where the difference
-between archetypes is easiest to see: **the same dataset supports at
-least five genuinely different projects, each with a different standard
-of evidence.**
+understands. The characteristics are recorded. Dewey's coverage is
+unusually deep here.
+
+It is also where the archetypes are easiest to tell apart. **The same
+dataset supports five genuinely different projects, each held to a
+different standard of evidence.**
 
 The spine is **Real Estate Transaction Data** --- a nationwide U.S.
 property suite, 9 tables, 2011 to present, covering tax assessor

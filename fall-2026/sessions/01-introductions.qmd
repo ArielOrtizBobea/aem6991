@@ -1,6 +1,6 @@
 ---
 title: "1 · Introductions"
-subtitle: "Wednesday, August 26, 2026 · Meeting 1"
+subtitle: "Wednesday, August 26, 2026"
 pagetitle: "AEM 6991 · 1 Introductions"
 format:
   html:
@@ -11,7 +11,7 @@ format:
     theme: [default, slides.scss]
     template-partials:
       - title-slide.html
-    footer: "AEM 6991 · Meeting 1"
+    footer: "AEM 6991"
     slide-number: c/t
     incremental: false
     history: false

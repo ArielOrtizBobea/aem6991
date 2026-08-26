@@ -1,6 +1,6 @@
 ---
 title: "7 · Model failures"
-subtitle: "Wednesday, October 7, 2026 · Meeting 7"
+subtitle: "Wednesday, October 7, 2026"
 pagetitle: "AEM 6991 · 7 Model failures"
 ---
 

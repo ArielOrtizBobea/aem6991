@@ -1,6 +1,6 @@
 ---
 title: "11 · Figures"
-subtitle: "Wednesday, November 4, 2026 · Meeting 11"
+subtitle: "Wednesday, November 4, 2026"
 pagetitle: "AEM 6991 · 11 Figures"
 ---
 
@@ -28,6 +28,3 @@ Six figures, each lying a different way, one per team, twenty minutes. A truncat
 
 Your team's output is submitted before you leave.
 
-## Due
-
-Writing 1 — reverse outline

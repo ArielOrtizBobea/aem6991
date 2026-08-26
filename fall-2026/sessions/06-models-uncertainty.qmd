@@ -1,6 +1,6 @@
 ---
 title: "6 · Models and uncertainty"
-subtitle: "Wednesday, September 30, 2026 · Meeting 6"
+subtitle: "Wednesday, September 30, 2026"
 pagetitle: "AEM 6991 · 6 Models and uncertainty"
 ---
 
@@ -30,4 +30,4 @@ Your team's output is submitted before you leave.
 
 ## Due
 
-Project pitch — one page · Exercise 1 — interrogate a dataset, end of week · Rate your teammates
+Project pitch — one page, presented in class · Rate your teammates

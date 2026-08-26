@@ -1,6 +1,6 @@
 ---
 title: "4 · Ethics and access"
-subtitle: "Wednesday, September 16, 2026 · Meeting 4"
+subtitle: "Wednesday, September 16, 2026"
 pagetitle: "AEM 6991 · 4 Ethics and access"
 ---
 

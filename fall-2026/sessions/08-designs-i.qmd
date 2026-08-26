@@ -1,6 +1,6 @@
 ---
 title: "8 · Research designs I"
-subtitle: "Wednesday, October 14, 2026 · Meeting 8"
+subtitle: "Wednesday, October 14, 2026"
 pagetitle: "AEM 6991 · 8 Research designs I"
 ---
 

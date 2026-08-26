@@ -1,6 +1,6 @@
 ---
 title: "14 · The pitch"
-subtitle: "Wednesday, December 2, 2026 · Meeting 14"
+subtitle: "Wednesday, December 2, 2026"
 pagetitle: "AEM 6991 · 14 The pitch"
 ---
 
@@ -30,4 +30,4 @@ Your team's output is submitted before you leave.
 
 ## Due
 
-Final presentation, in class · Writing 4 — referee report · Research proposal due Dec 11
+Final presentation, in class

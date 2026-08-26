@@ -1,6 +1,6 @@
 ---
 title: "2 · Theory and causality"
-subtitle: "Wednesday, September 2, 2026 · Meeting 2"
+subtitle: "Wednesday, September 2, 2026"
 pagetitle: "AEM 6991 · 2 Theory and causality"
 ---
 

@@ -145,243 +145,125 @@ teaching is verification, not abstinence.
 
 ## Assessment
 
-Half the grade is individual and half is team-based, so that no student
-can be carried and no student is sunk by a team.
+Half the grade is individual and half is team-based, so that no student can
+be carried and no student is sunk by a team.
 
 | Component | Weight | Type |
 |:---|---:|:---|
-| In-class quizzes | 10 % | Individual |
-| Statement of interest | 5 % | Individual |
-| Writing portfolio (4 pieces) | 10 % | Individual |
-| Data exercises (2 × 5 %) | 10 % | Individual |
+| In-class quizzes | 15 % | Individual |
 | Midterm | 15 % | Individual |
+| Participation | 20 % | Individual |
 | *Individual subtotal* | *50 %* | |
-| Team process | 10 % | Team-based, graded individually |
-| Project pitch | 5 % | Team |
-| Proposal outline | 10 % | Team |
-| Research proposal | 20 % | Team |
-| Final presentation | 5 % | Team |
+| Project pitch --- 1 page, presented | 5 % | Team |
+| Proposal outline | 15 % | Team |
+| Research proposal | 30 % | Team |
 | *Team subtotal* | *50 %* | |
 
 Grading scale: A+ (≥ 98), A (≥ 92), A- (≥ 88), B+ (≥ 85), B (≥ 80),
 B- (≥ 75), C+ (≥ 70), C (≥ 65), C- (≥ 60), D (≥ 50), F (\< 50).
 
-### In-class quizzes (10 %)
+### In-class quizzes (15 %)
 
-**Short quizzes, in class, without warning.** Expect roughly six across
-the semester. Three questions, three minutes, on your own device.
+**Short quizzes, in class, without warning.** About five across the
+semester. Three questions, three minutes, on your own device.
 
 They are drawn from the lecture you are sitting in, not from a reading.
-Most are scenario questions, not definitions.
-
-*Here is a situation --- which design fits, and what would have to be
-true?* *Here is a design --- what would break it?* *Here is a figure ---
-what is it hiding?* *Here is a step an AI just did for you --- how would
-you check it without reading the code?*
-
-Those are the questions worth asking. They are also the ones a chatbot
-cannot answer for a student who was not paying attention.
-
-They do two things at once. They tell me what did not land while there
-is still time in the room to fix it. And they are the reason this
-section assigns no Reading Notes.
+Most are scenario questions, not definitions. *Here is a situation --- which
+design fits, and what would have to be true?* *Here is a design --- what
+would break it?* *Here is a step an AI just did for you --- how would you
+check it without reading the code?*
 
 They are unannounced on purpose. A quiz you can revise for is a reading
 check. A quiz you cannot is a reason to be in the room and paying
-attention, which is the thing actually worth rewarding.
+attention.
 
-Quizzes begin at meeting 2; there is no quiz in the first meeting.
-
-**The lowest score is dropped, and there are no make-ups.** That covers
-one illness, interview or dead laptop battery without anybody having to
-email about it.
-
-Quizzes are tied to your netid and timestamped. See *Data practices*
-below.
-
-### Statement of interest (5 %)
-
-One to two pages, due before the second meeting --- **what you might
-want to work on, and why.** What the topic is, why it matters, and what
-you would want out of it professionally. I form the teams from these, so
-write it for me rather than for a grader.
-
-Then say what you bring to it that most people here do not --- a prior
-job, an industry, a language, access to somebody.
-
-"I don't know yet" costs you nothing. It is the useful signal: it means
-the idea is still a topic rather than a question.
-
-### Writing portfolio (10 %)
-
-Writing is taught here rather than assumed. It is taught as a method,
-not as advice.
-
-A piece of writing is built outline first. One topic sentence per
-paragraph, in order, before any prose exists. The fastest way to learn
-that is backwards. So two of the four pieces below are **reverse
-outlines**: you take a finished text and reconstruct the skeleton that
-must have produced it.
-
-Meeting 8 teaches the method. Meeting 9 turns it on figures and talks.
-Meeting 13 turns it on your own outline.
-
-{{< include _writing.qmd >}}
-
-These are graded on whether the argument survives contact with a
-reader. Is the claim in the first sentence? Does the evidence support
-it? Could somebody outside your team act on it?
-
-Length limits are limits.
-
-### Data exercises (10 %)
-
-Two short individual exercises, 5 % each.
-
-They exist so that every student handles data personally. Otherwise it
-gets delegated to whoever on the team seems most comfortable with it.
-Both are done with an AI assistant. Neither is graded on code.
-
-1.  **Interrogate a dataset.** Given a dataset you have not seen,
-    submit the questions you asked of it, the answers you got, the
-    checks you ran to confirm those answers, and the one thing you
-    found that was wrong with it. Every dataset handed out has
-    something wrong with it.
-2.  **Rebuild and critique a figure.** Given a published figure and the
-    data behind it, have the assistant rebuild it. Then produce the
-    version you think is more honest, and say in three sentences what
-    the original was hiding and whether it was hiding it on purpose.
-
-The marks are for the interrogation and the verification. A correct
-output you cannot justify scores badly. A wrong output you caught
-yourself scores well.
+**The lowest score is dropped, and there are no make-ups.**
 
 ### Midterm (15 %)
 
-**In class on Wednesday, November 18.** Open note, short answers. It is
-the whole meeting --- there is no session B that week. The date is fixed
-and will not move.
+**In class on Wednesday, November 18.** Open note, short answers. It is the
+whole meeting --- there is no session B that week. The date is fixed and
+will not move.
 
-You are given a situation and asked to design the study that would
-answer it. The question. The design, and the assumption carrying it.
-What data it requires. And what would undermine it.
+You are given a situation and asked to design the study that would answer
+it. The question. The design, and the assumption carrying it. What data it
+requires. And what would undermine it.
 
 It tests whether you can apply the design vocabulary to a situation you
-have not seen. It does not test whether you memorised definitions. There
-is nothing to revise beyond having turned up all term --- it is the same
-move the room has made every week since meeting 2.
+have not seen. There is nothing to revise beyond having turned up all term.
 
-### Team process (10 %)
+### Participation (20 %)
 
-The course description calls team leadership and management a major
-component of this course. So it is graded as one, rather than left to
-goodwill.
+You start with full marks and lose them. What costs points:
 
-- **The weekly check-in.** Every session B opens with ten minutes:
-  what you did since last week, what is stuck, and who is doing what
-  next. Written down, and handed in with that session's work. The
-  record is what makes an uneven split of the work visible in week 4
-  rather than week 13.
-- **Your team's ground rules.** One page, agreed and signed in meeting
-  2: who does what, what happens when somebody misses a deadline, and
-  how you settle a disagreement. You are graded on whether you actually
-  followed it, not on how well it reads.
-- **Two peer evaluations**, in meetings 6 and 12, on a fixed template.
+| | |
+|:---|:---|
+| Statement of interest not submitted, or late | −5 |
+| Session-B check-in not filed | −2 each |
+| Peer evaluation not submitted on time | −3 each |
+| Arriving late, or leaving at the break | −2 each |
+| Absent without notice | −4 each |
 
-This component is team-based in subject and individual in grade. Two
-members of the same team can receive different marks for it, and
-routinely will. A student who does not contribute does not receive the
-team's grade.
+The statement of interest is due before meeting 2. It is one to two pages:
+what you might want to work on, why it matters, what you want out of it
+professionally, and what you bring that most people here do not. **I form
+the teams from these**, so write it for me rather than for a grader.
 
-### How the design paper gets built
+The session-B check-in is ten minutes at the start of every second half:
+what your team did since last week, what is stuck, and who does what next.
+Written down and handed in. It is the record that makes an uneven split of
+the work visible in week 4 rather than week 13.
 
-**You do not write the design paper in November.** You accumulate it.
+Peer evaluation runs twice, at meetings 6 and 12.
 
-Every meeting is two halves. Session A introduces a concept. Session B
-makes you use it --- first on a shared case, so the whole room can be
-compared and corrected, then on your own project.
+### Team deliverables (50 %)
 
-**That second half is what you hand in before you leave. It is a piece
-of your paper.**
-
-{{< include _builds.qmd >}}
-
-By the time the outline is due at meeting 12, the proposal is not a
-blank page. It is a dozen artifacts you already made, each argued about
-in the room the week you made it.
-
-The job then is assembling them. That is what the outline is.
-
-### Team deliverables (40 %)
-
-**One paper, reached in three milestones.** A one-page pitch, then the
-whole argument as a detailed outline, then the written proposal.
-
-**Nothing is submitted as a finished paper out of nowhere.** The
-argument is fixed before the sentences are. A broken argument is caught
-at the outline, where fixing it costs an afternoon rather than a week.
+**One paper, reached in three milestones.** A one-page pitch, then the whole
+argument as a detailed outline, then the written proposal. The argument is
+fixed before the sentences are, so a broken argument is caught at the
+outline where fixing it costs an afternoon rather than a week.
 
 {{< include _deliverables.qmd >}}
 
-**The data section of the outline is the one that kills projects.** The
-most common way an MPS capstone fails is not a bad question. It is a
-good question whose data never arrives.
+**The data section of the outline is the one that kills projects.** The most
+common way an MPS capstone fails is not a bad question. It is a good
+question whose data never arrives. So the outline makes you name the
+dataset, its holder, the access route, the timeline and your plan B.
 
-So the outline makes you name the dataset, its holder, the access route,
-the timeline and your plan B --- while there is still time to change
-course. Meeting 10 teaches you what to ask of a dataset. Meeting 11
-covers how to get hold of one. Meeting 12 has you interrogate real data.
-All three land before the outline is due, so you certify your data
-having actually handled some, not from theory.
+### How the proposal gets built
+
+**You do not write the proposal in November.** You accumulate it. Session A
+introduces a concept; session B makes you use it, first on a shared case and
+then on your own project. That second half is what you hand in before you
+leave, and it is a piece of your proposal.
+
+{{< include _builds.qmd >}}
 
 ### What you are graded against
 
 Across AEM 6991 sections, the criteria for written team work are the
 **required section headings**. If a heading has nothing under it, that is
-the finding. This section keeps that convention and adds the quality
-scale the headings are judged on.
+the finding.
 
-**The proposal outline and the research proposal must both cover, under
-these headings:**
-
-- **Research problem.** What is being studied, and what specific question
-  is being asked?
-- **Practical justification.** What business or economic decision does
-  this bear on, and who makes it?
-- **What is already known.** What does the literature establish, and what
-  does it not?
-- **Conceptual model.** The problem drawn --- how the concepts connect,
-  causally or otherwise.
-- **Methodological approach.** The empirical strategy, the design, and
-  the assumption carrying the estimate.
-- **Study sample.** The unit of analysis, and how the sample is built.
-- **Data and access.** The dataset, who holds it, how you get it, what it
-  costs, what it measures, and your plan B.
-- **Internal validity.** The sources of biased inference, and how you
-  address them.
-- **External validity.** How far the finding travels beyond your setting.
-- **Limitations and self-critique.** The honest weaknesses. Stating one
-  well earns marks; hiding one costs them.
-- **Work plan.** A step-by-step list of the tasks AEM 6992 will execute.
-- **Research ethics.** Any ethical issue, and what you did about it.
-- **References.**
-
-**The quality scale**, applied to each piece of written work:
+**The outline and the proposal must both cover, under these headings:**
+research problem · practical justification · what is already known ·
+conceptual model · methodological approach · study sample · **data and
+access** · internal validity · external validity · **limitations and
+self-critique** · work plan · research ethics · references.
 
 | | |
 |:--|:--|
 | **Excellent** | Every heading is answered from your own project. The claim is in the first sentence. The evidence supports it. Somebody outside your team could act on it. |
-| **Adequate** | The headings are answered, but some are generic --- true of any project, not this one. The argument is there but the reader has to assemble it. |
-| **Weak** | Substantial sections are filled with restated prompt or borrowed text. Little evidence of engagement with your own case. The argument does not cohere. |
-| **Unacceptable** | Not submitted, submitted late beyond the policy below, or so thin it shows no thought. |
+| **Adequate** | The headings are answered, but some are generic --- true of any project, not this one. |
+| **Weak** | Substantial sections restate the prompt or borrow text. The argument does not cohere. |
+| **Unacceptable** | Not submitted, submitted beyond the late policy, or so thin it shows no thought. |
 
-The two things that move a grade most are the same two every time.
-**Is the claim in the first sentence?** And **could it come out the other
-way?**
+Two questions move a grade more than anything else. **Is the claim in the
+first sentence?** And **could it come out the other way?**
 
-**Late policy.** Team deliverables lose 10 % up to 8 hours late, 50 %
-from 8 to 72 hours, and are not accepted after 72 hours. Notify the
-instructor before the deadline if something has gone wrong.
+**Late policy.** Team deliverables lose 10 % up to 8 hours late, 50 % from 8
+to 72 hours, and are not accepted after 72 hours. Notify me before the
+deadline if something has gone wrong.
 
 ## Course schedule
 

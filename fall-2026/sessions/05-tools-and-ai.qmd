@@ -1,6 +1,6 @@
 ---
 title: "5 · Coding tools and AI"
-subtitle: "Wednesday, September 23, 2026 · Meeting 5"
+subtitle: "Wednesday, September 23, 2026"
 pagetitle: "AEM 6991 · 5 Coding tools and AI"
 ---
 

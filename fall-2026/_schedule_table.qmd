@@ -31,7 +31,7 @@
 <tr class="g-first g03"><td class="g-rail" rowspan="4"><span>Methods &amp; designs</span></td><td>Wed Sep 30</td>
   <td class="topic"><a href="sessions/06-models-uncertainty.html">6 · Models and uncertainty</a>
     <span class="t-desc">What the standard models estimate, and how to read a coefficient in the units of the problem. Where uncertainty comes from, and what a p-value is not. Then the distinction that decides half your projects: explaining or predicting.</span></td>
-  <td class="hw">Project pitch — one page · Exercise 1 — interrogate a dataset, end of week · Rate your teammates</td></tr>
+  <td class="hw">Project pitch — one page, presented in class · Rate your teammates</td></tr>
 <tr><td>Wed Oct 7</td>
   <td class="topic"><a href="sessions/07-model-failures.html">7 · Model failures</a>
     <span class="t-desc">Estimates fail in two ways. Bias moves the number: selection and sorting, omitted variables, measurement error, reverse causality. False precision leaves the number alone and shrinks the error bar around it. Then the fix everybody reaches for, and its ceiling — 'I added controls' is a claim about the graph, not a technique.</span></td>
@@ -52,21 +52,21 @@
 <tr><td>Wed Nov 4</td>
   <td class="topic"><a href="sessions/11-figures.html">11 · Figures</a>
     <span class="t-desc">Which figure answers which question, and why — distributions, time, space, comparison. Then what figures hide: aggregation, scale, binning, projection, area scaled by radius, chosen windows, counts where you needed a rate. Then the hard half nobody practises — an honest figure that still makes a point.</span></td>
-  <td class="hw">Writing 1 — reverse outline</td></tr>
+  <td class="hw"></td></tr>
 <tr class="g-last g04"><td>Wed Nov 11</td>
   <td class="topic"><a href="sessions/12-speaking.html">12 · Speaking</a>
     <span class="t-desc">A talk is an outline with pictures. One claim per slide, and the claim is the slide title, not a label. Then the genre you actually face: pitching a research plan to people who will never read the paper, and who want to know what it costs and what they would do differently.</span></td>
-  <td class="hw">Proposal outline · Writing 2 — reverse outline and repair · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week</td></tr>
+  <td class="hw">Proposal outline · Rate your teammates</td></tr>
 
 <tr class="g-first g05"><td class="g-rail" rowspan="4"><span>Delivery</span></td><td>Wed Nov 18<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/13-midterm.html">13 · Midterm</a>
     <span class="t-desc">The midterm, and nothing else. You are given a situation and asked to design the study that would answer it, in writing. Class ends when you hand it in.</span></td>
-  <td class="hw">Writing 3 — plain-language summary</td></tr>
+  <td class="hw"></td></tr>
 <tr class="break-row"><td>Wed Nov 25</td><td>Thanksgiving recess — no class</td><td class="hw"></td></tr>
 <tr><td>Wed Dec 2</td>
   <td class="topic"><a href="sessions/14-final-presentations.html">14 · The pitch</a>
     <span class="t-desc">Final presentations, and each team reviews another team's work. Then what your team owes AEM 6992 over the break.</span></td>
-  <td class="hw">Final presentation, in class · Writing 4 — referee report · Research proposal due Dec 11</td></tr>
+  <td class="hw">Final presentation, in class</td></tr>
 <tr class="g-last g05 break-row"><td>Fri Dec 11</td><td>Research proposal due — the final write-up. Date to be confirmed</td><td class="hw"></td></tr>
 </tbody>
 </table>

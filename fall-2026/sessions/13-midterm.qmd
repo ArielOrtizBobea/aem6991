@@ -1,6 +1,6 @@
 ---
 title: "13 · Midterm"
-subtitle: "Wednesday, November 18, 2026 · Meeting 13"
+subtitle: "Wednesday, November 18, 2026"
 pagetitle: "AEM 6991 · 13 Midterm"
 ---
 
@@ -28,6 +28,3 @@ No session B. Class ends when you hand the midterm in.
 
 Your team's output is submitted before you leave.
 
-## Due
-
-Writing 3 — plain-language summary

@@ -1,6 +1,6 @@
 ---
 title: "10 · Writing"
-subtitle: "Wednesday, October 28, 2026 · Meeting 10"
+subtitle: "Wednesday, October 28, 2026"
 pagetitle: "AEM 6991 · 10 Writing"
 ---
 

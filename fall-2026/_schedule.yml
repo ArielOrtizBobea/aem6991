@@ -117,28 +117,6 @@ parts:
 # Two of them are reverse-outlining: going from a finished text back to the
 # outline that must have produced it. You cannot build an outline until you
 # can see one.
-writing:
-  - num: 1
-    name: "Reverse outline"
-    len: "1 page"
-    due_meeting: 9
-    desc: "Take an assigned published paper and reconstruct its outline: one topic sentence per paragraph, in order, in your own words. Then say in three lines what the argument actually is."
-  - num: 2
-    name: "Reverse outline and repair"
-    len: "1 page"
-    due_meeting: 10
-    desc: "A badly organised passage. Give its real outline, then the outline it should have had, and say what moved and why."
-  - num: 3
-    name: "Plain-language summary"
-    len: "1 page"
-    due_meeting: 12
-    desc: "Your project explained to a decision-maker who is not an economist. No jargon, no hedging, and the 'so what' in the first sentence."
-  - num: 4
-    name: "Referee report"
-    len: "2 pages"
-    due_meeting: 14
-    desc: "A structured critique of another team's proposal outline, on the template used in class. Outlines are exchanged between partner teams at meeting 12, so the critique arrives while there is still time to act on it."
-
 # Team deliverables. One paper, reached in three milestones: a one-page pitch,
 # then the whole argument as a detailed outline, then the written proposal.
 # Nothing is submitted as a finished paper out of nowhere — the argument is
@@ -154,22 +132,15 @@ deliverables:
 
   - num: 2
     name: "Proposal outline"
-    weight: "10 %"
+    weight: "15 %"
     due_meeting: 12
     desc: "The whole proposal as a detailed outline. One topic sentence per paragraph, in order, with the evidence noted underneath — the citation, the number, the figure you will point at. It has to cover the question, the identification strategy and the assumption carrying it, the unit and sample, the data and exactly how you get it, the threats to validity, and the work plan for the spring. Exchanged with a partner team at meeting 12, who referee it. If the argument does not work here, it will not work at 5,000 words."
 
   - num: 3
     name: "Research proposal"
-    weight: "20 %"
+    weight: "30 %"
     due_date: 2026-12-11
     desc: "~5 pages, written out from the outline you workshopped. The plan somebody could pick up and execute in January."
-
-  - num: 4
-    name: "Final presentation"
-    weight: "5 %"
-    due_meeting: 14
-    when: "in class"
-    desc: "Ten minutes. The question, the design, the data, and what your team does over the break."
 
 meetings:
   - num: 1
@@ -255,7 +226,7 @@ meetings:
     builds: "The overclaim your own project is most at risk of making"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 11 on descriptive statistics and ch. 12 on correlation and regression."
     reading: "TBD"
-    due: "Project pitch — one page · Exercise 1 — interrogate a dataset, end of week · Rate your teammates"
+    due: "Project pitch — one page, presented in class · Rate your teammates"
     links:
       - text: "Results critique cards"
         href: fall-2026/handouts/results-claims.qmd
@@ -328,7 +299,6 @@ meetings:
     builds: "Your project's key figure, drawn twice — as you expect it to look, and as it looks if you are wrong"
     books: "Zelazny, *Say It With Charts*, for the grammar of it. [Adams](https://doi.org/10.4135/9788132108498) ch. 11 for what a descriptive figure is doing."
     reading: "TBD"
-    due: "Writing 1 — reverse outline"
     links:
       - text: "Figure critique cards"
         href: fall-2026/handouts/figure-tricks.qmd
@@ -345,7 +315,7 @@ meetings:
     builds: "Your final-presentation deck, rehearsed and attacked — plus the gap between the claim you made and the claim the room heard"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 16 on presenting."
     reading: "TBD"
-    due: "Proposal outline · Writing 2 — reverse outline and repair · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week"
+    due: "Proposal outline · Rate your teammates"
 
   - num: 13
     slug: "13-midterm"
@@ -358,7 +328,6 @@ meetings:
     b: "No session B. Class ends when you hand the midterm in."
 
     reading: "TBD"
-    due: "Writing 3 — plain-language summary"
     reschedule: "Instructor off campus — the midterm is proctored; arrangements announced by week 10"
 
   - date: 2026-11-25
@@ -376,7 +345,7 @@ meetings:
     builds: "Your plan, pitched — and what your team owes AEM 6992 over the break"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 15 on conducting your research, which is mostly about the months after this one."
     reading: "TBD"
-    due: "Final presentation, in class · Writing 4 — referee report · Research proposal due Dec 11"
+    due: "Final presentation, in class"
 
   - date: 2026-12-11
     note: "Research proposal due — the final write-up. Date to be confirmed"

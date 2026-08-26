@@ -1,6 +1,6 @@
 ---
 title: "12 · Speaking"
-subtitle: "Wednesday, November 11, 2026 · Meeting 12"
+subtitle: "Wednesday, November 11, 2026"
 pagetitle: "AEM 6991 · 12 Speaking"
 ---
 
@@ -30,4 +30,4 @@ Your team's output is submitted before you leave.
 
 ## Due
 
-Proposal outline · Writing 2 — reverse outline and repair · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week
+Proposal outline · Rate your teammates

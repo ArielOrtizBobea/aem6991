@@ -1,6 +1,6 @@
 ---
 title: "3 · Finding the question"
-subtitle: "Wednesday, September 9, 2026 · Meeting 3"
+subtitle: "Wednesday, September 9, 2026"
 pagetitle: "AEM 6991 · 3 Finding the question"
 ---
 

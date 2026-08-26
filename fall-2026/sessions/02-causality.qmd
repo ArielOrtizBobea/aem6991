@@ -10,6 +10,10 @@ This page is a stub. Materials appear here before the meeting.
 
 **What you should be able to do after this meeting.** Draw the causal graph behind a claim somebody is acting on, name the failure in it, and say which variable you must condition on and which you must not touch. Leave with your team formed and its ground rules in writing.
 
+## Handouts
+
+[Causal claim cards](../handouts/causal-claims.qmd)
+
 ## Where to read more
 
 [Remix](https://mixtape.scunning.com/) ch. 3 on directed acyclic graphs and ch. 4 on potential outcomes. [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) ch. 1, *Questions about Questions*, is eight pages and needs no maths.

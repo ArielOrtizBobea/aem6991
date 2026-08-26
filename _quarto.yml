@@ -34,12 +34,8 @@ website:
           contents:
             - text: " 2 Theory and causality"
               href: fall-2026/sessions/02-causality.qmd
-            - text: "   Causal claim cards"
-              href: fall-2026/handouts/causal-claims.qmd
             - text: " 3 Finding the question"
               href: fall-2026/sessions/03-questions.qmd
-            - text: "   Question relay cards"
-              href: fall-2026/handouts/relay-cards.qmd
             - text: " 4 Ethics and access"
               href: fall-2026/sessions/04-ethics.qmd
             - text: " 5 Coding tools and AI"
@@ -48,14 +44,10 @@ website:
           contents:
             - text: " 6 Models and uncertainty"
               href: fall-2026/sessions/06-models-uncertainty.qmd
-            - text: "   Results critique cards"
-              href: fall-2026/handouts/results-claims.qmd
             - text: " 7 Model failures"
               href: fall-2026/sessions/07-model-failures.qmd
             - text: " 8 Research designs I"
               href: fall-2026/sessions/08-designs-i.qmd
-            - text: "   Design scenarios"
-              href: fall-2026/handouts/design-scenarios.qmd
             - text: " 9 Research designs II"
               href: fall-2026/sessions/09-designs-ii.qmd
         - section: "Part 4 — Communication"
@@ -64,8 +56,6 @@ website:
               href: fall-2026/sessions/10-writing.qmd
             - text: "11 Figures"
               href: fall-2026/sessions/11-figures.qmd
-            - text: "   Figure critique cards"
-              href: fall-2026/handouts/figure-tricks.qmd
             - text: "12 Speaking"
               href: fall-2026/sessions/12-speaking.qmd
         - section: "Part 5 — Delivery"

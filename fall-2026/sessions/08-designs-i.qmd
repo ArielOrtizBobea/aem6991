@@ -10,6 +10,10 @@ This page is a stub. Materials appear here before the meeting.
 
 **What you should be able to do after this meeting.** Draw the graph for an experiment, an instrument and a discontinuity. Say whether any of the three is open to your question.
 
+## Handouts
+
+[Design scenarios](../handouts/design-scenarios.qmd)
+
 ## Where to read more
 
 [Remix](https://mixtape.scunning.com/) ch. 4 on randomization, ch. 6 on regression discontinuity, ch. 7 on instrumental variables. In [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/), the same three are ch. 2, 6 and 4.

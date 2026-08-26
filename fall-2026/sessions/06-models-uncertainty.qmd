@@ -10,6 +10,10 @@ This page is a stub. Materials appear here before the meeting.
 
 **What you should be able to do after this meeting.** Read a coefficient in the units of the problem. Say what a p-value does and does not tell you. Tell an explanatory question apart from a predictive one.
 
+## Handouts
+
+[Results critique cards](../handouts/results-claims.qmd)
+
 ## Where to read more
 
 [Adams](https://doi.org/10.4135/9788132108498) ch. 11 on descriptive statistics and ch. 12 on correlation and regression.

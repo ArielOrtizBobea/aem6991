@@ -10,6 +10,10 @@ This page is a stub. Materials appear here before the meeting.
 
 **What you should be able to do after this meeting.** Name the trick in a figure built to mislead you, and redraw it honestly without losing the point. Draw the one figure your own project lives or dies on, before you have the data to draw it with.
 
+## Handouts
+
+[Figure critique cards](../handouts/figure-tricks.qmd)
+
 ## Where to read more
 
 Zelazny, *Say It With Charts*, for the grammar of it. [Adams](https://doi.org/10.4135/9788132108498) ch. 11 for what a descriptive figure is doing.

@@ -339,162 +339,6 @@ postings down 35%, a third of employers already substituting AI. True,
 and it will flatten the room. It belongs in meeting 14.
 :::
 
-## The one that will bite you {.smaller}
-
-Ask an assistant for references on your topic. Right now.
-
-Then open every single one.
-
-::: {.callout-important appearance="simple"}
-A fabricated citation in your literature review is an academic integrity
-violation.
-
-"The AI generated it" is not a defence. It is an admission that you
-submitted something you never read.
-:::
-
-::: {.notes}
-LIVE DEMO — 5 minutes, do not skip it. Take a topic from the room, ask an
-assistant for five references with DOIs, then check them together on the
-screen.
-
-Expect a mix: some real, some plausible and wrong — real authors, real
-journal, invented title or year. If everything comes back real, say so
-honestly and try a narrower topic; the failure rate rises fast as the
-topic narrows.
-
-The lesson is not "AI is bad." It is that verification is the one step
-you can never delegate, which is the same lesson as meeting 12.
-:::
-
-# Finding a question
-
-## Where ideas come from {.smaller}
-
-1. A gap in what is known
-2. Extending or contesting a published result
-3. An anomaly — something that should not be true
-4. A decision somebody actually has to make
-5. A dataset that exists and nobody has looked at properly
-
-Route 5 is the most dangerous, and we come back to why.
-
-::: {.notes}
-Routes are where the idea comes from. That is not the same as what shape
-it has to take — which is the next twenty minutes, and the part that
-actually constrains you.
-:::
-
-## This part is the job {.smaller}
-
-Most of your education has rewarded execution. Do the analysis well. Write
-it up clearly.
-
-This course rewards the part before that. Finding a question worth
-answering is a separate skill. It is harder than executing one.
-
-And it is the most enjoyable thing you will do all semester. Do not rush
-it.
-
-::: {.notes}
-Say this slowly and mean it. Students arrive believing the creative part
-is a preamble to the real work. It is the real work — 6992 is where they
-execute, and a bad question executed beautifully is still a bad project.
-:::
-
-## Is there a method? {.smaller}
-
-Partly. Two ideas have real evidence behind them.
-
-Start from your means, not your goal. Experts do not pick a goal and
-hunt for means. They start from what they have — who they are, what they
-know, whom they know — and work forward.
-
-Generate, then judge. Never both at once. Teams that evaluate while
-brainstorming produce fewer ideas, and safer ones.
-
-::: {.notes}
-The first is effectuation, from Sarasvathy's think-aloud studies of expert
-entrepreneurs. It is the licence for what happens this afternoon.
-
-The second is why session B separates writing your interest down from
-having somebody else judge it. Say that when you set it up.
-:::
-
-## What the last two cohorts did {.smaller}
-
-2026
-
-ESG strategy → return on equity · inventory turnover → performance ·
-investor sentiment → S&P return · Wikipedia pageviews → stock returns ·
-what drives engagement on TikTok
-
-2023
-
-Twitter sentiment → NFT returns · social media sentiment → stock return ·
-weather → stock return · ESG score → annual return · organic food choices ·
-sustainability and Gen Z purchasing
-
-::: {.callout-important appearance="simple"}
-Four of the five 2026 projects are the same project. What is it?
-:::
-
-::: {.notes}
-Ninety seconds. Do not answer it for them — someone will get there, and it
-lands infinitely harder from a student than from me.
-
-The answer: take a public signal anybody can download, regress a financial
-outcome on it, report a coefficient. Free data, no design, no decision
-attached.
-
-Then the question that matters: WHY did that happen? Not laziness. The
-data was free and available and the question got shaped to fit it. That is
-anti-pattern 2, and it is the default unless you actively resist it.
-
-Then the permission they need to hear: the most ambitious project anyone
-remembers ran online experiments on brand recognition, then talked a soda
-company into donating thousands of cans and ran a field experiment in
-dining halls. Nine-month MPS team. No econometrics — nerve, and knowing it
-was allowed. It is allowed.
-:::
-
-## Six anti-patterns {.smaller}
-
-1. The topic with no question. "AI in finance."
-2. The dataset in search of a question. You found a nice dataset and
-   have been reverse-engineering a question onto it since.
-3. The consulting deck. Secondary research with no empirical work of your own.
-4. The unobtainable-data project. Beautiful design; requires
-   proprietary data from a firm nobody on the team knows.
-5. The dissertation. Correctly scoped for three years.
-6. The already-answered question. This is what the literature review
-   is *for*.
-
-::: {.notes}
-Number 2 is why this course is ordered question, then design, then data.
-Teams who find data first rationalize a question around it, every time.
-
-Number 4 has to die by meeting 12, in the outline's data section. Not in
-January.
-:::
-
-## The feasibility filter {.smaller}
-
-Four questions. A "no" on any one is fatal — and cheap to discover *now*.
-
-1. Could a team of 3–5 execute this in one spring semester?
-2. Can you name the specific dataset, who holds it, and how you get it
-   — *checked, not assumed*?
-3. Does the design produce an answer that could come out either way?
-4. Would somebody actually act differently depending on the answer?
-
-::: {.notes}
-Question 2 is the one they will fudge. Push on "checked, not assumed" —
-have you opened the page, found the access terms, seen the actual columns?
-
-This filter is what session B runs on. Do not cut it.
-:::
-
 ## Break {.smaller}
 
 Back at 3:35.
@@ -506,72 +350,55 @@ Back at 3:35.
 Teams do not exist yet. I form them from what you tell each other this
 afternoon, and from the statement you write this week.
 
-So the job is to get your interest into one sentence somebody else can
-repeat back to you.
+So: get into groups, work out what you would actually like to explore, and
+tell the room.
 
 ::: {.notes}
-Say plainly that this is not a brainstorm and not an icebreaker. It is the
-input to team formation, and the quality of what they write is the quality
-of the teams they get.
+Groups of four or five, by proximity — do not spend ten minutes optimising
+the grouping. Say out loud that these are NOT the teams, or some of them
+will negotiate instead of working.
 :::
 
-## Write your card {.smaller}
+## In your group {.smaller}
 
-Three lines. Ten minutes. Your name at the top.
+Round the group first. Two minutes each: what you would like to explore,
+and why it interests you.
 
-1. What you are interested in, in one sentence
-2. One thing you bring that most people in this room do not — a job,
-   an industry, a language, access to somebody
-3. One person or organisation who would do something differently if
-   they knew the answer
-
-::: {.notes}
-Line 3 is the one that does the work. If they cannot name anybody, the
-interest is still a topic — say so, and say that is fine today.
-
-Circulate. Read over shoulders. This is your first real signal for team
-formation and it is better than the statements you get next week.
-:::
-
-## Now trade {.smaller}
-
-Three rounds. Seven minutes each. New partner every round.
-
-| | Your partner's job |
-|:--|:--|
-| 1 | Say your interest back to you in one sentence. You accept it or fix it |
-| 2 | Name who would act on the answer |
-| 3 | Name what you have that the room does not — and one person here you should talk to |
-
-Your partner writes on your card and signs it.
-
-::: {.notes}
-Call time firmly at seven minutes. The rotation is the point — three
-strangers reading the same sentence is what turns a topic into a question.
-
-If the room is odd-numbered, join in yourself.
-:::
-
-## The wall {.smaller}
-
-Every card goes up.
-
-Five minutes to walk the room and put your initials on any card whose
-question you would be glad to work on.
+Then brainstorm together. You are looking for things worth a semester.
 
 ::: {.callout-note appearance="simple"}
-Initials mean *"I would work on this"* — not *"this is good"*.
+Generate first. Judge later.
+
+Teams that evaluate while brainstorming produce fewer ideas, and safer
+ones. Nobody says "that will not work" for the first fifteen minutes.
 :::
 
 ::: {.notes}
-Say the framing BEFORE the vote, not after.
+Twelve minutes going round, fifteen brainstorming. Circulate and push on
+one thing only: who would act differently if they knew the answer? If
+nobody, it is a topic and not yet a question.
 
-Then read out the three with the most initials. Do not read out the ones
-with none — read the count if you must, never the name. An interest nobody
-else picked is often the one with the least competition for it.
+Hold the no-judging rule. It is the whole reason this produces more than a
+polite conversation.
+:::
 
-Collect every card. They are the artifact, and they are half of how you
-form teams next week.
+## Report back {.smaller}
+
+Pick your three best and write them down.
+
+For each one: what you would explore, and who would care about the answer.
+
+Then one person reports them to the room. Two minutes per group.
+
+::: {.notes}
+Eight minutes to write, fifteen to report — six groups at about two and a
+half minutes.
+
+Write every idea on the board as it comes. The room seeing all of them at
+once is the point: overlaps become visible, and that is how people find
+each other before the statement of interest is due.
+
+Collect the sheets. They are half of what you form teams from.
 :::
 
 ## Where to look for data {.smaller}
@@ -628,10 +455,6 @@ meeting 12 you work with real data through an assistant, and what is
 graded is the questions you ask and the checks you run — never code you
 wrote.
 
-**Every reference gets opened.** A fabricated citation is an academic
-integrity violation, and "the AI generated it" is an admission that you
-submitted something you never read.
-
 ### What this is, and is not
 
 You are not writing a paper for a journal — there is no gap to fill and no
@@ -648,104 +471,7 @@ For context, MPS AEM class of 2025: 40% into finance, 21% marketing and
 sales, 15% general management, 13% consulting, 6% data and analytics.
 Essentially none into research.
 
-### Where ideas come from
-
-Five routes: a gap in what is known; extending or contesting a published
-result; an anomaly; a decision somebody has to make; a dataset nobody has
-looked at properly. The last is the most dangerous.
-
-### Coming up with the idea is the job
-
-Most of your education has rewarded execution. This course rewards the
-part before it. A bad question executed beautifully is still a bad
-project.
-
-It is also the most enjoyable part of the work. Give it the time.
-
-### Is there a method for having ideas?
-
-Partly. Two of the popular answers have real evidence; most do not.
-
-**Start from your means, not your goal.** This is
-[effectuation](https://doi.org/10.5465/amr.2001.4378020), from Saras Sarasvathy's think-aloud
-studies of expert entrepreneurs. Experts do not pick a goal and search
-for the means to reach it. They start from who they are, what they know
-and whom they know, and work forward. Sarasvathy's phrase is that they
-*make* opportunities rather than find them.
-
-You have a Dewey account, a concentration and a team with particular
-backgrounds. Working forward from those is not a lesser way of doing it.
-It is what expertise looks like. What keeps it honest is the feasibility
-filter — means-driven reasoning turns into anti-pattern 2 the moment you
-stop being willing to walk away from the means.
-
-**Generate, then judge. Never both at once.** Teams that evaluate while
-brainstorming produce fewer ideas, and safer ones. Session B separates the
-two on purpose: you write first, and only then does anyone judge it.
-
-**Ask what job somebody is hiring the answer to do.**
-[Jobs to be Done](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done) reframes a question from "what does
-this do" to "what is somebody trying to accomplish". That is feasibility
-filter 4, arrived at from another direction. The reframing is useful; the
-evidence behind it is thin.
-
-**For research questions specifically**,
-[Sandberg and Alvesson](https://doi.org/10.1177/1350508410372151) separate *gap-spotting* — finding
-what the literature has not covered — from *problematization*, which
-challenges an assumption the literature shares. Gap-spotting is easier
-and produces most published work. Problematization produces the
-interesting work and is riskier. For one semester, gap-spotting is
-usually right. Knowing which you are doing is what stops you overclaiming.
-
-A caution that applies here as everywhere in this course. **Being taught
-in every business school is not evidence that something works.** Design
-thinking as a branded five-step method, and lean startup, are widely
-taught and lightly tested.
-
-### The five archetypes
-
-Every project should be able to say in one sentence which of these it is. A
-project that cannot pick one is not yet a project.
-
-| | Archetype | Question | Claim | Design | Fails when |
-|:--|:--|:--|:--|:--|:--|
-| 1 | Evaluation | Did it work? | Causal, retrospective | DiD, event study, RD, IV | No credible comparison group |
-| 2 | Preference & pricing | What would they choose and pay? | Causal, but elicited | Choice experiments, conjoint | Stated read as revealed |
-| 3 | Prediction & risk | What happens next? | Predictive, *not causal* | Out-of-sample validation | Causal claims off a predictive model |
-| 4 | Diagnosis & benchmarking | Where is the gap? | Descriptive | Decomposition, benchmarking | Description dressed as cause |
-| 5 | Feasibility & landscape | Is this real? | Synthesis + original work | Market sizing, benchmarking | No empirical component |
-
-Archetype 5 is approved only if it contains a specific, checkable empirical
-question you answer with data you analyze yourselves.
-
-### Six anti-patterns
-
-The topic with no question; the dataset in search of a question; the
-consulting deck; the unobtainable-data project; the dissertation; the
-already-answered question.
-
-### The feasibility filter
-
-1. Could a team of 3–5 execute this in one spring semester?
-2. Can you name the specific dataset, who holds it, and how you get it —
-   checked, not assumed?
-3. Does the design produce an answer that could come out either way?
-4. Would somebody actually act differently depending on the answer?
-
 ## Session B · 3:35–4:30
-
-### The literature workshop
-
-You search for two reasons: to find out whether somebody has already
-answered your question, and to see how people answer questions like it.
-
-Start broad, then chase citations — one good recent paper gives you its
-reference list and everything citing it since. Read abstract, then figures
-and tables, then conclusion, then method. Business sources count; for most
-archetypes they matter more than journals.
-
-Screen with one line per paper: question, design, data, what they found,
-why it matters to us. Five to eight rows is enough at this stage.
 
 ### What you already have access to
 
@@ -775,21 +501,19 @@ Route 5 done badly is anti-pattern 2.
 Teams do not exist yet. They are formed from what you tell each other this
 afternoon and from the statement of interest you write this week.
 
-Write a card: what you are interested in, in one sentence; one thing you
-bring that most people in this room do not; and one person or organisation
-who would do something differently if they knew the answer. The third line
-is the one that does the work. If you cannot name anybody, the interest is
-still a topic.
+You work in groups of four or five. First round the group, two minutes each:
+what you would like to explore, and why it interests you. Then brainstorm
+together, looking for things worth a semester. Generate first and judge
+later --- teams that evaluate while brainstorming produce fewer ideas, and
+safer ones, so nobody says "that will not work" for the first fifteen
+minutes.
 
-Then three rounds, seven minutes each, a new partner every round. Your
-partner says your interest back to you in one sentence and you either
-accept it or fix it. Then they name who would act on it. Then they name
-what you have that the room does not, and one person here you should go and
-talk to. They sign every line they write.
+Then pick your three best. For each, write what you would explore and who
+would care about the answer. One person reports them to the room, and every
+idea goes on the board, because seeing them all at once is how overlaps
+become visible.
 
-Then every card goes on the wall, and you put your initials on any question
-you would be glad to work on. Initials mean "I would work on this", not
-"this is good".
+These are not the teams.
 
 ### Where to look for data
 

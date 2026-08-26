@@ -1,6 +1,6 @@
 | Meeting | Session B leaves you with |
 |:---|:---|
-| **1** &nbsp;Introductions | Your interest card — the one-line interest, what you bring, and who would act on the answer |
+| **1** &nbsp;Introductions | Three things your group would like to explore, and who would care about each |
 | **2** &nbsp;Theory and causality | Your team's ground rules, and the first causal graph of your own question — treatment, outcome, the back door you must close, and the variable you must not touch |
 | **3** &nbsp;Finding the question | Your team's question slate — three candidate questions, each labelled with an archetype and run through the four filters, with one killed on the record |
 | **4** &nbsp;Ethics and access | Your project's ethics-and-access checklist — every gate it trips, who signs, and the date each one has to start |

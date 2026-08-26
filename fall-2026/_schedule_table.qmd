@@ -11,7 +11,7 @@
     <span class="t-desc">Who is in the room, how the course works, and what a capstone actually is — the analysis somebody needs before a decision, not a journal paper. Then the part that matters: five shapes a good project takes, six ways they go wrong, and a filter of four questions that kills the rest.</span></td>
   <td class="hw">One page on what you want to work on and why — before meeting 2</td></tr>
 
-<tr class="g-first g02"><td class="g-rail" rowspan="5"><span>Inference</span></td><td>Wed Sep 2</td>
+<tr class="g-first g02"><td class="g-rail" rowspan="4"><span>Inference</span></td><td>Wed Sep 2</td>
   <td class="topic"><a href="sessions/02-causal-language.html">2 · Causal language</a>
     <span class="t-desc">Every comparison is a claim about a world that did not happen. Counterfactuals give you the language for that. Causal graphs give you the picture: confounders, colliders, mediators, back doors.</span></td>
   <td class="hw">Your team's written ground rules — agreed and handed in today</td></tr>
@@ -23,50 +23,51 @@
   <td class="topic"><a href="sessions/04-inference-goes-wrong.html">4 · How inference fails</a>
     <span class="t-desc">Estimates go wrong in two ways. Bias moves the number: omitted variables, sorting, measurement error, reverse causality. False precision leaves the number alone and shrinks the error bar.</span></td>
   <td class="hw"></td></tr>
-<tr><td>Wed Sep 23<sup class="resched">*</sup></td>
+<tr class="g-last g02"><td>Wed Sep 23<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/05-selection-on-observables.html">5 · Controls and matching</a>
     <span class="t-desc">The workhorse of applied work: control for what you can measure. Controls, matching, and when a coefficient can be read causally. The assumption it rests on is also its ceiling.</span></td>
   <td class="hw"></td></tr>
-<tr class="g-last g02"><td>Wed Sep 30</td>
-  <td class="topic"><a href="sessions/06-writing-the-problem.html">6 · Writing the problem</a>
-    <span class="t-desc">The conceptual half is done and the first paper is due. So this is where writing gets taught. What a problem statement does, how a pile of sources becomes an argument, and then each team presents its problem to the room.</span></td>
-  <td class="hw">Project pitch — one page, presented in class · Rate your teammates</td></tr>
 
-<tr class="g-first g03"><td class="g-rail" rowspan="2"><span>Designs</span></td><td>Wed Oct 7</td>
-  <td class="topic"><a href="sessions/07-designs-i.html">7 · Research designs I</a>
+<tr class="g-first g03"><td class="g-rail" rowspan="2"><span>Designs</span></td><td>Wed Sep 30</td>
+  <td class="topic"><a href="sessions/06-designs-i.html">6 · Research designs I</a>
     <span class="t-desc">Experiments, instrumental variables, regression discontinuity. What variation each exploits, what each assumes, and how each fails.</span></td>
-  <td class="hw">Writing 1 — reverse outline</td></tr>
-<tr class="g-last g03"><td>Wed Oct 14</td>
-  <td class="topic"><a href="sessions/08-designs-ii.html">8 · Research designs II</a>
+  <td class="hw"></td></tr>
+<tr class="g-last g03"><td>Wed Oct 7</td>
+  <td class="topic"><a href="sessions/07-designs-ii.html">7 · Research designs II</a>
     <span class="t-desc">Difference-in-differences, panel data with fixed effects, event studies. The question is the same each time: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate.</span></td>
   <td class="hw"></td></tr>
 
-<tr class="g-first g04"><td class="g-rail" rowspan="3"><span>Data &amp; access</span></td><td>Wed Oct 21<sup class="resched">*</sup></td>
-  <td class="topic"><a href="sessions/09-measurement.html">9 · Measurement and data</a>
+<tr class="g-first g04"><td class="g-rail" rowspan="2"><span>Communication</span></td><td>Wed Oct 14</td>
+  <td class="topic"><a href="sessions/08-writing.html">8 · Writing</a>
+    <span class="t-desc">Writing is taught here, as a method rather than as advice. A piece of writing is built outline first — one topic sentence per paragraph, in order, before any prose exists. The fastest way to see that is backwards.</span></td>
+  <td class="hw"></td></tr>
+<tr class="g-last g04"><td>Wed Oct 21<sup class="resched">*</sup></td>
+  <td class="topic"><a href="sessions/09-oral-and-visual.html">9 · Oral and visual</a>
+    <span class="t-desc">Which figure answers which question, and what figures hide through aggregation, scale, binning and chosen windows. Then the same discipline out loud: a deck is an outline with pictures, and five minutes is enough if the argument is already built.</span></td>
+  <td class="hw">Project pitch — one page, presented in class · Writing 1 — reverse outline · Rate your teammates</td></tr>
+
+<tr class="g-first g05"><td class="g-rail" rowspan="3"><span>Data &amp; access</span></td><td>Wed Oct 28</td>
+  <td class="topic"><a href="sessions/10-measurement.html">10 · Measurement and data</a>
     <span class="t-desc">Turning a construct into something a dataset can hold. This is where most capstones actually die. Then working backwards from the design to the data it demands, and building the instrument yourself when nothing measures what you need.</span></td>
   <td class="hw">Writing 2 — reverse outline and repair</td></tr>
-<tr><td>Wed Oct 28</td>
-  <td class="topic"><a href="sessions/10-getting-data.html">10 · Getting the data</a>
+<tr><td>Wed Nov 4</td>
+  <td class="topic"><a href="sessions/11-getting-data.html">11 · Getting the data</a>
     <span class="t-desc">What code is and why you cannot avoid understanding it. Then the practical business of obtaining data: who holds it, what access really costs in time, and what scraping and APIs can and cannot get you.</span></td>
   <td class="hw"></td></tr>
-<tr class="g-last g04"><td>Wed Nov 4</td>
-  <td class="topic"><a href="sessions/11-using-data.html">11 · Using data</a>
+<tr class="g-last g05"><td>Wed Nov 11</td>
+  <td class="topic"><a href="sessions/12-using-data.html">12 · Using data</a>
     <span class="t-desc">'Use AI' is four different things, and they fail differently. Then real data in front of you, and the checks that catch a wrong answer without your ever reading the code.</span></td>
-  <td class="hw"></td></tr>
-
-<tr class="g-first g05"><td class="g-rail" rowspan="4"><span>Bringing it home</span></td><td>Wed Nov 11</td>
-  <td class="topic"><a href="sessions/12-seeing-data.html">12 · Seeing and showing</a>
-    <span class="t-desc">Which figure answers which question, and why. Then the flip side: what figures hide through aggregation, scale, binning and chosen windows. And the harder question underneath both — how do you make a point convincingly without misleading anybody?</span></td>
   <td class="hw">Proposal outline · Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week</td></tr>
-<tr><td>Wed Nov 18</td>
-  <td class="topic"><a href="sessions/13-midterm-and-writing.html">13 · Midterm and writing</a>
-    <span class="t-desc">The midterm: a situation, and you design the study that would answer it. Then the afternoon turns to your own outline — workshopped in rotation by somebody who has to find where your argument jumps.</span></td>
+
+<tr class="g-first g06"><td class="g-rail" rowspan="3"><span>Bringing it home</span></td><td>Wed Nov 18</td>
+  <td class="topic"><a href="sessions/13-midterm.html">13 · Midterm and workshop</a>
+    <span class="t-desc">The midterm: a situation, and you design the study that would answer it. Then the afternoon turns to your own outline, workshopped in rotation by somebody who has to find where your argument jumps.</span></td>
   <td class="hw">Proposal outline — workshopped in class · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week</td></tr>
 <tr class="break-row"><td>Wed Nov 25</td><td>Thanksgiving recess — no class</td><td class="hw"></td></tr>
-<tr class="g-last g05"><td>Wed Dec 2</td>
+<tr class="g-last g06"><td>Wed Dec 2</td>
   <td class="topic"><a href="sessions/14-pitch.html">14 · The pitch</a>
     <span class="t-desc">Final presentations, and each team reviews another team's work. Then what your team owes AEM 6992 over the break.</span></td>
-  <td class="hw">Design paper — full, Dec 1 · Final presentation and poster or plan, in class · Your review of another team's paper, Dec 15</td></tr>
+  <td class="hw">Final presentation, in class · Writing 4 — referee report · Research proposal due Dec 11</td></tr>
 </tbody>
 </table>
 </div>

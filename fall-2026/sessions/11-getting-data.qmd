@@ -1,7 +1,7 @@
 ---
-title: "10 · Getting the data"
-subtitle: "Wednesday, October 28, 2026 · Meeting 10"
-pagetitle: "AEM 6991 · 10 Getting the data"
+title: "11 · Getting the data"
+subtitle: "Wednesday, November 4, 2026 · Meeting 11"
+pagetitle: "AEM 6991 · 11 Getting the data"
 ---
 
 ::: {.callout-note appearance="simple"}

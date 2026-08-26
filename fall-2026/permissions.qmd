@@ -126,7 +126,7 @@ Less than students fear, but all of it in writing:
 
 Writing the instrument early is not bureaucracy tax. It forces you to
 decide what you are actually measuring, which is
-[meeting 9](sessions/09-measurement.qmd).
+[meeting 10](sessions/10-measurement.qmd).
 
 ## Data-use agreements
 
@@ -140,7 +140,7 @@ restrictions on what you may publish.
 Two consequences worth planning around: **you may not be able to show
 your results**, and the agreement may not be signed in time. If your
 project depends on a DUA, it needs a plan B by
-[meeting 10](sessions/10-getting-data.qmd).
+[meeting 11](sessions/11-getting-data.qmd).
 
 ## Where to ask
 

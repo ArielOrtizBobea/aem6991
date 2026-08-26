@@ -1,0 +1,30 @@
+---
+title: "8 · Writing"
+subtitle: "Wednesday, October 14, 2026 · Meeting 8"
+pagetitle: "AEM 6991 · 8 Writing"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+**What you should be able to do after this meeting.** Reconstruct the outline behind somebody else's paper. Build your own problem statement the same way, topic sentence by topic sentence, and hand it to a stranger who can follow it.
+
+## Where to read more
+
+[Adams](https://doi.org/10.4135/9788132108498) ch. 4 on literature review and critical reading, and ch. 16 on writing up.
+
+## Session A · 2:05–3:15
+
+The method. A paper is built outline first: one topic sentence per paragraph, in order, before any prose exists. We start backwards — take a published paper apart into the outline that must have produced it. That is also this week's exercise, and the fastest way to see that good writing has a skeleton. Then forwards: outline, sketch, full text. Every written product in this course is submitted that way, so the argument is fixed before the sentences are. Then what a problem statement has to do. Scope, unit, population. The 'so what' in the first sentence, not the fourth paragraph. Then the section everybody gets wrong — identification: your design named, its assumption stated, and what would break it. And how to state a limitation without gutting your own project. Finally the failure modes: the topic with no question, hedging, the buried claim, the review that reviews without arguing.
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
+
+Your own problem statement, written in the room. One topic sentence per paragraph, in order, and nothing else — no prose. Then swap with another team. They get your skeleton and nothing else, and they have to tell you what your argument is. Where they cannot, your argument is not there yet. Whatever survives that is the spine of your pitch next week, and of the proposal outline in November.
+
+Your team's output is submitted before you leave.
+

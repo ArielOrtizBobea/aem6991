@@ -77,8 +77,8 @@ question executed beautifully is still a bad project. It is also the most
 enjoyable part of the work, and the schedule gives it room.
 
 **Writing runs through the whole term rather than sitting at the end.**
-The research problem is taught in meeting 6, the memo in meeting 10, the
-design paper in meeting 13. Each has a short individual piece attached.
+Writing is taught in meeting 8 and figures and talks in meeting 9. Each
+has a short individual piece attached.
 
 Teamwork works the same way. Each team writes down its own ground rules
 in meeting 2 --- who does what, and what happens when somebody misses a
@@ -88,7 +88,7 @@ that is written down and graded.
 None of this assumes prior econometrics or programming.
 
 **This is not a coding course.** You will work with real data from
-meeting 11 onward, through an AI assistant. What is graded is the
+meeting 12 onward, through an AI assistant. What is graded is the
 questions you ask and the checks you run. Never code you wrote.
 
 The reason is that writing the code is no longer the scarce skill.
@@ -284,8 +284,8 @@ that is backwards. So two of the four pieces below are **reverse
 outlines**: you take a finished text and reconstruct the skeleton that
 must have produced it.
 
-Meeting 6 teaches the method. Meeting 10 applies it to the memo. Meeting
-13 applies it to the design paper.
+Meeting 8 teaches the method. Meeting 9 turns it on figures and talks.
+Meeting 13 turns it on your own outline.
 
 {{< include _writing.qmd >}}
 
@@ -346,7 +346,7 @@ goodwill.
   2: who does what, what happens when somebody misses a deadline, and
   how you settle a disagreement. You are graded on whether you actually
   followed it, not on how well it reads.
-- **Two peer evaluations**, in meetings 6 and 13, on a fixed template.
+- **Two peer evaluations**, in meetings 9 and 13, on a fixed template.
 
 This component is team-based in subject and individual in grade. Two
 members of the same team can receive different marks for it, and
@@ -389,9 +389,10 @@ good question whose data never arrives.
 
 So the outline makes you name the dataset, its holder, the access route,
 the timeline and your plan B --- while there is still time to change
-course. Meeting 9 teaches you what to ask of a dataset. Meeting 10
-covers how to get hold of one. Meeting 11 has you interrogate real data.
-You certify your data having actually handled some, not from theory.
+course. Meeting 10 teaches you what to ask of a dataset. Meeting 11
+covers how to get hold of one. Meeting 12 has you interrogate real data.
+All three land before the outline is due, so you certify your data
+having actually handled some, not from theory.
 
 ### What you are graded against
 

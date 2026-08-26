@@ -46,34 +46,36 @@ website:
               href: fall-2026/sessions/04-inference-goes-wrong.qmd
             - text: " 5 Controls and matching"
               href: fall-2026/sessions/05-selection-on-observables.qmd
-            - text: " 6 Writing the problem"
-              href: fall-2026/sessions/06-writing-the-problem.qmd
         - section: "Part 3 — Designs"
           contents:
-            - text: " 7 Research designs I"
-              href: fall-2026/sessions/07-designs-i.qmd
+            - text: " 6 Research designs I"
+              href: fall-2026/sessions/06-designs-i.qmd
             - text: "   Design scenarios"
               href: fall-2026/handouts/design-scenarios.qmd
-            - text: " 8 Research designs II"
-              href: fall-2026/sessions/08-designs-ii.qmd
-        - section: "Part 4 — Data & access"
+            - text: " 7 Research designs II"
+              href: fall-2026/sessions/07-designs-ii.qmd
+        - section: "Part 4 — Communication"
           contents:
-            - text: " 9 Measurement and data"
-              href: fall-2026/sessions/09-measurement.qmd
-            - text: "   Instrument critique cards"
-              href: fall-2026/handouts/instrument-cards.qmd
-            - text: "10 Getting the data"
-              href: fall-2026/sessions/10-getting-data.qmd
-            - text: "11 Using data"
-              href: fall-2026/sessions/11-using-data.qmd
-        - section: "Part 5 — Bringing it home"
-          contents:
-            - text: "12 Seeing and showing"
-              href: fall-2026/sessions/12-seeing-data.qmd
+            - text: " 8 Writing"
+              href: fall-2026/sessions/08-writing.qmd
+            - text: " 9 Oral and visual"
+              href: fall-2026/sessions/09-oral-and-visual.qmd
             - text: "   Figure critique cards"
               href: fall-2026/handouts/figure-tricks.qmd
-            - text: "13 Midterm and writing"
-              href: fall-2026/sessions/13-midterm-and-writing.qmd
+        - section: "Part 5 — Data & access"
+          contents:
+            - text: "10 Measurement and data"
+              href: fall-2026/sessions/10-measurement.qmd
+            - text: "   Instrument critique cards"
+              href: fall-2026/handouts/instrument-cards.qmd
+            - text: "11 Getting the data"
+              href: fall-2026/sessions/11-getting-data.qmd
+            - text: "12 Using data"
+              href: fall-2026/sessions/12-using-data.qmd
+        - section: "Part 6 — Bringing it home"
+          contents:
+            - text: "13 Midterm and workshop"
+              href: fall-2026/sessions/13-midterm.qmd
             - text: "14 The pitch"
               href: fall-2026/sessions/14-pitch.qmd
         - section: "Resources"

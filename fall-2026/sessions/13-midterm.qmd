@@ -1,0 +1,33 @@
+---
+title: "13 · Midterm and workshop"
+subtitle: "Wednesday, November 18, 2026 · Meeting 13"
+pagetitle: "AEM 6991 · 13 Midterm and workshop"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+**What you should be able to do after this meeting.** Design a study in writing under exam conditions. Then take an outline apart — somebody else's, and your own.
+
+## Where to read more
+
+[Adams](https://doi.org/10.4135/9788132108498) ch. 16 on writing and presenting.
+
+## Session A · 2:05–3:15
+
+**Midterm.** You are given a situation and asked to design a study to evaluate it, in writing. The question. The design, and the assumption carrying it. What data it requires. And what would undermine it. Open note. It tests whether you can apply the design vocabulary to a situation you have not seen, not whether you memorised definitions. There is nothing to revise beyond having turned up all term — it is the same move the room has made every week since meeting 2.
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
+
+Bring your outline. Workshop it in rotation, using the method from meeting 8: somebody outside your team reads your skeleton and tells you where the argument jumps, and you do the same for theirs. That pairing is where your referee report comes from. Then you rate your teammates for the second time.
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Proposal outline — workshopped in class · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week

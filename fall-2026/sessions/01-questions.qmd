@@ -329,7 +329,7 @@ proves the plumbing before it counts.
 Writing the code is no longer the scarce skill. Neither is drafting the
 prose. Knowing what to ask for is. So is noticing when the answer is wrong.
 
-From meeting 11 you work with real data through an assistant. **What is
+From meeting 12 you work with real data through an assistant. **What is
 graded is the questions you ask and the checks you run, never code you
 wrote.**
 
@@ -375,7 +375,7 @@ honestly and try a narrower topic; the failure rate rises fast as the
 topic narrows.
 
 The lesson is not "AI is bad." It is that verification is the one step
-you can never delegate, which is the same lesson as meeting 11.
+you can never delegate, which is the same lesson as meeting 12.
 :::
 
 # Finding a question
@@ -462,7 +462,7 @@ effect.
 
 - **Claim:** causal, retrospective
 - **Design:** difference-in-differences, event study, regression
-  discontinuity, IV — *meetings 7–8*
+  discontinuity, IV — *meetings 6–7*
 - **Data:** outcomes before and after, for a treated group **and** a
   credible comparison group
 - **Fails when:** no comparison group — or the "treatment" was adopted
@@ -483,7 +483,7 @@ yet made; the input needed is what people value.
 
 - **Claim:** causal, but about *elicited* choices — a real limitation
 - **Design:** choice experiments and conjoint, randomized price or message
-  tests — *meetings 7 and 9*
+  tests — *meetings 6 and 10*
 - **Data:** usually collected by you — an instrument you design
 - **Fails when:** stated preference reported as revealed preference; or
   n = 40 classmates generalized to a market
@@ -520,7 +520,7 @@ should and nobody knows why.
 
 - **Claim:** descriptive, hypothesis-generating
 - **Design:** decomposition, benchmarking against a reference group —
-  *meetings 11–12*
+  *meetings 9 and 12*
 - **Data:** operational or administrative records at the unit where the
   variation lives
 - **Fails when:** description dressed up as a cause; or it stops at "here
@@ -547,7 +547,7 @@ empirical question you answer with data you analyze yourselves.
 ::: {.notes}
 The type most likely to produce a bad capstone, and the one
 consulting-bound students gravitate to. The guardrail is real and it gets
-enforced at the feasibility memo in meeting 10.
+enforced at the outline's data section, which is due at meeting 12.
 :::
 
 ## What the last two cohorts did {.smaller}
@@ -603,7 +603,7 @@ was allowed. It is allowed.
 Number 2 is why this course is ordered question, then design, then data.
 Teams who find data first rationalize a question around it, every time.
 
-Number 4 has to die in meeting 10, at the feasibility memo. Not in
+Number 4 has to die by meeting 12, in the outline's data section. Not in
 January.
 :::
 
@@ -891,7 +891,7 @@ December is a proposal somebody could hand to a team in January.
 ### AI ground rules
 
 Permitted by default, disclosure mandatory, verification graded. From
-meeting 11 you work with real data through an assistant, and what is
+meeting 12 you work with real data through an assistant, and what is
 graded is the questions you ask and the checks you run — never code you
 wrote.
 

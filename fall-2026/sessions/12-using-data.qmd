@@ -1,7 +1,7 @@
 ---
-title: "11 · Using data"
-subtitle: "Wednesday, November 4, 2026 · Meeting 11"
-pagetitle: "AEM 6991 · 11 Using data"
+title: "12 · Using data"
+subtitle: "Wednesday, November 11, 2026 · Meeting 12"
+pagetitle: "AEM 6991 · 12 Using data"
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -28,3 +28,6 @@ Real data in front of you, and the meeting-9 checklist put to work: what is one 
 
 Your team's output is submitted before you leave.
 
+## Due
+
+Proposal outline · Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week

@@ -392,11 +392,11 @@ leaks.*
 
 **Is this opportunity real, and what constrains it?**
 
-- **Claim:** descriptive synthesis **plus at least one original empirical
-  component**
-- **Design:** market sizing from official statistics, competitive
-  benchmarking, regulatory and cost constraints
-- **Fails when:** it becomes a deck of secondary research with no empirical
+- **Claim:** descriptive synthesis, **plus at least one original
+  empirical component**
+- **Design:** market sizing, competitive benchmarking, regulatory and
+  cost constraints
+- **Fails when:** it becomes a deck of secondary research. No empirical
   claim of your own
 
 ::: {.callout-warning appearance="simple"}
@@ -494,11 +494,14 @@ have you opened the page, found the access terms, seen the actual columns?
 
 ## The policy {.smaller}
 
-**Permitted by default. Disclosure is mandatory. Verification is graded.**
+**Permitted by default. Disclosure is mandatory. Verification is
+graded.**
 
-This section is deliberately different from the others. The reason is that
-writing the code and drafting the prose are no longer the scarce skills —
-knowing what to ask for, and noticing when the answer is wrong, is.
+This section is deliberately different from the others.
+
+Writing the code is no longer the scarce skill. Neither is drafting the
+prose. Knowing what to ask for is. So is noticing when the answer is
+wrong.
 
 From meeting 11 you work with real data through an assistant. **What is
 graded is the questions you ask and the checks you run, never code you
@@ -532,8 +535,10 @@ Ask an assistant for references on your topic. Right now.
 Then **open every single one**.
 
 ::: {.callout-important appearance="simple"}
-A fabricated citation in your literature review is an academic integrity
-violation. "The AI generated it" is not a defense — it is an admission you
+A fabricated citation in your literature review is an academic
+integrity violation.
+
+"The AI generated it" is not a defence. It is an admission that you
 submitted something you never read.
 :::
 
@@ -603,13 +608,13 @@ Before you assume data has to be bought, found, or scraped:
 
 - **The Cornell library's licensed holdings.** Far more than most
   students realise, and already paid for.
-- **Dewey** — a commercial data marketplace the Johnson College
-  subscribes to. **You have access at no cost.**
+- **Dewey** — a commercial data marketplace Cornell JCB subscribes to.
+  **You have access at no cost.**
 
 ::: {.callout-note appearance="simple"}
-A surprising number of capstone teams propose buying data the College
-already subscribes to, or abandon a good question because they assumed
-the data was out of reach.
+Teams routinely propose buying data the College already has. Others
+abandon a good question because they assumed the data was out of reach.
+Check first.
 :::
 
 **Register tonight** at app.deweydata.io with your **Cornell email** —

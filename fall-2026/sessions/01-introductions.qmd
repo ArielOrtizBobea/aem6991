@@ -170,14 +170,26 @@ P&G · PwC · KPMG
 [Source: Cornell SC Johnson, MPS AEM career outcomes. 82% received offers
 within six months.]{style="font-size:0.55em; color:#6b6b6b"}
 
+::: {.callout-note appearance="simple"}
+Dyson splits what you need into **"sharp skills"** — statistical thinking
+and data analytics — and **["smart skills"](https://business.cornell.edu/dyson/grand-challenges/)**:
+communication, teamwork, project management, leadership.
+
+[GMAC asked 1,100 recruiters](https://www.gmac.com/market-intelligence-and-research/market-research/corporate-recruiters-survey/the-corporate-recruiters-survey-2026-report)
+what they value in business graduates in 2026. **Communication first.
+Problem-solving second.**
+:::
+
 ::: {.notes}
 Essentially none of these are research jobs. That is the argument for the
 framing on the previous slide — not my taste, the placement data.
 
-In 2026 GMAC asked 1,100 corporate recruiters what they value in business
-graduates. Communication first. Problem-solving second. Data analysis and
-interpretation fourth, up from tenth in one year. Say it if you have the
-time; it is the argument for how the grade is weighted.
+The callout is the argument for how this course is weighted. Half the
+grade is a team artifact and participation is 20%, because the two things
+employers rank first are the two things a solo written exam cannot test.
+
+Data analysis and interpretation came fourth in the same GMAC survey, up
+from tenth in one year. Worth saying if you have the time.
 :::
 
 ## Where everything lives {.smaller}

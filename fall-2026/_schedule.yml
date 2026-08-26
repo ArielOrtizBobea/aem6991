@@ -345,7 +345,7 @@ meetings:
     builds: "Your final-presentation deck, rehearsed and attacked — plus the gap between the claim you made and the claim the room heard"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 16 on presenting."
     reading: "TBD"
-    due: "Proposal outline · Writing 2 — reverse outline and repair · Exercise 2 — rebuild and critique a figure, end of week"
+    due: "Proposal outline · Writing 2 — reverse outline and repair · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week"
 
   - num: 13
     slug: "13-midterm"
@@ -377,3 +377,6 @@ meetings:
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 15 on conducting your research, which is mostly about the months after this one."
     reading: "TBD"
     due: "Final presentation, in class · Writing 4 — referee report · Research proposal due Dec 11"
+
+  - date: 2026-12-11
+    note: "Research proposal due — the final write-up. Date to be confirmed"

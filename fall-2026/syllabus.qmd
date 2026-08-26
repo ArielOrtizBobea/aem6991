@@ -299,7 +299,7 @@ goodwill.
   2: who does what, what happens when somebody misses a deadline, and
   how you settle a disagreement. You are graded on whether you actually
   followed it, not on how well it reads.
-- **Two peer evaluations**, in meetings 9 and 13, on a fixed template.
+- **Two peer evaluations**, in meetings 6 and 12, on a fixed template.
 
 This component is team-based in subject and individual in grade. Two
 members of the same team can receive different marks for it, and

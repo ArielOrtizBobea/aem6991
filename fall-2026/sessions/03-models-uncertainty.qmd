@@ -8,7 +8,7 @@ pagetitle: "AEM 6991 · 3 Models and uncertainty"
 This page is a stub. Materials appear here before the meeting.
 :::
 
-**What you should be able to do after this meeting.** Read a coefficient in the units of the problem, say what a p-value does and does not tell you, and tell an explanatory question apart from a predictive one.
+**What you should be able to do after this meeting.** Read a coefficient in the units of the problem. Say what a p-value does and does not tell you. Tell an explanatory question apart from a predictive one.
 
 ## Before class
 
@@ -18,7 +18,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-Linear regression, non-linear models, and count models — described, not derived: what each estimates and how to read a coefficient in the units of the problem. Then where uncertainty comes from: residuals and errors, sampling variation, what a standard error states, where p-values come from and what they are not. Finally the distinction that decides half the projects in this room — explaining versus predicting, and why a model that predicts well may tell you nothing about what to do
+Linear regression, non-linear models, count models. Described, not derived. What each estimates, and how to read a coefficient in the units of the problem. Then uncertainty. Residuals and errors, sampling variation, what a standard error actually states, and where p-values come from. More usefully: what they are not. Finally the distinction that decides half the projects in this room. Explaining is not predicting. A model can predict well and still tell you nothing about what to do.
 
 ## Session B · 3:35–4:30
 
@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Ten minutes of simulation first, driven from the front: draw from a world you control, watch the p-value distribution under the null, move the sample size and the variation and watch it shift, then fit the same world in and out of sample and watch an excellent-looking model fail on data it has not seen. Nothing to install, no code to write. Then the cards. Each team gets an analyst who has run something and said something about it, and every one of them overclaims in a different way — a count outcome fitted by OLS and predicted below zero, a 0.03% lift called highly significant across two million users, a wide interval called no effect, an elasticity estimated off two price changes in three years, a churn probability of 112%. Work out what they are actually entitled to claim. Then a team is drawn at random to defend that at the front while the room pushes back, and we draw again while the clock allows. Last line on the sheet is the one that matters: is your own project at risk of the same error?
+Ten minutes of simulation first, driven from the front. Draw from a world you control. Watch the p-value distribution under the null. Move the sample size and the variation, and watch it shift. Then fit the same world in and out of sample, and watch an excellent-looking model fail on data it has not seen. Nothing to install. Then the cards. Each team gets an analyst who ran something and said something about it, and every one overclaims differently. A count outcome fitted by OLS and predicted below zero. A 0.03% lift called highly significant across two million users. A wide interval called no effect. An elasticity estimated off two price changes in three years. A churn probability of 112%. Work out what they are actually entitled to claim. Then a team is drawn at random to defend that while the room pushes back. The last line on the sheet is the one that matters: is your own project at risk of the same error?
 
 Your team's output is submitted before you leave.
 

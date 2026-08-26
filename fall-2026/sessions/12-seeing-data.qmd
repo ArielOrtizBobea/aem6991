@@ -8,7 +8,7 @@ pagetitle: "AEM 6991 · 12 Seeing and showing"
 This page is a stub. Materials appear here before the meeting.
 :::
 
-**What you should be able to do after this meeting.** Name the trick in a figure built to mislead you, redraw it honestly without losing the point, and make your own project's key figure persuasive without lying with it.
+**What you should be able to do after this meeting.** Name the trick in a figure built to mislead you. Redraw it honestly without losing the point. Then make your own project's key figure persuasive without lying with it.
 
 ## Before class
 
@@ -18,7 +18,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-Which figure answers which question, and why. Exploring distributions, time, and space; developing the instinct to be curious about a dataset before modelling it. Then the flip side: what figures hide — aggregation, scale, binning, projection, cherry-picked windows — and how to read a published figure for what it is not showing
+Which figure answers which question, and why. Distributions, time, space. The instinct to be curious about a dataset before you model it. Then the flip side. What figures hide: aggregation, scale, binning, projection, cherry-picked windows. And how to read a published figure for what it is not showing.
 
 ## Session B · 3:35–4:30
 
@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Six figures, each lying in a different way, one per team — a truncated axis, two axes manufacturing a correlation, a cherry-picked window, an aggregate moving opposite to every subgroup, area scaled by radius, counts where you needed a rate. Name the trick, then redraw it honestly — and the honest version still has to make a point, which is the hard half and the one nobody practises. Teams are drawn at random to put both versions up while the room attacks. Then the one that counts: make the figure your own project lives or dies on, the picture that would show your effect if it is there
+Six figures, each lying a different way, one per team. A truncated axis. Two axes manufacturing a correlation. A cherry-picked window. An aggregate moving opposite to every subgroup. Area scaled by radius. Counts where you needed a rate. Name the trick, then redraw it honestly. The honest version still has to make a point — that is the hard half, and the one nobody practises. Teams are drawn at random to put both versions up while the room attacks. Then the one that counts. Make the figure your own project lives or dies on: the picture that would show your effect if it is there.
 
 Your team's output is submitted before you leave.
 

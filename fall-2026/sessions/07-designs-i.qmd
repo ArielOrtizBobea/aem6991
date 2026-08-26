@@ -8,7 +8,7 @@ pagetitle: "AEM 6991 · 7 Research designs I"
 This page is a stub. Materials appear here before the meeting.
 :::
 
-**What you should be able to do after this meeting.** Draw the graph for an experiment, an instrument, and a discontinuity, and say whether any of the three could work for your question.
+**What you should be able to do after this meeting.** Draw the graph for an experiment, an instrument and a discontinuity. Say whether any of the three is open to your question.
 
 ## Before class
 
@@ -18,7 +18,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-Three designs, each drawn before it is described. Experiments: randomisation cuts every arrow into treatment, so there is no back door left to close — and then the decisions that actually make one work. What is the unit you randomise, and is it the person, the store, or the week? How many arms can you afford before each one is too thin? Why you check balance afterwards and what it would mean if it failed. And pre-registration, which is the cheapest honesty device in research: say what you will test before you look, so specification search is not available to you later. Instrumental variables: an arrow into treatment and none into the outcome except through it — the exclusion restriction is that missing arrow, which is why it cannot be tested. Regression discontinuity: nothing else jumps at the cutoff. For each: what variation it exploits, what it assumes, how it fails, and what it looks like done well
+Three designs, each drawn before it is described. Experiments first. Randomisation cuts every arrow into treatment, so there is no back door left to close. Then the decisions that actually make one work. What is the unit you randomise — the person, the store, the week? How many arms can you afford before each one is too thin? Why you check balance afterwards, and what a failure would mean. And pre-registration, the cheapest honesty device in research: say what you will test before you look, and specification search stops being available to you. Instrumental variables next. An arrow into treatment, and none into the outcome except through it. The exclusion restriction is that missing arrow, which is why it cannot be tested. Then regression discontinuity: nothing else jumps at the cutoff. For each, what variation it exploits, what it assumes, how it fails, and what it looks like done well.
 
 ## Session B · 3:35–4:30
 
@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Each team draws a setting nobody in the room owns — a bank with an email list, a scholarship cutoff, an NGO that gave filters to whoever asked. Fifteen minutes to draw the graph, name a design, and state the assumption carrying it. Then teams are drawn at random to defend for four minutes while the room attacks: what breaks this? Nobody knows in advance whether they are up. One card cannot be answered honestly at all, and the team holding it has to be willing to say so. Last: is an experiment, an instrument, or a discontinuity actually open to your own project? Most teams find the answer is no, and finding that out today rather than in November is the point
+Each team draws a setting nobody in the room owns. A bank with an email list. A scholarship cutoff. An NGO that gave filters to whoever asked. Fifteen minutes to draw the graph, name a design, and state the assumption carrying it. Then teams are drawn at random to defend for four minutes while the room attacks. What breaks this? Nobody knows in advance whether they are up. One card cannot be answered honestly at all, and the team holding it has to be willing to say so. Last: is an experiment, an instrument or a discontinuity actually open to your own project? Most teams find the answer is no. Finding that out today rather than in November is the point.
 
 Your team's output is submitted before you leave.
 

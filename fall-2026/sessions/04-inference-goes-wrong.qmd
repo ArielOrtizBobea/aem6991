@@ -8,7 +8,7 @@ pagetitle: "AEM 6991 · 4 How inference fails"
 This page is a stub. Materials appear here before the meeting.
 :::
 
-**What you should be able to do after this meeting.** Take a published claim apart: name the specific failure, say which direction it pushes the estimate, and say whether more data would fix it.
+**What you should be able to do after this meeting.** Take a published claim apart. Name the specific failure. Say which direction it pushes the estimate, and whether more data would fix it.
 
 ## Before class
 
@@ -18,7 +18,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-Bias: omitted variables, sorting and selection, measurement error (classical and not), reverse causality — what each does to the estimate and in which direction. False precision: dependence ignored, multiple testing, specification search
+Bias first. Omitted variables, sorting and selection, measurement error — classical and not — and reverse causality. For each: what it does to the estimate, and in which direction. Then false precision, which is the quieter problem. Dependence ignored. Multiple testing. Specification search. The number stays where it is and the error bar shrinks around it.
 
 ## Session B · 3:35–4:30
 
@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-First, together: one published claim, taken apart. Which failure is doing the damage, and would more data fix it? Then the same move on a paper from your own project's literature — and write down the one threat your own design will have to survive, because you will be answering it in November
+First, together: one published claim, taken apart. Which failure is doing the damage? Would more data fix it? Then the same move on a paper from your own literature. Write down the one threat your design will have to survive. You will be answering it in November.
 
 Your team's output is submitted before you leave.
 

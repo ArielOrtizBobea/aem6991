@@ -8,7 +8,7 @@ pagetitle: "AEM 6991 · 2 Causal language"
 This page is a stub. Materials appear here before the meeting.
 :::
 
-**What you should be able to do after this meeting.** Draw your own project's causal graph, say which variable you must condition on and which you must not touch, and leave with your team's ground rules agreed in writing.
+**What you should be able to do after this meeting.** Draw your project's causal graph. Say which variable you must condition on, and which you must not touch. Leave with your team's ground rules in writing.
 
 ## Before class
 
@@ -18,7 +18,7 @@ The opening quiz is on this reading.
 
 ## Session A · 2:05–3:15
 
-Counterfactuals and potential outcomes; why every comparison is a claim about a world that did not happen. Causal graphs: confounders, colliders, mediators, back-door reasoning — and why controlling for everything makes things worse. Then the map for the rest of this half: every design we meet is a different way of closing a back door, and you will draw each one before you hear what it is called
+Counterfactuals and potential outcomes. Every comparison is a claim about a world that did not happen. Then causal graphs: confounders, colliders, mediators, back-door reasoning. And why controlling for everything makes things worse. Finally the map for the rest of this half. Every design we meet closes a back door in a different way. You will draw each one before you hear what it is called.
 
 ## Session B · 3:35–4:30
 
@@ -26,7 +26,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-First, teams. You are put into one, and it writes down its own ground rules while everybody still gets along rather than negotiating in November — who does what, what happens when somebody misses a deadline, how you settle a disagreement. One page, signed, handed in. Then your team's first job together: each team draws a card carrying a real causal claim somebody is acting on — a board paper, a marketing deck, a widely shared post — and every card is broken in a different way. Draw the graph behind it, then name the failure in this morning's vocabulary: confounder, collider, mediator, selection, reverse causality. Then a team is drawn at random to defend its diagnosis at the front while the rest of the room attacks, and we draw again as the clock allows — you will not know whether you are up, which is the point. Card 3 is a collider and card 5 is a mediator, and those two are where the morning either landed or did not
+First, teams. You are put into one, and it writes down its own ground rules today, while everybody still gets along. Who does what. What happens when somebody misses a deadline. How you settle a disagreement. One page, signed, handed in. Then your team's first job together. Each team draws a card carrying a real causal claim somebody is acting on — a board paper, a marketing deck, a widely shared post. Every card is broken differently. Draw the graph behind it, then name the failure in this morning's vocabulary. Then one team is drawn at random to defend its diagnosis while the room attacks, and we draw again as the clock allows. You will not know whether you are up. Card 3 is a collider and card 5 is a mediator. Those two are where the morning either landed or it did not.
 
 Your team's output is submitted before you leave.
 

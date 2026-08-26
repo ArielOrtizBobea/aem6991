@@ -106,19 +106,6 @@ This section adds two outcomes that serve the four above:
     relies on, what it assumes, and what it therefore can and cannot
     claim.
 
-## Software and tools
-
-Everything runs in a browser. Nothing to install.
-
-| | |
-|:---|:---|
-| **AI assistant** | Claude, ChatGPT or Gemini. Must accept file uploads. A free tier is enough |
-| **Browser** | And whatever you already write in |
-
-Meeting 5 covers what programming languages are and how they differ, and
-the AI modalities and how each fails. Meeting 12 works on real data by
-uploading a file to an assistant and interrogating it.
-
 ## AI policy
 
 Generative AI tools are **permitted by default** for all coursework.

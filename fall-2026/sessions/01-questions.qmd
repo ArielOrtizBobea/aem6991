@@ -245,6 +245,50 @@ shape it has to take — which is the next 25 minutes, and the part that
 actually constrains you.
 :::
 
+## This part is the job {.smaller}
+
+Most of your education has rewarded execution. Do the analysis well.
+Write it up clearly.
+
+**This course rewards the part before that.** Finding a question worth
+answering is a separate skill. It is harder than executing one. It is
+also the part that will still matter in ten years.
+
+And it is the most enjoyable thing you will do all semester. Do not rush
+it.
+
+::: {.notes}
+Say this one slowly and mean it. Students arrive believing the creative
+part is a preamble to the real work. It is the real work — 6992 is where
+they execute, and a bad question executed beautifully is still a bad
+project.
+
+The employer evidence backs it: problem-solving ranked second of all
+skills, above strategic thinking and far above any technical skill.
+:::
+
+## Is there a method? {.smaller}
+
+Partly. Two ideas have real evidence behind them.
+
+**Start from your means, not your goal.** Experts do not pick a goal and
+hunt for means. They start from what they have — who they are, what they
+know, whom they know — and work forward. They *make* opportunities
+rather than find them.
+
+**Generate, then judge. Never both at once.** Teams that evaluate while
+brainstorming produce fewer ideas, and safer ones.
+
+::: {.notes}
+The first is effectuation, from Sarasvathy's think-aloud studies of
+expert entrepreneurs. It is the licence for what happens this afternoon:
+you have a Dewey account and a concentration, and working forward from
+those is not a lesser way of doing it.
+
+The second is why the relay separates round 1 from rounds 2 and 3, and
+scores them separately. Say that when you set it up.
+:::
+
 ## The five archetypes {.smaller}
 
 Every project should be able to say, in one sentence, which of these it is.
@@ -777,6 +821,57 @@ Five routes: a gap in what is known; extending or contesting a published
 result; an anomaly; a decision somebody has to make; a dataset nobody has
 looked at properly. The last is the most dangerous.
 
+### Coming up with the idea is the job
+
+Most of your education has rewarded execution. This course rewards the
+part before it.
+
+Finding a question worth answering is a separate skill, and a harder one.
+AEM 6992 is where you execute. A bad question executed beautifully is
+still a bad project.
+
+It is also the most enjoyable part of the work. Give it the time.
+
+### Is there a method for having ideas?
+
+Partly. Two of the popular answers have real evidence; most do not.
+
+**Start from your means, not your goal.** This is
+[effectuation](https://doi.org/10.5465/amr.2001.4378020), from Saras Sarasvathy's think-aloud
+studies of expert entrepreneurs. Experts do not pick a goal and search
+for the means to reach it. They start from who they are, what they know
+and whom they know, and work forward. Sarasvathy's phrase is that they
+*make* opportunities rather than find them.
+
+You have a Dewey account, a concentration and a team with particular
+backgrounds. Working forward from those is not a lesser way of doing it.
+It is what expertise looks like. What keeps it honest is the feasibility
+filter — means-driven reasoning turns into anti-pattern 2 the moment you
+stop being willing to walk away from the means.
+
+**Generate, then judge. Never both at once.** Teams that evaluate while
+brainstorming produce fewer ideas, and safer ones. The relay separates
+the two on purpose, and scores them separately.
+
+**Ask what job somebody is hiring the answer to do.**
+[Jobs to be Done](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done) reframes a question from "what does
+this do" to "what is somebody trying to accomplish". That is feasibility
+filter 4, arrived at from another direction. The reframing is useful; the
+evidence behind it is thin.
+
+**For research questions specifically**,
+[Sandberg and Alvesson](https://doi.org/10.1177/1350508410372151) separate *gap-spotting* — finding
+what the literature has not covered — from *problematization*, which
+challenges an assumption the literature shares. Gap-spotting is easier
+and produces most published work. Problematization produces the
+interesting work and is riskier. For one semester, gap-spotting is
+usually right. Knowing which you are doing is what stops you overclaiming.
+
+A caution that applies here as everywhere in this course. **Being taught
+in every business school is not evidence that something works.** Design
+thinking as a branded five-step method, and lean startup, are widely
+taught and lightly tested.
+
 ### The five archetypes
 
 Every project should be able to say in one sentence which of these it is. A
@@ -844,9 +939,10 @@ question because they assumed the data was unreachable.
 Cornell email**, in week 1. Your account sits pending until an
 administrator approves it, so do not leave it until you need the data.
 
-A set of worked examples — housing and place, foot traffic, spending,
-labour, firms — is on the [project ideas](../project-ideas.qmd) page. It is
-not a menu; it shows the reasoning, including where each one falls over.
+If you are stuck, there is a numbered list of leads under Resources —
+[potential project ideas](../project-ideas.qmd). Treat it as a way to
+get unstuck, not a menu. Nobody has ever written a good capstone from
+somebody else's idea list.
 
 Working backwards from a dataset is legitimate — it is route 5 — provided
 you do it honestly: what could this answer, which of those would anybody act

@@ -65,6 +65,13 @@ what to ask of a dataset, driving an AI assistant to answer it,
 checking whether the answer is credible, and seeing what a figure shows
 and what it hides.
 
+**Coming up with the question is treated as a skill, not a preamble.**
+Most of your education has rewarded execution. This course rewards the
+part before it. Finding a question worth answering is harder than
+executing one, and AEM 6992 is where the executing happens. A bad
+question executed beautifully is still a bad project. It is also the most
+enjoyable part of the work, and the schedule gives it room.
+
 **Writing runs through the whole term rather than sitting at the end.**
 The research problem is taught in meeting 2, the memo in meeting 10,
 and the design paper in meeting 13, each with a short individual piece

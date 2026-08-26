@@ -1,6 +1,6 @@
 ---
-title: "Project ideas"
-pagetitle: "AEM 6991 · Project ideas"
+title: "Potential project ideas"
+pagetitle: "AEM 6991 · Potential project ideas"
 toc: true
 toc-depth: 2
 editor:
@@ -9,573 +9,112 @@ editor:
 ---
 
 ::: {.callout-important appearance="simple"}
-**This is not a menu.** Nobody is going to hand you a question.
+**Please do not pick one of these.**
 
-What follows are worked examples of one move: getting from a dataset, or
-an interest, to a question that survives the [feasibility
-filter](sessions/01-questions.qmd). Each shows the reasoning. Each also
-shows where it falls over.
+They exist so that nobody is stuck staring at a blank page in week 2.
+Every one is a lead, not a project. Each still has to survive the
+[feasibility filter](sessions/01-questions.qmd), and each still needs a
+decision attached to it before it is worth doing.
 
-The best capstones come from somebody's own curiosity. Read these for
-the shape, then go and find your own.
+The best capstones have always come from somebody's own curiosity. If
+one of these sparks a better idea two steps sideways, that is what it is
+for.
 :::
 
-## Where to look first
-
-Before assuming data must be bought, found, or scraped:
-
-- **Dewey**, the data marketplace the Johnson College subscribes to.
-  **Roughly 84 datasets, available to you at no cost.** Everything named
-  on this page is in that catalogue.
-- **The Cornell library's licensed holdings**, which are extensive.
-- **Public sources** --- county assessor and deeds records, the Census
-  and ACS, FHFA, and the public research files from Zillow and Redfin.
-
-### Getting an account
-
-Dewey needs an **individual account** for every user. There is no shared
-login, and no IP-based access just because you are on the campus network.
-
-1. Go to **[app.deweydata.io](https://app.deweydata.io)** and register
-   **with your Cornell email address.** A personal Gmail will not work
-   --- the subscription is matched on the university domain.
-2. Your account starts in a **pending** state. An administrator at
-   Cornell has to approve it.
-3. You get an email when you are approved. Then you are in, and
-   everything on this page is available to you.
-
-::: {.callout-warning appearance="simple"}
-**Register in week 1, not the night before you need it.** The approval
-is a human step, and humans do not approve accounts at 2 a.m. If you are
-still pending after a few days, tell me and I will chase it.
-:::
-
-### Reading the catalogue
-
-Coverage, date ranges, and the exact columns are on each dataset's own
-page in the catalogue. **Go and read them.** That check is feasibility
-filter 2 --- "can you name the specific dataset, who holds it, and how
-you get it, *checked not assumed*" --- and doing it takes ten minutes in
-September instead of sinking a project in March.
-
-## Is there a method for coming up with ideas?
-
-Partly, yes. But the well-evidenced part is much narrower than the shelf
-of business books suggests.
-
-### Start from what you have, not from what you want
-
-The strongest idea here is **effectuation**, from Saras Sarasvathy's
-["Causation and Effectuation"](https://doi.org/10.5465/amr.2001.4378020)
-(*Academy of Management Review*, 2001), built on think-aloud studies of
-expert entrepreneurs and replicated since. Its central finding is that
-experts do not start from a goal and search for means. They start from
-**means** --- who I am, what I know, whom I know --- and work forward to
-whatever goals those means can reach. Sarasvathy's phrase is that they
-**make** opportunities rather than find them.
-
-That is the move on this page. You have a Dewey account, a
-concentration, and a team with particular backgrounds. Work forward from
-those.
-
-This is not a lesser way of doing it. It is what expertise looks like.
-
-One discipline keeps it honest: the feasibility filter. Means-driven
-reasoning turns into anti-pattern 2 — a dataset in search of a
-question — the moment you stop being willing to walk away from the
-means.
-
-### Start from the job, not the product
-
-**Jobs to be Done**, associated with Clayton Christensen
-(["Know Your Customers' Jobs to Be
-Done"](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done),
-*HBR*, 2016),
-reframes every question from "what does this product do" to "what is the
-customer **hiring** it to accomplish." For your purposes the useful
-translation is: *what decision does somebody have to make, and what would
-change their mind?* That is feasibility filter 4, arrived at from a
-different direction.
-
-### Diverge, then converge, and do not mix them
-
-One structural idea is shared by design thinking, the double diamond,
-and most ideation methods. **Generate without judging. Then judge
-without generating.** Teams that evaluate while brainstorming produce
-fewer ideas, and safer ones.
-
-The meeting-1 relay is built on this. Round 1 generates. Rounds 2 and 3
-attack. They are deliberately not the same activity, and you are scored
-separately on each.
-
-### For research questions specifically
-
-[**Sandberg and Alvesson**](https://doi.org/10.1177/1350508410372151)
-distinguish **gap-spotting** --- finding
-something the literature has not covered --- from **problematization**,
-which challenges an assumption the literature shares. Gap-spotting is
-easier and produces most published work; problematization produces the
-interesting work and is riskier. For a one-semester capstone, gap-spotting
-is usually the right call, and knowing that you are doing it is what stops
-you claiming more than you have.
-
-### What these are worth
-
-| Approach | What it is worth |
-|:--|:--|
-| [**Effectuation**](https://doi.org/10.5465/amr.2001.4378020) (Sarasvathy) | **Strong.** Grounded in think-aloud studies of experts, replicated independently |
-| **Diverge-then-converge** | **Strong.** Robust finding across the ideation literature |
-| [**Jobs to be Done**](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done) | **Useful reframing, thin evidence.** No real body of tests; valuable as a question, not a theory |
-| **Design thinking** as a full method | **Popular, contested.** Widely taught, and the empirical case for the branded five-step version is weak |
-| **Lean startup / MVP** (Ries) | **Practical, lightly evidenced.** The build-measure-learn loop is sensible; the claims made for it outrun the tests |
-
-The same caution applies here as everywhere in this course. **Being
-taught in every business school is not evidence that something works.**
-
-Two of the five rows above are here because they are useful ways to
-think. Nobody has demonstrated they produce better ideas.
-
-### Reading
-
-- Sarasvathy, S. (2001), ["Causation and Effectuation: Toward a
-  Theoretical Shift from Economic Inevitability to Entrepreneurial
-  Contingency"](https://doi.org/10.5465/amr.2001.4378020), *Academy of
-  Management Review* 26(2).
-- Christensen, C. et al. (2016), ["Know Your Customers' Jobs to Be
-  Done"](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done),
-  *Harvard Business Review*.
-- Sandberg, J. & Alvesson, M. (2011), ["Ways of constructing research
-  questions: gap-spotting or
-  problematization?"](https://doi.org/10.1177/1350508410372151),
-  *Organization* 18(1).
-- Osterwalder, A. & Pigneur, Y. (2010), *Business Model Generation* ---
-  the canvases are free at
-  [strategyzer.com](https://www.strategyzer.com/library).
-
-## Beyond Dewey: what else Cornell already pays for
-
-Dewey is one subscription among many. The library's own guides list the
-rest, and most of it you can open today with a netID.
-
-**Financial and company data.** **WRDS** (Wharton Research Data
-Services) is the standard academic host for historical finance and
-accounting data --- extensive, with use restrictions, so talk to a
-librarian before pulling anything large. **Capital IQ** covers 88,000
-public and 825,000 private companies. **Refinitiv Workspace** carries
-financials, market data, transactions and analyst reports (register with
-your Cornell email). **PitchBook** covers private equity and venture
-capital deals (log in via SSO). **Mergent Intellect** and **Data Axle**
-cover private companies. **EDGAR** is free and public.
-
-**Bloomberg terminals** are physical: three at Mann Library on the main
-level, plus the Management, Hotel and Law libraries. Worth an hour of
-anyone's time even if your project never uses one.
-
-**Market and industry research.** **Mintel**, **Passport**
-(Euromonitor), **Statista**, **IBISWorld** (700+ US industries),
-**Frost & Sullivan**, **Technavio** (20 downloads per Cornell email per
-month), plus **Business Source Complete** and **ABI/Inform** for the
-journals and trade press.
-
-**Demographics and geography.** **SimplyAnalytics** builds thematic maps
-and reports from US demographic, business and marketing data --- fast
-for a feasibility check. Then the free federal sources:
-**data.census.gov**, **BLS**, and the **Consumer Expenditure Survey**.
-
-### Nielsen, and the ladder that matters
-
-The **Cornell Center for Social Sciences** holds Cornell's subscription
-to the **Nielsen datasets at the Kilts Center** --- Consumer Panel Data,
-**Retail Scanner Data** (weekly price and volume from 90+ retail chains
-across all US markets), Ad Intel advertising data from 2010, and the
-PanelViews surveys. For anybody in Business of Food or Behavioral
-Marketing, that is close to the best data in the world for the question.
-
-There is a catch, and it is the most useful thing on this page.
-
-| You want | How you get it | How long |
-|:--|:--|:--|
-| Library databases, Statista, IBISWorld, SimplyAnalytics | netID | **Now** |
-| Dewey | Register, then wait for approval | **Days** |
-| The limited Nielsen Retail Scanner subset | netID plus a signed agreement | **Days** |
-| Full Nielsen / Kilts data | Project application via Cornell Research Services, then space in the Regulated Research Environment | **Months** |
-| Census, BLS or NCHS confidential microdata via the **FSRDC** | Federal project approval | **Longer than this degree** |
-
-::: {.callout-important appearance="simple"}
-**Read that table as the course in miniature.** Cornell holds data that
-would answer your question beautifully and that you cannot obtain on a
-capstone timeline. Knowing which row you are in is
-[feasibility filter 2](sessions/01-questions.qmd), and getting it wrong
-is the single most common way a capstone dies. This is what
-[meeting 10](sessions/10-getting-data.qmd) is about.
-
-Note the second Nielsen row: there is a **limited subset of the Retail
-Scanner data open to Cornell students** with a netID and a signature.
-That is days, not months. Start there.
-:::
-
-**Ask a librarian.** Tom Ottaviano covers agriculture, business and
-economics for Mann Library and takes appointments. Fifteen minutes with
-him in September is worth more than a week of guessing in November.
-
-## A worked family: housing and place
-
-Housing is a good family to think in. The outcome is a price everybody
-understands. The characteristics are recorded. Dewey's coverage is
-unusually deep here.
-
-It is also where the archetypes are easiest to tell apart. **The same
-dataset supports five genuinely different projects, each held to a
-different standard of evidence.**
-
-The spine is **Real Estate Transaction Data** --- a nationwide U.S.
-property suite, 9 tables, 2011 to present, covering tax assessor
-records (parcel, ownership, legal description, site address, property
-characteristics), valuations, transactions, distress, and geography
-including latitude and longitude. Because it carries coordinates, it
-joins to almost everything else below.
-
-### 1 · What is a lake view worth?
-
-**Archetype 2 --- preference and pricing.** Not what people say they
-would pay: what they demonstrably did pay.
-
-*The question.* Two otherwise similar houses, one with water frontage or
-a view and one without. How much more does the first sell for --- and
-does the premium hold for lake *access* without frontage, for a dock, or
-for being three streets back?
-
-*The design.* A hedonic regression, and
-[conditioning on observables](sessions/05-selection-on-observables.qmd)
-in its purest form. You want the coefficient on the amenity, holding
-everything else fixed, so the whole of meeting 5 applies directly.
-
-*The data.* Real Estate Transaction Data for prices, characteristics,
-and coordinates. Then amenity measures joined on location: **Nature
-Score** gives a 0--100 rating of the natural environment plus a heat
-risk score, by latitude and longitude. Water proximity you compute from
-the coordinates yourself.
-
-*Where it falls over.* Waterfront houses differ in a hundred ways you
-cannot measure --- lot size, build quality, who the neighbours are, how
-the road runs. Your coefficient quietly absorbs all of it. The good
-versions find variation that is genuinely narrow: units in the *same
-building* on different floors or orientations, parcels either side of a
-ridge line, properties that gained or lost a view when something was
-built. That move --- from "control for things" to "find variation that
-isolates the thing" --- is the entire back half of this course.
-
-*And a second trap.* NatureScore is a *measure of a construct*, not the
-construct. Is it what you mean by "a view"? Meeting 9 is about exactly
-that question, and here it has teeth.
-
-### 2 · Is this house a good deal?
-
-**Archetype 3 --- prediction and risk.** Same data. Same regression.
-Completely different question, and a completely different standard of
-evidence.
-
-*The question.* Build your own valuation model. When a house comes on
-the market, predict what it should sell for. A "deal" is a listing
-priced well below your prediction.
-
-*The design.* Prediction, not identification. You do not care whether
-the coefficient on square footage is causal --- you care whether the
-model is accurate on houses it has never seen. Train on one period, test
-on a later one, and compare against an honest baseline. If you cannot
-beat "the last sale price on this parcel, adjusted for the local index,"
-you do not have a model.
-
-*Where it falls over.* A large negative residual is usually **not** a
-bargain. It is something the model cannot see: a highway behind the
-fence, a failed inspection, a pending assessment, a seller who has to
-close by Friday. The interesting version of this project is going and
-finding out what the residuals actually are. Also watch look-ahead
-bias --- if anything in your training data postdates the sale you are
-predicting, the model is cheating.
-
-::: {.callout-note appearance="simple"}
-**Read 1 and 2 together.** Same file, largely the same model, graded on
-opposite things. In the first, a coefficient has to be believable and
-predictive accuracy is beside the point. In the second, accuracy is
-everything and no coefficient needs to mean anything at all. That
-contrast is [meeting 3](sessions/03-models-uncertainty.qmd) made
-concrete, and being able to say which one you are doing is most of what
-this course is for.
-:::
-
-### 3 · Is climate risk priced into housing yet?
-
-**Archetype 1 or 2, depending how you cut it.** A live question with a
-live literature --- read it first.
-
-*The question.* Do houses in high flood, fire, or heat risk areas sell
-for less, holding their characteristics constant? Has the discount
-grown over time, or after a specific disaster? Do buyers who move *in*
-from elsewhere pay more than locals for the same risk?
-
-*The data.* **US Climate Risk Data** rates five hazards --- heat,
-precipitation, drought, flooding, fire --- 1 to 100 for every U.S. ZIP
-code. Join it to Real Estate Transaction Data. **Weather Data** carries
-daily U.S. observations back to 1970 if you want actual events rather
-than modelled risk. **Nature Score** adds heat risk at coordinate level.
-
-*Where it falls over.* Risky places are also *nice* places --- the
-coast, the wooded hillside. The amenity and the hazard are the same
-geography, and separating them is the whole problem. The published work
-gets at it through timing: what happened to prices after a disaster, or
-after a flood map was redrawn. That is
-[meeting 8](sessions/08-designs-ii.qmd) territory.
-
-### 4 · Which part of the market turns first?
-
-**Archetype 4 --- diagnosis and benchmarking.** Descriptive, and honest
-about it.
-
-*The question.* When a market softens, it does not soften evenly. Which
-price tier, geography, or property type moves first, and by how much?
-Who is exposed?
-
-*The data.* Real Estate Transaction Data for sales, **Rental Data**
-(U.S. residential listings since 2014 across 41,702 ZIP codes, with
-asking rent and property features), and **Dwellsy TrendsIQ** for monthly
-median rent and year-over-year change at ZIP, city, and metro level.
-**ACS 5-Year** block-group tables give you income, race, and age
-composition to cut by.
-
-*Where it falls over.* Composition. If the *mix* of what sells changes,
-a median price can fall while every individual house gains value.
-Handling that honestly is most of the project.
-
-### 5 · Where do people actually move, and why?
-
-**Archetype 4, or 1 if you can find a shock.**
-
-*The data.* **Consumer Address History** carries up to ten prior home
-addresses for U.S. adult consumers --- a migration panel. Join origin
-and destination to **ACS**, **CDC PLACES** (36 modelled health measures
-by tract and ZCTA), **US Climate Risk Data**, or local prices.
-
-*Where it falls over.* This is rich enough to answer almost anything,
-which means it is also rich enough to let you fish. Write the question
-down *before* you open it.
-
-## Other families in the same catalogue
-
-Sketched, not worked out --- deliberately, because that part is yours.
-
-**Retail and foot traffic.** **Weekly Patterns Plus** (POI visits by
-week, U.S. and Canada, 2017--present), **Daily Store Visits**,
-**Neighborhood Patterns Plus** (footfall by census block group),
-**Global Places** (POI with NAICS and coordinates), and **Spend
-Patterns** (monthly card spend at individual POIs). Did a competitor's
-opening cannibalise nearby traffic (*evaluation*)? Which locations
-underperform what their catchment should deliver (*diagnosis*)? Which
-are about to close (*prediction*)?
-
-**Labour markets.** **Job Postings** carries individual U.S. postings
-with role, location, and **salary**; **Job Records** covers global
-postings scraped from employer sites back to 2007; **Layoff Data** has
-WARN Act notices since 1996; **Occupational Wage Data** gives means,
-medians and deciles across 800+ occupations. Which skills are being
-asked for that were not two years ago (*diagnosis*)? What happened to
-local hiring after a plant closure notice (*evaluation*)? Do postings
-that disclose salary fill differently (*evaluation*, and note that
-several states mandated disclosure at different times --- that is a
-natural experiment sitting there)?
-
-**Consumer spending.** Card panels covering 100M+ cards and ~13,000
-merchants, **Brand Tracker**, **Daily Consumer Spend by Company** and
-**by NAICS**, and **Convenience Store Transaction Data** at SKU level.
-Also **Consumer Insights Survey Data**, if you want stated alongside
-revealed.
-
-**Health care prices.** **Payer Rates** carries the rates negotiated
-between insurers and in-network providers for the 293 most commonly
-billed codes. Price transparency is recent, the variation is enormous,
-and almost nobody has looked. Pair with **CDC PLACES**.
-
-**Firms and finance.** **Global Equity End of Day Pricing** across 170+
-exchanges, **Bond Prices and Liquidity Indicators**, **Credit Curves**,
-**Social Sentiment Metrics for Equities**, **Public Company Benefits and
-Financials**, and **Company Insights** with headcount, tenure, growth
-and churn for 30M+ businesses.
-
-**Policy and government.** **U.S. Lobbying Data** since 1999, the
-government contracting suite (awards, subcontracting, terminations), and
-**SBA Loans** --- 13.4 million PPP, 504 and 7(a) transactions, which is
-one of the best-studied natural experiments of the last decade and still
-has corners in it.
-
-**And if you want something lighter.** **Professional Football Salary
-Data** and **Professional Football Club Financial Data** cover the top
-five European leagues and their second divisions. Sports data is a
-perfectly respectable place to learn a design --- the questions are
-sharp and the outcomes are measured.
-
-## Entry points by concentration
-
-::: {.callout-note appearance="simple"}
-**These are doors, not fences.** Teams here are formed *across*
-concentrations, not within them, so your team will almost certainly mix
-three or four of these. Some of the best capstones come from somebody
-applying their concentration's lens to a subject that belongs to
-somebody else's. Read your own heading first, then go and read a
-different one.
-:::
-
-### Behavioral Finance
-
-*Datasets:* Global Equity End of Day Pricing (170+ exchanges) · Bond
-Prices and Liquidity Indicators · Credit Curves · Social Sentiment
-Metrics for Equities (Twitter-derived, daily, 2011–) · Public Company
-Benefits and Financials · Daily Consumer Spend by Company · SBA Loans
-
-- **Does retail attention move prices, or follow them?** Social
-  Sentiment × equity prices. *The whole project is the reverse-causality
-  problem* — sentiment spikes after moves at least as often as before.
-- **Can card spending nowcast earnings?** Daily Consumer Spend by
-  Company carries 80+ same-store-sales metrics, ticker-mapped.
-  *Prediction (arch. 3)* — and the real question is whether the market
-  has already priced it, which is what makes it a decision rather than a
-  demo.
-- **Did PPP loans change small-business survival?** SBA Loans (13.4M
-  transactions) × Business Entity registries. *Evaluation (arch. 1)*,
-  with a well-developed literature to read first.
-
-### Behavioral Marketing
-
-*Datasets:* Brand Tracker (card spend, 13,000 merchants) · card panels
-(100M+ cards) · Consumer Insights Survey Data · Convenience Store
-Transaction Data (SKU level) · Desktop Search Keywords · Website Traffic
-Visits · Daily App Engagement
-
-- **How wrong is stated preference?** You have both here: Consumer
-  Insights Survey (what people say) and the card panel (what they did),
-  for overlapping brands. *A methods project with a real payoff* — and
-  the most concentration-appropriate question on this page.
-- **Does search interest predict purchase, or only awareness?** Desktop
-  Search Keywords × Brand Tracker. *Prediction (arch. 3)*.
-- **What actually substitutes when a price rises?** Convenience Store
-  Transaction Data is SKU-level, so you can watch the switch happen
-  inside a category. *Evaluation (arch. 1)*.
-
-### Sustainable Business and Economic Policy
-
-*Datasets:* US Climate Risk Data (5 hazards × ZIP) · Weather Data
-(daily, 1970–) · Nature Score · ESG Company Scores (UNEP FI criteria) ·
-Global Green Government Contracts · EV Charging & Alternative Fuel
-Stations (200,000+ ports, geocoded) · Compass Automotive (VIN-level
-listings and inferred sales)
-
-- **Did charger rollout change what people buy?** EV Charging Stations
-  gives you geocoded openings over time; Compass Automotive gives
-  VIN-level dealership listings and inferred sales. *That is a
-  difference-in-differences sitting in the open (arch. 1)* — and the
-  obvious threat is that chargers go where EV buyers already are.
-- **Do ESG scores predict anything, or describe disclosure?** ESG
-  Company Scores × Public Company Financials. *Diagnosis (arch. 4)*, and
-  the measurement problem is the project: a score built from voluntary
-  disclosure partly measures willingness to disclose.
-- **Who actually wins green procurement?** Global Green Government
-  Contracts, worldwide.
-
-### Business of Food
-
-*Datasets:* Convenience Store Transaction Data (SKU level) · Spend
-Patterns · Brand Tracker · Weekly Patterns Plus · Delivery Service
-Provider card transactions · Global Places (NAICS-coded POIs) · CDC
-PLACES · ACS block-group tables
-
-- **Did delivery cannibalise dine-in, or grow the category?** Delivery
-  Service Provider transactions × restaurant visits in Weekly Patterns
-  Plus. *Evaluation (arch. 1)*.
-- **Food access and health outcomes.** Global Places lets you separate
-  grocery from convenience by NAICS code; CDC PLACES gives 36 modelled
-  health measures by tract. *Diagnosis (arch. 4)* — and "food desert" is
-  a **construct**, which makes [meeting 9](sessions/09-measurement.qmd)
-  bite hard here.
-- **What happens to a basket when prices move?** SKU-level convenience
-  store data, again.
-
-### International Development Economics
-
-*Datasets:* Unified Government Contract Awards (120M+ awards, 65+
-countries) · Daily Macro Government Contracting (44 countries) · Port
-Performance (global) · Global FX Rates · Company and Office Data ·
-Firmographics · Job Records (global) · Global Places
-
-::: {.callout-warning appearance="simple"}
-**Be honest about coverage.** Dewey's catalogue is heavily
-U.S.-weighted, and this is the concentration it serves least well. That
-is useful feasibility information, not a discouragement — it means you
-should plan to lean on public international sources (World Bank, IMF,
-UN Comtrade, DHS surveys) and use Dewey where it genuinely adds
-something.
-:::
-
-- **Does port efficiency shape trade flows?** Port Performance covers
-  container processing times at global ocean ports from 2021, which
-  spans the congestion shock. *Evaluation or diagnosis*.
-- **Is procurement more concentrated where institutions are weaker?**
-  Unified Government Contract Awards across 65+ countries. *Diagnosis
-  (arch. 4)*, and measuring "institutional quality" is the hard part.
-- **Where do multinationals actually put offices, and what follows?**
-  Company and Office Data covers 200M+ companies globally.
-
-### Technology Management
-
-*Datasets:* Daily App Engagement (installs, sessions, DAU) · Website
-Traffic Visits · Desktop Search Keywords · Company Insights (headcount,
-tenure, growth, churn for 30M+ firms) · Job Postings (US, with salary) ·
-Job Records (global, 2007–) · People and Resume · Layoff Data (WARN,
-1996–)
-
-- **Where does talent go after a layoff?** Layoff Data gives you WARN
-  notices with dates and employers; People and Resume gives individual
-  job histories. *Follow the people (arch. 4, or arch. 1 if you treat
-  the notice as the event).* One of the strongest ideas on this page.
-- **Did an AI product launch change who firms hire?** Job Postings
-  carries role, location and salary; Company Insights carries headcount
-  and churn. *Evaluation (arch. 1)*, and very current.
-- **What happens to engagement after a competitor launches?** Daily App
-  Engagement, thousands of apps, daily. *Evaluation or prediction.*
-
-## The relay cards
-
-These nine are what circulate in the meeting-1 relay. They were picked to
-span the concentrations **and to join to each other** --- the last column
-is the point. A question that needs two of these is usually better than a
-question that needs one.
-
-| Dataset | What one row is | Coverage | Joins on |
-|:--|:--|:--|:--|
-| **Real Estate Transaction Data** | A parcel, a sale, or an assessment | US, 2011– | lat/long, ZIP, address |
-| **US Climate Risk Data** | A ZIP code's rating on 5 hazards (1–100) | US | ZIP |
-| **Weekly Patterns Plus** | One place, one Mon–Sun week of visits | US + Canada, 2017– | lat/long, brand, NAICS |
-| **EV Charging & Alt. Fuel Stations** | One charging station | US + Canada | lat/long, ZIP |
-| **Job Postings** | One job posting, with salary | US, 2016–2025 | company, ZIP, lat/long |
-| **Layoff Data (WARN)** | One layoff notice filed by an employer | US, 1996– | company, state, date |
-| **Convenience Store Transactions** | One SKU sold, one transaction | US, 2024– | brand, product |
-| **Brand Tracker** | One brand's card spend, one period | US, 2018– | brand, ticker |
-| **CDC PLACES** | One tract or ZCTA, 36 health measures | US | ZIP, tract |
-
-Nothing stops you using something else entirely --- the catalogue has 84.
-
-*(Instructor: these print as cut-out cards, with the rotating question
-sheet, from the [relay handout](handouts/relay-cards.qmd).)*
-
-## How to use any of this
-
-Take one line above --- or better, one of your own --- and run it
-through the four filter questions from meeting 1:
-
-1. Could a team of 3--5 execute it in one spring semester?
-2. Can you name the specific dataset, who holds it, and how you get
-   it --- **checked, not assumed**?
-3. Does the design produce an answer that could come out either way?
-4. Would somebody actually act differently depending on the answer?
-
-If it survives all four, label its archetype and bring it to class. If
-it fails one, say which --- a question you kill in September is a month
-you do not lose in March.
+Where each dataset lives, and how to get an account, is on the
+[data sources](data-sources.qmd) page. Methods for generating your own
+ideas are in [meeting 1](sessions/01-questions.qmd).
+
+Archetypes: **1** evaluation · **2** preference & pricing ·
+**3** prediction & risk · **4** diagnosis · **5** feasibility.
+
+## Property and place
+
+| | The lead | Data | Type |
+|--:|:--|:--|:--|
+| 1 | What is a water view worth, and does the premium survive when you compare near-identical houses? | ATTOM transactions + Nature Score (Dewey) | 2 |
+| 2 | Is flood or fire risk discounted in house prices yet — and did that change after a local disaster? | US Climate Risk × ATTOM (Dewey) | 1 |
+| 3 | When a housing market softens, which price tier moves first? | ATTOM + Dwellsy rents (Dewey) | 4 |
+| 4 | Can you beat "last sale price, index-adjusted" at valuing a listing — and what are the big misses? | ATTOM (Dewey) | 3 |
+| 5 | Where do people move after a mass layoff in their county? | Consumer Address History × WARN (Dewey) | 4 |
+
+## Retail and foot traffic
+
+| | The lead | Data | Type |
+|--:|:--|:--|:--|
+| 6 | Did a competitor's opening take traffic from nearby stores, or grow the whole area? | Weekly Patterns Plus (Dewey) | 1 |
+| 7 | Which store locations underperform what their catchment should deliver? | Daily Store Visits + ACS (Dewey) | 4 |
+| 8 | Does falling foot traffic predict a closure, and how far ahead? | Weekly Patterns × Business Entity (Dewey) | 3 |
+
+## Labour
+
+| | The lead | Data | Type |
+|--:|:--|:--|:--|
+| 9 | Salary-disclosure laws hit different states at different times. Did employers change what they post? | Job Postings (Dewey) | 1 |
+| 10 | Which skills appeared in job ads in the last two years that were absent before? | Job Records (Dewey) | 4 |
+| 11 | Where does talent actually go after a layoff — same industry, or out? | WARN × People and Resume (Dewey) | 4 |
+| 12 | Do postings that name a salary fill differently from those that do not? | Job Postings (Dewey) | 1 |
+
+## Food and consumers
+
+| | The lead | Data | Type |
+|--:|:--|:--|:--|
+| 13 | When a price rises, what do shoppers switch to inside the same category? | Convenience Store Transactions, SKU level (Dewey) | 1 |
+| 14 | Did delivery apps grow the restaurant category or cannibalise dine-in? | Delivery card data × Weekly Patterns (Dewey) | 1 |
+| 15 | What is a "locally sourced" claim worth, in cents per unit? | **Your own choice experiment** (Qualtrics + Prolific) | 2 |
+| 16 | Do neighbourhoods with only convenience stores show worse health outcomes than the food access story predicts? | Global Places × CDC PLACES × ACS (Dewey) | 4 |
+
+## Finance
+
+| | The lead | Data | Type |
+|--:|:--|:--|:--|
+| 17 | Does retail attention move prices, or follow them? | Social Sentiment × Global Equity EOD (Dewey) | 3 |
+| 18 | Can card spending nowcast a company's earnings before it reports? | Daily Consumer Spend by Company (Dewey) | 3 |
+| 19 | Did PPP loans change small-business survival? | SBA Loans × Business Entity (Dewey) | 1 |
+| 20 | Do ESG scores predict anything once you account for firm size? | ESG Scores × Public Company Financials (Dewey) | 4 |
+
+## Health, policy and development
+
+| | The lead | Data | Type |
+|--:|:--|:--|:--|
+| 21 | Two hospitals in one city, same billing code, different negotiated price. Why? | Payer Rates (Dewey) | 4 |
+| 22 | Who actually wins green public procurement, and are they different firms? | Global Green Government Contracts (Dewey) | 4 |
+| 23 | Does lobbying activity precede favourable rule changes, or follow them? | US Lobbying (Dewey) | 1 |
+| 24 | Did port congestion in 2021–22 change where goods were shipped from? | Port Performance (Dewey) | 1 |
+| 25 | Is public contracting more concentrated where institutions are weaker? | Unified Government Contract Awards + [World Bank governance indicators](https://info.worldbank.org/governance/wgi/) | 4 |
+
+## Technology
+
+| | The lead | Data | Type |
+|--:|:--|:--|:--|
+| 26 | What happens to an app's daily users when a competitor launches? | Daily App Engagement (Dewey) | 1 |
+| 27 | Does a firm's headcount move before its share price does? | Company Insights × Global Equity EOD (Dewey) | 3 |
+| 28 | Does disclosing that content is AI-generated change how people rate it? | **Your own online experiment** (Qualtrics + Prolific) | 2 |
+
+## Collect it yourself
+
+Ideas 15, 28 and anything like them need no dataset at all. You write the
+instrument and field it.
+
+This is worth taking seriously. The most ambitious project in this
+programme's history ran online experiments on brand recognition, then
+persuaded a soda company to donate thousands of cans for a field
+experiment in dining halls. That was a nine-month MPS team. It took no
+econometrics.
+
+Meeting 9 teaches instrument design and how large a sample you need.
+[Permissions and ethics](permissions.qmd) covers the IRB, and you should
+start that in October.
+
+## If none of these fit
+
+Good. Bring your own.
+
+Take it to the four filter questions from meeting 1. Could a team of 3–5
+execute it in one spring semester? Can you name the data, who holds it,
+and how you get it — checked, not assumed? Could the answer come out
+either way? Would anybody act differently depending on it?
+
+Survives all four? Label its archetype and bring it to class. Fails one?
+Say which. A question you kill in September is a month you do not lose in
+March.

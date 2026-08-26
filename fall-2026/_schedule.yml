@@ -63,6 +63,8 @@ resources:
     href: fall-2026/permissions.qmd
   - text: "Working in a team"
     href: fall-2026/teamwork.qmd
+  - text: "Potential project ideas"
+    href: fall-2026/project-ideas.qmd
 
 term: "Fall 2026"
 meets: "Wednesdays, 2:00–4:30 pm"
@@ -217,9 +219,6 @@ meetings:
     quizzes: 0
     reading: "None"
     due: "One page on what you want to work on and why — before meeting 2"
-    links:
-      - text: "Project ideas"
-        href: fall-2026/project-ideas.qmd
 
   - num: 2
     slug: "02-causal-language"

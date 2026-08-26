@@ -30,8 +30,6 @@ website:
           contents:
             - text: " 1 Finding a question"
               href: fall-2026/sessions/01-questions.qmd
-            - text: "   Project ideas"
-              href: fall-2026/project-ideas.qmd
         - section: "Part 2 — Inference"
           contents:
             - text: " 2 Causal language"
@@ -84,6 +82,8 @@ website:
               href: fall-2026/permissions.qmd
             - text: "Working in a team"
               href: fall-2026/teamwork.qmd
+            - text: "Potential project ideas"
+              href: fall-2026/project-ideas.qmd
         # <<< END GENERATED MEETINGS
 
 format:

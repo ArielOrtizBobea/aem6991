@@ -39,7 +39,7 @@ bring to it that most people here do not. Teams are formed from these.
 :::: {.columns}
 
 ::: {.column width="64%"}
-- **Ariel Ortiz-Bobea.** Dyson School and the Brooks School of Public
+- Ariel Ortiz-Bobea. Dyson School and the Brooks School of Public
   Policy. At Cornell since 2014.
 - Before Cornell: Resources for the Future; PhD, University of Maryland;
   Ministry of the Environment of the Dominican Republic.
@@ -66,10 +66,10 @@ term, and it is worth more than the CV.
 
 Four things, briefly:
 
-1. **Your name, and where you are from**
-2. **What you studied or did before this** — training, or work
-3. **Your concentration**
-4. **What you want out of this program, and after it**
+1. Your name, and where you are from
+2. What you studied or did before this — training, or work
+3. Your concentration
+4. What you want out of this program, and after it
 
 ::: {.notes}
 Go round the room. Twenty-five students at about thirty seconds each is
@@ -89,10 +89,10 @@ this is your first signal.
 
 ## Two courses, one project {.smaller}
 
-**AEM 6991 (fall).** You produce a *plan* — a question, a design, and
+AEM 6991 (fall). You produce a *plan* — a question, a design, and
 evidence that the data exists.
 
-**AEM 6992 (spring).** You *execute* that plan.
+AEM 6992 (spring). You *execute* that plan.
 
 The deliverable in December is a proposal somebody could hand to a team in
 January.
@@ -106,12 +106,12 @@ question that is vague in October is a disaster in March.
 
 By December you should be able to:
 
-- **Find a question** worth a semester, and say why it matters
-- **Design** a study that could answer it — and name the assumption
+- Find a question worth a semester, and say why it matters
+- Design a study that could answer it — and name the assumption
   carrying it
-- **Prove the data exists**, can be obtained, and measures what you need
-- **Say what you can and cannot claim**, and defend that in a room
-- **Work in a team** that delivers on time, with the work split fairly
+- Prove the data exists, can be obtained, and measures what you need
+- Say what you can and cannot claim, and defend that in a room
+- Work in a team that delivers on time, with the work split fairly
 
 ::: {.notes}
 These are the registrar's four outcomes for 6991 plus the two this
@@ -123,7 +123,7 @@ section treats it as goodwill.
 
 ## What this is not {.smaller}
 
-You are **not** writing a paper for a journal.
+You are not writing a paper for a journal.
 
 - No gap in the literature to fill
 - No contribution to claim
@@ -141,7 +141,7 @@ and reach for the genre they have seen in seminars. Kill it here.
 >
 > The standard for "competent" is the same standard a referee would apply.
 
-**Rigor and genre are different axes.** The rigor bar does not move. The
+Rigor and genre are different axes. The rigor bar does not move. The
 genre does.
 
 ::: {.notes}
@@ -171,13 +171,13 @@ P&G · PwC · KPMG
 within six months.]{style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.callout-note appearance="simple"}
-Dyson splits what you need into **"sharp skills"** — statistical thinking
-and data analytics — and **["smart skills"](https://business.cornell.edu/dyson/grand-challenges/)**:
+Dyson splits what you need into "sharp skills" — statistical thinking
+and data analytics — and ["smart skills"](https://business.cornell.edu/dyson/grand-challenges/):
 communication, teamwork, project management, leadership.
 
 [GMAC asked 1,100 recruiters](https://www.gmac.com/market-intelligence-and-research/market-research/corporate-recruiters-survey/the-corporate-recruiters-survey-2026-report)
-what they value in business graduates in 2026. **Communication first.
-Problem-solving second.**
+what they value in business graduates in 2026. Communication first.
+Problem-solving second.
 :::
 
 ::: {.notes}
@@ -195,16 +195,16 @@ from tenth in one year. Worth saying if you have the time.
 ## Where everything lives {.smaller}
 
 ::: {style="text-align:center; font-size:1.25em"}
-**arielortizbobea.github.io/aem6991**
+arielortizbobea.github.io/aem6991
 :::
 
-- **Every meeting has a page** — what session A covers, what session B
+- Every meeting has a page — what session A covers, what session B
   makes you do, and what is due
-- The **syllabus** is there in full, and it is the contract
+- The syllabus is there in full, and it is the contract
 - Handouts, resources and worked examples, all permanent
 
-**Canvas carries grades and submissions. Everything else is on the
-site.**
+Canvas carries grades and submissions. Everything else is on the
+site.
 
 ::: {.notes}
 Put it on the projector for thirty seconds. Open meeting 1's page, show
@@ -260,39 +260,36 @@ Room is Riley-Robb B15 all semester. TA to be announced.
 
 ## What good work looks like {.smaller}
 
-The **required headings are the criteria.** If a heading has nothing
-under it, that is the finding.
-
-Problem · practical justification · what is already known · conceptual
-model · methodological approach · sample · **data and access** ·
-internal validity · external validity · **limitations** · work plan ·
-ethics · references
-
-::: {.callout-important appearance="simple"}
 Two questions move a grade more than anything else.
 
-**Is the claim in the first sentence?** And **could it come out the other
-way?**
+::: {.callout-important appearance="simple"}
+Is the claim in the first sentence?
+
+And could it come out the other way?
 :::
 
-::: {.notes}
-This convention is shared across the 6991 sections — criteria are
-delivered as the headings a paper must answer, not as a points rubric.
-The full quality scale is on the syllabus.
+Your proposal is graded against the headings it has to answer. They are on
+the site, and we come back to them all term.
 
-Say the thing they will not expect: stating a limitation well EARNS
-marks. Hiding one costs them. Most students arrive believing the
-opposite.
+::: {.notes}
+Do not read the thirteen headings out on day one — they have no project
+yet and it lands as a wall. Point at the syllabus and move on.
+
+The convention is shared across the 6991 sections: criteria are the
+headings a paper must answer, not a points rubric.
+
+Say the thing they will not expect: stating a limitation well EARNS marks.
+Hiding one costs them. Most students arrive believing the opposite.
 :::
 
 ## Quizzes {.smaller}
 
-**Short, in class, and without warning.** About six across the semester.
+Short, in class, and without warning. About six across the semester.
 
 - Three questions, three minutes, on your own device
-- **On the lecture you are sitting in**, not on a reading
+- On the lecture you are sitting in, not on a reading
 - Tied to your NetID — it is also the attendance record
-- **The lowest is dropped**, so an honest miss costs nothing
+- The lowest is dropped, so an honest miss costs nothing
 
 ::: {.notes}
 Say why they are unannounced: a quiz you can revise for is a reading
@@ -307,14 +304,14 @@ No quiz today. Say the mechanic and move on.
 Writing the code is no longer the scarce skill. Neither is drafting the
 prose. Knowing what to ask for is. So is noticing when the answer is wrong.
 
-From meeting 12 you work with real data through an assistant. **What is
+From meeting 12 you work with real data through an assistant. What is
 graded is the questions you ask and the checks you run, never code you
-wrote.**
+wrote.
 
 ::: {.callout-note appearance="simple"}
 McKinsey now runs analyst interviews where you work a problem live on
-their AI platform, and they score **how you prompt it, how you catch it
-being wrong, and how you turn that into a recommendation.**
+their AI platform, and they score how you prompt it, how you catch it
+being wrong, and how you turn that into a recommendation.
 :::
 
 ::: {.notes}
@@ -332,7 +329,7 @@ flatten the room. It belongs in meeting 14.
 
 Ask an assistant for references on your topic. Right now.
 
-Then **open every single one**.
+Then open every single one.
 
 ::: {.callout-important appearance="simple"}
 A fabricated citation in your literature review is an academic integrity
@@ -360,11 +357,11 @@ you can never delegate, which is the same lesson as meeting 12.
 
 ## Where ideas come from {.smaller}
 
-1. A **gap** in what is known
-2. **Extending or contesting** a published result
-3. An **anomaly** — something that should not be true
-4. A **decision** somebody actually has to make
-5. A **dataset** that exists and nobody has looked at properly
+1. A gap in what is known
+2. Extending or contesting a published result
+3. An anomaly — something that should not be true
+4. A decision somebody actually has to make
+5. A dataset that exists and nobody has looked at properly
 
 Route 5 is the most dangerous, and we come back to why.
 
@@ -379,7 +376,7 @@ actually constrains you.
 Most of your education has rewarded execution. Do the analysis well. Write
 it up clearly.
 
-**This course rewards the part before that.** Finding a question worth
+This course rewards the part before that. Finding a question worth
 answering is a separate skill. It is harder than executing one.
 
 And it is the most enjoyable thing you will do all semester. Do not rush
@@ -395,11 +392,11 @@ execute, and a bad question executed beautifully is still a bad project.
 
 Partly. Two ideas have real evidence behind them.
 
-**Start from your means, not your goal.** Experts do not pick a goal and
+Start from your means, not your goal. Experts do not pick a goal and
 hunt for means. They start from what they have — who they are, what they
 know, whom they know — and work forward.
 
-**Generate, then judge. Never both at once.** Teams that evaluate while
+Generate, then judge. Never both at once. Teams that evaluate while
 brainstorming produce fewer ideas, and safer ones.
 
 ::: {.notes}
@@ -412,20 +409,20 @@ having somebody else judge it. Say that when you set it up.
 
 ## What the last two cohorts did {.smaller}
 
-**2026**
+2026
 
 ESG strategy → return on equity · inventory turnover → performance ·
 investor sentiment → S&P return · Wikipedia pageviews → stock returns ·
 what drives engagement on TikTok
 
-**2023**
+2023
 
 Twitter sentiment → NFT returns · social media sentiment → stock return ·
 weather → stock return · ESG score → annual return · organic food choices ·
 sustainability and Gen Z purchasing
 
 ::: {.callout-important appearance="simple"}
-**Four of the five 2026 projects are the same project.** What is it?
+Four of the five 2026 projects are the same project. What is it?
 :::
 
 ::: {.notes}
@@ -449,14 +446,14 @@ was allowed. It is allowed.
 
 ## Six anti-patterns {.smaller}
 
-1. **The topic with no question.** "AI in finance."
-2. **The dataset in search of a question.** You found a nice dataset and
+1. The topic with no question. "AI in finance."
+2. The dataset in search of a question. You found a nice dataset and
    have been reverse-engineering a question onto it since.
-3. **The consulting deck.** Secondary research with no empirical work of your own.
-4. **The unobtainable-data project.** Beautiful design; requires
+3. The consulting deck. Secondary research with no empirical work of your own.
+4. The unobtainable-data project. Beautiful design; requires
    proprietary data from a firm nobody on the team knows.
-5. **The dissertation.** Correctly scoped for three years.
-6. **The already-answered question.** This is what the literature review
+5. The dissertation. Correctly scoped for three years.
+6. The already-answered question. This is what the literature review
    is *for*.
 
 ::: {.notes}
@@ -471,11 +468,11 @@ January.
 
 Four questions. A "no" on any one is fatal — and cheap to discover *now*.
 
-1. Could a team of 3–5 execute this in **one spring semester**?
-2. Can you name the **specific dataset**, who holds it, and how you get it
+1. Could a team of 3–5 execute this in one spring semester?
+2. Can you name the specific dataset, who holds it, and how you get it
    — *checked, not assumed*?
-3. Does the design produce an answer that **could come out either way**?
-4. Would somebody **actually act differently** depending on the answer?
+3. Does the design produce an answer that could come out either way?
+4. Would somebody actually act differently depending on the answer?
 
 ::: {.notes}
 Question 2 is the one they will fudge. Push on "checked, not assumed" —
@@ -486,14 +483,14 @@ This filter is what session B runs on. Do not cut it.
 
 ## Break {.smaller}
 
-**Back at 3:35.**
+Back at 3:35.
 
 # Session B · Your interests
 
 ## What this hour is for {.smaller}
 
-Teams do not exist yet. **I form them from what you tell each other this
-afternoon**, and from the statement you write this week.
+Teams do not exist yet. I form them from what you tell each other this
+afternoon, and from the statement you write this week.
 
 So the job is to get your interest into one sentence somebody else can
 repeat back to you.
@@ -508,10 +505,10 @@ of the teams they get.
 
 Three lines. Ten minutes. Your name at the top.
 
-1. **What you are interested in**, in one sentence
-2. **One thing you bring** that most people in this room do not — a job,
+1. What you are interested in, in one sentence
+2. One thing you bring that most people in this room do not — a job,
    an industry, a language, access to somebody
-3. **One person or organisation** who would do something differently if
+3. One person or organisation who would do something differently if
    they knew the answer
 
 ::: {.notes}
@@ -524,13 +521,13 @@ formation and it is better than the statements you get next week.
 
 ## Now trade {.smaller}
 
-**Three rounds. Seven minutes each. New partner every round.**
+Three rounds. Seven minutes each. New partner every round.
 
 | | Your partner's job |
 |:--|:--|
-| **1** | Say your interest back to you **in one sentence**. You accept it or fix it |
-| **2** | Name **who would act** on the answer |
-| **3** | Name **what you have** that the room does not — and one person here you should talk to |
+| 1 | Say your interest back to you in one sentence. You accept it or fix it |
+| 2 | Name who would act on the answer |
+| 3 | Name what you have that the room does not — and one person here you should talk to |
 
 Your partner writes on your card and signs it.
 
@@ -545,8 +542,8 @@ If the room is odd-numbered, join in yourself.
 
 Every card goes up.
 
-Five minutes to walk the room and **put your initials on any card whose
-question you would be glad to work on.**
+Five minutes to walk the room and put your initials on any card whose
+question you would be glad to work on.
 
 ::: {.callout-note appearance="simple"}
 Initials mean *"I would work on this"* — not *"this is good"*.
@@ -567,13 +564,13 @@ form teams next week.
 
 Before you assume data has to be bought or scraped:
 
-- **The Cornell library's licensed holdings** — more than most students
+- The Cornell library's licensed holdings — more than most students
   realise, and already paid for
-- **Dewey**, a commercial data marketplace the Johnson College subscribes
-  to. **You have access at no cost.**
+- Dewey, a commercial data marketplace the Johnson College subscribes
+  to. You have access at no cost.
 
-**Register tonight** at [app.deweydata.io](https://app.deweydata.io) with
-your **Cornell email** — approval is a human step, so it takes days.
+Register tonight at [app.deweydata.io](https://app.deweydata.io) with
+your Cornell email — approval is a human step, so it takes days.
 
 ::: {.notes}
 Five minutes at the end, on the projector, from YOUR account — students
@@ -585,13 +582,13 @@ good question because they assumed the data was unreachable. Check first.
 
 ## Before next week {.smaller}
 
-**Statement of interest** — one to two pages, due before meeting 2.
+Statement of interest — one to two pages, due before meeting 2.
 
 - What you might want to work on, and why it matters
 - What you want out of it professionally
 - What you bring to it that most people here do not
 
-**I form the teams from these.** Meeting 2 is causal language, and your
+I form the teams from these. Meeting 2 is causal language, and your
 team writes down its own ground rules.
 
 ::: {.notes}

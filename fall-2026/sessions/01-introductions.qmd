@@ -127,7 +127,7 @@ You are not writing a paper for a journal.
 
 - No gap in the literature to fill
 - No contribution to claim
-- Nobody is going to referee this for *AJAE*
+- Nobody is going to referee this for an academic journal
 
 ::: {.notes}
 The single most common misunderstanding. Students hear "research design"

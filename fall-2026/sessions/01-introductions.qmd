@@ -348,55 +348,87 @@ and it will flatten the room. It belongs in meeting 14.
 Teams do not exist yet. I form them from what you tell each other this
 afternoon, and from the statement you write this week.
 
-So: get into groups, work out what you would actually like to explore, and
-tell the room.
+Two rounds, different groups each time.
 
 ::: {.notes}
-Groups of four or five, by proximity — do not spend ten minutes optimising
-the grouping. Say out loud that these are NOT the teams, or some of them
-will negotiate instead of working.
+Groups of five, by proximity. Say out loud that these are NOT the teams, or
+some of them will negotiate instead of working.
+
+Sit them in circles. It matters — a circle makes listening visible and a
+row does not.
 :::
 
-## In your group {.smaller}
+## Round one · say it, then hear it back {.smaller}
 
-Round the group first. Two minutes each: what you would like to explore,
-and why it interests you.
+In your circle, one at a time:
 
-Then brainstorm together. You are looking for things worth a semester.
+1. You say what you would like to explore, and why it interests you
+2. The person on your left says it back, in one sentence
+3. You confirm it, or fix it in one sentence
 
-::: {.callout-note appearance="simple"}
-Generate first. Judge later.
-
-Teams that evaluate while brainstorming produce fewer ideas, and safer
-ones. Nobody says "that will not work" for the first fifteen minutes.
-:::
+Then the next person. Everyone speaks once and summarizes once.
 
 ::: {.notes}
-Twelve minutes going round, fifteen brainstorming. Circulate and push on
-one thing only: who would act differently if they knew the answer? If
-nobody, it is a topic and not yet a question.
+Twenty minutes. Two each, roughly.
 
-Hold the no-judging rule. It is the whole reason this produces more than a
-polite conversation.
+The summary is the exercise, not the speech. Say that before you start:
+your job while somebody talks is not to plan your own turn.
+
+The correction in step 3 is where the work happens. Most summaries come
+back subtly wrong, and that is the moment a vague interest gets sharper.
+Push on it if a group is being polite: "is that actually what you meant?"
+
+Circulate with a pen. What you hear here is better than what you get in
+the statements next week.
+:::
+
+## Round two · new groups, and what stands in the way {.smaller}
+
+Re-form into different groups of five.
+
+1. Describe your idea again — to people who have not heard it
+2. **The group** names the obstacles. Not you
+3. You write them down
+
+::: {.notes}
+Eighteen minutes.
+
+The group names the obstacles, not the owner — the owner is invested and
+has usually been avoiding the obvious one. Somebody hearing it cold names
+it in ten seconds.
+
+Expect: no data, nobody who would act on it, too big, already answered.
+Those are four of the six anti-patterns and half the feasibility filter,
+arrived at by the room rather than taught. Do not name them as such today.
+Meeting 3 does that, and it lands harder because they got there first.
+
+Second time describing it to a fresh audience is also the real test of
+whether it is communicable. The first group already knew what they meant.
 :::
 
 ## Report back {.smaller}
 
-Pick your three best and write them down.
+Each group picks two or three to tell the room.
 
-For each one: what you would explore, and who would care about the answer.
+For each: what the person wants to explore, and the biggest obstacle the
+group found.
 
-Then one person reports them to the room. Two minutes per group.
+::: {.callout-note appearance="simple"}
+You never report your own. Somebody else says yours.
+:::
 
 ::: {.notes}
-Eight minutes to write, fifteen to report — six groups at about two and a
-half minutes.
+Twelve minutes — six groups at about two minutes.
 
-Write every idea on the board as it comes. The room seeing all of them at
-once is the point: overlaps become visible, and that is how people find
-each other before the statement of interest is due.
+Never your own is the rule that makes the listening real, and it removes
+the defensiveness people bring to describing their own idea.
 
-Collect the sheets. They are half of what you form teams from.
+Write every one on the board as it comes. The room seeing them all at once
+is the point: overlaps become visible, and that is how people find each
+other before the statement of interest is due.
+
+Collect every sheet. Together with the statements, this is what you form
+teams from.
 :::
 
 ## Where to look for data {.smaller}
@@ -528,17 +560,28 @@ Route 5 done badly is anti-pattern 2.
 Teams do not exist yet. They are formed from what you tell each other this
 afternoon and from the statement of interest you write this week.
 
-You work in groups of four or five. First round the group, two minutes each:
-what you would like to explore, and why it interests you. Then brainstorm
-together, looking for things worth a semester. Generate first and judge
-later --- teams that evaluate while brainstorming produce fewer ideas, and
-safer ones, so nobody says "that will not work" for the first fifteen
-minutes.
+**Round one.** In circles of five, one at a time: you say what you would
+like to explore and why it interests you. The person on your left says it
+back in one sentence. You confirm it, or fix it in one sentence. Everyone
+speaks once and summarizes once.
 
-Then pick your three best. For each, write what you would explore and who
-would care about the answer. One person reports them to the room, and every
-idea goes on the board, because seeing them all at once is how overlaps
-become visible.
+The summary is the exercise, not the speech. Your job while somebody talks
+is not to plan your own turn. Most summaries come back subtly wrong, and
+the correction is the moment a vague interest gets sharper --- which is the
+whole course in miniature. If somebody else cannot restate your claim, it
+is not clear yet.
+
+**Round two.** New groups. Describe your idea again, to people who have not
+heard it, and the group names the obstacles. Not you --- the owner of an
+idea is invested in it and has usually been avoiding the obvious problem,
+and somebody hearing it cold names it in ten seconds. Write them down.
+
+**Report back.** Each group tells the room two or three: what the person
+wants to explore, and the biggest obstacle the group found. You never
+report your own.
+
+Every idea goes on the board, because seeing them all at once is how
+overlaps become visible.
 
 These are not the teams.
 

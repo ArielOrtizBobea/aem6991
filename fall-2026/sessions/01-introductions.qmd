@@ -396,8 +396,8 @@ brainstorming produce fewer ideas, and safer ones.
 The first is effectuation, from Sarasvathy's think-aloud studies of expert
 entrepreneurs. It is the licence for what happens this afternoon.
 
-The second is why the relay separates round 1 from the later rounds, and
-scores them separately. Say that when you set it up.
+The second is why session B separates writing your interest down from
+having somebody else judge it. Say that when you set it up.
 :::
 
 ## What the last two cohorts did {.smaller}
@@ -478,236 +478,99 @@ This filter is what session B runs on. Do not cut it.
 
 **Back at 3:35.**
 
-# Session B · The literature
+# Session B · Your interests
 
-## Why you search {.smaller}
+## What this hour is for {.smaller}
 
-Not to find a gap. To answer two questions:
+Teams do not exist yet. **I form them from what you tell each other this
+afternoon**, and from the statement you write this week.
 
-1. **Has somebody already answered this?** If yes, that is good news found
-   cheaply — change the question now, not in November.
-2. **How do people answer questions like this?** The design, the data
-   source, the unit of analysis. You are shopping for a method.
+So the job is to get your interest into one sentence somebody else can
+repeat back to you.
 
 ::: {.notes}
-Frame it as reconnaissance, not scholarship. That reframing is what makes
-it tolerable for students who did not come here to read journals.
+Say plainly that this is not a brainstorm and not an icebreaker. It is the
+input to team formation, and the quality of what they write is the quality
+of the teams they get.
 :::
 
-## How to search {.smaller}
+## Write your card {.smaller}
 
-- **Start broad, then chase citations.** One good recent paper gives you
-  its reference list *and* everything that has cited it since.
-- **Google Scholar, then the library.** Cornell has access to nearly
-  everything; use the library proxy rather than paying anyone.
-- **Read in this order:** abstract → figures and tables → conclusion →
-  method. Most papers are decided in the first three.
-- **Business sources count.** Industry reports, trade press, company
-  filings. For most of your archetypes these matter more than journals.
+Three lines. Ten minutes. Your name at the top.
 
-## How to screen {.smaller}
+1. **What you are interested in**, in one sentence
+2. **One thing you bring** that most people in this room do not — a job,
+   an industry, a language, access to somebody
+3. **One person or organisation** who would do something differently if
+   they knew the answer
 
-For each candidate, one line:
+::: {.notes}
+Line 3 is the one that does the work. If they cannot name anybody, the
+interest is still a topic — say so, and say that is fine today.
 
-| Question | Design | Data | What they found | Why it matters to us |
-|:--|:--|:--|:--|:--|
-
-Five to eight rows is a literature review at this stage. Eighty is
-procrastination.
-
-::: {.callout-important appearance="simple"}
-**Every reference gets opened.** Not the abstract someone quoted at you.
-The paper.
+Circulate. Read over shoulders. This is your first real signal for team
+formation and it is better than the statements you get next week.
 :::
 
-## What you already have {.smaller}
+## Now trade {.smaller}
 
-Before you assume data has to be bought, found, or scraped:
+**Three rounds. Seven minutes each. New partner every round.**
 
-- **The Cornell library's licensed holdings.** Far more than most
-  students realise, and already paid for.
-- **Dewey** — a commercial data marketplace Cornell JCB subscribes to.
-  **You have access at no cost.**
+| | Your partner's job |
+|:--|:--|
+| **1** | Say your interest back to you **in one sentence**. You accept it or fix it |
+| **2** | Name **who would act** on the answer |
+| **3** | Name **what you have** that the room does not — and one person here you should talk to |
+
+Your partner writes on your card and signs it.
+
+::: {.notes}
+Call time firmly at seven minutes. The rotation is the point — three
+strangers reading the same sentence is what turns a topic into a question.
+
+If the room is odd-numbered, join in yourself.
+:::
+
+## The wall {.smaller}
+
+Every card goes up.
+
+Five minutes to walk the room and **put your initials on any card whose
+question you would be glad to work on.**
 
 ::: {.callout-note appearance="simple"}
-Teams routinely propose buying data the College already has. Others
-abandon a good question because they assumed the data was out of reach.
-Check first.
+Initials mean *"I would work on this"* — not *"this is good"*.
 :::
+
+::: {.notes}
+Say the framing BEFORE the vote, not after.
+
+Then read out the three with the most initials. Do not read out the ones
+with none — read the count if you must, never the name. An interest nobody
+else picked is often the one with the least competition for it.
+
+Collect every card. They are the artifact, and they are half of how you
+form teams next week.
+:::
+
+## Where to look for data {.smaller}
+
+Before you assume data has to be bought or scraped:
+
+- **The Cornell library's licensed holdings** — more than most students
+  realise, and already paid for
+- **Dewey**, a commercial data marketplace the Johnson College subscribes
+  to. **You have access at no cost.**
 
 **Register tonight** at [app.deweydata.io](https://app.deweydata.io) with
-your **Cornell email** — approval is a human step, so you will not have
-access this minute.
-
-Worked examples of getting from a dataset to a question:
-[**Project ideas**](../project-ideas.qmd)
+your **Cornell email** — approval is a human step, so it takes days.
 
 ::: {.notes}
-Browse Dewey live on the projector — from YOUR account. Students will
-not have access yet: registration needs a Cornell email and then a manual
-approval by an institutional admin, which takes days. So today is a
-demonstration, not a hands-on. Tell them to register tonight so they are
-approved in time for the feasibility work.
+Five minutes at the end, on the projector, from YOUR account — students
+will not have access yet.
 
-Confirm the login works on the room machine before class.
-
-The point is filter question 2, from session A: "can you name the
-specific dataset, who holds it, and how you get it — checked, not
-assumed." For a lot of questions the honest answer changes once you
-know what you already have.
-:::
-
-## Working backwards from a dataset {.smaller}
-
-Pick one nobody in the room chose. Then:
-
-1. What could this data **answer**?
-2. Which of those would anybody **act on**?
-3. What does it **not** contain that you would need?
-
-::: {.callout-important appearance="simple"}
-This is route 5 done properly. Route 5 done badly is anti-pattern 2 —
-finding a dataset and rationalising a question onto it. The difference
-is that here the question still has to survive the filter, and you are
-allowed to walk away from the data.
-:::
-
-::: {.notes}
-Do this live, as a room. Five or six minutes, after the Dewey browse.
-It is a demonstration of the move, not the exercise itself — the relay
-is the exercise.
-
-The tension is real and worth naming out loud: I spent session A saying
-design before data, and now I am showing you a data catalogue in the
-first meeting. The resolution is that knowing what you can get changes
-which questions are *feasible* — it does not change what makes a
-question good. You still start from the question. You just stop
-proposing ones whose data you will never hold.
-
-Note the symmetry with how we will do writing later in the term: take
-the finished artifact apart to see the structure underneath, then build
-your own the same way. Reverse-engineering is a method here, not a
-trick.
-:::
-
-## The question relay {.smaller}
-
-Groups of four. Points.
-
-**Your group holds one dataset card.** After each round, **the datasets
-move one way and the question sheets move the other** — so no group ever
-gets its own question back.
-
-| The move | You get | You do |
-|:--|:--|:--|
-| **Write** | A dataset | Write the best question it could answer |
-| **Break & build** | A new dataset **+** somebody's question | **Break their question**, then write your own |
-| **Break & combine** | A new dataset **+** somebody's question | Break it, then **combine** any two datasets you have held |
-
-[Dataset cards and question sheet →](../handouts/relay-cards.qmd)
-
-::: {.notes}
-Groups of four. With ~25 in the room that is six or seven groups, and
-nine cards are printed, so you have spares.
-
-DECIDE TWO ROUNDS OR THREE NOW, and announce it. Two rounds is Write,
-then Break & combine — 14 minutes each, leaving a full 12 for read-outs.
-Three rounds is 10, 11 and 11, and read-outs drop to 6. Two is the
-recommendation for week 1, when you do not yet know how fast this room
-works.
-
-Say out loud that this grouping is TEMPORARY — real teams form from the
-statements of interest before meeting 2. Otherwise some of them will
-spend the hour negotiating instead of working.
-
-Cards: the nine datasets on the project-ideas page, printed. Pass
-datasets clockwise and sheets anticlockwise, so nobody ever breaks their
-own question.
-:::
-
-## Scoring {.smaller}
-
-- **+1** every time a question of yours **survives** a break attempt
-- **+1** every break you **land** — you must name *which* filter kills it
-- **+2** for the best **combination** question, decided by the room
-
-::: {.callout-important appearance="simple"}
-"I don't like it" is not a break. Name the filter:
-**scope** · **data you can actually get** · **could come out either way**
-· **somebody would act on it**
-:::
-
-::: {.notes}
-The scoring is doing real work, so do not soften it. Points for breaking
-teach the filter faster than points for building — and it rehearses the
-referee report they write in December.
-
-The combination bonus is the real prize. Dewey's datasets join on
-lat/long, ZIP, brand, company and ticker, so the good questions live in
-the joins. Say so before the combination round starts, not after.
-:::
-
-## Round 1 · write {.smaller}
-
-**What could this data answer?**
-
-Write three candidates. Then pick your best and put it at the top of the
-sheet.
-
-::: {.callout-note appearance="simple"}
-You did not choose this dataset. That is the point — it is the same move
-you make when somebody hands you a business problem you did not pick.
-:::
-
-::: {.notes}
-Circulate. Two failure modes to catch early: questions that are still
-topics ("housing affordability"), and questions the dataset cannot
-actually speak to.
-
-Call the last two minutes out loud, then rotate firmly. The clock is
-part of the exercise, so do not let a group talk past it.
-:::
-
-## Then break, and build {.smaller}
-
-**First, break the question you inherited.** Four filters. Write which
-one kills it — or write *survives*, honestly.
-
-**Then build.** On your new dataset — or, in the combination round, on
-**any two datasets your group has held**.
-
-::: {.notes}
-Give the break half about six minutes of whatever the round is, then
-call time and move them to building.
-
-In the combination round, walk the room saying the join keys out loud —
-parcels and stores and chargers all carry lat/long; postings and layoffs
-carry company; scanner and card data carry brand. That hint is what
-turns the combination from harder into better.
-
-Watch for the group that breaks everything on filter 2 because "we
-can't get the data." Push: you have the dataset in your hand. Filter 2
-is about *this* data, not imaginary data.
-:::
-
-## Read-outs {.smaller}
-
-**The two best combination questions.** And **one good kill** — the
-question, and which filter did it.
-
-::: {.callout-note appearance="simple"}
-A question you kill in August is a month you do not lose in March.
-:::
-
-::: {.notes}
-Ten minutes. Do the kill LAST and dwell on it — the killing is the
-lesson, not the winner.
-
-If nothing got killed all afternoon, say so plainly: it means the filter
-was applied too gently, and promise to push harder next week.
-
-Collect every sheet. They are the artifact, and they tell you who in
-this room already thinks like this.
+Teams routinely propose buying data the College already has. Others drop a
+good question because they assumed the data was unreachable. Check first.
 :::
 
 ## Before next week {.smaller}
@@ -796,8 +659,8 @@ filter — means-driven reasoning turns into anti-pattern 2 the moment you
 stop being willing to walk away from the means.
 
 **Generate, then judge. Never both at once.** Teams that evaluate while
-brainstorming produce fewer ideas, and safer ones. The relay separates
-the two on purpose, and scores them separately.
+brainstorming produce fewer ideas, and safer ones. Session B separates the
+two on purpose: you write first, and only then does anyone judge it.
 
 **Ask what job somebody is hiring the answer to do.**
 [Jobs to be Done](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done) reframes a question from "what does
@@ -886,34 +749,38 @@ on, and what does it not contain that you would need? The question still has
 to survive the filter, and you are still allowed to walk away from the data.
 Route 5 done badly is anti-pattern 2.
 
-### The question relay
+### Your interests
 
-Groups of four. Between rounds the datasets move one way and the question
-sheets move the other, so no group ever gets its own question back. Three
-moves, run over two or three rounds depending on the clock.
+Teams do not exist yet. They are formed from what you tell each other this
+afternoon and from the statement of interest you write this week.
 
-**Write.** You are handed a dataset you did not choose. What could it
-answer? Write three candidates and pick your best.
+Write a card: what you are interested in, in one sentence; one thing you
+bring that most people in this room do not; and one person or organisation
+who would do something differently if they knew the answer. The third line
+is the one that does the work. If you cannot name anybody, the interest is
+still a topic.
 
-**Break, then build.** You get a new dataset *and* somebody else's
-question. Break their question first — name which of the four filters
-kills it, or record honestly that it survives. Then write your own on the
-new dataset.
+Then three rounds, seven minutes each, a new partner every round. Your
+partner says your interest back to you in one sentence and you either
+accept it or fix it. Then they name who would act on it. Then they name
+what you have that the room does not, and one person here you should go and
+talk to. They sign every line they write.
 
-**Break, then combine.** Break again, then build the best question you can
-from **any two datasets your group has held**. Dewey's datasets join on
-latitude and longitude, ZIP, brand, company and ticker, and the good
-questions usually live in those joins.
+Then every card goes on the wall, and you put your initials on any question
+you would be glad to work on. Initials mean "I would work on this", not
+"this is good".
 
-**Scoring.** One point each time a question of yours survives a break, one
-point for every break you land, two points for the best combination
-question. "I don't like it" is not a break — you have to name the filter.
+### Where to look for data
 
-The nine dataset cards and the question sheet are a
-[printable handout](../handouts/relay-cards.qmd); the same nine, with what
-each joins on, are also listed on the
-[project ideas](../project-ideas.qmd) page. Cross out the failures and name
-which filter killed them.
+Before assuming data must be bought or scraped: the Cornell library's
+licensed holdings, and **Dewey**, a commercial data marketplace the Johnson
+College of Business subscribes to and which you can use at no cost. Teams
+routinely propose buying data the College already has, or drop a good
+question because they assumed the data was unreachable.
+
+**Register at [app.deweydata.io](https://app.deweydata.io) with your
+Cornell email**, tonight. Your account sits pending until an administrator
+approves it, so do not leave it until you need the data.
 
 Your team's output is submitted before you leave.
 

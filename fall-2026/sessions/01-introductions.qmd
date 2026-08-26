@@ -215,7 +215,27 @@ Say the one thing that matters: nothing is handed out on paper that is
 not also there, so a missed meeting is recoverable.
 :::
 
-## What you hand in, and when {.smaller}
+## The fourteen meetings {.smaller}
+
+| | |
+|:--|:--|
+| Getting started | 1 Introductions |
+| Foundations | 2 Theory and causality · 3 Finding the question · 4 Ethics and access · 5 Coding tools and AI |
+| Methods & designs | 6 Models and uncertainty · 7 Model failures · 8 Research designs I · 9 Research designs II |
+| Communication | 10 Writing · 11 Figures · 12 Speaking |
+| Delivery | 13 Midterm · 14 The pitch |
+
+::: {.notes}
+Thirty seconds, then navigate to the site and show one meeting page live —
+what session A covers, what session B makes you do, what is due.
+
+Do not walk all fourteen. The point is the shape: the question and the
+foundations first, then methods, then how to communicate it, then delivery.
+Say why that order — you cannot pick a design before you have a question,
+and you cannot get data before you know what the design needs.
+:::
+
+## Assignments you submit {.smaller}
 
 | | | |
 |:--|:--|:--|

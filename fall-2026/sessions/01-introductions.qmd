@@ -219,43 +219,41 @@ not also there, so a missed meeting is recoverable.
 
 | | | |
 |:--|:--|:--|
-| **Sep 2** | Statement of interest | individual |
-| **Sep 30** | **Project pitch** — 1 page, presented | team |
-| Oct 7 · Oct 21 | Writing 1 and 2 — reverse outlines | individual |
-| **Nov 11** | **Proposal outline** — the whole argument | team |
-| Nov 11 · Nov 18 | Writing 3 · Data exercises 1 and 2 | individual |
-| **Nov 18** | **Midterm**, in class | individual |
-| **Dec 2** | Final presentation · Referee report | team · individual |
-| **Dec 11** | **Research proposal** — ~5 pages | team |
+| Sep 2 | Statement of interest | individual |
+| Sep 2 | Your team's ground rules | team |
+| Sep 30 | Project pitch — 1 page, presented · rate your teammates | team |
+| Nov 11 | Proposal outline · rate your teammates | team |
+| Nov 18 | Midterm, in class | individual |
+| Dec 2 | Final presentation | team |
+| Dec 11 | Research proposal, ~5 pages | team |
 
 ::: {.notes}
-Three bolded team milestones and one exam. That is the spine — say it
-that way rather than reading the table.
+Three team milestones and one exam. That is the spine — say it that way
+rather than reading the table.
 
 The pitch is one page and five minutes. The outline is where the whole
 argument gets fixed. The proposal is that outline written out.
 
-Nov 18 is fixed and will not move.
+Nov 18 is fixed and will not move. Dec 11 is to be confirmed.
 :::
 
 ## How you are graded {.smaller}
 
-**Half individual, half team.** Nobody is carried, and nobody is sunk by a
-team.
+Half individual, half team.
 
 | | | | | |
 |:--|--:|:--|:--|--:|
-| Quizzes | 10% | | Team process | 10% |
-| Statement of interest | 5% | | Project pitch | 5% |
-| Writing portfolio | 10% | | Proposal outline | 10% |
-| Data exercises | 10% | | **Research proposal** | **20%** |
-| Midterm | 15% | | Final presentation | 5% |
+| Quizzes | 15% | | Project pitch | 5% |
+| Midterm | 15% | | Proposal outline | 15% |
+| Participation | 20% | | Research proposal | 30% |
 
 ::: {.notes}
-Do not read this table aloud line by line. Say the two things that
-matter: half of it is yours alone, and the team half is graded
-individually where it can be, so a passenger does not get the team's
-mark.
+Do not read the table. Say the two things that matter: half of it is yours
+alone, and the team half is one paper reached in three steps.
+
+Participation starts at full marks and you lose them — a missing statement
+of interest, an unfiled check-in, a late peer evaluation, arriving late, an
+absence without notice. The detail is on the site.
 
 Room is Riley-Robb B15 all semester. TA to be announced.
 :::

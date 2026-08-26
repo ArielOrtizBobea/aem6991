@@ -208,10 +208,20 @@ arielortizbobea.github.io/aem6991
 Canvas carries grades and submissions. Everything else is on the
 site.
 
+::: {.callout-warning appearance="simple"}
+Still being built. Meetings 2 onward are outlines for now, and they fill
+in before each meeting. The syllabus and the schedule are settled.
+:::
+
 ::: {.notes}
 Put it on the projector for thirty seconds. Open meeting 1's page, show
 that the slides and the manual are the same material, and show the
 schedule. Then close it.
+
+Be straight about the state of it — they will click through and find
+stubs. What is settled is the syllabus, the dates and the arc. What is not
+is the teaching material for meetings 2 to 14, which lands before each
+meeting.
 
 Say the one thing that matters: nothing is handed out on paper that is
 not also there, so a missed meeting is recoverable.

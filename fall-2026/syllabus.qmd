@@ -43,27 +43,31 @@ can actually be executed in AEM 6992 in the spring. The deliverable is
 that plan.
 
 This section builds that plan in the order the work actually happens.
+
 First, turn an interest into a question that can be answered. Then work
-out **what evidence would answer it** --- which means commanding the
-causal language applied economists use: counterfactuals and causal
-graphs, what the standard models estimate, where uncertainty and
-p-values come from, how inference goes wrong, and the designs that get
-around each failure. Only then go looking for data, because the design
-is what tells you which data you need. Teams who find data first end up
-rationalizing a question around whatever they found, and that is the
-most common way a capstone goes wrong.
+out **what evidence would answer it.** That means commanding the causal
+language applied economists use: counterfactuals and causal graphs, what
+the standard models estimate, where uncertainty and p-values come from,
+how inference fails, and the designs that get around each failure.
+
+Only then go looking for data. The design is what tells you which data
+you need. Teams who find the data first end up rationalising a question
+around whatever they found. That is the most common way a capstone goes
+wrong.
 
 The whole conceptual half is taught on examples from industry and the
-news, before anyone opens a dataset. Then comes the part most capstones
-skip: turning a construct into something a dataset can actually hold ---
-and, when nothing does, designing the survey or the experiment that
-would measure it and working out how large a sample it needs ---
-and the practical business of getting the data --- who holds it, what a
-data-use agreement costs in months, what the IRB needs, and what
-scraping and an API can and cannot get you. The back half is judgment:
-what to ask of a dataset, driving an AI assistant to answer it,
-checking whether the answer is credible, and seeing what a figure shows
-and what it hides.
+news, before anyone opens a dataset.
+
+Then comes the part most capstones skip. Turning a construct into
+something a dataset can actually hold. And when nothing does, designing
+the survey or the experiment that would measure it, and working out how
+large a sample that needs. Then the practical business of getting data:
+who holds it, what a data-use agreement costs in months, what the IRB
+needs, and what scraping and an API can and cannot get you.
+
+The back half is judgment. What to ask of a dataset. How to drive an AI
+assistant to answer it. How to tell whether the answer is credible. And
+what a figure shows, against what it hides.
 
 **Coming up with the question is treated as a skill, not a preamble.**
 Most of your education has rewarded execution. This course rewards the
@@ -73,31 +77,38 @@ question executed beautifully is still a bad project. It is also the most
 enjoyable part of the work, and the schedule gives it room.
 
 **Writing runs through the whole term rather than sitting at the end.**
-The research problem is taught in meeting 2, the memo in meeting 10,
-and the design paper in meeting 13, each with a short individual piece
-attached. So does teamwork: each team writes down its own ground
-rules in meeting 2 --- who does what, and what happens when somebody
-misses a deadline --- and every second session opens with a ten-minute
-check-in that is written down and graded. None of this assumes prior
-econometrics or programming.
+The research problem is taught in meeting 6, the memo in meeting 10, the
+design paper in meeting 13. Each has a short individual piece attached.
+
+Teamwork works the same way. Each team writes down its own ground rules
+in meeting 2 --- who does what, and what happens when somebody misses a
+deadline. Every second session then opens with a ten-minute check-in
+that is written down and graded.
+
+None of this assumes prior econometrics or programming.
 
 **This is not a coding course.** You will work with real data from
-meeting 11 onward, and you will do it through an AI
-assistant. What is graded is the questions you ask and the checks you
-run --- never code you wrote. The reason is that writing the code is no
-longer the scarce skill; knowing which analysis to ask for, and
-noticing when the answer that comes back is wrong, is. Students who
-want to build the pipeline themselves should take AEM 6850, which
-teaches exactly that and cannot be compressed into three hours here.
+meeting 11 onward, through an AI assistant. What is graded is the
+questions you ask and the checks you run. Never code you wrote.
+
+The reason is that writing the code is no longer the scarce skill.
+Knowing which analysis to ask for is. So is noticing when the answer
+that comes back is wrong.
+
+If you want to build the pipeline yourself, take AEM 6850. It teaches
+exactly that, and it cannot be compressed into three hours here.
 
 ## Audience and prerequisites
 
-Open to, and required of, AEM MPS students. **No formal prerequisites:**
-no econometrics, no prior programming, and none is taught. Where the
-course touches data directly it does so through an AI assistant, so no
-student is blocked by tooling. Students arriving with statistics or
-coding experience will find the data work easy; the design vocabulary
-and the verification habit will be new regardless of background.
+Open to, and required of, AEM MPS students.
+
+**There are no formal prerequisites.** No econometrics, no prior
+programming, and none is taught. Where the course touches data directly,
+it does so through an AI assistant. No student is blocked by tooling.
+
+If you arrive with statistics or coding experience, the data work will
+be easy. The design vocabulary and the verification habit will be new
+regardless of what you bring.
 
 ## Learning outcomes
 
@@ -133,23 +144,26 @@ This section adds two outcomes that serve the four above:
 -   A browser, and whatever you already write in.
 
 That is the whole stack. Meetings 1--10 need no software at all.
-Meetings 11--12 work on real data, and you will do that by uploading a
-file to an assistant and interrogating it --- which is also how the
-"do not upload restricted data" rule in the AI policy below stops being
-abstract.
+
+Meetings 11--12 work on real data. You will do that by uploading a file
+to an assistant and interrogating it. That is also where the "do not
+upload restricted data" rule below stops being abstract.
 
 **Code is discussed even though it is not taught.** Meeting 10 spends
-its first half on what a programming language actually is, why R, Python,
-Stata and SQL exist and differ, and the argument that matters: code is
-the only form of an analysis that can be checked, repeated, and handed to
-somebody else. You will drive it through an assistant --- but you cannot
-check what you cannot read at all. Meeting 11 covers the AI modalities and
-how each one fails.
+its first half on what a programming language actually is, and why R,
+Python, Stata and SQL exist and differ.
 
-Scraping, APIs, and version control are covered at the same level, in
-meetings 10 and 13: what they are, what they cost, and when they are
-worth it. You are not required to use any of them. We break a scraper in
-class rather than building one.
+Then the argument that matters. Code is the only form of an analysis
+that can be checked, repeated, and handed to somebody else. You will
+drive it through an assistant. But you cannot check what you cannot read
+at all.
+
+Meeting 11 covers the AI modalities and how each one fails.
+
+Scraping, APIs and version control get the same treatment, in meetings
+10 and 13. What they are, what they cost, when they are worth it. You
+are not required to use any of them. We break a scraper in class rather
+than building one.
 
 ## AI policy
 
@@ -164,14 +178,13 @@ apply to every deliverable:
     code from a colleague would be. Two failure modes are graded
     against explicitly, because they are the ones that destroy a
     research proposal:
-    -   **Fabricated citations.** Recent audits find invented
-        references at high rates across leading models. Every reference
-        in every submission must be one you have opened. A citation to
-        a paper that does not exist is treated as a fabrication, not a
-        typo.
-    -   **Plausible-but-wrong design advice.** Models confidently
-        recommend estimators whose assumptions your data violates. You
-        are responsible for the design you propose.
+    -   **Fabricated citations.** Models invent references, and they
+        do it convincingly. Every reference in every submission must be
+        one you have opened. A citation to a paper that does not exist
+        is a fabrication, not a typo.
+    -   **Plausible-but-wrong design advice.** Models will confidently
+        recommend an estimator whose assumptions your data violates.
+        The design you propose is yours.
 3.  **Do not paste restricted data into a public chatbot.**
     Confidential, IRB-restricted, and proprietary data stay on your
     machine.
@@ -181,11 +194,12 @@ Cornell Code. Failure to verify is graded against the rubric like any
 other error.
 
 ::: {.callout-note appearance="simple"}
-**Note.** Other sections of AEM 6991 restrict generative AI. This
-section takes the opposite posture deliberately: the deliverable here is
-a research proposal, which is precisely the genre where unverified AI
-output does the most damage, and the skill worth teaching is
-verification rather than abstinence.
+**Note.** Other sections of AEM 6991 restrict generative AI. This one
+takes the opposite position, deliberately.
+
+The deliverable here is a research proposal. That is exactly the genre
+where unverified AI output does the most damage. So the skill worth
+teaching is verification, not abstinence.
 :::
 
 ## Assessment
@@ -217,18 +231,20 @@ B- (≥ 75), C+ (≥ 70), C (≥ 65), C- (≥ 60), D (≥ 50), F (\< 50).
 One short quiz per meeting, delivered to your own device at 2:05, on
 the assigned reading. Three to five questions, three minutes.
 
-Many of them are scenario questions rather than definitions: *here is a
-situation and a question --- which design fits, and what would have to
-be true?*; *here is a design --- what would break it?*; *here is a
-figure --- what is it hiding?*; *here is a step an AI just did for you
---- how would you check it without reading the code?* Those are the
-questions worth asking, and they are the ones a chatbot cannot answer
-for a student who was not paying attention.
+Most are scenario questions, not definitions.
 
-The quizzes serve three purposes at once. They are the reading check
---- which is why this section does not assign Reading Notes. They are
-the attendance record. And they surface confusion at 2:05, while there
-are still two hours of class left to fix it.
+*Here is a situation --- which design fits, and what would have to be
+true?* *Here is a design --- what would break it?* *Here is a figure ---
+what is it hiding?* *Here is a step an AI just did for you --- how would
+you check it without reading the code?*
+
+Those are the questions worth asking. They are also the ones a chatbot
+cannot answer for a student who was not paying attention.
+
+The quizzes do three things at once. They are the reading check, which
+is why this section does not assign Reading Notes. They are the
+attendance record. And they surface confusion at 2:05, while there are
+still two hours left to fix it.
 
 Quizzes begin at meeting 2; there is no quiz in the first meeting.
 
@@ -246,36 +262,43 @@ want to work on, and why.** What the topic is, why it matters, and what
 you would want out of it professionally. I form the teams from these, so
 write it for me rather than for a grader.
 
-Name **which of the five project archetypes** your idea would be --- and
-why. The archetypes are introduced in meeting 1 and listed on that
-meeting's page. Getting this wrong costs you nothing; not being able to
-pick one at all is the useful signal, for you and for me, that the idea
-is still a topic rather than a question.
+Then name **which of the five project archetypes** your idea would be,
+and why. The archetypes are introduced in meeting 1 and listed on that
+meeting's page.
+
+Getting the archetype wrong costs you nothing. Not being able to pick
+one at all is the useful signal. It means the idea is still a topic
+rather than a question.
 
 ### Writing portfolio (10 %)
 
-Writing is taught in this course rather than assumed, and it is taught
-as a method rather than as advice. A piece of writing is built outline
-first: one topic sentence per paragraph, in order, before any prose
-exists. The fastest way to learn that is backwards, so two of the four
-pieces below are **reverse outlines** --- you take a finished text and
-reconstruct the skeleton that must have produced it. Meeting 6 teaches
-the method, meeting 10 applies it to the memo, and meeting 13 to the
-design paper.
+Writing is taught here rather than assumed. It is taught as a method,
+not as advice.
+
+A piece of writing is built outline first. One topic sentence per
+paragraph, in order, before any prose exists. The fastest way to learn
+that is backwards. So two of the four pieces below are **reverse
+outlines**: you take a finished text and reconstruct the skeleton that
+must have produced it.
+
+Meeting 6 teaches the method. Meeting 10 applies it to the memo. Meeting
+13 applies it to the design paper.
 
 {{< include _writing.qmd >}}
 
 These are graded on whether the argument survives contact with a
-reader: is the claim in the first sentence, does the evidence support
-it, and could somebody who is not in your team act on it. Length limits
-are limits.
+reader. Is the claim in the first sentence? Does the evidence support
+it? Could somebody outside your team act on it?
+
+Length limits are limits.
 
 ### Data exercises (10 %)
 
-Two short individual exercises, 5 % each. They exist so that every student
-personally handles data rather than delegating it to whoever on the
-team seems most comfortable with it. Both are done with an AI
-assistant, and neither is graded on code.
+Two short individual exercises, 5 % each.
+
+They exist so that every student handles data personally. Otherwise it
+gets delegated to whoever on the team seems most comfortable with it.
+Both are done with an AI assistant. Neither is graded on code.
 
 1.  **Interrogate a dataset.** Given a dataset you have not seen,
     submit the questions you asked of it, the answers you got, the
@@ -287,20 +310,21 @@ assistant, and neither is graded on code.
     version you think is more honest, and say in three sentences what
     the original was hiding and whether it was hiding it on purpose.
 
-What earns the marks is the interrogation and the verification --- a
-correct output you cannot justify scores badly, and a wrong output you
-caught yourself scores well.
+The marks are for the interrogation and the verification. A correct
+output you cannot justify scores badly. A wrong output you caught
+yourself scores well.
 
 ### Midterm (15 %)
 
-In class, first half of meeting 11. Open note, application-oriented short
-answers. It tests whether you can apply the design vocabulary to
-situations you have not seen --- not whether you memorized definitions.
+In class, first half of meeting 11. Open note, short answers.
+
+It tests whether you can apply the design vocabulary to a situation you
+have not seen. It does not test whether you memorised definitions.
 
 ### Team process (10 %)
 
 The course description calls team leadership and management a major
-component of this course, so it is graded as one rather than left to
+component of this course. So it is graded as one, rather than left to
 goodwill.
 
 - **The weekly check-in.** Every session B opens with ten minutes:
@@ -314,7 +338,7 @@ goodwill.
   followed it, not on how well it reads.
 - **Two peer evaluations**, in meetings 6 and 13, on a fixed template.
 
-This component is team-based in subject and individual in grade: two
+This component is team-based in subject and individual in grade. Two
 members of the same team can receive different marks for it, and
 routinely will. A student who does not contribute does not receive the
 team's grade.
@@ -323,39 +347,48 @@ team's grade.
 
 **You do not write the design paper in November.** You accumulate it.
 
-Every meeting is two halves: session A introduces a concept, and session
-B makes you use it --- first on a shared case, so the whole room can be
-compared and corrected, then on your own project. **That second half is
-what you hand in before you leave, and it is a piece of your paper.**
+Every meeting is two halves. Session A introduces a concept. Session B
+makes you use it --- first on a shared case, so the whole room can be
+compared and corrected, then on your own project.
+
+**That second half is what you hand in before you leave. It is a piece
+of your paper.**
 
 {{< include _builds.qmd >}}
 
 By meeting 13 the paper is not a blank page. It is thirteen artifacts
-you already made, argued about in the room the week you made them, and
-the job that week is assembling and writing them --- which is what
-meeting 13 teaches.
+you already made, each argued about in the room the week you made it.
+
+The job that week is assembling and writing them. That is what meeting
+13 teaches.
 
 ### Team deliverables (40 %)
 
-The sequence is the same one used across AEM 6991 sections, because it
-is what AEM 6992 needs in January. **Nothing is submitted as a finished
-paper out of nowhere.** Each written product is built in stages: the
-**outline** first --- topic sentences only, in order --- then the
-**sketch**, where each topic sentence gets its evidence in note form,
-and only then the full text. Each stage is submitted and graded as part
-of that deliverable's weight, so a broken argument is caught at the
-outline, where fixing it costs an afternoon rather than a week.
+The sequence is the same one used across AEM 6991 sections. It is what
+AEM 6992 needs in January.
+
+**Nothing is submitted as a finished paper out of nowhere.** Each
+written product is built in stages. The **outline** first: topic
+sentences only, in order. Then the **sketch**, where each topic sentence
+gets its evidence in note form. Only then the full text.
+
+Every stage is submitted and graded inside that deliverable's weight. So
+a broken argument is caught at the outline, where fixing it costs an
+afternoon rather than a week.
 
 {{< include _deliverables.qmd >}}
 
-**The data feasibility memo is specific to this section.** It exists
-because the most common way an MPS capstone fails is not a bad question
---- it is a good question whose data never arrives. Requiring the team
-to prove the data is real while there is still time to change course is
-the single highest-return deadline in the course. It is deliberately
-placed after meeting 9 teaches you what to ask of a dataset and meeting
-11 has you do it on real data --- you certify the data having actually
-interrogated some, not from theory.
+**The data feasibility memo is specific to this section.** The most
+common way an MPS capstone fails is not a bad question. It is a good
+question whose data never arrives.
+
+So the memo makes you prove the data is real while there is still time
+to change course. It is the single highest-return deadline in the
+course.
+
+Its position is deliberate. Meeting 9 teaches you what to ask of a
+dataset. Meeting 11 has you do it on real data. You certify your data
+having actually interrogated some, not from theory.
 
 **Late policy.** Team deliverables lose 10 % up to 8 hours late, 50 %
 from 8 to 72 hours, and are not accepted after 72 hours. Notify the
@@ -395,66 +428,82 @@ the final poster or plan is to be announced.*
 
 ## Readings
 
-Readings are assigned per meeting and posted on that meeting's page,
-where the opening quiz is drawn from them. Everything assigned is free,
-either through the Cornell library or openly online; there is no book to
-buy. The full term list is settled in the first weeks and announced
+Readings are assigned per meeting and posted on that meeting's page.
+The opening quiz is drawn from them.
+
+**There is no book to buy.** Everything assigned is free, either through
+the Cornell library or openly online. The full term list is settled in
+the first weeks and announced here.
+
+Two open texts carry most of the inference half, and are worth knowing
+about now. Cunningham,
+[*Causal Inference: The Mixtape*](https://mixtape.scunning.com/), and
+Huntington-Klein, [*The Effect*](https://theeffectbook.net/). Both are
+readable without prior econometrics, which is the binding constraint
 here.
 
-Two open texts carry most of Part II and are worth knowing about now:
-Cunningham, *Causal Inference: The Mixtape*, and Huntington-Klein, *The
-Effect*. Both are readable without prior econometrics, which is the
-binding constraint in this course. Adams, Khan, Raeside & White (2007),
-*Research Methods for Graduate Business and Social Science Students*
-(SAGE), is the shared text across AEM 6991 sections and is free through
-the Cornell library.
+Adams, Khan, Raeside & White (2007), *Research Methods for Graduate
+Business and Social Science Students* (SAGE), is the shared text across
+AEM 6991 sections. It is free through the Cornell library.
 
-Recurring readings: Sandberg & Alvesson (2020) on problematization; Haas &
-Mortensen (HBR) on teams; Stanley & Castles, *The So What Strategy*;
+Recurring readings: Sandberg & Alvesson on
+[problematization](https://doi.org/10.1177/1350508410372151); Haas & Mortensen on
+[teams](https://hbr.org/2016/06/the-secrets-of-great-teamwork); Stanley & Castles, *The So What Strategy*;
 Zelazny, *Say It With Charts*.
 
 ## Attendance
 
-The once-weekly format means missing one meeting is missing two
-sessions. Attendance is recorded through the opening quiz and through
-the session-B check-in. Two dropped quiz scores absorb two full
-absences without penalty and without a conversation. Beyond that,
-missed quizzes score zero, and a check-in you were not present for
-cannot be filed retrospectively.
+The format is once a week. So missing one meeting means missing two
+sessions.
+
+Attendance is recorded two ways: the opening quiz, and the session-B
+check-in. Two dropped quiz scores absorb two full absences, without
+penalty and without a conversation.
+
+Beyond that, missed quizzes score zero. And a check-in you were not
+present for cannot be filed retrospectively.
 
 If you are going to miss more than two meetings, talk to me early
 rather than late.
 
 ## Data practices
 
-Quiz submissions are tied to your netid and timestamped, and are used
-for grading and attendance. The roster, submissions, and any
-per-student credentials are held in Cornell-managed or
-instructor-controlled storage and are not published. Course materials
-in the public repository never contain student-identifying data.
+Quiz submissions are tied to your netid and timestamped. They are used
+for grading and attendance.
+
+The roster, your submissions, and any per-student credentials are held
+in Cornell-managed or instructor-controlled storage. None of it is
+published. Course materials in the public repository never contain
+student-identifying data.
 
 ## Academic integrity
 
-Every student is expected to abide by the Cornell University Code of
-Academic Integrity. Work submitted for credit is your own. AI
-assistance is permitted under the AI policy above; **failure to
-disclose AI use is a violation**, as is submitting a fabricated
-citation as a real one. Collaboration is expected on team assignments
-and not permitted on individual ones.
+Every student is expected to abide by the [Cornell University Code of
+Academic Integrity](https://theuniversityfaculty.cornell.edu/academic-integrity/).
+Work submitted for credit is your own.
+
+AI assistance is permitted under the policy above. **Failure to disclose
+AI use is a violation.** So is submitting a fabricated citation as a
+real one.
+
+Collaboration is expected on team assignments. It is not permitted on
+individual ones.
 
 ## Accommodations
 
-Students requesting academic accommodations should contact Cornell
-Student Disability Services and give me their accommodation letter as
-early in the semester as possible so arrangements can be made.
+If you need academic accommodations, contact [Student Disability
+Services](https://sds.cornell.edu/). Then give me your accommodation
+letter as early in the semester as you can, so arrangements can be
+made.
 
 ## Course materials
 
-Slides, readings, assignment specifications, and the schedule live on
-this site, which is generated from a public repository and updated
-through the term. Canvas carries grades and submissions.
+Slides, readings, assignment specifications and the schedule live on
+this site. It is generated from a public repository and updated through
+the term.
+
+Canvas carries grades and submissions.
 
 ------------------------------------------------------------------------
 
-*Last updated: 2026-08-12. This is a draft skeleton; schedule and
-policies will change before the start of term.*
+*Last updated: 2026-08-25. Schedule and policies may still change.*

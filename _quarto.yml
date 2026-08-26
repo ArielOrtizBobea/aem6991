@@ -40,7 +40,7 @@ website:
               href: fall-2026/sessions/04-ethics.qmd
             - text: " 5 Coding tools and AI"
               href: fall-2026/sessions/05-tools-and-ai.qmd
-        - section: "Part 3 — Methods & designs"
+        - section: "Part 3 — Methods"
           contents:
             - text: " 6 Models and uncertainty"
               href: fall-2026/sessions/06-models-uncertainty.qmd

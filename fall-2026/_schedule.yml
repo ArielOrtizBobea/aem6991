@@ -89,7 +89,7 @@ parts:
       through. Teams form here. So does the question.
 
   - id: 3
-    tab: "Methods & designs"
+    tab: "Methods"
     title: "Research methods and designs"
     blurb: >
       What the standard models estimate and where uncertainty comes from.

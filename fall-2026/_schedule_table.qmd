@@ -28,7 +28,7 @@
     <span class="t-desc">Every serious analysis is code, whether or not you wrote it. "Use AI" is four different things and they fail differently — only one of them produces output you can check. Then the practical business of getting a file at all: what Cornell already pays for, what an API is, and why scraping is the last resort dressed up as the clever one.</span></td>
   <td class="hw"></td></tr>
 
-<tr class="g-first g03"><td class="g-rail" rowspan="4"><span>Methods &amp; designs</span></td><td>Wed Sep 30</td>
+<tr class="g-first g03"><td class="g-rail" rowspan="4"><span>Methods</span></td><td>Wed Sep 30</td>
   <td class="topic"><a href="sessions/06-models-uncertainty.html">6 · Models and uncertainty</a>
     <span class="t-desc">What the standard models estimate, and how to read a coefficient in the units of the problem. Where uncertainty comes from, and what a p-value is not. Then the distinction that decides half your projects: explaining or predicting.</span></td>
   <td class="hw">Project pitch — one page, presented in class · Rate your teammates</td></tr>

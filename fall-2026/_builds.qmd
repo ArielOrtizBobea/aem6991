@@ -12,5 +12,4 @@
 | **10** &nbsp;Writing | Your problem statement, as an outline somebody outside your team could follow |
 | **11** &nbsp;Figures | Your project's key figure, drawn twice — as you expect it to look, and as it looks if you are wrong |
 | **12** &nbsp;Speaking | Your final-presentation deck, rehearsed and attacked — plus the gap between the claim you made and the claim the room heard |
-| **13** &nbsp;Midterm and workshop | Your outline, marked up by somebody outside your team |
 | **14** &nbsp;The pitch | Your plan, pitched — and what your team owes AEM 6992 over the break |

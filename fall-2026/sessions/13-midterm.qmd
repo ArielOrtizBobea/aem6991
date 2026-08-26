@@ -1,14 +1,18 @@
 ---
-title: "13 · Midterm and workshop"
+title: "13 · Midterm"
 subtitle: "Wednesday, November 18, 2026 · Meeting 13"
-pagetitle: "AEM 6991 · 13 Midterm and workshop"
+pagetitle: "AEM 6991 · 13 Midterm"
 ---
 
 ::: {.callout-note appearance="simple"}
 This page is a stub. Materials appear here before the meeting.
 :::
 
-**What you should be able to do after this meeting.** Design a study in writing under exam conditions. Then take an outline apart — somebody else's, and your own.
+::: {.callout-warning appearance="simple"}
+**Date not final.** Instructor off campus — the midterm is proctored; arrangements announced by week 10.
+:::
+
+**What you should be able to do after this meeting.** Design a study in writing, under exam conditions, for a situation you have not seen before.
 
 ## Session A · 2:05–3:15
 
@@ -20,10 +24,10 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Bring your outline. Workshop it in rotation, using the method from meeting 8: somebody outside your team reads your skeleton and tells you where the argument jumps, and you do the same for theirs. That pairing is where your referee report comes from. Then you rate your teammates for the second time.
+No session B. Class ends when you hand the midterm in.
 
 Your team's output is submitted before you leave.
 
 ## Due
 
-Rate your teammates · Writing 3 — plain-language summary
+Writing 3 — plain-language summary

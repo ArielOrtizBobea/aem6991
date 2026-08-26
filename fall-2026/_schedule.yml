@@ -137,7 +137,7 @@ writing:
     name: "Referee report"
     len: "2 pages"
     due_meeting: 14
-    desc: "A structured critique of another team's proposal outline, on the template used in class. You get theirs after meeting 13, and they get yours — so the critique arrives while there is still time to act on it."
+    desc: "A structured critique of another team's proposal outline, on the template used in class. Outlines are exchanged between partner teams at meeting 12, so the critique arrives while there is still time to act on it."
 
 # Team deliverables. One paper, reached in three milestones: a one-page pitch,
 # then the whole argument as a detailed outline, then the written proposal.
@@ -156,7 +156,7 @@ deliverables:
     name: "Proposal outline"
     weight: "10 %"
     due_meeting: 12
-    desc: "The whole proposal as a detailed outline. One topic sentence per paragraph, in order, with the evidence noted underneath — the citation, the number, the figure you will point at. It has to cover the question, the identification strategy and the assumption carrying it, the unit and sample, the data and exactly how you get it, the threats to validity, and the work plan for the spring. Workshopped in rotation at meeting 13. If the argument does not work here, it will not work at 5,000 words."
+    desc: "The whole proposal as a detailed outline. One topic sentence per paragraph, in order, with the evidence noted underneath — the citation, the number, the figure you will point at. It has to cover the question, the identification strategy and the assumption carrying it, the unit and sample, the data and exactly how you get it, the threats to validity, and the work plan for the spring. Exchanged with a partner team at meeting 12, who referee it. If the argument does not work here, it will not work at 5,000 words."
 
   - num: 3
     name: "Research proposal"
@@ -351,14 +351,15 @@ meetings:
     slug: "13-midterm"
     date: 2026-11-18
     part: 5
-    title: "Midterm and workshop"
-    desc: "The midterm: a situation, and you design the study that would answer it. Then the afternoon turns to your own outline, workshopped in rotation by somebody who has to find where your argument jumps."
-    goal: "Design a study in writing under exam conditions. Then take an outline apart — somebody else's, and your own."
+    title: "Midterm"
+    desc: "The midterm, and nothing else. You are given a situation and asked to design the study that would answer it, in writing. Class ends when you hand it in."
+    goal: "Design a study in writing, under exam conditions, for a situation you have not seen before."
     a: "**Midterm.** You are given a situation and asked to design a study to evaluate it, in writing. The question. The design, and the assumption carrying it. What data it requires. And what would undermine it. Open note. It tests whether you can apply the design vocabulary to a situation you have not seen, not whether you memorised definitions. There is nothing to revise beyond having turned up all term — it is the same move the room has made every week since meeting 2."
-    b: "Bring your outline. Workshop it in rotation, using the method from meeting 8: somebody outside your team reads your skeleton and tells you where the argument jumps, and you do the same for theirs. That pairing is where your referee report comes from. Then you rate your teammates for the second time."
-    builds: "Your outline, marked up by somebody outside your team"
+    b: "No session B. Class ends when you hand the midterm in."
+
     reading: "TBD"
-    due: "Rate your teammates · Writing 3 — plain-language summary"
+    due: "Writing 3 — plain-language summary"
+    reschedule: "Instructor off campus — the midterm is proctored; arrangements announced by week 10"
 
   - date: 2026-11-25
     note: "Thanksgiving recess — no class"

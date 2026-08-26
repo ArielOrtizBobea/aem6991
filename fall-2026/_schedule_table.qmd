@@ -58,10 +58,10 @@
     <span class="t-desc">A talk is an outline with pictures. One claim per slide, and the claim is the slide title, not a label. Then the genre you actually face: pitching a research plan to people who will never read the paper, and who want to know what it costs and what they would do differently.</span></td>
   <td class="hw">Proposal outline · Writing 2 — reverse outline and repair · Exercise 2 — rebuild and critique a figure, end of week</td></tr>
 
-<tr class="g-first g05"><td class="g-rail" rowspan="3"><span>Delivery</span></td><td>Wed Nov 18</td>
-  <td class="topic"><a href="sessions/13-midterm.html">13 · Midterm and workshop</a>
-    <span class="t-desc">The midterm: a situation, and you design the study that would answer it. Then the afternoon turns to your own outline, workshopped in rotation by somebody who has to find where your argument jumps.</span></td>
-  <td class="hw">Rate your teammates · Writing 3 — plain-language summary</td></tr>
+<tr class="g-first g05"><td class="g-rail" rowspan="3"><span>Delivery</span></td><td>Wed Nov 18<sup class="resched">*</sup></td>
+  <td class="topic"><a href="sessions/13-midterm.html">13 · Midterm</a>
+    <span class="t-desc">The midterm, and nothing else. You are given a situation and asked to design the study that would answer it, in writing. Class ends when you hand it in.</span></td>
+  <td class="hw">Writing 3 — plain-language summary</td></tr>
 <tr class="break-row"><td>Wed Nov 25</td><td>Thanksgiving recess — no class</td><td class="hw"></td></tr>
 <tr class="g-last g05"><td>Wed Dec 2</td>
   <td class="topic"><a href="sessions/14-final-presentations.html">14 · The pitch</a>
@@ -72,7 +72,7 @@
 </div>
 <p class="sched-note">
 <span class="resched">*</span> These dates are not final:
-<strong>Sep 23</strong> &mdash; Instructor traveling — this meeting is held remotely &middot; <strong>Oct 21</strong> &mdash; Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed
+<strong>Sep 23</strong> &mdash; Instructor traveling — this meeting is held remotely &middot; <strong>Oct 21</strong> &mdash; Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed &middot; <strong>Nov 18</strong> &mdash; Instructor off campus — the midterm is proctored; arrangements announced by week 10
 </p>
 
 <script>

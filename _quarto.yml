@@ -68,7 +68,7 @@ website:
               href: fall-2026/sessions/12-speaking.qmd
         - section: "Part 5 — Delivery"
           contents:
-            - text: "13 Midterm and workshop"
+            - text: "13 Midterm"
               href: fall-2026/sessions/13-midterm.qmd
             - text: "14 The pitch"
               href: fall-2026/sessions/14-final-presentations.qmd

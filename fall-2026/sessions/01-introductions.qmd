@@ -348,14 +348,25 @@ and it will flatten the room. It belongs in meeting 14.
 Teams do not exist yet. I form them from what you tell each other this
 afternoon, and from the statement you write this week.
 
-Two rounds, different groups each time.
+| | | |
+|:--|:--|--:|
+| Round one | In a circle — you say it, somebody says it back | 20 min |
+| Round two | New group — they find what stands in the way | 18 min |
+| Report back | Two or three per group, to the room | 12 min |
+| | Where to look for data, and what is due | 8 min |
 
 ::: {.notes}
+Put this up and leave it up while you explain. They pace themselves better
+when they can see that round one is not the whole hour.
+
 Groups of five, by proximity. Say out loud that these are NOT the teams, or
 some of them will negotiate instead of working.
 
 Sit them in circles. It matters — a circle makes listening visible and a
 row does not.
+
+If the break ran late, take it out of round two, not round one. Round one
+is the one that produces the sentence everything else uses.
 :::
 
 ## Round one · say it, then hear it back {.smaller}

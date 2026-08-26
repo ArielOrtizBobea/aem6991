@@ -1,6 +1,6 @@
 ---
 title: "1 · Introductions"
-subtitle: "Wednesday, August 26, 2026"
+subtitle: "Wednesday, August 26, 2026 · Who is in the room, how the course works, and what you want to explore"
 pagetitle: "AEM 6991 · 1 Introductions"
 format:
   html:
@@ -74,10 +74,11 @@ Four things, briefly:
 4. What you want out of this program, and after it
 
 ::: {.notes}
-Go round the room. Twenty-five students at about thirty seconds each is
-thirteen minutes, and it is the most expensive item in session A — but
-it is how the room learns who it is, and they hear each other's
-interests before teams get formed next week.
+Go round the room. This is the block — thirty minutes budgeted, and it
+will use them. It is how the room learns who it is, and they hear each
+other's interests before teams get formed next week.
+
+Session A has nine minutes of slack behind this. Let it run.
 
 Keep it moving. If someone runs long on item 4, that is the one to let
 breathe; items 1–3 are the ones to cut.

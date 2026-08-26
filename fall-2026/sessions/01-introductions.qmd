@@ -421,20 +421,49 @@ Teams routinely propose buying data the College already has. Others drop a
 good question because they assumed the data was unreachable. Check first.
 :::
 
-## Before next week {.smaller}
+## Your assignment {.smaller}
 
-Statement of interest — one to two pages, due before meeting 2.
+Statement of interest — one to two pages, due before meeting 2 on
+September 2.
 
 - What you might want to work on, and why it matters
 - What you want out of it professionally
 - What you bring to it that most people here do not
 
-I form the teams from these. Meeting 2 is causal language, and your
-team writes down its own ground rules.
+Some of what you need is already on your group's sheet from this
+afternoon. Use it.
 
 ::: {.notes}
-Say explicitly: "I don't know yet" is useful information, not a failure.
-It means the idea is still a topic. Write that down and I will help.
+This is the last thing they hear, so land it properly. Say the deadline
+twice.
+
+Point back at the board. The ideas they just generated, and the overlaps
+they just saw, are the raw material — this is not a blank page.
+:::
+
+## How the teams get made {.smaller}
+
+I read all of them, then form the teams.
+
+I am matching on two things: what you want to work on, and what you bring.
+A team of five people with the same background is a worse team.
+
+::: {.callout-note appearance="simple"}
+"I don't know yet" is useful information, not a failure. It means the idea
+is still a topic rather than a question, which is exactly what meeting 3
+is for.
+:::
+
+Teams are announced before meeting 2. Meeting 2 is causal language, and
+your team writes its own ground rules that afternoon.
+
+::: {.notes}
+Say plainly that they do not pick their teams, and say why: matching on
+interest and on complementary backgrounds beats self-selection, which
+sorts by who already knows whom.
+
+Tell them the honest thing about "I don't know yet" — it costs nothing,
+and it is better information for you than a fabricated certainty.
 :::
 
 ::::

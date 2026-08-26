@@ -215,15 +215,15 @@ Say the one thing that matters: nothing is handed out on paper that is
 not also there, so a missed meeting is recoverable.
 :::
 
-## The fourteen meetings {.smaller}
+## The fourteen meetings
 
 | | |
 |:--|:--|
 | Getting started | 1 Introductions |
-| Foundations | 2 Theory and causality · 3 Finding the question · 4 Ethics and access · 5 Coding tools and AI |
-| Methods & designs | 6 Models and uncertainty · 7 Model failures · 8 Research designs I · 9 Research designs II |
+| Foundations | 2 Causality · 3 Questions · 4 Ethics · 5 Tools and AI |
+| Methods | 6 Models · 7 Model failures · 8 Designs I · 9 Designs II |
 | Communication | 10 Writing · 11 Figures · 12 Speaking |
-| Delivery | 13 Midterm · 14 The pitch |
+| Delivery | 13 Midterm · 14 Pitch |
 
 ::: {.notes}
 Thirty seconds, then navigate to the site and show one meeting page live —
@@ -235,7 +235,7 @@ Say why that order — you cannot pick a design before you have a question,
 and you cannot get data before you know what the design needs.
 :::
 
-## Assignments you submit {.smaller}
+## Assignments you submit
 
 | | | |
 |:--|:--|:--|
@@ -276,30 +276,6 @@ of interest, an unfiled check-in, a late peer evaluation, arriving late, an
 absence without notice. The detail is on the site.
 
 Room is Riley-Robb B15 all semester. TA to be announced.
-:::
-
-## What good work looks like {.smaller}
-
-Two questions move a grade more than anything else.
-
-::: {.callout-important appearance="simple"}
-Is the claim in the first sentence?
-
-And could it come out the other way?
-:::
-
-Your proposal is graded against the headings it has to answer. They are on
-the site, and we come back to them all term.
-
-::: {.notes}
-Do not read the thirteen headings out on day one — they have no project
-yet and it lands as a wall. Point at the syllabus and move on.
-
-The convention is shared across the 6991 sections: criteria are the
-headings a paper must answer, not a points rubric.
-
-Say the thing they will not expect: stating a limitation well EARNS marks.
-Hiding one costs them. Most students arrive believing the opposite.
 :::
 
 ## Quizzes {.smaller}
@@ -363,7 +339,7 @@ and it will flatten the room. It belongs in meeting 14.
 
 # Session B · Your interests
 
-## What this hour is for {.smaller}
+## What this hour is for
 
 Teams do not exist yet. I form them from what you tell each other this
 afternoon, and from the statement you write this week.

@@ -438,24 +438,61 @@ Collect every sheet. Together with the statements, this is what you form
 teams from.
 :::
 
-## Where to look for data {.smaller}
+## What Cornell already pays for {.smaller}
 
-Before you assume data has to be bought or scraped:
+Before you assume data has to be bought or scraped.
 
-- The Cornell library's licensed holdings — more than most students
-  realise, and already paid for
-- Dewey, a commercial data marketplace the Johnson College subscribes
-  to. You have access at no cost.
+| | |
+|:--|:--|
+| Companies & finance | WRDS · Capital IQ · Refinitiv · PitchBook · EDGAR |
+| Markets & industries | Mintel · Passport · Statista · IBISWorld |
+| Demographics | SimplyAnalytics · census.gov · BLS |
+| Terminals | Bloomberg, three at Mann Library |
 
-Register tonight at [app.deweydata.io](https://app.deweydata.io) with
-your Cornell email — approval is a human step, so it takes days.
+The middle row is *reports*, not microdata. Good for sizing a market,
+useless for estimating on.
 
 ::: {.notes}
-Five minutes at the end, on the projector, from YOUR account — students
-will not have access yet.
+Two minutes. Do not read the list — say the point: this is tens of
+thousands of dollars of subscriptions you already have, and teams
+routinely propose buying data the College already owns.
 
-Teams routinely propose buying data the College already has. Others drop a
-good question because they assumed the data was unreachable. Check first.
+The full list with links is on the Where to get data page. Point at it.
+
+Bloomberg is worth an hour even if their project never uses one — it is
+the thing finance interviewers assume you have touched.
+:::
+
+## Dewey {.smaller}
+
+[app.deweydata.io](https://app.deweydata.io) — a commercial data
+marketplace the Johnson College subscribes to. About 84 datasets, free to
+you.
+
+| | |
+|:--|:--|
+| Property | Real estate transactions, listings, rents |
+| Foot traffic | Weekly patterns, store visits, points of interest |
+| Spending | Card panels, brand tracker, SKU-level transactions |
+| Labour | Job postings with salary, layoff notices, wages |
+| Firms & markets | Company insights, equities, bonds, ESG |
+| Place & risk | Climate risk, weather, CDC health, census tables |
+
+Register tonight with your Cornell email. Approval is a human step and
+takes days.
+
+::: {.notes}
+Three minutes, and browse it live from YOUR account — they will not have
+access yet.
+
+Say the two things they will ask. Yes it is free, the College pays. And
+no, you cannot pick a dataset and reverse-engineer a question onto it —
+though working backwards from what exists is legitimate if the question
+still has to survive on its own.
+
+Each dataset page carries its schema, coverage and dates. Making them
+click that is the lesson: naming a dataset is not the same as checking it
+holds what you need.
 :::
 
 ## Your assignment {.smaller}

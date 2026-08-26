@@ -1,7 +1,7 @@
 ---
-title: "1 · Finding a question"
+title: "1 · Intro and ideas"
 subtitle: "Wednesday, August 26, 2026 · Meeting 1"
-pagetitle: "AEM 6991 · 1 Finding a question"
+pagetitle: "AEM 6991 · 1 Intro and ideas"
 format:
   html:
     toc: true
@@ -20,47 +20,47 @@ format:
 
 :::: {.content-hidden when-format="revealjs"}
 
-[Slides](01-questions-slides.html) · [Syllabus](../syllabus.qmd)
+[Slides](01-questions-slides.html)
 
-This page is the manual for the meeting. The slides are the same material
-in condensed form. Everything here stays up after class.
+## Due before meeting 2 · September 2
 
-## Before class
-
-**Reading.** None
-
-No quiz this meeting — quizzes begin at meeting 2.
-
-## Due
-
-**Statement of interest**, before meeting 2 (September 2). One to two
-pages: what you might want to work on, why it matters, what you want out
-of it professionally, and **which of the five archetypes below your idea
-would be**. Teams are formed from these.
+**Statement of interest**, one to two pages. What you might want to work
+on, why it matters, what you want out of it professionally, and **which
+of the five archetypes below** your idea would be. Teams are formed from
+these.
 
 ::::
 
 :::: {.content-visible when-format="revealjs"}
 
-## Who I am {.smaller}
+# Introductions
 
-**Ariel Ortiz-Bobea.** I am an applied economist in Dyson. My own
-research is on agriculture and climate — what warming has already done
-to productivity, and what adapting to it is worth.
+## About me {.smaller}
 
-Which means I spend my working life on exactly the problem this course
-is about: **a question somebody cares about, data that was never
-collected to answer it, and the argument in between.**
+:::: {.columns}
+
+::: {.column width="64%"}
+- **Ariel Ortiz-Bobea.** Dyson School and the Brooks School of Public
+  Policy. At Cornell since 2014.
+- Before Cornell: Resources for the Future; PhD, University of Maryland;
+  Ministry of the Environment of the Dominican Republic.
+- Research: how people cope with environmental change — especially what
+  climate change does to the economy, and to agriculture in particular.
+  More at [arielortizbobea.github.io](https://arielortizbobea.github.io).
 
 Office 450B Warren · [ao332@cornell.edu](mailto:ao332@cornell.edu)
+:::
+
+::: {.column width="32%"}
+![](figures/about-me-sequoia.jpg){fig-align="center" height="420"}
+:::
+
+::::
 
 ::: {.notes}
-Three minutes, not ten. One concrete example of your own work is worth
-more than a CV — pick a result and say what the identification problem
-was, because that is the thing they will be doing all term.
-
-Say the honest version too: you have not taught this section before,
-which is why the survey in a moment actually changes what happens.
+Three minutes. Then one concrete result of your own and what its
+identification problem was — that is the thing they will be doing all
+term, and it is worth more than the CV.
 :::
 
 ## Who you are {.smaller}
@@ -71,94 +71,88 @@ which is why the survey in a moment actually changes what happens.
 [or text **arielortizbobea090** to **22333**]{style="font-size:0.7em"}
 :::
 
-A few questions about who is in the room. Nothing is graded and there
-are no wrong answers — I use it to decide how hard to lean on the
-technical half, and to form teams that are not accidentally lopsided.
-
 ::: {.notes}
-REPLACE the poll address above with the 6991 one before class.
+The address is YOUR presenter address, not the 6850 poll's. It serves
+whatever activity is currently activated, so what keeps the sections
+apart is the audience restriction, not the URL.
 
-Run items 1–5 while stragglers arrive, then 6–10. Read each bar chart
-back out loud as it fills — that reading-back IS the introduction, and
-it tells the room who it is faster than 25 people saying their names.
+TEST THIS SIGNED OUT BEFORE CLASS. The restriction puts a login wall in
+front of them. On 6850's day one that wall was discovered live, in the
+room. Do not repeat it.
 
-If you sent the survey last night, run only 6–10 here and show last
-night's results for 1–5. Saves six minutes of a tight session A.
+The survey went out last night. So run only items 6–12 here, and show
+last night's results for 1–5 and 13.
 
-PRIVACY: once the Canvas roster is synced these are tied to NetIDs. See
-_quizzes/s01-day-one.md — decide before you walk in.
+They have to log in with their Cornell email to respond. Anyone blocked
+is not in the participant group — a late add, or a mistyped NetID. Add
+them from the second screen if it is one or two; take the names and move
+on if it is more. Do not debug the roster in front of the room.
+
+SAY THIS OUT LOUD BEFORE ITEM 3. Responses are tied to your NetID. Items
+3–5 are demographic, so name the identification rather than letting them
+discover it. Item 5 keeps "Prefer not to say."
 :::
 
-## What the room looks like {.smaller}
+## Now you {.smaller}
 
-*(read the results back)*
+Four things, briefly:
 
-- Which concentrations are here
-- Who has done statistics, and who has not
-- Who has touched data, and in what
-- Where people want to land
-
-::: {.notes}
-This slide is a placeholder for you talking over the live charts. Say
-what surprises you. Two useful things to name out loud:
-
-— If most of the room has no econometrics: good, none is assumed and
-none is taught. Say it plainly; it is the single biggest anxiety.
-— If most of the room wants finance: flag that the prediction archetype
-is coming in meeting 3, so they know their shape is covered.
-:::
-
-## And a rehearsal {.smaller}
-
-The next one is **not a grade**. Every answer is correct.
-
-It is here so the plumbing is proved before it counts:
-
-- **From next week: one quiz per meeting, at 2:05**
-- Three to five questions, three minutes, on the reading
-- Tied to your NetID — it is also the attendance record
-- **The lowest two are dropped**, so an honest miss costs nothing
+1. **Your name, and where you are from**
+2. **What you studied or did before this** — training, or work
+3. **Your concentration**
+4. **What you want out of this program, and after it**
 
 ::: {.notes}
-Run item 12. Then say: there is no quiz today and no reading for today.
+Go round the room. Twenty-five students at about thirty seconds each is
+thirteen minutes, and it is the most expensive item in session A — but
+it is how the room learns who it is, and they hear each other's
+interests before teams get formed next week.
+
+Keep it moving. If someone runs long on item 4, that is the one to let
+breathe; items 1–3 are the ones to cut.
+
+Write down anything that sounds like a real question rather than a
+topic. You form teams from the statements of interest next week, and
+this is your first signal.
 :::
 
-## Today {.smaller}
+# The course
 
-**Session A** — what a capstone is, what it is not, and the five shapes a
-good one takes.
-
-**Session B** — where to find data you already have, and the question
-relay.
-
-::: {.notes}
-Point at the site once — arielortizbobea.github.io/aem6991 — and say the
-syllabus and the whole semester plan live there, not on a handout. Then
-move on; do not walk the syllabus. That is 20 minutes nobody remembers.
-
-Room is Riley-Robb B15 all semester. TA to be announced.
-:::
-
-
-# The arc
-
-## Two courses, one project
+## Two courses, one project {.smaller}
 
 **AEM 6991 (fall).** You produce a *plan* — a question, a design, and
 evidence that the data exists.
 
 **AEM 6992 (spring).** You *execute* that plan.
 
-The deliverable in December is a proposal somebody could actually hand to a
-team in January. That is the hardest constraint in this course, and every
-decision in it follows from that constraint.
+The deliverable in December is a proposal somebody could hand to a team in
+January.
 
 ::: {.notes}
-Say plainly: everything you commit to in the fall, you live with in the
-spring. A question that is vague in October is a disaster in March.
+Everything you commit to in the fall you live with in the spring. A
+question that is vague in October is a disaster in March.
 :::
 
-## What this is not
+## What this course is for {.smaller}
+
+By December you should be able to:
+
+- **Find a question** worth a semester, and say why it matters
+- **Design** a study that could answer it — and name the assumption
+  carrying it
+- **Prove the data exists**, can be obtained, and measures what you need
+- **Say what you can and cannot claim**, and defend that in a room
+- **Work in a team** that delivers on time, with the work split fairly
+
+::: {.notes}
+These are the registrar's four outcomes for 6991 plus the two this
+section adds — evidence sourcing, and design vocabulary. Do not read
+them off. Say the fifth one is graded as hard as the rest, because the
+course description calls teamwork a major component and every other
+section treats it as goodwill.
+:::
+
+## What this is not {.smaller}
 
 You are **not** writing a paper for a journal.
 
@@ -167,12 +161,11 @@ You are **not** writing a paper for a journal.
 - Nobody is going to referee this for *AJAE*
 
 ::: {.notes}
-This is the single most common misunderstanding. Students hear "research
-design" in the learning outcomes and reach for the genre they have seen in
-seminars. Kill it here.
+The single most common misunderstanding. Students hear "research design"
+and reach for the genre they have seen in seminars. Kill it here.
 :::
 
-## What it is
+## What it is {.smaller}
 
 > You are building the analysis a competent team would need before making a
 > decision that costs real money.
@@ -186,9 +179,8 @@ genre does.
 If the design would not survive a referee, it does not survive here. But
 the audience is a decision-maker, not a discipline.
 
-This also rescues the literature review from feeling academic: you read the
-literature to find out whether your question is already answered and how
-people have answered questions like it. Not to find a gap.
+This also rescues the literature review from feeling academic: you read to
+find out whether your question is already answered, not to find a gap.
 :::
 
 ## Where you are actually going {.smaller}
@@ -209,62 +201,216 @@ P&G · PwC · KPMG
 [Source: Cornell SC Johnson, MPS AEM career outcomes. 82% received offers
 within six months.]{style="font-size:0.55em; color:#6b6b6b"}
 
-::: {.callout-note appearance="simple"}
-In 2026, [GMAC asked 1,100 corporate recruiters](https://www.gmac.com/market-intelligence-and-research/market-research/corporate-recruiters-survey/the-corporate-recruiters-survey-2026-report) what
-they value in business graduates. **Communication** came first.
-**Problem-solving** second. **Data analysis and interpretation** fourth,
-up from tenth in one year.
-:::
-
 ::: {.notes}
 Essentially none of these are research jobs. That is the argument for the
 framing on the previous slide — not my taste, the placement data.
 
-Say the useful version out loud: the skill that transfers to every one of
-those jobs is being able to say what kind of claim you are making and what
-would make it wrong.
+In 2026 GMAC asked 1,100 corporate recruiters what they value in business
+graduates. Communication first. Problem-solving second. Data analysis and
+interpretation fourth, up from tenth in one year. Say it if you have the
+time; it is the argument for how the grade is weighted.
 :::
 
-# What shape is a good project?
+## Where everything lives {.smaller}
 
-## First, where ideas come from {.smaller}
+::: {style="text-align:center; font-size:1.25em"}
+**arielortizbobea.github.io/aem6991**
+:::
 
-Five routes into a topic:
+- **Every meeting has a page** — what session A covers, what session B
+  makes you do, and what is due
+- The **syllabus** is there in full, and it is the contract
+- Handouts, resources and worked examples, all permanent
+
+**Canvas carries grades and submissions. Everything else is on the
+site.**
+
+::: {.notes}
+Put it on the projector for thirty seconds. Open meeting 1's page, show
+that the slides and the manual are the same material, and show the
+schedule. Then close it.
+
+Say the one thing that matters: nothing is handed out on paper that is
+not also there, so a missed meeting is recoverable.
+:::
+
+## What you hand in, and when {.smaller}
+
+| | | |
+|:--|:--|:--|
+| **Sep 2** | Statement of interest | individual |
+| **Sep 30** | **Project pitch** — 1 page, presented | team |
+| Oct 7 · Oct 21 | Writing 1 and 2 — reverse outlines | individual |
+| **Nov 11** | **Proposal outline** — the whole argument | team |
+| Nov 11 · Nov 18 | Writing 3 · Data exercises 1 and 2 | individual |
+| **Nov 18** | **Midterm**, in class | individual |
+| **Dec 2** | Final presentation · Referee report | team · individual |
+| **Dec 11** | **Research proposal** — ~5 pages | team |
+
+::: {.notes}
+Three bolded team milestones and one exam. That is the spine — say it
+that way rather than reading the table.
+
+The pitch is one page and five minutes. The outline is where the whole
+argument gets fixed. The proposal is that outline written out.
+
+Nov 18 is fixed and will not move.
+:::
+
+## How you are graded {.smaller}
+
+**Half individual, half team.** Nobody is carried, and nobody is sunk by a
+team.
+
+| | | | | |
+|:--|--:|:--|:--|--:|
+| Quizzes | 10% | | Team process | 10% |
+| Statement of interest | 5% | | Project pitch | 5% |
+| Writing portfolio | 10% | | Proposal outline | 10% |
+| Data exercises | 10% | | **Research proposal** | **20%** |
+| Midterm | 15% | | Final presentation | 5% |
+
+::: {.notes}
+Do not read this table aloud line by line. Say the two things that
+matter: half of it is yours alone, and the team half is graded
+individually where it can be, so a passenger does not get the team's
+mark.
+
+Room is Riley-Robb B15 all semester. TA to be announced.
+:::
+
+## What good work looks like {.smaller}
+
+The **required headings are the criteria.** If a heading has nothing
+under it, that is the finding.
+
+Problem · practical justification · what is already known · conceptual
+model · methodological approach · sample · **data and access** ·
+internal validity · external validity · **limitations** · work plan ·
+ethics · references
+
+::: {.callout-important appearance="simple"}
+Two questions move a grade more than anything else.
+
+**Is the claim in the first sentence?** And **could it come out the other
+way?**
+:::
+
+::: {.notes}
+This convention is shared across the 6991 sections — criteria are
+delivered as the headings a paper must answer, not as a points rubric.
+The full quality scale is on the syllabus.
+
+Say the thing they will not expect: stating a limitation well EARNS
+marks. Hiding one costs them. Most students arrive believing the
+opposite.
+:::
+
+## Quizzes {.smaller}
+
+**Short, in class, and without warning.** About six across the semester.
+
+- Three questions, three minutes, on your own device
+- **On the lecture you are sitting in**, not on a reading
+- Tied to your NetID — it is also the attendance record
+- **The lowest is dropped**, so an honest miss costs nothing
+
+::: {.notes}
+Say why they are unannounced: a quiz you can revise for is a reading
+check, and a quiz you cannot is a reason to be here and paying
+attention. That is the thing worth rewarding.
+
+Run item 14 now as the rehearsal — every answer is correct, and it
+proves the plumbing before it counts.
+:::
+
+## AI: permitted, disclosed, verified {.smaller}
+
+Writing the code is no longer the scarce skill. Neither is drafting the
+prose. Knowing what to ask for is. So is noticing when the answer is wrong.
+
+From meeting 11 you work with real data through an assistant. **What is
+graded is the questions you ask and the checks you run, never code you
+wrote.**
+
+::: {.callout-note appearance="simple"}
+McKinsey now runs analyst interviews where you work a problem live on
+their AI platform, and they score **how you prompt it, how you catch it
+being wrong, and how you turn that into a recommendation.**
+:::
+
+::: {.notes}
+Say plainly that policies differ across sections and that this one is
+deliberately permissive. The McKinsey fact IS the reason, so do not rush
+it. Employers put "skills using AI tools" FIRST on what they expect to
+value in five years, while ranking it 14th today.
+
+Do NOT bring the grim version into week 1 — entry-level postings down
+35%, a third of employers already substituting AI. True, and it will
+flatten the room. It belongs in meeting 14.
+:::
+
+## The one that will bite you {.smaller}
+
+Ask an assistant for references on your topic. Right now.
+
+Then **open every single one**.
+
+::: {.callout-important appearance="simple"}
+A fabricated citation in your literature review is an academic integrity
+violation.
+
+"The AI generated it" is not a defence. It is an admission that you
+submitted something you never read.
+:::
+
+::: {.notes}
+LIVE DEMO — 5 minutes, do not skip it. Take a topic from the room, ask an
+assistant for five references with DOIs, then check them together on the
+screen.
+
+Expect a mix: some real, some plausible and wrong — real authors, real
+journal, invented title or year. If everything comes back real, say so
+honestly and try a narrower topic; the failure rate rises fast as the
+topic narrows.
+
+The lesson is not "AI is bad." It is that verification is the one step
+you can never delegate, which is the same lesson as meeting 11.
+:::
+
+# Finding a question
+
+## Where ideas come from {.smaller}
 
 1. A **gap** in what is known
 2. **Extending or contesting** a published result
-3. An **anomaly** — something in the news that should not be true
+3. An **anomaly** — something that should not be true
 4. A **decision** somebody actually has to make
 5. A **dataset** that exists and nobody has looked at properly
 
-Route 5 is the most dangerous, and we will come back to why.
+Route 5 is the most dangerous, and we come back to why.
 
 ::: {.notes}
-Routes are about where the idea comes from. That is not the same as what
-shape it has to take — which is the next 25 minutes, and the part that
+Routes are where the idea comes from. That is not the same as what shape
+it has to take — which is the next twenty minutes, and the part that
 actually constrains you.
 :::
 
 ## This part is the job {.smaller}
 
-Most of your education has rewarded execution. Do the analysis well.
-Write it up clearly.
+Most of your education has rewarded execution. Do the analysis well. Write
+it up clearly.
 
 **This course rewards the part before that.** Finding a question worth
-answering is a separate skill. It is harder than executing one. It is
-also the part that will still matter in ten years.
+answering is a separate skill. It is harder than executing one.
 
 And it is the most enjoyable thing you will do all semester. Do not rush
 it.
 
 ::: {.notes}
-Say this one slowly and mean it. Students arrive believing the creative
-part is a preamble to the real work. It is the real work — 6992 is where
-they execute, and a bad question executed beautifully is still a bad
-project.
-
-The employer evidence backs it: problem-solving ranked second of all
-skills, above strategic thinking and far above any technical skill.
+Say this slowly and mean it. Students arrive believing the creative part
+is a preamble to the real work. It is the real work — 6992 is where they
+execute, and a bad question executed beautifully is still a bad project.
 :::
 
 ## Is there a method? {.smaller}
@@ -273,19 +419,16 @@ Partly. Two ideas have real evidence behind them.
 
 **Start from your means, not your goal.** Experts do not pick a goal and
 hunt for means. They start from what they have — who they are, what they
-know, whom they know — and work forward. They *make* opportunities
-rather than find them.
+know, whom they know — and work forward.
 
 **Generate, then judge. Never both at once.** Teams that evaluate while
 brainstorming produce fewer ideas, and safer ones.
 
 ::: {.notes}
-The first is effectuation, from Sarasvathy's think-aloud studies of
-expert entrepreneurs. It is the licence for what happens this afternoon:
-you have a Dewey account and a concentration, and working forward from
-those is not a lesser way of doing it.
+The first is effectuation, from Sarasvathy's think-aloud studies of expert
+entrepreneurs. It is the licence for what happens this afternoon.
 
-The second is why the relay separates round 1 from rounds 2 and 3, and
+The second is why the relay separates round 1 from the later rounds, and
 scores them separately. Say that when you set it up.
 :::
 
@@ -306,10 +449,10 @@ Every project should be able to say, in one sentence, which of these it is.
 ::: {.notes}
 The point of this list is subtraction. "I'm interested in sustainable
 packaging" is a topic. Run it through five archetypes and you get five
-specific questions you could pursue — and four you should drop.
+specific questions — and four you should drop.
 
-The most consistent complaint students make about capstone courses is
-that the freedom is paralyzing. This list is the answer to it.
+The most consistent complaint about capstone courses is that the freedom
+is paralyzing. This list is the answer to it.
 :::
 
 ## 1 · Evaluation {.smaller}
@@ -326,7 +469,7 @@ effect.
   precisely by the units already changing
 
 *Did a loyalty-program relaunch change basket size? Did a tariff change
-shift import composition? Did a platform fee change move seller behavior?*
+shift import composition?*
 
 ::: {.notes}
 The single most common failure in the entire course lives on this slide:
@@ -338,10 +481,9 @@ selection into treatment. Flag it now, pay it off in meeting 4.
 **What would people choose, and what would they pay?** The decision is not
 yet made; the input needed is what people value.
 
-- **Claim:** causal, but about *elicited* choices — a real limitation, not
-  a footnote
+- **Claim:** causal, but about *elicited* choices — a real limitation
 - **Design:** choice experiments and conjoint, randomized price or message
-  tests, demand estimation — *meeting 7*
+  tests — *meetings 7 and 9*
 - **Data:** usually collected by you — an instrument you design
 - **Fails when:** stated preference reported as revealed preference; or
   n = 40 classmates generalized to a market
@@ -362,11 +504,11 @@ number about the future, not a cause.
 - **Fails when:** no out-of-sample test; look-ahead bias; or the team
   quietly starts making causal recommendations off a predictive model
 
-*Default risk. Demand forecasting. Churn. Commodity price exposure.*
+*Default risk. Demand forecasting. Churn.*
 
 ::: {.notes}
 40% of this class goes into finance, where this is often the honest
-project. I am not banning it. But the discipline is naming it: "this is
+project. I am not banning it. The discipline is naming it: "this is
 predictive, here is why that is right for this decision, here is what I
 therefore cannot conclude." That sentence is the whole course.
 :::
@@ -376,10 +518,9 @@ therefore cannot conclude." That sentence is the whole course.
 **Where is the gap, and what explains it?** Something varies more than it
 should and nobody knows why.
 
-- **Claim:** descriptive, hypothesis-generating — honest about being a
-  first step
-- **Design:** decomposition, benchmarking against a reference group,
-  careful description — *meetings 11–12*
+- **Claim:** descriptive, hypothesis-generating
+- **Design:** decomposition, benchmarking against a reference group —
+  *meetings 11–12*
 - **Data:** operational or administrative records at the unit where the
   variation lives
 - **Fails when:** description dressed up as a cause; or it stops at "here
@@ -392,12 +533,11 @@ leaks.*
 
 **Is this opportunity real, and what constrains it?**
 
-- **Claim:** descriptive synthesis, **plus at least one original
-  empirical component**
-- **Design:** market sizing, competitive benchmarking, regulatory and
-  cost constraints
-- **Fails when:** it becomes a deck of secondary research. No empirical
-  claim of your own
+- **Claim:** descriptive synthesis, **plus at least one original empirical
+  component**
+- **Design:** market sizing, competitive benchmarking, regulatory and cost
+  constraints
+- **Fails when:** it becomes a deck of secondary research
 
 ::: {.callout-warning appearance="simple"}
 **The dangerous one.** Approved only if it contains a specific, checkable
@@ -405,12 +545,10 @@ empirical question you answer with data you analyze yourselves.
 :::
 
 ::: {.notes}
-This is the type most likely to produce a bad capstone, and the one
-consulting-bound students gravitate to. Be explicit that the guardrail is
-real and it will be enforced at the feasibility memo in meeting 10.
+The type most likely to produce a bad capstone, and the one
+consulting-bound students gravitate to. The guardrail is real and it gets
+enforced at the feasibility memo in meeting 10.
 :::
-
-# What a bad project looks like
 
 ## What the last two cohorts did {.smaller}
 
@@ -424,55 +562,49 @@ what drives engagement on TikTok
 
 Twitter sentiment → NFT returns · social media sentiment → stock return ·
 weather → stock return · ESG score → annual return · organic food choices ·
-sustainability and Gen Z purchasing · a digital marketing strategy
+sustainability and Gen Z purchasing
 
 ::: {.callout-important appearance="simple"}
 **Four of the five 2026 projects are the same project.** What is it?
 :::
 
 ::: {.notes}
-Give the room ninety seconds. Do not answer it for them — someone will
-get there, and it lands infinitely harder from a student than from me.
+Ninety seconds. Do not answer it for them — someone will get there, and it
+lands infinitely harder from a student than from me.
 
-The answer: take a public signal anybody can download, regress a
-financial outcome on it, report a coefficient. Free data, no design, no
-decision attached, and every team that pulls the same feeds converges on
-the same five questions.
+The answer: take a public signal anybody can download, regress a financial
+outcome on it, report a coefficient. Free data, no design, no decision
+attached.
 
-Then the second question, which is the one that matters: WHY did that
-happen? Not because they were lazy. Because the data was free and
-available and the question got shaped to fit it. That is anti-pattern 2,
-and it is the default outcome unless you actively resist it.
+Then the question that matters: WHY did that happen? Not laziness. The
+data was free and available and the question got shaped to fit it. That is
+anti-pattern 2, and it is the default unless you actively resist it.
 
-Then say the thing they need permission to hear: the most ambitious
-project anyone here remembers ran online experiments on brand
-recognition, then talked a soda company into donating thousands of cans
-and ran a field experiment in dining halls. Nine-month MPS team. That
-took no econometrics — it took nerve, and knowing it was allowed.
-
-It is allowed.
+Then the permission they need to hear: the most ambitious project anyone
+remembers ran online experiments on brand recognition, then talked a soda
+company into donating thousands of cans and ran a field experiment in
+dining halls. Nine-month MPS team. No econometrics — nerve, and knowing it
+was allowed. It is allowed.
 :::
 
 ## Six anti-patterns {.smaller}
 
-1. **The topic with no question.** "AI in finance." A topic names a
-   subject; a question names an answer that could come out either way.
-2. **The dataset in search of a question.** You found a nice dataset in
-   week 2 and have been reverse-engineering a question onto it since.
+1. **The topic with no question.** "AI in finance."
+2. **The dataset in search of a question.** You found a nice dataset and
+   have been reverse-engineering a question onto it since.
 3. **The consulting deck.** Archetype 5 without the empirical component.
 4. **The unobtainable-data project.** Beautiful design; requires
    proprietary data from a firm nobody on the team knows.
-5. **The dissertation.** Correctly scoped for three years and four
-   co-authors.
+5. **The dissertation.** Correctly scoped for three years.
 6. **The already-answered question.** This is what the literature review
    is *for*.
 
 ::: {.notes}
-Number 2 is why this course is ordered the way it is — question, then
-design, then data. Teams who find data first rationalize a question around
-whatever they found, every single time.
+Number 2 is why this course is ordered question, then design, then data.
+Teams who find data first rationalize a question around it, every time.
 
-Number 4 has to die in meeting 9, at the feasibility memo. Not in January.
+Number 4 has to die in meeting 10, at the feasibility memo. Not in
+January.
 :::
 
 ## The feasibility filter {.smaller}
@@ -480,85 +612,21 @@ Number 4 has to die in meeting 9, at the feasibility memo. Not in January.
 Four questions. A "no" on any one is fatal — and cheap to discover *now*.
 
 1. Could a team of 3–5 execute this in **one spring semester**?
-2. Can you name the **specific dataset**, who holds it, and how you get
-   it — *checked, not assumed*?
+2. Can you name the **specific dataset**, who holds it, and how you get it
+   — *checked, not assumed*?
 3. Does the design produce an answer that **could come out either way**?
 4. Would somebody **actually act differently** depending on the answer?
 
 ::: {.notes}
 Question 2 is the one they will fudge. Push on "checked, not assumed" —
 have you opened the page, found the access terms, seen the actual columns?
+
+This filter is what session B runs on. Do not cut it.
 :::
 
-# Ground rules for AI
+## Break {.smaller}
 
-## The policy {.smaller}
-
-**Permitted by default. Disclosure is mandatory. Verification is
-graded.**
-
-This section is deliberately different from the others.
-
-Writing the code is no longer the scarce skill. Neither is drafting the
-prose. Knowing what to ask for is. So is noticing when the answer is
-wrong.
-
-From meeting 11 you work with real data through an assistant. **What is
-graded is the questions you ask and the checks you run, never code you
-wrote.**
-
-::: {.callout-note appearance="simple"}
-McKinsey now runs analyst interviews where you work a problem live on
-their AI platform, and they score **how you prompt it, how you catch it
-being wrong, and how you turn that into a recommendation.**
-
-That is this slide, at an interview.
-:::
-
-::: {.notes}
-Say plainly that policies differ across sections and that this one is
-deliberately permissive — and the McKinsey fact IS the reason, so do not
-rush past it. Employers put "skills using AI tools" FIRST on what they
-expect to value in five years, while ranking it 14th today. That gap is
-the whole argument.
-
-Do NOT bring the grim version into week 1 — entry-level postings down
-35%, a third of employers already substituting AI. True, and it will
-flatten the room. It belongs in meeting 14. See
-_planning/employer_demand.md.
-:::
-
-## The one that will bite you {.smaller}
-
-Ask an assistant for references on your topic. Right now.
-
-Then **open every single one**.
-
-::: {.callout-important appearance="simple"}
-A fabricated citation in your literature review is an academic
-integrity violation.
-
-"The AI generated it" is not a defence. It is an admission that you
-submitted something you never read.
-:::
-
-::: {.notes}
-LIVE DEMO — 5 minutes, do not skip it. Take a topic from the room, ask an
-assistant for five references with DOIs, then check them together on the
-screen. Some will be real. Some will be plausible and wrong: real authors,
-real journal, invented title or year.
-
-The lesson is not "AI is bad." It is that verification is a step you can
-never delegate, which is the same lesson as meeting 11.
-:::
-
-## Session A ends {.smaller}
-
-**Break — back at 3:35.**
-
-Coming up in session B: how to search the literature so you can tell
-whether your question is already answered, and then you write five
-candidate questions of your own.
+**Back at 3:35.**
 
 # Session B · The literature
 
@@ -617,8 +685,9 @@ abandon a good question because they assumed the data was out of reach.
 Check first.
 :::
 
-**Register tonight** at app.deweydata.io with your **Cornell email** —
-approval is a human step, so you will not have access this minute.
+**Register tonight** at [app.deweydata.io](https://app.deweydata.io) with
+your **Cornell email** — approval is a human step, so you will not have
+access this minute.
 
 Worked examples of getting from a dataset to a question:
 [**Project ideas**](../project-ideas.qmd)
@@ -654,7 +723,9 @@ allowed to walk away from the data.
 :::
 
 ::: {.notes}
-Do this live, as a room. Ten minutes.
+Do this live, as a room. Five or six minutes, after the Dewey browse.
+It is a demonstration of the move, not the exercise itself — the relay
+is the exercise.
 
 The tension is real and worth naming out loud: I spent session A saying
 design before data, and now I am showing you a data catalogue in the
@@ -671,26 +742,36 @@ trick.
 
 ## The question relay {.smaller}
 
-Groups of four. Three rounds. Points.
+Groups of four. Points.
 
-**Each round your group holds one dataset card** — and after each round,
-**the datasets move one way and the question sheets move the other.**
+**Your group holds one dataset card.** After each round, **the datasets
+move one way and the question sheets move the other** — so no group ever
+gets its own question back.
 
-| | You get | You do |
+| The move | You get | You do |
 |:--|:--|:--|
-| **R1** | A dataset | Write the best question it could answer |
-| **R2** | A new dataset **+** somebody's question | **Break their question**, then write your own |
-| **R3** | A new dataset **+** somebody's question | Break it, then **combine** any two datasets you have held |
+| **Write** | A dataset | Write the best question it could answer |
+| **Break & build** | A new dataset **+** somebody's question | **Break their question**, then write your own |
+| **Break & combine** | A new dataset **+** somebody's question | Break it, then **combine** any two datasets you have held |
 
 [Dataset cards and question sheet →](../handouts/relay-cards.qmd)
 
 ::: {.notes}
-Groups of four, six groups. Say out loud that this grouping is TEMPORARY
-— real teams form from the statements of interest before meeting 2, or
-some of them will spend the hour negotiating instead of working.
+Groups of four. With ~25 in the room that is six or seven groups, and
+nine cards are printed, so you have spares.
+
+DECIDE TWO ROUNDS OR THREE NOW, and announce it. Two rounds is Write,
+then Break & combine — 14 minutes each, leaving a full 12 for read-outs.
+Three rounds is 10, 11 and 11, and read-outs drop to 6. Two is the
+recommendation for week 1, when you do not yet know how fast this room
+works.
+
+Say out loud that this grouping is TEMPORARY — real teams form from the
+statements of interest before meeting 2. Otherwise some of them will
+spend the hour negotiating instead of working.
 
 Cards: the nine datasets on the project-ideas page, printed. Pass
-datasets clockwise and sheets anticlockwise so nobody ever breaks their
+datasets clockwise and sheets anticlockwise, so nobody ever breaks their
 own question.
 :::
 
@@ -711,12 +792,12 @@ The scoring is doing real work, so do not soften it. Points for breaking
 teach the filter faster than points for building — and it rehearses the
 referee report they write in December.
 
-Round 3's combination bonus is the real prize. Dewey's datasets join on
+The combination bonus is the real prize. Dewey's datasets join on
 lat/long, ZIP, brand, company and ticker, so the good questions live in
-the joins. Say so before round 3 starts.
+the joins. Say so before the combination round starts, not after.
 :::
 
-## Round 1 · 12 minutes {.smaller}
+## Round 1 · write {.smaller}
 
 **What could this data answer?**
 
@@ -733,23 +814,26 @@ Circulate. Two failure modes to catch early: questions that are still
 topics ("housing affordability"), and questions the dataset cannot
 actually speak to.
 
-At 10 minutes call the last two, then rotate firmly. The clock is part
-of the exercise.
+Call the last two minutes out loud, then rotate firmly. The clock is
+part of the exercise, so do not let a group talk past it.
 :::
 
-## Rounds 2 and 3 · 14 minutes each {.smaller}
+## Then break, and build {.smaller}
 
-**First, break the question you inherited.** Four filters, six minutes.
-Write which one kills it — or write *survives*, honestly.
+**First, break the question you inherited.** Four filters. Write which
+one kills it — or write *survives*, honestly.
 
-**Then build.** Round 2: your new dataset. Round 3: **any two datasets
-your group has held**.
+**Then build.** On your new dataset — or, in the combination round, on
+**any two datasets your group has held**.
 
 ::: {.notes}
-In round 3, walk the room saying the join keys out loud — parcels and
-stores and chargers all carry lat/long; postings and layoffs carry
-company; scanner and card data carry brand. That hint is what turns
-round 3 from harder into better.
+Give the break half about six minutes of whatever the round is, then
+call time and move them to building.
+
+In the combination round, walk the room saying the join keys out loud —
+parcels and stores and chargers all carry lat/long; postings and layoffs
+carry company; scanner and card data carry brand. That hint is what
+turns the combination from harder into better.
 
 Watch for the group that breaks everything on filter 2 because "we
 can't get the data." Push: you have the dataset in your hand. Filter 2
@@ -804,6 +888,17 @@ will help.
 AEM 6991 produces a *plan*; AEM 6992 *executes* it. The deliverable in
 December is a proposal somebody could hand to a team in January.
 
+### AI ground rules
+
+Permitted by default, disclosure mandatory, verification graded. From
+meeting 11 you work with real data through an assistant, and what is
+graded is the questions you ask and the checks you run — never code you
+wrote.
+
+**Every reference gets opened.** A fabricated citation is an academic
+integrity violation, and "the AI generated it" is an admission that you
+submitted something you never read.
+
 ### What this is, and is not
 
 You are not writing a paper for a journal — there is no gap to fill and no
@@ -829,11 +924,8 @@ looked at properly. The last is the most dangerous.
 ### Coming up with the idea is the job
 
 Most of your education has rewarded execution. This course rewards the
-part before it.
-
-Finding a question worth answering is a separate skill, and a harder one.
-AEM 6992 is where you execute. A bad question executed beautifully is
-still a bad project.
+part before it. A bad question executed beautifully is still a bad
+project.
 
 It is also the most enjoyable part of the work. Give it the time.
 
@@ -907,16 +999,6 @@ already-answered question.
 3. Does the design produce an answer that could come out either way?
 4. Would somebody actually act differently depending on the answer?
 
-### AI ground rules
-
-Permitted by default, disclosure mandatory, verification graded. From
-meeting 11 you work with real data through an assistant, and what is graded
-is the questions you ask and the checks you run — never code you wrote.
-
-**Every reference gets opened.** A fabricated citation is an academic
-integrity violation, and "the AI generated it" is an admission that you
-submitted something you never read.
-
 ## Session B · 3:35–4:30
 
 ### The literature workshop
@@ -957,17 +1039,19 @@ Route 5 done badly is anti-pattern 2.
 
 ### The question relay
 
-Groups of four, three rounds, and both the datasets and the question sheets
-rotate between rounds.
+Groups of four. Between rounds the datasets move one way and the question
+sheets move the other, so no group ever gets its own question back. Three
+moves, run over two or three rounds depending on the clock.
 
-**Round 1.** You are handed a dataset you did not choose. What could it
+**Write.** You are handed a dataset you did not choose. What could it
 answer? Write three candidates, pick your best, label its archetype.
 
-**Round 2.** You get a new dataset *and* somebody else's question. Break
-their question first — name which of the four filters kills it, or record
-honestly that it survives. Then write your own on the new dataset.
+**Break, then build.** You get a new dataset *and* somebody else's
+question. Break their question first — name which of the four filters
+kills it, or record honestly that it survives. Then write your own on the
+new dataset.
 
-**Round 3.** Break again, then combine: build the best question you can
+**Break, then combine.** Break again, then build the best question you can
 from **any two datasets your group has held**. Dewey's datasets join on
 latitude and longitude, ZIP, brand, company and ticker, and the good
 questions usually live in those joins.

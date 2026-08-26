@@ -45,7 +45,10 @@
 #             final design paper. Generates the "how your paper gets
 #             built" table in the syllabus.
 #   quizzes   how many quizzes this meeting (0 or 1); default 1
-#   reading   assigned reading, quizzed at 2:05
+#   reading   assigned reading, when a meeting carries one. Quizzes are
+#             sporadic and drawn from the lecture, so this is not a gate.
+#   books     "where to read more" — chapters of the three handbooks that
+#             fit this meeting. Markdown, rendered under its own heading.
 #   due       anything due on or around this meeting
 #   links     extra sidebar entries belonging to this meeting, each with
 #             `text` and `href`. They sit under the meeting, indented to
@@ -70,12 +73,13 @@ term: "Fall 2026"
 meets: "Wednesdays, 2:00–4:30 pm"
 parts:
   - id: 1
-    tab: "The question"
-    title: "The question"
+    tab: "Getting started"
+    title: "Getting started"
     blurb: >
-      Turn an interest into a question that can actually be answered — and
-      learn to read the literature well enough to know whether it already
-      has been.
+      Who is in the room, how the course works, and then the part that
+      actually matters — turning an interest into a question somebody
+      could answer, and reading enough to know whether somebody already
+      has.
 
   - id: 2
     tab: "Inference"
@@ -107,12 +111,13 @@ parts:
       and cannot get you.
 
   - id: 5
-    tab: "Reporting"
-    title: "Seeing, writing, and pitching"
+    tab: "Bringing it home"
+    title: "Bringing it home"
     blurb: >
-      Seeing what a figure shows and hides, writing the design paper,
-      keeping a team and a project functional, and the proposal that carries
-      into AEM 6992.
+      The last stretch. Seeing what a figure shows and what it hides, the
+      midterm, and then turning a semester of weekly pieces into one
+      proposal somebody could pick up and execute. You finish with a plan,
+      a pitch, and a team that knows how to work together.
 
 # Individual writing pieces, assessed together as the writing portfolio.
 # Two of them are reverse-outlining: going from a finished text back to the
@@ -137,88 +142,59 @@ writing:
   - num: 4
     name: "Referee report"
     len: "2 pages"
-    due_date: 2026-12-15
-    desc: "A structured critique of another team's design paper, on the template used in class. Start from its outline: if you cannot reconstruct one, that is the finding."
+    due_meeting: 14
+    desc: "A structured critique of another team's proposal outline, on the template used in class. You get theirs after meeting 13, and they get yours — so the critique arrives while there is still time to act on it."
 
-# Team deliverables. Nothing is submitted as a finished paper out of nowhere:
-# each written product is built in stages — the outline is fixed before the
-# sketch, and the sketch before the prose. The syllabus table is generated
-# from this block, so the dates cannot drift from the meeting schedule.
+# Team deliverables. One paper, reached in three milestones: a one-page pitch,
+# then the whole argument as a detailed outline, then the written proposal.
+# Nothing is submitted as a finished paper out of nowhere — the argument is
+# fixed before the sentences are. The syllabus table is generated from this
+# block, so the dates cannot drift from the meeting schedule.
 deliverables:
   - num: 1
-    name: "Research problem presentation"
+    name: "Project pitch"
     weight: "5 %"
     due_meeting: 6
     when: "in class"
-    desc: "5 slides, 5 minutes: the problem, why it matters, what is already known, and which archetype it is. The first of your two in-class presentations."
+    desc: "One page, and five minutes in front of the room. The question, why it matters, which archetype it is, and what data would answer it. This is the first time the project has to survive an audience, and the page is what you hand in."
 
   - num: 2
-    name: "Problem and literature"
+    name: "Proposal outline"
     weight: "10 %"
-    desc: "The research problem, its practical and theoretical justification, the conceptual model, and what the literature establishes. Built in three stages."
-    stages:
-      - stage: "Outline"
-        due_meeting: 7
-        desc: "One topic sentence per paragraph, in order, and nothing else. If the argument does not work here it will not work at 5,000 words."
-      - stage: "Sketch"
-        due_meeting: 8
-        desc: "Each topic sentence with its evidence underneath in note form — the citation, the number, the figure you will point at. Still not prose."
-      - stage: "Full"
-        due_meeting: 9
-        when: "end of week"
-        desc: "~5 pages. The sketch written out, plus the work plan and references."
+    due_meeting: 12
+    desc: "The whole proposal as a detailed outline. One topic sentence per paragraph, in order, with the evidence noted underneath — the citation, the number, the figure you will point at. It has to cover the question, the identification strategy and the assumption carrying it, the unit and sample, the data and exactly how you get it, the threats to validity, and the work plan for the spring. Workshopped in rotation at meeting 13. If the argument does not work here, it will not work at 5,000 words."
 
   - num: 3
-    name: "Data feasibility memo"
-    weight: "5 %"
-    desc: "The exact data you will use, who holds it, how you get it, what it costs, what it measures, and your fallback if it falls through."
-    stages:
-      - stage: "Outline"
-        due_meeting: 10
-        when: "in class"
-        desc: "Six topic sentences, drafted in the session where the memo is taught. A memo is short enough to outline in the room."
-      - stage: "Full"
-        due_meeting: 11
-        when: "end of week"
-        desc: "~2 pages, bottom line first."
+    name: "Research proposal"
+    weight: "20 %"
+    due_date: 2026-12-11
+    desc: "~5 pages, written out from the outline you workshopped. The plan somebody could pick up and execute in January."
 
   - num: 4
-    name: "Research design paper"
-    weight: "15 %"
-    desc: "Question, identification strategy and its assumptions, unit of analysis and sample, data, threats to internal validity, external validity, and the work plan for the spring."
-    stages:
-      - stage: "Outline"
-        due_meeting: 12
-        desc: "Topic sentences only. The identification section is the one to get right here."
-      - stage: "Sketch"
-        due_meeting: 13
-        when: "in class"
-        desc: "Brought to class and workshopped in rotation. Evidence under each topic sentence, still in note form."
-      - stage: "Full"
-        due_date: 2026-12-01
-        desc: "~5 pages, written out from the workshopped sketch."
-
-  - num: 5
-    name: "Final presentation, and the thing you leave behind"
+    name: "Final presentation"
     weight: "5 %"
     due_meeting: 14
     when: "in class"
-    desc: "A 10-minute presentation, plus one thing that pulls the whole semester together — a poster or a written plan. Which one is announced by week 10."
+    desc: "Ten minutes. The question, the design, the data, and what your team does over the break."
 
 meetings:
   - num: 1
     slug: "01-questions"
     date: 2026-08-26
     part: 1
-    title: "Finding a question"
-    desc: "A capstone is not a journal paper. It is the analysis somebody needs before a decision. Five shapes a good one takes, six ways they go wrong, and a filter of four questions that kills the rest. Then how to search the literature well enough to know your question is still open."
+    title: "Intro and ideas"
+    desc: "Who is in the room, how the course works, and what a capstone actually is — the analysis somebody needs before a decision, not a journal paper. Then the part that matters: five shapes a good project takes, six ways they go wrong, and a filter of four questions that kills the rest."
     goal: "Turn a dataset you did not choose into a question worth asking. Break somebody else's question by naming the filter it fails. Know where to find data you already have."
-    a: "First, the arc into AEM 6992, and what this is not. You are not writing a paper for a journal. You are building the analysis a competent team needs before a decision that costs real money. Then the part that is actually the job: coming up with the question. Five archetypes — evaluation, preference and pricing, prediction and risk, diagnosis, feasibility. For each, what it can claim, what design it needs, and how it fails. Then six anti-patterns, and a filter with four questions. Finally the ground rules for AI: permitted, disclosed, verified. Fabricated citations are the one that will bite you."
-    b: "Where to look first: the Cornell library's holdings and the Dewey marketplace, browsed live. Then the question relay, in groups and against the clock. Round one, your group gets a dataset and writes the best question it can. Then datasets and questions rotate. Round two, you break the question you inherit by naming the filter that kills it, then write your own on a dataset you have not seen. Round three, you may combine any two datasets you have held. Points for questions that survive, and for breaks that land."
-    builds: "Five candidate questions, filtered — one of which becomes the project"
+    a: "Three blocks. First, introductions — who I am, and then every one of you: where you are from, what you did before this, your concentration, and what you want out of the program. Second, the course. The arc into AEM 6992, what this is and is not, where the grade goes, and the ground rules for AI — permitted, disclosed, verified, with fabricated citations the one that will bite you. Third, the part that is actually the job: coming up with the question. Five archetypes — evaluation, preference and pricing, prediction and risk, diagnosis, feasibility. For each, what it can claim, what design it needs, and how it fails. Then six anti-patterns, and a filter with four questions."
+    b: "Where to look first: the Cornell library's holdings and the Dewey marketplace, browsed live. Then the question relay, in groups and against the clock. First your group gets a dataset and writes the best question it can. Then datasets and questions rotate in opposite directions, so you never get your own back. Next you break the question you inherit by naming the filter that kills it, then write your own on a dataset you have not seen. In the last round you may combine any two datasets you have held. Points for questions that survive, and for breaks that land."
+    builds: "Candidate questions of your own, each labelled with an archetype and run through the filter"
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 1 on what research is, and ch. 3 on the research cycle."
     quizzes: 0
     reading: "None"
     due: "One page on what you want to work on and why — before meeting 2"
+    links:
+      - text: "Question relay cards"
+        href: fall-2026/handouts/relay-cards.qmd
 
   - num: 2
     slug: "02-causal-language"
@@ -230,6 +206,7 @@ meetings:
     a: "Counterfactuals and potential outcomes. Every comparison is a claim about a world that did not happen. Then causal graphs: confounders, colliders, mediators, back-door reasoning. And why controlling for everything makes things worse. Finally the map for the rest of this half. Every design we meet closes a back door in a different way. You will draw each one before you hear what it is called."
     b: "First, teams. You are put into one, and it writes down its own ground rules today, while everybody still gets along. Who does what. What happens when somebody misses a deadline. How you settle a disagreement. One page, signed, handed in. Then your team's first job together. Each team draws a card carrying a real causal claim somebody is acting on — a board paper, a marketing deck, a widely shared post. Every card is broken differently. Draw the graph behind it, then name the failure in this morning's vocabulary. Then one team is drawn at random to defend its diagnosis while the room attacks, and we draw again as the clock allows. You will not know whether you are up. Card 3 is a collider and card 5 is a mediator. Those two are where the morning either landed or it did not."
     builds: "Your team's ground rules, and a diagnosed causal graph"
+    books: "[Remix](https://mixtape.scunning.com/) ch. 3 on directed acyclic graphs and ch. 4 on potential outcomes — the two chapters closest to this meeting. [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) ch. 1, *Questions about Questions*, is eight pages and needs no maths."
     reading: "TBD"
     due: "Your team's written ground rules — agreed and handed in today"
     links:
@@ -246,6 +223,7 @@ meetings:
     a: "Linear regression, non-linear models, count models. Described, not derived. What each estimates, and how to read a coefficient in the units of the problem. Then uncertainty. Residuals and errors, sampling variation, what a standard error actually states, and where p-values come from. More usefully: what they are not. Finally the distinction that decides half the projects in this room. Explaining is not predicting. A model can predict well and still tell you nothing about what to do."
     b: "Ten minutes of simulation first, driven from the front. Draw from a world you control. Watch the p-value distribution under the null. Move the sample size and the variation, and watch it shift. Then fit the same world in and out of sample, and watch an excellent-looking model fail on data it has not seen. Nothing to install. Then the cards. Each team gets an analyst who ran something and said something about it, and every one overclaims differently. A count outcome fitted by OLS and predicted below zero. A 0.03% lift called highly significant across two million users. A wide interval called no effect. An elasticity estimated off two price changes in three years. A churn probability of 112%. Work out what they are actually entitled to claim. Then a team is drawn at random to defend that while the room pushes back. The last line on the sheet is the one that matters: is your own project at risk of the same error?"
     builds: "The overclaim your own project is most at risk of making"
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 11 on descriptive statistics and ch. 12 on correlation and regression."
     reading: "TBD"
     due: ~
     links:
@@ -262,6 +240,7 @@ meetings:
     a: "Bias first. Omitted variables, sorting and selection, measurement error — classical and not — and reverse causality. For each: what it does to the estimate, and in which direction. Then false precision, which is the quieter problem. Dependence ignored. Multiple testing. Specification search. The number stays where it is and the error bar shrinks around it."
     b: "First, together: one published claim, taken apart. Which failure is doing the damage? Would more data fix it? Then the same move on a paper from your own literature. Write down the one threat your design will have to survive. You will be answering it in November."
     builds: "The one threat your design will have to survive"
+    books: "[Remix](https://mixtape.scunning.com/) ch. 5 on unconfoundedness, for what conditioning can and cannot fix. [Adams](https://doi.org/10.4135/9788132108498) ch. 14 on reliability and validity."
     reading: "TBD"
     due: ~
 
@@ -275,6 +254,7 @@ meetings:
     a: "We start where every design meeting from here starts. At the graph. Conditioning on observables, drawn: which back doors a set of controls closes, and the one you cannot see well enough to close. Then controls and matching in practice, and when a regression coefficient can be read causally. 'I added controls' is a claim about the graph, not a technique. The rest of the session is what would have to be true for that claim to hold."
     b: "Back to the graph you drew in meeting 2. Could you close every back door with data you could actually obtain? Breakout rooms, then report back."
     builds: "Which back doors you can close, and with what data"
+    books: "[Remix](https://mixtape.scunning.com/) ch. 5 on unconfoundedness — the whole of this meeting, written out."
     reading: "TBD"
     due: ~
     reschedule: "Instructor traveling — this meeting is held remotely"
@@ -289,8 +269,9 @@ meetings:
     a: "Academic writing I — the method. A paper is built outline first. One topic sentence per paragraph, in order, before any prose exists. We start backwards. Take a published paper apart into the outline that must have produced it. That is also this week's exercise, and the fastest way to see that good writing has a skeleton. Then forwards: outline, sketch, full text. Every written product in this course is submitted in those stages, so the argument is fixed before the sentences are. Then what a problem statement in particular has to do. Scope, unit, population. The 'so what' in the first sentence, not the fourth paragraph. And the failure modes: the topic with no question, hedging, the buried claim, the review that reviews without arguing."
     b: "Each team presents its research problem in five minutes. The presentation is this morning's method under test, because your five slides are an outline. One topic sentence per slide. No bullet lists. If the argument does not stand up as five sentences, it will not stand up at five pages, and the room will see which it is. Questions are aimed at the skeleton: where does the argument jump? Then you rate your teammates for the first time."
     builds: "Your problem statement, as an outline"
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 4 on literature review and critical reading, and ch. 16 on writing up."
     reading: "TBD"
-    due: "Present your research problem, in class · Rate your teammates"
+    due: "Project pitch — one page, presented in class · Rate your teammates"
 
   - num: 7
     slug: "07-designs-i"
@@ -302,8 +283,9 @@ meetings:
     a: "Three designs, each drawn before it is described. Experiments first. Randomisation cuts every arrow into treatment, so there is no back door left to close. Then the decisions that actually make one work. What is the unit you randomise — the person, the store, the week? How many arms can you afford before each one is too thin? Why you check balance afterwards, and what a failure would mean. And pre-registration, the cheapest honesty device in research: say what you will test before you look, and specification search stops being available to you. Instrumental variables next. An arrow into treatment, and none into the outcome except through it. The exclusion restriction is that missing arrow, which is why it cannot be tested. Then regression discontinuity: nothing else jumps at the cutoff. For each, what variation it exploits, what it assumes, how it fails, and what it looks like done well."
     b: "Each team draws a setting nobody in the room owns. A bank with an email list. A scholarship cutoff. An NGO that gave filters to whoever asked. Fifteen minutes to draw the graph, name a design, and state the assumption carrying it. Then teams are drawn at random to defend for four minutes while the room attacks. What breaks this? Nobody knows in advance whether they are up. One card cannot be answered honestly at all, and the team holding it has to be willing to say so. Last: is an experiment, an instrument or a discontinuity actually open to your own project? Most teams find the answer is no. Finding that out today rather than in November is the point."
     builds: "Whether an experiment, instrument or discontinuity is open to you"
+    books: "[Remix](https://mixtape.scunning.com/) ch. 4 on randomization, ch. 6 on regression discontinuity, ch. 7 on instrumental variables. In [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/), the same three are ch. 2, 6 and 4."
     reading: "TBD"
-    due: "Problem & literature — outline · Writing 1 — reverse outline"
+    due: "Writing 1 — reverse outline"
     links:
       - text: "Design scenarios"
         href: fall-2026/handouts/design-scenarios.qmd
@@ -318,8 +300,8 @@ meetings:
     a: "The same discipline on harder designs, each drawn first. Difference-in-differences: the confounders you cannot measure are the ones that do not move. Parallel trends is what that assumption looks like drawn. Panel data with local fixed effects: which arrows the fixed effects erase, and which survive untouched. Event studies: the same picture with time on it. For each, what identifying variation is left once the fixed effects are in, and what assumption is carrying the estimate."
     b: "Same format, higher stakes. First a card apiece — a staggered rollout, a state border, a fee that changed for accounts opened after a date. Fifteen minutes to draw it and name the design. Then the part that counts. Teams are drawn at random to put up their own project's design, draw the graph, state the assumption carrying the estimate, and defend it while the room tries to break it. Everyone presents eventually. Nobody knows when. Whatever survives is the figure that goes in your identification section, so draw it to keep. And write down the attack that landed. That is your limitations paragraph."
     builds: "Your design defended in public, plus the attack that landed — the identification section and the limitation"
+    books: "[Remix](https://mixtape.scunning.com/) ch. 8 and 9 on panel designs and difference-in-differences, ch. 10 if your rollout is staggered. [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) ch. 5."
     reading: "TBD"
-    due: "Problem & literature — sketch"
 
   - num: 9
     slug: "09-measurement"
@@ -331,8 +313,9 @@ meetings:
     a: "Constructs and operationalisation. How do you turn 'sustainability', 'financial literacy' or 'market power' into a variable somebody could actually record? What makes that measure defensible, and what does a proxy cost you? Then work backwards from the design to its data requirements. Unit of observation. Level of aggregation. Time frequency, span, coverage. Which comparisons the data has to contain. Can this be done with county data, or does it need individuals? Finally, the short version of what to ask any dataset before trusting it: what is one row, how many are there, what is missing, what changed over time. The full checklist is on the resources page. You put it to work on real data in meeting 11."
     b: "Sometimes nothing measures your construct. Then you make the measurement yourself. Each team gets a real survey item, broken a different way. Leading. Double-barrelled. An unbalanced scale with no way to disagree. A question that assumes you already do the thing. A hypothetical willingness-to-pay that everybody overstates. Name the flaw, rewrite it, and say what an answer to your version would actually let you conclude. Random rotation, room attacks. Then build your own — the instrument your project needs, whether that is survey items, a choice task, or a simple experiment with a treatment and a control. Then work out how many people it needs. The smallest effect you can detect is roughly four sigma over root n. Quadrupling the sample only halves it. So: with the sample you can afford, is the smallest detectable effect still interesting? If not, you have learned that in October rather than March."
     builds: "Your key variable, operationalised — and if you must collect it, the instrument and the sample size it needs"
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 5 on sampling and sample size, ch. 8 on survey design, ch. 14 on whether a measure holds up."
     reading: "TBD"
-    due: "Problem & literature — full, end of week · Writing 2 — reverse outline and repair"
+    due: "Writing 2 — reverse outline and repair"
     reschedule: "Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed"
     links:
       - text: "Instrument critique cards"
@@ -347,23 +330,22 @@ meetings:
     goal: "Say what a scraper and an API each are, and when either is the wrong answer. Name your own data source, its access route, its timeline and your plan B — including whether you need IRB approval or a data-use agreement before January."
     a: "First, code. Not how to write it — what it is, and why you cannot avoid understanding it. What a language actually is, and why there are several. R grew out of statistics. Python out of general programming. Stata out of applied economics. SQL is not really the same kind of thing at all. Then the argument that matters here. Every serious analysis is code, whether or not you wrote it. A spreadsheet stops being enough at exactly the point your project gets interesting. And code is the only version of an analysis that can be checked, repeated, and handed to somebody else. You will drive it through an assistant. But you cannot check what you cannot read at all. Then the landscape of sources: administrative records, official statistics, firm and platform data, purchased panels. What each costs in money and in months, starting with what Cornell already pays for. Proprietary access and data-use agreements: who signs, how long, and what they forbid you from publishing. Ethics and the IRB in brief, with the detail on the resources page. Then scraping and APIs: what each is, what it can and cannot get you, and what the terms of service and the law actually say."
     b: "A scrape, run live from the front, then broken on purpose. We pull a table off a page. Then we watch every way it fails. The page changes and the code returns nothing. The rate limit bites. Records go missing and nothing tells you. The terms of service say no. And nothing you pulled could be reproduced by anybody next week. Then the same data through a proper API. Then the same data simply downloaded, which is usually faster than either. The lesson is not that scraping is bad. It is the last resort dressed up as the clever one. Then the acquisition clinic on your own project. Which source, exactly. What route. How long. What it costs. What plan B is. Your memo outline — six topic sentences — comes out of that, and it is due before the weekend."
-    builds: "Your data source, access route, timeline and plan B — the memo outline"
+    builds: "Your data source, access route, timeline and plan B"
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 7 on secondary data, ch. 6 on collecting your own, and ch. 2 on research ethics."
     reading: "TBD"
-    due: "Data feasibility memo — outline, end of week"
 
   - num: 11
-    slug: "11-midterm-interrogating-data"
+    slug: "11-using-data"
     date: 2026-11-04
     part: 4
-    title: "Midterm and using data"
-    desc: "The midterm asks you to design a study for a given situation, in writing. Then the hands-on half: which kind of AI suits which job, and the checks that catch a wrong answer without reading the code."
-    goal: "Design a study in writing under exam conditions. Then say which AI modality suits which job, interrogate a real dataset through one, and catch something wrong with it."
-    a: "**Midterm.** You are given a situation and asked to design a study to evaluate it, in writing. The question. The design. What data it requires. And what would undermine it."
-    b: "First, the modalities. 'Use AI' is four different things, and they fail differently. Chat answers from memory, and will invent a citation. File upload with code execution writes and runs real code on your data, so the output is checkable. Retrieval answers from documents you supplied. Agents act over several steps, and compound a mistake made early. The one you want here is the second. Knowing why is the point. Then real data in front of you, and the meeting-9 checklist put to work: summaries, joins, quick plots. Then the harder half. Knowing whether the answer is right without reading the code. Row counts across a join. Totals against a published figure. Five raw records read by hand. And what not to upload, and why."
+    title: "Using data"
+    desc: "'Use AI' is four different things, and they fail differently. Then real data in front of you, and the checks that catch a wrong answer without your ever reading the code."
+    goal: "Say which AI modality suits which job, and why. Interrogate a real dataset through one, and catch something wrong with it before it reaches your proposal."
+    a: "First, the modalities. 'Use AI' is four different things. Chat answers from memory, and will invent a citation. File upload with code execution writes and runs real code on your data, so the output is checkable. Retrieval answers from documents you supplied. Agents act over several steps, and compound a mistake made early. The one you want here is the second, and knowing why is the point. Then the harder half, which is the whole skill in this course: knowing whether an answer is right without reading the code that produced it. Row counts across a join. Totals checked against a published figure. Five raw records read by hand. Orders of magnitude. And what you must not upload, and why."
+    b: "Real data in front of you, and the meeting-9 checklist put to work: what is one row, how many are there, what is missing, what changed over time. Every dataset handed out has something wrong with it. Find it, then say which check would have caught it — that second half is the graded one. Then the same move on your own project's data. Whatever you cannot answer about it today is what you chase before the outline is due."
     builds: "Your own data, interrogated, and what is wrong with it"
-    quizzes: 0
-    reading: "Review"
-    due: "Data feasibility memo — full, end of week"
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 11 on descriptive analysis — what to compute first, and what it tells you."
+    reading: "TBD"
 
   - num: 12
     slug: "12-seeing-data"
@@ -375,25 +357,26 @@ meetings:
     a: "Which figure answers which question, and why. Distributions, time, space. The instinct to be curious about a dataset before you model it. Then the flip side. What figures hide: aggregation, scale, binning, projection, cherry-picked windows. And how to read a published figure for what it is not showing."
     b: "Six figures, each lying a different way, one per team. A truncated axis. Two axes manufacturing a correlation. A cherry-picked window. An aggregate moving opposite to every subgroup. Area scaled by radius. Counts where you needed a rate. Name the trick, then redraw it honestly. The honest version still has to make a point — that is the hard half, and the one nobody practises. Teams are drawn at random to put both versions up while the room attacks. Then the one that counts. Make the figure your own project lives or dies on: the picture that would show your effect if it is there."
     builds: "The one figure your project lives or dies on — honest, and still persuasive"
+    books: "Zelazny, *Say It With Charts*, for the grammar of it. [Adams](https://doi.org/10.4135/9788132108498) ch. 11 for what a descriptive figure is doing."
     reading: "TBD"
-    due: "Design paper — outline · Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week"
+    due: "Proposal outline · Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week"
     links:
       - text: "Figure critique cards"
         href: fall-2026/handouts/figure-tricks.qmd
 
   - num: 13
-    slug: "13-writing-collaboration"
+    slug: "13-midterm-and-writing"
     date: 2026-11-18
     part: 5
-    title: "Writing the design paper"
-    desc: "The design paper as a genre. How to write an identification section, and how to state a limitation without gutting your own project. Then how to referee somebody else's, which is the same skill from the other side."
-    goal: "Write an identification section that names your design, its assumption, and what would break it. State a limitation without gutting your own project."
-    a: "Academic writing III — the design paper. The same method on a harder object. You outlined this two weeks ago, so today is what the identification section has to contain. The graph you drew in meeting 8. Your design, named. Its assumption, stated. And what would break it. Then how to state a limitation without gutting your own project. Then reading for the skeleton one last time: what a referee actually looks for, which is how you will write your own referee report. If you cannot reconstruct a paper's outline, that is the finding. Finally reproducibility at awareness level. Where files live. Naming. What 'the final version' means. And when version control is worth the cost."
-    b: "Bring your sketch — topic sentences with the evidence noted under each, not prose. Workshop it in rotation. Somebody else reads your skeleton and tells you where the argument jumps. Then each team presents its design and the assumption it is defending. Then you rate your teammates for the second time."
-    builds: "The whole paper, as a sketch, marked up by somebody else"
+    title: "Midterm and writing"
+    desc: "The midterm: a situation, and you design the study that would answer it. Then the afternoon turns to your own outline — workshopped in rotation by somebody who has to find where your argument jumps."
+    goal: "Design a study in writing under exam conditions. Then take an outline apart — somebody else's, and your own."
+    a: "**Midterm.** You are given a situation and asked to design a study to evaluate it, in writing. The question. The design, and the assumption carrying it. What data it requires. And what would undermine it. Open note. It tests whether you can apply the design vocabulary to a situation you have not seen, not whether you memorised definitions. It is the same move the room has made every week since meeting 2, which is why it needs no revision beyond turning up all term."
+    b: "Bring your outline — topic sentences with the evidence noted under each, not prose. Workshop it in rotation. Somebody else reads your skeleton and tells you where the argument jumps, and you do the same for theirs; that pairing is where your referee report comes from. Then how to state a limitation without gutting your own project, and what a referee actually looks for. Then you rate your teammates for the second time."
+    builds: "Your outline, marked up by somebody outside your team"
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 16 on writing and presenting."
     reading: "TBD"
-    due: "Design paper — sketch, marked up in class · Present your design · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week"
-    reschedule: "Instructor traveling — moves to Nov 17 or Nov 19; date to be confirmed"
+    due: "Proposal outline — workshopped in class · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week"
 
   - date: 2026-11-25
     note: "Thanksgiving recess — no class"
@@ -407,6 +390,7 @@ meetings:
     goal: "Present a plan somebody could pick up and execute in January. Know what your team owes AEM 6992 over the break."
     a: "Final presentations. Each team reviews another team's work."
     b: "The handoff to AEM 6992. What each team does over the break."
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 15 on conducting your research, which is mostly about the months after this one."
     quizzes: 0
     reading: "None"
     due: "Design paper — full, Dec 1 · Final presentation and poster or plan, in class · Your review of another team's paper, Dec 15"

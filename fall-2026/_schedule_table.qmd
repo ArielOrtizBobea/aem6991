@@ -6,9 +6,9 @@
 </thead>
 <tbody>
 
-<tr class="g-first g-last g01"><td class="g-rail" rowspan="1"><span>The question</span></td><td>Wed Aug 26</td>
-  <td class="topic"><a href="sessions/01-questions.html">1 · Finding a question</a>
-    <span class="t-desc">A capstone is not a journal paper. It is the analysis somebody needs before a decision. Five shapes a good one takes, six ways they go wrong, and a filter of four questions that kills the rest. Then how to search the literature well enough to know your question is still open.</span></td>
+<tr class="g-first g-last g01"><td class="g-rail" rowspan="1"><span>Getting started</span></td><td>Wed Aug 26</td>
+  <td class="topic"><a href="sessions/01-questions.html">1 · Intro and ideas</a>
+    <span class="t-desc">Who is in the room, how the course works, and what a capstone actually is — the analysis somebody needs before a decision, not a journal paper. Then the part that matters: five shapes a good project takes, six ways they go wrong, and a filter of four questions that kills the rest.</span></td>
   <td class="hw">One page on what you want to work on and why — before meeting 2</td></tr>
 
 <tr class="g-first g02"><td class="g-rail" rowspan="5"><span>Inference</span></td><td>Wed Sep 2</td>
@@ -30,38 +30,38 @@
 <tr class="g-last g02"><td>Wed Sep 30</td>
   <td class="topic"><a href="sessions/06-writing-the-problem.html">6 · Writing the problem</a>
     <span class="t-desc">The conceptual half is done and the first paper is due. So this is where writing gets taught. What a problem statement does, how a pile of sources becomes an argument, and then each team presents its problem to the room.</span></td>
-  <td class="hw">Present your research problem, in class · Rate your teammates</td></tr>
+  <td class="hw">Project pitch — one page, presented in class · Rate your teammates</td></tr>
 
 <tr class="g-first g03"><td class="g-rail" rowspan="2"><span>Designs</span></td><td>Wed Oct 7</td>
   <td class="topic"><a href="sessions/07-designs-i.html">7 · Research designs I</a>
     <span class="t-desc">Experiments, instrumental variables, regression discontinuity. What variation each exploits, what each assumes, and how each fails.</span></td>
-  <td class="hw">Problem &amp; literature — outline · Writing 1 — reverse outline</td></tr>
+  <td class="hw">Writing 1 — reverse outline</td></tr>
 <tr class="g-last g03"><td>Wed Oct 14</td>
   <td class="topic"><a href="sessions/08-designs-ii.html">8 · Research designs II</a>
     <span class="t-desc">Difference-in-differences, panel data with fixed effects, event studies. The question is the same each time: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate.</span></td>
-  <td class="hw">Problem &amp; literature — sketch</td></tr>
+  <td class="hw"></td></tr>
 
 <tr class="g-first g04"><td class="g-rail" rowspan="3"><span>Data &amp; access</span></td><td>Wed Oct 21<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/09-measurement.html">9 · Measurement and data</a>
     <span class="t-desc">Turning a construct into something a dataset can hold. This is where most capstones actually die. Then working backwards from the design to the data it demands, and building the instrument yourself when nothing measures what you need.</span></td>
-  <td class="hw">Problem &amp; literature — full, end of week · Writing 2 — reverse outline and repair</td></tr>
+  <td class="hw">Writing 2 — reverse outline and repair</td></tr>
 <tr><td>Wed Oct 28</td>
   <td class="topic"><a href="sessions/10-getting-data.html">10 · Getting the data</a>
     <span class="t-desc">What code is and why you cannot avoid understanding it. Then the practical business of obtaining data: who holds it, what access really costs in time, and what scraping and APIs can and cannot get you.</span></td>
-  <td class="hw">Data feasibility memo — outline, end of week</td></tr>
+  <td class="hw"></td></tr>
 <tr class="g-last g04"><td>Wed Nov 4</td>
-  <td class="topic"><a href="sessions/11-midterm-interrogating-data.html">11 · Midterm and using data</a>
-    <span class="t-desc">The midterm asks you to design a study for a given situation, in writing. Then the hands-on half: which kind of AI suits which job, and the checks that catch a wrong answer without reading the code.</span></td>
-  <td class="hw">Data feasibility memo — full, end of week</td></tr>
+  <td class="topic"><a href="sessions/11-using-data.html">11 · Using data</a>
+    <span class="t-desc">'Use AI' is four different things, and they fail differently. Then real data in front of you, and the checks that catch a wrong answer without your ever reading the code.</span></td>
+  <td class="hw"></td></tr>
 
-<tr class="g-first g05"><td class="g-rail" rowspan="4"><span>Reporting</span></td><td>Wed Nov 11</td>
+<tr class="g-first g05"><td class="g-rail" rowspan="4"><span>Bringing it home</span></td><td>Wed Nov 11</td>
   <td class="topic"><a href="sessions/12-seeing-data.html">12 · Seeing and showing</a>
     <span class="t-desc">Which figure answers which question, and why. Then the flip side: what figures hide through aggregation, scale, binning and chosen windows. And the harder question underneath both — how do you make a point convincingly without misleading anybody?</span></td>
-  <td class="hw">Design paper — outline · Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week</td></tr>
-<tr><td>Wed Nov 18<sup class="resched">*</sup></td>
-  <td class="topic"><a href="sessions/13-writing-collaboration.html">13 · Writing the design paper</a>
-    <span class="t-desc">The design paper as a genre. How to write an identification section, and how to state a limitation without gutting your own project. Then how to referee somebody else's, which is the same skill from the other side.</span></td>
-  <td class="hw">Design paper — sketch, marked up in class · Present your design · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week</td></tr>
+  <td class="hw">Proposal outline · Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week</td></tr>
+<tr><td>Wed Nov 18</td>
+  <td class="topic"><a href="sessions/13-midterm-and-writing.html">13 · Midterm and writing</a>
+    <span class="t-desc">The midterm: a situation, and you design the study that would answer it. Then the afternoon turns to your own outline — workshopped in rotation by somebody who has to find where your argument jumps.</span></td>
+  <td class="hw">Proposal outline — workshopped in class · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week</td></tr>
 <tr class="break-row"><td>Wed Nov 25</td><td>Thanksgiving recess — no class</td><td class="hw"></td></tr>
 <tr class="g-last g05"><td>Wed Dec 2</td>
   <td class="topic"><a href="sessions/14-pitch.html">14 · The pitch</a>
@@ -72,7 +72,7 @@
 </div>
 <p class="sched-note">
 <span class="resched">*</span> These dates are not final:
-<strong>Sep 23</strong> &mdash; Instructor traveling — this meeting is held remotely &middot; <strong>Oct 21</strong> &mdash; Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed &middot; <strong>Nov 18</strong> &mdash; Instructor traveling — moves to Nov 17 or Nov 19; date to be confirmed
+<strong>Sep 23</strong> &mdash; Instructor traveling — this meeting is held remotely &middot; <strong>Oct 21</strong> &mdash; Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed
 </p>
 
 <script>

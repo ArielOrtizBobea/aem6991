@@ -1,6 +1,6 @@
 | Meeting | Session B leaves you with |
 |:---|:---|
-| **1** &nbsp;Finding a question | Five candidate questions, filtered — one of which becomes the project |
+| **1** &nbsp;Intro and ideas | Candidate questions of your own, each labelled with an archetype and run through the filter |
 | **2** &nbsp;Causal language | Your team's ground rules, and a diagnosed causal graph |
 | **3** &nbsp;Models and uncertainty | The overclaim your own project is most at risk of making |
 | **4** &nbsp;How inference fails | The one threat your design will have to survive |
@@ -9,7 +9,7 @@
 | **7** &nbsp;Research designs I | Whether an experiment, instrument or discontinuity is open to you |
 | **8** &nbsp;Research designs II | Your design defended in public, plus the attack that landed — the identification section and the limitation |
 | **9** &nbsp;Measurement and data | Your key variable, operationalised — and if you must collect it, the instrument and the sample size it needs |
-| **10** &nbsp;Getting the data | Your data source, access route, timeline and plan B — the memo outline |
-| **11** &nbsp;Midterm and using data | Your own data, interrogated, and what is wrong with it |
+| **10** &nbsp;Getting the data | Your data source, access route, timeline and plan B |
+| **11** &nbsp;Using data | Your own data, interrogated, and what is wrong with it |
 | **12** &nbsp;Seeing and showing | The one figure your project lives or dies on — honest, and still persuasive |
-| **13** &nbsp;Writing the design paper | The whole paper, as a sketch, marked up by somebody else |
+| **13** &nbsp;Midterm and writing | Your outline, marked up by somebody outside your team |

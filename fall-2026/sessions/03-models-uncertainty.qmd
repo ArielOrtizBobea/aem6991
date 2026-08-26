@@ -10,11 +10,9 @@ This page is a stub. Materials appear here before the meeting.
 
 **What you should be able to do after this meeting.** Read a coefficient in the units of the problem. Say what a p-value does and does not tell you. Tell an explanatory question apart from a predictive one.
 
-## Before class
+## Where to read more
 
-**Reading.** TBD
-
-The opening quiz is on this reading.
+[Adams](https://doi.org/10.4135/9788132108498) ch. 11 on descriptive statistics and ch. 12 on correlation and regression.
 
 ## Session A · 2:05–3:15
 
@@ -30,6 +28,3 @@ Ten minutes of simulation first, driven from the front. Draw from a world you co
 
 Your team's output is submitted before you leave.
 
-## Due
-
-—

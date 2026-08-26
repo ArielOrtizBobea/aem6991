@@ -216,11 +216,10 @@ can be carried and no student is sunk by a team.
 | Midterm | 15 % | Individual |
 | *Individual subtotal* | *50 %* | |
 | Team process | 10 % | Team-based, graded individually |
-| Research problem presentation | 5 % | Team |
-| Problem statement & literature review | 10 % | Team |
-| Data feasibility memo | 5 % | Team |
-| Research design paper | 15 % | Team |
-| Final presentation, and the poster or plan | 5 % | Team |
+| Project pitch | 5 % | Team |
+| Proposal outline | 10 % | Team |
+| Research proposal | 20 % | Team |
+| Final presentation | 5 % | Team |
 | *Team subtotal* | *50 %* | |
 
 Grading scale: A+ (≥ 98), A (≥ 92), A- (≥ 88), B+ (≥ 85), B (≥ 80),
@@ -228,9 +227,10 @@ B- (≥ 75), C+ (≥ 70), C (≥ 65), C- (≥ 60), D (≥ 50), F (\< 50).
 
 ### In-class quizzes (10 %)
 
-One short quiz per meeting, delivered to your own device at 2:05, on
-the assigned reading. Three to five questions, three minutes.
+**Short quizzes, in class, without warning.** Expect roughly six across
+the semester. Three questions, three minutes, on your own device.
 
+They are drawn from the lecture you are sitting in, not from a reading.
 Most are scenario questions, not definitions.
 
 *Here is a situation --- which design fits, and what would have to be
@@ -241,16 +241,19 @@ you check it without reading the code?*
 Those are the questions worth asking. They are also the ones a chatbot
 cannot answer for a student who was not paying attention.
 
-The quizzes do three things at once. They are the reading check, which
-is why this section does not assign Reading Notes. They are the
-attendance record. And they surface confusion at 2:05, while there are
-still two hours left to fix it.
+They do two things at once. They tell me what did not land while there
+is still time in the room to fix it. And they are the reason this
+section assigns no Reading Notes.
+
+They are unannounced on purpose. A quiz you can revise for is a reading
+check. A quiz you cannot is a reason to be in the room and paying
+attention, which is the thing actually worth rewarding.
 
 Quizzes begin at meeting 2; there is no quiz in the first meeting.
 
-**The lowest two quiz scores are dropped, and there are no make-ups.**
-That covers illness, interviews, travel, and a dead laptop battery
-without anybody having to email about it.
+**The lowest score is dropped, and there are no make-ups.** That covers
+one illness, interview or dead laptop battery without anybody having to
+email about it.
 
 Quizzes are tied to your netid and timestamped. See *Data practices*
 below.
@@ -316,10 +319,17 @@ yourself scores well.
 
 ### Midterm (15 %)
 
-In class, first half of meeting 11. Open note, short answers.
+**In class on Wednesday, November 18**, in the first half of meeting 13.
+Open note, short answers. The date is fixed and will not move.
+
+You are given a situation and asked to design the study that would
+answer it. The question. The design, and the assumption carrying it.
+What data it requires. And what would undermine it.
 
 It tests whether you can apply the design vocabulary to a situation you
-have not seen. It does not test whether you memorised definitions.
+have not seen. It does not test whether you memorised definitions. There
+is nothing to revise beyond having turned up all term --- it is the same
+move the room has made every week since meeting 2.
 
 ### Team process (10 %)
 
@@ -356,39 +366,77 @@ of your paper.**
 
 {{< include _builds.qmd >}}
 
-By meeting 13 the paper is not a blank page. It is thirteen artifacts
-you already made, each argued about in the room the week you made it.
+By the time the outline is due at meeting 12, the proposal is not a
+blank page. It is a dozen artifacts you already made, each argued about
+in the room the week you made it.
 
-The job that week is assembling and writing them. That is what meeting
-13 teaches.
+The job then is assembling them. That is what the outline is.
 
 ### Team deliverables (40 %)
 
-The sequence is the same one used across AEM 6991 sections. It is what
-AEM 6992 needs in January.
+**One paper, reached in three milestones.** A one-page pitch, then the
+whole argument as a detailed outline, then the written proposal.
 
-**Nothing is submitted as a finished paper out of nowhere.** Each
-written product is built in stages. The **outline** first: topic
-sentences only, in order. Then the **sketch**, where each topic sentence
-gets its evidence in note form. Only then the full text.
-
-Every stage is submitted and graded inside that deliverable's weight. So
-a broken argument is caught at the outline, where fixing it costs an
-afternoon rather than a week.
+**Nothing is submitted as a finished paper out of nowhere.** The
+argument is fixed before the sentences are. A broken argument is caught
+at the outline, where fixing it costs an afternoon rather than a week.
 
 {{< include _deliverables.qmd >}}
 
-**The data feasibility memo is specific to this section.** The most
-common way an MPS capstone fails is not a bad question. It is a good
-question whose data never arrives.
+**The data section of the outline is the one that kills projects.** The
+most common way an MPS capstone fails is not a bad question. It is a
+good question whose data never arrives.
 
-So the memo makes you prove the data is real while there is still time
-to change course. It is the single highest-return deadline in the
-course.
+So the outline makes you name the dataset, its holder, the access route,
+the timeline and your plan B --- while there is still time to change
+course. Meeting 9 teaches you what to ask of a dataset. Meeting 10
+covers how to get hold of one. Meeting 11 has you interrogate real data.
+You certify your data having actually handled some, not from theory.
 
-Its position is deliberate. Meeting 9 teaches you what to ask of a
-dataset. Meeting 11 has you do it on real data. You certify your data
-having actually interrogated some, not from theory.
+### What you are graded against
+
+Across AEM 6991 sections, the criteria for written team work are the
+**required section headings**. If a heading has nothing under it, that is
+the finding. This section keeps that convention and adds the quality
+scale the headings are judged on.
+
+**The proposal outline and the research proposal must both cover, under
+these headings:**
+
+- **Research problem.** What is being studied, and what specific question
+  is being asked?
+- **Practical justification.** What business or economic decision does
+  this bear on, and who makes it?
+- **What is already known.** What does the literature establish, and what
+  does it not?
+- **Conceptual model.** The problem drawn --- how the concepts connect,
+  causally or otherwise.
+- **Methodological approach.** The empirical strategy, the design, and
+  the assumption carrying the estimate.
+- **Study sample.** The unit of analysis, and how the sample is built.
+- **Data and access.** The dataset, who holds it, how you get it, what it
+  costs, what it measures, and your plan B.
+- **Internal validity.** The sources of biased inference, and how you
+  address them.
+- **External validity.** How far the finding travels beyond your setting.
+- **Limitations and self-critique.** The honest weaknesses. Stating one
+  well earns marks; hiding one costs them.
+- **Work plan.** A step-by-step list of the tasks AEM 6992 will execute.
+- **Research ethics.** Any ethical issue, and what you did about it.
+- **References.**
+
+**The quality scale**, applied to each piece of written work:
+
+| | |
+|:--|:--|
+| **Excellent** | Every heading is answered from your own project. The claim is in the first sentence. The evidence supports it. Somebody outside your team could act on it. |
+| **Adequate** | The headings are answered, but some are generic --- true of any project, not this one. The argument is there but the reader has to assemble it. |
+| **Weak** | Substantial sections are filled with restated prompt or borrowed text. Little evidence of engagement with your own case. The argument does not cohere. |
+| **Unacceptable** | Not submitted, submitted late beyond the policy below, or so thin it shows no thought. |
+
+The two things that move a grade most are the same two every time.
+**Is the claim in the first sentence?** And **could it come out the other
+way?**
 
 **Late policy.** Team deliverables lose 10 % up to 8 hours late, 50 %
 from 8 to 72 hours, and are not accepted after 72 hours. Notify the
@@ -400,11 +448,11 @@ Fourteen meetings. Each runs the same shape:
 
 | Time | |
 |:---|:---|
-| 2:00--2:05 | Opening quiz on the reading |
 | 2:05--3:15 | Session A --- the concept, on worked examples |
 | 3:15--3:30 | Break |
-| 3:30--3:35 | Second quiz on session A |
 | 3:35--4:30 | Session B --- **your own project**, submitted before you leave |
+
+A quiz can open either half, without warning.
 
 Session B is not a lab exercise on someone else's data. It applies the
 day's work to the team's actual project: conceptual clinics early in the
@@ -426,42 +474,87 @@ disagree.
 review of another team's paper is due in the exam period; the date for
 the final poster or plan is to be announced.*
 
-## Readings
+## Readings and handbooks
 
-Readings are assigned per meeting and posted on that meeting's page.
-The opening quiz is drawn from them.
+**There is no book to buy.** Everything is free, either openly online or
+through the Cornell library.
 
-**There is no book to buy.** Everything assigned is free, either through
-the Cornell library or openly online. The full term list is settled in
-the first weeks and announced here.
+Quizzes are drawn from the lecture, not from a reading, so nothing below
+is a gate. These are the shelf you reach for when a session raises
+something you want more of, and each meeting page points at the chapters
+that fit it.
 
-Two open texts carry most of the inference half, and are worth knowing
-about now. Cunningham,
-[*Causal Inference: The Mixtape*](https://mixtape.scunning.com/), and
-Huntington-Klein, [*The Effect*](https://theeffectbook.net/). Both are
-readable without prior econometrics, which is the binding constraint
-here.
+### The three handbooks
 
-Adams, Khan, Raeside & White (2007), *Research Methods for Graduate
-Business and Social Science Students* (SAGE), is the shared text across
-AEM 6991 sections. It is free through the Cornell library.
+**Cunningham, [*Causal Inference: The Remix*](https://mixtape.scunning.com/)** ---
+the second edition of *The Mixtape*, free to read online. The
+[first edition](https://www.scunning.com/mixtape.html) is still up. This
+is the main one for us: readable without prior econometrics, and it
+covers the whole inference half.
 
-Recurring readings: Sandberg & Alvesson on
-[problematization](https://doi.org/10.1177/1350508410372151); Haas & Mortensen on
-[teams](https://hbr.org/2016/06/the-secrets-of-great-teamwork); Stanley & Castles, *The So What Strategy*;
-Zelazny, *Say It With Charts*.
+| | |
+|:--|:--|
+| 1--2 | Foundational ideas · which causal inference? |
+| 3--4 | **Directed acyclic graphs** · potential outcomes and randomization |
+| 5 | **Unconfoundedness** |
+| 6--7 | **Regression discontinuity** · **instrumental variables** |
+| 8--11 | Causal panel designs · **difference-in-differences** · complex DiD · synthetic control |
+
+**Adams, Khan, Raeside & White (2007), [*Research Methods for Graduate
+Business and Social Science Students*](https://doi.org/10.4135/9788132108498)**
+(SAGE) --- the shared text across AEM 6991 sections, free through the
+Cornell library. Sign in with your NetID. It is where the
+non-inference craft lives: the research cycle, literature reviewing,
+sampling, surveys, and writing up.
+
+| | |
+|:--|:--|
+| 1--2 | Introduction to research · methodology and **research ethics** |
+| 3--4 | The research cycle · **literature review and critical reading** |
+| 5 | **Sampling**, and sample size determination |
+| 6--9 | Primary data · **secondary data** · **surveys** · interviews |
+| 10--13 | Qualitative analysis · descriptive statistics · correlation and regression · advanced methods |
+| 14 | **Tests of measurement and quality** --- reliability, validity, generalisability |
+| 15--16 | Conducting your research · **writing and presenting** |
+
+**Angrist & Pischke, [*Mostly Harmless
+Econometrics*](https://www.mostlyharmlesseconometrics.com/)** (Princeton,
+2009) --- the standard graduate reference for the designs in Part III.
+
+::: {.callout-warning appearance="simple"}
+**This one assumes econometrics.** It is not assigned and you are not
+expected to read it. It is here because it is the book the designs in
+this course come from, and because a few of you will want it --- or will
+meet it in a job. Chapter 1, *Questions about Questions*, is eight pages
+and needs no maths. Start there or nowhere.
+:::
+
+| | |
+|:--|:--|
+| 1--2 | **Questions about questions** · the experimental ideal |
+| 3 | Making regression make sense |
+| 4--6 | Instrumental variables · fixed effects, DiD and panel data · regression discontinuity |
+| 7--8 | Quantile regression · standard error issues |
+
+### Also recurring
+
+Huntington-Klein, [*The Effect*](https://theeffectbook.net/), free
+online and the gentlest of the four. Sandberg & Alvesson on
+[problematization](https://doi.org/10.1177/1350508410372151); Haas &
+Mortensen on
+[teams](https://hbr.org/2016/06/the-secrets-of-great-teamwork);
+Stanley & Castles, *The So What Strategy*; Zelazny, *Say It With
+Charts*.
 
 ## Attendance
 
 The format is once a week. So missing one meeting means missing two
 sessions.
 
-Attendance is recorded two ways: the opening quiz, and the session-B
-check-in. Two dropped quiz scores absorb two full absences, without
-penalty and without a conversation.
-
-Beyond that, missed quizzes score zero. And a check-in you were not
-present for cannot be filed retrospectively.
+Attendance is recorded by the session-B check-in, which cannot be filed
+retrospectively. Quizzes are unannounced, so missing a meeting risks
+missing one --- and a missed quiz scores zero. The dropped score absorbs
+one absence without penalty and without a conversation.
 
 If you are going to miss more than two meetings, talk to me early
 rather than late.

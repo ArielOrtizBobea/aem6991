@@ -26,10 +26,12 @@ website:
         - text: "Syllabus"
           href: fall-2026/syllabus.qmd
         # >>> BEGIN GENERATED MEETINGS — edit fall-2026/_schedule.yml, then
-        - section: "Part 1 — The question"
+        - section: "Part 1 — Getting started"
           contents:
-            - text: " 1 Finding a question"
+            - text: " 1 Intro and ideas"
               href: fall-2026/sessions/01-questions.qmd
+            - text: "   Question relay cards"
+              href: fall-2026/handouts/relay-cards.qmd
         - section: "Part 2 — Inference"
           contents:
             - text: " 2 Causal language"
@@ -62,16 +64,16 @@ website:
               href: fall-2026/handouts/instrument-cards.qmd
             - text: "10 Getting the data"
               href: fall-2026/sessions/10-getting-data.qmd
-            - text: "11 Midterm and using data"
-              href: fall-2026/sessions/11-midterm-interrogating-data.qmd
-        - section: "Part 5 — Reporting"
+            - text: "11 Using data"
+              href: fall-2026/sessions/11-using-data.qmd
+        - section: "Part 5 — Bringing it home"
           contents:
             - text: "12 Seeing and showing"
               href: fall-2026/sessions/12-seeing-data.qmd
             - text: "   Figure critique cards"
               href: fall-2026/handouts/figure-tricks.qmd
-            - text: "13 Writing the design paper"
-              href: fall-2026/sessions/13-writing-collaboration.qmd
+            - text: "13 Midterm and writing"
+              href: fall-2026/sessions/13-midterm-and-writing.qmd
             - text: "14 The pitch"
               href: fall-2026/sessions/14-pitch.qmd
         - section: "Resources"

@@ -24,9 +24,11 @@ format:
 
 ## Due before meeting 2 · September 2
 
-**Statement of interest**, one to two pages. What you might want to work
-on, why it matters, what you want out of it professionally, and what you
-bring to it that most people here do not. Teams are formed from these.
+**Statement of interest**, one page maximum, in five sections: the context,
+the problem, your proposition, its feasibility and challenges, and why you
+— what you bring, and how this fits where you want to go professionally.
+The first four are the research proposal's own skeleton, scaled down. The
+fifth is how teams get matched.
 
 ::::
 
@@ -497,22 +499,33 @@ holds what you need.
 
 ## Your assignment {.smaller}
 
-Statement of interest — one to two pages, due before meeting 2 on
+Statement of interest — **one page maximum**, due before meeting 2 on
 September 2.
 
-- What you might want to work on, and why it matters
-- What you want out of it professionally
-- What you bring to it that most people here do not
+| | |
+|:--|:--|
+| 1 · Context | What world is this in? |
+| 2 · The problem | What is wrong, unknown, or stuck? |
+| 3 · Your proposition | What would you do about it? |
+| 4 · Feasibility | What data, and what could stop it? |
+| 5 · Why you | What you bring — a job, an industry, a language, access
+  to somebody. And why this fits where you want to go |
 
-Some of what you need is already on your group's sheet from this
-afternoon. Use it.
+Section 4 is largely what your group told you this afternoon. Use it.
 
 ::: {.notes}
-This is the last thing they hear, so land it properly. Say the deadline
-twice.
+Last thing they hear, so land it. Say the deadline twice, and say one page
+means one page.
 
-Point back at the board. The ideas they just generated, and the overlaps
-they just saw, are the raw material — this is not a blank page.
+Sections 1 to 4 are the proposal's own skeleton, scaled down — they will
+write these same headings again in November, which is worth telling them.
+
+Section 5 is how I match teams, and it is two things. What you bring is
+capability — without it I can only match on topic, and five people with the
+same background is a worse team. Why this fits where you want to go is
+motivation, and it is the better predictor of who still cares in November.
+
+Point back at the board: this is not a blank page.
 :::
 
 ## How the teams get made {.smaller}
@@ -521,6 +534,9 @@ I read all of them, then form the teams.
 
 I am matching on two things: what you want to work on, and what you bring.
 A team of five people with the same background is a worse team.
+
+**Most of these ideas will not survive team formation.** That is expected,
+and it is not a verdict on yours.
 
 ::: {.callout-note appearance="simple"}
 "I don't know yet" is useful information, not a failure. It means the idea

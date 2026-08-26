@@ -204,10 +204,22 @@ You start with full marks and lose them. What costs points:
 | Arriving late, or leaving at the break | −2 each |
 | Absent without notice | −4 each |
 
-The statement of interest is due before meeting 2. It is one to two pages:
-what you might want to work on, why it matters, what you want out of it
-professionally, and what you bring that most people here do not. **I form
-the teams from these**, so write it for me rather than for a grader.
+The statement of interest is due before meeting 2. **One page maximum**, in
+five sections: the context, the problem, your proposition, its feasibility
+and challenges, and **why you** --- what you bring, and how this fits where
+you want to go professionally.
+
+The first four are the research proposal's own skeleton, scaled down. You
+write those same headings again in November.
+
+The fifth is how I match teams, and it is two things. What you bring is
+capability: a prior job, an industry, a language, access to somebody.
+Without it I can only match on topic. Why this fits your goals is
+motivation, and it is the better predictor of who still cares in November.
+Write it for me rather than for a grader.
+
+**I form the teams from these**, and most of these ideas will not survive
+that. That is expected, and it is not a verdict on yours.
 
 The session-B check-in is ten minutes at the start of every second half:
 what your team did since last week, what is stuck, and who does what next.

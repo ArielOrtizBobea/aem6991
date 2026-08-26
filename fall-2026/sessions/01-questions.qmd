@@ -63,36 +63,6 @@ identification problem was — that is the thing they will be doing all
 term, and it is worth more than the CV.
 :::
 
-## Who you are {.smaller}
-
-::: {style="text-align:center"}
-**pollev.com/arielortizbobea090**
-
-[or text **arielortizbobea090** to **22333**]{style="font-size:0.7em"}
-:::
-
-::: {.notes}
-The address is YOUR presenter address, not the 6850 poll's. It serves
-whatever activity is currently activated, so what keeps the sections
-apart is the audience restriction, not the URL.
-
-TEST THIS SIGNED OUT BEFORE CLASS. The restriction puts a login wall in
-front of them. On 6850's day one that wall was discovered live, in the
-room. Do not repeat it.
-
-The survey went out last night. So run only items 6–12 here, and show
-last night's results for 1–5 and 13.
-
-They have to log in with their Cornell email to respond. Anyone blocked
-is not in the participant group — a late add, or a mistyped NetID. Add
-them from the second screen if it is one or two; take the names and move
-on if it is more. Do not debug the roster in front of the room.
-
-SAY THIS OUT LOUD BEFORE ITEM 3. Responses are tied to your NetID. Items
-3–5 are demographic, so name the identification rather than letting them
-discover it. Item 5 keeps "Prefer not to say."
-:::
-
 ## Now you {.smaller}
 
 Four things, briefly:
@@ -320,8 +290,7 @@ Say why they are unannounced: a quiz you can revise for is a reading
 check, and a quiz you cannot is a reason to be here and paying
 attention. That is the thing worth rewarding.
 
-Run item 14 now as the rehearsal — every answer is correct, and it
-proves the plumbing before it counts.
+No quiz today. Say the mechanic and move on.
 :::
 
 ## AI: permitted, disclosed, verified {.smaller}

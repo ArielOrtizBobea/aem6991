@@ -192,7 +192,7 @@ Data analysis and interpretation came fourth in the same GMAC survey, up
 from tenth in one year. Worth saying if you have the time.
 :::
 
-## Where everything lives {.smaller}
+## The course has a website home {.smaller}
 
 ::: {style="text-align:center; font-size:1.25em"}
 arielortizbobea.github.io/aem6991

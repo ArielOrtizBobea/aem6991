@@ -37,66 +37,37 @@ also by appointment.
 
 ## Course description
 
-AEM 6991 is the first half of the MPS capstone sequence. Over the
-semester each team moves from a vague interest to a research plan that
-can actually be executed in AEM 6992 in the spring. The deliverable is
-that plan.
+AEM 6991 is the first half of the MPS capstone sequence. Each team moves
+from a vague interest to a research plan that can be executed in AEM 6992
+in the spring. That plan is the deliverable.
 
-This section builds that plan in the order the work actually happens.
+The course runs in the order the work actually happens.
 
-First, turn an interest into a question that can be answered. Then work
-out **what evidence would answer it.** That means commanding the causal
-language applied economists use: counterfactuals and causal graphs, what
-the standard models estimate, where uncertainty and p-values come from,
-how inference fails, and the designs that get around each failure.
+| Part | What it does |
+|:---|:---|
+| **Getting started** | Who is in the room, and what everyone is interested in |
+| **Foundations** | Causal language, where questions come from, research ethics and access, and the tools |
+| **Methods & designs** | What models estimate, how estimates fail, and the designs that survive |
+| **Communication** | Writing, figures, and speaking --- each with session B on your own project |
+| **Delivery** | The midterm, and the pitch |
 
-Only then go looking for data. The design is what tells you which data
-you need. Teams who find the data first end up rationalising a question
-around whatever they found. That is the most common way a capstone goes
-wrong.
+Three commitments shape it.
 
-The whole conceptual half is taught on examples from industry and the
-news, before anyone opens a dataset.
+**The question comes before the data.** Teams who find data first
+rationalise a question around whatever they found. That is the most common
+way a capstone goes wrong. The conceptual half is taught on examples from
+industry and the news, before anyone opens a dataset.
 
-Then comes the part most capstones skip. Turning a construct into
-something a dataset can actually hold. And when nothing does, designing
-the survey or the experiment that would measure it, and working out how
-large a sample that needs. Then the practical business of getting data:
-who holds it, what a data-use agreement costs in months, what the IRB
-needs, and what scraping and an API can and cannot get you.
+**Finding the question is a skill, not a preamble.** Most of your education
+has rewarded execution. AEM 6992 is where the executing happens. A bad
+question executed beautifully is still a bad project.
 
-The back half is judgment. What to ask of a dataset. How to drive an AI
-assistant to answer it. How to tell whether the answer is credible. And
-what a figure shows, against what it hides.
+**Writing and teamwork run through the term, not at the end.** Writing,
+figures and speaking each get a meeting, with an individual piece attached.
+Each team writes its own ground rules in meeting 2, and every session B
+opens with a check-in that is written down and graded.
 
-**Coming up with the question is treated as a skill, not a preamble.**
-Most of your education has rewarded execution. This course rewards the
-part before it. Finding a question worth answering is harder than
-executing one, and AEM 6992 is where the executing happens. A bad
-question executed beautifully is still a bad project. It is also the most
-enjoyable part of the work, and the schedule gives it room.
-
-**Writing runs through the whole term rather than sitting at the end.**
-Writing is taught in meeting 8 and figures and talks in meeting 9. Each
-has a short individual piece attached.
-
-Teamwork works the same way. Each team writes down its own ground rules
-in meeting 2 --- who does what, and what happens when somebody misses a
-deadline. Every second session then opens with a ten-minute check-in
-that is written down and graded.
-
-None of this assumes prior econometrics or programming.
-
-**This is not a coding course.** You will work with real data from
-meeting 12 onward, through an AI assistant. What is graded is the
-questions you ask and the checks you run. Never code you wrote.
-
-The reason is that writing the code is no longer the scarce skill.
-Knowing which analysis to ask for is. So is noticing when the answer
-that comes back is wrong.
-
-If you want to build the pipeline yourself, take AEM 6850. It teaches
-exactly that, and it cannot be compressed into three hours here.
+No prior econometrics or programming is assumed.
 
 ## Audience and prerequisites
 
@@ -137,33 +108,16 @@ This section adds two outcomes that serve the four above:
 
 ## Software and tools
 
-**There is nothing to install.** Everything runs in a browser.
+Everything runs in a browser. Nothing to install.
 
--   One **AI assistant** that accepts file uploads --- Claude, ChatGPT,
-    or Gemini. A free tier is sufficient.
--   A browser, and whatever you already write in.
+| | |
+|:---|:---|
+| **AI assistant** | Claude, ChatGPT or Gemini. Must accept file uploads. A free tier is enough |
+| **Browser** | And whatever you already write in |
 
-That is the whole stack. Meetings 1--10 need no software at all.
-
-Meetings 11--12 work on real data. You will do that by uploading a file
-to an assistant and interrogating it. That is also where the "do not
-upload restricted data" rule below stops being abstract.
-
-**Code is discussed even though it is not taught.** Meeting 10 spends
-its first half on what a programming language actually is, and why R,
-Python, Stata and SQL exist and differ.
-
-Then the argument that matters. Code is the only form of an analysis
-that can be checked, repeated, and handed to somebody else. You will
-drive it through an assistant. But you cannot check what you cannot read
-at all.
-
-Meeting 11 covers the AI modalities and how each one fails.
-
-Scraping, APIs and version control get the same treatment, in meetings
-10 and 13. What they are, what they cost, when they are worth it. You
-are not required to use any of them. We break a scraper in class rather
-than building one.
+Meeting 5 covers what programming languages are and how they differ, and
+the AI modalities and how each fails. Meeting 12 works on real data by
+uploading a file to an assistant and interrogating it.
 
 ## AI policy
 

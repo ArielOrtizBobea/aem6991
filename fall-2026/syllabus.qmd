@@ -265,13 +265,11 @@ want to work on, and why.** What the topic is, why it matters, and what
 you would want out of it professionally. I form the teams from these, so
 write it for me rather than for a grader.
 
-Then name **which of the five project archetypes** your idea would be,
-and why. The archetypes are introduced in meeting 1 and listed on that
-meeting's page.
+Then say what you bring to it that most people here do not --- a prior
+job, an industry, a language, access to somebody.
 
-Getting the archetype wrong costs you nothing. Not being able to pick
-one at all is the useful signal. It means the idea is still a topic
-rather than a question.
+"I don't know yet" costs you nothing. It is the useful signal: it means
+the idea is still a topic rather than a question.
 
 ### Writing portfolio (10 %)
 

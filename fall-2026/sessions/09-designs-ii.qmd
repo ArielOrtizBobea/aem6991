@@ -1,11 +1,15 @@
 ---
-title: "7 · Research designs II"
-subtitle: "Wednesday, October 7, 2026 · Meeting 7"
-pagetitle: "AEM 6991 · 7 Research designs II"
+title: "9 · Research designs II"
+subtitle: "Wednesday, October 21, 2026 · Meeting 9"
+pagetitle: "AEM 6991 · 9 Research designs II"
 ---
 
 ::: {.callout-note appearance="simple"}
 This page is a stub. Materials appear here before the meeting.
+:::
+
+::: {.callout-warning appearance="simple"}
+**Date not final.** Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed.
 :::
 
 **What you should be able to do after this meeting.** Draw your project's design as a graph. Name the single assumption carrying the estimate — the one you would have to defend to a sceptic.

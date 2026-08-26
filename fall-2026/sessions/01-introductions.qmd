@@ -1,13 +1,13 @@
 ---
-title: "1 · Intro and ideas"
+title: "1 · Introductions"
 subtitle: "Wednesday, August 26, 2026 · Meeting 1"
-pagetitle: "AEM 6991 · 1 Intro and ideas"
+pagetitle: "AEM 6991 · 1 Introductions"
 format:
   html:
     toc: true
     toc-depth: 2
   revealjs:
-    output-file: 01-questions-slides.html
+    output-file: 01-introductions-slides.html
     theme: [default, slides.scss]
     template-partials:
       - title-slide.html
@@ -20,14 +20,13 @@ format:
 
 :::: {.content-hidden when-format="revealjs"}
 
-[Slides](01-questions-slides.html)
+[Slides](01-introductions-slides.html)
 
 ## Due before meeting 2 · September 2
 
 **Statement of interest**, one to two pages. What you might want to work
-on, why it matters, what you want out of it professionally, and **which
-of the five archetypes below** your idea would be. Teams are formed from
-these.
+on, why it matters, what you want out of it professionally, and what you
+bring to it that most people here do not. Teams are formed from these.
 
 ::::
 
@@ -401,124 +400,6 @@ The second is why the relay separates round 1 from the later rounds, and
 scores them separately. Say that when you set it up.
 :::
 
-## The five archetypes {.smaller}
-
-Every project should be able to say, in one sentence, which of these it is.
-
-| | Archetype | The question |
-|:--|:--|:--|
-| 1 | **Evaluation** | Did it work? |
-| 2 | **Preference & pricing** | What would people choose, and pay? |
-| 3 | **Prediction & risk** | What happens next, and how wrong could we be? |
-| 4 | **Diagnosis & benchmarking** | Where is the gap, and what explains it? |
-| 5 | **Feasibility & landscape** | Is this opportunity real? |
-
-**A project that cannot pick one is not yet a project.**
-
-::: {.notes}
-The point of this list is subtraction. "I'm interested in sustainable
-packaging" is a topic. Run it through five archetypes and you get five
-specific questions — and four you should drop.
-
-The most consistent complaint about capstone courses is that the freedom
-is paralyzing. This list is the answer to it.
-:::
-
-## 1 · Evaluation {.smaller}
-
-**Did it work?** A decision has already been made somewhere. Estimate its
-effect.
-
-- **Claim:** causal, retrospective
-- **Design:** difference-in-differences, event study, regression
-  discontinuity, IV — *meetings 6–7*
-- **Data:** outcomes before and after, for a treated group **and** a
-  credible comparison group
-- **Fails when:** no comparison group — or the "treatment" was adopted
-  precisely by the units already changing
-
-*Did a loyalty-program relaunch change basket size? Did a tariff change
-shift import composition?*
-
-::: {.notes}
-The single most common failure in the entire course lives on this slide:
-selection into treatment. Flag it now, pay it off in meeting 4.
-:::
-
-## 2 · Preference & pricing {.smaller}
-
-**What would people choose, and what would they pay?** The decision is not
-yet made; the input needed is what people value.
-
-- **Claim:** causal, but about *elicited* choices — a real limitation
-- **Design:** choice experiments and conjoint, randomized price or message
-  tests — *meetings 6 and 10*
-- **Data:** usually collected by you — an instrument you design
-- **Fails when:** stated preference reported as revealed preference; or
-  n = 40 classmates generalized to a market
-
-*Willingness to pay for a sustainability claim. Which fee structure a
-retail investor picks.*
-
-## 3 · Prediction & risk {.smaller}
-
-**What happens next, and how wrong could we be?** The decision needs a
-number about the future, not a cause.
-
-- **Claim:** predictive — **explicitly not causal**, and saying so is part
-  of the grade
-- **Design:** out-of-sample validation, backtesting, honest baselines
-- **Data:** panel or time series with enough history to hold out a test
-  period
-- **Fails when:** no out-of-sample test; look-ahead bias; or the team
-  quietly starts making causal recommendations off a predictive model
-
-*Default risk. Demand forecasting. Churn.*
-
-::: {.notes}
-40% of this class goes into finance, where this is often the honest
-project. I am not banning it. The discipline is naming it: "this is
-predictive, here is why that is right for this decision, here is what I
-therefore cannot conclude." That sentence is the whole course.
-:::
-
-## 4 · Diagnosis & benchmarking {.smaller}
-
-**Where is the gap, and what explains it?** Something varies more than it
-should and nobody knows why.
-
-- **Claim:** descriptive, hypothesis-generating
-- **Design:** decomposition, benchmarking against a reference group —
-  *meetings 9 and 12*
-- **Data:** operational or administrative records at the unit where the
-  variation lives
-- **Fails when:** description dressed up as a cause; or it stops at "here
-  is a dashboard" with no decision attached
-
-*Why conversion differs threefold across regions. Where a hiring funnel
-leaks.*
-
-## 5 · Feasibility & landscape {.smaller}
-
-**Is this opportunity real, and what constrains it?**
-
-- **Claim:** descriptive synthesis, **plus at least one original empirical
-  component**
-- **Design:** market sizing, competitive benchmarking, regulatory and cost
-  constraints
-- **Fails when:** it becomes a deck of secondary research
-
-::: {.callout-warning appearance="simple"}
-**The dangerous one.** Approved only if it contains a specific, checkable
-empirical question you answer with data you analyze yourselves.
-:::
-
-::: {.notes}
-The type most likely to produce a bad capstone, and the one
-consulting-bound students gravitate to. The guardrail is real and it gets
-enforced at the outline's data section, which is due at meeting 12.
-:::
-
 ## What the last two cohorts did {.smaller}
 
 **2026**
@@ -561,7 +442,7 @@ was allowed. It is allowed.
 1. **The topic with no question.** "AI in finance."
 2. **The dataset in search of a question.** You found a nice dataset and
    have been reverse-engineering a question onto it since.
-3. **The consulting deck.** Archetype 5 without the empirical component.
+3. **The consulting deck.** Secondary research with no empirical work of your own.
 4. **The unobtainable-data project.** Beautiful design; requires
    proprietary data from a firm nobody on the team knows.
 5. **The dissertation.** Correctly scoped for three years.
@@ -770,8 +651,8 @@ the joins. Say so before the combination round starts, not after.
 
 **What could this data answer?**
 
-Write three candidates. Then pick your best, put it at the top of the
-sheet, and label its **archetype**.
+Write three candidates. Then pick your best and put it at the top of the
+sheet.
 
 ::: {.callout-note appearance="simple"}
 You did not choose this dataset. That is the point — it is the same move
@@ -835,15 +716,14 @@ this room already thinks like this.
 
 - What you might want to work on, and why it matters
 - What you want out of it professionally
-- **Which archetype**, and why
+- What you bring to it that most people here do not
 
 **I form the teams from these.** Meeting 2 is causal language, and your
 team writes down its own ground rules.
 
 ::: {.notes}
-Say explicitly: not being able to pick an archetype is useful information,
-not a failure. It means the idea is still a topic. Write that down and I
-will help.
+Say explicitly: "I don't know yet" is useful information, not a failure.
+It means the idea is still a topic. Write that down and I will help.
 :::
 
 ::::
@@ -1013,7 +893,7 @@ sheets move the other, so no group ever gets its own question back. Three
 moves, run over two or three rounds depending on the clock.
 
 **Write.** You are handed a dataset you did not choose. What could it
-answer? Write three candidates, pick your best, label its archetype.
+answer? Write three candidates and pick your best.
 
 **Break, then build.** You get a new dataset *and* somebody else's
 question. Break their question first — name which of the four filters

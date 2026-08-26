@@ -1,7 +1,7 @@
 ---
-title: "6 · Research designs I"
-subtitle: "Wednesday, September 30, 2026 · Meeting 6"
-pagetitle: "AEM 6991 · 6 Research designs I"
+title: "8 · Research designs I"
+subtitle: "Wednesday, October 14, 2026 · Meeting 8"
+pagetitle: "AEM 6991 · 8 Research designs I"
 ---
 
 ::: {.callout-note appearance="simple"}

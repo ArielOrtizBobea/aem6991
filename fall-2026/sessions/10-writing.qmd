@@ -1,7 +1,7 @@
 ---
-title: "8 · Writing"
-subtitle: "Wednesday, October 14, 2026 · Meeting 8"
-pagetitle: "AEM 6991 · 8 Writing"
+title: "10 · Writing"
+subtitle: "Wednesday, October 28, 2026 · Meeting 10"
+pagetitle: "AEM 6991 · 10 Writing"
 ---
 
 ::: {.callout-note appearance="simple"}

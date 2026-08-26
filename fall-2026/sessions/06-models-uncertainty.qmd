@@ -1,7 +1,7 @@
 ---
-title: "3 · Models and uncertainty"
-subtitle: "Wednesday, September 9, 2026 · Meeting 3"
-pagetitle: "AEM 6991 · 3 Models and uncertainty"
+title: "6 · Models and uncertainty"
+subtitle: "Wednesday, September 30, 2026 · Meeting 6"
+pagetitle: "AEM 6991 · 6 Models and uncertainty"
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -28,3 +28,6 @@ Ten minutes of simulation first, driven from the front. Draw from a world you co
 
 Your team's output is submitted before you leave.
 
+## Due
+
+Project pitch — one page · Exercise 1 — interrogate a dataset, end of week · Rate your teammates

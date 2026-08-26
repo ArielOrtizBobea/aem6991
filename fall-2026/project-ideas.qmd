@@ -13,7 +13,7 @@ editor:
 
 They exist so that nobody is stuck staring at a blank page in week 2.
 Every one is a lead, not a project. Each still has to survive the
-[feasibility filter](sessions/01-questions.qmd), and each still needs a
+[feasibility filter](sessions/01-introductions.qmd), and each still needs a
 decision attached to it before it is worth doing.
 
 The best capstones have always come from somebody's own curiosity. If
@@ -23,7 +23,7 @@ for.
 
 Where each dataset lives, and how to get an account, is on the
 [data sources](data-sources.qmd) page. Methods for generating your own
-ideas are in [meeting 1](sessions/01-questions.qmd).
+ideas are in [meeting 1](sessions/01-introductions.qmd).
 
 Archetypes: **1** evaluation · **2** preference & pricing ·
 **3** prediction & risk · **4** diagnosis · **5** feasibility.

@@ -1,0 +1,33 @@
+---
+title: "11 · Figures"
+subtitle: "Wednesday, November 4, 2026 · Meeting 11"
+pagetitle: "AEM 6991 · 11 Figures"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+**What you should be able to do after this meeting.** Name the trick in a figure built to mislead you, and redraw it honestly without losing the point. Draw the one figure your own project lives or dies on, before you have the data to draw it with.
+
+## Where to read more
+
+Zelazny, *Say It With Charts*, for the grammar of it. [Adams](https://doi.org/10.4135/9788132108498) ch. 11 for what a descriptive figure is doing.
+
+## Session A · 2:05–3:15
+
+Three blocks. First, which figure answers which question. Distributions: a histogram, a density, a boxplot and a cumulative curve of the same column tell you four different things, and only some of them show you the second bump. Time: levels, indexed to a base year, or on a log scale — that choice is a claim about whether the reader should care about dollars or about growth rates. Space: a map of counts is a map of population unless you divided by something. Comparison: a sorted dot plot beats a bar chart nearly every time, and error bars are part of the estimate rather than decoration. Underneath all of it is one instinct — look at the data before you model it. Anscombe's quartet makes the case in one slide. Four datasets, the same means, the same variances, the same correlation, the same fitted line. One is a clean relationship, one is a curve, one is a line with a single outlier dragging it, one is a vertical stack where one point does all the work. The regression output is identical for all four. Second block: what figures hide. Aggregation, and the Berkeley graduate admissions case of 1973, where the university looked like it admitted women at a much lower rate overall while most departments taken one at a time did not. Scale, and axes that start where the author wanted them to. Binning, where the width of a histogram bin decides whether there is one group in your data or two. Projection, and Greenland the size of Africa. Area scaled by radius, which doubles the number and quadruples the ink. Cherry-picked windows. Counts where you needed a rate. Then the move that makes those useful: read a published figure for what it is not showing. Where is the denominator. What happened before the window starts. What do the subgroups do. What happened to the units that dropped out of the sample partway through. Third block, and it is the hard one. An honest figure that still makes a point. Honest does not mean neutral. You choose the comparison, sort the categories, show the raw points behind the summary, split one aggregate into small multiples, annotate the single number the argument turns on, and write the claim in the title instead of a label. Zeroing the axis is not a rule — for an index, a growth rate or a difference, zero is the wrong anchor. The test is whether the axis matches the quantity. And a finished figure has a sentence. If you cannot write the sentence, the figure is not finished.
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
+
+Six figures, each lying a different way, one per team, twenty minutes. A truncated axis turning three points of satisfaction into a soaring bar chart. Two axes on unrelated scales manufacturing a correlation between ad spend and sales. Four quarters shown out of eight years. An aggregate rising while every single region falls. Circles where two million got twice the radius of one million, so the picture is four times bigger and not two. Complaints by state with no population underneath. Name the trick, say what the figure is entitled to claim, and redraw it honestly on the sheet. The redraw still has to make a point, and that is where most teams stall — naming the lie takes two minutes, replacing it takes the rest. Then one team is drawn at random to put its redraw at the front while the room attacks, and we draw again as far as the clock allows. Points for an attack that lands, and you have to name the trick rather than say you dislike the picture. Card 4 is the aggregation one and card 6 is the rate one. Those two are where the morning either landed or it did not. Then your own project, on paper, by hand. Draw the one figure it lives or dies on. Not a figure — the figure, the one a reader looks at before deciding whether to believe you. For most of you it is one of three: the picture showing that your variation exists, the picture showing your comparison group looked like your treated group before anything happened, or the picture showing the outcome move. You do not have the data yet, so you draw it empty. Both axes labelled with their units. What one point on it is. Which comparison is on the page. The claim written across the top as a sentence. Then draw it a second time as it would look if you are wrong. If the two drawings look the same, the figure cannot support the claim, and finding that out in November is cheap. Both drawings are handed in before you leave.
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Writing 1 — reverse outline

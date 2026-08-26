@@ -1,15 +1,16 @@
 | Meeting | Session B leaves you with |
 |:---|:---|
-| **1** &nbsp;Intro and ideas | Candidate questions of your own, each labelled with an archetype and run through the filter |
-| **2** &nbsp;Causal language | Your team's ground rules, and a diagnosed causal graph |
-| **3** &nbsp;Models and uncertainty | The overclaim your own project is most at risk of making |
-| **4** &nbsp;How inference fails | The one threat your design will have to survive |
-| **5** &nbsp;Controls and matching | Which back doors you can close, and with what data |
-| **6** &nbsp;Research designs I | Whether an experiment, instrument or discontinuity is open to you |
-| **7** &nbsp;Research designs II | Your design defended in public, plus the attack that landed — the identification section and the limitation |
-| **8** &nbsp;Writing | Your problem statement, as an outline somebody outside your team could follow |
-| **9** &nbsp;Oral and visual | Your project's key figure, and a pitch that survived the room |
-| **10** &nbsp;Measurement and data | Your key variable, operationalised — and if you must collect it, the instrument and the sample size it needs |
-| **11** &nbsp;Getting the data | Your data source, access route, timeline and plan B |
-| **12** &nbsp;Using data | Your own data, interrogated, and what is wrong with it |
+| **1** &nbsp;Introductions | Candidate questions of your own, each run through the feasibility filter |
+| **2** &nbsp;Theory and causality | Your team's ground rules, and the first causal graph of your own question — treatment, outcome, the back door you must close, and the variable you must not touch |
+| **3** &nbsp;Finding the question | Your team's question slate — three candidate questions, each labelled with an archetype and run through the four filters, with one killed on the record |
+| **4** &nbsp;Ethics and access | Your project's ethics-and-access checklist — every gate it trips, who signs, and the date each one has to start |
+| **5** &nbsp;Coding tools and AI | Your candidate dataset interrogated — or, if you do not hold one yet, the named access route and plan B for getting it |
+| **6** &nbsp;Models and uncertainty | The overclaim your own project is most at risk of making |
+| **7** &nbsp;How models fail | The one threat your design must survive — its direction, and whether controls can close it |
+| **8** &nbsp;Research designs I | Whether an experiment, instrument or discontinuity is open to you |
+| **9** &nbsp;Research designs II | Your design defended in public, plus the attack that landed — the identification section and the limitation |
+| **10** &nbsp;Writing | Your problem statement, as an outline somebody outside your team could follow |
+| **11** &nbsp;Figures | Your project's key figure, drawn twice — as you expect it to look, and as it looks if you are wrong |
+| **12** &nbsp;Speaking | Your final-presentation deck, rehearsed and attacked — plus the gap between the claim you made and the claim the room heard |
 | **13** &nbsp;Midterm and workshop | Your outline, marked up by somebody outside your team |
+| **14** &nbsp;The pitch | Your plan, pitched — and what your team owes AEM 6992 over the break |

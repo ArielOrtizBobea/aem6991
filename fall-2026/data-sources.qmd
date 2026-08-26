@@ -184,7 +184,7 @@ ethics](permissions.qmd), and start it early.
 
 **Which row you are in is feasibility filter 2.** Getting it wrong is
 the most common way an MPS capstone dies. [Meeting
-11](sessions/11-getting-data.qmd) is about this.
+5](sessions/05-tools-and-ai.qmd) is about this.
 
 ## Ask a librarian
 

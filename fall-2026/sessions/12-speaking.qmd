@@ -1,0 +1,33 @@
+---
+title: "12 · Speaking"
+subtitle: "Wednesday, November 11, 2026 · Meeting 12"
+pagetitle: "AEM 6991 · 12 Speaking"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+**What you should be able to do after this meeting.** Give a five-minute pitch whose argument the room can repeat back to you, on slides where every title is a claim. Answer a question you cannot answer without bluffing.
+
+## Where to read more
+
+[Adams](https://doi.org/10.4135/9788132108498) ch. 16 on presenting.
+
+## Session A · 2:05–3:15
+
+Same skeleton, new medium. Your talk is the outline from meeting 10 with pictures on it, and the pictures are the ones you rebuilt in meeting 11. Then the rule that does most of the work: one claim per slide, and the claim is the slide title. "Methodology" is a label. "We compare stores on either side of a state border, so the weather and the season are the same on both sides" is a claim. "Results" is a label. "Basket size rose 4% in relaunch stores and did not move next door" is a claim. Read your titles alone, top to bottom, with nothing else on the screen. You should have the argument. If you do not, the deck does not contain one, and no amount of delivery will put it there. Next, the thing everybody does and nobody defends. No bullet lists. A bullet list is an outline you stopped converting into sentences. The room reads it faster than you can say it, so you lose them for the rest of the slide, and you end up reading your own slide out loud to people who finished it. Then the two thirty-seconds. The first thirty seconds say what the question is and why anybody should care. Not your name. Not an agenda slide. Not thanking anyone. The last thirty seconds say what you want: in this genre, what will exist by May and what you need to get there. Everything in between is negotiable; those two are not. Then structure by length, because they are different objects. Five minutes is five slides — the question, the decision somebody makes differently, the design and the assumption carrying it, the data and how you actually get it, and what exists by May. Fifteen minutes is that same spine with room for the graph, one alternative explanation you considered and rejected, and the limitation stated plainly. It is not five minutes with more slides on the end. Then questions, which is where most pitches are actually won or lost. Three kinds arrive. Clarification: answer it in one sentence and move. Challenge: answer first, then explain, and do not relitigate the whole talk. And the one you cannot answer, which is the one worth practising. The answer is "I don't know," followed by what would settle it. That sentence costs you nothing and a bluff costs you the room, because the people asking do this for a living and they can hear it. Know your numbers cold — sample size, the headline magnitude, where the data comes from, what it costs — because those are what get asked, and fumbling them undoes twenty good minutes. Then delivery, briefly, and this is not charm school. You will talk too fast, so rehearse standing up and out loud, once, with a clock; reading it in your head is not rehearsal and it is why teams over-run. Pause after a claim. Silence is what makes it land, and it is the only tool here that works on everybody. Stand where the room can see you, not behind the laptop and not in the projector beam, and never turn your back to read your own slide. And plan for the deck failing, because eventually it does. Know your first three claims by heart. Carry a PDF you can open from a phone. Be able to give the whole thing with no slides at all, which if the titles are claims you nearly can. Finally, the genre you actually face. You are pitching a research plan to people who will never read the paper. They are not checking your work. They are deciding whether to fund it, staff it, or wait. So they ask three things: so what would you do differently, how confident are you, and what does it cost. A talk built for a seminar answers none of them. I will give you the same two-minute pitch twice at the front — once with an agenda slide and bullet lists, once with claim titles and nothing else — and you will tell me which one you can repeat back.
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
+
+Ten minutes of team check-in first, with one agenda item today: who says which slide at meeting 14, and who holds the clock. Then the shared case. I give a five-minute pitch from the front and it is deliberately bad — an agenda slide, a title called "Results," four bullets a slide, the claim arriving on slide 4, forty seconds over, and one question answered with a bluff. Everybody scores the same pitch on the same card. What did the first thirty seconds do? Where did the claim first appear? What was the ask? Then the part that gets compared: every team rewrites my five slide titles as claims, working from the same five labels, and the best set goes on the screen next to mine. Same object, same constraint, so a good rewrite and a lazy one are visible side by side. Then the dress rehearsal, which is the rest of the hour. Order is drawn at random. Every team pitches its own project, three minutes, hard stop, five slides with claim titles. Then the room attacks — and it attacks the argument, not the delivery. Attacks come in four named types and nothing else counts: the data cannot answer this question, the assumption carrying the estimate is false in this setting, the comparison group is not comparable, or the answer would not change anyone's decision. "You seemed nervous" is not an attack and scores nothing. Points for attacks that land, as always. Each team leaves with four things in writing. Their actual clock time. The attack slips, each naming its type. One line from me. And the one that does the real work: before any discussion, two other teams write down in a single sentence the claim they think you just made, and you write down the claim you meant. You leave holding both. Where those two sentences differ is your meeting-14 rewrite, and you have three weeks to close the gap. Handed in before you leave: the five-slide dress-rehearsal deck, your written thirty-second opening and thirty-second close, and the claim-we-meant against claim-they-heard sheet.
+
+Your team's output is submitted before you leave.
+
+## Due
+
+Proposal outline · Writing 2 — reverse outline and repair · Exercise 2 — rebuild and critique a figure, end of week

@@ -1,0 +1,30 @@
+---
+title: "7 · How models fail"
+subtitle: "Wednesday, October 7, 2026 · Meeting 7"
+pagetitle: "AEM 6991 · 7 How models fail"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+**What you should be able to do after this meeting.** Take a number apart and name the failure that produced it. Say which way it pushes the estimate, and whether more data would fix it. Then say what your own controls would have to close, and what they cannot.
+
+## Where to read more
+
+[Remix](https://mixtape.scunning.com/) ch. 5 on unconfoundedness. [Adams](https://doi.org/10.4135/9788132108498) ch. 14 on reliability and validity.
+
+## Session A · 2:05–3:15
+
+Two families of failure, and they are not the same problem. Bias moves the number. False precision leaves the number where it is and shrinks the error bar around it. Bias first, and there are four. Selection and sorting: the retention email went to the customers already most likely to renew, so the lift is who was picked, not what was sent. Omitted variables, with a rule for the direction — the omitted thing's effect on the outcome, times its correlation with the treatment. Two signs multiplied. You can usually work out which way you are wrong before you have the data. Measurement error next. Classical error in the variable you care about pulls the estimate toward zero, always: self-reported spend, survey income, recalled hours. Non-classical error does not. People round, they under-report, and top-coded income errs one way only. Then it can go anywhere. Fourth, endogeneity and reverse causality. More police, more crime. The firm raised price in the quarter demand was strongest. And then the question I will ask of every one of them: does more data fix it? No. A biased estimate with a million rows is a more precisely wrong number. Then the quieter family, which leaves the estimate untouched. Dependence ignored: five hundred shoppers in ten stores is closer to ten observations than five hundred, and Bertrand, Duflo and Mullainathan found placebo policies in state panels rejecting at 45% instead of 5%. Multiple testing: twenty subgroups, one significant, one slide. Specification search: Silberzahn gave 29 teams one dataset and one question, and got estimates from 0.89 to 2.93. None of the three moves the number. All three make you sure of it. Last, the fixes and their ceiling. Conditioning on observables, drawn on the graph — which back doors a set of controls closes, and the two controls that make things worse. One sits on the path from cause to effect. One opens a path by being conditioned on. Then matching, which is the same claim made by comparison rather than by regression, and it needs somebody to compare to. If no untreated store looks like your treated stores, there is nothing there. Then the ceiling. LaLonde put observational estimates with controls up against a randomised benchmark, and they did not reproduce it. 'I added controls' is a claim about the graph, not a technique. So state the claim out loud, and report how far your coefficient moved when the controls went in.
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
+
+Ten minutes of team check-in, then the results-critique cards again — the same eight analysts, dealt fresh, and this time each one has come back with a fix. They added controls. Fifteen minutes to rule on it. Name the failure in the morning's vocabulary. Say which way it pushes the estimate. Say whether more data would fix it. Then rule on the fix itself: does the control close a back door, sit on the path from cause to effect, or open a door by being conditioned on? Then one team is drawn at random to defend at the front while the room attacks, and we draw again as far as the clock allows. Nobody knows in advance whether they are up. Points for attacks that land, and you have to name what is wrong, not just dislike it. Card 7 is the one to watch. The advertising model with an R² of 0.94, now with month and competitor spend added, and still uninterpretable — the budget was set from the sales forecast, so the arrow runs backwards, and no control fixes an arrow that runs backwards. Then your own project. One threat, the one your design actually has to survive. Write down which way it pushes your estimate, whether more data would fix it, the variable that would close it, and whether you can obtain that variable before January. If you cannot, write the sentence you will put in your limitations section instead. One page, per team, handed in before you leave. You will be answering that threat in November.
+
+Your team's output is submitted before you leave.
+

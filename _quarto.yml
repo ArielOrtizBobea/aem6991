@@ -28,56 +28,52 @@ website:
         # >>> BEGIN GENERATED MEETINGS — edit fall-2026/_schedule.yml, then
         - section: "Part 1 — Getting started"
           contents:
-            - text: " 1 Intro and ideas"
-              href: fall-2026/sessions/01-questions.qmd
-            - text: "   Question relay cards"
-              href: fall-2026/handouts/relay-cards.qmd
-        - section: "Part 2 — Inference"
+            - text: " 1 Introductions"
+              href: fall-2026/sessions/01-introductions.qmd
+        - section: "Part 2 — Foundations"
           contents:
-            - text: " 2 Causal language"
-              href: fall-2026/sessions/02-causal-language.qmd
+            - text: " 2 Theory and causality"
+              href: fall-2026/sessions/02-causality.qmd
             - text: "   Causal claim cards"
               href: fall-2026/handouts/causal-claims.qmd
-            - text: " 3 Models and uncertainty"
-              href: fall-2026/sessions/03-models-uncertainty.qmd
+            - text: " 3 Finding the question"
+              href: fall-2026/sessions/03-questions.qmd
+            - text: "   Question relay cards"
+              href: fall-2026/handouts/relay-cards.qmd
+            - text: " 4 Ethics and access"
+              href: fall-2026/sessions/04-ethics.qmd
+            - text: " 5 Coding tools and AI"
+              href: fall-2026/sessions/05-tools-and-ai.qmd
+        - section: "Part 3 — Methods & designs"
+          contents:
+            - text: " 6 Models and uncertainty"
+              href: fall-2026/sessions/06-models-uncertainty.qmd
             - text: "   Results critique cards"
               href: fall-2026/handouts/results-claims.qmd
-            - text: " 4 How inference fails"
-              href: fall-2026/sessions/04-inference-goes-wrong.qmd
-            - text: " 5 Controls and matching"
-              href: fall-2026/sessions/05-selection-on-observables.qmd
-        - section: "Part 3 — Designs"
-          contents:
-            - text: " 6 Research designs I"
-              href: fall-2026/sessions/06-designs-i.qmd
+            - text: " 7 How models fail"
+              href: fall-2026/sessions/07-how-models-fail.qmd
+            - text: " 8 Research designs I"
+              href: fall-2026/sessions/08-designs-i.qmd
             - text: "   Design scenarios"
               href: fall-2026/handouts/design-scenarios.qmd
-            - text: " 7 Research designs II"
-              href: fall-2026/sessions/07-designs-ii.qmd
+            - text: " 9 Research designs II"
+              href: fall-2026/sessions/09-designs-ii.qmd
         - section: "Part 4 — Communication"
           contents:
-            - text: " 8 Writing"
-              href: fall-2026/sessions/08-writing.qmd
-            - text: " 9 Oral and visual"
-              href: fall-2026/sessions/09-oral-and-visual.qmd
+            - text: "10 Writing"
+              href: fall-2026/sessions/10-writing.qmd
+            - text: "11 Figures"
+              href: fall-2026/sessions/11-figures.qmd
             - text: "   Figure critique cards"
               href: fall-2026/handouts/figure-tricks.qmd
-        - section: "Part 5 — Data & access"
-          contents:
-            - text: "10 Measurement and data"
-              href: fall-2026/sessions/10-measurement.qmd
-            - text: "   Instrument critique cards"
-              href: fall-2026/handouts/instrument-cards.qmd
-            - text: "11 Getting the data"
-              href: fall-2026/sessions/11-getting-data.qmd
-            - text: "12 Using data"
-              href: fall-2026/sessions/12-using-data.qmd
-        - section: "Part 6 — Bringing it home"
+            - text: "12 Speaking"
+              href: fall-2026/sessions/12-speaking.qmd
+        - section: "Part 5 — Delivery"
           contents:
             - text: "13 Midterm and workshop"
               href: fall-2026/sessions/13-midterm.qmd
             - text: "14 The pitch"
-              href: fall-2026/sessions/14-pitch.qmd
+              href: fall-2026/sessions/14-final-presentations.qmd
         - section: "Resources"
           contents:
             - text: "Where to get data"

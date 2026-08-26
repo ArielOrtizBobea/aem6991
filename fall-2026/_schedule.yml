@@ -76,28 +76,26 @@ parts:
     tab: "Getting started"
     title: "Getting started"
     blurb: >
-      Who is in the room, how the course works, and then the part that
-      actually matters — turning an interest into a question somebody
-      could answer, and reading enough to know whether somebody already
-      has.
+      Who is in the room, how the course works, and what you are here to
+      build. You leave the first meeting knowing what everyone else is
+      interested in, which is how the teams get formed.
 
   - id: 2
-    tab: "Inference"
-    title: "Evidence, models, and inference"
+    tab: "Foundations"
+    title: "Foundations"
     blurb: >
-      The conceptual core. What a causal claim is, what the standard models
-      estimate, where uncertainty comes from, the difference between
-      explaining and predicting, and how inference goes wrong — taught on
-      examples from industry and the news, before anyone opens a dataset.
-      Teams form in the first meeting of this part.
+      What a causal claim is, where good questions come from, what you are
+      allowed to do with other people's data, and the tools you will work
+      through. Teams form here. So does the question.
 
   - id: 3
-    tab: "Designs"
-    title: "Research designs"
+    tab: "Methods & designs"
+    title: "Research methods and designs"
     blurb: >
-      The ways applied economists get a credible estimate, from conditioning
-      on observables to designs built on found variation — what variation
-      each exploits, what each assumes, and how each fails.
+      What the standard models estimate and where uncertainty comes from.
+      Then how estimates go wrong and what fixes them. Then the designs
+      applied economists use to get a credible answer — what variation each
+      exploits, what each assumes, and how each fails.
 
   - id: 4
     tab: "Communication"
@@ -105,27 +103,15 @@ parts:
     blurb: >
       Half of what you are graded on is whether somebody else can follow
       the argument. So it is taught, not assumed. One meeting on writing,
-      one on figures and talking — and in both, session B works on your own
-      project rather than an exercise. The pitch comes out of this part,
-      and so does the method you will use to build the outline in November.
+      one on figures, one on standing up and saying it. In all three,
+      session B works on your own project.
 
   - id: 5
-    tab: "Data & access"
-    title: "Measurement, data, and getting hold of it"
-    blurb: >
-      The step most projects skip. Turning a construct into something a
-      dataset can hold, working out what the design actually demands, and
-      then the practical business of obtaining it — sources, proprietary
-      access, data-use agreements, the IRB, and what scraping and APIs can
-      and cannot get you.
-
-  - id: 6
-    tab: "Bringing it home"
-    title: "Bringing it home"
+    tab: "Delivery"
+    title: "Delivery"
     blurb: >
       The midterm, and then the pitch. A semester of weekly pieces becomes
-      one proposal somebody could pick up and execute in January. You
-      finish with a plan, and a team that knows how to work together.
+      one proposal somebody could pick up and execute in January.
 
 # Individual writing pieces, assessed together as the writing portfolio.
 # Two of them are reverse-outlining: going from a finished text back to the
@@ -187,34 +173,30 @@ deliverables:
 
 meetings:
   - num: 1
-    slug: "01-questions"
+    slug: "01-introductions"
     date: 2026-08-26
     part: 1
-    title: "Intro and ideas"
-    desc: "Who is in the room, how the course works, and what a capstone actually is — the analysis somebody needs before a decision, not a journal paper. Then the part that matters: five shapes a good project takes, six ways they go wrong, and a filter of four questions that kills the rest."
-    goal: "Turn a dataset you did not choose into a question worth asking. Break somebody else's question by naming the filter it fails. Know where to find data you already have."
-    a: "Three blocks. First, introductions — who I am, and then every one of you: where you are from, what you did before this, your concentration, and what you want out of the program. Second, the course. The arc into AEM 6992, what this is and is not, where the grade goes, and the ground rules for AI — permitted, disclosed, verified, with fabricated citations the one that will bite you. Third, the part that is actually the job: coming up with the question. Five archetypes — evaluation, preference and pricing, prediction and risk, diagnosis, feasibility. For each, what it can claim, what design it needs, and how it fails. Then six anti-patterns, and a filter with four questions."
-    b: "Where to look first: the Cornell library's holdings and the Dewey marketplace, browsed live. Then the question relay, in groups and against the clock. First your group gets a dataset and writes the best question it can. Then datasets and questions rotate in opposite directions, so you never get your own back. Next you break the question you inherit by naming the filter that kills it, then write your own on a dataset you have not seen. In the last round you may combine any two datasets you have held. Points for questions that survive, and for breaks that land."
-    builds: "Candidate questions of your own, each labelled with an archetype and run through the filter"
-    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 1 on what research is, and ch. 3 on the research cycle."
-    quizzes: 0
-    reading: "None"
+    title: "Introductions"
+    desc: "Who is in the room, and how the course runs. AEM 6991 produces a plan and AEM 6992 executes it, so everything you commit to this fall you live with in the spring. Then an afternoon of structured conversation, because I form the teams out of what you tell each other you are interested in."
+    goal: "Say what you are interested in, in one line a stranger can repeat back. Turn a dataset you did not choose into a question worth asking, and break somebody else's by naming the filter it fails."
+    a: "Three blocks. First, me. Where I came from, what I work on, and one result of my own — including the thing that nearly sank it. Then you. Four items each: your name and where you are from, what you studied or did before this, your concentration, and what you want out of this program and after it. Twenty-five people at forty seconds each takes most of the block. It is worth it. This is how the room learns who it is, and you will hear an interest you did not expect to share. You use that this afternoon. Second, the course. AEM 6991 produces a plan. AEM 6992 executes it. The deliverable in December is a proposal somebody could pick up in January. You are not writing a journal paper. There is no gap to fill and no contribution to claim. You are building the analysis a competent team would need before a decision that costs real money, and the standard for competent is a referee's. The genre moves; the rigor bar does not. Where this class actually goes: 40% into finance, 21% into marketing and sales, 15% into general management, 13% into consulting. Almost none into research. Third, the rules. Everything lives on the course site, one page per meeting, permanently. Canvas carries grades and submissions and nothing else. So a missed meeting is recoverable. AI is permitted, disclosed, and verified. The one that will bite you is the fabricated citation, so we take a topic from the room, ask an assistant for five references with DOIs, and open every one of them on the screen. Quizzes are short, unannounced, and drawn from the lecture you are sitting in. Roughly six, three questions, three minutes, lowest dropped. Attendance is the session-B check-in, and it cannot be filed retrospectively. Then the dates. Statement of interest September 2. Pitch October 21. Proposal outline November 11. Midterm in class November 18. Final presentations December 2. Proposal December 11. Then the grade. Half of it is yours alone, half is your team's, and the team half is graded individually wherever it can be."
+    b: "Where to look for data first, then the question relay. The Cornell library's licensed holdings and Dewey, a commercial data marketplace the Johnson College subscribes to and which costs you nothing — browsed live from the front, because teams routinely propose buying data the College already has, and others drop a good question because they assumed the data was unreachable. Then the relay, in groups and against the clock. Your group gets one dataset card it did not choose and writes the best question that data could answer. Then the datasets pass one way and the question sheets pass the other, so you never get your own question back. You break the question you inherit by naming which of the four filters kills it, then write your own on a dataset you have not seen. In the last round you may combine any two datasets your group has held, and the good questions usually live in the joins. Points for questions that survive, and for breaks that land."
+    builds: "Candidate questions of your own, each run through the feasibility filter"
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 1 on what research is."
+    reading: "TBD"
     due: "One page on what you want to work on and why — before meeting 2"
-    links:
-      - text: "Question relay cards"
-        href: fall-2026/handouts/relay-cards.qmd
 
   - num: 2
-    slug: "02-causal-language"
+    slug: "02-causality"
     date: 2026-09-02
     part: 2
-    title: "Causal language"
-    desc: "Every comparison is a claim about a world that did not happen. Counterfactuals give you the language for that. Causal graphs give you the picture: confounders, colliders, mediators, back doors."
-    goal: "Draw your project's causal graph. Say which variable you must condition on, and which you must not touch. Leave with your team's ground rules in writing."
-    a: "Counterfactuals and potential outcomes. Every comparison is a claim about a world that did not happen. Then causal graphs: confounders, colliders, mediators, back-door reasoning. And why controlling for everything makes things worse. Finally the map for the rest of this half. Every design we meet closes a back door in a different way. You will draw each one before you hear what it is called."
-    b: "First, teams. You are put into one, and it writes down its own ground rules today, while everybody still gets along. Who does what. What happens when somebody misses a deadline. How you settle a disagreement. One page, signed, handed in. Then your team's first job together. Each team draws a card carrying a real causal claim somebody is acting on — a board paper, a marketing deck, a widely shared post. Every card is broken differently. Draw the graph behind it, then name the failure in this morning's vocabulary. Then one team is drawn at random to defend its diagnosis while the room attacks, and we draw again as the clock allows. You will not know whether you are up. Card 3 is a collider and card 5 is a mediator. Those two are where the morning either landed or it did not."
-    builds: "Your team's ground rules, and a diagnosed causal graph"
-    books: "[Remix](https://mixtape.scunning.com/) ch. 3 on directed acyclic graphs and ch. 4 on potential outcomes — the two chapters closest to this meeting. [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) ch. 1, *Questions about Questions*, is eight pages and needs no maths."
+    title: "Theory and causality"
+    desc: "A theory is a set of assumptions that produces a prediction you could be wrong about. Empirical work can settle part of that and never all of it. Then causality proper: every comparison stands in for a world that did not happen, and the graph tells you which variables to condition on and which to leave alone."
+    goal: "Draw the causal graph behind a claim somebody is acting on, name the failure in it, and say which variable you must condition on and which you must not touch. Leave with your team formed and its ground rules in writing."
+    a: "Three blocks. First, theory. A theory is a set of assumptions that produces a prediction you could be wrong about. That is all it is, and it buys you four things. It tells you which comparison to make. It tells you what sign to expect. It tells you what to hold fixed. And it tells you what result would embarrass you. It is also the only thing that lets a number travel. A 40% lift measured in New York says nothing about Chicago unless you know the mechanism that produced it. Two worked examples, both from markets you will work in. [Akerlof's market for lemons](https://doi.org/10.2307/1879431) predicts that good used cars stay off the market, and it points straight at the fixes — warranties, certification, return policies. Then a dispute. [Spence's signalling model](https://doi.org/10.2307/1882010) and human capital both predict that a degree raises wages. They disagree about why. That disagreement tells you which comparison settles it: the jump at graduation, not the slope across years of study. Second, what empirical work can and cannot settle. It can measure a magnitude. It can rule out a sign. It can decide between two theories that predict different things about the same comparison. It cannot test a theory on its own. Every test is a joint test of the theory, the measure, the sample and the model, so a rejection never tells you which of the four broke. And no amount of data tells you what to want. Third, causality, which is the rest of the term. Counterfactuals first. Every unit has two outcomes: the one with the treatment and the one without. You only ever see one of them. That is [Holland's](https://doi.org/10.2307/2289064) fundamental problem, and it is a missing-data problem rather than a statistics problem. So every comparison you make is a stand-in for a world that did not happen, and the only question is whether the stand-in is any good. Customers on the loyalty app spend 40% more. The counterfactual is what those same customers would have spent without the app. It is not what the other customers spent. Then the picture. Causal graphs are arrows between variables, and they let you argue about identification before you own any data. A confounder causes both the treatment and the outcome, opens a back door, and has to be closed. A collider is caused by both, and conditioning on it manufactures an association that was never there. A mediator sits on the path you are trying to measure, and conditioning on it deletes the effect you came for. Close the back doors. Leave the front door alone. That is also why controlling for everything makes things worse. Every extra control is a claim about the graph, not a safety measure, and a kitchen-sink regression is a graph nobody drew. Finish with the map. Every design in this course closes a back door in a different way. You will draw each one before you hear its name."
+    b: "No check-in this week, because there are no teams yet. Making them is the first ten minutes. I read out the teams, formed from your statements of interest, and each one writes its own ground rules while everybody still gets along. Who does what. What happens when somebody misses a deadline. How you settle a disagreement, and who breaks a tie. One page, signed by everyone. Then the shared case, worked by every team at once. Eight cards, each carrying a real causal claim somebody is acting on — a board paper, a consulting deck, an HR review closing a matter, a widely shared post. Every card is broken in a different way. Draw the graph behind the claim. Name the failure in this morning's vocabulary. Then say what you would condition on, and what you must leave alone. Card 3 is the hiring puzzle, and it is a collider: among the people you hired, a strong test score and a strong interview trade off, because either one was enough to get in. Card 5 is the promotion gap, and salary band is a mediator: control for it and you have controlled away the thing you were looking for. Those two are where the morning either landed or it did not. Then one team is drawn at random to defend at the front while the room attacks, and we draw again as the clock allows. You will not know whether you are up. Points for an attack that lands, and you have to name what is wrong rather than say you dislike it. The last fifteen minutes are your own project. Your team has a shared interest and not yet a question, so take the closest thing you have and draw it: the treatment, the outcome, the one back door you would have to close, and the one variable you must not touch. That sheet is the artifact. It goes in with the ground rules before you leave. It is disposable and it will be wrong, which is the point of drawing it in September. You redraw it when we reach research designs, and the version that survives the room is the figure in your identification section."
+    builds: "Your team's ground rules, and the first causal graph of your own question — treatment, outcome, the back door you must close, and the variable you must not touch"
+    books: "[Remix](https://mixtape.scunning.com/) ch. 3 on directed acyclic graphs and ch. 4 on potential outcomes. [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) ch. 1, *Questions about Questions*, is eight pages and needs no maths."
     reading: "TBD"
     due: "Your team's written ground rules — agreed and handed in today"
     links:
@@ -222,9 +204,52 @@ meetings:
         href: fall-2026/handouts/causal-claims.qmd
 
   - num: 3
-    slug: "03-models-uncertainty"
+    slug: "03-questions"
     date: 2026-09-09
     part: 2
+    title: "Finding the question"
+    desc: "Finding the question is the job, not the preamble to it. Five shapes a good project takes, six ways they go wrong, and a filter of four questions that kills most of the rest. Then the relay, where you break somebody else's question and they break yours."
+    goal: "Turn an interest, or a dataset you did not choose, into a question somebody could answer, and say which archetype it is. Break a question that is not one by naming the filter it fails."
+    a: "Three blocks. First, where ideas come from. Five routes: a gap in what is known, extending or contesting a published result, an anomaly, a decision somebody actually has to make, and a dataset nobody has looked at properly. Route five is the most dangerous, and we come back to why. Then the framing that matters. Most of your education has rewarded execution. This course rewards the part before it. A bad question executed beautifully is still a bad project. It is also the most enjoyable thing you will do all semester, so do not rush it. Second, whether there is a method for having ideas. Partly. Two of the popular answers have real evidence behind them, and most do not. Start from your means, not your goal. That is [effectuation](https://doi.org/10.5465/amr.2001.4378020), from Sarasvathy's think-aloud studies of expert entrepreneurs. Experts do not pick a goal and hunt for the means. They start from who they are, what they know and whom they know, and work forward. The second is simpler. Generate, then judge, and never both at once. Teams that evaluate while brainstorming produce fewer ideas, and safer ones. For research questions specifically, [Sandberg and Alvesson](https://doi.org/10.1177/1350508410372151) separate gap-spotting from problematization. For one semester, gap-spotting is usually right. Knowing which one you are doing is what stops you overclaiming. A caution that applies here as everywhere in this course: being taught in every business school is not evidence that something works. Design thinking as a branded five-step method is widely taught and lightly tested. So is lean startup. Third, the shapes a project can take. Five archetypes: evaluation, preference and pricing, prediction and risk, diagnosis and benchmarking, feasibility and landscape. For each, what it can claim, what design it needs, and how it fails. Evaluation asks whether it worked, and dies without a credible comparison group. Did the loyalty relaunch change basket size? Preference and pricing asks what people would choose and pay, and dies when stated preference gets reported as revealed preference. Prediction and risk asks what happens next, and dies when the team quietly starts making causal recommendations off a predictive model. Diagnosis asks where the gap is, and dies as description dressed up as a cause. Feasibility asks whether the opportunity is real, and dies as a deck of secondary research. A project that cannot pick one of the five is not yet a project. Then the last two cohorts, on one slide. Four of the five 2026 projects were the same project. Take a public signal anybody can download, regress a financial outcome on it, report a coefficient. Free data, no design, no decision attached. I let the room find that rather than saying it, because it lands harder from a student than from me. Then six anti-patterns. The topic with no question. The dataset in search of a question. The consulting deck. The unobtainable-data project. The dissertation. The already-answered question. And finally the filter, which is four questions. Could a team of three to five execute this in one spring semester? Can you name the specific dataset, who holds it, and how you get it, checked rather than assumed? Could the answer come out either way? Would anybody act differently depending on it? A no on any one is fatal, and it is cheap to discover today."
+    b: "Ten-minute team check-in first. Then the question relay, against the clock. Nine dataset cards go out and your team holds one it did not choose. Real estate transactions. Climate risk by ZIP. Weekly foot traffic. EV chargers. Job postings with salaries. WARN layoff notices. Convenience store scanner data. Card spend by brand. CDC PLACES. Write the three best questions that data could answer, pick your best, put it at the top of the sheet, and label its archetype. Then the datasets pass one way and the question sheets pass the other, so no team ever gets its own question back. You break the question you inherit by naming which of the four filters kills it, or you write SURVIVES, honestly. Then you write a new question on a dataset you have not seen. In the last round you may combine any two datasets your team has held. I say the join keys out loud before that round starts. Parcels, stores and chargers carry lat/long. Postings and layoffs carry company. Scanner and card data carry brand. The good questions live in the joins. Scoring: one point every time a question of yours survives a break, one point for every break you land, two points for the best combination question. Saying a question is weak is not a break. You have to name the filter. Everybody works the same nine cards, so the kills are comparable, and I read out the two best combination questions and one good kill at the end. The kill goes last, because the killing is the lesson. Then your own project, which is the half you hand in. Three candidate questions for what your team actually wants to work on. Each labelled with an archetype. Each run through the four filters in writing, not in your heads. One of the three has to be crossed out with the filter that killed it named, because a team that kills nothing has not used the filter. That page is your question slate. It is submitted before you leave, it is what your pitch gets built from, and a question you kill in September is a month you do not lose in March."
+    builds: "Your team's question slate — three candidate questions, each labelled with an archetype and run through the four filters, with one killed on the record"
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 3 on the research cycle and ch. 4 on literature review and critical reading."
+    reading: "TBD"
+    links:
+      - text: "Question relay cards"
+        href: fall-2026/handouts/relay-cards.qmd
+
+  - num: 4
+    slug: "04-ethics"
+    date: 2026-09-16
+    part: 2
+    title: "Ethics and access"
+    desc: "Two gates stand between your design and your data, and they are different kinds of thing. The IRB is an ethics review. A data-use agreement is a contract. Both take longer than teams expect, which is why this meeting sits in September rather than in November."
+    goal: "Say whether your project needs IRB review, a data-use agreement, both or neither — and defend the answer. Name the date each gate has to start, counted backwards from January, so the spring is not spent waiting."
+    a: "Five blocks, and the last one is the point. First, why the rules exist — briefly, and without the sermon. Every rule in research ethics was written after a specific failure. Nuremberg followed the doctors' trial. The Belmont Report followed Tuskegee, which ran for forty years and was stopped by a reporter rather than by a scientist. Its three principles — respect for persons, beneficence, justice — are still the frame every IRB applies. But the modern failures are the ones that concern this room, and none of them involved a needle. Facebook ran a mood experiment on 689,000 users and published it. Cambridge Analytica harvested a personality quiz's friend graph. Second, the IRB. Two questions decide whether it applies. Is this research? Are there human participants? Teams miss the second half, because identifiable private information counts even when you never meet anybody. Scraped posts count when individuals are identifiable. So do purchased consumer records. Then the three levels of review, described in weeks rather than in definitions. Exempt can clear in a fortnight if nothing is wrong with the submission. Expedited runs to a month or more. The full board meets on a schedule you do not control, so its clock is a calendar, not a queue. And the rule that catches somebody every year: you do not decide that you are exempt. The IRB issues that determination, and it issues nothing until every person named on the protocol has finished CITI human-participants training. Exempt protocols included. One teammate who skipped the modules holds up the whole team, so do them this week, before you know whether you need them. Third, the other gate. A data-use agreement is a contract, not an ethics review, and the university signs it rather than you. Expect legal review on both sides. Expect months. Expect restrictions on what you are allowed to publish, which can mean you cannot show your own result. Terms of service are the same species — a contract you accepted by clicking. Scraping is rarely a crime and frequently a breach. Prefer the download, then the API, then nothing. Fourth, whether you may hold the file at all. Direct identifiers are the easy part. Latanya Sweeney showed that ZIP code, birth date and sex together identify most Americans uniquely. So \"we removed the names\" is not de-identification, and a vendor's word for it is not a determination. Then conflicts of interest, which are disclosed rather than confessed — a disclosure tells the reader how to weight your claim, nothing more. The clause to settle before anyone signs anything: a sponsor may have the right to review, never the right to veto. Then credit inside the team, agreed now, while there is still nothing to fight over. Fifth, integrity. Fabrication, falsification and plagiarism, one line each, with a case attached to each. Diederik Stapel invented his data and lost 58 papers. Reinhart and Rogoff made a spreadsheet error nobody checked and it moved fiscal policy in several countries. And the one that is live in this room: a fabricated citation is a fabrication. A New York lawyer was sanctioned $5,000 in 2023 for filing six cases an assistant had invented. \"The AI generated it\" was his defence, and it did not work for him either. Finally the calendar, run backwards from January. That is the argument for holding this meeting in September."
+    b: "Ten minutes of team check-in, then the cards. Each team draws a project somebody actually proposed, and every one is blocked in a different place. A team scraping Glassdoor reviews with the usernames attached. A teammate's employer offering internal HR records, with a clause letting the firm approve the write-up. Interviews with farmers in the Dominican Republic, conducted in Spanish, by a team that has not done CITI. A vendor file sold as de-identified that carries ZIP, birth year and sex. A licensed WRDS extract about to be uploaded to a chatbot for cleaning. A survey of your own classmates about salary expectations and visa status. Three specifications run and only the one that worked reported. For each card, three answers. Which gate does this trip — IRB, DUA, terms of service, conflict of interest, integrity, or none? What is the earliest date it has to start? And the half that carries the marks: what is the version of this project that is legal, is honest, and is still worth doing? Then one team is drawn at random to defend at the front while the room attacks, and we draw again as the clock allows. Nobody knows in advance whether they are up. Two cards trip nothing at all, and the team holding one has to be willing to say so. Then your own project. You fill in the ethics-and-access checklist for it, on the template, and you hand it in signed before you leave. Human participants, yes or no, with the sentence that justifies the answer. Every data source you named, who holds it, and what its licence or terms permit. Whether any field is identifiable, what you do about it, and where the file will live. Any conflict, one sentence each. Who does what, by name. And the date the slowest gate has to start. Most teams will find they need none of it. The teams that do need something find out today, which is the whole reason this meeting is in September."
+    builds: "Your project's ethics-and-access checklist — every gate it trips, who signs, and the date each one has to start"
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 2 on research ethics."
+    reading: "TBD"
+
+  - num: 5
+    slug: "05-tools-and-ai"
+    date: 2026-09-23
+    part: 2
+    title: "Coding tools and AI"
+    desc: "Every serious analysis is code, whether or not you wrote it. \"Use AI\" is four different things and they fail differently — only one of them produces output you can check. Then the practical business of getting a file at all: what Cornell already pays for, what an API is, and why scraping is the last resort dressed up as the clever one."
+    goal: "Choose the right AI modality for a data job, and say why. Interrogate a file you did not create — through an assistant, without reading the code — and catch what is wrong with it before it reaches your proposal."
+    a: "Four blocks. First, code. Not how to write it — what it is, and why you cannot avoid understanding it. Why there are several languages: R grew out of statistics, Python out of general programming, Stata out of applied economics. SQL is not the same kind of thing at all. It is a way of asking questions of data you never load onto your own machine. Then the argument that matters here. Every serious analysis is code, whether or not you wrote it. A spreadsheet stops being enough at a moment you can name: when you join two files, when the same cleaning has to run again on next month's extract, or when somebody asks what changed between version 4 and version 7. Two cases make that better than any principle. Reinhart and Rogoff's growth result averaged fifteen countries where the formula should have covered twenty, and it had already been quoted in austerity debates before anyone opened the sheet. Public Health England lost 15,841 COVID cases in 2020 because an old Excel format stops at 65,536 rows and says nothing at all when it runs out. Neither is a statistics error. Both were invisible in a spreadsheet and would have been visible in code. You will drive code through an assistant. But you cannot check what you cannot read at all. Second, the four things people mean by \"use AI\". They fail differently, and that is the whole point. Chat answers from memory. It invents citations that look real — right journal, plausible authors, a DOI that resolves to something else. File upload with code execution is different in kind: the assistant writes real code, runs it on the file you gave it, and shows you both. That is the only modality where the output is checkable, and it is the one this course uses. Retrieval answers from documents you supplied, which bounds the invention without removing it. Agents act over many steps without stopping to ask. Pick the wrong column at step two and by step nine it is buried under eight correct-looking operations. So you choose the modality by whether you will be able to tell it was wrong. Third, the skill this course actually grades: judging an answer without reading the code that produced it. Five checks, and they take four minutes. Row counts across a join — a join that grew has a duplicate key, and a join that shrank quietly dropped the rows that did not match, which is how a result ends up being about a different population than you think. Totals against a published figure. Five raw records read by hand, with your eyes, before any summary. Orders of magnitude: 58 and 58,000 are different claims about household income, and the gap is usually a units column nobody mentioned. And the one nobody runs — ask for the same number a second way and see whether it comes back the same. Then what you must not upload. Restricted, IRB-covered and DUA-covered data do not go into a public chatbot. That is meeting 4, and this is the week it stops being abstract. Fourth, getting hold of data at all. Start with what Cornell has already paid for — Dewey, WRDS, Capital IQ, IBISWorld — and the free public sources that need no login: FRED, IPUMS, EDGAR, data.census.gov. Then the three routes to a file. Downloading is boring and usually fastest. An API is a documented door: a key, a rate limit, stable field names, and a record of what you asked for. Scraping is the last resort dressed up as the clever one, and I will break one in front of you. The page changes and the code returns nothing. The rate limit bites. Records go missing without a single error message. The terms of service say no. And nothing you pulled could be reproduced by anybody next week. Going to a county assessor yourself is worth it only when you need one county in unusual depth, or a field the national vendor does not carry. Last, reproducibility, at the level of awareness rather than tooling. Keep the raw file untouched. Keep one path from raw to result. Keep a note saying where the raw came from and on what date. The test is simple: could a teammate get your number on a different laptop next week? If not, you do not have a result. You have a screenshot."
+    b: "Ten-minute check-in first. Then everybody works the same file. `store-weeks.csv` is a retail extract with four things planted in it. A block of store-weeks is duplicated, so every total is too big. Twelve prices are recorded in cents while the rest are in dollars. Missing values are coded −99, which a mean will swallow without complaint. And one store stops reporting in July, so a year-on-year comparison silently compares nine months against twelve. You find them by driving an assistant with file upload. You do not find them by reading the file. Twenty minutes. Then the half that is actually graded, which is the second question on the sheet: which of the five checks would have caught this one? A team that finds a fault and cannot name the check has not learned the thing. Then I put up a transcript of an assistant getting this same dataset confidently wrong, and the room says where it went off the rails. Second half, your own data. Take the dataset your team is currently betting on and run the same interrogation. What is one row. How many rows are there. What is missing, and how is it coded. What changed over time. And one number checked against a source outside the file. That page is your data interrogation sheet, and it is handed in before you leave, with three lines at the bottom: what you could not answer today, who chases it, and by when. If your team has no file yet, your sheet is the shortest named route to one — which source, which access route, how many days or months, and what plan B is. Not having the data in September is fine. Not knowing how you get it is not."
+    builds: "Your candidate dataset interrogated — or, if you do not hold one yet, the named access route and plan B for getting it"
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 7 on secondary data collection."
+    reading: "TBD"
+    reschedule: "Instructor traveling — this meeting is held remotely"
+
+  - num: 6
+    slug: "06-models-uncertainty"
+    date: 2026-09-30
+    part: 3
     title: "Models and uncertainty"
     desc: "What the standard models estimate, and how to read a coefficient in the units of the problem. Where uncertainty comes from, and what a p-value is not. Then the distinction that decides half your projects: explaining or predicting."
     goal: "Read a coefficient in the units of the problem. Say what a p-value does and does not tell you. Tell an explanatory question apart from a predictive one."
@@ -233,43 +258,27 @@ meetings:
     builds: "The overclaim your own project is most at risk of making"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 11 on descriptive statistics and ch. 12 on correlation and regression."
     reading: "TBD"
-    due: ~
+    due: "Project pitch — one page · Exercise 1 — interrogate a dataset, end of week · Rate your teammates"
     links:
       - text: "Results critique cards"
         href: fall-2026/handouts/results-claims.qmd
 
-  - num: 4
-    slug: "04-inference-goes-wrong"
-    date: 2026-09-16
-    part: 2
-    title: "How inference fails"
-    desc: "Estimates go wrong in two ways. Bias moves the number: omitted variables, sorting, measurement error, reverse causality. False precision leaves the number alone and shrinks the error bar."
-    goal: "Take a published claim apart. Name the specific failure. Say which direction it pushes the estimate, and whether more data would fix it."
-    a: "Bias first. Omitted variables, sorting and selection, measurement error — classical and not — and reverse causality. For each: what it does to the estimate, and in which direction. Then false precision, which is the quieter problem. Dependence ignored. Multiple testing. Specification search. The number stays where it is and the error bar shrinks around it."
-    b: "First, together: one published claim, taken apart. Which failure is doing the damage? Would more data fix it? Then the same move on a paper from your own literature. Write down the one threat your design will have to survive. You will be answering it in November."
-    builds: "The one threat your design will have to survive"
-    books: "[Remix](https://mixtape.scunning.com/) ch. 5 on unconfoundedness, for what conditioning can and cannot fix. [Adams](https://doi.org/10.4135/9788132108498) ch. 14 on reliability and validity."
+  - num: 7
+    slug: "07-how-models-fail"
+    date: 2026-10-07
+    part: 3
+    title: "How models fail"
+    desc: "Estimates fail in two ways. Bias moves the number: selection and sorting, omitted variables, measurement error, reverse causality. False precision leaves the number alone and shrinks the error bar around it. Then the fix everybody reaches for, and its ceiling — 'I added controls' is a claim about the graph, not a technique."
+    goal: "Take a number apart and name the failure that produced it. Say which way it pushes the estimate, and whether more data would fix it. Then say what your own controls would have to close, and what they cannot."
+    a: "Two families of failure, and they are not the same problem. Bias moves the number. False precision leaves the number where it is and shrinks the error bar around it. Bias first, and there are four. Selection and sorting: the retention email went to the customers already most likely to renew, so the lift is who was picked, not what was sent. Omitted variables, with a rule for the direction — the omitted thing's effect on the outcome, times its correlation with the treatment. Two signs multiplied. You can usually work out which way you are wrong before you have the data. Measurement error next. Classical error in the variable you care about pulls the estimate toward zero, always: self-reported spend, survey income, recalled hours. Non-classical error does not. People round, they under-report, and top-coded income errs one way only. Then it can go anywhere. Fourth, endogeneity and reverse causality. More police, more crime. The firm raised price in the quarter demand was strongest. And then the question I will ask of every one of them: does more data fix it? No. A biased estimate with a million rows is a more precisely wrong number. Then the quieter family, which leaves the estimate untouched. Dependence ignored: five hundred shoppers in ten stores is closer to ten observations than five hundred, and Bertrand, Duflo and Mullainathan found placebo policies in state panels rejecting at 45% instead of 5%. Multiple testing: twenty subgroups, one significant, one slide. Specification search: Silberzahn gave 29 teams one dataset and one question, and got estimates from 0.89 to 2.93. None of the three moves the number. All three make you sure of it. Last, the fixes and their ceiling. Conditioning on observables, drawn on the graph — which back doors a set of controls closes, and the two controls that make things worse. One sits on the path from cause to effect. One opens a path by being conditioned on. Then matching, which is the same claim made by comparison rather than by regression, and it needs somebody to compare to. If no untreated store looks like your treated stores, there is nothing there. Then the ceiling. LaLonde put observational estimates with controls up against a randomised benchmark, and they did not reproduce it. 'I added controls' is a claim about the graph, not a technique. So state the claim out loud, and report how far your coefficient moved when the controls went in."
+    b: "Ten minutes of team check-in, then the results-critique cards again — the same eight analysts, dealt fresh, and this time each one has come back with a fix. They added controls. Fifteen minutes to rule on it. Name the failure in the morning's vocabulary. Say which way it pushes the estimate. Say whether more data would fix it. Then rule on the fix itself: does the control close a back door, sit on the path from cause to effect, or open a door by being conditioned on? Then one team is drawn at random to defend at the front while the room attacks, and we draw again as far as the clock allows. Nobody knows in advance whether they are up. Points for attacks that land, and you have to name what is wrong, not just dislike it. Card 7 is the one to watch. The advertising model with an R² of 0.94, now with month and competitor spend added, and still uninterpretable — the budget was set from the sales forecast, so the arrow runs backwards, and no control fixes an arrow that runs backwards. Then your own project. One threat, the one your design actually has to survive. Write down which way it pushes your estimate, whether more data would fix it, the variable that would close it, and whether you can obtain that variable before January. If you cannot, write the sentence you will put in your limitations section instead. One page, per team, handed in before you leave. You will be answering that threat in November."
+    builds: "The one threat your design must survive — its direction, and whether controls can close it"
+    books: "[Remix](https://mixtape.scunning.com/) ch. 5 on unconfoundedness. [Adams](https://doi.org/10.4135/9788132108498) ch. 14 on reliability and validity."
     reading: "TBD"
-    due: ~
 
-  - num: 5
-    slug: "05-selection-on-observables"
-    date: 2026-09-23
-    part: 2
-    title: "Controls and matching"
-    desc: "The workhorse of applied work: control for what you can measure. Controls, matching, and when a coefficient can be read causally. The assumption it rests on is also its ceiling."
-    goal: "Draw the back doors a set of controls closes. State exactly what would have to be true for your coefficient to be read causally."
-    a: "We start where every design meeting from here starts. At the graph. Conditioning on observables, drawn: which back doors a set of controls closes, and the one you cannot see well enough to close. Then controls and matching in practice, and when a regression coefficient can be read causally. 'I added controls' is a claim about the graph, not a technique. The rest of the session is what would have to be true for that claim to hold."
-    b: "Back to the graph you drew in meeting 2. Could you close every back door with data you could actually obtain? Breakout rooms, then report back."
-    builds: "Which back doors you can close, and with what data"
-    books: "[Remix](https://mixtape.scunning.com/) ch. 5 on unconfoundedness — the whole of this meeting, written out."
-    reading: "TBD"
-    due: ~
-    reschedule: "Instructor traveling — this meeting is held remotely"
-
-  - num: 6
-    slug: "06-designs-i"
-    date: 2026-09-30
+  - num: 8
+    slug: "08-designs-i"
+    date: 2026-10-14
     part: 3
     title: "Research designs I"
     desc: "Experiments, instrumental variables, regression discontinuity. What variation each exploits, what each assumes, and how each fails."
@@ -283,9 +292,9 @@ meetings:
       - text: "Design scenarios"
         href: fall-2026/handouts/design-scenarios.qmd
 
-  - num: 7
-    slug: "07-designs-ii"
-    date: 2026-10-07
+  - num: 9
+    slug: "09-designs-ii"
+    date: 2026-10-21
     part: 3
     title: "Research designs II"
     desc: "Difference-in-differences, panel data with fixed effects, event studies. The question is the same each time: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate."
@@ -295,10 +304,11 @@ meetings:
     builds: "Your design defended in public, plus the attack that landed — the identification section and the limitation"
     books: "[Remix](https://mixtape.scunning.com/) ch. 8 and 9 on panel designs and difference-in-differences, ch. 10 if your rollout is staggered. [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) ch. 5."
     reading: "TBD"
+    reschedule: "Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed"
 
-  - num: 8
-    slug: "08-writing"
-    date: 2026-10-14
+  - num: 10
+    slug: "10-writing"
+    date: 2026-10-28
     part: 4
     title: "Writing"
     desc: "Writing is taught here, as a method rather than as advice. A piece of writing is built outline first — one topic sentence per paragraph, in order, before any prose exists. The fastest way to see that is backwards."
@@ -309,95 +319,63 @@ meetings:
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 4 on literature review and critical reading, and ch. 16 on writing up."
     reading: "TBD"
 
-  - num: 9
-    slug: "09-oral-and-visual"
-    date: 2026-10-21
+  - num: 11
+    slug: "11-figures"
+    date: 2026-11-04
     part: 4
-    title: "Oral and visual"
-    desc: "Which figure answers which question, and what figures hide through aggregation, scale, binning and chosen windows. Then the same discipline out loud: a deck is an outline with pictures, and five minutes is enough if the argument is already built."
-    goal: "Name the trick in a figure built to mislead you, and redraw it honestly without losing the point. Then pitch your project in five minutes, on slides where every title is a claim."
-    a: "Two halves. First, figures. Which figure answers which question, and why — distributions, time, space. The instinct to be curious about a dataset before you model it. Then the flip side: what figures hide through aggregation, scale, binning, projection and cherry-picked windows, and how to read a published figure for what it is not showing. Second, talking. A deck is an outline with pictures. One claim per slide, and the claim is the slide title, not a label. No bullet lists. What the first thirty seconds have to do, what the last thirty have to do, and what to do with a question you cannot answer — which is to say so."
-    b: "Six figures, each lying a different way, one per team. A truncated axis. Two axes manufacturing a correlation. A cherry-picked window. An aggregate moving opposite to every subgroup. Area scaled by radius. Counts where you needed a rate. Name the trick, then redraw it honestly — and the honest version still has to make a point, which is the hard half nobody practises. Then the pitch. Five minutes per team, five slides, one topic sentence per slide, using the skeleton you wrote last week. The room's questions are aimed at where the argument jumps. Then you rate your teammates for the first time."
-    builds: "Your project's key figure, and a pitch that survived the room"
-    books: "Zelazny, *Say It With Charts*, for the grammar of it. [Adams](https://doi.org/10.4135/9788132108498) ch. 16 on presenting."
+    title: "Figures"
+    desc: "Which figure answers which question, and why — distributions, time, space, comparison. Then what figures hide: aggregation, scale, binning, projection, area scaled by radius, chosen windows, counts where you needed a rate. Then the hard half nobody practises — an honest figure that still makes a point."
+    goal: "Name the trick in a figure built to mislead you, and redraw it honestly without losing the point. Draw the one figure your own project lives or dies on, before you have the data to draw it with."
+    a: "Three blocks. First, which figure answers which question. Distributions: a histogram, a density, a boxplot and a cumulative curve of the same column tell you four different things, and only some of them show you the second bump. Time: levels, indexed to a base year, or on a log scale — that choice is a claim about whether the reader should care about dollars or about growth rates. Space: a map of counts is a map of population unless you divided by something. Comparison: a sorted dot plot beats a bar chart nearly every time, and error bars are part of the estimate rather than decoration. Underneath all of it is one instinct — look at the data before you model it. Anscombe's quartet makes the case in one slide. Four datasets, the same means, the same variances, the same correlation, the same fitted line. One is a clean relationship, one is a curve, one is a line with a single outlier dragging it, one is a vertical stack where one point does all the work. The regression output is identical for all four. Second block: what figures hide. Aggregation, and the Berkeley graduate admissions case of 1973, where the university looked like it admitted women at a much lower rate overall while most departments taken one at a time did not. Scale, and axes that start where the author wanted them to. Binning, where the width of a histogram bin decides whether there is one group in your data or two. Projection, and Greenland the size of Africa. Area scaled by radius, which doubles the number and quadruples the ink. Cherry-picked windows. Counts where you needed a rate. Then the move that makes those useful: read a published figure for what it is not showing. Where is the denominator. What happened before the window starts. What do the subgroups do. What happened to the units that dropped out of the sample partway through. Third block, and it is the hard one. An honest figure that still makes a point. Honest does not mean neutral. You choose the comparison, sort the categories, show the raw points behind the summary, split one aggregate into small multiples, annotate the single number the argument turns on, and write the claim in the title instead of a label. Zeroing the axis is not a rule — for an index, a growth rate or a difference, zero is the wrong anchor. The test is whether the axis matches the quantity. And a finished figure has a sentence. If you cannot write the sentence, the figure is not finished."
+    b: "Six figures, each lying a different way, one per team, twenty minutes. A truncated axis turning three points of satisfaction into a soaring bar chart. Two axes on unrelated scales manufacturing a correlation between ad spend and sales. Four quarters shown out of eight years. An aggregate rising while every single region falls. Circles where two million got twice the radius of one million, so the picture is four times bigger and not two. Complaints by state with no population underneath. Name the trick, say what the figure is entitled to claim, and redraw it honestly on the sheet. The redraw still has to make a point, and that is where most teams stall — naming the lie takes two minutes, replacing it takes the rest. Then one team is drawn at random to put its redraw at the front while the room attacks, and we draw again as far as the clock allows. Points for an attack that lands, and you have to name the trick rather than say you dislike the picture. Card 4 is the aggregation one and card 6 is the rate one. Those two are where the morning either landed or it did not. Then your own project, on paper, by hand. Draw the one figure it lives or dies on. Not a figure — the figure, the one a reader looks at before deciding whether to believe you. For most of you it is one of three: the picture showing that your variation exists, the picture showing your comparison group looked like your treated group before anything happened, or the picture showing the outcome move. You do not have the data yet, so you draw it empty. Both axes labelled with their units. What one point on it is. Which comparison is on the page. The claim written across the top as a sentence. Then draw it a second time as it would look if you are wrong. If the two drawings look the same, the figure cannot support the claim, and finding that out in November is cheap. Both drawings are handed in before you leave."
+    builds: "Your project's key figure, drawn twice — as you expect it to look, and as it looks if you are wrong"
+    books: "Zelazny, *Say It With Charts*, for the grammar of it. [Adams](https://doi.org/10.4135/9788132108498) ch. 11 for what a descriptive figure is doing."
     reading: "TBD"
-    due: "Project pitch — one page, presented in class · Writing 1 — reverse outline · Rate your teammates"
-    reschedule: "Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed"
+    due: "Writing 1 — reverse outline"
     links:
       - text: "Figure critique cards"
         href: fall-2026/handouts/figure-tricks.qmd
 
-  - num: 10
-    slug: "10-measurement"
-    date: 2026-10-28
-    part: 5
-    title: "Measurement and data"
-    desc: "Turning a construct into something a dataset can hold. This is where most capstones actually die. Then working backwards from the design to the data it demands, and building the instrument yourself when nothing measures what you need."
-    goal: "Turn your central construct into a variable somebody could record. Specify what the design demands of the data. If nothing measures it, write the instrument that would — and say how many observations it needs to be worth fielding."
-    a: "Constructs and operationalisation. How do you turn 'sustainability', 'financial literacy' or 'market power' into a variable somebody could actually record? What makes that measure defensible, and what does a proxy cost you? Then work backwards from the design to its data requirements. Unit of observation. Level of aggregation. Time frequency, span, coverage. Which comparisons the data has to contain. Can this be done with county data, or does it need individuals? Finally, the short version of what to ask any dataset before trusting it: what is one row, how many are there, what is missing, what changed over time. The full checklist is on the resources page. You put it to work on real data in meeting 12."
-    b: "Sometimes nothing measures your construct. Then you make the measurement yourself. Each team gets a real survey item, broken a different way. Leading. Double-barrelled. An unbalanced scale with no way to disagree. A question that assumes you already do the thing. A hypothetical willingness-to-pay that everybody overstates. Name the flaw, rewrite it, and say what an answer to your version would actually let you conclude. Random rotation, room attacks. Then build your own — the instrument your project needs, whether that is survey items, a choice task, or a simple experiment with a treatment and a control. Then work out how many people it needs. The smallest effect you can detect is roughly four sigma over root n. Quadrupling the sample only halves it. So: with the sample you can afford, is the smallest detectable effect still interesting? If not, you have learned that in October rather than March."
-    builds: "Your key variable, operationalised — and if you must collect it, the instrument and the sample size it needs"
-    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 5 on sampling and sample size, ch. 8 on survey design, ch. 14 on whether a measure holds up."
-    reading: "TBD"
-    due: "Writing 2 — reverse outline and repair"
-    links:
-      - text: "Instrument critique cards"
-        href: fall-2026/handouts/instrument-cards.qmd
-
-  - num: 11
-    slug: "11-getting-data"
-    date: 2026-11-04
-    part: 5
-    title: "Getting the data"
-    desc: "What code is and why you cannot avoid understanding it. Then the practical business of obtaining data: who holds it, what access really costs in time, and what scraping and APIs can and cannot get you."
-    goal: "Say what a scraper and an API each are, and when either is the wrong answer. Name your own data source, its access route, its timeline and your plan B — including whether you need IRB approval or a data-use agreement before January."
-    a: "First, code. Not how to write it — what it is, and why you cannot avoid understanding it. What a language actually is, and why there are several. R grew out of statistics. Python out of general programming. Stata out of applied economics. SQL is not really the same kind of thing at all. Then the argument that matters here. Every serious analysis is code, whether or not you wrote it. A spreadsheet stops being enough at exactly the point your project gets interesting. And code is the only version of an analysis that can be checked, repeated, and handed to somebody else. You will drive it through an assistant. But you cannot check what you cannot read at all. Then the landscape of sources: administrative records, official statistics, firm and platform data, purchased panels. What each costs in money and in months, starting with what Cornell already pays for. Proprietary access and data-use agreements: who signs, how long, and what they forbid you from publishing. Ethics and the IRB in brief, with the detail on the resources page. Then scraping and APIs: what each is, what it can and cannot get you, and what the terms of service and the law actually say."
-    b: "A scrape, run live from the front, then broken on purpose. We pull a table off a page. Then we watch every way it fails. The page changes and the code returns nothing. The rate limit bites. Records go missing and nothing tells you. The terms of service say no. And nothing you pulled could be reproduced by anybody next week. Then the same data through a proper API. Then the same data simply downloaded, which is usually faster than either. The lesson is not that scraping is bad. It is the last resort dressed up as the clever one. Then the acquisition clinic on your own project. Which source, exactly. What route. How long. What it costs. What plan B is. Your memo outline — six topic sentences — comes out of that, and it is due before the weekend."
-    builds: "Your data source, access route, timeline and plan B"
-    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 7 on secondary data, ch. 6 on collecting your own, and ch. 2 on research ethics."
-    reading: "TBD"
-
   - num: 12
-    slug: "12-using-data"
+    slug: "12-speaking"
     date: 2026-11-11
-    part: 5
-    title: "Using data"
-    desc: "'Use AI' is four different things, and they fail differently. Then real data in front of you, and the checks that catch a wrong answer without your ever reading the code."
-    goal: "Say which AI modality suits which job, and why. Interrogate a real dataset through one, and catch something wrong with it before it reaches your proposal."
-    a: "First, the modalities. 'Use AI' is four different things. Chat answers from memory, and will invent a citation. File upload with code execution writes and runs real code on your data, so the output is checkable. Retrieval answers from documents you supplied. Agents act over several steps, and compound a mistake made early. The one you want here is the second, and knowing why is the point. Then the harder half, which is the whole skill in this course: knowing whether an answer is right without reading the code that produced it. Row counts across a join. Totals checked against a published figure. Five raw records read by hand. Orders of magnitude. And what you must not upload, and why."
-    b: "Real data in front of you, and the meeting-9 checklist put to work: what is one row, how many are there, what is missing, what changed over time. Every dataset handed out has something wrong with it. Find it, then say which check would have caught it — that second half is the graded one. Then the same move on your own project's data. Whatever you cannot answer about it today is what you chase before the outline is due."
-    builds: "Your own data, interrogated, and what is wrong with it"
-    due: "Proposal outline · Writing 3 — plain-language summary · Exercise 1 — interrogate a dataset, end of week"
-    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 11 on descriptive analysis — what to compute first, and what it tells you."
+    part: 4
+    title: "Speaking"
+    desc: "A talk is an outline with pictures. One claim per slide, and the claim is the slide title, not a label. Then the genre you actually face: pitching a research plan to people who will never read the paper, and who want to know what it costs and what they would do differently."
+    goal: "Give a five-minute pitch whose argument the room can repeat back to you, on slides where every title is a claim. Answer a question you cannot answer without bluffing."
+    a: "Same skeleton, new medium. Your talk is the outline from meeting 10 with pictures on it, and the pictures are the ones you rebuilt in meeting 11. Then the rule that does most of the work: one claim per slide, and the claim is the slide title. \"Methodology\" is a label. \"We compare stores on either side of a state border, so the weather and the season are the same on both sides\" is a claim. \"Results\" is a label. \"Basket size rose 4% in relaunch stores and did not move next door\" is a claim. Read your titles alone, top to bottom, with nothing else on the screen. You should have the argument. If you do not, the deck does not contain one, and no amount of delivery will put it there. Next, the thing everybody does and nobody defends. No bullet lists. A bullet list is an outline you stopped converting into sentences. The room reads it faster than you can say it, so you lose them for the rest of the slide, and you end up reading your own slide out loud to people who finished it. Then the two thirty-seconds. The first thirty seconds say what the question is and why anybody should care. Not your name. Not an agenda slide. Not thanking anyone. The last thirty seconds say what you want: in this genre, what will exist by May and what you need to get there. Everything in between is negotiable; those two are not. Then structure by length, because they are different objects. Five minutes is five slides — the question, the decision somebody makes differently, the design and the assumption carrying it, the data and how you actually get it, and what exists by May. Fifteen minutes is that same spine with room for the graph, one alternative explanation you considered and rejected, and the limitation stated plainly. It is not five minutes with more slides on the end. Then questions, which is where most pitches are actually won or lost. Three kinds arrive. Clarification: answer it in one sentence and move. Challenge: answer first, then explain, and do not relitigate the whole talk. And the one you cannot answer, which is the one worth practising. The answer is \"I don't know,\" followed by what would settle it. That sentence costs you nothing and a bluff costs you the room, because the people asking do this for a living and they can hear it. Know your numbers cold — sample size, the headline magnitude, where the data comes from, what it costs — because those are what get asked, and fumbling them undoes twenty good minutes. Then delivery, briefly, and this is not charm school. You will talk too fast, so rehearse standing up and out loud, once, with a clock; reading it in your head is not rehearsal and it is why teams over-run. Pause after a claim. Silence is what makes it land, and it is the only tool here that works on everybody. Stand where the room can see you, not behind the laptop and not in the projector beam, and never turn your back to read your own slide. And plan for the deck failing, because eventually it does. Know your first three claims by heart. Carry a PDF you can open from a phone. Be able to give the whole thing with no slides at all, which if the titles are claims you nearly can. Finally, the genre you actually face. You are pitching a research plan to people who will never read the paper. They are not checking your work. They are deciding whether to fund it, staff it, or wait. So they ask three things: so what would you do differently, how confident are you, and what does it cost. A talk built for a seminar answers none of them. I will give you the same two-minute pitch twice at the front — once with an agenda slide and bullet lists, once with claim titles and nothing else — and you will tell me which one you can repeat back."
+    b: "Ten minutes of team check-in first, with one agenda item today: who says which slide at meeting 14, and who holds the clock. Then the shared case. I give a five-minute pitch from the front and it is deliberately bad — an agenda slide, a title called \"Results,\" four bullets a slide, the claim arriving on slide 4, forty seconds over, and one question answered with a bluff. Everybody scores the same pitch on the same card. What did the first thirty seconds do? Where did the claim first appear? What was the ask? Then the part that gets compared: every team rewrites my five slide titles as claims, working from the same five labels, and the best set goes on the screen next to mine. Same object, same constraint, so a good rewrite and a lazy one are visible side by side. Then the dress rehearsal, which is the rest of the hour. Order is drawn at random. Every team pitches its own project, three minutes, hard stop, five slides with claim titles. Then the room attacks — and it attacks the argument, not the delivery. Attacks come in four named types and nothing else counts: the data cannot answer this question, the assumption carrying the estimate is false in this setting, the comparison group is not comparable, or the answer would not change anyone's decision. \"You seemed nervous\" is not an attack and scores nothing. Points for attacks that land, as always. Each team leaves with four things in writing. Their actual clock time. The attack slips, each naming its type. One line from me. And the one that does the real work: before any discussion, two other teams write down in a single sentence the claim they think you just made, and you write down the claim you meant. You leave holding both. Where those two sentences differ is your meeting-14 rewrite, and you have three weeks to close the gap. Handed in before you leave: the five-slide dress-rehearsal deck, your written thirty-second opening and thirty-second close, and the claim-we-meant against claim-they-heard sheet."
+    builds: "Your final-presentation deck, rehearsed and attacked — plus the gap between the claim you made and the claim the room heard"
+    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 16 on presenting."
     reading: "TBD"
+    due: "Proposal outline · Writing 2 — reverse outline and repair · Exercise 2 — rebuild and critique a figure, end of week"
 
   - num: 13
     slug: "13-midterm"
     date: 2026-11-18
-    part: 6
+    part: 5
     title: "Midterm and workshop"
     desc: "The midterm: a situation, and you design the study that would answer it. Then the afternoon turns to your own outline, workshopped in rotation by somebody who has to find where your argument jumps."
     goal: "Design a study in writing under exam conditions. Then take an outline apart — somebody else's, and your own."
     a: "**Midterm.** You are given a situation and asked to design a study to evaluate it, in writing. The question. The design, and the assumption carrying it. What data it requires. And what would undermine it. Open note. It tests whether you can apply the design vocabulary to a situation you have not seen, not whether you memorised definitions. There is nothing to revise beyond having turned up all term — it is the same move the room has made every week since meeting 2."
     b: "Bring your outline. Workshop it in rotation, using the method from meeting 8: somebody outside your team reads your skeleton and tells you where the argument jumps, and you do the same for theirs. That pairing is where your referee report comes from. Then you rate your teammates for the second time."
     builds: "Your outline, marked up by somebody outside your team"
-    books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 16 on writing and presenting."
     reading: "TBD"
-    due: "Proposal outline — workshopped in class · Rate your teammates · Exercise 2 — rebuild and critique a figure, end of week"
+    due: "Rate your teammates · Writing 3 — plain-language summary"
 
   - date: 2026-11-25
     note: "Thanksgiving recess — no class"
 
   - num: 14
-    slug: "14-pitch"
+    slug: "14-final-presentations"
     date: 2026-12-02
-    part: 6
+    part: 5
     title: "The pitch"
     desc: "Final presentations, and each team reviews another team's work. Then what your team owes AEM 6992 over the break."
     goal: "Present a plan somebody could pick up and execute in January. Know what your team owes AEM 6992 over the break."
     a: "Final presentations. Each team reviews another team's work."
     b: "The handoff to AEM 6992. What each team does over the break."
+    builds: "Your plan, pitched — and what your team owes AEM 6992 over the break"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 15 on conducting your research, which is mostly about the months after this one."
-    quizzes: 0
-    reading: "None"
+    reading: "TBD"
     due: "Final presentation, in class · Writing 4 — referee report · Research proposal due Dec 11"

@@ -1,0 +1,34 @@
+---
+title: "5 · Coding tools and AI"
+subtitle: "Wednesday, September 23, 2026 · Meeting 5"
+pagetitle: "AEM 6991 · 5 Coding tools and AI"
+---
+
+::: {.callout-note appearance="simple"}
+This page is a stub. Materials appear here before the meeting.
+:::
+
+::: {.callout-warning appearance="simple"}
+**Date not final.** Instructor traveling — this meeting is held remotely.
+:::
+
+**What you should be able to do after this meeting.** Choose the right AI modality for a data job, and say why. Interrogate a file you did not create — through an assistant, without reading the code — and catch what is wrong with it before it reaches your proposal.
+
+## Where to read more
+
+[Adams](https://doi.org/10.4135/9788132108498) ch. 7 on secondary data collection.
+
+## Session A · 2:05–3:15
+
+Four blocks. First, code. Not how to write it — what it is, and why you cannot avoid understanding it. Why there are several languages: R grew out of statistics, Python out of general programming, Stata out of applied economics. SQL is not the same kind of thing at all. It is a way of asking questions of data you never load onto your own machine. Then the argument that matters here. Every serious analysis is code, whether or not you wrote it. A spreadsheet stops being enough at a moment you can name: when you join two files, when the same cleaning has to run again on next month's extract, or when somebody asks what changed between version 4 and version 7. Two cases make that better than any principle. Reinhart and Rogoff's growth result averaged fifteen countries where the formula should have covered twenty, and it had already been quoted in austerity debates before anyone opened the sheet. Public Health England lost 15,841 COVID cases in 2020 because an old Excel format stops at 65,536 rows and says nothing at all when it runs out. Neither is a statistics error. Both were invisible in a spreadsheet and would have been visible in code. You will drive code through an assistant. But you cannot check what you cannot read at all. Second, the four things people mean by "use AI". They fail differently, and that is the whole point. Chat answers from memory. It invents citations that look real — right journal, plausible authors, a DOI that resolves to something else. File upload with code execution is different in kind: the assistant writes real code, runs it on the file you gave it, and shows you both. That is the only modality where the output is checkable, and it is the one this course uses. Retrieval answers from documents you supplied, which bounds the invention without removing it. Agents act over many steps without stopping to ask. Pick the wrong column at step two and by step nine it is buried under eight correct-looking operations. So you choose the modality by whether you will be able to tell it was wrong. Third, the skill this course actually grades: judging an answer without reading the code that produced it. Five checks, and they take four minutes. Row counts across a join — a join that grew has a duplicate key, and a join that shrank quietly dropped the rows that did not match, which is how a result ends up being about a different population than you think. Totals against a published figure. Five raw records read by hand, with your eyes, before any summary. Orders of magnitude: 58 and 58,000 are different claims about household income, and the gap is usually a units column nobody mentioned. And the one nobody runs — ask for the same number a second way and see whether it comes back the same. Then what you must not upload. Restricted, IRB-covered and DUA-covered data do not go into a public chatbot. That is meeting 4, and this is the week it stops being abstract. Fourth, getting hold of data at all. Start with what Cornell has already paid for — Dewey, WRDS, Capital IQ, IBISWorld — and the free public sources that need no login: FRED, IPUMS, EDGAR, data.census.gov. Then the three routes to a file. Downloading is boring and usually fastest. An API is a documented door: a key, a rate limit, stable field names, and a record of what you asked for. Scraping is the last resort dressed up as the clever one, and I will break one in front of you. The page changes and the code returns nothing. The rate limit bites. Records go missing without a single error message. The terms of service say no. And nothing you pulled could be reproduced by anybody next week. Going to a county assessor yourself is worth it only when you need one county in unusual depth, or a field the national vendor does not carry. Last, reproducibility, at the level of awareness rather than tooling. Keep the raw file untouched. Keep one path from raw to result. Keep a note saying where the raw came from and on what date. The test is simple: could a teammate get your number on a different laptop next week? If not, you do not have a result. You have a screenshot.
+
+## Session B · 3:35–4:30
+
+Every session B opens with a ten-minute team check-in: what you did
+since last week, what is stuck, and who is doing what next. Written
+down, and handed in with that session's work.
+
+Ten-minute check-in first. Then everybody works the same file. `store-weeks.csv` is a retail extract with four things planted in it. A block of store-weeks is duplicated, so every total is too big. Twelve prices are recorded in cents while the rest are in dollars. Missing values are coded −99, which a mean will swallow without complaint. And one store stops reporting in July, so a year-on-year comparison silently compares nine months against twelve. You find them by driving an assistant with file upload. You do not find them by reading the file. Twenty minutes. Then the half that is actually graded, which is the second question on the sheet: which of the five checks would have caught this one? A team that finds a fault and cannot name the check has not learned the thing. Then I put up a transcript of an assistant getting this same dataset confidently wrong, and the room says where it went off the rails. Second half, your own data. Take the dataset your team is currently betting on and run the same interrogation. What is one row. How many rows are there. What is missing, and how is it coded. What changed over time. And one number checked against a source outside the file. That page is your data interrogation sheet, and it is handed in before you leave, with three lines at the bottom: what you could not answer today, who chases it, and by when. If your team has no file yet, your sheet is the shortest named route to one — which source, which access route, how many days or months, and what plan B is. Not having the data in September is fine. Not knowing how you get it is not.
+
+Your team's output is submitted before you leave.
+

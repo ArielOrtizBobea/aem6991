@@ -22,7 +22,7 @@ This page is a stub. Materials appear here before the meeting.
 
 The same discipline on harder designs, each drawn first. Difference-in-differences: the confounders you cannot measure are the ones that do not move. Parallel trends is what that assumption looks like drawn. Panel data with local fixed effects: which arrows the fixed effects erase, and which survive untouched. Event studies: the same picture with time on it. For each, what identifying variation is left once the fixed effects are in, and what assumption is carrying the estimate.
 
-## Session B · 3:35–4:30
+## Session B · 3:30–4:30
 
 Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written

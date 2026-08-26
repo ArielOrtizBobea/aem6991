@@ -8,7 +8,7 @@
 
 <tr class="g-first g-last g01"><td class="g-rail" rowspan="1"><span>Getting started</span></td><td>Wed Aug 26</td>
   <td class="topic"><a href="sessions/01-introductions.html">1 · Introductions</a>
-    <span class="t-desc">Who is in the room, and how the course runs. AEM 6991 produces a plan and AEM 6992 executes it, so everything you commit to this fall you live with in the spring. Then an afternoon of structured conversation, because I form the teams out of what you tell each other you are interested in.</span></td>
+    <span class="t-desc">Who is in the room, and how the course runs. AEM 6991 produces a plan and AEM 6992 executes it, so everything you commit to this fall you live with in the spring. Then an afternoon of groups working out what they would like to explore, because I form the teams from what you tell each other.</span></td>
   <td class="hw">One page on what you want to work on and why — before meeting 2</td></tr>
 
 <tr class="g-first g02"><td class="g-rail" rowspan="4"><span>Foundations</span></td><td>Wed Sep 2</td>

@@ -18,7 +18,7 @@ This page is a stub. Materials appear here before the meeting.
 
 Linear regression, non-linear models, count models. Described, not derived. What each estimates, and how to read a coefficient in the units of the problem. Then uncertainty. Residuals and errors, sampling variation, what a standard error actually states, and where p-values come from. More usefully: what they are not. Finally the distinction that decides half the projects in this room. Explaining is not predicting. A model can predict well and still tell you nothing about what to do.
 
-## Session B · 3:35–4:30
+## Session B · 3:30–4:30
 
 Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written

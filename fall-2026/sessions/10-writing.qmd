@@ -18,7 +18,7 @@ This page is a stub. Materials appear here before the meeting.
 
 The method. A paper is built outline first: one topic sentence per paragraph, in order, before any prose exists. We start backwards — take a published paper apart into the outline that must have produced it. That is also this week's exercise, and the fastest way to see that good writing has a skeleton. Then forwards: outline, sketch, full text. Every written product in this course is submitted that way, so the argument is fixed before the sentences are. Then what a problem statement has to do. Scope, unit, population. The 'so what' in the first sentence, not the fourth paragraph. Then the section everybody gets wrong — identification: your design named, its assumption stated, and what would break it. And how to state a limitation without gutting your own project. Finally the failure modes: the topic with no question, hedging, the buried claim, the review that reviews without arguing.
 
-## Session B · 3:35–4:30
+## Session B · 3:30–4:30
 
 Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written

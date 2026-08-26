@@ -18,7 +18,7 @@ This page is a stub. Materials appear here before the meeting.
 
 Three designs, each drawn before it is described. Experiments first. Randomisation cuts every arrow into treatment, so there is no back door left to close. Then the decisions that actually make one work. What is the unit you randomise — the person, the store, the week? How many arms can you afford before each one is too thin? Why you check balance afterwards, and what a failure would mean. And pre-registration, the cheapest honesty device in research: say what you will test before you look, and specification search stops being available to you. Instrumental variables next. An arrow into treatment, and none into the outcome except through it. The exclusion restriction is that missing arrow, which is why it cannot be tested. Then regression discontinuity: nothing else jumps at the cutoff. For each, what variation it exploits, what it assumes, how it fails, and what it looks like done well.
 
-## Session B · 3:35–4:30
+## Session B · 3:30–4:30
 
 Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written

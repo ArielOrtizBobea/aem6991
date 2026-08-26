@@ -33,7 +33,7 @@
     <span class="t-desc">What the standard models estimate, and how to read a coefficient in the units of the problem. Where uncertainty comes from, and what a p-value is not. Then the distinction that decides half your projects: explaining or predicting.</span></td>
   <td class="hw">Project pitch — one page · Exercise 1 — interrogate a dataset, end of week · Rate your teammates</td></tr>
 <tr><td>Wed Oct 7</td>
-  <td class="topic"><a href="sessions/07-how-models-fail.html">7 · How models fail</a>
+  <td class="topic"><a href="sessions/07-model-failures.html">7 · Model failures</a>
     <span class="t-desc">Estimates fail in two ways. Bias moves the number: selection and sorting, omitted variables, measurement error, reverse causality. False precision leaves the number alone and shrinks the error bar around it. Then the fix everybody reaches for, and its ceiling — 'I added controls' is a claim about the graph, not a technique.</span></td>
   <td class="hw"></td></tr>
 <tr><td>Wed Oct 14</td>

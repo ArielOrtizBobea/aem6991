@@ -1,7 +1,7 @@
 ---
-title: "7 · How models fail"
+title: "7 · Model failures"
 subtitle: "Wednesday, October 7, 2026 · Meeting 7"
-pagetitle: "AEM 6991 · 7 How models fail"
+pagetitle: "AEM 6991 · 7 Model failures"
 ---
 
 ::: {.callout-note appearance="simple"}

@@ -6,7 +6,7 @@
 | **4** &nbsp;Ethics and access | Your project's ethics-and-access checklist — every gate it trips, who signs, and the date each one has to start |
 | **5** &nbsp;Coding tools and AI | Your candidate dataset interrogated — or, if you do not hold one yet, the named access route and plan B for getting it |
 | **6** &nbsp;Models and uncertainty | The overclaim your own project is most at risk of making |
-| **7** &nbsp;How models fail | The one threat your design must survive — its direction, and whether controls can close it |
+| **7** &nbsp;Model failures | The one threat your design must survive — its direction, and whether controls can close it |
 | **8** &nbsp;Research designs I | Whether an experiment, instrument or discontinuity is open to you |
 | **9** &nbsp;Research designs II | Your design defended in public, plus the attack that landed — the identification section and the limitation |
 | **10** &nbsp;Writing | Your problem statement, as an outline somebody outside your team could follow |

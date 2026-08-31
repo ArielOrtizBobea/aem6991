@@ -198,25 +198,30 @@ You start with full marks and lose them. What costs points:
 
 | | |
 |:---|:---|
-| Statement of interest not submitted, or late | −5 |
+| Research interest survey not submitted, or late | −5 |
 | Session-B check-in not filed | −2 each |
 | Peer evaluation not submitted on time | −3 each |
 | Arriving late, or leaving at the break | −2 each |
 | Absent without notice | −4 each |
 
-The statement of interest is due before meeting 2. **One page maximum**, in
-five sections: the context, the problem, your proposition, its feasibility
-and challenges, and **why you** --- what you bring, and how this fits where
-you want to go professionally.
+The research interest survey is due Tuesday September 1 at 11:59 pm. It is
+on Canvas. It should take under an hour, and most answers are two or three
+sentences.
 
-The first four are the research proposal's own skeleton, scaled down. You
-write those same headings again in November.
+This replaces the one-page memo I described in meeting 1. That memo asked you
+to write about feasibility. You have two days, and no time to find out whether
+your data exist. I would rather have the question and your reasoning, so an
+idea with no data plan is completely fine at this stage.
 
-The fifth is how I match teams, and it is two things. What you bring is
-capability: a prior job, an industry, a language, access to somebody.
-Without it I can only match on topic. Why this fits your goals is
-motivation, and it is the better predictor of who still cares in November.
-Write it for me rather than for a grader.
+Two of the questions are how I match teams. What you bring is capability: a
+prior job, an industry, a language, access to somebody. Without it I can only
+match on topic. Where this fits your plans is motivation, and it is the better
+predictor of who still cares in November. Write both for me rather than for a
+grader.
+
+The checkbox questions put complementary skills on the same team. Answer them
+honestly. Say you have not used a method rather than that you have read about
+it.
 
 **I form the teams from these**, and most of these ideas will not survive
 that. That is expected, and it is not a verdict on yours.

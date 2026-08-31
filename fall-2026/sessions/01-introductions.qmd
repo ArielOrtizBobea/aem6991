@@ -22,13 +22,15 @@ format:
 
 [Slides](01-introductions-slides.html)
 
-## Due before meeting 2 · September 2
+## Due before meeting 2 · Tuesday September 1
 
-**Statement of interest**, one page maximum, in five sections: the context,
-the problem, your proposition, its feasibility and challenges, and why you
-— what you bring, and how this fits where you want to go professionally.
-The first four are the research proposal's own skeleton, scaled down. The
-fifth is how teams get matched.
+**Research interest survey**, on Canvas, by 11:59 pm. Under an hour. Most
+answers are two or three sentences.
+
+This replaces the one-page memo described in class on August 26. Do not
+research whether your data exist. An idea with no data plan is fine at this
+stage. Two of the questions, what you bring and where this fits your plans,
+are how teams get matched.
 
 ::::
 
@@ -84,8 +86,8 @@ Keep it moving. If someone runs long on item 4, that is the one to let
 breathe; items 1–3 are the ones to cut.
 
 Write down anything that sounds like a real question rather than a
-topic. You form teams from the statements of interest next week, and
-this is your first signal.
+topic. You form teams from the survey responses next week, and this is
+your first signal.
 :::
 
 # The course
@@ -252,7 +254,7 @@ and you cannot get data before you know what the design needs.
 
 | | | |
 |:--|:--|:--|
-| Sep 2 | Statement of interest | individual |
+| Sep 1 | Research interest survey | individual |
 | Sep 2 | Your team's ground rules | team |
 | Sep 30 | Project pitch — 1 page, presented · rate your teammates | team |
 | Nov 11 | Proposal outline · rate your teammates | team |
@@ -445,10 +447,10 @@ the defensiveness people bring to describing their own idea.
 
 Write every one on the board as it comes. The room seeing them all at once
 is the point: overlaps become visible, and that is how people find each
-other before the statement of interest is due.
+other before the research interest survey is due.
 
-Collect every sheet. Together with the statements, this is what you form
-teams from.
+Collect every sheet. Together with the survey responses, this is what you
+form teams from.
 :::
 
 ## What Cornell already pays for {.smaller}
@@ -510,31 +512,32 @@ holds what you need.
 
 ## Your assignment {.smaller}
 
-Statement of interest — **one page maximum**, due before meeting 2 on
-September 2.
+Research interest survey, on Canvas, due **Tuesday September 1 at 11:59
+pm**. Under an hour. Most answers are two or three sentences.
 
 | | |
 |:--|:--|
-| 1 · Context | What world is this in? |
-| 2 · The problem | What is wrong, unknown, or stuck? |
-| 3 · Your proposition | What would you do about it? |
-| 4 · Feasibility | What data, and what could stop it? |
-| 5 · Why you | What you bring — a job, an industry, a language, access
-  to somebody. And why this fits where you want to go |
+| Checkboxes | Topics, methods you have run yourself, languages, and whether you would rather develop your own idea |
+| Your question | What you want to find out, and why it matters |
+| Where it came from | A course, a job, a paper, a place you know well |
+| What you bring | A job, an industry, a language, access to somebody |
+| Where this fits | What you want to be doing after this program |
 
-Section 4 is largely what your group told you this afternoon. Use it.
+Do not research whether your data exist. An idea with no data plan is fine.
 
 ::: {.notes}
-Last thing they hear, so land it. Say the deadline twice, and say one page
-means one page.
+Changed after this meeting was taught. In class on August 26 this was a
+one-page memo in five sections. It is now a Canvas survey. Two days is not
+long enough to write about feasibility, and structured answers are what team
+formation actually runs on. Announce the change rather than letting them
+find it.
 
-Sections 1 to 4 are the proposal's own skeleton, scaled down — they will
-write these same headings again in November, which is worth telling them.
+Last thing they hear, so land it. Say the deadline twice.
 
-Section 5 is how I match teams, and it is two things. What you bring is
-capability — without it I can only match on topic, and five people with the
-same background is a worse team. Why this fits where you want to go is
-motivation, and it is the better predictor of who still cares in November.
+Two questions are how I match teams. What you bring is capability, and
+without it I can only match on topic, because five people with the same
+background is a worse team. Where this fits their plans is motivation, and
+it is the better predictor of who still cares in November.
 
 Point back at the board: this is not a blank page.
 :::
@@ -629,7 +632,7 @@ Route 5 done badly is anti-pattern 2.
 ### Your interests
 
 Teams do not exist yet. They are formed from what you tell each other this
-afternoon and from the statement of interest you write this week.
+afternoon and from the research interest survey you fill in this week.
 
 **Round one.** In circles of five, one at a time: you say what you would
 like to explore and why it interests you. The person on your left says it

@@ -9,7 +9,7 @@
 <tr class="g-first g-last g01"><td class="g-rail" rowspan="1"><span>Getting started</span></td><td>Wed Aug 26</td>
   <td class="topic"><a href="sessions/01-introductions.html">1 · Introductions</a>
     <span class="t-desc">Who is in the room, and how the course runs. AEM 6991 produces a plan and AEM 6992 executes it, so everything you commit to this fall you live with in the spring. Then an afternoon of groups working out what they would like to explore, because I form the teams from what you tell each other.</span></td>
-  <td class="hw">Statement of interest — one page, before meeting 2</td></tr>
+  <td class="hw">Research interest survey, on Canvas before meeting 2</td></tr>
 
 <tr class="g-first g02"><td class="g-rail" rowspan="4"><span>Foundations</span></td><td>Wed Sep 2</td>
   <td class="topic"><a href="sessions/02-causality.html">2 · Theory and causality</a>
@@ -31,7 +31,7 @@
 <tr class="g-first g03"><td class="g-rail" rowspan="4"><span>Methods</span></td><td>Wed Sep 30</td>
   <td class="topic"><a href="sessions/06-models-uncertainty.html">6 · Models and uncertainty</a>
     <span class="t-desc">What the standard models estimate, and how to read a coefficient in the units of the problem. Where uncertainty comes from, and what a p-value is not. Then the distinction that decides half your projects: explaining or predicting.</span></td>
-  <td class="hw">Project pitch — one page, presented in class · Rate your teammates</td></tr>
+  <td class="hw">Rate your teammates</td></tr>
 <tr><td>Wed Oct 7</td>
   <td class="topic"><a href="sessions/07-model-failures.html">7 · Model failures</a>
     <span class="t-desc">Estimates fail in two ways. Bias moves the number: selection and sorting, omitted variables, measurement error, reverse causality. False precision leaves the number alone and shrinks the error bar around it. Then the fix everybody reaches for, and its ceiling — 'I added controls' is a claim about the graph, not a technique.</span></td>
@@ -43,7 +43,7 @@
 <tr class="g-last g03"><td>Wed Oct 21<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/09-designs-ii.html">9 · Research designs II</a>
     <span class="t-desc">Difference-in-differences, panel data with fixed effects, event studies. The question is the same each time: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate.</span></td>
-  <td class="hw"></td></tr>
+  <td class="hw">Project pitch — one page, presented in class</td></tr>
 
 <tr class="g-first g04"><td class="g-rail" rowspan="3"><span>Communication</span></td><td>Wed Oct 28</td>
   <td class="topic"><a href="sessions/10-writing.html">10 · Writing</a>

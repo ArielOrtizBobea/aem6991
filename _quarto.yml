@@ -74,6 +74,8 @@ website:
               href: fall-2026/teamwork.qmd
             - text: "Potential project ideas"
               href: fall-2026/project-ideas.qmd
+            - text: "Project teams"
+              href: fall-2026/handouts/02-teams.qmd
         # <<< END GENERATED MEETINGS
 
 format:

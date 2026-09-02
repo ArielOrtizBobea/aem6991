@@ -68,6 +68,8 @@ resources:
     href: fall-2026/teamwork.qmd
   - text: "Potential project ideas"
     href: fall-2026/project-ideas.qmd
+  - text: "Project teams"
+    href: fall-2026/handouts/02-teams.qmd
 
 term: "Fall 2026"
 meets: "Wednesdays, 2:00–4:30 pm"
@@ -173,6 +175,8 @@ meetings:
     links:
       - text: "Causal claim cards"
         href: fall-2026/handouts/causal-claims.qmd
+      - text: "Project teams"
+        href: fall-2026/handouts/02-teams.qmd
 
   - num: 3
     slug: "03-questions"

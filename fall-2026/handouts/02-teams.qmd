@@ -1,0 +1,187 @@
+---
+title: "2 · Project teams"
+subtitle: "Wednesday, September 2, 2026 · The nine questions this class is asking, and who is working on each"
+pagetitle: "AEM 6991 · 2 Project teams"
+format:
+  revealjs:
+    output-file: 02-teams-slides.html
+    theme: [default, ../sessions/slides.scss]
+    template-partials:
+      - ../sessions/title-slide.html
+    footer: "AEM 6991"
+    slide-number: c/t
+    incremental: false
+    history: false
+    link-external-newwindow: true
+---
+
+## The four criteria {.smaller}
+
+Teams were built from what you wrote in the research interest survey, on four criteria.
+
+1. A similar question. Not the same one. Close enough that you are arguing about the same thing.
+2. Some analysis experience on every team. Somebody has run one before.
+3. Some shared programming language, so you can hand each other code.
+4. Somebody likely to be self-driven, who will push it along.
+
+These four pull against each other, and no set of nine teams satisfies all of them at once. Where they conflicted, the question came first.
+
+::: {.notes}
+Say the method out loud: they wrote it, I read all 41, a language model also read them and proposed groupings of the questions rather than of the people, and I decided. Nothing used name, country, degree or grades.
+:::
+
+## If you think you are on the wrong team {.smaller}
+
+You do not get to choose your group.
+
+1. Email me by Friday with a reason, in writing, about the work.
+2. The reason has to be about the question or the skills. Your question is genuinely the one another team is asking. Or you are the third person on your team who can do the same thing, and another team has none.
+3. I have to agree, and a swap has to work both ways. Teams are four and five, so moving you moves somebody else.
+
+Not a reason: my friend is on another team.
+
+::: {.notes}
+You will work with people you did not pick for the rest of your career, and the teams that struggle are almost never the ones that were badly matched.
+:::
+
+## Nine questions {.smaller}
+
+This is what the forty-one of you asked to work on.
+
+| | | |
+|:--|:--|:--|
+| **A** Productivity<br><span style='font-size:0.8em;color:#555'>Generative AI and work</span> | **B** Job conditions<br><span style='font-size:0.8em;color:#555'>What a job asks of you</span> | **C** Switching<br><span style='font-size:0.8em;color:#555'>Changing the terms of a sale</span> |
+| **D** Attention<br><span style='font-size:0.8em;color:#555'>Attention and mispricing</span> | **E** AI claims<br><span style='font-size:0.8em;color:#555'>When a firm says it uses AI</span> | **F** Valuation<br><span style='font-size:0.8em;color:#555'>Putting a price on a company</span> |
+| **G** Climate cost<br><span style='font-size:0.8em;color:#555'>The cost of climate stress</span> | **H** AI advice<br><span style='font-size:0.8em;color:#555'>AI as a financial adviser</span> | **J** Influence<br><span style='font-size:0.8em;color:#555'>Why influencer content sells</span> |
+
+## Nine teams {.smaller}
+
+Same nine questions, same order.
+
+| | | |
+|:--|:--|:--|
+| **A** Productivity<br><span style='font-size:0.78em'>Wendy Wang<br>Fan Yip Zhou<br>Jiaxin Luo<br>Ivan Svetina<br>Yiheng Wu</span> | **B** Job conditions<br><span style='font-size:0.78em'>Sofia Herrera Fidanque<br>Walker Edge<br>Pitchthita Kitcharoennaitham<br>Yize Liu<br>Junting Huang</span> | **C** Switching<br><span style='font-size:0.78em'>Haoxin Liu<br>Rong Wu<br>Tianyu Bao<br>Yifan Zhou<br>Ziyu Liu</span> |
+| **D** Attention<br><span style='font-size:0.78em'>Berk Yilmaz<br>Chenxi Lei<br>Ling-Han Dai<br>Bingye Zhang<br>Kanney Dong</span> | **E** AI claims<br><span style='font-size:0.78em'>Jing Jin<br>Jinming Mei<br>Sijia Cui<br>Yichen Miao<br>Yuliang Lai</span> | **F** Valuation<br><span style='font-size:0.78em'>Ronen Borkar<br>Yang Yu<br>Shuxin Huang<br>Shuangsheng Chen</span> |
+| **G** Climate cost<br><span style='font-size:0.78em'>Vishal Rajadurai<br>Miaoqi Shi<br>Haoyi Wang<br>Meiyao Li</span> | **H** AI advice<br><span style='font-size:0.78em'>Zirui Zhang<br>Shan Hao<br>Yutong Han<br>Jia-Jia Pai</span> | **J** Influence<br><span style='font-size:0.78em'>Zoey Li<br>Demi Zhang<br>Minni Mao<br>Yuanzhen Li</span> |
+
+## Team A · Productivity {.smaller}
+
+*Does generative AI actually raise the productivity of the people who use it, and which tasks get the gain?*
+
+- Wendy Wang — Does the productivity gain depend on the type of task?
+- Fan Yip Zhou — When and how is AI most effective at work?
+- Jiaxin Luo — Is AI changing the skills employers ask for?
+- Ivan Svetina — How does AI reshape jobs in investment banking?
+- Yiheng Wu — Does algorithmic management raise output by burning workers out?
+
+::: {.notes}
+In week one they have to choose between running their own survey or small task experiment, which is what Junting Huang and Yiheng Wu describe, and committing to an existing observational dataset of the kind Jiaxin Luo's diff-in-diff, IV and RD designs require, because those two paths do not share a semester timeline.
+:::
+
+## Team B · Job conditions {.smaller}
+
+*Do hours, rest, visa status and workplace norms change how people perform, or just who takes the job?*
+
+- Sofia Herrera Fidanque — Do visa rules push international graduates into different industries?
+- Walker Edge — Do shorter, more focused hours make finance firms more productive?
+- Pitchthita Kitcharoennaitham — Why Gen Z workers cannot land or keep jobs they want
+- Yize Liu — Do rest, travel, and schedule density change NBA on-court performance?
+- Junting Huang — Does AI help writing, analysis and decision tasks equally?
+
+::: {.notes}
+Whether the outcome is observed output or self-reported choice, because Yize's NBA panel is the only setting here where performance is already measured and nobody else's question lives in basketball.
+:::
+
+## Team C · Switching {.smaller}
+
+*When a seller changes the price, the payment timing or the channel, do buyers switch, and does the seller gain?*
+
+- Haoxin Liu — Does delayed payment lift purchases through trust or through friction?
+- Rong Wu — How much does one livestream lift sales, and why?
+- Tianyu Bao — Do repeated luxury price increases help or hurt the brand?
+- Yifan Zhou — Where does consumer switching to EVs actually stop?
+- Ziyu Liu — How far do online platforms push offline stores out?
+
+::: {.notes}
+Whether your outcome is stated intention from a survey you run yourselves, which four of you checked, or realized behavior in existing prices, reviews and financials, which only Haoxin currently has the Stata, SQL and panel tools to handle.
+:::
+
+## Team D · Attention {.smaller}
+
+*When attention to a stock spikes, does the price move past what fundamentals justify, and does it reverse?*
+
+- Berk Yilmaz — Does hype move short-term returns for tech firms specifically?
+- Chenxi Lei — Do retail investors overreact to prominent public statements, then reverse?
+- Ling-Han Dai — Does Reddit and X sentiment move volatility, liquidity, mispricing?
+- Bingye Zhang — Do financial influencers raise risk-taking among young retail investors?
+- Kanney Dong — Why do Chinese and U.S. markets differ during panics?
+
+::: {.notes}
+Week one has to settle what counts as attention and what a row in the data is, because Berk's Google Trends panel over many tech firms, Chenxi's three to five hand-picked statements, and Bingye's FINRA survey of individuals are three different projects, and Meiyao's version reverses the arrow by treating attention as the thing that follows returns.
+:::
+
+## Team E · AI claims {.smaller}
+
+*Does the claim show up in revenue and stock price, and does the market only believe credible firms?*
+
+- Jing Jin — Do investors discount AI claims from weak internal control firms?
+- Jinming Mei — Does AI investment show up in supply chains and valuations?
+- Sijia Cui — Does AI investment raise firm revenue and stock performance?
+- Yichen Miao — Does Chinese game design travel to US and Japanese players?
+- Yuliang Lai — Not stated as a question. "the behavioral of finance"
+
+::: {.notes}
+Jing said she would rather run her own project, so week one has to settle one thing, whether the outcome variable is multi year revenue and profitability growth, which is Sijia's version, or the short window stock reaction to an AI disclosure in a 10-K, which is Jing's, because that single choice fixes the sample, the data build, and the identification story.
+:::
+
+## Team F · Valuation {.smaller}
+
+*When a price is set on a company or a pool of assets, do observable traits explain it, and does it hold?*
+
+- Ronen Borkar — Is today's securitized products market repeating the mispricing of 2007?
+- Yang Yu — What explains first-day returns on Hong Kong IPOs?
+- Shuxin Huang — Which acquisitions actually create value after the deal closes?
+- Shuangsheng Chen — How do you tell an overvalued business from an undervalued one?
+
+::: {.notes}
+They have to settle whether the sample is M&A deals, IPOs, or securitizations, and if it is M&A, whether the outcome variable is Jia-Jia's premium paid or Shuxin's post-deal performance, and they should settle it fast because all five wrote that they would rather run their own idea.
+:::
+
+## Team G · Climate cost {.smaller}
+
+*When climate stress hits a poor place, how much damage does it leave, and is it enough to change decisions?*
+
+- Vishal Rajadurai — The full economic cost of one extreme weather event
+- Miaoqi Shi — Which pressing causes, climate and debt included, keep regions poor
+- Haoyi Wang — Whether quantifying cost-benefit analysis raises corporate value
+- Meiyao Li — Does attention after a price jump cause return-chasing?
+
+::: {.notes}
+Week one you have to decide whether the outcome is measured on places or on firms, because that settles whether Haoyi's Bloomberg ESG angle is the spine of the project or a side chapter, and whether Miaoqi's broad determinants question narrows into Vishal's single identified shock.
+:::
+
+## Team H · AI advice {.smaller}
+
+*Does AI advice move a non-expert closer to a good decision, or just swap their overconfidence for the model's?*
+
+- Zirui Zhang — When does trust in AI advice become overreliance?
+- Shan Hao — Does AI advice cut overconfidence, herding and loss aversion?
+- Yutong Han — Can AI close the gap between uninformed and informed investors?
+- Jia-Jia Pai — What target traits make acquirers pay higher premiums for technology firms?
+
+::: {.notes}
+Week one has to settle whether your outcome is a decision scored inside a controlled task, which is Zirui's Prolific design, or a gap between informed and uninformed investors measured in real market data, which is what Yutong's event study and panel methods in Stata assume.
+:::
+
+## Team J · Influence {.smaller}
+
+*Is it trust in the person, or the mechanics of the pitch: demonstrations, discounts, urgency?*
+
+- Zoey Li — Does the same appeal travel across cultures, and ethically?
+- Demi Zhang — Which content features raise willingness to buy, tested experimentally.
+- Minni Mao — Does perceived authenticity explain why Xiaohongshu product seeding works?
+- Yuanzhen Li — Do misperceived norms push Chinese women out of career advancement?
+
+::: {.notes}
+Settle in week one whether your outcome is stated willingness to buy from participants you recruit, which is what Demi's and Minni's designs produce, or realized revenue from a livestream, which is what Rong's design needs, because one instrument will not give you both.
+:::

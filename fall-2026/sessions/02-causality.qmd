@@ -1634,6 +1634,10 @@ claims, each broken in a different way, with a diagnosis sheet. Three of
 them, the loyalty app, the hiring puzzle and the promotion gap, are worked
 above. The other five are practice.
 
+[Project teams](../handouts/02-teams.qmd) — the nine questions this class is
+asking, and who is working on each. The four criteria the teams were built
+on, and what to do if you think you are on the wrong one.
+
 ## Where to read more
 
 [The Effect](https://theeffectbook.net/) is the gentlest book on the shelf

@@ -164,8 +164,9 @@ B- (≥ 75), C+ (≥ 70), C (≥ 65), C- (≥ 60), D (≥ 50), F (\< 50).
 
 ### In-class quizzes (15 %)
 
-**Short quizzes, in class, without warning.** About five across the
-semester. Three questions, three minutes, on your own device.
+**Short quizzes, in class, without warning.** Six across the semester.
+Three questions, three minutes, on your own device. Each one closes
+session A.
 
 They are drawn from the lecture you are sitting in, not from a reading.
 Most are scenario questions, not definitions. *Here is a situation --- which
@@ -292,7 +293,7 @@ Fourteen meetings. Each runs the same shape:
 | 3:15--3:30 | Break |
 | 3:30--4:30 | Session B --- **your own project**, submitted before you leave |
 
-A quiz can open either half, without warning.
+A quiz closes session A, without warning.
 
 Session B is not a lab exercise on someone else's data. It applies the
 day's work to the team's actual project: conceptual clinics early in the

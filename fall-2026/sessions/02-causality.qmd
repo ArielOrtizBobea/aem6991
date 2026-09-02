@@ -2,36 +2,1651 @@
 title: "2 · Theory and causality"
 subtitle: "Wednesday, September 2, 2026"
 pagetitle: "AEM 6991 · 2 Theory and causality"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+  revealjs:
+    output-file: 02-causality-slides.html
+    theme: [default, slides.scss]
+    template-partials:
+      - title-slide.html
+    footer: "AEM 6991"
+    slide-number: c/t
+    incremental: false
+    history: false
+    link-external-newwindow: true
 ---
 
-::: {.callout-note appearance="simple"}
-This page is a stub. Materials appear here before the meeting.
+:::: {.content-hidden when-format="revealjs"}
+
+[Slides](02-causality-slides.html)
+
+```{=html}
+<style>
+.dag, .fig { display:block; margin:0.8em auto 0.3em; max-width:100%; height:auto; }
+.dag .node { fill:#ffffff; stroke:#55554f; stroke-width:2; }
+.dag .edge { stroke:#55554f; stroke-width:2.4; fill:none; }
+.dag .causal { stroke:#b31b1b; stroke-width:3.4; }
+.dag .box { fill:none; stroke:#b31b1b; stroke-width:2.5; stroke-dasharray:7 4; }
+.figcap { text-align:center; color:#6b6b6b; font-size:0.85em; margin:0 0 1.4em; }
+details.test { margin:0.4em 0 1.2em; } details.test summary { cursor:pointer; color:#b31b1b; }
+</style>
+```
+
+**What you should be able to do after this meeting.** Draw the causal graph
+behind a claim somebody is acting on, name the failure in it, and say which
+variable you must condition on and which you must not touch. Leave with your
+team formed, its ground rules in writing, and a first graph of your own
+project that the room has heard.
+
+::: {.callout-note title="What to take away" appearance="simple"}
+Two questions to ask of every number you are shown. **Compared to what?** And **would those two groups have looked the same anyway?**
+
+Three ways a comparison breaks. A **confounder** causes both the treatment and the outcome, so the two groups were different before anything happened. A **collider** is caused by both, so looking only inside it invents a link that is not there. A **mediator** carries the effect, so controlling for it deletes the thing you were measuring.
+
+The rule. Condition on the confounder. Leave the mediator alone. Do not select your sample on the result.
+
+For your proposal: the graph you draw is your *conceptual model* heading, and the comparison it names, with what must be true for it, is your *identification* heading.
 :::
 
-**What you should be able to do after this meeting.** Draw the causal graph behind a claim somebody is acting on, name the failure in it, and say which variable you must condition on and which you must not touch. Leave with your team formed and its ground rules in writing.
+## Due today
 
-## Handouts
+Your team's ground rules, signed, and your project's first causal graph.
+Both before you leave.
 
-[Causal claim cards](../handouts/causal-claims.qmd)
+::::
 
-## Where to read more
+:::: {.content-visible when-format="revealjs"}
 
-[Remix](https://mixtape.scunning.com/) ch. 3 on directed acyclic graphs and ch. 4 on potential outcomes. [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) ch. 1, *Questions about Questions*, is eight pages and needs no maths.
+# Theory
+
+## The board is asked to act on a 40% gap
+
+::: {style="text-align:center; color:#6b6b6b"}
+A grocery chain. Half its customers have installed the loyalty app.
+The analytics team reports to the board:
+:::
+
+:::: {.columns style="margin:0.5em 0 0.2em"}
+
+::: {.column width="50%"}
+::: {style="text-align:center"}
+[\$140]{style="font-size:2.6em; line-height:1.1; font-weight:600"}<br>
+[a month, customers on the app]{style="color:#6b6b6b"}
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="text-align:center"}
+[\$100]{style="font-size:2.6em; line-height:1.1; font-weight:600"}<br>
+[a month, customers not on the app]{style="color:#6b6b6b"}
+:::
+:::
+
+::::
+
+::: {style="text-align:center; font-size:1.15em; margin:0.5em 0"}
+"App customers spend 40% more. Sign the other half up and they will too."
+:::
+
+::: {style="text-align:center; color:#b31b1b"}
+The board is asked to fund the sign-up campaign. Does it? Thumb up or down.
+:::
+
+::: {.notes}
+Two minutes. Thumbs held at the chest, up or down, so nobody is exposed.
+Count it out loud so the
+vote is on the record.
+
+Take two reasons from the NO side. Do not resolve it. Do not name the
+failure. This claim comes back at "The counterfactual is those customers without the app", twenty-five minutes from now, and the whole of block 3 is the answer to it.
+
+The two numbers are true. The sentence after them is the leap. Do not say
+that yet either.
+
+Most rooms split. The ones who say no usually cannot say why yet, which
+is exactly the gap the hour fills.
+:::
+
+## A theory makes a prediction you could be wrong about
+
+- A theory is a structured framework of ideas used to explain facts, behaviours or phenomena.
+- It starts from assumptions and ends in predictions.
+- Four checks:
+
+1. It says why, not only what.
+2. It states its assumptions.
+3. It predicts what you would see if it is right.
+4. It says what you would see if it is wrong.
+
+::: {style="color:#b31b1b; margin-top:1em"}
+In a meeting you say: what has to be true for this to work, and what would
+prove me wrong?
+:::
+
+::: {.notes}
+Ninety seconds. Do not embellish the definition.
+
+The code-switching line at the bottom recurs on about eight slides today.
+Say it out loud every time. The point of the device is that they leave
+able to say these things to somebody who has never heard the word
+confounder.
+:::
+
+## A prediction is not a theory
+
+- A prediction says what will happen. You judge it by how often it is right. It can be right for no reason.
+- A theory says why it happens. It names its assumptions, so it also says what changes if you change something.
+- Only a theory tells you what to do.
+
+::: {.notes}
+Two minutes, and this is the block's hinge.
+
+Say it plainly: a model that fits beautifully can be about nothing. Fit
+is not evidence of mechanism.
+
+This is correlation and causation wearing a machine learning hat, and
+they will meet it as a job. Meeting 3 warns that the prediction
+archetype dies when a team quietly starts making causal recommendations
+off a predictive model. Meetings 6 and 7 come back to it. Plant it here.
+:::
+
+## A prediction with no theory behind it fails without warning
+
+- Google predicted flu doctor visits from search terms.
+- For years it tracked the CDC count well.
+- In February 2013 it predicted over twice the CDC count.
+- Searching changed, not illness. The flu was in the news.
+
+<svg class="dag" viewBox="0 0 980 340" width="640" height="222" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="schematic of Google Flu Trends overshooting the CDC in winter 2012 to 2013">
+  <text x="95" y="20" font-size="21" fill="#6b6b6b" style="text-anchor:start">% of doctor visits for flu-like illness</text>
+  <line x1="90" y1="30" x2="90" y2="300" stroke="#55554f" stroke-width="1.5"/>
+  <line x1="90" y1="300" x2="790" y2="300" stroke="#55554f" stroke-width="1.5"/>
+  <line x1="246" y1="300" x2="246" y2="308" stroke="#55554f" stroke-width="1.5"/>
+  <line x1="712" y1="300" x2="712" y2="308" stroke="#55554f" stroke-width="1.5"/>
+  <text x="246" y="326" text-anchor="middle" font-size="21" fill="#6b6b6b" style="text-anchor:middle">Jan 2012</text>
+  <text x="712" y="326" text-anchor="middle" font-size="21" fill="#6b6b6b" style="text-anchor:middle">Jan 2013</text>
+  <polyline fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+    points="90,274 168,267 246,257 324,248 401,267 518,274 596,267 634,246 673,202 712,170 751,202 772,220"/>
+  <polyline fill="none" stroke="#b31b1b" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"
+    points="90,266 168,254 246,236 324,224 401,255 518,270 596,256 634,220 673,130 712,60 751,110 772,148"/>
+  <line x1="712" y1="170" x2="712" y2="61" stroke="#b31b1b" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="690" y="52" text-anchor="end" font-size="22" fill="#b31b1b" style="text-anchor:end">about twice the CDC figure</text>
+  <text x="800" y="166" text-anchor="start" font-size="20" fill="#b31b1b" style="text-anchor:start">Google Flu Trends</text>
+  <text x="800" y="262" text-anchor="start" font-size="20" fill="#1b1b1b" style="text-anchor:start">CDC count</text>
+</svg>
+
+[Schematic after Lazer et al. (2014), *The Parable of Google Flu*, Science 343, 1203–1205. Shapes, not data.](https://doi.org/10.1126/science.1248506){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Ninety seconds. The point is not that big data is bad.
+
+Why it went up, because somebody will ask. Three reasons, all in Lazer
+and co-authors. First, the 2012-13 season was severe and widely reported,
+so people who were not ill searched for flu terms; search volume followed
+the news, not the clinics. Second, Google changed its own search engine
+underneath the model: suggested searches and related-term prompts
+steered people toward flu queries, so the same level of illness produced
+more flu searches than before. Third, the model was a fit of 50 million
+search terms to about 1,150 CDC data points, so it had picked up terms
+that merely happened to move with flu season. It had no theory of why a
+search meant an illness, so it could not tell "people are sick" from
+"people are reading about flu". It overestimated in 100 of 108 weeks from
+August 2011.
+
+The point is that nobody could say why it worked, so nobody could say
+when it would stop. A model with no mechanism gives you no warning. You
+find out in production.
+
+Lazer and co-authors argue the errors were largely avoidable, and part
+of the cause was that Google's own search algorithm kept changing
+underneath the model. The thing being measured moved and the model could not know.
+
+The consulting version, and worth saying out loud because it is where
+most of this room is heading: the deck says the intervention lifted
+revenue 14% at the pilot site. The client asks whether it will work in
+their market. Without a theory there is no honest answer. A number
+without a theory is a fact about one place at one time.
+:::
+
+## Which of these is a theory?
+
+| | |
+|--:|:----------------------------------------------------------------------------|
+| 1 | Sales are higher in December |
+| 2 | Customers who contact support twice a month are three times more likely to leave |
+| 3 | Customers leave when the cost of switching drops below the annoyance of staying |
+| 4 | Firms should invest in sustainability |
+| 5 | Firms maximise profit, and whatever they did was the profit-maximising thing |
+
+::: {style="text-align:center; color:#b31b1b; margin-top:0.6em"}
+Hold up 1, 2, 3 or 4 fingers. 1 theory · 2 description · 3 prediction · 4 value judgment
+:::
+
+::: {.notes}
+Three minutes including the reveal.
+
+Give them thirty seconds, then take all five at once on fingers. You are
+watching for the spread, not calling on anyone.
+
+Two and three are the exercise. Both are about churn. Only one tells you
+what to do.
+
+Five is the discussion. It looks the most like economics and it is the
+only one that cannot be wrong.
+:::
+
+## Only one of the five is a theory
+
+| | | |
+|--:|:----------------------------------------------------------------|:---------------|
+| 1 | Sales are higher in December | description |
+| 2 | Customers who contact support twice a month are three times more likely to leave | prediction |
+| 3 | Customers leave when the cost of switching drops below the annoyance of staying | theory |
+| 4 | Firms should invest in sustainability | value judgment |
+| 5 | Firms maximise profit, and whatever they did was the profit-maximising thing | cannot be wrong |
+
+Two and three are the same subject. Only three tells you what to change.
+
+::: {.notes}
+Ask which of two and three you would take to the executive who has to
+decide something. Two says who will leave. Three says what to do about
+it, and it names two levers: switching cost, and annoyance.
+
+Point at four and say you are coming back to it in twenty minutes. It is
+the seed for the block on what data cannot settle.
+
+Five: ask what result would be inconsistent with it. There is none. That
+is the tell.
+
+Run the four checks from the definition slide out loud. One and two fail
+"says why". Four makes no prediction about what you would see. Five
+cannot be wrong. Only three passes all four.
+:::
+
+## Two theories predict the same thing for different reasons
+
+Human capital
+
+- School makes you more productive.
+- The degree raises your wage because you learned something.
+
+Signalling
+
+- School reveals who was already productive.
+- The degree raises your wage because it separates you.
+
+Both predict that graduates earn more. They cannot both be the reason.
+
+::: {style="color:#b31b1b"}
+Take thirty seconds. What would you look at to tell them apart?
+:::
+
+[Spence (1973), *Job Market Signaling*, Quarterly Journal of Economics 87(3), 355–374](https://doi.org/10.2307/1882010){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. This is the better of the two examples, because agreeing on
+the prediction is what makes the comparison visible.
+
+The policy stakes are opposite. If human capital is right, more
+schooling makes people more productive and subsidising it grows the pie.
+If signalling is right, a year of school mostly reshuffles who gets which
+job.
+:::
+
+## Signalling predicts a jump at the diploma, not a slope
+
+- Human capital: the return is smooth. Each year of school adds learning, so each year adds wage.
+- Signalling: the return jumps at the certificate. The final year is worth more, because that is the year you get the paper.
+
+::: {style="color:#b31b1b"}
+Compare someone who finished with someone who did three and a half years
+and left. Same schooling, different paper.
+:::
+
+[The "sheepskin effect". Hungerford and Solon (1987), Review of Economics
+and Statistics 69(1), 175–177, and a literature after it, find substantial
+premia at the diploma year](https://doi.org/10.2307/1937919){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes, and this is the payoff of block 1.
+
+Say the general lesson out loud, because it is the thing to remember: a
+theory earns its keep by telling you which comparison settles the
+argument. That is the same job the identification section of their
+proposal does in December.
+
+Be honest about the state of the evidence. Diploma-year premia are
+robustly found, and they are evidence that some of the return is
+signalling. They do not settle the split, and almost nobody thinks it is
+all one or all the other.
+:::
+
+# What data can settle
+
+## Data can measure, rule out a sign, and choose between theories
+
+| | |
+|:--|:--|
+| Measure a magnitude | how big, with what uncertainty |
+| Rule out a sign | it is not positive, whatever else it is |
+| Choose between two theories | when they predict different things about the same comparison |
+
+::: {.notes}
+Ninety seconds. The third is the one they under-rate and it is the one
+that ties this block back to Spence.
+
+Say the shape: you do not test a theory, you test it against another
+one. A comparison that both theories predict identically is not
+evidence, however clean the estimate.
+:::
+
+## When you test with data, you test four things at once
+
+- Your theory says the app raises spending. You test it. The number says no.
+
+1. The theory. The app does not raise spending.
+2. The measure. You counted in-store spend and missed online.
+3. The sample. You looked at new customers only.
+4. The analysis. You fitted a straight line to something that curves.
+
+- Any one of the four produces that "no". The number does not say which.
+
+::: {style="color:#b31b1b"}
+In a meeting you say: the number disagrees with us, and we do not yet
+know whether the idea is wrong or the data is.
+:::
+
+::: {.notes}
+Two minutes. Walk the four one at a time on the app example, because
+the abstract version of this slide did not land.
+
+The practical version: when the result comes back with the wrong sign,
+the first move is not to abandon the theory. It is to work out which of
+the four is the weakest link, and usually it is the measure.
+:::
+
+## Can data settle this?
+
+| | |
+|--:|:----------------------------------------------------------------------------|
+| 1 | Does the loyalty programme increase spending |
+| 2 | Is the minimum wage too high |
+| 3 | Did the ad campaign pay for itself |
+| 4 | Will this model still work next year |
+| 5 | Should we prioritise growth over margin |
+
+::: {style="text-align:center; color:#b31b1b; margin-top:0.6em"}
+Hold up 1, 2 or 3 fingers. 1 yes · 2 no · 3 only with an assumption you have to defend
+:::
+
+::: {.notes}
+Two and a half minutes with the reveal. Fingers, three categories.
+
+Watch for the room putting 3 in "yes". It is the interesting one: paying
+for itself needs a counterfactual, so it is only answerable with an
+assumption about what would have happened without the campaign.
+:::
+
+## Two of the five are not empirical questions
+
+| | | |
+|--:|:-----------------------------------|:-------------------------------|
+| 1 | Does the app increase spending | yes, with a design |
+| 2 | Is the minimum wage too high | no. "Too high" is a judgment |
+| 3 | Did the ad campaign pay off | only with an assumption |
+| 4 | Will the model work next year | only with an assumption |
+| 5 | Growth over margin | no. That is what you want |
+
+::: {style="color:#b31b1b"}
+Data can price a trade-off. It cannot tell you the trade is worth making.
+:::
+
+::: {.notes}
+Two is the one to dwell on. Data can tell you what a minimum wage costs
+in jobs and what it gains in incomes. Whether that trade is worth making
+is not in the data, and no sample size changes it.
+
+Four is worth thirty seconds: it is the Google Flu slide again. Whether
+the model still works next year depends on whether the mechanism holds,
+and you cannot check that without a mechanism.
+:::
+
+## In December you show the comparison, not prove the theory
+
+- You are not proving your theory in the proposal.
+- You are showing which comparison your design makes.
+- And what would have to be true for that comparison to mean what you claim.
+
+::: {style="color:#b31b1b"}
+That paragraph is the identification section. It is the hardest page in
+the document and it is worth more than the results.
+:::
+
+::: {.notes}
+One minute. Say it in September so November is not a surprise.
+
+The failure mode: teams write the identification section as a
+description of the method. What it has to be is the assumption, named,
+plus what would break it.
+:::
+
+# Causality
+
+## Every customer has two outcomes, and you see one of them
+
+Every unit has two **outcomes**, the thing you watch: here, spending. One with the **treatment**, the thing you change: here, the app. And one without.
+
+| Customer | On the app | Not on the app |
+|:--|:--|:--|
+| Ana | \$152 | ? |
+| Ben | ? | \$98 |
+| Chen | \$131 | ? |
+| Dee | ? | \$104 |
+
+[Holland (1986), *Statistics and Causal Inference*, JASA 81(396), 945–960](https://doi.org/10.2307/2289064){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. Put the table up and say nothing for a moment. The column
+of question marks is the whole block.
+
+Holland calls it the fundamental problem of causal inference. The causal
+effect for Ana is the difference between her two numbers, and one of
+them does not exist.
+:::
+
+## Causal inference is a missing data problem
+
+::: {style="text-align:center; font-size:1.3em; margin:1.6em 0"}
+Not a statistics problem.
+:::
+
+- No estimator recovers a number that was never observed.
+- Every method in this course is a different argument about how to fill that column in.
+- So every comparison is a stand-in for a world you cannot see. The only question is whether the stand-in was any good.
+
+::: {.notes}
+Forty seconds. This reframing does more work than anything else in the
+lecture.
+
+Students arrive believing causal inference is a harder kind of
+statistics. It is not. It is an argument about what to substitute for
+the missing column, and the statistics comes after you have won it.
+:::
+
+## The counterfactual is those customers without the app
+
+::: {style="text-align:center; font-size:1.05em; margin:0.6em 0; color:#6b6b6b"}
+"App customers spend 40% more. Sign the other half up and they will too."
+:::
+
+- The counterfactual is what those same customers would have spent without the app.
+- It is not what the other customers spent.
+- The other customers are the stand-in. Were they ever like the app customers?
+
+::: {style="text-align:center; color:#b31b1b; margin-top:0.8em"}
+Who signs up for a loyalty app? Say it out loud.
+:::
+
+::: {.notes}
+Three minutes, and it is the payoff for the opening vote. Remind them
+they voted.
+
+Ask the room, open, no names: who signs up for a loyalty app? They say
+it themselves in about four seconds. People who already shop here a lot.
+
+That is the whole failure, and it came from them rather than from you.
+The 40% is mostly who chose to join.
+
+Say what would settle it: randomise the invitation, or find people who
+joined for a reason unrelated to how much they shop. Both are designs
+they will meet later.
+
+Then answer the vote, because they cast one. The two numbers are real.
+The decision is not supported by them. On this evidence the board does
+not fund it, and the people who voted no were right without yet being
+able to say why.
+:::
+
+## What is the right comparison?
+
+A store gets a refit. Sales rise 12% the following quarter.
+
+| | |
+|--:|:----------------------------------------------------------------------------|
+| 1 | The same store, the quarter before |
+| 2 | Every other store in the chain, same quarter |
+| 3 | Stores that were also due a refit but have not had it yet |
+
+::: {style="text-align:center; color:#b31b1b; margin-top:0.6em"}
+Hold up 1, 2 or 3 fingers. Which stand-in is best?
+:::
+
+::: {.notes}
+Two and a half minutes including the reveal.
+
+Expect a split between 1 and 3. Two is usually rejected quickly, which
+is the right instinct.
+:::
+
+## The best stand-in still needs an assumption
+
+| | | |
+|--:|:------------------------------|:------------------------------------|
+| 1 | Same store, quarter before | ignores anything else that changed |
+| 2 | Every other store | refitted stores were picked, not drawn |
+| 3 | Stores due a refit, not yet done | closest, if the queue order is arbitrary |
+
+Three is the best available and it is still an assumption. You are
+claiming the queue order has nothing to do with sales.
+
+::: {.notes}
+Two minutes. The lesson is that there is no comparison that needs no
+assumption, only comparisons whose assumption you can state and defend.
+
+Three is the shape of a design they meet in October. Do not name it.
+:::
+
+## Ask two questions of every number
+
+::: {style="font-size:1.15em; margin:1.2em 0"}
+Compared to what?
+
+Would those two groups have looked the same anyway?
+:::
+
+Every number in every deck, for the rest of your working life.
+
+::: {.notes}
+Forty seconds. Say it slowly. If they keep two things from today, these
+are the two.
+:::
+
+## A causal graph is a picture of what causes what
+
+1. **Causal graph**, or DAG. Circles are things you could measure. An arrow means "causes". Example: heavy shopper → spend.
+2. **Treatment**, marked X. The thing you would change. Example: putting a customer on the app.
+3. **Outcome**, marked Y. The thing you would watch. Example: monthly spending.
+4. **Z**. A third thing that touches both. Where its arrows point is the whole question.
+5. The red arrow is the effect you want to measure. Grey arrows are everything else.
+
+::: {.notes}
+Ninety seconds. Read it once, slowly. Every picture today uses only
+these parts: three circles, arrows, one red.
+
+Say the fixed layout: X bottom left, Y bottom right, Z on top, on every
+graph today. The names change, the positions do not.
+:::
+
+## Five words for how a comparison breaks
+
+1. **Confounder**: causes both treatment and outcome. Example: heavy shoppers join the app and spend more.
+2. **Collider**: caused by both. Example: being hired is caused by the test and by the interview.
+3. **Mediator**: on the path from treatment to outcome. Example: a price cut brings people in, and they buy.
+4. **Back door**: a route from treatment to outcome that is not the effect. Example: app ← heavy shopper → spend.
+5. **Condition on**, or **control for**: compare within a variable's values. Example: heavy shoppers with heavy shoppers.
+
+::: {.notes}
+Ninety seconds. Definition, then example, for each. The next three
+slides draw words 1, 2 and 3, and the three claims after the rule test
+them, one each, in the same order.
+
+Say that "control for" and "condition on" are the same act, because they
+will hear both and think they are two things.
+:::
+
+## A confounder causes both and opens a back door
+
+- A **confounder** causes both the **treatment** and the **outcome**. Here: heavy shoppers join the app, and heavy shoppers spend more.
+- That opens a **back door**. Compare heavy shoppers with heavy shoppers: that is **conditioning on** it, and it closes the door.
+
+<svg class="dag" viewBox="0 0 420 250" width="440" height="262" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="confounder">
+  <defs>
+    <marker id="aappg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="aappr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge" x1="190" y1="70" x2="112" y2="158" marker-end="url(#aappg)"/>
+  <line class="edge" x1="230" y1="70" x2="308" y2="158" marker-end="url(#aappg)"/>
+  <line class="edge causal" x1="100" y1="185" x2="279" y2="185" marker-end="url(#aappr)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="45" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Heavy shopper</text>
+  <text x="210" y="63" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">Z · confounder</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="182" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">On the app</text>
+  <text x="75" y="200" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">X · treatment</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="182" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Spend</text>
+  <text x="345" y="200" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">Y · outcome</text>
+  <text x="210" y="238" text-anchor="middle" font-size="16" font-weight="600" fill="#b31b1b" style="text-anchor:middle">compare heavy shoppers with heavy shoppers</text>
+</svg>
+
+::: {style="color:#b31b1b"}
+In a meeting you say: the two groups were already different before
+anything happened.
+:::
+
+::: {.notes}
+Two minutes. This is the one they already half know, so move.
+
+Note the fixed layout out loud, once: X bottom left, Y bottom right, Z on
+top, on every graph today. Only the arrows move. Say it now and the next
+three slides read themselves.
+:::
+
+## Among the hired, a link appears that is not there
+
+- Being hired is caused by the test and by the interview. That makes it a **collider**.
+- Either was enough to get hired. So among the hired, a weak interview comes with a strong test.
+- Across all applicants the two are unrelated. Looking only at the hired created the link.
+
+<svg class="dag" viewBox="0 0 420 250" width="440" height="262" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="collider">
+  <defs>
+    <marker id="ahig" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="ahir" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge" x1="100" y1="165" x2="168" y2="78" marker-end="url(#ahig)"/>
+  <line class="edge" x1="320" y1="165" x2="252" y2="78" marker-end="url(#ahig)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="45" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Hired</text>
+  <text x="210" y="63" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">Z · collider</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="185" text-anchor="middle" dy="0.35em" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Test score</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="185" text-anchor="middle" dy="0.35em" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Interview</text>
+  <text x="210" y="238" text-anchor="middle" font-size="16" font-weight="600" fill="#b31b1b" style="text-anchor:middle">we only ever look inside the box</text>
+</svg>
+
+::: {.notes}
+Three minutes. This is the hardest concept of the day, so slow down.
+
+Define, then the example, then the picture. Either a strong test or a
+strong interview was enough to get hired. So among the hired, someone
+with a weak interview must have had a strong test, or they would not be
+here. The trade-off is manufactured by looking only inside the box. In
+the applicant pool the two are unrelated.
+
+Point at the arrows: they point INTO the top node here. On the last
+graph they pointed out of it. Same three positions.
+
+The test of whether this landed is Good to Great, after the rule.
+:::
+
+## Selecting on the outcome is conditioning on a collider
+
+::: {style="color:#6b6b6b"}
+- Among the people we hired
+- Among our customers
+- Of the startups that made it
+- Looking at the funds that survived
+:::
+
+- Selecting on the **outcome** is **conditioning on** a **collider**.
+- It is the most common broken claim in business analytics, and it never looks broken.
+
+::: {style="color:#b31b1b"}
+In a meeting you say: you only looked at the winners, so you invented a
+trade-off.
+:::
+
+::: {.notes}
+Ninety seconds, and this is the transferable slide.
+
+It is the same structure in medicine, where among low birth weight
+infants maternal smoking looks protective, and among people who already
+have a disease obesity sometimes looks protective. Same shape, different
+field. Mention it in one sentence so they see it is not a business quirk.
+:::
+
+## Control for the middle step and the effect disappears
+
+- A **mediator** is the middle step from **treatment** to **outcome**. Here: a price cut brings people in, and they buy.
+- **Control for** foot traffic and the price cut has nothing left to do. The effect you came for is gone.
+
+<svg class="dag" viewBox="0 0 420 250" width="440" height="262" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mediator">
+  <defs>
+    <marker id="amdg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="amdr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge causal" x1="100" y1="165" x2="168" y2="78" marker-end="url(#amdr)"/>
+  <line class="edge causal" x1="230" y1="70" x2="308" y2="158" marker-end="url(#amdr)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="45" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Foot traffic</text>
+  <text x="210" y="63" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">Z · mediator</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="182" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Price cut</text>
+  <text x="75" y="200" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">X · treatment</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="182" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Sales</text>
+  <text x="345" y="200" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">Y · outcome</text>
+  <text x="210" y="238" text-anchor="middle" font-size="16" font-weight="600" fill="#b31b1b" style="text-anchor:middle">hold foot traffic fixed and the price cut has nothing left to do</text>
+</svg>
+
+::: {style="color:#b31b1b"}
+In a meeting you say: you controlled away the thing you were looking for.
+:::
+
+::: {.notes}
+Two minutes.
+
+The arrows here go X to Z to Y. That is the whole effect, running
+through Z. Block the middle and there is nothing left to find.
+
+The tell in the wild: somebody adds a control, the effect disappears, and
+they report the disappearance as good news.
+:::
+
+## One rule decides what to condition on
+
+::: {style="text-align:center; font-size:1.6em; margin:1.8em 0 1.2em"}
+Close the **back doors**. Leave the front door alone.
+:::
+
+::: {style="text-align:center; color:#6b6b6b"}
+The **back door** is the route through the **confounder**: close it. The front door is the effect itself, through the **mediator**: leave it alone. And do not select your sample on the result.
+:::
+
+
+::: {.notes}
+One minute. Nothing to add. Let the picture do it.
+
+If they photograph one slide today it should be this one or the
+dictionary.
+:::
+
+## Every control is a claim about the graph
+
+- **Controlling for** a variable means comparing within its values. **Conditioning on** it is the same act.
+- Every variable you **control for** is a claim about the graph. It is not a safety measure.
+- A regression with every control you could find is a graph nobody drew.
+
+::: {style="color:#b31b1b"}
+If the coefficient moves when a control goes in, that is neither good
+news nor bad news until you can say which of the three that variable is.
+:::
+
+::: {.notes}
+Two minutes, and this is the most portable thing in the lecture.
+
+The Berkeley case is the cleanest illustration if you have time. In 1973
+Berkeley admitted 44% of male applicants and 35% of female applicants.
+Control for department and the gap mostly vanishes, because women applied
+in larger numbers to departments that admitted fewer people.
+
+Now the question that makes the point: is department a confounder or a
+mediator? If applicants chose departments for reasons unconnected to the
+admissions process, it is a confounder and you should condition. If they
+were steered there, it is on the path and you have just controlled away
+part of what you were measuring. Same variable, same data, opposite
+handling, and only the causal question tells you which.
+
+Bickel, Hammel and O'Connell (1975), Science 187, 398. Link is on the
+manual page.
+:::
+
+## What you hear, and what it is {.smaller}
+
+| What you actually hear | What it is |
+|:--|:--|
+| Firms that do X grow faster | **confounder** |
+| Students who eat breakfast score higher | **confounder** |
+| Among the people we hired, the good testers interviewed badly | **collider** |
+| Nine of the top ten founders dropped out | **collider**, by survivorship |
+| Once we **control for** X the gap disappears | **mediator** |
+| More police, more crime | reverse causality |
+| We sent the team to our worst stores and they improved | regression to the mean |
+| Reported cybercrime doubled | the measure changed |
+
+::: {style="color:#6b6b6b"}
+Three are graph structures. Reverse causality is an arrow the wrong way round. The last two cannot be drawn.
+:::
+
+::: {.notes}
+Two minutes. This is the slide to photograph and you should say so.
+
+Read the left column out loud in the voice somebody would actually use.
+The right column is the translation, and going back and forth between the
+two is the skill.
+
+Do not work these. They are a reference. Four of the eight get worked in
+the next block.
+:::
+
+# Three claims, worked
+
+## Firms that hire consultants grow faster, so hire consultants
+
+::: {style="font-size:1.05em; margin:0.8em 0"}
+"Firms that hire consultants grow faster than firms that don't. So hire
+consultants."
+:::
+
+::: {style="color:#6b6b6b"}
+A consulting firm's own marketing deck
+:::
+
+::: {style="text-align:center; color:#b31b1b; margin-top:0.8em"}
+Hold up 1, 2, 3 or 4 fingers. 1 **confounder** · 2 **collider** · 3 **mediator** · 4 not a graph problem
+:::
+
+::: {.notes}
+Two minutes with the vote and the count. The first of three, one per
+structure, in the order they were defined.
+
+Take one reason from the floor, no names, then reveal.
+:::
+
+## Growing firms could afford consultants
+
+<svg class="dag" viewBox="0 0 420 250" width="440" height="262" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="confounder">
+  <defs>
+    <marker id="acfg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="acfr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge" x1="190" y1="70" x2="112" y2="158" marker-end="url(#acfg)"/>
+  <line class="edge" x1="230" y1="70" x2="308" y2="158" marker-end="url(#acfg)"/>
+  <line class="edge causal" x1="100" y1="185" x2="279" y2="185" marker-end="url(#acfr)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="45" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Already growing</text>
+  <text x="210" y="63" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">Z · confounder</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="182" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Hires consultants</text>
+  <text x="75" y="200" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">X · treatment</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="182" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Growth</text>
+  <text x="345" y="200" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">Y · outcome</text>
+  <text x="210" y="238" text-anchor="middle" font-size="16" font-weight="600" fill="#b31b1b" style="text-anchor:middle">compare firms that were growing at the same rate</text>
+</svg>
+
+- Firms already growing could afford consultants. Growth caused the hiring.
+- So the comparison is between growing firms and the rest. The **back door** is open.
+
+::: {style="color:#b31b1b"}
+In a meeting you say: the two groups were already different before anything happened.
+:::
+
+::: {.notes}
+Two minutes. This is the confounder, the structure nearly every project in
+the room will meet.
+
+The fix they can name: compare firms that were growing at the same rate
+before the hire. Say the honest caveat: you can compare within past
+growth and still not be sure the door is closed, because being on a
+growth path is not the only reason a firm hires consultants. That is the
+unmeasured confounder, and October is about closing doors you cannot
+measure.
+:::
+
+## Good to Great picks eleven winners and asks what they share
+
+Eleven companies beat the market by at least three times over fifteen
+years. The book finds what they have in common and recommends it.
+
+::: {style="color:#6b6b6b"}
+The best-selling management book of its generation
+:::
+
+::: {style="text-align:center; color:#b31b1b; margin-top:0.8em"}
+Hold up 1, 2, 3 or 4 fingers. 1 **confounder** · 2 **collider** · 3 **mediator** · 4 not a graph problem
+:::
+
+::: {.notes}
+One minute on the vote. Some of them have read it.
+
+Be fair to the book before you break it. It is careful, it has comparison
+companies, and the research effort was real. The problem is structural
+and no amount of care inside the design fixes it.
+:::
+
+## The sample was chosen on the outcome
+
+<svg class="dag" viewBox="0 0 420 250" width="440" height="262" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="collider">
+  <defs>
+    <marker id="aggg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="aggr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge" x1="100" y1="165" x2="168" y2="78" marker-end="url(#aggg)"/>
+  <line class="edge" x1="320" y1="165" x2="252" y2="78" marker-end="url(#aggg)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="45" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Became great</text>
+  <text x="210" y="63" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">Z · collider</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="185" text-anchor="middle" dy="0.35em" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">The practice</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="185" text-anchor="middle" dy="0.35em" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Everything else</text>
+  <text x="210" y="238" text-anchor="middle" font-size="16" font-weight="600" fill="#b31b1b" style="text-anchor:middle">the sample is the eleven inside the box</text>
+</svg>
+
+- The eleven were chosen because they became great.
+- Whatever else also caused that is now correlated with the practices, inside the sample.
+
+::: {style="color:#6b6b6b"}
+Circuit City filed for bankruptcy in 2008. Fannie Mae was placed in
+conservatorship the same year.
+:::
+
+::: {.notes}
+Two minutes. Same structure as the hiring puzzle, arriving from
+somewhere completely different. Say that out loud, it is why this example
+is here.
+
+The missing comparison is the firms that did all the same things and did
+not become great. They are not in the book, because the book selected on
+the outcome.
+
+The two failures are not the argument, and do not oversell them. Plenty
+of good companies fail. The argument is the structure. The failures are
+just the reason people noticed.
+:::
+
+## HR controls for salary band and the gap disappears
+
+::: {style="font-size:1.05em; margin:0.8em 0"}
+"Once we **control for** salary band, the gender gap in promotion
+disappears. So there is no bias in promotion."
+:::
+
+::: {style="color:#6b6b6b"}
+An HR review, closing the matter
+:::
+
+::: {style="text-align:center; color:#b31b1b; margin-top:0.8em"}
+Hold up 1, 2, 3 or 4 fingers. 1 **confounder** · 2 **collider** · 3 **mediator** · 4 not a graph problem
+:::
+
+::: {.notes}
+One minute on the vote. Expect confounder from a good fraction, which is
+the mistake worth having.
+:::
+
+## The bias works through the salary band
+
+<svg class="dag" viewBox="0 0 420 250" width="440" height="262" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mediator">
+  <defs>
+    <marker id="aprg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="aprr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge causal" x1="100" y1="165" x2="168" y2="78" marker-end="url(#aprr)"/>
+  <line class="edge causal" x1="230" y1="70" x2="308" y2="158" marker-end="url(#aprr)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="45" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Salary band</text>
+  <text x="210" y="63" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">Z · mediator</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="182" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Gender</text>
+  <text x="75" y="200" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">X · treatment</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="182" text-anchor="middle" font-size="18" font-weight="600" fill="#1b1b1b" style="text-anchor:middle">Promotion</text>
+  <text x="345" y="200" text-anchor="middle" font-size="12" fill="#6b6b6b" style="text-anchor:middle">Y · outcome</text>
+  <text x="210" y="238" text-anchor="middle" font-size="16" font-weight="600" fill="#b31b1b" style="text-anchor:middle">the band is how the bias operates</text>
+</svg>
+
+- If the bias works by placing women in lower bands, the band is how the effect travels.
+- **Control for** it and you have controlled away the thing you were looking for.
+
+::: {style="color:#b31b1b"}
+The disappearance is not the finding. It is the mechanism.
+:::
+
+::: {.notes}
+Two and a half minutes. Must land.
+
+Say the honest caveat: if bands were assigned before anything the firm
+did, and for reasons outside it, the band could be a confounder instead.
+Which it is depends on the causal question, not on the data. This is
+"Every control is a claim about the graph" again, and it is why that
+slide comes first.
+
+The right analysis is the total effect, gender to promotion, with nothing
+on the path conditioned on.
+:::
+
+## Every design ahead closes a back door
+
+- Each one closes a **back door** in a different way.
+- You will draw each of them as a graph before you hear its name.
+- Next week you generate questions. The two questions you ask of every number are the filter that kills the bad ones.
+
+::: {.notes}
+Thirty seconds. Do not list the designs. They cannot hold names for
+methods they have not met, and the sentence is the whole point.
+:::
+
+## After the break, your own project
+
+| | |
+|:--|:--|
+| Sit at your numbered table | your team is on the sheet |
+| Ground rules, one page, signed | while you still get along |
+| Your project's causal graph | on paper, by hand |
+| Every team reports | two and a half minutes, hard stop |
+
+Both sheets go in before you leave.
+
+::: {.notes}
+One minute. Say that the timer is real and that it is nine teams.
+
+Say what the report is: your question, and the graph. Nothing else.
+:::
+
+## Three questions, three minutes
+
+::: {style="text-align:center; font-size:1.2em; margin:1.2em 0 0.6em"}
+On your own device. This one tests the plumbing and does not count.
+:::
+
+::: {style="text-align:center; color:#6b6b6b"}
+Six across the term. Lowest one dropped. Each closes session A.
+:::
+
+::: {.notes}
+Three minutes. Poll Everywhere, items in `_quizzes/s02-causality-import.txt`.
+
+Say two things before you start. This one is a test of the plumbing and
+it does not count. And the policy: six across the semester, lowest one
+dropped, each closing session A.
+
+If you told the room "lowest two dropped" on August 26, correct it now.
+The slide behind you said one.
+:::
+
+::::
+
+
+:::: {.content-hidden when-format="revealjs"}
 
 ## Session A · 2:05–3:15
 
-Three blocks. First, theory. A theory is a set of assumptions that produces a prediction you could be wrong about. That is all it is, and it buys you four things. It tells you which comparison to make. It tells you what sign to expect. It tells you what to hold fixed. And it tells you what result would embarrass you. It is also the only thing that lets a number travel. A 40% lift measured in New York says nothing about Chicago unless you know the mechanism that produced it. Two worked examples, both from markets you will work in. [Akerlof's market for lemons](https://doi.org/10.2307/1879431) predicts that good used cars stay off the market, and it points straight at the fixes — warranties, certification, return policies. Then a dispute. [Spence's signalling model](https://doi.org/10.2307/1882010) and human capital both predict that a degree raises wages. They disagree about why. That disagreement tells you which comparison settles it: the jump at graduation, not the slope across years of study. Second, what empirical work can and cannot settle. It can measure a magnitude. It can rule out a sign. It can decide between two theories that predict different things about the same comparison. It cannot test a theory on its own. Every test is a joint test of the theory, the measure, the sample and the model, so a rejection never tells you which of the four broke. And no amount of data tells you what to want. Third, causality, which is the rest of the term. Counterfactuals first. Every unit has two outcomes: the one with the treatment and the one without. You only ever see one of them. That is [Holland's](https://doi.org/10.2307/2289064) fundamental problem, and it is a missing-data problem rather than a statistics problem. So every comparison you make is a stand-in for a world that did not happen, and the only question is whether the stand-in is any good. Customers on the loyalty app spend 40% more. The counterfactual is what those same customers would have spent without the app. It is not what the other customers spent. Then the picture. Causal graphs are arrows between variables, and they let you argue about identification before you own any data. A confounder causes both the treatment and the outcome, opens a back door, and has to be closed. A collider is caused by both, and conditioning on it manufactures an association that was never there. A mediator sits on the path you are trying to measure, and conditioning on it deletes the effect you came for. Close the back doors. Leave the front door alone. That is also why controlling for everything makes things worse. Every extra control is a claim about the graph, not a safety measure, and a kitchen-sink regression is a graph nobody drew. Finish with the map. Every design in this course closes a back door in a different way. You will draw each one before you hear its name.
+The whole hour answers one question: **compared to what?** Four blocks
+answer a piece of it.
+
+### Theory, and where the comparison comes from
+
+A theory is a set of assumptions that produces a prediction you could be
+wrong about. That is the entire definition, and the part carrying it is
+*could be wrong*. A claim that survives every possible result is a
+description dressed up.
+
+A theory buys you four things. It tells you which comparison to make. It
+tells you what sign to expect. It tells you what to hold fixed, and what
+not to. And it tells you what result would embarrass you, stated before
+you look.
+
+**A prediction is not a theory.** A prediction says what will happen, and
+you score it on accuracy. A theory says why, and therefore what happens if
+you change something. Only the second one can be acted on. This matters
+more than it sounds, because a model can fit beautifully and be about
+nothing. Your churn model says support contacts predict leaving. That is
+not a reason to believe fewer support contacts would keep anyone.
+
+<svg class="fig" viewBox="0 0 960 300" width="900" height="281" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="a black box beside an open box">
+  <defs>
+    <marker id="pbg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="pbr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <text x="230" y="26" text-anchor="middle" font-size="21" font-weight="600" fill="#1b1b1b">A prediction</text>
+  <text x="230" y="52" text-anchor="middle" font-size="15" fill="#6b6b6b">scored on accuracy. It can be right for no reason</text>
+  <rect x="2" y="112" width="124" height="56" rx="8" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <text x="64" y="140" text-anchor="middle" dy="0.35em" font-size="16" fill="#1b1b1b">Support calls</text>
+  <line x1="126" y1="140" x2="168" y2="140" stroke="#55554f" stroke-width="2.4" marker-end="url(#pbg)"/>
+  <rect x="172" y="88" width="150" height="104" rx="6" fill="#1b1b1b"/>
+  <text x="247" y="140" text-anchor="middle" dy="0.35em" font-size="44" fill="#ffffff">?</text>
+  <line x1="322" y1="140" x2="364" y2="140" stroke="#55554f" stroke-width="2.4" marker-end="url(#pbg)"/>
+  <rect x="368" y="112" width="90" height="56" rx="8" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <text x="413" y="140" text-anchor="middle" dy="0.35em" font-size="16" fill="#1b1b1b">Leaves</text>
+  <line x1="247" y1="268" x2="247" y2="200" stroke="#6b6b6b" stroke-width="2.4" stroke-dasharray="6 5" marker-end="url(#pbg)"/>
+  <text x="247" y="290" text-anchor="middle" font-size="15" fill="#6b6b6b">change something</text>
+  <text x="268" y="232" font-size="20" fill="#6b6b6b">?</text>
+  <text x="730" y="26" text-anchor="middle" font-size="21" font-weight="600" fill="#1b1b1b">A theory</text>
+  <text x="730" y="52" text-anchor="middle" font-size="15" fill="#6b6b6b">scored on whether its assumptions survive</text>
+  <rect x="502" y="112" width="124" height="56" rx="8" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <text x="564" y="140" text-anchor="middle" dy="0.35em" font-size="16" fill="#1b1b1b">Support calls</text>
+  <line x1="626" y1="140" x2="668" y2="140" stroke="#55554f" stroke-width="2.4" marker-end="url(#pbg)"/>
+  <rect x="672" y="88" width="150" height="104" rx="6" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <text x="747" y="122" text-anchor="middle" font-size="16" fill="#1b1b1b">leaves when</text>
+  <text x="747" y="146" text-anchor="middle" font-size="16" fill="#b31b1b">annoyance</text>
+  <text x="747" y="170" text-anchor="middle" font-size="16" fill="#b31b1b">&gt; switching cost</text>
+  <line x1="822" y1="140" x2="864" y2="140" stroke="#b31b1b" stroke-width="3.4" marker-end="url(#pbr)"/>
+  <rect x="868" y="112" width="90" height="56" rx="8" fill="#ffffff" stroke="#b31b1b" stroke-width="2.5"/>
+  <text x="913" y="140" text-anchor="middle" dy="0.35em" font-size="16" fill="#1b1b1b">Leaves</text>
+  <line x1="747" y1="268" x2="747" y2="200" stroke="#b31b1b" stroke-width="3.4" marker-end="url(#pbr)"/>
+  <text x="747" y="290" text-anchor="middle" font-size="15" fill="#b31b1b">change something</text>
+</svg>
+
+It is also why a number travels or does not. A 40% lift measured in one
+market says nothing about another unless you know the mechanism behind it.
+Without one you have a local fact with an expiry date.
+
+[Google Flu Trends](https://doi.org/10.1126/science.1248506) is the
+cautionary case. It predicted influenza-like illness from search queries,
+tracked the CDC closely, and was widely admired. By February 2013 it was
+predicting more than double the CDC figure it had been built to predict.
+Lazer, Kennedy, King and Vespignani argue the errors were largely
+avoidable. Part of the problem was that Google's own search algorithm kept
+changing underneath the model. Nobody could say why it worked, so nobody
+could say when it would stop.
+
+<svg class="fig" viewBox="0 0 980 340" width="900" height="312" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="schematic of Google Flu Trends overshooting the CDC in winter 2012 to 2013">
+  <text x="95" y="20" font-size="15" fill="#6b6b6b">% of doctor visits for flu-like illness</text>
+  <line x1="90" y1="30" x2="90" y2="300" stroke="#55554f" stroke-width="1.5"/>
+  <line x1="90" y1="300" x2="790" y2="300" stroke="#55554f" stroke-width="1.5"/>
+  <line x1="246" y1="300" x2="246" y2="308" stroke="#55554f" stroke-width="1.5"/>
+  <line x1="712" y1="300" x2="712" y2="308" stroke="#55554f" stroke-width="1.5"/>
+  <text x="246" y="326" text-anchor="middle" font-size="15" fill="#6b6b6b">Jan 2012</text>
+  <text x="712" y="326" text-anchor="middle" font-size="15" fill="#6b6b6b">Jan 2013</text>
+  <polyline fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+    points="90,274 168,267 246,257 324,248 401,267 518,274 596,267 634,246 673,202 712,170 751,202 790,235"/>
+  <polyline fill="none" stroke="#b31b1b" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"
+    points="90,266 168,254 246,236 324,224 401,255 518,270 596,256 634,220 673,130 712,60 751,110 790,180"/>
+  <line x1="712" y1="170" x2="712" y2="61" stroke="#b31b1b" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="655" y="66" text-anchor="end" font-size="16" fill="#b31b1b">about twice the CDC figure</text>
+  <text x="800" y="186" font-size="17" fill="#b31b1b">Google Flu Trends</text>
+  <text x="800" y="240" font-size="17" fill="#1b1b1b">CDC count</text>
+</svg>
+
+<p class="figcap">Schematic, redrawn from Fig. 1 of <a href="https://doi.org/10.1126/science.1248506">Lazer, Kennedy, King and Vespignani (2014)</a>. Shapes, not data.</p>
+
+Two worked theories, both from markets you will work in.
+
+[Akerlof's market for lemons](https://doi.org/10.2307/1879431) starts from
+three assumptions. Sellers know the quality of their car, buyers do not,
+and one price clears the market. So the price is what an average car is
+worth, owners of good cars withdraw rather than sell at it, the average
+falls, and the price follows. The prediction is that good used cars stay
+off the market. What makes it a good example for this course is that the
+fixes come free. Akerlof's own section on counteracting institutions names
+guarantees, brand names and chains, and licensing. Anything that lets a
+good seller prove they are one. The intervention list is not a separate
+brainstorm; it falls out of the assumptions. Look at any used-car
+marketplace today and you will find all four.
+
+Then a dispute, which is the better example.
+[Spence's signalling model](https://doi.org/10.2307/1882010) and human
+capital both predict that graduates earn more. Human capital says school
+makes you more productive. Signalling says school reveals who already was.
+They cannot both be the reason, and the policy stakes are opposite: if
+human capital is right, subsidising schooling grows the pie, and if
+signalling is right it mostly reshuffles who gets which job.
+
+The disagreement is what tells you the comparison. Human capital predicts
+a smooth return, since each year adds learning. Signalling predicts a jump
+at the certificate, since the final year is the year you get the paper. So
+compare someone who finished with someone who did three and a half years
+and left. Same schooling, different paper. That is the
+[sheepskin effect](https://doi.org/10.2307/1937919),
+and substantial premia at the diploma year are robustly found. They are
+evidence that some of the return is signalling. They do not settle the
+split, and almost nobody argues it is all one or all the other.
+
+<svg class="fig" viewBox="0 0 820 340" width="820" height="340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="wage against years of schooling under the two theories">
+  <text x="95" y="20" font-size="15" fill="#6b6b6b">Wage</text>
+  <line x1="90" y1="30" x2="90" y2="280" stroke="#55554f" stroke-width="1.5"/>
+  <line x1="90" y1="280" x2="790" y2="280" stroke="#55554f" stroke-width="1.5"/>
+  <line x1="645" y1="280" x2="645" y2="95" stroke="#6b6b6b" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line x1="720" y1="280" x2="720" y2="95" stroke="#6b6b6b" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line x1="120" y1="232" x2="760" y2="91" stroke="#55554f" stroke-width="3" stroke-linecap="round"/>
+  <polyline fill="none" stroke="#b31b1b" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"
+    points="120,232 719,190 720,100 760,98"/>
+  <text x="140" y="130" font-size="16" fill="#55554f">human capital: each year adds the same</text>
+  <text x="628" y="228" text-anchor="end" font-size="16" fill="#b31b1b">signalling: flat, then a jump at the diploma</text>
+  <line x1="120" y1="280" x2="120" y2="288" stroke="#55554f" stroke-width="1.5"/>
+  <text x="120" y="306" text-anchor="middle" font-size="15" fill="#6b6b6b">12 years</text>
+  <text x="645" y="306" text-anchor="middle" font-size="15" fill="#6b6b6b">15½</text>
+  <text x="645" y="326" text-anchor="middle" font-size="15" fill="#6b6b6b">left</text>
+  <text x="720" y="306" text-anchor="middle" font-size="15" fill="#6b6b6b">16</text>
+  <text x="720" y="326" text-anchor="middle" font-size="15" fill="#6b6b6b">finished</text>
+  <text x="440" y="326" text-anchor="middle" font-size="15" fill="#6b6b6b">Years of schooling</text>
+</svg>
+
+<p class="figcap">Wage against years of schooling under the two theories. Schematic. The comparison is the half-year between the two dashed lines.</p>
+
+**The general lesson.** A theory earns its keep by telling you which
+comparison settles the argument. That is the same job the identification
+section of your proposal does in December.
+
+Try it. Which of these is a theory, which a description, which a prediction, and which a value judgment?
+
+| | |
+|--:|:----------------------------------------------------------------------------|
+| 1 | Sales are higher in December |
+| 2 | Customers who contact support twice a month are three times more likely to leave |
+| 3 | Customers leave when the cost of switching drops below the annoyance of staying |
+| 4 | Firms should invest in sustainability |
+| 5 | Firms maximise profit, and whatever they did was the profit-maximising thing |
+
+<details class="test"><summary>Answers</summary>
+
+Description, prediction, theory, value judgment, and a statement that cannot be wrong, which is the tell that it is not a theory. Two and three are about the same thing. Only three tells you what to change, and it names two levers: the cost of switching and the annoyance of staying.
+
+</details>
+
+### What empirical work can and cannot settle
+
+It can measure a magnitude. It can rule out a sign. And it can choose
+between two theories when they predict different things about the same
+comparison. That third one is the one students under-rate, and it is the
+one Spence illustrates. A comparison both theories predict identically is
+not evidence, however clean the estimate.
+
+What it cannot do is test a theory on its own. **Every test is a joint
+test of four things**: the theory, the measure, the sample, and the model.
+When the result disagrees with you, it never says which of the four broke.
+In practice the weakest link is usually the measure, and the first move on
+a surprising result is to interrogate it rather than to abandon the idea.
+
+<svg class="dag" viewBox="0 0 760 200" width="960" height="253" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="a joint test: theory, measure, sample and model in one chain, ending in a result that says no">
+  <defs>
+    <marker id="ajtg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+  </defs>
+  <line x1="140" y1="96" x2="170" y2="96" stroke="#55554f" stroke-width="2.4"/>
+  <line x1="290" y1="96" x2="320" y2="96" stroke="#55554f" stroke-width="2.4"/>
+  <line x1="440" y1="96" x2="470" y2="96" stroke="#55554f" stroke-width="2.4"/>
+  <line x1="590" y1="96" x2="618" y2="96" stroke="#55554f" stroke-width="2.4" marker-end="url(#ajtg)"/>
+  <rect x="20" y="70" width="120" height="52" rx="8" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <rect x="170" y="70" width="120" height="52" rx="8" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <rect x="320" y="70" width="120" height="52" rx="8" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <rect x="470" y="70" width="120" height="52" rx="8" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <rect x="620" y="70" width="120" height="52" rx="8" fill="#ffffff" stroke="#b31b1b" stroke-width="2.5"/>
+  <text x="80" y="96" text-anchor="middle" dy="0.35em" font-size="20" font-weight="600" fill="#1b1b1b">Theory</text>
+  <text x="230" y="96" text-anchor="middle" dy="0.35em" font-size="20" font-weight="600" fill="#1b1b1b">Measure</text>
+  <text x="380" y="96" text-anchor="middle" dy="0.35em" font-size="20" font-weight="600" fill="#1b1b1b">Sample</text>
+  <text x="530" y="96" text-anchor="middle" dy="0.35em" font-size="20" font-weight="600" fill="#1b1b1b">Model</text>
+  <text x="680" y="96" text-anchor="middle" dy="0.35em" font-size="22" font-weight="700" fill="#b31b1b">No</text>
+  <text x="80" y="148" text-anchor="middle" font-size="16" fill="#6b6b6b">the idea</text>
+  <text x="230" y="148" text-anchor="middle" font-size="16" fill="#6b6b6b">the variable</text>
+  <text x="380" y="148" text-anchor="middle" font-size="16" fill="#6b6b6b">the units</text>
+  <text x="530" y="148" text-anchor="middle" font-size="16" fill="#6b6b6b">the equation</text>
+  <text x="680" y="148" text-anchor="middle" font-size="16" fill="#6b6b6b">the result</text>
+  <text x="80" y="52" text-anchor="middle" font-size="30" font-weight="700" fill="#b31b1b">?</text>
+  <text x="230" y="52" text-anchor="middle" font-size="30" font-weight="700" fill="#b31b1b">?</text>
+  <text x="380" y="52" text-anchor="middle" font-size="30" font-weight="700" fill="#b31b1b">?</text>
+  <text x="530" y="52" text-anchor="middle" font-size="30" font-weight="700" fill="#b31b1b">?</text>
+  <text x="380" y="188" text-anchor="middle" font-size="17" font-weight="600" fill="#b31b1b">Which link broke? The number does not say.</text>
+</svg>
+
+And no amount of data tells you what to want. Data can price a trade-off.
+It cannot say the trade is worth making. That line is where analysis stops
+and judgment starts, and crossing it quietly is the most common way an
+analyst overreaches. Your job is to make the trade-off visible and priced,
+then say plainly that the choice belongs to the person deciding.
+
+Try it. Can data settle each of these: yes, no, or only with an assumption you would have to defend?
+
+| | |
+|--:|:----------------------------------------------------------------------------|
+| 1 | Does the loyalty app increase spending? |
+| 2 | Is the minimum wage too high? |
+| 3 | Did the ad campaign pay for itself? |
+| 4 | Will this model still work next year? |
+| 5 | Should we prioritise growth over margin? |
+
+<details class="test"><summary>Answers</summary>
+
+One, yes, with a design. Two, no: "too high" is a judgment. Three, only with an assumption about what would have happened without the campaign. Four, only with an assumption, because whether the model still works depends on whether the mechanism holds, and that is the Google Flu problem again. Five, no: that is what you want. Two and five are not hard empirical questions. They are not empirical questions.
+
+</details>
+
+### For your proposal
+
+For your proposal this means something specific. You are not proving your
+theory. You are showing which comparison your design makes, and stating
+what would have to be true for that comparison to mean what you claim.
+That paragraph is the identification section, it is the hardest page in the
+document, and it is worth more than the results.
+
+### Causality
+
+[Holland's](https://doi.org/10.2307/2289064) framing comes first. Every
+unit has two outcomes, the one with the treatment and the one without, and
+you only ever observe one of them. The causal effect for a single customer
+is the difference between two numbers, one of which does not exist.
+
+**That makes it a missing data problem rather than a statistics problem.**
+No estimator recovers a number that was never observed. Every method in
+this course is a different argument about how to fill the missing column
+in, and the statistics comes after you have won that argument.
+
+So every comparison you make is a stand-in for a world that did not
+happen, and the only question worth asking about a result is whether the
+stand-in was any good. Take the claim the meeting opens with: customers on
+the loyalty app spend 40% more. The counterfactual is what those same
+customers would have spent without the app. It is not what the other
+customers spent. Ask who signs up for a loyalty app and the answer is
+people who already shop there a lot, which is most of the 40%.
+
+<svg class="dag" viewBox="0 0 420 250" width="560" height="333" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="confounder">
+  <defs>
+    <marker id="aappg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="aappr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge" x1="190" y1="70" x2="112" y2="158" marker-end="url(#aappg)"/>
+  <line class="edge" x1="230" y1="70" x2="308" y2="158" marker-end="url(#aappg)"/>
+  <line class="edge causal" x1="100" y1="185" x2="279" y2="185" marker-end="url(#aappr)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="48" text-anchor="middle" dy="0.35em" font-size="16" font-weight="600" fill="#1b1b1b">Heavy shopper</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="185" text-anchor="middle" dy="0.35em" font-size="16" font-weight="600" fill="#1b1b1b">On the app</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="185" text-anchor="middle" dy="0.35em" font-size="16" font-weight="600" fill="#1b1b1b">Spend</text>
+  <text x="210" y="238" text-anchor="middle" font-size="15" font-weight="600" fill="#b31b1b">close it: compare like with like</text>
+</svg>
+
+Two questions do most of the work, for the rest of your career. **Compared
+to what? And would those two groups have looked the same anyway?**
+
+Try it. A store gets a refit and sales rise 12% the following quarter. Which stand-in is best?
+
+| | |
+|--:|:----------------------------------------------------------------------------|
+| 1 | The same store, the quarter before |
+| 2 | Every other store in the chain, same quarter |
+| 3 | Stores that were also due a refit but have not had it yet |
+
+<details class="test"><summary>Answers</summary>
+
+One ignores everything else that changed over the quarter. Two compares stores that were picked for a refit with stores that were not, and they were picked for a reason. Three is the closest, if the queue order has nothing to do with sales. It is still an assumption. There is no comparison that needs no assumption, only comparisons whose assumption you can state and defend.
+
+</details>
+
+A causal graph is arrows between variables, and it lets you argue about
+identification before you own a single row of data. That is exactly where
+your team is this afternoon. A graph is also a theory drawn, so this is the
+first block in another notation. Every arrow is a claim you have to defend,
+and every absent arrow is a claim too, usually a stronger one.
+
+Three structures, and on every diagram today the nodes sit in the same
+places so only the arrows move.
+
+A back door is a second route from the treatment to the outcome that is not the effect you want. Conditioning on a variable means comparing within its values. Controlling for it in a regression is the same act, so the two words are used interchangeably below.
+
+**Confounder.** Causes both the treatment and the outcome. It opens a back
+door and the back door has to be closed. *In a meeting you say: the two
+groups were already different before anything happened.*
+
+<svg class="dag" viewBox="0 0 420 250" width="560" height="333" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="confounder">
+  <defs>
+    <marker id="acfg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="acfr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge" x1="190" y1="70" x2="112" y2="158" marker-end="url(#acfg)"/>
+  <line class="edge" x1="230" y1="70" x2="308" y2="158" marker-end="url(#acfg)"/>
+  <line class="edge causal" x1="100" y1="185" x2="279" y2="185" marker-end="url(#acfr)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="48" text-anchor="middle" dy="0.35em" font-size="19" font-weight="600" fill="#1b1b1b">Z</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="185" text-anchor="middle" dy="0.35em" font-size="19" font-weight="600" fill="#1b1b1b">X</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="185" text-anchor="middle" dy="0.35em" font-size="19" font-weight="600" fill="#1b1b1b">Y</text>
+  <text x="210" y="238" text-anchor="middle" font-size="15" font-weight="600" fill="#b31b1b">condition on Z and the back door closes</text>
+</svg>
+
+**Collider.** Caused by both. Conditioning on it manufactures a relationship
+that was never there. The arrows point into Z where the confounder's pointed
+out of it. *In a meeting you say: you only looked at the winners, so you
+invented a trade-off.*
+
+<svg class="dag" viewBox="0 0 420 250" width="560" height="333" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="collider">
+  <defs>
+    <marker id="acog" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="acor" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge" x1="100" y1="165" x2="168" y2="78" marker-end="url(#acog)"/>
+  <line class="edge" x1="320" y1="165" x2="252" y2="78" marker-end="url(#acog)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="48" text-anchor="middle" dy="0.35em" font-size="19" font-weight="600" fill="#1b1b1b">Z</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="185" text-anchor="middle" dy="0.35em" font-size="19" font-weight="600" fill="#1b1b1b">X</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="185" text-anchor="middle" dy="0.35em" font-size="19" font-weight="600" fill="#1b1b1b">Y</text>
+  <text x="210" y="238" text-anchor="middle" font-size="15" font-weight="600" fill="#b31b1b">condition on Z and you invent the link</text>
+</svg>
+
+**Mediator.** Sits on the path from cause to effect. Conditioning on it
+deletes the effect you came to measure. *In a meeting you say: you
+controlled away the thing you were looking for.*
+
+<svg class="dag" viewBox="0 0 420 250" width="560" height="333" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mediator">
+  <defs>
+    <marker id="amdg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="amdr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge causal" x1="100" y1="165" x2="168" y2="78" marker-end="url(#amdr)"/>
+  <line class="edge causal" x1="230" y1="70" x2="308" y2="158" marker-end="url(#amdr)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="48" text-anchor="middle" dy="0.35em" font-size="19" font-weight="600" fill="#1b1b1b">Z</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="185" text-anchor="middle" dy="0.35em" font-size="19" font-weight="600" fill="#1b1b1b">X</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="185" text-anchor="middle" dy="0.35em" font-size="19" font-weight="600" fill="#1b1b1b">Y</text>
+  <text x="210" y="238" text-anchor="middle" font-size="15" font-weight="600" fill="#b31b1b">condition on Z and you delete the effect</text>
+</svg>
+
+The rule is six words. **Close the back doors. Leave the front door
+alone.** Condition on the confounder. Leave the mediator alone. And do
+not select your sample on the result, because that is conditioning on a
+collider. All three, in one picture:
+
+<svg class="dag" viewBox="0 0 560 350" width="640" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="the rule: box the confounder, leave the mediator and the collider alone">
+  <defs>
+    <marker id="b3rlg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="b3rlr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line x1="240" y1="70" x2="122" y2="144" stroke="#55554f" stroke-width="2.4" marker-end="url(#b3rlg)"/>
+  <line x1="320" y1="70" x2="438" y2="144" stroke="#55554f" stroke-width="2.4" marker-end="url(#b3rlg)"/>
+  <line x1="146" y1="170" x2="212" y2="170" stroke="#b31b1b" stroke-width="3.4" marker-end="url(#b3rlr)"/>
+  <line x1="346" y1="170" x2="412" y2="170" stroke="#b31b1b" stroke-width="3.4" marker-end="url(#b3rlr)"/>
+  <line x1="120" y1="195" x2="238" y2="270" stroke="#55554f" stroke-width="2.4" marker-end="url(#b3rlg)"/>
+  <line x1="440" y1="195" x2="322" y2="270" stroke="#55554f" stroke-width="2.4" marker-end="url(#b3rlg)"/>
+  <rect x="208" y="9" width="144" height="72" rx="6" fill="none" stroke="#b31b1b" stroke-width="2.5" stroke-dasharray="7 4"/>
+  <ellipse cx="280" cy="45" rx="64" ry="28" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <text x="280" y="42" text-anchor="middle" font-size="16" font-weight="600" fill="#1b1b1b">Confounder</text>
+  <text x="280" y="60" text-anchor="middle" font-size="12" fill="#6b6b6b">condition on it</text>
+  <ellipse cx="80" cy="170" rx="64" ry="28" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <text x="80" y="167" text-anchor="middle" font-size="16" font-weight="600" fill="#1b1b1b">Treatment</text>
+  <text x="80" y="185" text-anchor="middle" font-size="12" fill="#6b6b6b">X</text>
+  <ellipse cx="280" cy="170" rx="64" ry="28" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <text x="280" y="167" text-anchor="middle" font-size="16" font-weight="600" fill="#1b1b1b">Mediator</text>
+  <text x="280" y="185" text-anchor="middle" font-size="12" fill="#6b6b6b">leave it alone</text>
+  <ellipse cx="480" cy="170" rx="64" ry="28" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <text x="480" y="167" text-anchor="middle" font-size="16" font-weight="600" fill="#1b1b1b">Outcome</text>
+  <text x="480" y="185" text-anchor="middle" font-size="12" fill="#6b6b6b">Y</text>
+  <ellipse cx="280" cy="296" rx="64" ry="28" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <text x="280" y="293" text-anchor="middle" font-size="16" font-weight="600" fill="#1b1b1b">Collider</text>
+  <text x="280" y="311" text-anchor="middle" font-size="12" fill="#6b6b6b">leave it alone</text>
+  <text x="280" y="344" text-anchor="middle" font-size="15" font-weight="600" fill="#b31b1b">box the top one and nothing else</text>
+</svg>
+
+Which is why controlling for everything makes things worse. Every control
+is a claim about the graph, not a safety measure, and a kitchen-sink
+regression is a graph nobody drew. If a coefficient moves when a control
+goes in, that is neither good news nor bad news until you can say which of
+the three that variable is.
+
+The [Berkeley admissions case](https://doi.org/10.1126/science.187.4175.398)
+is the cleanest illustration. In 1973 Berkeley admitted about 44% of male
+applicants and about 35% of female applicants. Control for department and
+the gap largely vanishes, because women applied in larger numbers to
+departments admitting fewer people. Now the question that matters: is
+department a confounder or a mediator? If applicants chose departments for
+reasons unconnected to admissions, it is a confounder and you should
+condition on it. If they were steered there, it sits on the path and
+conditioning removes part of what you were measuring. Same variable, same
+data, opposite handling. Only the causal question tells you which.
+
+### Translating between plain language and the vocabulary
+
+Most of the causal claims you will meet at work arrive in plain English,
+and your first job is to hear which structure is hiding in the sentence.
+
+| What you actually hear | What it is |
+|:--|:--|
+| Firms that do X grow faster | confounder |
+| Students who eat breakfast score higher | confounder |
+| Among the people we hired, the good testers interviewed badly | collider |
+| Nine of the top ten founders dropped out | collider, by survivorship |
+| Once we control for X the gap disappears | mediator |
+| More police, more crime | reverse causality |
+| We sent the team to our worst stores and they improved | regression to the mean |
+| Reported cybercrime doubled | the measure changed |
+
+The reverse direction matters as much. You will have to explain the
+diagnosis to somebody who has never heard the word collider, and "you only
+looked at the winners" is the sentence that lands.
+
+Those eight names are not eight separate things. Three are graph
+structures. One, reverse causality, is an arrow pointing the wrong way.
+And two cannot be drawn at all: regression to the mean is about picking
+extremes out of noise, and a changed measure is about measurement. Neither
+is fixed by conditioning on anything. Selection and survivorship are
+colliders wearing different clothes.
+
+### Three claims, worked in the room
+
+**The hiring puzzle.** *Among the people we hired, the ones with the best
+test scores had the worst interviews, so the test must be measuring the
+wrong thing.* Either a strong test or a strong interview was enough to be
+hired. So among the hired, a weak interview implies a strong test, and the
+trade-off is manufactured by looking only inside the box. In the applicant
+pool the two are unrelated. Scrapping the test would be acting on a pattern
+that exists only in the selected sample. The fix is to look at applicants,
+not hires.
+
+<svg class="dag" viewBox="0 0 420 250" width="560" height="333" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="collider">
+  <defs>
+    <marker id="ahig" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="ahir" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge" x1="100" y1="165" x2="168" y2="78" marker-end="url(#ahig)"/>
+  <line class="edge" x1="320" y1="165" x2="252" y2="78" marker-end="url(#ahig)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="48" text-anchor="middle" dy="0.35em" font-size="16" font-weight="600" fill="#1b1b1b">Hired</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="185" text-anchor="middle" dy="0.35em" font-size="16" font-weight="600" fill="#1b1b1b">Test score</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="185" text-anchor="middle" dy="0.35em" font-size="16" font-weight="600" fill="#1b1b1b">Interview</text>
+  <text x="210" y="238" text-anchor="middle" font-size="15" font-weight="600" fill="#b31b1b">we only ever look inside the box</text>
+</svg>
+
+**[Good to Great](https://www.jimcollins.com/article_topics/articles/good-to-great.html).**
+Jim Collins identified eleven companies that beat the market by at least
+three times over fifteen years after a transition point, then looked for
+what they had in common. The book is careful, it uses comparison companies,
+and the research effort was real. The problem is structural and no care
+inside the design fixes it: the eleven were chosen because they became
+great, so whatever else also caused that is now correlated with the
+practices inside the sample. The missing comparison is the firms that did
+all the same things and did not become great, and they are not in the book.
+Circuit City filed for bankruptcy in 2008 and Fannie Mae was placed into
+conservatorship the same year. Those failures are not the argument, since
+plenty of good companies fail. They are just why people noticed. The
+argument is the structure, and it is the same one as the hiring puzzle,
+arriving from a completely different direction.
+
+<svg class="dag" viewBox="0 0 420 250" width="560" height="333" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="collider">
+  <defs>
+    <marker id="aggg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="aggr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge" x1="100" y1="165" x2="168" y2="78" marker-end="url(#aggg)"/>
+  <line class="edge" x1="320" y1="165" x2="252" y2="78" marker-end="url(#aggg)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="48" text-anchor="middle" dy="0.35em" font-size="16" font-weight="600" fill="#1b1b1b">Became great</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="185" text-anchor="middle" dy="0.35em" font-size="16" font-weight="600" fill="#1b1b1b">The practice</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="185" text-anchor="middle" dy="0.35em" font-size="16" font-weight="600" fill="#1b1b1b">Everything else</text>
+  <text x="210" y="238" text-anchor="middle" font-size="15" font-weight="600" fill="#b31b1b">the sample is the eleven inside the box</text>
+</svg>
+
+**The promotion gap.** *Once we control for salary band the gender gap in
+promotion disappears, so there is no bias.* If the bias operates by placing
+women in lower bands, the band is how the effect travels, and controlling
+for it controls away the thing you were looking for. The disappearance is
+not the finding, it is the mechanism. The honest caveat is the Berkeley one:
+if bands were set before anything the firm did and for reasons outside it,
+the band could be a confounder instead. Which it is depends on the causal
+question rather than on the data.
+
+<svg class="dag" viewBox="0 0 420 250" width="560" height="333" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mediator">
+  <defs>
+    <marker id="aprg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="aprr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line class="edge causal" x1="100" y1="165" x2="168" y2="78" marker-end="url(#aprr)"/>
+  <line class="edge causal" x1="230" y1="70" x2="308" y2="158" marker-end="url(#aprr)"/>
+  <rect class="box" x="138" y="12" width="144" height="72" rx="6"/>
+  <ellipse class="node" cx="210" cy="48" rx="64" ry="28"/>
+  <text x="210" y="48" text-anchor="middle" dy="0.35em" font-size="16" font-weight="600" fill="#1b1b1b">Salary band</text>
+  <ellipse class="node" cx="75" cy="185" rx="64" ry="28"/>
+  <text x="75" y="185" text-anchor="middle" dy="0.35em" font-size="16" font-weight="600" fill="#1b1b1b">Gender</text>
+  <ellipse class="node" cx="345" cy="185" rx="64" ry="28"/>
+  <text x="345" y="185" text-anchor="middle" dy="0.35em" font-size="16" font-weight="600" fill="#1b1b1b">Promotion</text>
+  <text x="210" y="238" text-anchor="middle" font-size="15" font-weight="600" fill="#b31b1b">the band is how the bias operates</text>
+</svg>
+
+Every research design in this course closes a back door in a different way.
+You will draw each one as a graph before you hear its name.
 
 ## Session B · 3:30–4:30
 
-Every session B opens with a ten-minute team check-in: what you did
-since last week, what is stuck, and who is doing what next. Written
-down, and handed in with that session's work.
+Your team is already yours. Teams are posted before the break and there is
+a numbered sheet on each table, so the first three minutes are sitting down
+rather than listening to a list.
 
-No check-in this week, because there are no teams yet. Making them is the first ten minutes. I read out the teams, formed from your survey responses, and each one writes its own ground rules while everybody still gets along. Who does what. What happens when somebody misses a deadline. How you settle a disagreement, and who breaks a tie. One page, signed by everyone. Then the shared case, worked by every team at once. Eight cards, each carrying a real causal claim somebody is acting on — a board paper, a consulting deck, an HR review closing a matter, a widely shared post. Every card is broken in a different way. Draw the graph behind the claim. Name the failure in this morning's vocabulary. Then say what you would condition on, and what you must leave alone. Card 3 is the hiring puzzle, and it is a collider: among the people you hired, a strong test score and a strong interview trade off, because either one was enough to get in. Card 5 is the promotion gap, and salary band is a mediator: control for it and you have controlled away the thing you were looking for. Those two are where the morning either landed or it did not. Then one team is drawn at random to defend at the front while the room attacks, and we draw again as the clock allows. You will not know whether you are up. Points for an attack that lands, and you have to name what is wrong rather than say you dislike it. The last fifteen minutes are your own project. Your team has a shared interest and not yet a question, so take the closest thing you have and draw it: the treatment, the outcome, the one back door you would have to close, and the one variable you must not touch. That sheet is the artifact. It goes in with the ground rules before you leave. It is disposable and it will be wrong, which is the point of drawing it in September. You redraw it when we reach research designs, and the version that survives the room is the figure in your identification section.
+**Ground rules, one page, signed by everyone.** Written while the team
+still gets along, which is the only time it is easy. Who does what. What
+happens when somebody misses a deadline. How you settle a disagreement, and
+who breaks a tie. There is more on what belongs in it under
+[working in a team](../teamwork.qmd).
 
-Your team's output is submitted before you leave.
+**Then your own project, on paper, by hand.** Your team has a shared
+interest and not yet a question. Take the closest thing you have and draw
+it: the treatment, the outcome, the one back door you would have to close,
+and the one variable you must not touch.
 
-## Due
+**Then every team reports.** Two and a half minutes each, hard stop, on a
+timer. Your question, and the graph you drew, and nothing else. You hear
+every other project before you leave, and this is the only afternoon all
+term when the whole room sees what everybody chose.
 
-Your team's written ground rules — agreed and handed in today
+Your sheet is disposable and it will be wrong, which is the point of
+drawing it in September. You redraw it when we reach research designs, and
+the version that survives the room becomes the figure in your
+identification section.
+
+Both sheets go in before you leave.
+
+## Handouts
+
+[Causal claims, eight practice cases](../handouts/causal-claims.qmd) — eight
+claims, each broken in a different way, with a diagnosis sheet. Three of
+them, the loyalty app, the hiring puzzle and the promotion gap, are worked
+above. The other five are practice.
+
+## Where to read more
+
+[The Effect](https://theeffectbook.net/) is the gentlest book on the shelf
+and the best match for this meeting. Chapter 5 on identification, chapters
+6 and 7 on causal diagrams, chapter 8 on closing back doors. Start here.
+
+[Causal Inference: The Remix](https://mixtape.scunning.com/) chapter 3 on
+directed acyclic graphs and chapter 4 on potential outcomes, for the same
+material with the machinery attached.
+
+[Mostly Harmless Econometrics](https://www.mostlyharmlesseconometrics.com/)
+chapter 1, *Questions about Questions*, is eight pages and needs no
+mathematics. The rest of that book assumes econometrics you have not been
+taught, so read chapter 1 or nothing.
+
+::::

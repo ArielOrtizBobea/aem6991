@@ -48,9 +48,11 @@ $code-block-font-size:        0.55em;
   color: #444;
 }
 
-// Tables: dense and quiet, matching the manual pages.
+// Tables sit at body size. At 0.62em inside a .smaller slide they rendered
+// at about 15px, unreadable from the back of B15 (found 2026-09-02). Any
+// table that must stay dense gets its own wrapper on the slide.
 .reveal table {
-  font-size: 0.62em;
+  font-size: 1em;
 }
 
 .reveal .callout {
@@ -107,3 +109,20 @@ $code-block-font-size:        0.55em;
     margin: 0 auto;
   }
 }
+
+// Causal diagrams. Three nodes sit in the same place on every graph, so the
+// structures differ only in where the arrows point. Edges are drawn before
+// nodes, so node fills cover the tails and only the arrowheads show.
+.dag {
+  display: block;
+  margin: 0.3em auto 0;
+}
+.dag .node   { fill: #ffffff; stroke: #55554f; stroke-width: 2; }
+.dag .lab    { font-size: 19px; fill: #1b1b1b; text-anchor: middle;
+               dominant-baseline: central; font-weight: 600; }
+.dag .lab-sm { font-size: 16px; }
+.dag .edge   { stroke: #55554f; stroke-width: 2.4; fill: none; }
+.dag .causal { stroke: #b31b1b; stroke-width: 3.4; }
+.dag .box    { fill: none; stroke: #b31b1b; stroke-width: 2.5; stroke-dasharray: 7 4; }
+.dag .note   { font-size: 15px; fill: #b31b1b; text-anchor: middle; font-weight: 600; }
+.dag .note-q { font-size: 15px; fill: #6b6b6b; text-anchor: middle; }

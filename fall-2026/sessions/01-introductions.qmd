@@ -1,6 +1,6 @@
 ---
 title: "1 · Introductions"
-subtitle: "Wednesday, August 26, 2026 · Who is in the room, how the course works, and what you want to explore"
+subtitle: "Wednesday, August 26, 2026"
 pagetitle: "AEM 6991 · 1 Introductions"
 format:
   html:

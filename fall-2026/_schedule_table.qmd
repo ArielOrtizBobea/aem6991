@@ -17,7 +17,7 @@
   <td class="hw">Your team's written ground rules — agreed and handed in today</td></tr>
 <tr><td>Wed Sep 9</td>
   <td class="topic"><a href="sessions/03-questions.html">3 · Finding the question</a>
-    <span class="t-desc">Finding the question is the job, not the preamble to it. Five shapes a good project takes, six ways they go wrong, and a filter of four questions that kills most of the rest. Then the relay, where you break somebody else's question and they break yours.</span></td>
+    <span class="t-desc">Finding the question is the job, not the preamble to it. Where ideas come from, what makes an answer worth something to somebody, five shapes a project takes, and a map of what your question needs against what your team has. Then you map a shared case, and then your own.</span></td>
   <td class="hw"></td></tr>
 <tr><td>Wed Sep 16</td>
   <td class="topic"><a href="sessions/04-ethics.html">4 · Ethics and access</a>

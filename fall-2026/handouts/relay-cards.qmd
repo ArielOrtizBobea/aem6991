@@ -162,7 +162,7 @@ the dashed lines. The question sheet on page&nbsp;2 is what rotates.</p>
 
   <p class="lbl">Round 1 · dataset held</p>
   <div class="row"></div>
-  <p class="lbl">Our question · and its archetype (1–5)</p>
+  <p class="lbl">Our question · and its shape, named and numbered</p>
   <div class="row"></div>
   <div class="row"></div>
 

@@ -110,6 +110,21 @@ $code-block-font-size:        0.55em;
   }
 }
 
+// Section dividers. A level-1 heading renders as its own slide and Quarto gives
+// it .title-slide.level1.center. The deck's own opening slide is #title-slide
+// and is untouched by this rule. Numbered in the source, centred and carnelian
+// here, so the parts of a session read at a glance.
+.reveal .slides section.level1.title-slide {
+  text-align: center;
+
+  h1 {
+    color: $carnelian;
+    border-bottom: none;
+    text-align: center;
+    margin: 0;
+  }
+}
+
 // Causal diagrams. Three nodes sit in the same place on every graph, so the
 // structures differ only in where the arrows point. Edges are drawn before
 // nodes, so node fills cover the tails and only the arrowheads show.

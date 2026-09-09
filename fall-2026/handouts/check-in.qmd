@@ -1,0 +1,118 @@
+---
+title: "Team check-in sheet"
+pagetitle: "AEM 6991 · Team check-in"
+sidebar: false
+toc: false
+page-layout: full
+---
+
+```{=html}
+<style>
+.print-note { font-size: 0.85rem; color: #6b6b6b; margin: 0 0 1rem; }
+.sheetwrap { max-width: 8in; margin: 0 auto; }
+
+.sheethead {
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 2px solid #b31b1b; padding-bottom: 0.06in; margin: 0 0 0.10in;
+}
+.sheethead h2 { font-size: 1.05rem; font-weight: 700; margin: 0; border: none; }
+.sheethead .id { font-size: 0.78rem; color: #55554f; white-space: nowrap; }
+
+.fill { display: inline-block; border-bottom: 1px solid #55554f; }
+.w08 { width: 0.8in; } .w16 { width: 1.6in; } .w22 { width: 2.2in; }
+
+.topline { font-size: 0.74rem; color: #b31b1b; margin: 0 0 0.16in; }
+
+/* One block per field. The label says what goes in it, the rules say how much. */
+.block { margin: 0 0 0.17in; break-inside: avoid; }
+.block .lbl { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.1em;
+              color: #b31b1b; font-weight: 700; display: block; margin-bottom: 0.02in; }
+.block .hint { font-size: 0.66rem; color: #6b6b6b; font-style: italic;
+               display: block; margin-bottom: 0.03in; }
+.rules span { display: block; border-bottom: 1px solid #cfcfc9; height: 0.44in; }
+
+table.next { width: 100%; border-collapse: collapse; table-layout: fixed; }
+table.next th { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.07em;
+                color: #6b6b6b; font-weight: 700; text-align: left;
+                border-bottom: 1px solid #55554f; padding: 0 0.06in 0.03in; }
+table.next td { border-bottom: 1px solid #cfcfc9; height: 0.48in; padding: 0 0.06in; }
+table.next th + th, table.next td + td { border-left: 1px dashed #dcdcd6; }
+
+.sign { display: flex; align-items: baseline; gap: 0.12in; font-size: 0.74rem;
+        color: #55554f; border-top: 2px solid #b31b1b; padding-top: 0.14in;
+        margin-top: 0.06in; }
+.sign .grow { flex: 1 1 auto; border-bottom: 1px solid #55554f; min-width: 1.4in;
+              margin-right: 0.25in; }
+.footnote { font-size: 0.66rem; color: #6b6b6b; margin: 0.10in 0 0; }
+
+@media print {
+  .print-note, #title-block-header, #quarto-header, #quarto-sidebar, .nav-page,
+  footer, #quarto-margin-sidebar { display: none !important; }
+  @page { size: letter portrait; margin: 0.4in; }
+  body { background: #fff; }
+  html, body, #quarto-content, main { height: auto !important; min-height: 0 !important;
+    padding-bottom: 0 !important; margin-bottom: 0 !important; }
+  #quarto-content { display: block !important; }
+  .sheetwrap { max-width: none; margin-bottom: 0; }
+  .sheet > *:last-child { margin-bottom: 0; }
+}
+</style>
+
+<p class="print-note">Print this page. One sheet per team, filled in the first
+nine minutes of every session B from meeting&nbsp;3 onward. Nine copies plus
+three spares, in the lettered envelopes before class.</p>
+
+<div class="sheetwrap">
+<div class="sheet">
+
+  <div class="sheethead">
+    <h2>Team check-in</h2>
+    <div class="id">Team <span class="fill w08"></span> &nbsp; Date <span class="fill w16"></span></div>
+  </div>
+
+  <p class="topline">"Nothing is stuck yet" is an acceptable answer.</p>
+
+  <div class="block">
+    <span class="lbl">Who is here</span>
+    <div class="rules"><span></span><span></span></div>
+  </div>
+
+  <div class="block">
+    <span class="lbl">What we did since last week</span>
+    <div class="rules"><span></span><span></span><span></span></div>
+  </div>
+
+  <div class="block">
+    <span class="lbl">What is stuck</span>
+    <div class="rules"><span></span><span></span></div>
+  </div>
+
+  <div class="block">
+    <span class="lbl">Who does what next</span>
+    <table class="next">
+      <colgroup><col style="width:24%"><col style="width:53%"><col style="width:23%"></colgroup>
+      <tr><th>Name</th><th>What they do</th><th>By when</th></tr>
+      <tr><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="block">
+    <span class="lbl">One question for the instructor</span>
+    <span class="hint">Optional. I answer it by email before Friday.</span>
+    <div class="rules"><span></span><span></span></div>
+  </div>
+
+  <div class="sign">
+    <span>Submitted by</span><span class="grow"></span>
+    <span>Signature</span><span class="grow"></span>
+  </div>
+
+  <p class="footnote">Into the envelope when the timer stops.</p>
+
+</div>
+</div>
+```

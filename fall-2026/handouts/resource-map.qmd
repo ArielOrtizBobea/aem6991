@@ -1,0 +1,435 @@
+---
+title: "Resource map and question sheet"
+pagetitle: "AEM 6991 · Resource map and question sheet"
+sidebar: false
+toc: false
+page-layout: full
+---
+
+```{=html}
+<style>
+.print-note { font-size: 0.85rem; color: #6b6b6b; margin: 0 0 1rem; }
+.sheetwrap { max-width: 8in; margin: 0 auto; }
+.pagebreak { break-before: page; }
+
+/* Sheet furniture. Every sheet carries its own heading and its own id line,
+   because the three sheets are printed, cut apart and filled separately. */
+.sheethead {
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 2px solid #b31b1b; padding-bottom: 0.05in; margin: 0 0 0.10in;
+}
+.sheethead h2 { font-size: 1.0rem; font-weight: 700; margin: 0; border: none; }
+.sheethead .id { font-size: 0.72rem; color: #55554f; white-space: nowrap; }
+
+.lbl { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em;
+       color: #b31b1b; font-weight: 700; }
+.lbl-g { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em;
+         color: #6b6b6b; font-weight: 700; }
+.hint { font-size: 0.6rem; color: #6b6b6b; font-style: italic; }
+
+/* A fill is a short rule for a short answer. Widths are named in tenths of an
+   inch, so the rule is sized to the answer it takes. */
+.fill { display: inline-block; border-bottom: 1px solid #55554f; }
+.w04 { width: 0.4in; } .w06 { width: 0.6in; } .w12 { width: 1.2in; }
+.w18 { width: 1.8in; } .w26 { width: 2.6in; } .w34 { width: 3.4in; }
+.grow { flex: 1 1 auto; border-bottom: 1px solid #55554f; min-width: 1in; }
+
+/* A ruled line for a sentence. One span, one line of handwriting. */
+.rules { margin: 0.03in 0 0.10in; }
+.rules span { display: block; border-bottom: 1px solid #cfcfc9; height: 0.27in; }
+
+.instr { font-size: 0.62rem; line-height: 1.26; color: #333; margin: 0 0 0.06in; }
+.instr p { margin: 0 0 0.032in; }
+.instr .lead { color: #b31b1b; font-weight: 700; text-transform: uppercase;
+               letter-spacing: 0.06em; font-size: 0.57rem; }
+
+.summary { display: grid; grid-template-columns: 1fr 1fr; gap: 0.04in 0.24in;
+            font-size: 0.63rem; line-height: 1.25; margin: 0 0 0.10in;
+            border-top: 1px dashed #cfcfc9; border-bottom: 1px dashed #cfcfc9;
+            padding: 0.035in 0; }
+.summary b { color: #333; font-weight: 600; display: block; }
+.summary i { color: #6b6b6b; font-style: normal; }
+
+/* Candidate boxes. */
+.cand { border: 1px dashed #9a9a94; border-radius: 3px; padding: 0.07in 0.10in;
+        margin: 0 0 0.06in; break-inside: avoid; }
+.candhead { display: flex; justify-content: space-between; align-items: baseline;
+            margin: 0 0 0.02in; }
+.fields { display: flex; align-items: baseline; gap: 0.22in; font-size: 0.65rem;
+          color: #55554f; margin: 0.02in 0 0.04in; flex-wrap: wrap; }
+.filters { display: grid; grid-template-columns: 1fr 1fr; gap: 0.05in 0.16in;
+           margin-top: 0.04in; }
+.filters .fbox { border-top: 1px solid #e3e3de; padding-top: 0.03in;
+                 display: flex; flex-direction: column; }
+.filters .fbox .rules { margin-top: auto; }
+.filters .q { font-size: 0.63rem; color: #333; line-height: 1.25; }
+.circle { font-size: 0.65rem; color: #55554f; }
+.circle b { color: #b31b1b; font-weight: 700; }
+
+.slatefoot { border-top: 2px solid #b31b1b; padding-top: 0.07in; font-size: 0.68rem;
+             color: #333; }
+.slatefoot .rule-printed { color: #b31b1b; font-weight: 700; }
+
+/* The map grid. Six rows, four columns, plus the row name. */
+.maphead { font-size: 0.68rem; color: #55554f; margin: 0 0 0.09in; }
+.maphead .line { display: flex; align-items: baseline; gap: 0.1in; margin-bottom: 0.05in; }
+.caseline { font-size: 0.68rem; color: #333; border-left: 3px solid #b31b1b;
+            padding: 0.02in 0 0.02in 0.09in; margin: 0 0 0.09in; line-height: 1.3; }
+table.map { width: 100%; border-collapse: collapse; table-layout: fixed;
+            margin: 0 0 0.10in; }
+table.map th { font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.06em;
+               color: #b31b1b; font-weight: 700; text-align: left; vertical-align: bottom;
+               border-bottom: 1px solid #55554f; padding: 0 0.05in 0.03in; line-height: 1.2; }
+table.map td { border: 1px dashed #b8b8b2; vertical-align: top; padding: 0.04in 0.05in;
+               font-size: 0.6rem; line-height: 1.22; color: #55554f; height: 1.0in; }
+table.map tr { break-inside: avoid; }
+table.map td.rowname { border: none; border-right: 1px solid #55554f; font-size: 0.62rem;
+                       text-transform: uppercase; letter-spacing: 0.05em; color: #b31b1b;
+                       font-weight: 700; padding-right: 0.06in; }
+table.map td.need { color: #55554f; }
+table.map td.blank { color: #333; }
+.m2q { display: block; margin-top: 0.03in; font-style: italic; color: #6b6b6b; }
+
+.bottomlines { font-size: 0.72rem; color: #333; margin: 0 0 0.08in; }
+.bottomlines .bl { margin-bottom: 0.04in; display: flex; align-items: baseline; gap: 0.06in; }
+.printedrules { font-size: 0.62rem; color: #55554f; line-height: 1.35; margin: 0 0 0.07in;
+                border-top: 1px solid #e3e3de; padding-top: 0.05in; }
+.printedrules b { color: #b31b1b; font-weight: 700; }
+.ladder { font-size: 0.56rem; color: #6b6b6b; line-height: 1.3; margin: 0 0 0.05in; }
+.ladder b { color: #55554f; font-weight: 700; }
+.redraw { font-size: 0.62rem; color: #333; border-top: 1px solid #e3e3de; padding-top: 0.05in; }
+
+@media print {
+  .print-note, #title-block-header, #quarto-header, #quarto-sidebar, .nav-page,
+  footer, #quarto-margin-sidebar { display: none !important; }
+  @page { size: letter portrait; margin: 0.4in; }
+  body { background: #fff; }
+  html, body, #quarto-content, main { height: auto !important; min-height: 0 !important;
+    padding-bottom: 0 !important; margin-bottom: 0 !important; }
+  #quarto-content { display: block !important; }
+  .sheetwrap { max-width: none; margin-bottom: 0; }
+  .sheet:last-child > *:last-child { margin-bottom: 0; }
+}
+</style>
+
+<p class="print-note">Print this page. It holds three sheets, one to a page.
+Sheet&nbsp;1 is your question sheet. Sheet&nbsp;2 is a blank resource map for your
+team's own question. Sheet&nbsp;3 is the shared flood case, with its needs column
+already filled. Each team fills two maps, and the shared one comes first in the
+hour. All three sheets are portrait. Print CSS cannot turn one page of a document
+sideways in every browser, so a landscape sheet would come out right in one
+browser and wrong in the next; the grid is laid out to fit portrait instead.
+Sheet&nbsp;3 is mapped from cards 1 and 2 of the
+<a href="relay-cards.qmd">dataset relay cards</a>.</p>
+
+<div class="sheetwrap">
+
+<!-- ========================= SHEET 1: THE QUESTION SHEET ================== -->
+<div class="sheet">
+
+  <div class="sheethead">
+    <h2>Your question sheet</h2>
+    <div class="id">Team <span class="fill w06"></span> &nbsp; Date <span class="fill w12"></span></div>
+  </div>
+
+  <div class="instr">
+    <p><span class="lead">Bring the half sheet from this afternoon.</span> Line two goes in the role box.</p>
+    <p><span class="lead">Check in first.</span> Nine minutes. One sheet per team: who is
+    here, what you did, what is stuck, who does what next and by when. Nothing stuck yet is
+    an answer. Envelope it when the timer stops.</p>
+    <p><span class="lead">Then the shared case.</span> Every team maps the same question: is
+    flood risk priced into house prices, and did a local flood change that? Use the two cards
+    and one map sheet. The needs column is already filled. Write what you have and how you
+    checked it, the gap, and who closes it. Fill the bottom lines: the row that stops you and its date,
+    and what the question becomes if it does not close. Fourteen minutes. One team is drawn to
+    read its map, blanks included. Attack by naming a specific row that is blank, unchecked or
+    wrong. A point per attack that lands.</p>
+    <p><span class="lead">Then your own project.</span> Write three candidate questions. Label
+    the route of each, and make at least two of them different routes if you can. Give each its
+    shape and the role that would act on it or pay for it, which is a role and not a
+    company. Answer the four filters in
+    writing for one candidate. Cross a second out and name the filter that killed it. For the
+    third, write the one row that would kill it. Nine minutes. Then map the survivor only,
+    twelve minutes. For every gap, write who closes it by when, or how the question moves.
+    Unknown, with a name and date, counts.</p>
+    <p><span class="lead">One question a table.</span> I come round once between 4:06 and 4:27.
+    It is one question and one answer per table, not a consultation, so ask the one that is
+    blocking you.</p>
+    <p><span class="lead">Then hand in.</span> All four sheets go in the envelope before you
+    leave, and your submitter brings it to the front. Your pitch is built from this sheet and the
+    map. A question you kill today is a month you do not lose in March.</p>
+  </div>
+
+  <div class="summary">
+    <div><b>Written check-in, one sheet per team</b><i>nine minutes of writing, the first of the term</i></div>
+    <div><b>One shared case, one map, all nine teams</b><i>then one team drawn to read it aloud</i></div>
+    <div><b>Your own question sheet and your own map</b><i>three candidates, one killed, the survivor mapped</i></div>
+    <div><b>Four sheets in your envelope</b><i>check-in, shared map, question sheet, own map</i></div>
+  </div>
+
+  <div class="cand">
+    <div class="candhead">
+      <span class="lbl">Candidate 1</span>
+      <span class="lbl-g">run this one through all four filters</span>
+    </div>
+    <div class="rules"><span></span><span></span></div>
+    <div class="fields">
+      <span>Route (1, 2 or 3) <span class="fill w04"></span></span>
+      <span>Shape, named and numbered <span class="fill w12"></span></span>
+      <span>Who acts on it, or pays for it <span class="fill w26"></span></span>
+    </div>
+    <div class="filters">
+      <div class="fbox">
+        <p class="q"><span class="lbl">Filter 1</span> Could a team of three to five execute this in one spring semester?</p>
+        <div class="rules"><span></span><span></span></div>
+      </div>
+      <div class="fbox">
+        <p class="q"><span class="lbl">Filter 2</span> Can you name the dataset, who holds it, and how you get it, checked rather than assumed?</p>
+        <div class="rules"><span></span><span></span></div>
+      </div>
+      <div class="fbox">
+        <p class="q"><span class="lbl">Filter 3</span> Could the answer come out either way?</p>
+        <div class="rules"><span></span><span></span></div>
+      </div>
+      <div class="fbox">
+        <p class="q"><span class="lbl">Filter 4</span> Would anybody act differently depending on it?</p>
+        <div class="rules"><span></span><span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cand">
+    <div class="candhead">
+      <span class="lbl">Candidate 2</span>
+      <span class="lbl-g">the one you kill</span>
+    </div>
+    <div class="rules"><span></span><span></span></div>
+    <div class="fields">
+      <span>Route (1, 2 or 3) <span class="fill w04"></span></span>
+      <span>Shape, named and numbered <span class="fill w12"></span></span>
+      <span>Who acts on it, or pays for it <span class="fill w26"></span></span>
+    </div>
+    <p class="circle">Strike the question through. Killed by filter (circle one) &nbsp;
+      <b>1</b> execute it &nbsp; <b>2</b> data named and checked &nbsp;
+      <b>3</b> could come out either way &nbsp; <b>4</b> somebody acts</p>
+  </div>
+
+  <div class="cand">
+    <div class="candhead">
+      <span class="lbl">Candidate 3</span>
+      <span class="lbl-g">name the row that would kill it</span>
+    </div>
+    <div class="rules"><span></span><span></span></div>
+    <div class="fields">
+      <span>Route (1, 2 or 3) <span class="fill w04"></span></span>
+      <span>Shape, named and numbered <span class="fill w12"></span></span>
+      <span>Who acts on it, or pays for it <span class="fill w26"></span></span>
+    </div>
+    <p class="circle">The one row that would kill it (circle one) &nbsp; <b>Data</b> &nbsp;
+      <b>Comparison</b> &nbsp; <b>Skills</b> &nbsp; <b>Time and money</b> &nbsp;
+      <b>Permissions</b> &nbsp; <b>People and access</b></p>
+  </div>
+
+  <div class="slatefoot">
+    <p style="margin:0 0 0.05in;">We map candidate <span class="fill w04"></span>
+      &nbsp; <span class="rule-printed">Map the survivor only.</span></p>
+    <p style="margin:0;">If two survive all four, take the one whose worst gap closes
+      soonest, then the one with a named person who acts.</p>
+  </div>
+
+</div>
+
+<div class="pagebreak"></div>
+
+<!-- ====================== SHEET 2: THE MAP, OWN QUESTION ================== -->
+<div class="sheet">
+
+  <div class="sheethead">
+    <h2>Resource map · your own question</h2>
+    <div class="id">Team <span class="fill w06"></span> &nbsp; Date <span class="fill w12"></span></div>
+  </div>
+
+  <div class="maphead">
+    <div class="line"><span class="lbl">The question</span><span class="grow"></span></div>
+    <div class="line">
+      <span>Route (1, 2 or 3) <span class="fill w04"></span></span>
+      <span>Shape, named and numbered <span class="fill w12"></span></span>
+      <span>Who acts on it, or pays for it <span class="fill w34"></span></span>
+    </div>
+  </div>
+
+  <table class="map">
+    <colgroup>
+      <col style="width:11%"><col style="width:22%"><col style="width:23%">
+      <col style="width:17%"><col style="width:27%">
+    </colgroup>
+    <tr>
+      <th></th>
+      <th>What the question needs</th>
+      <th>What we have, and how we checked</th>
+      <th>Gap</th>
+      <th>Who closes it, by when, or how the question moves</th>
+    </tr>
+    <tr>
+      <td class="rowname">Data</td>
+      <td class="need">Which dataset, who holds it, and what it must contain</td>
+      <td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="rowname">Comparison</td>
+      <td class="need">Where the counterfactual comes from: which units, which period
+        <span class="m2q">Compared to what? Would those two groups have looked the same anyway?</span></td>
+      <td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="rowname">Skills</td>
+      <td class="need">Language, method, who on the team has run one</td>
+      <td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="rowname">Time and money</td>
+      <td class="need">How long: now, days, weeks, months, longer; dollars; the deadline it must meet</td>
+      <td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="rowname">Permissions</td>
+      <td class="need">Ethics review by the IRB, a data-use agreement, terms of service, or none, and how long each takes; meeting 4 teaches the gates</td>
+      <td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="rowname">People and access</td>
+      <td class="need">Who you know who holds the data, the decision, or the site</td>
+      <td></td><td></td><td></td>
+    </tr>
+  </table>
+
+  <div class="bottomlines">
+    <div class="bl">The row that stops you is <span class="fill w18"></span>, and it has to close by <span class="fill w18"></span></div>
+    <div class="bl">If it does not close, the question becomes <span class="grow"></span></div>
+    <div class="bl" style="display:block;">Decision log, one line per move: what changed, when, why.</div>
+    <div class="rules"><span></span><span></span></div>
+  </div>
+
+  <div class="printedrules">
+    <b>A "have" with no "how checked" counts as a need.</b>
+    A blank permissions row is not the same as "none"; write none if it is none.
+    "Unknown, X checks by Friday" is an acceptable gap entry.
+    The last column is where the plan lives.
+  </div>
+
+  <p class="ladder"><b>The access ladder.</b>
+    Library databases, Statista, IBISWorld, SimplyAnalytics, FRED, EDGAR: <b>now</b>, on your
+    netID or nothing. The Nielsen public-use extract (2019, three product categories):
+    <b>now</b>, on your netID, and it is a practice dataset. Dewey: <b>days</b>; register with
+    a Cornell address and wait for approval. Your own survey or online experiment:
+    <b>weeks</b>; review by the IRB, the board that reviews research on people, then field it. Full Kilts-Nielsen data: <b>months</b>; a project
+    application through Cornell Research Services, then space in the Regulated Research
+    Environment. A data-use agreement with a firm: <b>months, and it may fail</b>; legal review
+    on both sides. Census, BLS or NCHS confidential microdata via FSRDC: <b>longer than this
+    degree</b>; federal project approval.</p>
+
+  <p class="redraw">The map is not filled in once. A resource that turns out missing changes
+    the question, the changed question changes the rows, and every redraw is the plan doing its
+    job, not the plan failing.</p>
+
+</div>
+
+<div class="pagebreak"></div>
+
+<!-- ====================== SHEET 3: THE MAP, SHARED CASE =================== -->
+<div class="sheet">
+
+  <div class="sheethead">
+    <h2>Resource map · the shared case</h2>
+    <div class="id">Team <span class="fill w06"></span> &nbsp; Date <span class="fill w12"></span></div>
+  </div>
+
+  <div class="caseline">Is flood risk priced into house prices, and did a local flood change
+    that? Shape one, evaluation. Route three, from data, done honestly. Map it from relay
+    cards 1 and 2. The needs column is filled for you.</div>
+
+  <div class="maphead">
+    <div class="line">
+      <span>Who acts on it, or pays for it <span class="fill w34"></span></span>
+      <span class="hint">a role, not a company</span>
+    </div>
+  </div>
+
+  <table class="map">
+    <colgroup>
+      <col style="width:11%"><col style="width:22%"><col style="width:23%">
+      <col style="width:17%"><col style="width:27%">
+    </colgroup>
+    <tr>
+      <th></th>
+      <th>What the question needs</th>
+      <th>What we have, and how we checked</th>
+      <th>Gap</th>
+      <th>Who closes it, by when, or how the question moves</th>
+    </tr>
+    <tr>
+      <td class="rowname">Data</td>
+      <td class="need">Sale prices by parcel with coordinates and dates; a flood-risk measure by ZIP; a list of floods with dates and places</td>
+      <td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="rowname">Comparison</td>
+      <td class="need">ZIPs with the same flood rating that did not flood, before and after the event
+        <span class="m2q">Compared to what? Would those two groups have looked the same anyway?</span></td>
+      <td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="rowname">Skills</td>
+      <td class="need">Joining two large files on ZIP; a parcel panel</td>
+      <td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="rowname">Time and money</td>
+      <td class="need">Dewey days; no money; the transactions extract is large</td>
+      <td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="rowname">Permissions</td>
+      <td class="need">Dewey's terms; no human subjects</td>
+      <td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="rowname">People and access</td>
+      <td class="need">Nobody in particular</td>
+      <td></td><td></td><td></td>
+    </tr>
+  </table>
+
+  <div class="bottomlines">
+    <div class="bl">The row that stops you is <span class="fill w18"></span>, and it has to close by <span class="fill w18"></span></div>
+    <div class="bl">If it does not close, the question becomes <span class="grow"></span></div>
+    <div class="bl" style="display:block;">Decision log, one line per move: what changed, when, why.</div>
+    <div class="rules"><span></span><span></span></div>
+  </div>
+
+  <div class="printedrules">
+    <b>A "have" with no "how checked" counts as a need.</b>
+    A blank permissions row is not the same as "none"; write none if it is none.
+    "Unknown, X checks by Friday" is an acceptable gap entry.
+    The last column is where the plan lives.
+  </div>
+
+  <p class="ladder"><b>The access ladder.</b>
+    Library databases, Statista, IBISWorld, SimplyAnalytics, FRED, EDGAR: <b>now</b>, on your
+    netID or nothing. The Nielsen public-use extract (2019, three product categories):
+    <b>now</b>, on your netID, and it is a practice dataset. Dewey: <b>days</b>; register with
+    a Cornell address and wait for approval. Your own survey or online experiment:
+    <b>weeks</b>; review by the IRB, the board that reviews research on people, then field it. Full Kilts-Nielsen data: <b>months</b>; a project
+    application through Cornell Research Services, then space in the Regulated Research
+    Environment. A data-use agreement with a firm: <b>months, and it may fail</b>; legal review
+    on both sides. Census, BLS or NCHS confidential microdata via FSRDC: <b>longer than this
+    degree</b>; federal project approval.</p>
+
+  <p class="redraw">The map is not filled in once. A resource that turns out missing changes
+    the question, the changed question changes the rows, and every redraw is the plan doing its
+    job, not the plan failing.</p>
+
+</div>
+
+</div>
+```

@@ -2,33 +2,1080 @@
 title: "3 · Finding the question"
 subtitle: "Wednesday, September 9, 2026"
 pagetitle: "AEM 6991 · 3 Finding the question"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+  revealjs:
+    output-file: 03-questions-slides.html
+    theme: [default, slides.scss]
+    template-partials:
+      - title-slide.html
+    footer: "AEM 6991"
+    slide-number: c/t
+    incremental: false
+    history: false
+    link-external-newwindow: true
 ---
 
-::: {.callout-note appearance="simple"}
-This page is a stub. Materials appear here before the meeting.
+:::: {.content-hidden when-format="revealjs"}
+
+[Slides](03-questions-slides.html)
+
+```{=html}
+<style>
+.dag, .fig { display:block; margin:0.8em auto 0.3em; max-width:100%; height:auto; }
+.dag .node { fill:#ffffff; stroke:#55554f; stroke-width:2; }
+.dag .edge { stroke:#55554f; stroke-width:2.4; fill:none; }
+.dag .causal { stroke:#b31b1b; stroke-width:3.4; }
+.dag .box { fill:none; stroke:#b31b1b; stroke-width:2.5; stroke-dasharray:7 4; }
+.figcap { text-align:center; color:#6b6b6b; font-size:0.85em; margin:0 0 1.4em; }
+details.test { margin:0.4em 0 1.2em; } details.test summary { cursor:pointer; color:#b31b1b; }
+</style>
+```
+
+**What you should be able to do after this meeting.** Say where your question
+came from, who would act on the answer or pay for it, and which of seven shapes
+it takes. Map what it needs against what your team has, name the row that binds and
+the date it has to close by, and say what the question becomes if it does not.
+
+::: {.callout-note title="What to take away" appearance="simple"}
+What makes an answer valuable. **Public value** is shared, so nobody can be stopped from using the answer and it gets published. **Private value** can be kept, so somebody pays for it. Both are fine here. The test is not whether one person acts, it is whether you can keep the answer.
+
+Ideas arrive by three routes. From the world, from a study, and from data. Route one lacks data, route two lacks novelty, route three lacks a decision.
+
+Four questions kill most bad ideas. Can three to five people do it in a semester? Can you name the data, who holds it, and how you get it? Could the answer come out either way? Would anybody act differently?
+
+The resource map is six rows against what the question needs: data, comparison, skills, time and money, permissions, people and access. A resource that turns out missing changes the question, and every redraw is the plan working.
 :::
 
-**What you should be able to do after this meeting.** Turn an interest, or a dataset you did not choose, into a question somebody could answer, and say which archetype it is. Break a question that is not one by naming the filter it fails.
+## Due today
+
+Your team's question sheet and the resource map of the question that survives.
+Both before you leave.
+
+::::
+
+:::: {.content-visible when-format="revealjs"}
+
+# 1. What makes a good idea
+
+## What makes a good idea
+
+- You need a way to quickly evaluate ideas, otherwise you hang on to less interesting ideas for too long.
+- An good idea has to check a few boxes:
+
+1. Importance. Somebody is better off knowing the answer.
+2. Feasible. One can actually get the answer with existing data and methods.
+3. Novelty. The answer is not already known.
+4. Fit. The idea is great for your team. You have the skills and comparative advantage to tackle it.
+
+- You can rank ideas based on these criteria to pick ideas with high potential for your team.
+
+::: {.notes}
+One and a half minutes. Put the four up and do not explain them yet. One
+slide each follows.
+
+Say why this comes first. You already have ideas, so the useful thing is
+not another way to generate them. It is a way to sort them fast. The cost
+of having no test is not that you pick a bad idea on purpose. It is that
+you stay with a mediocre one for weeks because nothing told you to drop it.
+
+Say that the four are not weighted equally in this course. Feasible is the
+one that kills projects in March, so it gets the whole second half of the
+hour.
+
+Say also that they pull against each other. The most important questions are
+usually the least feasible, and the most feasible are usually the least new.
+A project is a choice about where to sit between them, not a search for a
+question that scores full marks on all four.
+
+The fourth is the one they will not expect and it is the one that stops a
+team adopting somebody else's good idea. Flag it here and let the fourth
+slide do the work.
+:::
+
+## What makes a question important
+
+- Answering the question provide value to someone.
+- The value you bring can be a private or a public good.
+- Private good: e.g. you shed light on an untapped market segment for a company (value is derived by acting upon the private information, not publishing it)
+- Public good: e.g. you shed light on how changing a policy could improve economic surplus (value is derived by publishing)
+- In academia, the important is often measure by how many other academics find the work useful (determines journals and drives citations)
+- Key idea: someone is better off after we responded to this question.
+
+::: {.notes}
+Ninety seconds. This is the test that the last two cohorts failed, and it is
+the one the room will resist, because a big topic feels important.
+
+Push on the difference. Climate change is large. Whether a flood changes what
+a lender charges is important, because somebody acts on the answer.
+
+Do not resolve who acts and who pays here. That is the next block, and it is
+where this test gets its second half.
+:::
+
+## What makes an answer valuable
+
+::: {style="font-size:0.78em"}
+
+- Somebody or some organization has a decision to make that would benefit from it, or a whole agenda cannot move without it.
+- If you cannot identify the people or organizations benefiting from the new knowledge, then it's unclear this is important.
+- **Public good value** is shared: many people are better off and you cannot stop anyone using the answer, so it is hard to charge for and it gets published.
+- **Private good value** can be kept: one person's decision changes, and that person can keep the answer to themselves, so somebody pays for it.
+- Both are fine for this project. Private value has greater traction in private industry.
+
+:::
+
+::: {.notes}
+Two and a half minutes. This is the fourth filter, would anybody act
+differently, arriving early. Say the word value and leave the slide up.
+
+The bullet that says the test is whether the answer can be kept is what
+makes quiz item 1 work, because a student who learned "private means
+somebody acts" picks the wrong distractor without it.
+
+Neither definition uses the word excludable. Say "you cannot stop anyone
+using it" out loud too, because the term is not what is being examined.
+
+The theory behind the public half is [Arrow
+1962](https://www.nber.org/chapters/c2144) on knowledge as a
+non-excludable good, cited on the companion page and not on the slide.
+
+Say plainly that the grade does not prefer private.
+:::
+
+## Who acts on the answer or pays for it
+
+::: {style="margin:0.9em 0 1.3em"}
+[1 · attention and stock prices · private value]{style="color:#b31b1b"}<br>
+An investment fund would pay for this while it is the only one holding
+the answer.
+Ask instead whether small investors lose money and your reader is a
+regulator, which is a different project.
+:::
+
+::: {style="margin:0 0 0.4em"}
+[2 · extreme weather and damage · both]{style="color:#b31b1b"}<br>
+Finance ministries and the World Bank act on a published number. Insurers
+would pay for the same number, because it is what they price the cover
+on.
+:::
+
+::: {.notes}
+One minute. The lesson is the sentence under each label, the one that
+names who acts or pays. A team that can fill it has passed filter 4.
+Read both of those sentences out; the labels can be said in one word
+each.
+
+Each block names its item in three or four words, because the vote slide
+is gone by now and "1 · private" on its own tells a student nothing.
+
+Insurers on the screen is reinsurers in fact. Say reinsurers if you want,
+after the plain word, and do not spend a sentence on the difference.
+
+The plan draws this reveal as a three-column table. It is set as two
+stacked rows instead, because the first "why" cell is twenty-four words
+and a cell that long does not fit at this root size.
+
+Item 1 is Team D's sentence shown as a buyer it has, not as a verdict.
+The verdict on signal-on-returns sits on "Private value is easier to
+sell, and it evaporates when published", one slide from here.
+
+Gate. This slide is on screen by 2:24. If it is not, read it as one item
+only, and drop "Private value is easier to sell, and it evaporates when
+published" to its first and last bullet. That saves a minute and a half.
+:::
+
+
+::: {.notes}
+Two minutes. Start the count-down at thirty, projected beside the slide,
+and say nothing until it ends. It shows this write's own seconds and it
+is the only thing that ends the write. Write, do not talk. Nobody reads
+one out.
+
+This line is the pitch's why-it-matters line, written while the examples
+are on the screen. It goes on the question sheet, the slate on the
+printing list, this afternoon in the same words, which is why the last
+bullet exists: the strip is a personal half sheet that is never
+collected, and it is the thing most likely to be left on a chair at 3:15.
+The same instruction is printed at the top of the slate sheet, which the
+sheet itself calls the question sheet.
+
+Transition line: value says why, and the shape says what you can claim.
+:::
+
+## What makes a question feasible
+
+- You can get the data, in the time you have, with the skills on the team.
+- Feasibility is about resources. It is not about whether the question could be answered by somebody.
+- Most projects fail here, so it is critical to evaluate this as early as possible.
+- A check: can you pin point the data you are using (if using secondary data) or have an idea of the platform to run your experiments (if working with primary data).
+
+::: {.notes}
+Ninety seconds. Say plainly that this is the one that does the killing, and
+that it is why the second half of the hour is one long exercise in it.
+
+Checked, not assumed, is the phrase to repeat. It comes back on the map as
+the difference between a have and a need.
+
+The whole resource map is this test taken seriously, so this slide is its
+promise. Do not open the map here.
+:::
+
+## What makes a question novel
+
+- Nobody has already answered it, and you know that because you went and looked.
+- Requires that you read and look around extensively.
+- New does not mean nobody has worked on the topic (that could be a sign this is not important). Instead, it means this answer is not already out there (e.g. a publication, a product or service line, etc.).
+- A marginal change to published work is new, but not as important (you need to recognize this).
+- The check: what is the closest study to ours, and clearly identify how your study sheds light on something the previous study did not provide any insight.
+
+::: {.notes}
+Ninety seconds. This is the test that sends them to the literature, and it is
+the only reason this course asks them to read.
+
+Tie it back to the second route without naming a team. A marginal change
+passes this test at the low end, and that is acceptable for one semester as
+long as the team knows where it is sitting.
+
+The honest failure here is not being unoriginal. It is not having looked.
+:::
+
+## Private value disappears once it is published
+
+::: {style="font-size:0.78em"}
+
+- [McLean and Pontiff](https://doi.org/10.1111/jofi.12365) collected 97 published rules for picking stocks that beat the market.
+- On average a rule earned 26 percent less on later data than in the study that found it, and 58 percent less once it was in print.
+- A rule is worth money while one trading desk is the only one using it, and about half that once it is in a journal.
+- A search-traffic signal regressed on next-day returns has no trading desk and no journal, so it has neither kind of value.
+- If an answer is worth money and nobody has produced it, ask why, and read to check that nobody has.
+- A public good does not lose its value like this.
+:::
+
+[McLean and Pontiff (2016), *Does Academic Research Destroy Stock Return Predictability?*, Journal of Finance 71(1), 5 to 32](https://doi.org/10.1111/jofi.12365){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Ninety seconds. This is why signal-on-returns is a fine desk memo and a
+bad capstone.
+
+Nobody in the room has to have read a finance paper. Return predictor is
+"a rule for picking stocks that beat the market", out of sample is "on
+later data", and both are said that way on the slide.
+
+The figures and the DOI are verified, so they go on the slide as numbers
+and not as "about". Do not say "near zero": it was wrong and contradicted
+the paper cited one bullet above it.
+
+The last bullet is meeting 1's line on what reading is for, turned into a
+reason to go to the literature.
+:::
+
+## What makes a question a good fit for you
+
+- A question can be important, feasible and new, and still not be a good fit.
+- Fit is two things: the skills your team actually has, and whether you care about it.
+- A question nobody on the team can execute is somebody else's project, however good it is.
+- The check: do we know the skills we have in the team? Do we have the excitement and commitment for this? Are we well organized and know who does what?
+
+::: {.notes}
+Ninety seconds. This is the instructor's own fourth test and it is the one
+that is missing from every version of this advice they will read elsewhere.
+
+Say the failure case plainly. A team adopts a question because it sounds
+important, nobody on it can do the hardest part, and by February the project
+is being done badly by the one person who can.
+
+Interest is not softness. The question that gets finished is the one somebody
+still wants to answer when it has stopped being fun, and that is a
+feasibility fact rather than a preference.
+
+This is also the argument for the inventory on "Start from what you have",
+forty minutes from now. Do not open it here, just plant it.
+:::
+
+# 2. Types of ideas
+
+## A project can take different shapes
+
+::: {style="font-size:0.56em"}
+
+| | The question it asks | For example |
+|:--|:--|:--|
+| 1 Evaluation | Did it work? Somebody changed something and you measure what it did | Did the loyalty card raise what people spend? |
+| 2 Preference and pricing | What would people choose and pay? Nobody has decided yet, so you ask them | Would shoppers pay more for a lower carbon label? |
+| 3 Prediction and risk | What happens next? You need the number, not the reason | Which customers will cancel next quarter? |
+| 4 Diagnosis | Why is this so uneven? Something varies and nobody knows why | Why do some stores sell twice what similar stores do? |
+| 5 Feasibility | Is this opportunity real, and what is in the way? | Is there a market for this product in Kenya? |
+| 6 Measurement | How much of this is there? Nobody has counted it, so you build the number | What does one flood actually cost a county? |
+| 7 Valuation | What is this worth? You price it against things that already carry prices | What is a water view worth on a house? |
+
+:::
+
+- The same interest can usually be turned into three of these, so pick the one you can answer.
+
+::: {.notes}
+Three and a half minutes. This slide defines the five. The next one kills
+them, so do not give away the failures here.
+
+Read the middle column out. It is written for somebody who has never taken
+an econometrics course, and the examples are there so nobody has to guess
+what the label means.
+
+Rows six and seven were added on 2026-09-09 because five did not cover the
+room. Measurement is how much of this is there when nobody has counted it,
+and it is where the climate damage question sits. Valuation is what is this
+worth, priced against comparable things, and it is where the asset pricing
+question sits. Neither team is named on the screen.
+
+The old version of this slide showed only the failure column, which named
+five categories it never defined. It was cryptic and it was cut on
+2026-09-09.
+
+The can-claim column is spoken rather than shown, and all four columns are
+printed on the companion page. Say the one line that matters: one and two
+can support a claim about cause, three cannot and must not pretend to, four
+is a description that points at a cause somebody could test later, and five
+needs at least one piece of the team's own evidence or it is a literature
+review.
+
+Then say Team H's sentence as three shapes, as a gift. The sentence is
+"does AI advice move a non-expert closer to a good decision, or just swap
+their overconfidence for the model's?". Evaluation: did people given AI
+advice decide better than people without it? Preference: which advice
+format do people choose, and what would they pay for it? Prediction: who
+over-relies, and can you tell in advance?
+
+A team that hears its own interest in one of those three has found its
+afternoon's first job.
+:::
+
+# 3. How you come up with ideas
+
+## Ideas arrive in three ways
+
+1. From the world. Something you noticed, or a decision somebody has to make.
+2. From previous work. A marginal change to something already published.
+3. From data. A file you can already reach, worked backwards to a question.
+
+- One slide each follows, and each one ends with the thing that route leaves missing.
+
+::: {.notes}
+One minute. Put the three up and take them one at a time afterwards.
+
+Say the shape of the block before it starts: the world lacks data, previous
+work lacks novelty, data lacks a decision. They will hear each of those
+again on its own slide, so do not explain them here.
+
+Meeting 1's page calls the data route "route 5". Say once, and only once,
+that the five collapsed into three, because a gap and an extension are both
+previous work, and an anomaly and a decision are both the world.
+:::
+
+## Getting ideas from the world
+
+- From the world: a problem you saw, and it usually arrives without being sought.
+- It comes from the news, from a conversation with a colleague, or from a job you have done yourself.
+- The good ones often come out of an unexpected conversation rather than out of sitting down to think.
+- You start with the problem and go looking for data afterwards, so data is the row most likely to be empty.
+
+::: {.notes}
+Ninety seconds. This is the route most of the room arrived on.
+
+No team is named on this slide or on the two that follow. Naming one makes
+the route a verdict on their question, and the three routes are not a
+ranking.
+
+Say once, and only once, that meeting 1's page calls the data route
+"route 5", and that the five collapsed into three, because a gap and an
+extension are both previous work, and an anomaly and a decision are both
+the world.
+
+Gate. This slide is on screen by 2:11. If it is not, run all three route
+slides at a minute each by dropping the third bullet from every one.
+:::
+
+## Getting ideas from previous work
+
+- From previous work: you take an existing idea, generally published, and change it at the margin.
+- The change is usually a new setting, a new period, or a limitation the original authors name themselves.
+- Read the limitations section, because that is where the authors write down what they could not do.
+- This route tends to be marginal, and saying so is honest rather than modest. For one semester it is the right size.
+
+::: {.notes}
+Ninety seconds. Marginal is the instructor's own word for this route and it
+is not a criticism. Say it plainly.
+
+The data usually exists already, because the first study needed it. What is
+missing here is novelty, and novelty is not a row on the map, which is why
+the reading has to happen before the data work rather than after it.
+
+Do not say which team in this room is on this route. Several are.
+:::
+
+## Getting ideas from data
+
+- From data: you start from a file you can reach and work backwards to a question it could answer.
+- Data is usually the binding constraint, so this route makes the constraint visible on day one.
+- Expect to go back and forth. You get the file, find what it does not contain, and revise the question.
+- That revising is not the plan failing. It is the loop the rest of this hour is about.
+
+::: {.notes}
+Ninety seconds. This is the instructor's own account of the route: the data
+constrains the question, and the question moves.
+
+Gloss Dewey here, in one clause, because it is named on the access ladder
+forty minutes from now and nowhere in between: the data marketplace the
+business school subscribes to, free to them, and approval takes days.
+
+The reverse-engineering is the next slide, so do not deliver the warning
+here. The fourth bullet is its set-up, and it is also the first statement
+of the loop the resource map draws.
+:::
+
+## Working backwards from data honestly
+
+- What could this data answer?
+- Which of those would anybody act on?
+- What does it not contain that you would need?
+- You are allowed to walk away from the data.
+- Starting from data is the only route where the data is already in hand, so nothing looks missing, and only the question of who would act can kill it.
+
+::: {.notes}
+Ninety seconds. The first four lines are meeting 1's, said once and not
+re-taught.
+
+The fifth is the new thing and it is why the slide survives. It is the
+hook into "What your question needs against what you have",
+and it is the tell the shared case turns on after the break.
+
+The map words belong to that slide and not to this one, so do not say
+"the data row is full and the gap column is empty" here. Say what the
+bullet says.
+
+If the 2:16 gate is missed, the whole slide becomes one spoken sentence
+on "Which route did your team's question come from?" and the fifth line
+is the sentence.
+:::
+
+::::
+
+
+:::: {.content-hidden when-format="revealjs"}
+
+## Session A · 2:05 to 3:15
+
+The hour has one job. You leave with more candidate questions than you need,
+and a reason to kill most of them that you can say out loud. There are two
+such reasons: **who would act on the answer or pay for it**, and **what it
+would take to get it**. Six blocks build those two reasons, and the last of
+them, the resource map, is the one you keep using after today.
+
+### What you drew last week, and the last two cohorts
+
+Last Wednesday your team drew a picture of its own question: what you would
+change, and what you would measure. That picture is not yet a question. It
+becomes one when you can say what data it needs and who holds that data. So
+the hour opens with a question you answer to yourself. Can you name the file
+your question needs and the organisation that holds it? Most people
+go down, and I do not resolve that on the slide. The hour resolves it. It ends
+with one page: what your question needs, what you already have, and what is
+missing.
+
+Then thirteen capstone titles from the last two cohorts, and sixty seconds on
+the timer to write, on the half sheet on your seat, what most of them have in
+common.
+
+From 2026: environmental regulation and ESG strategy on ROE in oil and gas;
+inventory turnover in US retail; the VIX on S&P 500 daily returns; Wikipedia
+pageviews on stock returns; and what drives engagement with TikTok product
+video.
+
+From 2023: Twitter sentiment on NFT returns; social media sentiment on stock
+returns; weather on stock returns; ESG score on annual return. Beside those,
+organic food choices, Gen Z and sustainable fashion, a digital marketing
+strategy, and streaming business models.
+
+**Four of the five 2026 projects were the same project.** Take a public
+measure anybody can download. Regress a financial outcome on it. Report a
+coefficient. Free data, no design, and nobody named who would act on the
+number. 2023 had the same four, and four others about consumer behaviour, and
+several of those collected their own data.
+
+I let you find that rather than saying it first, because it lands harder when
+you have written it down than when I say it. The same slide comes back twice
+today, once at value and once at the shapes.
+
+### Finding the question is the job
+
+Most of your education has rewarded execution. This course rewards the part
+before it. In research, having the idea counts as much as being able to
+answer it. In business the same skill has a different name: a proposition
+that has value. You can only see the value of a new answer against what is
+already known, which is what reading is for.
+
+One thing about choosing. The questions people finish are the ones they were
+curious about in March. Pick one you would still want to answer when it stops
+being fun.
+
+Here is what knowing the literature buys you. Whether generative AI raises
+productivity has already been measured, in call centres by
+[Brynjolfsson, Li and Raymond](https://doi.org/10.3386/w31161) and on writing
+tasks by [Noy and Zhang](https://doi.org/10.1126/science.adh2586). "Whether"
+is taken. The live question is which tasks and for whom, and that is Team A's
+sentence: *Does generative AI actually raise the productivity of the people
+who use it, and which tasks get the gain?*
+
+### Ideas arrive by three routes, and each leaves something missing
+
+1. **From the world.** A problem you saw, or a decision somebody has to make.
+   Team B's sentence is this route: *Do hours, rest, visa status and workplace
+   norms change how people perform, or just who takes the job?*
+2. **From a study.** A result you would extend, contest or move to a new
+   setting. "When a stock suddenly draws a lot of attention, does its price
+   rise above what the company's earnings justify, and then fall back?" is a
+   follow-up to
+   [Da, Engelberg and Gao](https://doi.org/10.1111/j.1540-6261.2011.01679.x),
+   and it is Team D's sentence.
+3. **From data.** A dataset you hold, and a question worked backwards onto
+   it. Where do people move after a mass layoff in their county, worked out
+   from factory closure notices, which employers have to file before a large
+   layoff, sitting next to address histories on Dewey, the data marketplace
+   the business school subscribes to. That is lead 5 on the
+   [project ideas](../project-ideas.qmd) page.
+
+Route one, from the world, lacks data. Route two, from a study, lacks novelty.
+Route three, from data, lacks a decision. So your route tells you where your
+gap will be this afternoon.
+
+[Meeting 1](01-introductions.qmd) counted five routes and called the data one
+route five. I have collapsed the five into three, because a gap and an
+extension are both a study read, and an anomaly and a decision are both the
+world.
+
+**Working backwards from data honestly.** What could this
+data answer? Which of those would anybody act on? What does it not contain
+that you would need? And you are allowed to walk away from the data. Starting
+from data is the only route where the data is already in hand, so nothing
+looks missing, and only the question of who would act can kill it. That is
+also what the shared case after the break turns on.
+
+### What makes an answer valuable
+
+Somebody has a decision waiting on it, or a research area cannot move until it
+is answered. Name the person. If you cannot name one, the value is not there
+yet.
+
+**Public value** is shared: many people are better off and you cannot stop
+anyone using the answer, so it is hard to charge for and it gets published.
+That nobody can be stopped from using an idea once it is out, which
+economists call non-excludable, is
+[Arrow's](https://www.nber.org/chapters/c2144) point about invention, and it
+is why public-value work is funded rather than sold.
+
+**Private value** can be kept: one person's decision changes, and that person
+can keep the answer to themselves, so somebody pays for it.
+
+The test is not whether one person acts, but whether the answer can be kept
+from everybody else. A city transport office is one person deciding, and its
+answer is still public value, because the finding gets published and no firm
+can hold it.
+
+Both are fine in this course, and the grade does not prefer private. Private
+value is easier to sell. Public value is easier to publish.
+
+Try it. Public, private, or both?
+
+| | |
+|--:|:----------------------------------------------------------------------------|
+| 1 | When a stock suddenly draws a lot of attention, does its price rise above what the company's earnings justify, and then fall back? |
+| 2 | When extreme weather hits a poor country, how much damage does it leave, and is that enough to change decisions? |
+
+<details class="test"><summary>Answers</summary>
+
+One is private. An investment fund would pay for this while it is the only one
+holding the answer. Ask instead whether small investors lose money and your
+reader is a regulator, which is a different project. Two is both. Finance
+ministries and the World Bank act on a published number, and reinsurers would
+pay for the same number, because it is what they price the cover on. The label
+is the cheap half. The lesson is the third column: who acts, or who pays. A
+team that can fill it has answered the question that kills most projects,
+would anybody act differently.
+
+</details>
+
+**Private value disappears once it is published.**
+[McLean and Pontiff](https://doi.org/10.1111/jofi.12365) collected 97
+published rules for picking stocks that beat the market. On average a rule
+earned 26 percent less on later data than in the study that found it, and 58
+percent less once it was in print. So a rule is worth money while one trading
+desk is the only one using it, and about half that once it is in a journal.
+The 2026 Wikipedia pageviews poster had no trading desk and no journal, so it
+had neither kind of value. And if an answer is worth money and nobody has
+produced it, ask why, and read to check that nobody has.
+
+Write it down while the examples are still up: the role of the person who
+would act on your team's answer, and whether they would pay. "Companies" is
+not a role. "The head of pricing at a grocery chain" is. If that person is
+inside a firm, the firm usually holds the data too, and that is a resource. If
+it is the public, the data is usually free and your competition is what is
+already published. Keep the half sheet. That line goes on your question sheet
+after the break, in the same words.
+
+Value says why. The shape says what you can claim.
+
+### A project can take different shapes
+
+| | Dies when |
+|:--|:--|
+| 1 Evaluation | there is no credible comparison group |
+| 2 Preference and pricing | what people say they would do is reported as what they did |
+| 3 Prediction and risk | the team quietly starts recommending what to change |
+| 4 Diagnosis and benchmarking | description is dressed up as a cause |
+| 5 Feasibility and landscape | it becomes a summary of what other people already found |
+
+The full four-column version, with what each shape asks and what it can
+claim, is below.
+
+The same interest can take three shapes, so pick the one you can get the
+comparison for, not the one that sounds biggest. Team H's sentence, *Does AI
+advice move a non-expert closer to a good decision, or just swap their
+overconfidence for the model's?*, is three different projects. As an
+evaluation: did people given AI advice decide better than people without it?
+As preference and pricing: which advice format do people choose, and what
+would they pay for it? As prediction and risk: who over-relies, and can you
+tell in advance?
+
+Try it. Which shape is each of these?
+
+| | |
+|--:|:----------------------------------------------------------------------------|
+| 1 | Did a brand's livestream lift its sales that week? |
+| 2 | Can card spending tell you a retailer's sales before the retailer reports them? |
+
+<details class="test"><summary>Answers</summary>
+
+One is evaluation, and it dies without the weeks that brand would have had
+without the stream. Two is prediction and risk, and it dies the moment it
+tells somebody to buy or sell. Two is the trap: it invites causal talk and
+must not get any. Nobody in this room is doing shape five, feasibility and
+landscape, and that is right.
+
+</details>
+
+**A date gives you a comparison, and a buyer gives you a decision.** Four of
+the five 2026 projects were prediction or diagnosis, and none of them said so.
+The repairs are all on questions this room is already asking.
+
+A company's AI claim in a public filing has a date, so there is a before and
+an after, and a regulator who reads it. That is Team E's sentence: *Does the
+claim show up in revenue and stock price, and does the market only believe
+credible firms?*
+
+Team D asks whether a price that rose too far falls back, which is a
+prediction that can fail, and saying so is part of the grade.
+
+Team F's sentence, *When a price is set on a company or a pool of assets, do
+observable traits explain it, and does it hold?*, asks what a company or a
+pool of assets is worth, so it needs the price that would have been set
+otherwise, and the next board pricing a deal is the buyer.
+
+The pitch at [meeting 9](09-designs-ii.qmd) asks for the shape by name, and a
+project that cannot pick one is not yet a project.
+
+### Six ways a project dies, and four questions that kill most of them
+
+1. The topic with no question.
+2. The dataset in search of a question.
+3. The consulting deck, which summarises what is already known.
+4. The project whose data you cannot get.
+5. The dissertation, too big for one spring.
+6. The question somebody has already answered.
+
+Four of these six are what a room names before anybody teaches them, and
+yours named them on August 26. The dataset in search of a question is starting
+from data done any way other than the one honest form above.
+
+Then the filter, which is four questions and is the index of this whole hour.
+
+1. Could a team of three to five execute this in one spring semester?
+2. Can you name the dataset, who holds it, and how you get it, checked rather
+   than assumed?
+3. Could the answer come out either way?
+4. Would anybody act differently depending on it?
+
+A no on any one is fatal, and it is cheap to discover today. The either-way
+question was last Wednesday. The who-acts question was the value block earlier
+today. The other two are the resource map, which is the rest of the afternoon.
+
+Compared to what? Would those two groups have looked the same anyway? Those
+two questions are not a fifth filter. They are how "could the answer come out
+either way" gets teeth, and they are printed beside the comparison row of the
+one page you build next.
+
+This afternoon you write three candidates before you filter one, because a
+filter needs a choice. And if two candidates survive all four, take the one
+whose worst gap closes soonest, then the one with a named person who acts.
+That is the only rule today that discriminates rather than kills, so it goes
+on your question sheet too.
+
+The reason to generate first and judge second is arithmetic: one candidate
+cannot be filtered. Do not take it as evidence about being judged.
+[Diehl and Stroebe](https://doi.org/10.1037/0022-3514.53.3.497) found that
+most of the loss in group brainstorming comes from taking turns to speak, and
+that the fear of being judged contributed little.
+
+### Start from what you have
+
+Sarasvathy's expert entrepreneurs start from who they are, what they know and
+whom they know. That is
+[effectuation](https://doi.org/10.5465/amr.2001.4378020). The 2001 paper is
+the theory, and the empirical work behind it is a think-aloud study of 27
+expert entrepreneurs, so take it as a habit that works and not as a law.
+
+The research version is the same list: the programming languages your team
+knows, a dataset you can reach, a person you can email. Somebody who has
+worked a warehouse shift knows what the schedule data does not record, and
+lived experience of a setting is a resource like any other.
+
+The page that follows sets that list against what the question needs.
+
+**What your question needs against what you have.** The rows are
+data, comparison, skills, time and money, permissions, and people and access.
+The columns are what the question needs; what you have, and how you checked;
+the gap; and who closes it, by when, or how the question moves.
+
+Compared to what? Would those two groups have looked the same anyway? Those
+two questions are printed on the sheet beside the comparison row. If you have
+not opened the file yourself, write it as a need and not as a have. The last
+column is where the plan lives.
+
+Most haves become needs on a first map. That is expected. It is the map
+working, not the team failing.
+
+**Access takes minutes or months.**
+
+| You want | How long |
+|:--|:--|
+| Library databases, FRED, EDGAR, data.census.gov | Now |
+| The Nielsen public-use extract, 2019, three product categories | Now, with your netID |
+| Dewey | Days |
+| Your own survey or online experiment | Weeks, after the IRB, the board that reviews research on people |
+| Full Kilts-Nielsen data | Months |
+| A data-use agreement with a firm | Months, and it may fail |
+| Confidential Census or BLS microdata via FSRDC | Longer than this degree |
+
+Write how long, for every dataset, in the time row and in the permissions row.
+The IRB and a data-use agreement are gates. [Meeting 4](04-ethics.qmd) teaches
+them, and today you only name which one you trip. The same seven durations, in
+the same words, are on the [data sources](../data-sources.qmd) page and at the
+foot of the map sheet.
+
+Two cases get built on the screen, and a different row stops each one.
+
+The livestream case is stopped by data. Sales by brand by week exist on
+Dewey's Brand Tracker, but a record of who streamed when does not exist
+anywhere you can reach. So the question moves. No schedule: move to US brands
+whose platform publishes its events. Still nothing: move to one brand with a
+public stream log. Still nothing: collect it yourself, which puts money and
+the IRB on the map and makes it a job of weeks, and
+[meeting 8](08-designs-i.qmd) asks whether that is actually open to you. The
+question moved three times and the plan did not fail once.
+
+The nutrition-label case is stopped somewhere else. Nobody holds that data, so
+you would build it, and the rows that stop you are money and, more than money,
+the clock.
+
+Case one was stopped by a file that does not exist and case two by the
+calendar, and nothing but the map tells you which one you are in. The row that
+stops you is your **binding row**, and it is the first of the three lines at
+the foot of the sheet. Both maps are filled in below.
+
+**The map is redrawn every time a row changes.**
+
+<svg class="dag" viewBox="0 0 950 260" width="900" height="246" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="a loop: question to map, map to gap, gap to close it by a date or move the question, and back to the question, with the return edge labelled redraw">
+  <defs>
+    <marker id="cmlpg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#55554f"/></marker>
+    <marker id="cmlpr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b31b1b"/></marker>
+  </defs>
+  <line x1="194" y1="95" x2="248" y2="95" stroke="#55554f" stroke-width="2.4" marker-end="url(#cmlpg)"/>
+  <line x1="434" y1="95" x2="488" y2="95" stroke="#55554f" stroke-width="2.4" marker-end="url(#cmlpg)"/>
+  <line x1="654" y1="95" x2="694" y2="95" stroke="#55554f" stroke-width="2.4" marker-end="url(#cmlpg)"/>
+  <path d="M 818 138 L 818 226 L 104 226 L 104 144" fill="none" stroke="#b31b1b" stroke-width="3.4" marker-end="url(#cmlpr)"/>
+  <rect x="14" y="52" width="180" height="86" rx="8" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <rect x="254" y="52" width="180" height="86" rx="8" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <rect x="494" y="52" width="160" height="86" rx="8" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <rect x="700" y="52" width="236" height="86" rx="8" fill="#ffffff" stroke="#b31b1b" stroke-width="2.5"/>
+  <text x="104" y="95" text-anchor="middle" dy="0.35em" font-size="22" font-weight="600" fill="#1b1b1b">Question</text>
+  <text x="344" y="95" text-anchor="middle" dy="0.35em" font-size="22" font-weight="600" fill="#1b1b1b">Map</text>
+  <text x="574" y="95" text-anchor="middle" dy="0.35em" font-size="22" font-weight="600" fill="#1b1b1b">Gap</text>
+  <text x="818" y="88" text-anchor="middle" font-size="20" font-weight="600" fill="#1b1b1b">Close it by a date,</text>
+  <text x="818" y="116" text-anchor="middle" font-size="20" font-weight="600" fill="#1b1b1b">or move the question</text>
+  <text x="461" y="216" text-anchor="middle" font-size="20" font-weight="600" fill="#b31b1b">redraw</text>
+</svg>
+
+Every move is one line in your decision log: what changed, when, and why. The
+map is redrawn three times before the pitch. [Meeting 4](04-ethics.qmd) fills
+the permissions row. [Meeting 5](05-tools-and-ai.qmd) checks the data row
+against a real file. [Meeting 8](08-designs-i.qmd) asks whether you can build
+the comparison row. The pitch at [meeting 9](09-designs-ii.qmd) is the top
+line of this map and its data row. A team whose map never moves has not
+looked.
+
+### Public value and private value, all seven examples
+
+Two of these reach the screen. All seven are here, because the label is the
+easy half and the last column is the part you have to write on your question
+sheet.
+
+| Example | Label | Why | Who pays or acts |
+|:--|:--|:--|:--|
+| When a stock suddenly draws a lot of attention, does its price rise above what the company's earnings justify, and then fall back? (Team D's sentence) | private | An answer you can trade on is one you can keep to yourself, and it is worth nothing the moment everybody knows it. The public version, whether small investors lose money, is a different question with a regulator as its reader | An investment fund pays while it is the only one holding the answer. [Barber and Odean 2008](https://doi.org/10.1093/rfs/hhm079) on buying what is in the news and [Da, Engelberg and Gao 2011](https://doi.org/10.1111/j.1540-6261.2011.01679.x) on the fall back answered the first version of it, so the value lies in what they left open, which is what reading checks |
+| When extreme weather hits a poor country, how much damage does it leave, and is that enough to change decisions? (Team G's sentence) | both | Governments and aid agencies act on a published number and nobody can be stopped from using it, but the same number prices insurance that pays out automatically once a storm passes a threshold | Finance ministries and the World Bank act; reinsurers would pay to price the cover |
+| Does the claim show up in revenue and stock price, and does the market only believe credible firms? (Team E's sentence) | both | Protecting investors is public work and a published answer changes how filings are reviewed; the same answer tells a short seller which firms to bet against | The SEC, the US securities regulator, and auditors act; analysts and short sellers pay |
+| Did salary disclosure laws change what employers post? ([lead 9](../project-ideas.qmd)) | public | Every worker in the next state benefits, the answer cannot be kept, and the buyer is a legislature, which does not pay researchers | The next state's legislators act; there is nobody to charge, so it gets published |
+| Which store locations sell less than the area they draw customers from should deliver? ([lead 7](../project-ideas.qmd)) | private | One operator acts on it and would never publish the answer, but the data on who lives near each store is bought from a vendor, so what stops you is access to the chain rather than the data | The chain's head of operations pays, or lends its own transaction file in exchange for the answer |
+| Does a logo aligned to the drinking spout raise recognition and intent to buy? (the soda-can project, from an earlier cohort) | private | One brand's packaging decision, and the answer is worth nothing to anyone else | A soda company gave them thousands of cans, which is a firm paying in kind for an answer it wanted |
+| Does disclosing that a video is AI-generated change how people rate it? ([lead 28](../project-ideas.qmd), a neighbour of Team J) | both | Platforms and brands would pay to know before a disclosure rule lands; the rule itself is public | A platform's head of trust and safety pays; a regulator writing a disclosure rule acts |
+
+### The seven shapes in full
+
+The slide shows each shape, the question it asks and an example. Here are all four columns.
+
+| Shape | Asks | Can claim | Dies when |
+|:--|:--|:--|:--|
+| 1 Evaluation | Did it work? A decision was already made somewhere, and you estimate its effect | A causal effect, after the fact, if you can measure the thing you care about before and after, both for the group that got the change and for a credible comparison group | There is no credible comparison group, or the change was taken up precisely by the units that were already moving |
+| 2 Preference and pricing | What would people choose, and what would they pay? The decision is not yet made, and what it needs is what people value | A causal effect on what people chose in your task, which is a real limitation and not a footnote | What people say they would do is reported as what they did, or forty classmates are generalised to a market |
+| 3 Prediction and risk | What happens next, and how wrong could we be? The decision needs a number about the future, not a cause | How accurately it predicts, tested on later data it has not seen, against an honest baseline, and explicitly not a cause | It is never tested on later data, or the team quietly starts recommending what to change off a model that only predicts |
+| 4 Diagnosis and benchmarking | Where is the gap, and what explains it? Something varies more than it should and nobody knows why | Description, plus a theory about why that somebody could later test, honest about being a first step | Description is dressed up as a cause, or the team stops at a dashboard without naming a decision |
+| 5 Feasibility and landscape | Is this opportunity real, and what constrains it? | A synthesis of what is known, plus at least one piece of original data the team analyses itself | It becomes a summary of what other people already found, with no evidence of the team's own |
+| 6 Measurement | How much of this is there, and how would you know? Nobody has counted it, so the project is building the number | A defensible quantity, and what it shows, provided you say plainly what it counts and what it leaves out | The measure is never checked against anything outside itself, or what it excludes is never stated |
+| 7 Valuation | What is this worth? You price the thing against things that already carry prices | A price, provided the things you compare against are genuinely comparable and you say what makes them so | The comparison set is chosen until the answer looks right, or the traits doing the work are not observable to anybody else |
+
+### Case one, the livestream
+
+Does a brand's livestream lift its sales that week? Shape one, evaluation.
+Route one, from the world. This one sits very close to something a student in
+this room wrote, and I say so rather than pretending otherwise. Nobody is
+being asked to defend it. It survives by moving, and the moving is the lesson.
+Value: private, because the brand's marketing head decides whether to pay a
+host again, and the platform would pay too.
+
+| Row | Need | Have, and how checked | Gap | Close it, or move the question |
+|:--|:--|:--|:--|:--|
+| Data | Sales by brand by week; which brand streamed when, where, with whom | Dewey's Brand Tracker carries brand-level card spend; read the dataset page for the unit and the years, which is what the map means by a have, and it takes ten minutes; Dewey's Weekly Patterns for store visits | No stream schedule exists anywhere reachable; US card data does not see Taobao or Douyin | Move to US brands whose platform publishes events; then one brand with a public log |
+| Comparison | The same brand in weeks it did not stream, or brands that did not stream that week | Both are in the same file | Streaming weeks are chosen weeks and streaming brands are chosen brands, which is another reason those weeks already differed | Line the weeks up around the stream and compare before with after, which meeting 9 names; note it, do not solve it today |
+| Skills | A table with one row per brand per week, built in R, Python or Stata | One person on most teams can do it | Thin | Pair that person with a second; meeting 5 drives the file through an AI assistant |
+| Time and money | Dewey access, an afternoon to build the table, no money | Dewey is days from registration | Hand-collecting a schedule would be weeks | Not worth it; move the question first |
+| Permissions | Dewey's terms of service; nothing human | Covered by the subscription | Scraping a platform's schedule is a terms-of-service question | Meeting 4 teaches it; name it today |
+| People and access | Somebody who worked at a brand or agency with a stream log | Team members with e-commerce experience | A log for one brand would close the data row | Ask; people say yes more often than students expect |
+
+The binding row is data. The moves, in order: US brands with announced
+events, then one brand with a public log, then collecting it yourself, which
+puts the IRB into the permissions row and weeks into the time row, and which
+[meeting 8](08-designs-i.qmd) will ask whether you can actually do.
+
+### Case two, the nutrition label
+
+Does a plain-language nutrition label change what shoppers put in the basket?
+Shape two, choices people make in a task you set them, half of them shown one
+version and half the other. Route two, from a study, here the labelling
+literature. This one is nobody's project, on purpose. Value: both, because a
+retailer decides whether to relabel its own range and a regulator writing a
+labelling rule acts on the same number. Most rooms guess money or skills. The
+reveal is that the clock is the row almost nobody would circle.
+
+| Row | Need | Have, and how checked | Gap | Close it, or move the question |
+|:--|:--|:--|:--|:--|
+| Data | None exists; you build it: two label versions, a basket choice task, and two to four hundred people you pay to take it online | Qualtrics, the survey tool, is free to every Cornell student; nobody on the team holds a Prolific account yet; still pictures of the labels are cheaper and easier to repeat than a live tool | The questionnaire itself does not exist | Nobody teaches this in 6991; draft it in October and bring it to office hours |
+| Comparison | Half see the plain-language label, half see the standard one | It is built into the design you would run | None | Meeting 8 asks whether that design is open to you at all |
+| Skills | Survey and experiment logic; a difference in means or one regression | No programming needed | The team has not run one | Meeting 8, plus one practice run on classmates that does not count |
+| Time and money | Participants at [Prolific's](https://www.prolific.com/pricing) minimum of eight dollars an hour plus the 33 percent academic fee: about five hundred dollars for three hundred people on a ten-minute study, about a thousand at the recommended rate; the IRB puts weeks on the row | No budget | Money, and a clock | A smaller sample buys a coarser answer; and the gate has to start early, which meeting 4 dates |
+| Permissions | The IRB, since these are human participants | Nothing yet | Weeks | Meeting 4 says what the gate takes and when it must start |
+| People and access | Nobody outside the team | The instructor, if asked | None | Ask in September |
+
+The binding row is time and money, and it is the clock rather than the
+dollars. If money is the gap, the sample falls and the answer gets coarser, so
+the question narrows to a larger effect, or to showing each person both labels
+rather than one. If the clock is the gap, the December proposal carries the
+questionnaire and the field date is January, which is what AEM 6992 is for.
+
+### Case three, the flood question, and session B's shared object
+
+Is flood risk priced into house prices, and did a local flood change that?
+Every team maps this one, from the same two dataset cards, on the same
+template, so the nine maps are comparable and can be corrected against one
+another. Shape one, evaluation. Route three, from data, done honestly. It is a
+neighbour of Team G and of lead 2 on the
+[project ideas](../project-ideas.qmd) page. Value: both, because buyers, FEMA
+and flood-insurance pricing act publicly, and insurers, lenders and listing
+platforms would pay.
+
+| Row | Need | Have, and how checked | Gap | Close it, or move the question |
+|:--|:--|:--|:--|:--|
+| Data | Sale prices by parcel with coordinates and dates; a flood-risk measure by ZIP; a list of floods with dates and places | Card 1, Real Estate Transaction Data, says a row is a parcel, a sale, or an assessment, US, 2011 to now, joins on lat/long, ZIP, address; card 2, US Climate Risk, one row per ZIP, five hazard ratings 1 to 100 | The first trap: the risk measure carries no dates, so the before and after has to come from a second source the team does not yet have. The third trap: card 1's unit is not settled, so "sales" is a filter somebody has to write, and a have you have not opened is a need | Free: [OpenFEMA disaster declarations](https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2), which are listed by county, so the second trap is matching ZIP codes to counties, with a lookup table that is [free from HUD with a HUD USER account](https://www.huduser.gov/portal/datasets/usps_crosswalk.html) |
+| Comparison | ZIPs with the same flood rating that did not flood, before and after the event | Both groups are in card 1 once the event list exists | The flooded ZIPs may have been trending differently already | Meeting 9 turns this into a design and names the assumption carrying it; today it is enough that the comparison exists in the file |
+| Skills | Joining two large files on ZIP; a table with one row per parcel per sale | Somebody who has handled millions of rows | Usually nobody | Meeting 5, and a librarian |
+| Time and money | Dewey days; no money; the transactions extract is large | Registration may still be pending | Days | Register tonight if not done |
+| Permissions | Dewey's terms; no human subjects | Covered | None | Write none on the sheet; a blank row is not the same as none |
+| People and access | Nobody in particular | A librarian for the lookup table | None | Fifteen minutes with the business librarian |
+
+Three things about these files are easy to miss, and the draw is where you
+find out whether you missed them. A team that writes "have" against card 2
+without noticing that it carries no dates loses that row to the first attacker
+who names it. Matching ZIP codes to counties is the second. The third is the
+cheapest and the best find: card 1 says one row is a parcel, a sale, or an
+assessment, so a team that writes "one row per sale" has broken the rule
+printed on its own sheet.
+
+All three are resource facts and not findings about the rows. The row-level
+interrogation of these files is [meeting 5](05-tools-and-ai.qmd). Today it is
+enough to notice that a have you have not opened is a need.
+
+Then the point of the case. When you start from data, nothing looks missing,
+so the question is only as good as its buyer. Go back to the question of who
+would act differently, and name the insurer, the lender or the assessor who
+would act.
+
+### The resource map template
+
+One page, landscape, one per question. The header carries your team letter,
+the date, the question in one line, its route, its shape, and one line naming
+the role that acts or the firm that pays.
+
+| Row | What the question needs | What we have, and how we checked | Gap | Who closes it, by when, or how the question moves |
+|:--|:--|:--|:--|:--|
+| Data | Which dataset, who holds it, and what it must contain | Dataset page read, on which date; file opened, or not | | |
+| Comparison | Where the counterfactual comes from: which units, which period. Printed beside the row: compared to what? Would those two groups have looked the same anyway? | | | |
+| Skills | Language, method, who on the team has run one | | | |
+| Time and money | How long: now, days, weeks, months, longer; dollars; the deadline it must meet | | | |
+| Permissions | Ethics review by the IRB, a data-use agreement, terms of service, or none, and how long each takes | | | |
+| People and access | Who you know who holds the data, the decision, or the site | | | |
+
+Three lines sit under the table, and they are the ones I read first.
+
+- The row that stops you is ____, and it has to close by ____.
+- If it does not close, the question becomes ____.
+- Decision log, one line per move: what changed, when, why.
+
+Four rules are printed under those lines. A "have" with no "how checked"
+counts as a need. A blank permissions row is not the same as "none", so write
+none if it is none. "Unknown, X checks by Friday" is an acceptable gap entry.
+And the last column is where the plan lives.
+
+The access ladder runs in small type at the foot of the sheet, with the same
+seven durations in the same words as the slide and the
+[data sources](../data-sources.qmd) page: library databases and the census,
+now; the Nielsen public-use extract, now with your netID; Dewey, days; your
+own survey or online experiment, weeks, after review by the IRB; full
+Kilts-Nielsen data, months; a data-use agreement with a firm, months and it
+may fail; confidential microdata via FSRDC, longer than this degree. If the
+page and the sheet ever disagree, I edit the page, not the sheet.
+
+The last line on the sheet is the point of the whole exercise. The map is not
+filled in once. A resource that turns out missing changes the question, the
+changed question changes the rows, and every redraw is the plan doing its
+job, not the plan failing.
+
+## Session B · 3:30 to 4:30
+
+A lettered envelope is on your table before session A starts, marked "do not
+open until 3:30". It holds everything your team needs this afternoon, plus the
+picture you drew last Wednesday of what you would change and what you would
+measure. Bring your half sheet back from the first hour, because line two of
+it goes straight into the role box on your question sheet.
+
+**Check in first, in writing.** Nine minutes, one sheet per team. Who is
+here. What you did since September 2. What is stuck. Who does what next, with
+a name and a date on every line. One optional question to me, which I answer
+by email before Friday. Your submitter signs it. In week three, "nothing is
+stuck yet" is an acceptable answer, and it is the answer I expect from most
+tables. The sheet goes in the envelope when the timer stops.
+
+**Then the shared case, and every team maps the same question.** Is flood
+risk priced into house prices, and did a local flood change that? Use the two
+dataset cards, one on real estate transactions and one on US climate risk, and
+one map sheet. The needs column is already printed, so your work is the other
+three columns. Write what you have and how you checked it, the gap, and who
+closes it. Then fill the three bottom lines: the row that stops you, its date,
+and what the question becomes if that row does not close. Fourteen minutes.
+Because every team maps the same object, the nine maps are comparable, and
+that is the whole reason for a shared case.
+
+**Then one team is drawn at random to read its map aloud.** Two slips come
+out of the cup before the writing starts, and the second team is on deck, so
+nobody knows in advance whether they are up. The submitter reads from the
+sheet at its own table and the room turns. Blanks are read aloud as blanks.
+Then the room attacks. An attack names a specific row that is blank,
+unchecked or wrong. Calling a map thin is not an attack. A point for every
+attack that lands, on the tally sheet at the front. I close with whichever
+trap nobody found.
+
+**Then your own project, which is the half you hand in.** Nine minutes for
+the question sheet. Three candidate questions, from at least two different
+routes if you can manage it. Each one labelled with its route, its shape, and
+the role of the person who would act on the answer or pay for it. Run one
+candidate through all four filters in writing, not in your heads. Cross a
+second one out and name the filter that killed it, because a team that kills
+nothing has not used the filter. For the third, write the one row that would
+kill it. Then name which candidate gets mapped.
+
+**Then the map, for the survivor only.** Twelve minutes. Every gap gets a
+person and a date, or the question moves. "Unknown, with a name and a date"
+counts. Fill the three bottom lines, because those are the lines I read
+first.
+
+I come round once between the question sheet and the end. It is one question
+and one answer per table, not a consultation, so ask me the one that is
+actually blocking you.
+
+Four sheets go in your envelope before you leave: the check-in, the shared
+map, the question sheet, and your own map. Your submitter brings the envelope
+to the front. Your pitch gets built from the question sheet and the map. A
+question you kill today is a month you do not lose in March.
 
 ## Handouts
 
-[Question relay cards](../handouts/relay-cards.qmd)
+[Resource map and question sheet](../handouts/resource-map.qmd). The map
+template, one page per question, and the question sheet you fill this
+afternoon. It reprints the two dataset cards for the shared case, so the
+reading is one page in front of you rather than three pieces of paper.
+
+[Team check-in sheet](../handouts/check-in.qmd). One sheet per team, and you
+fill it every week from now on. Who is here, what you did, what is stuck, who
+does what next with a name and a date, and one question for me.
+
+[Project teams](../handouts/02-teams.qmd). The nine questions this class is
+asking, and who is working on each. Seven of the nine appear on the screen
+today, always as the team's own sentence.
 
 ## Where to read more
 
-[Adams](https://doi.org/10.4135/9788132108498) ch. 3 on the research cycle and ch. 4 on literature review and critical reading.
+[Adams, Khan, Raeside and White](https://doi.org/10.4135/9788132108498) on
+the research cycle, and on the literature review and critical reading. That
+DOI resolves to the 2007 edition, titled *Research Methods for Graduate
+Business and Social Science Students*, so check the chapter numbers against
+whichever copy you open.
 
-## Session A · 2:05–3:15
+[Sarasvathy on effectuation](https://doi.org/10.5465/amr.2001.4378020) is the
+theory paper behind "start from your means". Read it for the list of resources
+it implies, not for a law about entrepreneurs.
 
-Three blocks. First, where ideas come from. Five routes: a gap in what is known, extending or contesting a published result, an anomaly, a decision somebody actually has to make, and a dataset nobody has looked at properly. Route five is the most dangerous, and we come back to why. Then the framing that matters. Most of your education has rewarded execution. This course rewards the part before it. A bad question executed beautifully is still a bad project. It is also the most enjoyable thing you will do all semester, so do not rush it. Second, whether there is a method for having ideas. Partly. Two of the popular answers have real evidence behind them, and most do not. Start from your means, not your goal. That is [effectuation](https://doi.org/10.5465/amr.2001.4378020), from Sarasvathy's think-aloud studies of expert entrepreneurs. Experts do not pick a goal and hunt for the means. They start from who they are, what they know and whom they know, and work forward. The second is simpler. Generate, then judge, and never both at once. Teams that evaluate while brainstorming produce fewer ideas, and safer ones. For research questions specifically, [Sandberg and Alvesson](https://doi.org/10.1177/1350508410372151) separate gap-spotting from problematization. For one semester, gap-spotting is usually right. Knowing which one you are doing is what stops you overclaiming. A caution that applies here as everywhere in this course: being taught in every business school is not evidence that something works. Design thinking as a branded five-step method is widely taught and lightly tested. So is lean startup. Third, the shapes a project can take. Five archetypes: evaluation, preference and pricing, prediction and risk, diagnosis and benchmarking, feasibility and landscape. For each, what it can claim, what design it needs, and how it fails. Evaluation asks whether it worked, and dies without a credible comparison group. Did the loyalty relaunch change basket size? Preference and pricing asks what people would choose and pay, and dies when stated preference gets reported as revealed preference. Prediction and risk asks what happens next, and dies when the team quietly starts making causal recommendations off a predictive model. Diagnosis asks where the gap is, and dies as description dressed up as a cause. Feasibility asks whether the opportunity is real, and dies as a deck of secondary research. A project that cannot pick one of the five is not yet a project. Then the last two cohorts, on one slide. Four of the five 2026 projects were the same project. Take a public signal anybody can download, regress a financial outcome on it, report a coefficient. Free data, no design, no decision attached. I let the room find that rather than saying it, because it lands harder from a student than from me. Then six anti-patterns. The topic with no question. The dataset in search of a question. The consulting deck. The unobtainable-data project. The dissertation. The already-answered question. And finally the filter, which is four questions. Could a team of three to five execute this in one spring semester? Can you name the specific dataset, who holds it, and how you get it, checked rather than assumed? Could the answer come out either way? Would anybody act differently depending on it? A no on any one is fatal, and it is cheap to discover today.
+[Arrow, Economic welfare and the allocation of resources for
+invention](https://www.nber.org/chapters/c2144) is where public value comes
+from. Knowledge is expensive to make and cheap to copy, so whoever makes it
+cannot charge the people who benefit.
 
-## Session B · 3:30–4:30
+[McLean and Pontiff](https://doi.org/10.1111/jofi.12365) is the private-value
+paper, and it is the most useful twenty pages in this list if your interest
+is finance.
 
-Every session B opens with a ten-minute team check-in: what you did
-since last week, what is stuck, and who is doing what next. Written
-down, and handed in with that session's work.
+[Sandberg and Alvesson](https://doi.org/10.1177/1350508410372151) separate
+looking for a hole in the literature, which they call gap-spotting, from
+challenging what the literature takes for granted, which they call
+problematization. It is a distinction for people writing for journals rather
+than for this course, so read it only if you want the research-side version of
+today.
 
-Ten-minute team check-in first. Then the question relay, against the clock. Nine dataset cards go out and your team holds one it did not choose. Real estate transactions. Climate risk by ZIP. Weekly foot traffic. EV chargers. Job postings with salaries. WARN layoff notices. Convenience store scanner data. Card spend by brand. CDC PLACES. Write the three best questions that data could answer, pick your best, put it at the top of the sheet, and label its archetype. Then the datasets pass one way and the question sheets pass the other, so no team ever gets its own question back. You break the question you inherit by naming which of the four filters kills it, or you write SURVIVES, honestly. Then you write a new question on a dataset you have not seen. In the last round you may combine any two datasets your team has held. I say the join keys out loud before that round starts. Parcels, stores and chargers carry lat/long. Postings and layoffs carry company. Scanner and card data carry brand. The good questions live in the joins. Scoring: one point every time a question of yours survives a break, one point for every break you land, two points for the best combination question. Saying a question is weak is not a break. You have to name the filter. Everybody works the same nine cards, so the kills are comparable, and I read out the two best combination questions and one good kill at the end. The kill goes last, because the killing is the lesson. Then your own project, which is the half you hand in. Three candidate questions for what your team actually wants to work on. Each labelled with an archetype. Each run through the four filters in writing, not in your heads. One of the three has to be crossed out with the filter that killed it named, because a team that kills nothing has not used the filter. That page is your question slate. It is submitted before you leave, it is what your pitch gets built from, and a question you kill in September is a month you do not lose in March.
-
-Your team's output is submitted before you leave.
-
+::::

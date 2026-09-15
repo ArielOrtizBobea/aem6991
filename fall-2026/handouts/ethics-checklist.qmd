@@ -1,0 +1,244 @@
+---
+title: "Ethics-and-access checklist and cards"
+pagetitle: "AEM 6991 · Ethics-and-access checklist"
+sidebar: false
+toc: false
+page-layout: full
+---
+
+```{=html}
+<style>
+.print-note { font-size: 0.85rem; color: #6b6b6b; margin: 0 0 1rem; }
+.sheetwrap { max-width: 8in; margin: 0 auto; }
+.pagebreak { break-before: page; }
+
+.sheethead {
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 2px solid #b31b1b; padding-bottom: 0.06in; margin: 0 0 0.10in;
+}
+.sheethead h2 { font-size: 1.05rem; font-weight: 700; margin: 0; border: none; }
+.sheethead .id { font-size: 0.78rem; color: #55554f; white-space: nowrap; }
+
+.fill { display: inline-block; border-bottom: 1px solid #55554f; }
+.w08 { width: 0.8in; } .w16 { width: 1.6in; } .w22 { width: 2.2in; }
+.grow { flex: 1 1 auto; border-bottom: 1px solid #55554f; min-width: 1in; }
+
+.topline { font-size: 0.74rem; color: #b31b1b; margin: 0 0 0.12in; }
+
+.block { margin: 0 0 0.12in; break-inside: avoid; }
+.block .lbl { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.1em;
+              color: #b31b1b; font-weight: 700; display: block; margin-bottom: 0.02in; }
+.block .hint { font-size: 0.66rem; color: #6b6b6b; font-style: italic;
+               display: block; margin-bottom: 0.03in; }
+.rules span { display: block; border-bottom: 1px solid #cfcfc9; height: 0.30in; }
+
+table.tab { width: 100%; border-collapse: collapse; table-layout: fixed; }
+table.tab th { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.07em;
+                color: #6b6b6b; font-weight: 700; text-align: left;
+                border-bottom: 1px solid #55554f; padding: 0 0.05in 0.03in; }
+table.tab td { border-bottom: 1px solid #cfcfc9; height: 0.34in; padding: 0 0.05in;
+                font-size: 0.66rem; vertical-align: middle; }
+table.tab th + th, table.tab td + td { border-left: 1px dashed #dcdcd6; }
+table.tab td.pre { color: #333; }
+.box { font-size: 0.66rem; color: #333; }
+.box span { display: inline-block; width: 0.13in; height: 0.13in; border: 1px solid #55554f;
+            vertical-align: middle; margin: 0 0.04in 0 0.10in; }
+
+.bottom { border-top: 1px dashed #cfcfc9; padding-top: 0.08in; margin-top: 0.06in; }
+.bottom p { font-size: 0.72rem; margin: 0 0 0.10in; line-height: 1.9; }
+
+.sign { display: flex; flex-wrap: wrap; gap: 0.10in 0.18in; font-size: 0.7rem;
+        color: #55554f; border-top: 2px solid #b31b1b; padding-top: 0.10in;
+        margin-top: 0.06in; }
+.sign .sig { flex: 1 1 42%; display: flex; align-items: baseline; gap: 0.08in; }
+.sign .sig .grow { min-width: 1.2in; }
+.footnote { font-size: 0.66rem; color: #6b6b6b; margin: 0.08in 0 0; }
+
+.instr { font-size: 0.68rem; line-height: 1.32; color: #333; margin: 0 0 0.10in; }
+.instr p { margin: 0 0 0.05in; }
+.instr .lead { color: #b31b1b; font-weight: 700; text-transform: uppercase;
+               letter-spacing: 0.06em; font-size: 0.6rem; }
+
+.card { border: 1px solid #55554f; padding: 0.07in 0.10in; margin: 0 0 0.09in;
+        break-inside: avoid; }
+.card .num { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em;
+             color: #b31b1b; font-weight: 700; display: block; }
+.card .txt { font-size: 0.78rem; color: #1b1b1b; margin: 0.02in 0 0.05in; }
+.card .q { font-size: 0.62rem; color: #6b6b6b; margin: 0; }
+.card.shared { border: 2px solid #b31b1b; }
+
+@media print {
+  .print-note, #title-block-header, #quarto-header, #quarto-sidebar, .nav-page,
+  footer, #quarto-margin-sidebar { display: none !important; }
+  @page { size: letter portrait; margin: 0.4in; }
+  body { background: #fff; }
+  html, body, #quarto-content, main { height: auto !important; min-height: 0 !important;
+    padding-bottom: 0 !important; margin-bottom: 0 !important; }
+  #quarto-content { display: block !important; }
+  .sheetwrap { max-width: none; margin-bottom: 0; }
+  .sheet > *:last-child { margin-bottom: 0; }
+}
+</style>
+
+<p class="print-note">Print this page. Two sheets per team, cut apart. Page 1
+is the checklist, filled and signed in session B of meeting&nbsp;4 and handed
+in. Page 2 carries the shared card and six practice cards. Nine copies of each
+plus three spares, in the lettered envelopes before class.</p>
+
+<div class="sheetwrap">
+<div class="sheet">
+
+  <div class="sheethead">
+    <h2>Ethics-and-access checklist</h2>
+    <div class="id">Team <span class="fill w08"></span> &nbsp; Date <span class="fill w16"></span></div>
+  </div>
+
+  <p class="topline">A team that trips nothing writes "none" in every gate row and signs. That is a complete sheet.</p>
+
+  <div class="block">
+    <span class="lbl">The question, in one line</span>
+    <div class="rules"><span></span></div>
+  </div>
+
+  <div class="block">
+    <span class="lbl">1 · Human participants</span>
+    <span class="hint">Yes or no, and the branch of Cornell's tree that says so: no people and no identifiable rows · existing data you cannot link · results stay with one organisation · yes, because you interact with people or hold identifiable rows and the results leave the course.</span>
+    <div class="rules"><span></span><span></span></div>
+  </div>
+
+  <div class="block">
+    <span class="lbl">2 · Every data source</span>
+    <span class="hint">One row each. The rung is now, days, weeks, months, or longer. Tick what the licence or terms permit.</span>
+    <table class="tab">
+      <colgroup><col style="width:26%"><col style="width:20%"><col style="width:14%"><col style="width:40%"></colgroup>
+      <tr><th>Source</th><th>Who holds it</th><th>Rung</th><th>Terms permit</th></tr>
+      <tr><td></td><td></td><td></td><td class="box"><span></span>publish <span></span>commercial <span></span>redistribute <span></span>upload</td></tr>
+      <tr><td></td><td></td><td></td><td class="box"><span></span>publish <span></span>commercial <span></span>redistribute <span></span>upload</td></tr>
+      <tr><td></td><td></td><td></td><td class="box"><span></span>publish <span></span>commercial <span></span>redistribute <span></span>upload</td></tr>
+    </table>
+  </div>
+
+  <div class="block">
+    <span class="lbl">3 · Identifiable fields</span>
+    <span class="hint">Which columns, what you do about them (drop, coarsen, aggregate), and where the file will live, with Cornell's level: low, moderate or high risk.</span>
+    <div class="rules"><span></span><span></span></div>
+  </div>
+
+  <div class="block">
+    <span class="lbl">4 · Conflicts</span>
+    <span class="hint">An employer, a sponsor, an NDA. One line each. Then the box.</span>
+    <div class="rules"><span></span></div>
+    <p class="box" style="margin:0.03in 0 0">Can the result be shown in this room in December? <span></span>yes <span></span>no <span></span>not yet asked</p>
+  </div>
+
+  <div class="block">
+    <span class="lbl">5 · Who does what</span>
+    <table class="tab">
+      <colgroup><col style="width:30%"><col style="width:46%"><col style="width:24%"></colgroup>
+      <tr><th>Name</th><th>Touches the data, files what</th><th>CITI done</th></tr>
+      <tr><td></td><td></td><td class="box"><span></span>yes <span></span>not yet</td></tr>
+      <tr><td></td><td></td><td class="box"><span></span>yes <span></span>not yet</td></tr>
+      <tr><td></td><td></td><td class="box"><span></span>yes <span></span>not yet</td></tr>
+      <tr><td></td><td></td><td class="box"><span></span>yes <span></span>not yet</td></tr>
+      <tr><td></td><td></td><td class="box"><span></span>yes <span></span>not yet</td></tr>
+    </table>
+  </div>
+
+  <div class="block">
+    <span class="lbl">6 · The gates</span>
+    <table class="tab">
+      <colgroup><col style="width:22%"><col style="width:15%"><col style="width:21%"><col style="width:19%"><col style="width:23%"></colgroup>
+      <tr><th>Gate</th><th>Trips it</th><th>Who signs</th><th>Starts by</th><th>Plan B</th></tr>
+      <tr><td class="pre">The IRB</td><td class="box"><span></span>yes <span></span>no</td><td></td><td></td><td></td></tr>
+      <tr><td class="pre">A data-use agreement</td><td class="box"><span></span>yes <span></span>no</td><td></td><td></td><td></td></tr>
+      <tr><td class="pre">Terms of service or a licence</td><td class="box"><span></span>yes <span></span>no</td><td></td><td></td><td></td></tr>
+      <tr><td class="pre">A conflict or an NDA</td><td class="box"><span></span>yes <span></span>no</td><td></td><td></td><td></td></tr>
+      <tr><td class="pre">Integrity</td><td class="box"><span></span>yes <span></span>no</td><td></td><td></td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="bottom">
+    <p>The slowest gate is <span class="fill w22"></span> and it has to start by <span class="fill w16"></span>.</p>
+    <p>If it does not clear, the project becomes <span class="fill" style="width:4.6in"></span>.</p>
+  </div>
+
+  <div class="sign">
+    <div class="sig"><span>Signed</span><span class="grow"></span></div>
+    <div class="sig"><span>Signed</span><span class="grow"></span></div>
+    <div class="sig"><span>Signed</span><span class="grow"></span></div>
+    <div class="sig"><span>Signed</span><span class="grow"></span></div>
+    <div class="sig"><span>Signed</span><span class="grow"></span></div>
+  </div>
+
+  <p class="footnote">This is a statement, not a worksheet, which is why every member signs it. Into the envelope before you leave.</p>
+
+</div>
+</div>
+
+<div class="sheetwrap pagebreak">
+<div class="sheet">
+
+  <div class="sheethead">
+    <h2>The cards</h2>
+    <div class="id">Team <span class="fill w08"></span> &nbsp; Date <span class="fill w16"></span></div>
+  </div>
+
+  <div class="instr">
+    <p><span class="lead">Session B, read once at 3:41.</span> Check in first, nine minutes, one sheet per team, as every week.</p>
+    <p>Then the shared card, in the red box. Three answers on paper, five minutes. Which gate does this trip: the IRB, a data-use agreement, terms of service, a conflict of interest, integrity, or none? What is the earliest date it has to start? And the half that carries the marks: what is the version of this project that is legal, is honest, and is still worth doing? I tell the answer once.</p>
+    <p>Then your own project on the checklist, twelve minutes. Every member signs. Then every team at the front in letter order, two and a half minutes each with a hard stop. One of you reads the gate rows and the two bottom lines. The room names a gate you missed. I rule. A team that trips nothing says so.</p>
+    <p>The six other cards are practice. Their answers appear on the meeting page on Thursday.</p>
+  </div>
+
+  <div class="card shared">
+    <span class="num">Shared card</span>
+    <p class="txt">A team holds a licensed WRDS extract and is about to upload it to a chatbot for cleaning.</p>
+    <p class="q">Gate · earliest start · the honest version</p>
+  </div>
+
+  <div class="card">
+    <span class="num">Card 2</span>
+    <p class="txt">Glassdoor reviews scraped with the usernames attached, to say something about employers in general.</p>
+    <p class="q">Gate · earliest start · the honest version</p>
+  </div>
+
+  <div class="card">
+    <span class="num">Card 3</span>
+    <p class="txt">A teammate's employer offers internal HR records, with a clause letting the firm approve the write-up.</p>
+    <p class="q">Gate · earliest start · the honest version</p>
+  </div>
+
+  <div class="card">
+    <span class="num">Card 4</span>
+    <p class="txt">Interviews with farmers in the Dominican Republic, conducted in Spanish, by a team that has not done CITI.</p>
+    <p class="q">Gate · earliest start · the honest version</p>
+  </div>
+
+  <div class="card">
+    <span class="num">Card 5</span>
+    <p class="txt">A vendor file sold as de-identified that carries ZIP code, birth year and sex on every row.</p>
+    <p class="q">Gate · earliest start · the honest version</p>
+  </div>
+
+  <div class="card">
+    <span class="num">Card 6</span>
+    <p class="txt">A survey of your own classmates about salary expectations and visa status.</p>
+    <p class="q">Gate · earliest start · the honest version</p>
+  </div>
+
+  <div class="card">
+    <span class="num">Card 7</span>
+    <p class="txt">Three specifications run, and only the one that worked reported.</p>
+    <p class="q">Gate · earliest start · the honest version</p>
+  </div>
+
+  <div class="block" style="margin-top:0.10in">
+    <span class="lbl">Shared card · our three answers</span>
+    <div class="rules"><span></span><span></span><span></span><span></span></div>
+  </div>
+
+  <p class="footnote">Into the envelope with the checklist.</p>
+
+</div>
+</div>
+```

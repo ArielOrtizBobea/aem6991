@@ -21,8 +21,8 @@
   <td class="hw"></td></tr>
 <tr><td>Wed Sep 16</td>
   <td class="topic"><a href="sessions/04-ethics.html">4 · Ethics and access</a>
-    <span class="t-desc">Two gates stand between your design and your data, and they are different kinds of thing. The IRB is an ethics review. A data-use agreement is a contract. Both take longer than teams expect, which is why this meeting sits in September rather than in November.</span></td>
-  <td class="hw"></td></tr>
+    <span class="t-desc">Two gates stand between your design and your data, and they are different kinds of thing. The IRB is an ethics review. A data-use agreement is a contract. Both run on clocks you do not control, which is why this meeting sits in September rather than in November. Then the integrity rules, with the cases that wrote them and the price each one cost.</span></td>
+  <td class="hw">CITI human-participants training — certificate on Canvas before meeting 6 (September 30)</td></tr>
 <tr class="g-last g02"><td>Wed Sep 23<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/05-tools-and-ai.html">5 · Coding tools and AI</a>
     <span class="t-desc">Every serious analysis is code, whether or not you wrote it. "Use AI" is four different things and they fail differently — only one of them produces output you can check. Then the practical business of getting a file at all: what Cornell already pays for, what an API is, and why scraping is the last resort dressed up as the clever one.</span></td>

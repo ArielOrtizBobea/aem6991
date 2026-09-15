@@ -2,29 +2,991 @@
 title: "4 · Ethics and access"
 subtitle: "Wednesday, September 16, 2026"
 pagetitle: "AEM 6991 · 4 Ethics and access"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+  revealjs:
+    output-file: 04-ethics-slides.html
+    theme: [default, slides.scss]
+    template-partials:
+      - title-slide.html
+    footer: "AEM 6991"
+    slide-number: c/t
+    incremental: false
+    history: false
+    link-external-newwindow: true
 ---
 
+:::: {.content-hidden when-format="revealjs"}
+
 ::: {.callout-note appearance="simple"}
-This page is a stub. Materials appear here before the meeting.
+[**Open the slides**](04-ethics-slides.html)
 :::
 
-**What you should be able to do after this meeting.** Say whether your project needs IRB review, a data-use agreement, both or neither — and defend the answer. Name the date each gate has to start, counted backwards from January, so the spring is not spent waiting.
+**What you should be able to do after this meeting.** Say whether your
+project needs IRB review, a data-use agreement, both or neither, and defend
+the answer with the branch of Cornell's decision tree it sits on. Name the
+date each gate has to start, counted backwards from January. Say what a
+fabricated citation is, and what it costs.
+
+::: {.callout-note title="What to take away" appearance="simple"}
+Two gates stand between your design and your data. The **IRB** is an ethics
+review, and it applies when you interact with people or hold identifiable
+information about them and your results leave the course. A **data-use
+agreement** is a contract, and the university signs it, not you. Both run on
+clocks you do not control.
+
+You do not decide that you are exempt. The IRB issues that determination, and
+it issues nothing until every person on the protocol has finished CITI
+training. So everyone in this course completes the training, whether or not
+their project needs it.
+
+Removing the names is not de-identification. Nothing at moderate risk or
+above goes into a public AI tool.
+
+A fabricated citation is a fabrication. Misconduct is caught by outsiders,
+from the data file, years later, and the price is the job.
+:::
+
+## Due today
+
+Your project's ethics-and-access checklist, signed by every member, before
+you leave. And, individually, your CITI human-participants training
+certificate on Canvas before meeting 6, Wednesday September 30.
+
+::::
+
+:::: {.content-visible when-format="revealjs"}
+
+## What this hour is for
+
+- Two gates stand between your design and your data.
+- The IRB is an ethics review and a data-use agreement is a contract.
+- Both run on clocks you do not control.
+- You leave with the date each one has to start.
+- The integrity rules come last because the tools of next week run under them.
+
+::: {.notes}
+Ninety seconds. Say that most teams will find they trip nothing, and that
+the check is what tells you which teams those are. A team that finds out in
+February that it needs a data-use agreement has lost the semester it was
+going to run the study in.
+
+Say the shape of the hour once: why the rules exist, the IRB, contracts,
+holding the file, integrity, and the calendar. The calendar is the point.
+:::
+
+# 1. Why the rules exist
+
+## Every rule was written after a failure
+
+- The Nuremberg Code of 1947 followed the doctors' trial.
+- The Tuskegee study ran for forty years and was stopped by a reporter in 1972.
+- The Belmont Report of 1979 followed it and named three principles.
+- Respect for persons, beneficence and justice are still the frame every board applies.
+- The IRB is the machinery that applies them before the study runs.
+
+[The Nuremberg Code, BMJ 313:1448 (1996) · The Belmont Report, HHS (1979) · CDC, the Tuskegee study](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes, and without the sermon. Every rule in research ethics
+was written after a specific failure, and that is the whole of the history
+you need.
+
+Tuskegee is one sentence. Six hundred Black men in Alabama, four hundred of
+them with syphilis, followed from 1932 and never treated, including after
+penicillin became the standard treatment. It was stopped in 1972 because a
+whistleblower went to the Associated Press. A scientist did not stop it.
+
+Belmont's three principles are the frame. Respect for persons is consent.
+Beneficence is risks against benefits. Justice is who bears the risk and who
+gets the benefit. Every question an IRB asks is one of those three.
+:::
+
+## The modern failures involved no needle
+
+- In 2014 Facebook changed the feeds of 689,003 users to test whether moods spread, and published the result.
+- The consent form was the terms of service.
+- In 2018 a personality quiz taken by 270,000 people reached up to 87 million profiles through their friends.
+- The quiz-takers had agreed to something and their friends had agreed to nothing.
+- Neither case involved a needle, a lab, or a person who knew they were in a study.
+
+[Kramer, Guillory and Hancock (2014), PNAS 111(24) · Facebook, April 4, 2018](https://doi.org/10.1073/pnas.1320040111){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes. These are the failures that concern this room,
+because this room works with data about people it will never meet.
+
+The Facebook study reduced the positive or negative posts people saw for a
+week and measured what they posted. The effect was tiny and real. The
+consent was a clause in the data-use policy. PNAS published it and then
+published an expression of concern.
+
+Cambridge Analytica: a quiz app called This Is Your Digital Life. The people
+who took it consented to sharing their own data. The app also took their
+friends' data, which the platform allowed at the time. Facebook's own
+estimate was up to 87 million profiles.
+
+Do not resolve what made these research here. That is the next slide, and
+it is the room's question.
+:::
+
+## What made the Facebook study research
+
+- Facebook runs experiments on its feed every day and nobody calls them research.
+- Sixty seconds at your table: what was different about this one?
+- Then I take three answers.
+
+::: {.notes}
+Three minutes. Sixty seconds of table talk, then two or three answers from
+the room, then the answer told.
+
+The answer. It was designed to produce generalisable knowledge and it was
+published, which is the federal definition of research. So the ethics rules
+applied to it and they do not apply to an ordinary A/B test. The terms of
+service are not informed consent, which is why PNAS issued an expression of
+concern.
+
+The Cornell angle, said plainly. One of the three authors was at Cornell.
+Cornell's IRB ruled that he was not engaged in human research, because he
+only ever saw results and never the individual data. That is the
+existing-data branch of the tree you will see in ten minutes, working.
+
+The point to land: the definition turns on the intent to generalise, not on
+whether anybody was hurt. Your capstone is written to say something general,
+or it is written for one firm. That choice decides which rules apply.
+:::
+
+# 2. The IRB
+
+## Two questions decide whether the IRB applies
+
+- Is it research: a systematic investigation designed to produce generalisable knowledge?
+- Are there human participants: you interact with people, or you hold identifiable private information about them?
+- Teams miss the second half.
+- Scraped posts count when individuals are identifiable.
+- Purchased consumer records count.
+
+[45 CFR 46.102, the definitions in the Common Rule](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes. Both questions have to be yes for the IRB to apply.
+
+The first question is the one the Facebook discussion just answered. The
+second is the one teams get wrong, because they hear "human participants"
+and think of a survey. Identifiable private information about a living
+person is a human participant even if you never meet anybody.
+
+Say the two examples slowly. A file of scraped reviews with usernames. A
+purchased file of consumer records with addresses. Both are human
+participants. Both are the kind of file somebody in this room is about to
+download.
+:::
+
+## Cornell's tree has a class-project branch
+
+::: {style="font-size:0.84em"}
+- Cornell's IRB office publishes the decision tree its own staff use.
+- A project whose sole intent is to meet a course requirement is not human participant research.
+- A project whose results leave the course is: a publication, a presentation, a thesis, a sponsor's decision.
+- A capstone is the second kind.
+- A study whose outcomes stay specific to one organisation is not research either, which is last week's private value.
+- When in doubt you ask irbhp@cornell.edu, because you do not make the call.
+:::
+
+[Cornell IRB, Does your project require an application to the Cornell IRB office? Decision tree 1](https://researchservices.cornell.edu/sites/default/files/2019-05/IRB%20Decision%20Tree.pdf){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Read the branch in the tree's own words: "Is the sole intent
+of the project to meet course requirements, with no intention to use the
+results for something other than the course assignment?" If yes, not human
+participant research. If no, the project may lead to use of the results
+outside the course, and it continues down the tree.
+
+A capstone whose plan is executed in AEM 6992 and presented to a room, or
+handed to a sponsor, is outside the course. So the class-project branch does
+not rescue you. Say that before anybody hopes it does.
+
+The private-value line is the one to land. The tree has a separate branch
+for quality improvement: a study whose outcomes stay specific to one
+organisation, whose programmes or services it is meant to improve, is not
+research, even though other organisations might use the results. That is
+the project written for one firm's decision from last week. The moment the
+same project is written to say something about people in general, it is
+research. Teams can choose which of these they are. The choice has to be
+made before the data is collected, not after.
+
+The last bullet is the rule: the IRB office makes the determination, and
+its address is on the slide.
+:::
+
+## Existing data has its own tree
+
+- Are the rows about people who may still be living?
+- Is the file publicly available?
+- Can you link a row to a living person, directly or through a code?
+- If you cannot, and the provider is not your collaborator, it is not human participant research.
+- What the vendor calls the file is not one of the questions.
+
+[Cornell IRB, Decision tree 2, research involving secondary or existing data](https://researchservices.cornell.edu/sites/default/files/2019-05/IRB%20Decision%20Tree.pdf){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. This is the tree most of this room is actually on, because most
+of you will use existing data.
+
+Walk it. Living people, or it is out. Publicly available, and it is out. Not
+public: can you, the recipient, link a row to a person, directly or through
+a code the provider holds? If not, and the provider is just providing, it is
+not human participant research. If the provider can link and is your
+collaborator, it is.
+
+The last bullet is the one to say twice. The tree asks what you can do with
+the rows. It does not ask what the vendor wrote on the invoice.
+:::
+
+## Which of these needs an application
+
+- An online experiment on a nutrition label with three hundred paid participants, results to your proposal.
+- Foot-traffic data from Dewey, aggregated and de-identified before you see it.
+- Glassdoor reviews scraped with usernames, to say something about employers in general.
+- Firm financials from Compustat.
+- Sixty seconds on your strip: which ones go to the IRB office?
+
+::: {.notes}
+Two and a half minutes. Start the count-down at sixty seconds. Then tell it.
+
+The first and the third. The experiment interacts with people and its
+results leave the course. The scrape is passive observation of public
+behaviour online, which the tree lists by name, and the rows are
+identifiable. It goes to the office, it will probably come back exempt, and
+the office says so, not you. The scrape also trips a second gate, terms of
+service, which is twenty minutes from now.
+
+Dewey arrives aggregated and de-identified, which is the existing-data tree
+saying no. Compustat is not about individuals at all.
+
+If a strip says all four, that is the common mistake in the other direction,
+and it costs a month of waiting for a determination on a file that never
+needed one.
+:::
+
+## Three levels of review measured in weeks
+
+::: {style="font-size:0.84em"}
+- An exemption takes three to four weeks from start to finish at Cornell.
+- Expedited review takes four to six.
+- The full board takes four to eight and meets on the first Friday of the month.
+- You do not decide that you are exempt: the IRB issues that determination.
+- A student protocol needs a faculty advisor who answers for it, and that is me, so your draft goes past me first.
+- Boards differ on what they call exempt, on turnaround and on whether coursework counts, and a partner at another university means a second review.
+:::
+
+[Cornell IRB, the life cycle of an IRB protocol · IRB FAQs · PI eligibility](https://researchservices.cornell.edu/resources/life-cycle-irb-protocol){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. The weeks are Cornell's own, from the IRB office's page on the
+life cycle of a protocol, and they assume a complete submission. An
+incomplete one goes back and the clock restarts.
+
+The full board's clock is a calendar, not a queue. It meets on the first
+Friday of the month. Miss the deadline for one meeting and the next one is
+a month away.
+
+The exempt rule is the one that catches somebody every year. Exempt is a
+category the IRB office puts you in. "We decided it was exempt" is not a
+category. Submissions go through RASS-IRB.
+
+A student cannot usually be the principal investigator. A protocol needs a
+faculty advisor who takes responsibility for compliance, and for this
+course that is me. So the draft goes past me before it goes to the IRB, and
+the instrument and the consent language come to office hours first.
+
+The last bullet is the awareness line. Different universities' boards draw
+the exempt line differently, run at different speeds, and treat coursework
+differently. If your project has a partner at another institution, that
+institution's board has a view too, and the two boards sort out who reviews
+through a reliance agreement, which takes its own weeks.
+:::
+
+## Training comes first and it is required
+
+- Every person named on a protocol completes CITI human-participants training, exempt protocols included.
+- The IRB issues nothing until the last name on the protocol has finished.
+- The course takes two to four hours and lasts five years.
+- Everyone in this room completes it and uploads the certificate to Canvas before meeting 6, Wednesday September 30.
+- Do it before you know whether you need it, because one teammate who skipped it holds up the whole team.
+
+[Cornell IRB training · IRB news, October 2022: training required for exempt research](https://researchservices.cornell.edu/resources/irb-training){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes, and this slide is protected in the cut order because the
+requirement is graded and has to be said in the room.
+
+Say the mechanism once, in the syllabus's words. Register at citiprogram.org
+under the Cornell affiliation. Take the course Cornell accepts, which is
+called IRB Training or IRB Basic. Download the completion certificate and
+upload it to the Canvas assignment by Wednesday September 30 at 11:59 pm.
+Not there by then costs five participation points, the same as the research
+interest survey.
+
+Say why it is everyone and not just the survey teams. A team that pivots to
+a survey in November, which happens, cannot wait for four people to do four
+hours of modules while the protocol sits. And the training is the cheapest
+thing on this calendar.
+:::
+
+# 3. Contracts
+
+## A data-use agreement is a contract
+
+::: {style="font-size:0.84em"}
+- It is not an ethics review and it does not replace one.
+- The university signs it, through the Office of Sponsored Programs, not you.
+- Expect legal review on both sides and expect months.
+- It binds Cornell, and it binds you through Cornell, so a breach is the university's problem and then yours.
+- OSP is asked at osp_dua@cornell.edu, and whether it will sign for a class project is a question to ask in October, not assume.
+:::
+
+[Cornell Research Services, exchange commercially unavailable or restricted data](https://researchservices.cornell.edu/resources/exchange-commercially-unavailablerestricted-data){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes. The second gate, and a different kind of thing.
+
+A data-use agreement governs somebody else's proprietary data. It is
+negotiated by lawyers on both sides. At Cornell the Office of Sponsored
+Programs is the party that enters into agreements for the use of data, and
+its page says so. You are not a party. You cannot accept a firm's terms on
+the team's behalf, however reasonable they look.
+
+Is it legally binding? Yes. It binds the university, and you are bound
+through the university, so a breach is a matter between the firm and Cornell
+first and between Cornell and you second. The firm's remedy is against the
+institution, and the institution's remedy is against the person who
+breached.
+
+The last bullet is honest. OSP's page speaks of investigators. Whether it
+signs for a capstone team with a faculty advisor is a question, and the
+team that needs the answer asks it in October.
+:::
+
+## What the clauses do
+
+- Publication review is normal and a veto is not, so settle it before anybody signs.
+- Destruction at the end, no redistribution, and no attempt to re-identify are standard.
+- The agreement names who may touch the file and where it may live.
+- Most of what Cornell licenses is for academic non-commercial use, WRDS and Compustat included.
+- A project a firm would pay for cannot be built on a licence that forbids commercial use.
+
+::: {.notes}
+Three minutes. Read the clauses as things that will happen to your project.
+
+Publication review means the firm sees the write-up before it goes out and
+can ask for its confidential figures to be removed. A veto means the firm
+can stop the write-up. Review is normal. A veto means you may not be able to
+show your own result, and it is settled before signing or the project has no
+result.
+
+Destruction means the file goes at the end of the project, so the handoff
+to next year's cohort is not yours to promise. No redistribution means no
+teammate's laptop that is not on the list, and no upload to a tool that is
+not on the list either, which is the shared card after the break.
+
+The last two bullets are the graft from meeting 3. Last week some of you
+took private value seriously: a question one firm would pay for. This week,
+check the licence on the file you would answer it with. WRDS, Compustat and
+most of what the library pays for are licensed for academic, non-commercial
+use. It is not a reason to drop the question. It is a reason to know which
+file the commercial version can use, and to say so on the checklist.
+:::
+
+## Terms of service are the same species
+
+- Terms of service are a contract you accepted by clicking.
+- Scraping is rarely a crime and frequently a breach.
+- A court held that scraping public LinkedIn pages was not a computer crime, and the same scraper was later found to have breached the user agreement.
+- Prefer the download, then the API, then nothing.
+- The vendor's terms decide what you may publish, so read them before the file is on your laptop.
+
+[hiQ Labs v. LinkedIn, Ninth Circuit (2022)](https://cdn.ca9.uscourts.gov/datastore/opinions/2022/04/18/17-16783.pdf){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes. The terms of service are a data-use agreement you
+signed without reading, and the same three things are in them: what you may
+take, what you may keep, what you may publish.
+
+The LinkedIn case is the one people cite for "scraping is legal". Read it
+carefully and it says less than that. The appeals court held that scraping
+public pages was not unauthorised access under the computer crime statute.
+The breach of contract claim was a separate matter, and the district court
+later found the scraper had breached the user agreement before the parties
+settled. So: rarely a crime, frequently a breach. Both halves are true at
+once.
+
+The order of preference is the practical rule. A download you can cite. An
+API is a documented door with a record of what you asked for. A scrape is
+the last resort, and next week I break one in front of you.
+:::
+
+## Employer data brings its own clauses
+
+- A teammate's employer may offer data under a non-disclosure agreement.
+- An NDA that covers the result blocks the presentation in this room in December.
+- Settle who owns the output before the file arrives.
+- A sponsor may have the right to review and never the right to veto.
+- A conflict of interest is disclosed rather than confessed: it tells the reader how to weight your claim and nothing more.
+
+::: {.notes}
+Two minutes. Several of you have a former or current employer who would
+hand over data. Good. Three clauses to settle before it arrives.
+
+The NDA. If it covers the result, you cannot present in this room in
+December, and meeting 14 is the pitch. Ask now whether the result can be
+shown, and write the answer on the checklist.
+
+Ownership. Who owns the analysis, the code and the write-up? If the firm
+owns all of it, the proposal you hand in is the firm's document.
+
+The conflict. A teammate who works for the firm has a stake in the answer.
+That is disclosed on the title page in one sentence. It is not a confession
+and it does not disqualify the project. It tells the reader how much weight
+to put on the claim, and hiding it is what disqualifies.
+:::
+
+# 4. Holding the file
+
+## Removing the names is not de-identification
+
+::: {style="font-size:0.84em"}
+- ZIP code, birth date and sex together identify 87 percent of Americans uniquely.
+- Latanya Sweeney used them to pull the governor of Massachusetts's records out of a de-identified hospital file.
+- Netflix released anonymised movie ratings and two researchers matched them to named IMDb reviewers.
+- New York released taxi trips with hashed medallion numbers and the hashes were reversed in hours.
+- Direct identifiers are the easy part and quasi-identifiers are the file.
+:::
+
+[Sweeney (2000), Simple demographics often identify people uniquely · Narayanan and Shmatikov (2008), IEEE S&P · Pandurangan (2014), Of taxis and rainbows](https://dataprivacylab.org/projects/identifiability/paper1.pdf){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Three stories, and each one is a file somebody in this room
+would happily download.
+
+Sweeney, 1997. Massachusetts released hospital discharge records with names
+removed. She bought the Cambridge voter roll for twenty dollars, joined on
+ZIP, birth date and sex, and mailed the governor his own records. Her 2000
+paper puts the figure at 87 percent of Americans uniquely identified by
+those three fields.
+
+Netflix, 2006. Half a million users' ratings, names replaced by numbers,
+released for a prize. Two researchers at Texas showed that a handful of
+dated ratings matched to public IMDb reviews identified people, including
+what else they had watched.
+
+New York, 2014. A year of taxi trips released under a records request, with
+medallion numbers hashed. The hash was a standard one over a small set of
+possible numbers, so a developer reversed every hash in a few hours.
+
+The lesson in one line: the columns that identify people are not the name
+column. A vendor that removed the names did the easy part.
+:::
+
+## Does this vendor file trip a gate
+
+- A vendor sells a consumer file as de-identified.
+- Each row carries ZIP code, birth year and sex.
+- Sixty seconds at your table: is there a gate, and what is the honest version?
+
+::: {.notes}
+Two and a half minutes. Sixty seconds of table talk, two answers from the
+room, then told.
+
+Yes. The tree asks whether you can link a row to a living person, not what
+the vendor calls the file, and the previous slide says that you can. So it
+goes to the IRB office, whose likely answer is that it is exempt, or not
+human research once the fields are coarsened. The honest version is the
+same project on three-digit ZIP and five-year age bands, or on the vendor's
+own aggregates, and it is decided before the file is opened, not after
+somebody has already joined it to something.
+
+A vendor's word for de-identified is a sales claim. A determination comes
+from the office.
+:::
+
+## Where the file lives is a rule
+
+::: {style="font-size:0.84em"}
+- Cornell classifies data as low, moderate or high risk.
+- Student records and anything under FERPA sit at moderate risk, and proprietary and licensed data are covered by the same rule.
+- Identifiers paired with a name, health records and financial account data sit at high risk.
+- Cornell's rule: do not enter data at moderate risk or above into a publicly available generative AI platform.
+- The approved tools are listed at the AI Innovation Hub, and next week's session runs on that list.
+:::
+
+[Cornell IT, regulated data · Cornell AI Innovation Hub, tools and resources · Cornell guidelines for artificial intelligence](https://innovationhub.ai.cornell.edu/tools-resources/){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes. Where the file lives is not a preference.
+
+Cornell's three levels. Low risk is what the university has published for
+the public. Moderate risk is any information used in the conduct of
+university business unless it is classified otherwise, and FERPA records
+sit there. High risk is the identifiers: a name with a social security
+number, a passport number, a bank account, health records.
+
+The AI rule is quoted from Cornell's own page in those words: do not enter
+any data classified as moderate risk or above into a publicly available
+generative AI platform. The guidelines add that anything you put into a
+public tool is treated as public. Proprietary and licensed data are covered
+by the same rule.
+
+The approved list is at the AI Innovation Hub and it changes. Next week you
+drive an assistant on a file, and the file is one you are allowed to
+upload, or the assistant sees column names and five invented rows and the
+code runs on your laptop.
+:::
+
+## Collect only what you need
+
+- A column you did not need is a risk you did not need.
+- Salary expectations and visa status in a survey of your own classmates are two such columns.
+- Cornell has a policy on research with Cornell students, and surveying your classmates trips it.
+- Asking a person for less is the cheapest privacy protection there is.
+
+[Cornell IRB Policy 15, research involving Cornell students](https://researchservices.cornell.edu/policies/irb-policy-15-research-involving-cornell-students){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. The privacy rule that costs nothing.
+
+Every column you collect is a column you have to protect, store on the
+right system, and one day destroy. A column the question does not need is
+pure liability. Visa status in a survey about salary expectations is the
+example, because it is the column that could hurt a respondent and the
+column the question can usually do without.
+
+Cornell has a specific policy on research where Cornell students are the
+participants, because of the pressure a classmate or an instructor can put
+on a student to take part. A survey of your own section is the case it is
+written for. Recruit outside your section, make participation invisible to
+me, and drop what you do not need.
+:::
+
+# 5. Integrity
+
+## Three words cover research misconduct
+
+- Fabrication is making up data or results.
+- Falsification is changing or omitting data so the record misrepresents the research.
+- Plagiarism is presenting somebody else's words, ideas or results as your own.
+- A citation that does not exist is a fabrication, whoever or whatever produced it.
+
+[42 CFR 93.103, the federal definition of research misconduct](https://www.ecfr.gov/current/title-42/chapter-I/subchapter-H/part-93){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Ninety seconds. The federal definition, one line each. It is short on
+purpose. It does not include honest error, and it does not include
+differences of opinion.
+
+The fourth bullet is the one that is live in this room, and it comes back
+in three slides.
+:::
+
+## How misconduct gets caught
+
+::: {style="font-size:0.72em"}
+| Case | What was wrong | Who caught it and how | The price |
+|:--|:--|:--|:--|
+| Stapel, 2011 | Invented the data for dozens of papers | Three junior researchers in his own lab reported him | His chair and 58 papers |
+| LaCour, 2015 | A survey that was never run | Two graduate students tried to replicate it and found the survey firm had no record | The paper and a job offer |
+| The 2012 honesty-pledge paper, 2021 | Fabricated rows in an insurance field experiment | Three bloggers found two fonts in one column | The paper |
+| Gino, 2023 | Altered rows in four papers | The same bloggers read the edit history inside the Excel files | Tenure at Harvard, revoked in 2025 |
+:::
+
+[Retraction Watch on Stapel · Broockman, Kalla and Aronow (2015) · Data Colada 98 and 109 · The Harvard Crimson, May 27, 2025](https://datacolada.org/109){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three and a half minutes. Read the third column down, not the rows across.
+Nobody in this table was caught by a reviewer or an editor.
+
+Stapel. A social psychologist at Tilburg who invented datasets for years.
+Three junior researchers noticed the data were too clean and went to the
+department head. Fifty-eight retractions, which is the count Retraction
+Watch keeps.
+
+LaCour. A 2014 paper in Science on whether a conversation with a canvasser
+changes minds on same-sex marriage. Two graduate students at Berkeley liked
+it enough to extend it, could not reproduce its properties, and asked the
+survey firm, which had no record of the survey. Science retracted it and a
+job offer at Princeton was withdrawn.
+
+The 2012 paper. A field experiment with an insurance company on signing an
+honesty pledge at the top of a form. In 2021 the Data Colada bloggers
+showed that the insurance data had rows in two different fonts, one of
+them the duplicated and altered half. Retracted. Say nothing about who
+fabricated it, because that is not established.
+
+Gino. A Harvard Business School professor. In 2023 the same bloggers
+published four posts showing altered rows in four papers, reading the
+calculation chain that Excel keeps inside the file. Harvard investigated,
+found misconduct, and in May 2025 revoked her tenure, the first time in
+decades. Her defamation claims against the bloggers and Harvard were
+dismissed in 2024. Every cell in this row is a retraction notice, a court
+ruling or Harvard's own action.
+:::
+
+## The file outlives the paper
+
+- Every case was caught by outsiders or juniors.
+- Every case was caught from the data file, not from the prose.
+- Every case was caught years after publication.
+- The price was the job.
+- Next week you keep the raw file, one path from raw to result, and a note saying where the raw came from, and this is why.
+
+::: {.notes}
+Ninety seconds. The pattern is the lesson.
+
+Nobody was caught by the review process. They were caught by people with
+no stake, who asked for the file, opened it, and looked. The file always
+looks different from the paper. Fonts, edit histories, means that cannot
+exist for integer data, a survey firm with no record.
+
+So the reproducibility habits of next week are not tidiness. They are what
+lets an honest researcher show the file and be believed.
+:::
+
+## An unchecked error can move policy
+
+- In 2010 Reinhart and Rogoff reported that growth collapses once public debt passes 90 percent of GDP.
+- In 2013 a graduate student asked for the spreadsheet and found five countries left out of an average.
+- The paper had already been quoted in austerity debates in several countries.
+- It was an error and not misconduct, and it was caught the same way.
+
+[Reinhart and Rogoff (2010), AER 100(2) · Herndon, Ash and Pollin (2014), Cambridge Journal of Economics 38(2)](https://doi.org/10.1093/cje/bet075){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Ninety seconds. The contrast case. Nobody invented anything.
+
+A formula in Excel covered fifteen rows where it should have covered
+twenty. The average that made the 90 percent threshold look like a cliff
+was wrong. A graduate student at Massachusetts Amherst asked for the
+spreadsheet for a class replication, got it, and found it.
+
+By then the number had been cited by finance ministers. Not misconduct.
+Same lesson: the file is what gets checked, and next week's spreadsheet
+story is this one's cousin.
+:::
+
+## The AI generated it is not a defence
+
+- In 2023 a New York lawyer filed a brief citing six cases that did not exist.
+- An assistant had invented them, with plausible names and citations.
+- The court fined the lawyers 5,000 dollars, and the defence was that the AI generated it.
+- The syllabus says the same thing: undisclosed AI use and a fabricated citation are both integrity violations.
+
+[Mata v. Avianca, S.D.N.Y., opinion and order on sanctions, June 22, 2023](https://www.courtlistener.com/docket/63107798/mata-v-avianca-inc/){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Ninety seconds. The case that is live in this room.
+
+A personal injury suit against an airline. The lawyer asked a chatbot for
+precedents, got six, and filed them. Opposing counsel could not find them.
+The judge could not find them. The lawyer asked the chatbot whether the
+cases were real, and it said yes. The court sanctioned the lawyers and the
+firm, jointly, five thousand dollars, and made them write to the judges
+whose names had been attached to the invented opinions.
+
+The syllabus rule: AI use is fine and disclosed. A citation you did not
+verify is yours, and if it does not exist it is a fabrication. Next week
+you learn how assistants produce these, and why the DOI resolving to
+something else is the tell.
+:::
+
+## Is this misconduct
+
+- A team runs three specifications and reports the one that worked.
+- Sixty seconds at your table: is that on the three-words slide, and what is the honest version?
+
+::: {.notes}
+Two and a half minutes. Sixty seconds of table talk, two answers, then told.
+
+It is not fabrication or falsification under the definition. Nothing was
+invented and nothing was changed. And it is the practice most of the
+retracted social science of the last decade was built on, because
+reporting the survivor of many tries presents a fluke as a finding.
+
+The honest versions are two. Report all three and say why they differ. Or
+write the specification down before you run it, which is what
+pre-registration is, and the December proposal is where you do that.
+
+Say why this one is on a slide. In March every team in this room will have
+three specifications and one of them will look better. This is the
+temptation you will actually face, and the cases on the table were not.
+:::
+
+# 6. The calendar
+
+## Run the calendar backwards from January
+
+::: {style="font-size:0.7em"}
+| Gate | Cornell's clock | So it starts by |
+|:--|:--|:--|
+| CITI training | Two to four hours, and nothing is issued until everyone has it | September 30, meeting 6 |
+| Terms of service and licences | An afternoon of reading | This week, for every source on your map |
+| An IRB exemption or expedited review | Three to six weeks after a complete submission | Draft the instrument and consent in October, submit by early November |
+| The full board | Four to eight weeks, first Friday of the month | Submit by late October for a January start |
+| A data-use agreement | Months, and it may fail | Ask OSP in October, and carry a plan B on next week's sheet |
+| AEM 6992 | Starts in late January | Everything above clears before it |
+:::
+
+::: {.notes}
+Three and a half minutes, and this slide is never cut. Read the third
+column bottom to top.
+
+AEM 6992 is where you execute. It starts in late January. A full-board
+protocol takes up to eight weeks, so it is submitted by late October, so the
+instrument and the consent language are drafted in October, so the
+question is settled by the pitch. A data-use agreement takes months and
+may fail, so the conversation with OSP starts in October and next week's
+sheet carries the plan B. Terms of service take an afternoon and the
+afternoon is this week. CITI is two to four hours and it is due September
+30.
+
+A team that finds out in February that it needs any of this has lost the
+semester it was going to run the study in. That is the argument for holding
+this meeting in September, and it is the whole argument.
+:::
+
+## After the break
+
+- Check in first, nine minutes, on the sheet in your envelope.
+- One shared card, and every team answers its three questions on paper.
+- Then your own checklist, signed by every member.
+- Then every team at the front, two and a half minutes, hard stop.
+- The Poll Everywhere join code is in the footer of this slide from 3:08.
+
+::: {.notes}
+Ninety seconds. Say the timer is real and that every team goes, in letter
+order, with the next team standing at the side. The join code goes in the
+footer from 3:08 so that forty-one devices are joined before the quiz
+opens.
+:::
+
+## Three questions in three minutes
+
+- On your own device. Poll Everywhere.
+
+::: {.notes}
+Items in _quizzes/s04-ethics-import.txt. Whether it counts is decided
+before the file is converted, and the run of show in _quizzes/s04-ethics.md
+records the default.
+:::
+
+::::
+
+:::: {.content-hidden when-format="revealjs"}
+
+## Session A · 2:05 to 3:15
+
+The hour has six blocks, and the last one is the point.
+
+### Why the rules exist
+
+Every rule in research ethics was written after a specific failure. The
+Nuremberg Code followed the doctors' trial. The Belmont Report followed
+Tuskegee, which ran for forty years and was stopped by a reporter rather than
+by a scientist. Its three principles, respect for persons, beneficence and
+justice, are still the frame every review board applies.
+
+The modern failures are the ones that concern this room, and none of them
+involved a needle. In 2014 Facebook changed the feeds of 689,003 users to test
+whether moods spread, and
+[published the result](https://doi.org/10.1073/pnas.1320040111), with the
+terms of service as the consent form. In 2018 a personality quiz taken by
+270,000 people reached
+[up to 87 million profiles](https://about.fb.com/news/2018/04/restricting-data-access/)
+through their friends. The first question for the room is what made the
+Facebook study research, when Facebook runs experiments on its feed every day
+and nobody calls those research. The answer is that it was designed to produce
+generalisable knowledge and it was published. The definition turns on the
+intent to generalise, not on whether anybody was hurt.
+
+### The IRB
+
+Two questions decide whether it applies. Is this research, meaning a
+systematic investigation designed to produce generalisable knowledge? Are
+there human participants, meaning you interact with people or you hold
+identifiable private information about them? Teams miss the second half.
+Scraped posts count when individuals are identifiable, and so do purchased
+consumer records.
+
+Cornell's IRB office publishes the
+[decision tree](https://researchservices.cornell.edu/sites/default/files/2019-05/IRB%20Decision%20Tree.pdf)
+its own staff use, and it has a branch for class projects. A project whose
+sole intent is to meet a course requirement is not human participant
+research. A project whose results leave the course, for a publication, a
+presentation or a sponsor's decision, is. A capstone is the second kind. A
+study whose outcomes stay specific to one organisation is not research
+either, which is last week's private value. Existing data has its own tree,
+and the question it asks is whether you can link a row to a living person,
+directly or through a code, not what the vendor calls the file.
+
+Then the levels of review, in Cornell's own weeks. An exemption takes
+[three to four](https://researchservices.cornell.edu/resources/life-cycle-irb-protocol),
+expedited review four to six, the full board four to eight, and the board
+meets on the first Friday of the month. You do not decide that you are
+exempt. The IRB issues that determination, and it issues nothing until every
+person named on the protocol has finished
+[CITI human-participants training](https://researchservices.cornell.edu/resources/irb-training),
+exempt protocols included. So the training is a requirement of this course.
+Everyone completes it and uploads the certificate to Canvas before meeting 6,
+Wednesday September 30. A student protocol needs a faculty advisor who
+answers for it, and that is me, so your draft goes past me before it goes
+to the IRB.
+
+### Contracts
+
+A data-use agreement is a contract, not an ethics review, and the university
+signs it rather than you, through the
+[Office of Sponsored Programs](https://researchservices.cornell.edu/resources/exchange-commercially-unavailablerestricted-data).
+Expect legal review on both sides. Expect months. Expect clauses on
+publication review, destruction and redistribution, and settle one before
+anybody signs: a sponsor may have the right to review, never the right to
+veto. Then the clause that catches teams that took private value seriously
+last week. Most of what Cornell licenses, WRDS and Compustat included, is for
+academic non-commercial use, so a project a firm would pay for cannot be
+built on it.
+
+Terms of service are the same species, a contract you accepted by clicking.
+Scraping is rarely a crime and frequently a breach. Prefer the download, then
+the API, then nothing. And employer data brings its own clauses: an NDA that
+covers the result blocks the presentation in December, ownership of the
+output is settled before the file arrives, and a conflict of interest is
+disclosed rather than confessed.
+
+### Holding the file
+
+[Latanya Sweeney](https://dataprivacylab.org/projects/identifiability/paper1.pdf)
+showed that ZIP code, birth date and sex together identify 87 percent of
+Americans uniquely, and used them to pull a governor's records out of a
+de-identified hospital file. Netflix's anonymised movie ratings were
+[matched to named IMDb reviewers](https://doi.org/10.1109/SP.2008.33). New
+York's taxi trips, released with hashed medallion numbers, were
+[reversed in hours](https://tech.vijayp.ca/of-taxis-and-rainbows-f6bc289679a1).
+So removing the names is not de-identification, and a vendor's word for it is
+not a determination.
+
+Where the file lives is a rule rather than a preference. Cornell classifies
+data as [low, moderate or high risk](https://it.cornell.edu/regulated-data),
+and its rule is that nothing at moderate risk or above goes into a publicly
+available AI tool. The approved tools are listed at the
+[AI Innovation Hub](https://innovationhub.ai.cornell.edu/tools-resources/),
+and next week's session runs on that list. Collect only what you need,
+because a column you did not need is a risk you did not need.
+
+### Integrity
+
+Fabrication, falsification and plagiarism, one line each, from the
+[federal definition](https://www.ecfr.gov/current/title-42/chapter-I/subchapter-H/part-93).
+Then the cases, with how each was caught and what it cost. The table is
+below. The pattern is the lesson: caught by outsiders and juniors, from the
+data file, years later, and the price was the job. Reinhart and Rogoff were
+not misconduct, but a spreadsheet error nobody checked moved fiscal policy,
+and the same file caught it. And the one that is live in this room: a
+fabricated citation is a fabrication. A New York lawyer was sanctioned in
+2023 for filing six cases an assistant had invented, and the AI generated it
+was his defence. The second question for the room is whether running three
+specifications and reporting the one that worked is misconduct.
+
+### The calendar
+
+Run backwards from January. That is the argument for holding this meeting in
+September.
+
+| Gate | Cornell's clock | So it starts by |
+|:--|:--|:--|
+| CITI training | Two to four hours, and nothing is issued until everyone has it | September 30, meeting 6 |
+| Terms of service and licences | An afternoon of reading | This week, for every source on your map |
+| An IRB exemption or expedited review | Three to six weeks after a complete submission | Draft the instrument and consent in October, submit by early November |
+| The full board | Four to eight weeks, first Friday of the month | Submit by late October for a January start |
+| A data-use agreement | Months, and it may fail | Ask OSP in October, and carry a plan B on next week's sheet |
+| AEM 6992 | Starts in late January | Everything above clears before it |
+
+### The cases in full
+
+| Case | What was wrong | Who caught it and how | The price | Sources |
+|:--|:--|:--|:--|:--|
+| Stapel, 2011 | Invented the data for dozens of papers | Three junior researchers in his own lab reported him | His chair and 58 papers | [Retraction Watch](https://retractionwatch.com/category/by-author/diederik-stapel/) |
+| LaCour, 2015 | A survey that was never run | Two graduate students tried to replicate it and found the survey firm had no record | The paper and a job offer | [Broockman, Kalla and Aronow](https://stanford.edu/~dbroock/broockman_kalla_aronow_lg_irregularities.pdf); [the retraction](https://doi.org/10.1126/science.aac6638) |
+| The 2012 honesty-pledge paper, 2021 | Fabricated rows in an insurance field experiment | Three bloggers found two fonts in one column | The paper | [Data Colada 98](https://datacolada.org/98); [the retraction](https://doi.org/10.1073/pnas.2115397118) |
+| Gino, 2023 | Altered rows in four papers | The same bloggers read the edit history inside the Excel files | Harvard revoked her tenure in 2025, and her defamation claims were dismissed in 2024 | [Data Colada 109](https://datacolada.org/109); [The Harvard Crimson](https://www.thecrimson.com/article/2025/5/27/gino-tenure-revoked/) |
+| Reinhart and Rogoff, 2013 | A spreadsheet formula that left five countries out of an average; an error, not misconduct | A graduate student asked for the spreadsheet | A number already quoted in austerity debates | [Reinhart and Rogoff](https://doi.org/10.1257/aer.100.2.573); [Herndon, Ash and Pollin](https://doi.org/10.1093/cje/bet075) |
+| Mata v. Avianca, 2023 | Six invented cases in a court filing | Opposing counsel could not find them | A 5,000 dollar sanction | [The docket](https://www.courtlistener.com/docket/63107798/mata-v-avianca-inc/) |
+
+### Cornell's pages in one list
+
+- [Does your project require an application to the Cornell IRB office?](https://researchservices.cornell.edu/sites/default/files/2019-05/IRB%20Decision%20Tree.pdf) The two decision trees.
+- [The life cycle of an IRB protocol](https://researchservices.cornell.edu/resources/life-cycle-irb-protocol). The weeks, what a submission contains, and the faculty advisor.
+- [IRB FAQs](https://researchservices.cornell.edu/resources/irb-faqs). The board's first Friday, and why exempt is a determination.
+- [IRB training](https://researchservices.cornell.edu/resources/irb-training). Which CITI course, and how long it takes.
+- [Research involving Cornell students](https://researchservices.cornell.edu/policies/irb-policy-15-research-involving-cornell-students). The policy that a survey of classmates trips.
+- [Exchange restricted data](https://researchservices.cornell.edu/resources/exchange-commercially-unavailablerestricted-data). The Office of Sponsored Programs and data-use agreements.
+- [Regulated data](https://it.cornell.edu/regulated-data). Cornell's three levels.
+- [AI tools and resources](https://innovationhub.ai.cornell.edu/tools-resources/). The approved list and the rule on public tools.
+
+## Session B · 3:30 to 4:30
+
+Ten minutes of team check-in, then one shared card. A team holds a licensed
+WRDS extract and is about to upload it to a chatbot for cleaning. Every team
+answers three questions on paper. Which gate does this trip: the IRB, a
+data-use agreement, terms of service, a conflict of interest, integrity, or
+none? What is the earliest date it has to start? And the half that carries
+the marks: what is the version of this project that is legal, is honest, and
+is still worth doing? Then the answer, told once.
+
+Then your own project. You fill in the ethics-and-access checklist for it,
+on the template, signed by every member. Human participants, yes or no, with
+the branch of the tree that justifies the answer. Every data source you
+named, who holds it, and what its licence or terms permit. Whether any field
+is identifiable, what you do about it, and where the file will live. Any
+conflict, one sentence each, and whether the result can be shown in this
+room in December. Who does what, by name. And the date the slowest gate has
+to start.
+
+Then every team goes to the front. Two and a half minutes each with a hard
+stop: one member reads the gate lines, the room attacks by naming a gate the
+team missed, and I rule. Most teams will find they need none of it, and a
+team holding a project that trips nothing has to be willing to say so. The
+teams that do need something find out today, which is the whole reason this
+meeting is in September.
+
+Six more cards are on the handout for practice, and their answers appear on
+this page after the meeting.
+
+## Handouts
+
+[Ethics-and-access checklist and cards](../handouts/ethics-checklist.qmd).
+The checklist you fill and sign this afternoon, and the seven cards.
+
+[Team check-in sheet](../handouts/check-in.qmd). One sheet per team, every
+week.
+
+[Permissions and ethics](../permissions.qmd). The reference page for both
+gates, with the timeline.
 
 ## Where to read more
 
-[Adams](https://doi.org/10.4135/9788132108498) ch. 2 on research ethics.
+[Adams, Khan, Raeside and White](https://doi.org/10.4135/9788132108498),
+chapter 2, on research ethics.
 
-## Session A · 2:05–3:15
+[The Belmont Report](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html)
+is nine pages and it is the frame every review board applies. Read it once.
 
-Five blocks, and the last one is the point. First, why the rules exist — briefly, and without the sermon. Every rule in research ethics was written after a specific failure. Nuremberg followed the doctors' trial. The Belmont Report followed Tuskegee, which ran for forty years and was stopped by a reporter rather than by a scientist. Its three principles — respect for persons, beneficence, justice — are still the frame every IRB applies. But the modern failures are the ones that concern this room, and none of them involved a needle. Facebook ran a mood experiment on 689,000 users and published it. Cambridge Analytica harvested a personality quiz's friend graph. Second, the IRB. Two questions decide whether it applies. Is this research? Are there human participants? Teams miss the second half, because identifiable private information counts even when you never meet anybody. Scraped posts count when individuals are identifiable. So do purchased consumer records. Then the three levels of review, described in weeks rather than in definitions. Exempt can clear in a fortnight if nothing is wrong with the submission. Expedited runs to a month or more. The full board meets on a schedule you do not control, so its clock is a calendar, not a queue. And the rule that catches somebody every year: you do not decide that you are exempt. The IRB issues that determination, and it issues nothing until every person named on the protocol has finished CITI human-participants training. Exempt protocols included. One teammate who skipped the modules holds up the whole team, so do them this week, before you know whether you need them. Third, the other gate. A data-use agreement is a contract, not an ethics review, and the university signs it rather than you. Expect legal review on both sides. Expect months. Expect restrictions on what you are allowed to publish, which can mean you cannot show your own result. Terms of service are the same species — a contract you accepted by clicking. Scraping is rarely a crime and frequently a breach. Prefer the download, then the API, then nothing. Fourth, whether you may hold the file at all. Direct identifiers are the easy part. Latanya Sweeney showed that ZIP code, birth date and sex together identify most Americans uniquely. So "we removed the names" is not de-identification, and a vendor's word for it is not a determination. Then conflicts of interest, which are disclosed rather than confessed — a disclosure tells the reader how to weight your claim, nothing more. The clause to settle before anyone signs anything: a sponsor may have the right to review, never the right to veto. Then credit inside the team, agreed now, while there is still nothing to fight over. Fifth, integrity. Fabrication, falsification and plagiarism, one line each, with a case attached to each. Diederik Stapel invented his data and lost 58 papers. Reinhart and Rogoff made a spreadsheet error nobody checked and it moved fiscal policy in several countries. And the one that is live in this room: a fabricated citation is a fabrication. A New York lawyer was sanctioned $5,000 in 2023 for filing six cases an assistant had invented. "The AI generated it" was his defence, and it did not work for him either. Finally the calendar, run backwards from January. That is the argument for holding this meeting in September.
+[Sweeney (2000)](https://dataprivacylab.org/projects/identifiability/paper1.pdf)
+is the paper behind the 87 percent, and
+[Narayanan and Shmatikov (2008)](https://doi.org/10.1109/SP.2008.33) is the
+Netflix paper. Both are short.
 
-## Session B · 3:30–4:30
+[Data Colada](https://datacolada.org) is where the Gino and honesty-pledge
+findings were published, post by post, with the files. It is the best
+available course in how a data file gives a paper away.
 
-Every session B opens with a ten-minute team check-in: what you did
-since last week, what is stuck, and who is doing what next. Written
-down, and handed in with that session's work.
-
-Ten minutes of team check-in, then the cards. Each team draws a project somebody actually proposed, and every one is blocked in a different place. A team scraping Glassdoor reviews with the usernames attached. A teammate's employer offering internal HR records, with a clause letting the firm approve the write-up. Interviews with farmers in the Dominican Republic, conducted in Spanish, by a team that has not done CITI. A vendor file sold as de-identified that carries ZIP, birth year and sex. A licensed WRDS extract about to be uploaded to a chatbot for cleaning. A survey of your own classmates about salary expectations and visa status. Three specifications run and only the one that worked reported. For each card, three answers. Which gate does this trip — IRB, DUA, terms of service, conflict of interest, integrity, or none? What is the earliest date it has to start? And the half that carries the marks: what is the version of this project that is legal, is honest, and is still worth doing? Then one team is drawn at random to defend at the front while the room attacks, and we draw again as the clock allows. Nobody knows in advance whether they are up. Two cards trip nothing at all, and the team holding one has to be willing to say so. Then your own project. You fill in the ethics-and-access checklist for it, on the template, and you hand it in signed before you leave. Human participants, yes or no, with the sentence that justifies the answer. Every data source you named, who holds it, and what its licence or terms permit. Whether any field is identifiable, what you do about it, and where the file will live. Any conflict, one sentence each. Who does what, by name. And the date the slowest gate has to start. Most teams will find they need none of it. The teams that do need something find out today, which is the whole reason this meeting is in September.
-
-Your team's output is submitted before you leave.
-
+::::

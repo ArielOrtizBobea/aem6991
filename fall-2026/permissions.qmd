@@ -48,6 +48,17 @@ Teams miss the second half. Scraped social media posts count if
 individuals are identifiable. So do purchased consumer records and
 administrative microdata.
 
+Cornell's IRB office publishes the
+[decision tree](https://researchservices.cornell.edu/sites/default/files/2019-05/IRB%20Decision%20Tree.pdf)
+its own staff use, and it has a branch for class projects. A project
+whose *sole intent* is to meet a course requirement, with no intention to
+use the results for anything else, is not human participant research. A
+project whose results leave the course, for a publication, a presentation,
+a thesis or a sponsor's decision, is. A capstone is the second kind. The
+tree has a second page for existing data, and the question it asks is
+whether you can link a row to a living person, directly or through a code,
+not what the vendor calls the file.
+
 Foot-traffic and card-spend data of the kind on Dewey arrive aggregated
 and de-identified. That is normally what puts them outside the
 definition. But **you do not get to make that call yourself.** When in
@@ -78,9 +89,14 @@ requirement since October 2022. It lasts five years.
 **The IRB issues nothing until every listed person has finished.** One
 teammate who skipped the modules holds up the whole team.
 
-Do the CITI modules in **week 2 or 3**, before you know whether you need
-them. They take a couple of hours and they remove the most common cause
-of delay.
+The CITI modules are **required of everyone in this course**, whether or
+not your project needs the IRB. Register at
+[citiprogram.org](https://www.citiprogram.org) under the Cornell
+affiliation, take the course Cornell accepts (it is called IRB Training or
+IRB Basic), and upload the completion certificate to Canvas before
+meeting 6, **Wednesday September 30**. Not there by then costs five
+participation points. The modules take two to four hours and they remove
+the most common cause of delay.
 
 **Three levels of review:**
 
@@ -90,6 +106,14 @@ of delay.
 | **Expedited** | Minimal-risk research not fitting an exempt category | Reviewed by a member, not the full board |
 | **Full board** | More than minimal risk, or vulnerable populations | Meets on a schedule — plan around it |
 
+Cornell's own clock, from the IRB office's page on
+[the life cycle of a protocol](https://researchservices.cornell.edu/resources/life-cycle-irb-protocol):
+an exemption takes **three to four weeks** from start to finish, expedited
+review **four to six**, and the full board **four to eight**. The board
+meets on the first Friday of every month, so its clock is a calendar, not
+a queue. All three assume a complete submission; an incomplete one goes
+back and the clock restarts.
+
 Cornell's own guidance for studies enrolling students asks for
 submission **at least four weeks before** enrolment begins, and warns
 that anything needing an ancillary review takes longer.
@@ -98,7 +122,7 @@ that anything needing an ancillary review takes longer.
 
 | When | What |
 |:--|:--|
-| **Week 2–3** | Everyone on the team completes CITI training |
+| **By September 30 (meeting 6)** | Everyone completes CITI training and uploads the certificate to Canvas. Required and graded |
 | **Meeting 9–10 (late Oct)** | You know whether your design needs human participants |
 | **Late Oct / early Nov** | Draft the protocol: instrument, consent language, recruitment, data handling |
 | **November** | Submit through RASS-IRB |
@@ -122,7 +146,9 @@ Less than students fear, but all of it in writing:
 - **Data handling** — where it lives, who sees it, whether it is
   identifiable, when it is destroyed
 - **A faculty member**, since students generally cannot serve as
-  principal investigator on their own. Talk to me before you submit
+  principal investigator on their own. That is me. I am the faculty
+  advisor on your protocol, so the draft goes past me before it goes to
+  the IRB
 
 Writing the instrument early is not bureaucracy tax. It forces you to
 decide what you are actually measuring, which is
@@ -137,10 +163,44 @@ team's behalf, however reasonable they look. If a firm gives you proprietary dat
 expect legal review on both sides, expect it to take months, and expect
 restrictions on what you may publish.
 
+At Cornell the
+[Office of Sponsored Programs](https://researchservices.cornell.edu/resources/exchange-commercially-unavailablerestricted-data)
+is the party that enters into agreements for the use of data. Write to
+osp_dua@cornell.edu, and ask in October whether it will sign for a
+capstone team rather than assuming it will. The agreement binds the
+university, and it binds you through the university.
+
+Read the licence on data you already have, too. Most of what the library
+pays for, WRDS and Compustat included, is licensed for **academic,
+non-commercial use**. A project a firm would pay for cannot be built on a
+file whose licence forbids commercial use.
+
 Two consequences worth planning around: **you may not be able to show
 your results**, and the agreement may not be signed in time. If your
 project depends on a DUA, it needs a plan B by
 [meeting 5](sessions/05-tools-and-ai.qmd).
+
+## Where the file lives
+
+Cornell classifies data as
+[low, moderate or high risk](https://it.cornell.edu/regulated-data).
+Anything under FERPA sits at moderate risk. Identifiers paired with a
+name, health records and financial account data sit at high risk.
+Proprietary and licensed data are covered by the same rule.
+
+**Nothing at moderate risk or above goes into a publicly available AI
+tool.** That is Cornell's rule, in
+[its own words](https://innovationhub.ai.cornell.edu/tools-resources/),
+and anything you put into a public tool is treated as public. The approved
+tools are listed on that page. If the file you hold is not one you may
+upload, the assistant sees the column names and five invented rows, and
+the code it writes runs on your laptop.
+
+Removing the names is not de-identification. ZIP code, birth date and sex
+together
+[identify most Americans uniquely](https://dataprivacylab.org/projects/identifiability/paper1.pdf).
+Coarsen what you do not need at full resolution, and collect only what the
+question needs.
 
 ## Where to ask
 

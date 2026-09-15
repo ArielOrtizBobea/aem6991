@@ -128,7 +128,11 @@ apply to every deliverable:
         The design you propose is yours.
 3.  **Do not paste restricted data into a public chatbot.**
     Confidential, IRB-restricted, and proprietary data stay on your
-    machine.
+    machine. Cornell's rule gives restricted a definition: nothing
+    classified as [moderate risk or above](https://it.cornell.edu/regulated-data)
+    goes into a publicly available AI tool, and licensed data counts.
+    The approved tools are listed at the
+    [AI Innovation Hub](https://innovationhub.ai.cornell.edu/tools-resources/).
 
 Failure to disclose is an academic integrity violation under the
 Cornell Code. Failure to verify is graded against the rubric like any
@@ -200,6 +204,7 @@ You start with full marks and lose them. What costs points:
 | | |
 |:---|:---|
 | Research interest survey not submitted, or late | −5 |
+| CITI human-participants training certificate not on Canvas by September 30 | −5 |
 | Session-B check-in not filed | −2 each |
 | Peer evaluation not submitted on time | −3 each |
 | Arriving late, or leaving at the break | −2 each |

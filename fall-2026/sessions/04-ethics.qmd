@@ -827,31 +827,45 @@ them will look better.
 ## The Cambridge Analytica case
 
 :::: {.columns}
-::: {.column width="58%"}
-::: {style="font-size:0.66em"}
-- In 2013 and 2014 a Cambridge psychologist's quiz app, "thisisyourdigitallife", was installed by about 270,000 people.
-- It was described as a research app, and it also took data from the installers' friends, which the platform allowed at the time.
-- The data went to Cambridge Analytica, against Facebook's platform policy, and up to 87 million profiles were reached.
-- Facebook learned of the transfer in 2015 and took certificates that the data had been deleted, and it had not been.
-- The price: a 500,000 pound fine in the UK, the legal maximum; a 5 billion dollar FTC penalty in 2019; the chief executive before Congress.
+::: {.column width="60%"}
+::: {style="font-size:0.6em"}
+- Cambridge Analytica was a British political consulting firm that sold voter targeting by personality and worked for the 2016 Trump campaign.
+- In 2014 a Cambridge University psychologist's quiz app, presented as research, was installed by about 270,000 people and, as Facebook then allowed, took their friends' data too: up to 87 million profiles.
+- He passed the data to Cambridge Analytica against Facebook's platform policy, and the firm built voter profiles from it.
+- Facebook learned of the transfer in 2015, asked for the data to be deleted and took certificates that it had been, and it had not.
+- In March 2018 a former employee, Christopher Wylie, told the Observer and the New York Times.
+- The price: a 500,000 pound UK fine, the legal maximum; a 5 billion dollar FTC penalty; the chief executive before Congress; the firm closed within two months.
 - The quiz-takers agreed to something, and their friends agreed to nothing.
 :::
 :::
-::: {.column width="42%"}
+::: {.column width="40%"}
 ![](figures/cambridge-analytica-protest-2018.jpg){fig-align="center" width="100%"}
 
 [Parliament Square, London, March 29, 2018. Photo John Lubbock, CC BY-SA 4.0.]{style="font-size:0.5em; color:#6b6b6b"}
 :::
 ::::
 
-[Facebook Newsroom, March 16 and April 4, 2018 · ICO, October 25, 2018 · FTC, July 24, 2019](https://about.fb.com/news/2018/04/restricting-data-access/){style="font-size:0.55em; color:#6b6b6b"}
+[The Observer, March 17, 2018 · Facebook Newsroom, March 16 and April 4, 2018 · ICO, October 25, 2018 · FTC, July 24, 2019](https://about.fb.com/news/2018/04/restricting-data-access/){style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.notes}
-Two minutes. The case that opens the third part, because it is a
-data-agreement failure from end to end. Data collected under one purpose,
-research, and passed to a third party against the platform's terms. A
-certificate of deletion that was false. And a price paid by the platform,
-the firm and the developer.
+Two and a half minutes, and tell the whole arc, because most of the room
+was in high school in 2018. A political consulting firm, funded by Robert
+Mercer with Steve Bannon on its board, claimed it could target voters by
+personality. It got its raw material from a Cambridge academic's
+personality quiz, built in 2014 under a research framing, which harvested
+the quiz-takers' friends through the permissions Facebook then granted to
+apps. The firm worked for the Cruz and then the Trump campaigns in 2016.
+Facebook was told in December 2015, demanded deletion and accepted
+certifications. In March 2018 Christopher Wylie, who had helped build the
+operation, went to the Observer and the New York Times with the documents.
+Facebook lost about a hundred billion dollars of market value in a week,
+Zuckerberg testified in April, the firm was in insolvency by May, and the
+regulators' penalties followed over the next eighteen months.
+
+It opens the third part because it is a data-agreement failure from end to
+end. Data collected under one purpose, research, and passed to a third
+party against the platform's terms. A certificate of deletion that was
+false. And a price paid by the platform, the firm and the developer.
 
 Facebook says collecting under a research framing was within its rules; the
 FTC later alleged the app lied to users about what it took. The FTC's own
@@ -1258,18 +1272,25 @@ to write the specification down before running it.
 
 ### Data-use agreements and licences
 
-The section opens with Cambridge Analytica. A Cambridge psychologist's
-quiz app, installed by about 270,000 people and described as a research
-app, also took data from the installers' friends. The data went to
-Cambridge Analytica against Facebook's platform policy;
+The section opens with Cambridge Analytica, a British political
+consulting firm that sold voter targeting by personality and worked for the
+2016 Trump campaign. Its raw material came from a Cambridge University
+psychologist's quiz app, built in 2014 and presented as academic research,
+which about 270,000 people installed and which, as Facebook then allowed,
+also took their friends' data. The data went to Cambridge Analytica against
+Facebook's platform policy;
 [up to 87 million profiles](https://about.fb.com/news/2018/04/restricting-data-access/)
-were reached, and the certificates that the data had been deleted were
-false. The price was a
+were reached, and the certificates Facebook took in 2015 that the data had
+been deleted were false. In March 2018 a former employee, Christopher
+Wylie, took the story to
+[the Observer](https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election)
+and the New York Times. The price was a
 [500,000 pound fine](http://web.archive.org/web/20181026185635/https://ico.org.uk/about-the-ico/news-and-events/news-and-blogs/2018/10/facebook-issued-with-maximum-500-000-fine/)
 in the UK, the legal maximum, a
 [5 billion dollar FTC penalty](https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook)
-on Facebook in 2019, and the chief executive before Congress. Three more
-cases where data was used beyond what was agreed: blood given by the
+on Facebook in 2019, the chief executive before Congress, and the firm
+itself, which closed within two months of the story. Three more cases
+where data was used beyond what was agreed: blood given by the
 [Havasupai](https://embryo.asu.edu/pages/havasupai-tribe-v-arizona-board-regents-2008)
 for diabetes research was used for studies of schizophrenia, migration and
 inbreeding; a London hospital trust gave Google DeepMind 1.6 million

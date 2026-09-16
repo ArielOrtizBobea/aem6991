@@ -22,7 +22,7 @@
 <tr><td>Wed Sep 16</td>
   <td class="topic"><a href="sessions/04-ethics.html">4 · Ethics and access</a>
     <span class="t-desc">Three topics. Human subjects and the IRB: where the rules come from, when they apply, and the branch of Cornell's decision tree your project sits on, because many projects in this room involve no people at all. Ethical research practices: fabrication, falsification and plagiarism, the p-hacking and selective reporting that fall short of them, and how every case was caught. Data-use agreements and licences: the contracts the university signs, the licences on data Cornell already holds, and the terms of service you accepted by clicking.</span></td>
-  <td class="hw">CITI human-participants training — certificate on Canvas before meeting 6 (September 30)</td></tr>
+  <td class="hw">CITI human-participants training, for teams whose project involves human participants — certificate on Canvas before meeting 6 (September 30)</td></tr>
 <tr class="g-last g02"><td>Wed Sep 23<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/05-tools-and-ai.html">5 · Coding tools and AI</a>
     <span class="t-desc">Every serious analysis is code, whether or not you wrote it. "Use AI" is four different things and they fail differently — only one of them produces output you can check. Then the practical business of getting a file at all: what Cornell already pays for, what an API is, and why scraping is the last resort dressed up as the clever one.</span></td>

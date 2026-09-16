@@ -125,7 +125,7 @@ the lettered envelopes before class.</p>
     <span class="lbl">Members</span>
     <table class="tab">
       <colgroup><col style="width:40%"><col style="width:36%"><col style="width:24%"></colgroup>
-      <tr><th>Name</th><th>Touches the data</th><th>CITI done</th></tr>
+      <tr><th>Name</th><th>Touches the data</th><th>CITI done (if question 1 is yes)</th></tr>
       <tr><td></td><td class="box"><span></span>yes <span></span>no</td><td class="box"><span></span>yes <span></span>not yet</td></tr>
       <tr><td></td><td class="box"><span></span>yes <span></span>no</td><td class="box"><span></span>yes <span></span>not yet</td></tr>
       <tr><td></td><td class="box"><span></span>yes <span></span>no</td><td class="box"><span></span>yes <span></span>not yet</td></tr>
@@ -146,7 +146,7 @@ the lettered envelopes before class.</p>
     <div class="sig"><span>Signed</span><span class="grow"></span></div>
   </div>
 
-  <p class="footnote">This is a statement, not a worksheet, which is why every member signs it. Into the envelope before you leave. Homework for everyone: CITI human-participants training, certificate on Canvas before meeting 6, Wednesday September 30.</p>
+  <p class="footnote">This is a statement, not a worksheet, which is why every member signs it. Into the envelope before you leave. If question 1 is yes or ask: every member's CITI human-participants training certificate on Canvas before meeting 6, Wednesday September 30.</p>
 
 </div>
 </div>

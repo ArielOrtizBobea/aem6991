@@ -204,7 +204,7 @@ You start with full marks and lose them. What costs points:
 | | |
 |:---|:---|
 | Research interest survey not submitted, or late | −5 |
-| CITI human-participants training certificate not on Canvas by September 30 | −5 |
+| CITI human-participants training certificate not on Canvas by September 30, for a project with human participants | −5 |
 | Session-B check-in not filed | −2 each |
 | Peer evaluation not submitted on time | −3 each |
 | Arriving late, or leaving at the break | −2 each |

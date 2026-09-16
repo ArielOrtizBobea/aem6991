@@ -80,7 +80,7 @@ Office Building.
 with step-by-step guidance at
 [guide.rass.cornell.edu](https://guide.rass.cornell.edu).
 
-**Training comes first, and it applies to everyone.** Every person
+**Training comes first.** Every person
 listed on a protocol must complete
 [**CITI Program**](https://researchservices.cornell.edu/training/citi-online-courses-cornell-researchers-coi-irb-rcr-export-control)
 human-participants training. That includes **exempt** protocols, a
@@ -89,14 +89,19 @@ requirement since October 2022. It lasts five years.
 **The IRB issues nothing until every listed person has finished.** One
 teammate who skipped the modules holds up the whole team.
 
-The CITI modules are **required of everyone in this course**, whether or
-not your project needs the IRB. Register at
+The CITI modules are **required of every member of a team whose project
+involves human participants**, and session B of
+[meeting 4](sessions/04-ethics.qmd) is where each team decides whether
+that is you. Register at
 [citiprogram.org](https://www.citiprogram.org) under the Cornell
 affiliation, take the course Cornell accepts (it is called IRB Training or
 IRB Basic), and upload the completion certificate to Canvas before
 meeting 6, **Wednesday September 30**. Not there by then costs five
-participation points. The modules take two to four hours and they remove
-the most common cause of delay.
+participation points. The modules take two to four hours. If your project
+has no human participants you owe nothing now; if the plan changes later,
+do the modules that week, before the protocol is drafted. The credential
+lasts five years and is worth having for the research most of you will run
+inside a firm.
 
 **Three levels of review:**
 
@@ -122,7 +127,7 @@ that anything needing an ancillary review takes longer.
 
 | When | What |
 |:--|:--|
-| **By September 30 (meeting 6)** | Everyone completes CITI training and uploads the certificate to Canvas. Required and graded |
+| **By September 30 (meeting 6)** | Teams with human participants complete CITI training and upload the certificate to Canvas. Required and graded for them |
 | **Meeting 9–10 (late Oct)** | You know whether your design needs human participants |
 | **Late Oct / early Nov** | Draft the protocol: instrument, consent language, recruitment, data handling |
 | **November** | Submit through RASS-IRB |

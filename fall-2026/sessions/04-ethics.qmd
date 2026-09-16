@@ -62,7 +62,7 @@ until every person on a protocol has finished.
 
 ## Due
 
-In session B, your project's ethics-and-access checklist, signed by every
+In session B, your project's IRB and DUA checklist, signed by every
 member: does it need an IRB application, and does any data source need a
 data-use agreement. If the answer to the first is yes, every member's CITI
 human-participants training certificate on Canvas before meeting 6,
@@ -1401,7 +1401,7 @@ injury, disability or death.
 ## Session B · 3:30 to 4:30
 
 Ten minutes of team check-in. Then two questions about the research idea
-you are proposing, answered on the ethics-and-access checklist and signed
+you are proposing, answered on the IRB and DUA checklist and signed
 by every member.
 
 **Does your project need an IRB application?** Yes, no, or ask the office,
@@ -1431,7 +1431,7 @@ until the plan changes.
 
 ## Handouts
 
-[Ethics-and-access checklist](../handouts/ethics-checklist.qmd). The two
+[IRB and DUA checklist](../handouts/ethics-checklist.qmd). The two
 questions, answered for your own project and signed this afternoon.
 
 [Team check-in sheet](../handouts/check-in.qmd). One sheet per team, every

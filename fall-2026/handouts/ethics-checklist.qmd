@@ -1,6 +1,6 @@
 ---
-title: "Ethics-and-access checklist"
-pagetitle: "AEM 6991 · Ethics-and-access checklist"
+title: "IRB and DUA checklist"
+pagetitle: "AEM 6991 · IRB and DUA checklist"
 sidebar: false
 toc: false
 page-layout: full
@@ -88,7 +88,7 @@ the lettered envelopes before class.</p>
 <div class="sheet">
 
   <div class="sheethead">
-    <h2>Ethics-and-access checklist</h2>
+    <h2>IRB and DUA checklist</h2>
     <div class="id">Team <span class="fill w08"></span> &nbsp; Date <span class="fill w16"></span></div>
   </div>
 

@@ -841,7 +841,7 @@ them will look better.
 ::: {.column width="40%"}
 ![](figures/cambridge-analytica-protest-2018.jpg){fig-align="center" width="100%"}
 
-[Parliament Square, London, March 29, 2018. Photo John Lubbock, CC BY-SA 4.0.]{style="font-size:0.5em; color:#6b6b6b"}
+[Christopher Wylie at the protest in Parliament Square, London, March 29, 2018. Photo John Lubbock, CC BY-SA 4.0.]{style="font-size:0.5em; color:#6b6b6b"}
 :::
 ::::
 
@@ -1382,7 +1382,7 @@ injury, disability or death.
 - The Doctors' Trial dock, Nuremberg, 1946 to 1947: US Army photograph via USHMM, [public domain](https://commons.wikimedia.org/wiki/File:Doctors'_trial,_Nuremberg,_1946%E2%80%931947.jpg).
 - A doctor draws blood from a Tuskegee participant: National Archives, undated, [public domain](https://commons.wikimedia.org/wiki/File:Tuskegee-syphilis-study_doctor-injecting-subject.jpg).
 - PNAS's [Editorial Expression of Concern](https://doi.org/10.1073/pnas.1412469111) of July 22, 2014: a page of the journal, reproduced for teaching.
-- Parliament Square protest, March 29, 2018: John Lubbock, [CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Cambridge_Analytica_protest_Parliament_Square6.jpg).
+- Christopher Wylie at the Parliament Square protest, March 29, 2018: John Lubbock, [CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Cambridge_Analytica_protest_Parliament_Square6.jpg).
 - The first page of the [sanctions order](https://www.courtlistener.com/docket/63107798/mata-v-avianca-inc/) in Mata v. Avianca, June 22, 2023: a public court record.
 - Cornell's IRB decision trees are reproduced from the IRB office's [public document](https://researchservices.cornell.edu/sites/default/files/2019-05/IRB%20Decision%20Tree.pdf), for a Cornell course.
 

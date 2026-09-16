@@ -553,10 +553,12 @@ Two minutes. Lead the section with the cleanest case: he made up the
 numbers, and the people who caught him were the most junior people in the
 building.
 
-The chart is publications per year from OpenAlex, with the year the case
-broke marked. It is the shape of every case in this section: a career that
-stops. Google Scholar keeps counting citations to retracted papers, which is
-why the deck shows output rather than citations.
+The chart is journal articles per year from OpenAlex, with the year the
+case broke marked, and it excludes preprints, datasets and the
+conference-meeting abstracts that journals print in supplements. It is the
+shape of every case in this section: a career that stops. Google Scholar
+keeps counting citations to retracted papers, which is why the deck shows
+output rather than citations.
 :::
 
 ## Three words cover research misconduct
@@ -1244,9 +1246,9 @@ papers came out of it, and a misconduct finding.
 
 The table below has every case with its sources. The pattern is the
 lesson: caught by outsiders and juniors, from the data file or the reported
-numbers, after publication, and the price was usually the job. Publications
-per year from OpenAlex are on the Stapel, Gino and Wansink slides, with the
-year each case broke marked. And the one that is live in this room: two New
+numbers, after publication, and the price was usually the job. Journal
+articles per year from OpenAlex are on the Stapel, Gino and Wansink slides,
+with the year each case broke marked. And the one that is live in this room: two New
 York lawyers were sanctioned in 2023 for filing six cases an AI assistant
 had invented, and the judge said the tool was not the problem. The third
 question for the room is whether reporting one specification out of three
@@ -1325,11 +1327,14 @@ because a column you did not need is a risk you did not need.
 | Gino, 2023 | Altered rows in four papers | The same bloggers read the metadata inside an Excel file | Harvard revoked her tenure in 2025, and her defamation claims were dismissed in 2024 | [Data Colada 109](https://datacolada.org/109); [The Harvard Crimson, September 12, 2024](https://www.thecrimson.com/article/2024/9/12/judge-dismisses-gino-lawsuit-defamation-charges/); [Inside Higher Ed, May 27, 2025](https://www.insidehighered.com/news/quick-takes/2025/05/27/harvard-revokes-tenure-embattled-dishonesty-researcher) |
 | Mata v. Avianca, 2023 | Six invented cases in a court filing | Opposing counsel could not find them | A 5,000 dollar sanction and letters to every judge named | [The sanctions order](https://caselaw.findlaw.com/court/us-dis-crt-sd-new-yor/2335142.html) |
 
-The charts on the case slides show publications per year from
-[OpenAlex](https://openalex.org), fetched September 15, 2026, with the year
-each case broke marked. Output is shown rather than citations because
-citation counts keep rising after a retraction, and it is the career that
-stops. The honesty-pledge paper carries no chart, because a chart titled
+The charts on the case slides show journal articles per year from
+[OpenAlex](https://openalex.org), fetched September 16, 2026, with the year
+each case broke marked. The count excludes preprints, dataset records and
+the conference-meeting abstracts that journals such as The FASEB Journal
+print in supplements; counting every OpenAlex work would credit Wansink
+with 119 "publications" in 2014, of which 37 were journal articles. Output
+is shown rather than citations because citation counts keep rising after a
+retraction, and it is the career that stops. The honesty-pledge paper carries no chart, because a chart titled
 with an author's name would attribute a fabrication that has not been
 established. The script and data snapshot are kept with the course tooling.
 

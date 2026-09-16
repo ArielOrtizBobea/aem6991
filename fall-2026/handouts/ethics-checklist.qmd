@@ -1,5 +1,5 @@
 ---
-title: "Ethics-and-access checklist and cards"
+title: "Ethics-and-access checklist"
 pagetitle: "AEM 6991 · Ethics-and-access checklist"
 sidebar: false
 toc: false
@@ -80,10 +80,9 @@ table.tab td.pre { color: #333; }
 }
 </style>
 
-<p class="print-note">Print this page. Two sheets per team, cut apart. Page 1
-is the checklist, filled and signed in session B of meeting&nbsp;4 and handed
-in. Page 2 carries the shared card and six practice cards. Nine copies of each
-plus three spares, in the lettered envelopes before class.</p>
+<p class="print-note">Print this page. One sheet per team, filled and signed in
+session B of meeting&nbsp;4 and handed in. Nine copies plus three spares, in
+the lettered envelopes before class.</p>
 
 <div class="sheetwrap">
 <div class="sheet">
@@ -93,7 +92,7 @@ plus three spares, in the lettered envelopes before class.</p>
     <div class="id">Team <span class="fill w08"></span> &nbsp; Date <span class="fill w16"></span></div>
   </div>
 
-  <p class="topline">A team that trips nothing writes "none" in every gate row and signs. That is a complete sheet.</p>
+  <p class="topline">Two questions about the research idea you are proposing. A team that needs neither ticks "no" twice, says why, and signs. That is a complete sheet.</p>
 
   <div class="block">
     <span class="lbl">The question, in one line</span>
@@ -101,65 +100,42 @@ plus three spares, in the lettered envelopes before class.</p>
   </div>
 
   <div class="block">
-    <span class="lbl">1 · Human participants</span>
-    <span class="hint">Yes or no, and the branch of Cornell's tree that says so: no people and no identifiable rows · existing data you cannot link · results stay with one organisation · yes, because you interact with people or hold identifiable rows and the results leave the course.</span>
+    <span class="lbl">1 · Does the project need an IRB application?</span>
+    <span class="hint">Tick one, then the branch of Cornell's decision tree that says so: no people and no identifiable rows · existing data you cannot link to a living person · results stay with one organisation · yes, because you interact with people or hold identifiable rows and the results leave the course.</span>
+    <p class="box" style="margin:0 0 0.04in"><span></span>no <span></span>yes <span></span>ask irbhp@cornell.edu</p>
     <div class="rules"><span></span><span></span></div>
+    <p class="box" style="margin:0.04in 0 0">If yes, the level you expect: <span></span>exempt <span></span>expedited <span></span>full board &nbsp;·&nbsp; and the draft goes to the advisor by <span class="fill w16"></span></p>
   </div>
 
   <div class="block">
-    <span class="lbl">2 · Every data source</span>
-    <span class="hint">One row each. The rung is now, days, weeks, months, or longer. Tick what the licence or terms permit.</span>
+    <span class="lbl">2 · Does any data source need a data-use agreement?</span>
+    <span class="hint">One row per source. Public means anybody can download it. Licensed means Cornell pays for it and its terms apply (WRDS, Compustat, Dewey, the library databases). Restricted means a firm or an agency holds it and nothing moves until an agreement is signed.</span>
     <table class="tab">
-      <colgroup><col style="width:26%"><col style="width:20%"><col style="width:14%"><col style="width:40%"></colgroup>
-      <tr><th>Source</th><th>Who holds it</th><th>Rung</th><th>Terms permit</th></tr>
-      <tr><td></td><td></td><td></td><td class="box"><span></span>publish <span></span>commercial <span></span>redistribute <span></span>upload</td></tr>
-      <tr><td></td><td></td><td></td><td class="box"><span></span>publish <span></span>commercial <span></span>redistribute <span></span>upload</td></tr>
-      <tr><td></td><td></td><td></td><td class="box"><span></span>publish <span></span>commercial <span></span>redistribute <span></span>upload</td></tr>
+      <colgroup><col style="width:28%"><col style="width:22%"><col style="width:26%"><col style="width:24%"></colgroup>
+      <tr><th>Source</th><th>Who holds it</th><th>Access</th><th>Agreement needed</th></tr>
+      <tr><td></td><td></td><td class="box"><span></span>public <span></span>licensed <span></span>restricted</td><td class="box"><span></span>no <span></span>yes <span></span>ask OSP</td></tr>
+      <tr><td></td><td></td><td class="box"><span></span>public <span></span>licensed <span></span>restricted</td><td class="box"><span></span>no <span></span>yes <span></span>ask OSP</td></tr>
+      <tr><td></td><td></td><td class="box"><span></span>public <span></span>licensed <span></span>restricted</td><td class="box"><span></span>no <span></span>yes <span></span>ask OSP</td></tr>
+      <tr><td></td><td></td><td class="box"><span></span>public <span></span>licensed <span></span>restricted</td><td class="box"><span></span>no <span></span>yes <span></span>ask OSP</td></tr>
     </table>
+    <p class="box" style="margin:0.05in 0 0">For every licensed source, we have read the terms: <span></span>yes <span></span>not yet &nbsp;·&nbsp; For every restricted source, plan B is: <span class="fill" style="width:2.6in"></span></p>
   </div>
 
   <div class="block">
-    <span class="lbl">3 · Identifiable fields</span>
-    <span class="hint">Which columns, what you do about them (drop, coarsen, aggregate), and where the file will live, with Cornell's level: low, moderate or high risk.</span>
-    <div class="rules"><span></span><span></span></div>
-  </div>
-
-  <div class="block">
-    <span class="lbl">4 · Conflicts</span>
-    <span class="hint">An employer, a sponsor, an NDA. One line each. Then the box.</span>
-    <div class="rules"><span></span></div>
-    <p class="box" style="margin:0.03in 0 0">Can the result be shown in this room in December? <span></span>yes <span></span>no <span></span>not yet asked</p>
-  </div>
-
-  <div class="block">
-    <span class="lbl">5 · Who does what</span>
+    <span class="lbl">Members</span>
     <table class="tab">
-      <colgroup><col style="width:30%"><col style="width:46%"><col style="width:24%"></colgroup>
-      <tr><th>Name</th><th>Touches the data, files what</th><th>CITI done</th></tr>
-      <tr><td></td><td></td><td class="box"><span></span>yes <span></span>not yet</td></tr>
-      <tr><td></td><td></td><td class="box"><span></span>yes <span></span>not yet</td></tr>
-      <tr><td></td><td></td><td class="box"><span></span>yes <span></span>not yet</td></tr>
-      <tr><td></td><td></td><td class="box"><span></span>yes <span></span>not yet</td></tr>
-      <tr><td></td><td></td><td class="box"><span></span>yes <span></span>not yet</td></tr>
-    </table>
-  </div>
-
-  <div class="block">
-    <span class="lbl">6 · The gates</span>
-    <table class="tab">
-      <colgroup><col style="width:22%"><col style="width:15%"><col style="width:21%"><col style="width:19%"><col style="width:23%"></colgroup>
-      <tr><th>Gate</th><th>Trips it</th><th>Who signs</th><th>Starts by</th><th>Plan B</th></tr>
-      <tr><td class="pre">The IRB</td><td class="box"><span></span>yes <span></span>no</td><td></td><td></td><td></td></tr>
-      <tr><td class="pre">A data-use agreement</td><td class="box"><span></span>yes <span></span>no</td><td></td><td></td><td></td></tr>
-      <tr><td class="pre">Terms of service or a licence</td><td class="box"><span></span>yes <span></span>no</td><td></td><td></td><td></td></tr>
-      <tr><td class="pre">A conflict or an NDA</td><td class="box"><span></span>yes <span></span>no</td><td></td><td></td><td></td></tr>
-      <tr><td class="pre">Integrity</td><td class="box"><span></span>yes <span></span>no</td><td></td><td></td><td></td></tr>
+      <colgroup><col style="width:40%"><col style="width:36%"><col style="width:24%"></colgroup>
+      <tr><th>Name</th><th>Touches the data</th><th>CITI done</th></tr>
+      <tr><td></td><td class="box"><span></span>yes <span></span>no</td><td class="box"><span></span>yes <span></span>not yet</td></tr>
+      <tr><td></td><td class="box"><span></span>yes <span></span>no</td><td class="box"><span></span>yes <span></span>not yet</td></tr>
+      <tr><td></td><td class="box"><span></span>yes <span></span>no</td><td class="box"><span></span>yes <span></span>not yet</td></tr>
+      <tr><td></td><td class="box"><span></span>yes <span></span>no</td><td class="box"><span></span>yes <span></span>not yet</td></tr>
+      <tr><td></td><td class="box"><span></span>yes <span></span>no</td><td class="box"><span></span>yes <span></span>not yet</td></tr>
     </table>
   </div>
 
   <div class="bottom">
     <p>The slowest gate is <span class="fill w22"></span> and it has to start by <span class="fill w16"></span>.</p>
-    <p>If it does not clear, the project becomes <span class="fill" style="width:4.6in"></span>.</p>
   </div>
 
   <div class="sign">
@@ -170,74 +146,7 @@ plus three spares, in the lettered envelopes before class.</p>
     <div class="sig"><span>Signed</span><span class="grow"></span></div>
   </div>
 
-  <p class="footnote">This is a statement, not a worksheet, which is why every member signs it. Into the envelope before you leave.</p>
-
-</div>
-</div>
-
-<div class="sheetwrap pagebreak">
-<div class="sheet">
-
-  <div class="sheethead">
-    <h2>The cards</h2>
-    <div class="id">Team <span class="fill w08"></span> &nbsp; Date <span class="fill w16"></span></div>
-  </div>
-
-  <div class="instr">
-    <p><span class="lead">Session B, read once at 3:41.</span> Check in first, nine minutes, one sheet per team, as every week.</p>
-    <p>Then the shared card, in the red box. Three answers on paper, five minutes. Which gate does this trip: the IRB, a data-use agreement, terms of service, a conflict of interest, integrity, or none? What is the earliest date it has to start? And the half that carries the marks: what is the version of this project that is legal, is honest, and is still worth doing? I tell the answer once.</p>
-    <p>Then your own project on the checklist, twelve minutes. Every member signs. Then every team at the front in letter order, two and a half minutes each with a hard stop. One of you reads the gate rows and the two bottom lines. The room names a gate you missed. I rule. A team that trips nothing says so.</p>
-    <p>The six other cards are practice. Their answers appear on the meeting page on Thursday.</p>
-  </div>
-
-  <div class="card shared">
-    <span class="num">Shared card</span>
-    <p class="txt">A team holds a licensed WRDS extract and is about to upload it to a chatbot for cleaning.</p>
-    <p class="q">Gate · earliest start · the honest version</p>
-  </div>
-
-  <div class="card">
-    <span class="num">Card 2</span>
-    <p class="txt">Glassdoor reviews scraped with the usernames attached, to say something about employers in general.</p>
-    <p class="q">Gate · earliest start · the honest version</p>
-  </div>
-
-  <div class="card">
-    <span class="num">Card 3</span>
-    <p class="txt">A teammate's employer offers internal HR records, with a clause letting the firm approve the write-up.</p>
-    <p class="q">Gate · earliest start · the honest version</p>
-  </div>
-
-  <div class="card">
-    <span class="num">Card 4</span>
-    <p class="txt">Interviews with farmers in the Dominican Republic, conducted in Spanish, by a team that has not done CITI.</p>
-    <p class="q">Gate · earliest start · the honest version</p>
-  </div>
-
-  <div class="card">
-    <span class="num">Card 5</span>
-    <p class="txt">A vendor file sold as de-identified that carries ZIP code, birth year and sex on every row.</p>
-    <p class="q">Gate · earliest start · the honest version</p>
-  </div>
-
-  <div class="card">
-    <span class="num">Card 6</span>
-    <p class="txt">A survey of your own classmates about salary expectations and visa status.</p>
-    <p class="q">Gate · earliest start · the honest version</p>
-  </div>
-
-  <div class="card">
-    <span class="num">Card 7</span>
-    <p class="txt">Three specifications run, and only the one that worked reported.</p>
-    <p class="q">Gate · earliest start · the honest version</p>
-  </div>
-
-  <div class="block" style="margin-top:0.10in">
-    <span class="lbl">Shared card · our three answers</span>
-    <div class="rules"><span></span><span></span><span></span><span></span></div>
-  </div>
-
-  <p class="footnote">Into the envelope with the checklist.</p>
+  <p class="footnote">This is a statement, not a worksheet, which is why every member signs it. Into the envelope before you leave. Homework for everyone: CITI human-participants training, certificate on Canvas before meeting 6, Wednesday September 30.</p>
 
 </div>
 </div>

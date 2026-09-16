@@ -655,24 +655,47 @@ own action. Say nothing the sources do not.
 
 ## Detrimental practices that fall short of misconduct
 
-::: {style="font-size:0.78em"}
+::: {style="font-size:0.66em"}
+- The data are real and the search is undisclosed, so the federal definition does not reach them.
+- The line is intent: omit results knowingly so that the record misrepresents the research and it is falsification.
 - **p-hacking**: trying specifications, samples or measures until a result clears the line.
 - **HARKing**: presenting a result found after the fact as the hypothesis you started with.
 - **Selective reporting**: publishing the studies and measures that worked and dropping the rest.
-- **Duplicate publication** and **self-plagiarism**: the same result sold twice.
-- **Image and data manipulation** short of falsification, and **failure to keep the data**.
+- **Undisclosed data cleaning**: dropping outliers or rows without a stated rule, always in the same direction.
+- **Not keeping the data and code**, so nobody can check the result, one of Cornell's four findings against Wansink.
 - **Gift, ghost and coerced authorship**, and leaving out people who earned it.
-- In a 2012 survey of 2,155 psychologists, 46 percent admitted selectively reporting studies that worked and 27 percent admitted HARKing.
-- The National Academies call these detrimental research practices, and say they may cost more than misconduct does.
+- In a 2012 survey of 2,155 psychologists, 46 percent admitted selective reporting and 27 percent admitted HARKing.
+- The National Academies call the family detrimental research practices, and say the damage might surpass misconduct's.
 :::
 
-[John, Loewenstein and Prelec (2012), Psychological Science 23:524 · NASEM (2017), Fostering Integrity in Research](https://www.cmu.edu/dietrich/sds/docs/loewenstein/MeasPrevalQuestTruthTelling.pdf){style="font-size:0.55em; color:#6b6b6b"}
+[NASEM (2017), Fostering Integrity in Research, chapter 4 · John, Loewenstein and Prelec (2012), Psychological Science 23:524 · 42 CFR 93.103](https://www.ncbi.nlm.nih.gov/books/NBK475954/){style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.notes}
-Two minutes. The three words are the crimes. This slide is the
-misdemeanours, and they are far more common. The survey figures are the
-control-group self-admission rates, with no incentive for honesty; the group
-given an incentive to tell the truth admitted more, so these are floors.
+Two and a half minutes. The three words are the crimes. This slide is the
+misdemeanours, and they are far more common.
+
+Why they fall short, in the definition's own terms. A finding of
+misconduct needs a significant departure from accepted practice, done
+intentionally, knowingly or recklessly. These practices leave the data
+intact and the regressions real; what is missing is disclosure of the
+search. And they are common enough to be accepted practice in many fields,
+which defeats the first element, and that is the perverse part. The
+boundary is intent: falsification includes omitting results so that the
+record misrepresents the research, so selective reporting done knowingly
+to mislead is falsification. Cornell's finding against Wansink was
+"misreporting of research data", and that is the slide after next.
+
+The source for the label is the National Academies' 2017 report, chapter
+4, which replaced "questionable research practices" with "detrimental
+research practices" and lists misleading statistical analysis short of
+falsification, failure to retain or share data and code, authorship abuses,
+neglectful supervision and abusive editorial practices. The named practices
+and the survey figures are John, Loewenstein and Prelec: the figures are
+control-group self-admission rates with no incentive for honesty, and the
+group given an incentive admitted more, so these are floors. Duplicate
+publication and self-plagiarism belong on the list too, as journal-policy
+violations rather than federal misconduct, since plagiarism in the
+definition is taking another person's work.
 
 The point for March: none of these requires inventing a number. They only
 require not writing down what you did. And none of them needs a human
@@ -1199,9 +1222,19 @@ Code: AI is permitted and disclosed, and a fabricated citation is still a
 fabrication. Francesca Gino is the falsification case: rows moved between conditions, found from the
 metadata inside an Excel file, and tenure revoked in 2025.
 
-Then the practices the National Academies call detrimental, which fall
-short of misconduct and are far more common: p-hacking, HARKing, selective
-reporting, duplicate publication, gift and ghost authorship. In a
+Then the practices that fall short of misconduct and are far more common:
+p-hacking, HARKing, selective reporting, undisclosed data cleaning, not
+keeping the data and code, and authorship abuses. They fall short because
+nothing is invented or altered: the data are real and the search is
+undisclosed, and a finding of misconduct needs a significant departure from
+accepted practice done intentionally, knowingly or recklessly. The line is
+intent, since falsification includes omitting results so that the record
+misrepresents the research. The National Academies' 2017 report,
+[chapter 4](https://www.ncbi.nlm.nih.gov/books/NBK475954/), names the
+family detrimental research practices in place of the older "questionable
+research practices", lists misleading statistical analysis short of
+falsification and failure to retain or share data and code among them, and
+says the damage might surpass what misconduct causes. In a
 [2012 survey](https://www.cmu.edu/dietrich/sds/docs/loewenstein/MeasPrevalQuestTruthTelling.pdf)
 of 2,155 psychologists, 46 percent admitted selectively reporting studies
 that worked. None of these requires a human participant: a team on firm

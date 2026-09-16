@@ -423,7 +423,7 @@ the rows. It does not ask what the vendor wrote on the invoice.
 
 ::: {style="font-size:0.84em"}
 - ZIP code, birth date and sex together identify 87 percent of Americans uniquely.
-- Latanya Sweeney used them to pull the governor of Massachusetts's records out of a de-identified hospital file.
+- In 1997 a graduate student, Latanya Sweeney, joined a "de-identified" hospital file to the voter roll on those three fields and mailed the governor of Massachusetts his own records.
 - Netflix released anonymised movie ratings and two researchers matched them to named IMDb reviewers.
 - New York released taxi trips with hashed medallion numbers and the hashes were reversed in hours.
 - Direct identifiers are the easy part and quasi-identifiers are the file.
@@ -435,9 +435,13 @@ the rows. It does not ask what the vendor wrote on the invoice.
 Two minutes. Three stories, and each one is a file somebody in this room
 would happily download.
 
-Sweeney, 1997: Massachusetts released hospital discharge records with names
-removed. She bought the Cambridge voter roll, joined on ZIP, birth date and
-sex, and mailed the governor his own records. Netflix, 2006: half a million
+Sweeney, 1997: a computer science graduate student at MIT, now a professor
+at Harvard. Massachusetts released hospital discharge records with names
+removed but ZIP, birth date and sex kept. She bought the Cambridge voter
+roll for twenty dollars, joined on those three fields, and mailed Governor
+Weld his own records. The 87 percent is from her 2000 paper; a later
+re-estimate on 2000 census data put it nearer 63 percent, which changes
+nothing. Netflix, 2006: half a million
 users' ratings, names replaced by numbers, released for a prize; a handful
 of dated ratings matched to public IMDb reviews identified people. New York,
 2014: a year of taxi trips with medallion numbers hashed; the hash was a
@@ -1097,9 +1101,12 @@ private value. Existing data has its own page, and the question it asks is
 whether you can link a row to a living person, directly or through a code,
 not what the vendor calls the file. And removing the names is not
 de-identification:
-[Latanya Sweeney](https://dataprivacylab.org/projects/identifiability/paper1.pdf)
-showed that ZIP code, birth date and sex together identify 87 percent of
-Americans uniquely, Netflix's anonymised ratings were
+in 1997 a graduate student,
+[Latanya Sweeney](https://dataprivacylab.org/projects/identifiability/paper1.pdf),
+joined a "de-identified" hospital file to the voter roll on ZIP code, birth
+date and sex and mailed the governor of Massachusetts his own records, and
+those three fields together identify 87 percent of Americans uniquely;
+Netflix's anonymised ratings were
 [matched to named IMDb reviewers](https://doi.org/10.1109/SP.2008.33), and
 New York's taxi trips with hashed medallion numbers were
 [reversed in hours](https://tech.vijayp.ca/of-taxis-and-rainbows-f6bc289679a1).

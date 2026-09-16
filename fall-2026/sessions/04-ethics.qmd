@@ -1,7 +1,7 @@
 ---
-title: "4 · Ethics and access"
+title: "4 · Ethical and legal obligations"
 subtitle: "Wednesday, September 16, 2026"
-pagetitle: "AEM 6991 · 4 Ethics and access"
+pagetitle: "AEM 6991 · 4 Ethical and legal obligations"
 format:
   html:
     toc: true

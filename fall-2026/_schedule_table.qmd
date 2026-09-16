@@ -20,7 +20,7 @@
     <span class="t-desc">Finding the question is the job, not the preamble to it. Where ideas come from, what makes an answer worth something to somebody, five shapes a project takes, and a map of what your question needs against what your team has. Then you map a shared case, and then your own.</span></td>
   <td class="hw"></td></tr>
 <tr><td>Wed Sep 16</td>
-  <td class="topic"><a href="sessions/04-ethics.html">4 · Ethics and access</a>
+  <td class="topic"><a href="sessions/04-ethics.html">4 · Ethical and legal obligations</a>
     <span class="t-desc">Three topics. Human subjects and the IRB: where the rules come from, when they apply, and the branch of Cornell's decision tree your project sits on, because many projects in this room involve no people at all. Ethical research practices: fabrication, falsification and plagiarism, the p-hacking and selective reporting that fall short of them, and how every case was caught. Data-use agreements and licences: the contracts the university signs, the licences on data Cornell already holds, and the terms of service you accepted by clicking.</span></td>
   <td class="hw">CITI human-participants training, for teams whose project involves human participants — certificate on Canvas before meeting 6 (September 30)</td></tr>
 <tr class="g-last g02"><td>Wed Sep 23<sup class="resched">*</sup></td>

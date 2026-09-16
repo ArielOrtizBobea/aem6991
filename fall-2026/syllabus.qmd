@@ -46,7 +46,7 @@ The course runs in the order the work actually happens.
 | Part | What it does |
 |:---|:---|
 | **Getting started** | Who is in the room, and what everyone is interested in |
-| **Foundations** | Causal language, where questions come from, research ethics and access, and the tools |
+| **Foundations** | Causal language, where questions come from, ethical and legal obligations, and the tools |
 | **Methods & designs** | What models estimate, how estimates fail, and the designs that survive |
 | **Communication** | Writing, figures, and speaking --- each with session B on your own project |
 | **Delivery** | The midterm, and the pitch |

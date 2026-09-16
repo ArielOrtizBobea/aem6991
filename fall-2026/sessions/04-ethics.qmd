@@ -630,7 +630,7 @@ central registry; expunged if not guilty.
 ::: {style="font-size:0.7em"}
 - A Harvard Business School professor whose work on honesty and creativity was among the most cited in the field.
 - In June 2023 three bloggers showed, from metadata inside an Excel file, that rows had been moved between conditions in one study, and raised the same alarm on three more papers.
-- Harvard's investigation found multiple instances of research misconduct, and she was put on unpaid leave and sued for 25 million dollars.
+- Harvard's investigation found multiple instances of research misconduct and put her on unpaid leave, and she sued Harvard and the bloggers for 25 million dollars.
 - The defamation claims were dismissed in 2024, and Harvard revoked her tenure in May 2025, a first in decades.
 :::
 :::

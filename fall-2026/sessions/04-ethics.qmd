@@ -257,7 +257,8 @@ the plan.
 - It measured whether the users' own posts turned more positive or negative, and they did, by about a tenth of a percentage point.
 - Consent, in the paper's words: the Data Use Policy "to which all users agree prior to creating an account on Facebook".
 - Two authors were at Cornell, and Cornell's IRB ruled that they only saw results and were not engaged in human research.
-- PNAS published it in June 2014 and issued an expression of concern in July: Facebook owed nothing to the Common Rule, but consent and the chance to opt out are best practice.
+- PNAS published it in June 2014 and printed an expression of concern in July.
+- The concern: a private company is under no obligation to follow the federal rule, so the paper stands, but the study may have fallen short of informed consent and the chance to opt out.
 - Facebook's answer in October 2014 was an internal review panel and a research website, not an IRB.
 :::
 :::
@@ -281,11 +282,16 @@ The consent was a clause in the data-use policy, and the paper said so.
 
 The reaction came at the end of June, weeks after the paper went online: an
 apology from the Facebook author, and PNAS's expression of concern, which
-is the page on the slide. The journal said a private company was under no
-obligation to follow the Common Rule, and then said it was concerned
-anyway. Cornell said its professor and his graduate student had access only
-to results, so its board never reviewed it. Facebook announced review
-guidelines and a panel that October.
+is the page on the slide. Walk the editor's reasoning in order, because the
+room will hear a contradiction otherwise. The journal's own policy is that
+its papers follow the federal rule, which treats consent and the chance to
+opt out as best practice. Facebook is a private company, so it was under no
+obligation to follow that rule when it collected the data. So the paper
+stands. And the editor nevertheless put on record that the collection may
+not have been consistent with consent and opting out. Cornell said its
+professor and his graduate student had access only to results, so its
+board never reviewed it. Facebook announced review guidelines and a panel
+that October.
 
 Nothing illegal happened. That is why it is here.
 :::

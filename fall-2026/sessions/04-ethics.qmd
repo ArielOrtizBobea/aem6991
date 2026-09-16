@@ -202,15 +202,16 @@ Report names the second one as the failure of justice.
 
 ## The Belmont Report
 
-::: {style="font-size:0.78em"}
+::: {style="font-size:0.72em"}
 - The National Research Act of 1974 created a national commission on research ethics and wrote the Institutional Review Board into law.
-- The commission's Belmont Report of 1979 set out three principles, and each comes with a practice:
+- The commission's Belmont Report of 1979 set out three principles, each with a practice:
   1. **Respect for persons**, applied as informed consent.
   2. **Beneficence**, applied as weighing risks against benefits and minimising harm.
   3. **Justice**, applied as choosing participants fairly, so the burden does not fall on the disadvantaged.
 - The report names Tuskegee as the case where justice failed.
-- An IRB applies the three principles before a study starts, and every university that takes federal research money has one.
-- The principles do not depend on who pays: a firm's survey of its own customers has no board and the same obligations.
+- An IRB applies the three principles before a study starts, and every university taking federal research money has one.
+- No law requires a firm to apply the three principles to research it pays for itself: the federal rule reaches only federally funded or FDA-regulated research.
+- What reaches the firm instead is privacy law, its own contracts, journals and the press, and none of them needs a board to act.
 :::
 
 [The Belmont Report, April 18, 1979 · Public Law 93-348 (1974) · 45 CFR 46.107](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html){style="font-size:0.55em; color:#6b6b6b"}
@@ -231,13 +232,20 @@ funded or federally regulated. So a company's A/B test needs no board, drug
 trials go through one because the FDA will not accept the data otherwise,
 and tech companies built review panels after they were embarrassed.
 
-The last bullet is for the people in this room who will run research
-inside a firm, which is most of them. AOL posted 20 million search queries
-for researchers in 2006; a user was identified by name within days, the
-chief technology officer resigned and two employees were fired. Nobody at
-AOL needed an IRB to lose those jobs. Three habits travel anywhere: ask
-people where you can, collect the minimum, and have somebody with no stake
-read the plan.
+The last two bullets are for the people in this room who will run research
+inside a firm, which is most of them. Be precise: the three principles bind
+a firm ethically, not legally. The Common Rule is a condition of federal
+money, and the only research a company must put through a board whoever
+pays is a drug or device trial, under FDA rules. What constrains a firm's
+research on its own customers is privacy and consumer-protection law (the
+FTC's five billion dollar Facebook penalty, GDPR, the UK regulator in the
+Royal Free case), the contracts it signed, the journals it wants to publish
+in, and the press. AOL posted 20 million search queries for researchers in
+2006; a reporter identified a user by name within days, the chief
+technology officer resigned and two employees were fired. Nobody at AOL
+needed an IRB to lose those jobs. Three habits travel anywhere: ask people
+where you can, collect the minimum, and have somebody with no stake read
+the plan.
 :::
 
 ## The Facebook experiment of 2014
@@ -1040,10 +1048,12 @@ three principles before a study starts. A board has at least five members,
 at least one non-scientist and one person from outside the institution
 ([45 CFR 46.107](https://www.law.cornell.edu/cfr/text/45/46.107)), and the
 federal rule reaches only research that is federally funded or federally
-regulated. So a company's A/B test needs no board, and a firm with no board
-is not a firm with no ethics: the principles do not depend on who pays, and
-the consequences arrive without a board, as they did for
-[AOL in 2006](https://www.nbcnews.com/id/wbna14231664).
+regulated. So no law requires a company to apply the three principles to research it
+pays for itself; only a drug or device trial must go through a board
+whoever pays, under [FDA rules](https://www.law.cornell.edu/cfr/text/21/56.103).
+What reaches the firm instead is privacy and consumer-protection law, its
+own contracts, journals and the press, and none of them needs a board to
+act, as [AOL](https://www.nbcnews.com/id/wbna14231664) learned in 2006.
 
 **The Facebook experiment of 2014.** For one week in January 2012, Facebook
 changed the News Feeds of 689,003 users and measured whether their own posts

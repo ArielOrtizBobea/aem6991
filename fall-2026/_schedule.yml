@@ -18,7 +18,7 @@
 #   desc      one-to-two sentence description for the front-door table
 #   goal      what a student can DO after this meeting. One sentence,
 #             written as a capability, not a topic list.
-#   a         session A (2:05–3:15) — concept, with worked examples
+#   a         session A (2:00–3:15) — concept, with worked examples
 #   b         session B (3:30–4:30). THE RULE, in two halves:
 #             (1) TEST what session A taught, on a shared case — everyone
 #                 works the same object, so teams can be compared and
@@ -223,7 +223,7 @@ meetings:
     title: "Using AI in research"
     desc: "How these tools work, and why they guess. Then the three places AI enters a research project: the literature, the writing, and the code. For each, what the tool does well, how it fails, and the check that catches it."
     goal: "Find the papers around your question, starting from a few anchor papers, and open every reference you cite. Write your own outline and framing, and use a tool only to audit them. Interrogate a file you did not create, and name the check that would catch each fault."
-    a: "Six parts. How these tools work: a model predicts the next token, sees only its context window, and guesses when it does not know. The three ways to reach one, chat, Cowork and Claude Code, and the record git keeps of what a tool changed. Then one part for each place AI enters a project. The literature: references from memory are often wrong, so start from a few anchor papers, follow their citations, treat anything the model suggests as a lead, and open every paper you cite. The writing: you write the outline, the framing and the paragraphs, and the tool audits them. Numbers come from your table. The code, as four habits drawn from AEM 6850: plan the analysis and work in small steps, commit before each task, explore the data before analysing it, and build checks into every step. The worst errors raise no warning, so every file gets the five checks. Last, what may go into these tools and what you write down about what you used."
+    a: "Six parts. How these tools work: a model predicts the next token, sees only its context window, and guesses when it does not know. The three ways to reach one, chat, Cowork and Claude Code, what may go into them, and the record git keeps of what a tool changed. Then one part for each place AI enters a project. The literature: references from memory are often wrong, so start from a few anchor papers, follow their citations, treat anything the model suggests as a lead, and open every paper you cite. The writing: you write the outline, the framing and the paragraphs, and the tool audits them. Numbers come from your table. The code, as four habits drawn from AEM 6850: plan the analysis and work in small steps, commit before each task, explore the data before analysing it, and build checks into every step. The worst errors raise no warning, so every file gets the five checks. Last, disclosure: why it is required, and what you write down about what you used."
     b: "A live demo of how to use AI to get a research project started."
     builds: "Your candidate dataset interrogated — or, if you do not hold one yet, the named access route and plan B for getting it"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 7 on secondary data collection."

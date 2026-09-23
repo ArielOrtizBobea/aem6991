@@ -466,7 +466,7 @@ is the sentence.
 
 :::: {.content-hidden when-format="revealjs"}
 
-## Session A · 2:05 to 3:15
+## Session A · 2:00 to 3:15
 
 The hour has three parts. First, what makes an idea good, which is four
 tests. Second, the shapes a project can take. Third, where ideas come from.

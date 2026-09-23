@@ -1060,7 +1060,7 @@ The slide behind you said one.
 
 :::: {.content-hidden when-format="revealjs"}
 
-## Session A · 2:05–3:15
+## Session A · 2:00–3:15
 
 The whole hour answers one question: **compared to what?** Four blocks
 answer a piece of it.

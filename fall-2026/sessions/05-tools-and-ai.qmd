@@ -82,7 +82,7 @@ draft. Do not preview the risks; they arrive in their own blocks.
 3. AI for literature reviews
 4. AI for writing
 5. AI for coding
-6. Checks and disclosure
+6. Disclosure
 
 ::: {.notes}
 Thirty seconds. Read the six and give the shape: two short sections on what
@@ -188,58 +188,29 @@ to tell.
 VERIFY: arXiv 2509.04664, abstract, quotation exact.
 :::
 
-## Some guesses are cheap to check
-
-::: {style="font-size:1em"}
-- Each section has its own check, because checking costs differ.
-- **A reference**: leave the conversation and open the paper.
-- **A sentence**: compare it with your own table.
-- **A number**: rerun the code on your own file.
-- **How would you know it was wrong?**
-:::
-
-::: {.notes}
-Ninety seconds, and it is the slide the hour hangs on.
-
-Do not say that some failures announce themselves and others do not, because
-that is false and the coding block spends ten minutes refuting it. The
-asymmetry is the cost of checking, not whether anything errors. A wrong
-number and a wrong citation are both silent. One of them can be checked in
-ten seconds against a file you already hold, and the other needs a database
-and a browser tab.
-
-The bolded question is the thing they should carry out of the room. It comes
-back at the end of every block in that block's own terms, so say it once
-here and do not labour it.
-:::
-
 # 2. Different AI tool modalities
 
 ::: {.notes}
 Thirty seconds. Say what the section covers: the three ways you reach the
-same model, what changes as the tool gets more access to your work, and the
-record you keep of what it did.
+same model, what changes as the tool gets more access to your work, what
+you may put into it, and the record you keep of what it did.
 :::
 
 ## Three ways to reach the same model
 
-::: {style="font-size:0.8em"}
-- **Chat** (claude.ai)
-  - Sees only what you paste or attach.
-  - Cannot run your code or touch your machine.
-  - With *Code execution* on, runs its own Python on an attached file, on Anthropic's servers.
-- **Cowork** (desktop app, Pro plan)
-  - Reads and edits the files in a folder you connect.
-  - In Manual mode, asks before each change.
-- **Claude Code** (terminal)
-  - Edits files and runs commands on your machine, asking first by default.
-  - Not needed for this course.
+::: {style="font-size:0.7em"}
+|  | What it can do | A good use |
+|:----|:----------|:--------|
+| **Chat**<br>claude.ai | Sees only what you paste or attach.<br>Cannot run your code or touch your machine.<br>With *Code execution* on, runs its own Python on an attached file, on Anthropic's servers. | "*What are the top journals in environmental economics?*"<br><br>"*Is this idea a good fit for JAERE, JEEM or AJAE?*" |
+| **Cowork**<br>desktop app, Pro plan | Reads and edits the files in a folder you connect.<br>In Manual mode, asks before each change.<br>Can write code, but runs it only in its own sandbox. Not built for coding. | "*Here are some PDFs. Search them for tables, to see if this is worth exploring as a project.*" |
+| **Claude Code**<br>terminal | The most powerful modality.<br>Edits files and runs commands on your machine, asking first by default. | Setting up a full research project that is reproducible, with every change to the code and the paper tracked. |
 :::
 
 ::: {.notes}
-Two minutes. Same model underneath all three, which is the part students get
-wrong: they think the terminal one is smarter. It is not. It has more
-access, and last section gave them the word for the difference.
+Two minutes. Same model underneath all three. What differs is access: what
+the tool can see and what it can do. Claude Code is the most powerful
+because it can do the most on your machine. The model inside it is no
+smarter, which is the part students get wrong.
 
 Chat is what most of them will use, so spend most of the time there, and
 be exact about code. Chat cannot run your script or touch your machine. With
@@ -248,17 +219,24 @@ be exact about code. Chat cannot run your script or touch your machine. With
 Enterprise), it runs its own Python on an attached file in a sandbox on
 Anthropic's servers. ChatGPT does the same by default. The number that comes
 back is not a result you can rerun, which is why the coding section asks for
-the code. Cowork needs the desktop app and a Pro plan; in Manual mode it
-asks before each change, so leave it there. Cowork
-is the step up that matters for a team project. Claude Code is for the two
-or three people in the room who will want it, and so that nobody thinks the
-course is hiding a better tool.
+the code. Its good uses are questions about the field whose answers you can
+judge yourself, such as which journals publish this work and whether an idea
+fits one.
 
-Say the register clearly: nobody here needs to install anything to do this
-week's work.
+Cowork needs the desktop app and a Pro plan; in Manual mode it asks before
+each change, so leave it there. Anthropic's help centre says it runs code in
+an isolated virtual machine that sees only the folder you connect, so it
+cannot run your analysis in your own setup. It is good at work on a pile of
+documents: go through a folder of PDFs, pull out the tables, and say whether
+a project is worth pursuing.
+
+Claude Code works in your own folders with your own software. Its good use
+is the whole research project, set up so that it is reproducible, with
+every change to the code and the paper tracked in git. Git comes two slides
+on.
 :::
 
-## More access means more to check
+## More access means more risk
 
 ::: {style="font-size:1em"}
 - Chat cannot change your files. You copy out what you use.
@@ -275,7 +253,35 @@ The copy-out step in chat is a real safety feature. You are the thing that
 moves the output into your work, so you see it once on the way past. Point a
 tool at a folder and that step is gone.
 
-The last bullet sets up the next slide, so do not explain it here.
+The last bullet sets up the git slide after next, so do not explain it here.
+:::
+
+## What you may put into these tools
+
+::: {style="font-size:0.9em"}
+- Nothing at moderate risk or above in a public AI tool. Licensed data counts.
+- If you cannot upload your file, write the code on an invented sample with the same columns, then run it yourself.
+- ChatGPT free: three file uploads a day.
+- Claude: switch on *Code execution and file creation* under Settings → Capabilities.
+- Cornell: "*You are accountable for your work, regardless of the tools you use to produce it.*"
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+[IT@Cornell, AI guidelines](https://it.cornell.edu/ai/ai-guidelines) · [Claude Help Center, code execution](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude)
+:::
+
+::: {.notes}
+Ninety seconds. One line of callback to meeting 4 and no more; they have had
+the full treatment.
+
+The second bullet is a commitment I made to this room last week. Two or
+three teams will have data they may not upload. The invented-sample route is
+how they work with it: the tool sees the column names and made-up rows, and
+the real file stays on their laptop.
+
+The Claude settings path was checked against Anthropic's help page, dated
+6 August 2026. VERIFY ON THE MORNING: ChatGPT's free-tier upload limit
+changes often; re-read OpenAI's File Uploads FAQ before the meeting.
 :::
 
 ## A record of what changed
@@ -316,25 +322,35 @@ a proposal is for, what these tools do well in a search, the ways a
 reference list goes wrong, and the check.
 :::
 
-## What your literature section has to do
+## Why review the literature?
 
 ::: {style="font-size:1em"}
-- Set your question against the two or three closest papers.
-- Show that your question has not been answered.
-- A reader asks one thing: what is new here?
+- Your proposal has to say why the study is new and why it matters.
+- Saying that clearly is **framing**.
+- You can only frame a question well if you know the literature.
+- The review explains and justifies the existence of your study.
 - A tool cannot tell you what it failed to find.
 :::
 
 ::: {.notes}
 One minute, and it is the argument the rest of the block rests on.
 
-Say why this matters. The commonest way an MPS proposal fails on this
-section is a claim of novelty that a reader can puncture in thirty seconds,
-because they know the paper you missed.
+Put the title to the room and take one answer in the chat. The answer to
+land on: a proposal has to say why the study is new and why it matters, and
+saying that clearly is framing. You cannot say what is new without knowing
+what exists, so the literature is what the framing is built from. A review
+written for its own sake, one summary per paper, does none of that work,
+and it is what most first drafts look like. Framing gets its own slide at
+the end of the block; here it only needs a name.
 
-Bullet four is the one to say slowly. A tool reports what it found. Nothing
-in the answer tells you the size of what it did not find, and there is no
-prompt that fixes that. Every slide after this is a version of that point.
+The commonest way an MPS proposal fails on this section is a claim of
+novelty that a reader can puncture in thirty seconds, because they know the
+paper you missed.
+
+The last bullet is the one to say slowly. A tool reports what it found.
+Nothing in the answer tells you the size of what it did not find, and there
+is no prompt that fixes that. Every slide after this is a version of that
+point.
 :::
 
 ## References from memory are often wrong
@@ -569,42 +585,6 @@ the field's own index and Cornell subscribes to it through the library;
 none of the AI tools lists it as a source.
 :::
 
-## Give it the papers and ask for quotes
-
-::: {style="font-size:0.84em"}
-Upload the PDFs you found, then:
-
-> *Using only these papers, find passages that bear on [your question]. Quote each one word for word and number it. If none do, say "No relevant quotes found." Then answer using only those quotes.*
-
-- Find each quote in its PDF.
-- Anthropic: these steps "*significantly reduce hallucinations, they don't eliminate them entirely.*"
-:::
-
-::: {style="font-size:0.55em; color:#6b6b6b"}
-Vendor guidance for Claude models, not a measured study.
-
-[Anthropic, Reduce hallucinations](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations)
-:::
-
-::: {.notes}
-Three minutes. CAPTURE NEEDED: upload three or four PDFs the class knows,
-run the prompt, and put the reply on the slide. Then open one PDF and find a
-quote on screen. Then ask a question the papers cannot answer and show what
-comes back.
-
-Ask the room to predict, before the reply goes up, whether every quote will
-be found in its PDF.
-
-The prompt is Anthropic's own guidance, nearly word for word: extract exact
-quotes first, allow "No relevant quotes found", answer only from the quotes,
-and restrict it to the documents. The thing you check is the quote, not the
-model's sentence. Anthropic says plainly that this reduces invention and
-does not remove it, so the last step is not optional.
-
-This is the same move as the writing section's number check, one section
-early.
-:::
-
 ## Write your own framing
 
 ::: {style="font-size:0.9em"}
@@ -640,7 +620,7 @@ framing differs from each anchor, it is not finished.
 This links back to meeting 3, on finding the question.
 :::
 
-## Open it before you cite it
+## Avoiding hallucinated references
 
 ::: {style="font-size:0.9em"}
 - Paste the DOI after `doi.org/`. *Not found* is a strong warning sign.
@@ -667,8 +647,8 @@ finding, and misattribution is what a reader of your proposal will actually
 catch.
 
 Close on the course rule: every reference in every submission is one you
-have opened. Then say the bolded question for this block. How would you know
-it was wrong? You opened it.
+have opened. Then ask how you would know a reference was wrong. You opened
+it.
 
 VERIFY: the 43 percent and the 24 percent for GPT-4 in Walters and Wilder.
 :::
@@ -930,8 +910,7 @@ without complaint, which is what the coding section is about.
 The last bullet is the one they will skip. Re-prompting hands you a fresh
 paragraph that has not been audited, and the check resets to zero.
 
-Then the bolded question for this block. How would you know it was wrong?
-You found the cell.
+Then ask how you would know a sentence was wrong. You found the cell.
 :::
 
 # 5. AI for coding
@@ -940,6 +919,7 @@ You found the cell.
 Thirty seconds. This section is four habits, distilled from AEM 6850's two
 meetings on AI: plan first and work in small steps, commit before each task,
 explore the data before you analyze it, and build checks into every step.
+Before the third, one slide on how to acquire data.
 :::
 
 ## Plan first and work in small steps
@@ -990,13 +970,41 @@ For teams working only in chat, the same habit is saving each version of a
 script under its own name before you change it.
 :::
 
+## How to acquire data
+
+::: {style="font-size:0.9em"}
+- Download if you can. It is boring and usually fastest.
+- An API: a key, a rate limit, stable fields, a record of your request.
+- Scrape last. Pages change, rows vanish silently, terms often forbid it.
+- Every route has a wait, from days to months. Register now.
+- The full list, with waiting times, is on the data sources page.
+:::
+
+[Where to get data](../data-sources.qmd){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Ninety seconds, and resist reading a catalogue of sources from the front.
+The page does that better and it has the waits attached, which a slide
+cannot.
+
+The one thing worth saying out loud is the timing, and that getting it
+wrong is the commonest way an MPS capstone dies. A library database is
+available now. Dewey takes days. A data-use agreement takes months and may
+fail. A team that discovers in November which row it is in has no project.
+
+For teams with no file yet, the named route, the wait and a plan B are
+worth writing down now. Once the file arrives, the next slide is the first
+thing to do with it.
+:::
+
 ## Explore the data before you analyze it
 
-::: {style="font-size:1em"}
+::: {style="font-size:0.9em"}
 - Spend time with the file before any analysis.
-- What is one row? How many rows are there?
-- What are the units? How is a missing value written?
-- Does every unit appear in every period?
+- What is one row? What are the units? How is a missing value written?
+- Plot it: maps for spatial data, line plots for time series.
+- The plot shows the structure and the patterns in the data.
+- It is also a check. A bad merge shows up as a hole or a jump.
 - You cannot spot a wrong answer about a file you never looked at.
 :::
 
@@ -1005,61 +1013,35 @@ Ninety seconds. These are the questions to ask of any file, including the
 one your team is betting on.
 
 What one row is decides every count they will later quote, and it is the
-question teams get wrong most often. Whether every unit appears in every
-period is the one nobody asks, and it is how a year-on-year comparison ends
-up comparing nine months against twelve.
+question teams get wrong most often.
+
+Then plot it, before any model. Spatial data go on a map, time series on a
+line plot, one line per unit when there are few. The aim is to see the
+structure: which units, which periods, where the data are dense and where
+they are thin. Whether every unit appears in every period is the question
+nobody asks, a plot answers it at a glance, and it is how a year-on-year
+comparison ends up comparing nine months against twelve.
+
+Looking is also the cheapest quality check there is. A merge that dropped a
+state shows up as a hole in the map. A column that switched from thousands
+to units shows up as a cliff in the line. Ask of every plot whether you can
+spot something wrong.
 
 The last bullet is the argument for all of it. Checking needs something to
-check against, and time with the raw file is what gives you that. The next
-slide is how to do it through an assistant.
-:::
-
-## Interrogating a file through an assistant
-
-::: {style="font-size:0.72em"}
-Attach the file, with code execution on. Before any analysis:
-
-> *Do not analyse this file yet. Run code, and show me the code and the output for each of these:*\
-> *1. Rows, columns, and each column's type.*\
-> *2. The first five rows, printed raw.*\
-> *3. Which columns identify a row? Count duplicates.*\
-> *4. Each numeric column: missing values, minimum, maximum, five smallest and five largest.*\
-> *5. Each text column: number of distinct values.*\
-> *6. Row counts by store by month.*\
-> *7. Any code standing in for a missing value.*\
-> *Do not fix or drop anything.*
-
-- The plain question first gives a clean table of wrong totals.
-- This prompt gets the same tool to report the faults.
-:::
-
-::: {.notes}
-Three and a half minutes. CAPTURE NEEDED: run both prompts on a small
-practice extract and put the two replies on the slide. A file with one
-store name spelled two ways works well: a total by store splits that store
-in half.
-
-"Do not fix anything" is in the prompt for a reason. An assistant that
-cleans the file on the way past hides exactly what you are looking for.
-
-"Run code and show me the code" is the other load-bearing phrase, because
-without it the reply can be a plausible set of counts read off the text of
-the file. Point at the code block on screen and say that is the evidence it
-ran.
-
-Ask for a written prediction of the row count before the first reply goes
-up. Then say that the only thing that changed between the two replies is the
-prompt. On Claude, code execution has to be switched on first; ChatGPT runs
-Python on an attached file by default.
+check against, and time with the raw file is what gives you that.
 :::
 
 ## The worst errors raise no warning
 
-::: {style="font-size:1em"}
+::: {style="font-size:0.9em"}
 - Code that fails is easy to fix. Code that runs and is wrong is the danger.
 - The usual shapes: a merge that drops or duplicates rows, missing values handled silently, a unit mismatch.
-- Reinhart and Rogoff (AER P&P, 2010): a formula left out 5 of 20 countries.
-- Public Health England: **15,841** positive tests missing for a week, with no error.
+- **Reinhart and Rogoff (AER P&P, 2010)**
+  - Reported slower growth once public debt passes 90% of GDP.
+  - A spreadsheet formula left out 5 of their 20 countries.
+- **Public Health England (October 2020)**
+  - Moved COVID-19 test results through an old Excel format capped at 65,536 rows.
+  - **15,841** positive cases went unreported for a week, with no error.
 :::
 
 ::: {style="font-size:0.55em; color:#6b6b6b"}
@@ -1070,7 +1052,9 @@ Python on an attached file by default.
 Two minutes. The first two bullets are AEM 6850's: the danger is code that
 runs.
 
-Reinhart and Rogoff: corrected, the headline growth figure for high-debt
+Reinhart and Rogoff's 90 percent threshold was quoted by policymakers
+arguing for austerity after 2010, which is why the error mattered.
+Corrected, the headline growth figure for high-debt
 countries went from minus 0.1 percent to 2.2 percent. Be fair about it: the
 spreadsheet error was only 0.3 points of that gap, and undisclosed choices
 about years and weights made the rest (Herndon, Ash and Pollin). Public
@@ -1125,21 +1109,20 @@ reading you already did.
 ::: {style="font-size:0.9em"}
 1. **Row counts across a join.** More rows: a duplicate key. Fewer: dropped rows.
 2. **Totals against a published figure.**
-3. **Five raw records**, read by eye.
+3. **Check a few raw records** by eye.
 4. **Orders of magnitude.** Is it 58 or 58,000?
-5. **The same number, a second way.**
-
-- Check 5 has a blind spot: two routes over the same bad file can agree.
+5. **Obtain the same result using an independent route.**
 :::
 
 ::: {.notes}
 Two and a half minutes. These are five checks worth running on any file, so
 give them in these words and let the room write them down.
 
-Check five needs its caveat said out loud, because it is the one they will
-over-trust. Double programming in clinical trials has exactly this blind
-spot, and the reviews of it say plainly that it validates outputs rather
-than inputs or logic. Agreement is evidence about arithmetic.
+Check five turns on the word independent. Two routes over the same bad file
+can agree and both be wrong. Double programming in clinical trials has
+exactly this blind spot, and the reviews of it say plainly that it validates
+outputs rather than inputs or logic. The strongest second route uses a
+different source, a different person, or both.
 
 Then the framing that makes the list learnable: each check is the answer to
 "how would you know it was wrong" for one shape of fault. You pick the check
@@ -1147,86 +1130,48 @@ by the shape you are worried about, which is why a team that finds a fault
 and cannot name the check has not learned the thing.
 :::
 
-## Which check would have caught this?
-
-::: {style="font-size:0.80em"}
-1. Average household income in the county comes back as 58.
-2. After joining sales to store characteristics, the row count goes from 12,480 to 13,910.
-3. The assistant reports 41 stores. The published county list has 39.
-4. A column called `status` has four distinct values and the codebook lists three.
-- One of these needs no check at all beyond reading the output.
-:::
+# 6. Disclosure
 
 ::: {.notes}
-Ninety seconds. On Zoom, take answers in the chat.
-
-Answers, taken from the room rather than given: one is orders of magnitude;
-two is row counts across a join; three is totals against an outside figure.
-Four needs nothing — you read the output and see four values where the
-codebook says three, which is the whole check.
-
-The last bullet is there so nobody leaves believing every step needs a
-ritual. Say it explicitly when four comes up.
+Thirty seconds. Say that the last two slides apply to everything handed in,
+wherever AI entered the work.
 :::
 
-# 6. Checks and disclosure
-
-::: {.notes}
-Thirty seconds. Say that the last four slides apply to all three blocks and
-to everything handed in.
-:::
-
-## The same move in all three places
-
-::: {style="font-size:1em"}
-- **Reference**: resolve the DOI, open the paper.
-- **Sentence**: find the number in your table.
-- **Number**: compute it a second way.
-- Each time, ask where the claim came from.
-- Check one claim per conversation. If it fails, distrust the rest.
-:::
-
-::: {.notes}
-Ninety seconds. Put the three side by side so the hour resolves into one
-habit.
-
-The last bullet is the practical compromise. Nobody checks everything. One
-check per conversation is affordable, and the conditional on the end is what
-gives it teeth: a failed spot check condemns the whole conversation, not
-just the claim you happened to test.
-:::
-
-## What you may put into these tools
+## Disclosure is required
 
 ::: {style="font-size:0.9em"}
-- Nothing at moderate risk or above in a public AI tool. Licensed data counts.
-- If you cannot upload your file, write the code on an invented sample with the same columns, then run it yourself.
-- ChatGPT free: three file uploads a day.
-- Claude: switch on *Code execution and file creation* under Settings → Capabilities.
-- Cornell: "*You are accountable for your work, regardless of the tools you use to produce it.*"
+- Every deliverable in this course carries a disclosure block.
+- Leaving it out is an academic integrity violation.
+- Cornell's Code counts AI help "*not explicitly permitted by the instructor*" as unauthorized assistance.
+- The AER: AI use "*must be briefly described during the submission process*".
 :::
 
 ::: {style="font-size:0.55em; color:#6b6b6b"}
-[IT@Cornell, AI guidelines](https://it.cornell.edu/ai/ai-guidelines) · [Claude Help Center, code execution](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude)
+[Syllabus, AI policy](../syllabus.qmd#ai-policy) · [Cornell Code of Academic Integrity, 2026](https://deanoffaculty.cornell.edu/faculty-and-academic-affairs/academic-integrity/upcoming-code-of-academic-integrity/) · [American Economic Review, editorial policy](https://www.aeaweb.org/journals/aer/editorial-policy)
 :::
 
 ::: {.notes}
-Ninety seconds. One line of callback to meeting 4 and no more; they have had
-the full treatment.
+One minute. The first two bullets are the syllabus rule. The third is why
+the second holds: this course permits AI with a disclosure block, so use
+without one is aid the instructor did not permit.
 
-The second bullet is a commitment I made to this room last week. Two or
-three teams will have data they may not upload. The invented-sample route is
-how they work with it: the tool sees the column names and made-up rows, and
-the real file stays on their laptop.
+Cornell's new Code took effect on August 24 and names artificial
+intelligence twice. The second is under fabricated sources: citing "false
+citations generated by artificial intelligence or other tools" is a
+violation, and students are responsible for every source they cite
+"regardless of how those sources were generated or obtained". That is
+section 3's rule with the university's name on it, so say it.
 
-The Claude settings path was checked against Anthropic's help page, dated
-6 August 2026. VERIFY ON THE MORNING: ChatGPT's free-tier upload limit
-changes often; re-read OpenAI's File Uploads FAQ before the meeting.
+The AER line is there so nobody hears this as a classroom rule. The journal
+asks for the same description at submission, and says authors are "solely
+accountable for, and must thoroughly fact-check, outputs created with the
+help of AI software". Both texts were checked against the live pages on
+23 September 2026.
 :::
 
 ## What you write down about what you used
 
-::: {style="font-size:0.84em"}
+::: {style="font-size:0.9em"}
 Three lines on every deliverable:
 
 > **Tools.** Claude Sonnet 5 (claude.ai) and ChatGPT 5.\
@@ -1235,10 +1180,7 @@ Three lines on every deliverable:
 
 - Too vague: *AI*, *help with the code*, *it worked*.
 - Naming a mistake the tool made counts in your favour.
-- The AER asks the same: authors are "*solely accountable for, and must thoroughly fact-check, outputs created with the help of AI software.*"
 :::
-
-[American Economic Review, editorial policy](https://www.aeaweb.org/journals/aer/editorial-policy){style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.notes}
 Ninety seconds. Show a filled-in block rather than an empty template,
@@ -1256,32 +1198,6 @@ whose first language is not English, against 5 percent for US school essays.
 Vanderbilt turned Turnitin's detector off because a 1 percent false positive
 rate across their submissions is about 750 students accused wrongly. The
 standard here is that you disclose and you verify.
-:::
-
-## Where the file comes from
-
-::: {style="font-size:0.9em"}
-- Download if you can. It is boring and usually fastest.
-- An API: a key, a rate limit, stable fields, a record of your request.
-- Scrape last. Pages change, rows vanish silently, terms often forbid it.
-- Every route has a wait, from days to months. Register now.
-- The full list, with waiting times, is on the data sources page.
-:::
-
-[Where to get data](../data-sources.qmd){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-Ninety seconds, and resist reading a catalogue of sources from the front.
-The page does that better and it has the waits attached, which a slide
-cannot.
-
-The one thing worth saying out loud is the timing, and that getting it
-wrong is the commonest way an MPS capstone dies. A library database is
-available now. Dewey takes days. A data-use agreement takes months and may
-fail. A team that discovers in November which row it is in has no project.
-
-For teams with no file yet, the named route, the wait and a plan B are
-worth writing down now.
 
 Then close the hour by saying what comes after the break: a live demo of how
 to use AI to get a research project started. Next week's two deliverables,
@@ -1293,7 +1209,7 @@ posted on Canvas.
 
 :::: {.content-hidden when-format="revealjs"}
 
-## Session A · 2:05 to 3:15
+## Session A · 2:00 to 3:15
 
 The material for this session is in the [slides](05-tools-and-ai-slides.html).
 

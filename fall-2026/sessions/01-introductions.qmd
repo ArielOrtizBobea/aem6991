@@ -574,7 +574,7 @@ and it is better information for you than a fabricated certainty.
 
 :::: {.content-hidden when-format="revealjs"}
 
-## Session A · 2:05–3:15
+## Session A · 2:00–3:15
 
 ### The arc
 

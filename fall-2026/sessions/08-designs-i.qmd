@@ -18,7 +18,7 @@ This page is a stub. Materials appear here before the meeting.
 
 [Remix](https://mixtape.scunning.com/) ch. 4 on randomization, ch. 6 on regression discontinuity, ch. 7 on instrumental variables. In [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/), the same three are ch. 2, 6 and 4.
 
-## Session A · 2:05–3:15
+## Session A · 2:00–3:15
 
 Three designs, each drawn before it is described. Experiments first. Randomisation cuts every arrow into treatment, so there is no back door left to close. Then the decisions that actually make one work. What is the unit you randomise — the person, the store, the week? How many arms can you afford before each one is too thin? Why you check balance afterwards, and what a failure would mean. And pre-registration, the cheapest honesty device in research: say what you will test before you look, and specification search stops being available to you. Instrumental variables next. An arrow into treatment, and none into the outcome except through it. The exclusion restriction is that missing arrow, which is why it cannot be tested. Then regression discontinuity: nothing else jumps at the cutoff. For each, what variation it exploits, what it assumes, how it fails, and what it looks like done well.
 

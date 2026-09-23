@@ -1064,7 +1064,7 @@ or an instructor can put on a student to take part.
 
 :::: {.content-hidden when-format="revealjs"}
 
-## Session A · 2:05 to 3:15
+## Session A · 2:00 to 3:15
 
 The hour opens with why it exists, and then has three parts.
 

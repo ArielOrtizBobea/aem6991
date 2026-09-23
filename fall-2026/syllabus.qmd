@@ -294,7 +294,7 @@ Fourteen meetings. Each runs the same shape:
 
 | Time | |
 |:---|:---|
-| 2:05--3:15 | Session A --- the concept, on worked examples |
+| 2:00--3:15 | Session A --- the concept, on worked examples |
 | 3:15--3:30 | Break |
 | 3:30--4:30 | Session B --- **your own project**, submitted before you leave |
 

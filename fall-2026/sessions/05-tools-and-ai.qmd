@@ -2,33 +2,1379 @@
 title: "5 · Coding tools and AI"
 subtitle: "Wednesday, September 23, 2026"
 pagetitle: "AEM 6991 · 5 Coding tools and AI"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+  revealjs:
+    output-file: 05-tools-and-ai-slides.html
+    theme: [default, slides.scss]
+    template-partials:
+      - title-slide.html
+    footer: "AEM 6991"
+    slide-number: c/t
+    incremental: false
+    history: false
+    link-external-newwindow: true
 ---
 
+:::: {.content-hidden when-format="revealjs"}
+
 ::: {.callout-note appearance="simple"}
-This page is a stub. Materials appear here before the meeting.
+[**Open the slides**](05-tools-and-ai-slides.html)
+:::
+
+<!-- BUILD STATE, not for students. Thirty-six content slides and six
+     dividers, about 66 minutes of notes. The three tutorials (slides 20,
+     28 and 38) carry the prompt but not the captured reply. Slides resting
+     on a number carry a VERIFY line in their speaker notes; the economics
+     fabrication rate on slide 15 is from an abstract only. The retitle to
+     "Using AI in research" is not done. Remove this comment when the deck
+     ships. -->
+
+::: {.callout-warning appearance="simple"}
+**Draft.** This page is still being written. The slides are usable; the
+three worked examples are not in place yet.
 :::
 
 ::: {.callout-warning appearance="simple"}
 **Date not final.** Instructor traveling — this meeting is held remotely.
 :::
 
-**What you should be able to do after this meeting.** Choose the right AI modality for a data job, and say why. Interrogate a file you did not create — through an assistant, without reading the code — and catch what is wrong with it before it reaches your proposal.
+**What you should be able to do after this meeting.** Choose the right way to
+reach one of these tools for a given job, and say why. Write the outline of a
+section yourself and use a tool to audit it. Interrogate a file you did not
+create — through an assistant, without reading the code — and catch what is
+wrong with it before it reaches your proposal.
 
 ## Where to read more
 
 [Adams](https://doi.org/10.4135/9788132108498) ch. 7 on secondary data collection.
 
-## Session A · 2:05–3:15
+[Korinek (2023)](https://doi.org/10.1257/jel.20231736) in the *Journal of
+Economic Literature* is the standard reference for economists. It rates six
+kinds of task, and it is honest about which ones do not work.
 
-Four blocks. First, code. Not how to write it — what it is, and why you cannot avoid understanding it. Why there are several languages: R grew out of statistics, Python out of general programming, Stata out of applied economics. SQL is not the same kind of thing at all. It is a way of asking questions of data you never load onto your own machine. Then the argument that matters here. Every serious analysis is code, whether or not you wrote it. A spreadsheet stops being enough at a moment you can name: when you join two files, when the same cleaning has to run again on next month's extract, or when somebody asks what changed between version 4 and version 7. Two cases make that better than any principle. Reinhart and Rogoff's growth result averaged fifteen countries where the formula should have covered twenty, and it had already been quoted in austerity debates before anyone opened the sheet. Public Health England lost 15,841 COVID cases in 2020 because an old Excel format stops at 65,536 rows and says nothing at all when it runs out. Neither is a statistics error. Both were invisible in a spreadsheet and would have been visible in code. You will drive code through an assistant. But you cannot check what you cannot read at all. Second, the four things people mean by "use AI". They fail differently, and that is the whole point. Chat answers from memory. It invents citations that look real — right journal, plausible authors, a DOI that resolves to something else. File upload with code execution is different in kind: the assistant writes real code, runs it on the file you gave it, and shows you both. That is the only modality where the output is checkable, and it is the one this course uses. Retrieval answers from documents you supplied, which bounds the invention without removing it. Agents act over many steps without stopping to ask. Pick the wrong column at step two and by step nine it is buried under eight correct-looking operations. So you choose the modality by whether you will be able to tell it was wrong. Third, the skill this course actually grades: judging an answer without reading the code that produced it. Five checks, and they take four minutes. Row counts across a join — a join that grew has a duplicate key, and a join that shrank quietly dropped the rows that did not match, which is how a result ends up being about a different population than you think. Totals against a published figure. Five raw records read by hand, with your eyes, before any summary. Orders of magnitude: 58 and 58,000 are different claims about household income, and the gap is usually a units column nobody mentioned. And the one nobody runs — ask for the same number a second way and see whether it comes back the same. Then what you must not upload. Restricted, IRB-covered and DUA-covered data do not go into a public chatbot. That is meeting 4, and this is the week it stops being abstract. Fourth, getting hold of data at all. Start with what Cornell has already paid for — Dewey, WRDS, Capital IQ, IBISWorld — and the free public sources that need no login: FRED, IPUMS, EDGAR, data.census.gov. Then the three routes to a file. Downloading is boring and usually fastest. An API is a documented door: a key, a rate limit, stable field names, and a record of what you asked for. Scraping is the last resort dressed up as the clever one, and I will break one in front of you. The page changes and the code returns nothing. The rate limit bites. Records go missing without a single error message. The terms of service say no. And nothing you pulled could be reproduced by anybody next week. Going to a county assessor yourself is worth it only when you need one county in unusual depth, or a field the national vendor does not carry. Last, reproducibility, at the level of awareness rather than tooling. Keep the raw file untouched. Keep one path from raw to result. Keep a note saying where the raw came from and on what date. The test is simple: could a teammate get your number on a different laptop next week? If not, you do not have a result. You have a screenshot.
+::::
 
-## Session B · 3:30–4:30
+:::: {.content-visible when-format="revealjs"}
 
-Every session B opens with a ten-minute team check-in: what you did
-since last week, what is stuck, and who is doing what next. Written
-down, and handed in with that session's work.
+## Motivation
 
-Ten-minute check-in first. Then everybody works the same file. `store-weeks.csv` is a retail extract with four things planted in it. A block of store-weeks is duplicated, so every total is too big. Twelve prices are recorded in cents while the rest are in dollars. Missing values are coded −99, which a mean will swallow without complaint. And one store stops reporting in July, so a year-on-year comparison silently compares nine months against twelve. You find them by driving an assistant with file upload. You do not find them by reading the file. Twenty minutes. Then the half that is actually graded, which is the second question on the sheet: which of the five checks would have caught this one? A team that finds a fault and cannot name the check has not learned the thing. Then I put up a transcript of an assistant getting this same dataset confidently wrong, and the room says where it went off the rails. Second half, your own data. Take the dataset your team is currently betting on and run the same interrogation. What is one row. How many rows are there. What is missing, and how is it coded. What changed over time. And one number checked against a source outside the file. That page is your data interrogation sheet, and it is handed in before you leave, with three lines at the bottom: what you could not answer today, who chases it, and by when. If your team has no file yet, your sheet is the shortest named route to one — which source, which access route, how many days or months, and what plan B is. Not having the data in September is fine. Not knowing how you get it is not.
+- So far we've focused on coming up with questions and data.
+- This week we turn to tools, and specifically to using AI for research:
+  1. Understanding the existing literature.
+  2. Writing up your findings.
+  3. Coding your analysis.
 
-Your team's output is submitted before you leave.
+::: {.notes}
+Ninety seconds. First person. Four weeks on questions and data, and this
+week is the thing you will be driving both of them with.
 
+Say the policy out loud, because it is not on the slide and because other
+sections of this course restrict these tools and this one does the opposite
+on purpose. The deliverable here is a research proposal, which is the genre
+where unverified output does the most damage. So the skill worth teaching is
+checking, and checking is what the rubric grades.
+
+Name the three and say the hour has one section for each. Say which is
+riskiest and why: the literature, because a fabricated reference costs the
+tool nothing to produce and you will not notice it unless you go and open
+the paper. Korinek's review for economists rates six task families and
+literature search is the only one he puts at the bottom, so this is not my
+opinion.
+
+One line that meeting 10 is how to write, and today is what a tool does to a
+draft. Do not preview the risks; they arrive in their own blocks.
+:::
+
+## Outline
+
+1. How these tools work
+2. Different AI tool modalities
+3. AI for literature reviews
+4. AI for writing
+5. AI for coding
+6. Checks and disclosure
+
+::: {.notes}
+Thirty seconds. Read the six and give the shape: two short sections on what
+these tools are and how you reach them, then one section for each place AI
+enters a project, then what applies to everything you hand in.
+:::
+
+# 1. How these tools work
+
+::: {.notes}
+Thirty seconds. Say what the section covers: what the model actually does,
+what is wired around it, and the one consequence that generates every risk
+in the rest of the hour.
+
+Keep this section moving. It is the only part of the hour that is not about
+their own project, and it earns its place only by making the rest
+predictable.
+:::
+
+## It predicts the next token
+
+::: {style="font-size:1em"}
+- The model predicts the next piece of text, then the next.
+- **Token**: the unit it predicts. A word, part of a word, or a symbol.
+- Nothing is looked up along the way.
+:::
+
+::: {.notes}
+Two minutes. Plain and quick, and resist going further into the machinery
+than this. Nobody in this room needs to know what a transformer is.
+
+Give the examples out loud: *the* is one token, while rare words and long
+numbers split into several, which is a small reason numbers get garbled.
+
+The last bullet is the load-bearing one. There is no database behind the
+window and no moment where it consults anything. When it writes a reference,
+it is writing the kind of text that a reference is, in the same way it
+writes the rest of the sentence.
+
+Then move on. The next two slides are the consequences.
+:::
+
+## A model on its own can only write text
+
+::: {style="font-size:0.9em"}
+- **Context window**: everything the model can see at once.
+- Long threads push early instructions out of the window.
+- **Harness**: the program around the model, which controls what it sees and does.
+- **Tools**: what the harness connects, such as search, files and code.
+- Without tools, the model is a brain with no eyes or hands.
+- It can only write from memory, which is where most invented citations come from.
+:::
+
+::: {.notes}
+Two minutes. This is the slide that makes the rest of the hour make sense,
+and the analogy is the part they will remember.
+
+Take the three bold words in order. The context window is the model's whole
+world, and nothing outside it exists. The harness is the program you are
+actually typing into, which loads files, calls tools and decides what the
+model sees. The tools are the eyes and the hands.
+
+The second bullet answers something every one of them has experienced and
+none has been told the reason for. You set up a conversation carefully, and
+forty exchanges later it is ignoring half of what you said. It did not
+forget. Those instructions are no longer in front of it. So: one task per
+conversation, and paste the material again rather than pointing back at it.
+
+The last bullet points ahead to the literature section. A model asked for a
+reference with no tools attached has nothing to consult, so it writes
+reference-shaped text. That is the only thing it can do.
+:::
+
+## It guesses when it does not know
+
+::: {style="font-size:0.9em"}
+- Asked something it cannot answer, it often guesses.
+- The guess reads exactly like a correct answer.
+- Training and scoring reward a guess over "*I don't know.*"
+- OpenAI researchers: "*Like students facing hard exam questions, large language models sometimes guess when uncertain, producing plausible yet incorrect statements instead of admitting uncertainty.*"
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+A theory paper. Its examples use DeepSeek-V3, GPT-4o and Llama.
+
+[Kalai, Nachum, Vempala and Zhang (arXiv, 2025), Why language models hallucinate](https://arxiv.org/abs/2509.04664)
+:::
+
+::: {.notes}
+Ninety seconds. The two slides before this did the setup, so this one is
+short.
+
+The exam-question analogy is theirs, not mine, and it carries the slide.
+Every risk in the rest of the hour follows from this one.
+A model that says "I do not know" scores zero. A model that guesses scores
+above zero some of the time. Train on that and you get a system that always
+answers. Their own line is that models are optimised to be good test-takers.
+
+Say the consequence plainly: this comes from how the models are trained and
+scored. So the question for the rest of the hour is whether you will be able
+to tell.
+
+VERIFY: arXiv 2509.04664, abstract, quotation exact.
+:::
+
+## Some guesses are cheap to check
+
+::: {style="font-size:1em"}
+- Each section has its own check, because checking costs differ.
+- **A reference**: leave the conversation and open the paper.
+- **A sentence**: compare it with your own table.
+- **A number**: rerun the code on your own file.
+- **How would you know it was wrong?**
+:::
+
+::: {.notes}
+Ninety seconds, and it is the slide the hour hangs on.
+
+Do not say that some failures announce themselves and others do not, because
+that is false and the coding block spends ten minutes refuting it. The
+asymmetry is the cost of checking, not whether anything errors. A wrong
+number and a wrong citation are both silent. One of them can be checked in
+ten seconds against a file you already hold, and the other needs a database
+and a browser tab.
+
+The bolded question is the thing they should carry out of the room. It comes
+back at the end of every block in that block's own terms, so say it once
+here and do not labour it.
+:::
+
+# 2. Different AI tool modalities
+
+::: {.notes}
+Thirty seconds. Say what the section covers: the three ways you reach the
+same model, what changes as the tool gets more access to your work, and the
+record you keep of what it did.
+:::
+
+## Three ways to reach the same model
+
+::: {style="font-size:0.8em"}
+- **Chat** (claude.ai)
+  - Sees only what you paste or attach.
+  - Cannot run your code or touch your machine.
+  - With *Code execution* on, runs its own Python on an attached file, on Anthropic's servers.
+- **Cowork** (desktop app, Pro plan)
+  - Reads and edits the files in a folder you connect.
+  - In Manual mode, asks before each change.
+- **Claude Code** (terminal)
+  - Edits files and runs commands on your machine, asking first by default.
+  - Not needed for this course.
+:::
+
+::: {.notes}
+Two minutes. Same model underneath all three, which is the part students get
+wrong: they think the terminal one is smarter. It is not. It has more
+access, and last section gave them the word for the difference.
+
+Chat is what this afternoon runs on, so spend most of the time there, and
+be exact about code. Chat cannot run your script or touch your machine. With
+*Code execution and file creation* switched on under Settings → Capabilities
+(off by default on Free, Pro and Max; on by default for Team and
+Enterprise), it runs its own Python on an attached file in a sandbox on
+Anthropic's servers. ChatGPT does the same by default. The number that comes
+back is not a result you can rerun, which is why the coding section asks for
+the code. Cowork needs the desktop app and a Pro plan; in Manual mode it
+asks before each change, so leave it there. Cowork
+is the step up that matters for a team project. Claude Code is for the two
+or three people in the room who will want it, and so that nobody thinks the
+course is hiding a better tool.
+
+Say the register clearly: nobody here needs to install anything to do this
+week's work.
+:::
+
+## More access means more to check
+
+::: {style="font-size:1em"}
+- Chat cannot change your files. You copy out what you use.
+- Cowork and Claude Code can overwrite a week of work.
+- Use the least access the job needs.
+- Before connecting a folder, know how to get it back.
+:::
+
+::: {.notes}
+One minute. The rule is the third bullet and everything else is the
+argument for it.
+
+The copy-out step in chat is a real safety feature. You are the thing that
+moves the output into your work, so you see it once on the way past. Point a
+tool at a folder and that step is gone.
+
+The last bullet sets up the next slide, so do not explain it here.
+:::
+
+## A record of what changed
+
+::: {style="font-size:0.9em"}
+- **Version control**: a saved history of every change to your project.
+- It shows what a tool changed, and lets you undo it.
+- Commit your folder before connecting it to an assistant.
+- A chat transcript is not a record. The same prompt can give different answers.
+- The test: could a teammate reproduce your number next week?
+:::
+
+::: {.notes}
+Ninety seconds. Two audiences on one slide, and the second one is most of
+the room.
+
+For the teams that will point Cowork at a folder, the first three bullets
+are the whole safety net. You can see every line the tool changed, and you
+can undo it. Without that you are trusting a tool you have just been told
+guesses. The concrete version is `git init` and a first commit, before the
+folder is connected.
+
+For everyone else, bullet four is the point, and it is about evidence. A screenshot of a chat is not a method section. Nothing in a
+transcript can be re-run.
+
+The last bullet is the test the whole course uses, so say it and let it sit.
+:::
+
+# 3. AI for literature reviews
+
+::: {.notes}
+Thirty seconds. Say what the section covers: what the literature section of
+a proposal is for, what these tools do well in a search, the ways a
+reference list goes wrong, and the check.
+:::
+
+## What your literature section has to do
+
+::: {style="font-size:1em"}
+- Set your question against the two or three closest papers.
+- Show that your question has not been answered.
+- A reader asks one thing: what is new here?
+- A tool cannot tell you what it failed to find.
+:::
+
+::: {.notes}
+One minute, and it is the argument the rest of the block rests on.
+
+Say why this matters. The commonest way an MPS proposal fails on this
+section is a claim of novelty that a reader can puncture in thirty seconds,
+because they know the paper you missed.
+
+Bullet four is the one to say slowly. A tool reports what it found. Nothing
+in the answer tells you the size of what it did not find, and there is no
+prompt that fixes that. Every slide after this is a version of that point.
+:::
+
+## References from memory are often wrong
+
+::: {style="font-size:1em"}
+- 8 free chatbots (February 2025): **26.5%** of references fully correct.
+- Economics: over **30%** of GPT-3.5's citations did not exist. GPT-4 was barely better.
+- Korinek (JEL, 2023) asked GPT-4 for his own paper: real title, invented journal.
+- Elicit, Perplexity, Ai2 ScholarQA and Consensus cited 5 to **18** of 21 retracted papers without saying so.
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+The 8 chatbots, free versions: GPT-4o-mini, Claude 3.5 Sonnet, Copilot (GPT-4), DeepSeek-V3, Gemini 2.0 Flash, Grok-3, Mistral Large (Le Chat), Perplexity Sonar.
+
+[Cabezas-Clavijo and Sidorenko-Bautista (JDIS, 2026)](https://doi.org/10.1515/jdis-2025-0326) · [Buchanan, Hill and Shapoval (American Economist, 2024)](https://doi.org/10.1177/05694345231218454) · [Korinek (JEL, 2023)](https://doi.org/10.1257/jel.20231736) · [MIT Technology Review, 2025](https://www.technologyreview.com/2025/09/23/1123897/ai-models-are-using-material-from-retracted-scientific-papers/)
+:::
+
+::: {.notes}
+Ninety seconds, and no more. This is the whole of the failure evidence; the
+rest of the section is what to do about it.
+
+Say the mechanism in one line: with no search attached, the model writes
+text shaped like a reference. The 26.5 percent is current and about the free
+tools they will use. Tested 7 to 9 February 2025: ChatGPT (GPT-4o-mini),
+Claude (3.5 Sonnet), Copilot (GPT-4), DeepSeek (V3), Gemini (2.0 Flash), Grok
+(Grok-3), Le Chat (Mistral Large), Perplexity (Sonar). Grok and DeepSeek
+produced no false references; Copilot, Perplexity and Claude produced the
+most. Perplexity searches the web and was still among the worst.
+
+The economics number is Buchanan, Hill and Shapoval, GPT-3.5 and GPT-4 in
+2023, stated verbatim in the abstract and cited by Korinek; the full text is
+paywalled and unread. Korinek's example is GPT-4, December 2023 JEL: his
+paper with Zach Bethune, close to 200 citations, returned as Journal of
+Monetary Economics 117, 1-13, which is invented.
+
+The retraction bullet: Elicit 5, Perplexity 11, Ai2 ScholarQA 17, Consensus
+18, reported September 2025; Consensus was down to 5 by the time the article
+ran. People did this long before AI: only 5.4 percent of citations to
+retracted papers mention the retraction (Hsiao and Schneider, QSS, 2021).
+
+If asked whether it is getting better: the Lancet audit of 2.5 million
+biomedical papers found fabricated citations rose more than twelvefold from
+2023 to early 2026, so it is reaching print faster, not slower.
+
+One line back to the New York lawyers from meeting 4, no more.
+:::
+
+## How to find the papers
+
+<svg class="dag" viewBox="0 0 960 490" width="920" height="470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Leads from memory are looked up in a database and become anchor papers. Following references back and citations forward from the anchors builds a candidate pool. The strongest new papers become anchors in turn, until nothing new appears. The tool screens the pool, you check what it drops, and you open each paper before citing it.">
+  <defs>
+    <marker id="lit-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b31b1b"/></marker>
+    <marker id="lit-arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#55554f"/></marker>
+  </defs>
+  <!-- boxes -->
+  <rect x="20" y="20" width="260" height="78" rx="10" fill="#fafaf7" stroke="#55554f" stroke-width="2"/>
+  <rect x="300" y="150" width="260" height="78" rx="10" fill="#ffffff" stroke="#b31b1b" stroke-width="3"/>
+  <rect x="300" y="290" width="260" height="64" rx="10" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <rect x="300" y="422" width="260" height="60" rx="10" fill="#f3dede" stroke="#55554f" stroke-width="2"/>
+  <!-- arrows -->
+  <path d="M280,59 H430 V145" fill="none" stroke="#55554f" stroke-width="2.4" marker-end="url(#lit-arrg)"/>
+  <path d="M430,228 V285" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"/>
+  <path d="M560,322 H660 V189 H565" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"/>
+  <path d="M430,354 V417" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"/>
+  <!-- box labels -->
+  <text x="150" y="53" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">Leads from memory</text>
+  <text x="150" y="82" font-size="19" fill="#6b6b6b" style="text-anchor:middle">authors, terms, journals</text>
+  <text x="430" y="183" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">Anchor papers</text>
+  <text x="430" y="212" font-size="19" fill="#6b6b6b" style="text-anchor:middle">two or three you have opened</text>
+  <text x="430" y="330" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">Candidate pool</text>
+  <text x="430" y="460" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">Open and cite</text>
+  <!-- arrow labels -->
+  <text x="445" y="112" font-size="20" font-style="italic" fill="#55554f" style="text-anchor:start">look each one up in a database</text>
+  <text x="285" y="176" font-size="19" fill="#6b6b6b" style="text-anchor:end">from your advisor,</text>
+  <text x="285" y="200" font-size="19" fill="#6b6b6b" style="text-anchor:end">a review or a search</text>
+  <text x="415" y="252" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:end">follow references back</text>
+  <text x="415" y="276" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:end">and citations forward</text>
+  <text x="675" y="236" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:start">strongest new papers</text>
+  <text x="675" y="260" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:start">become anchors</text>
+  <text x="675" y="284" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:start">until nothing new appears</text>
+  <text x="445" y="381" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:start">the tool screens,</text>
+  <text x="445" y="404" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:start">you check what it drops</text>
+</svg>
+
+::: {.notes}
+Two minutes. This is the whole method on one page, and the next four slides
+take it one box at a time.
+
+Start in the middle, with the anchors. Two or three papers you have opened
+yourself and know are close to your question. They come from your advisor, a
+recent review article, or a database search. Everything else hangs off them,
+so a bad anchor spreads: check them first.
+
+From each anchor, follow the reference list back and the citing papers
+forward. That fills the candidate pool. The strongest new papers in the pool
+become anchors in turn, and you go round again. Stop when a round turns up
+nothing you had not already seen. Systematic reviewers call that saturation,
+and it is the only honest stopping rule.
+
+Memory comes in on the top left, as a complement. Ask the model for
+landmark papers, authors, search terms and journals, and treat every answer
+as a lead. A lead becomes an anchor only after you have found it in a
+database and opened it.
+
+At the bottom, the tool earns its place a second time: it sorts and screens
+the pool, and you check what it throws out. Nothing reaches the proposal
+until you have opened it.
+
+The evidence behind each arrow is on the next slides: chaining (Sahu,
+Charlin and Pal), memory for leads (Korinek; Buchanan, Hill and Shapoval),
+screening (Mazzali; Clark).
+:::
+
+## Use memory for leads
+
+::: {style="font-size:1em"}
+- Ask for landmark papers, key authors, search terms and journals.
+- Treat every answer as a lead to look up.
+- GPT-4 is "*often able to provide standard references that are frequently cited in the literature*."
+- ChatGPT got less reliable as questions got more specific.
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+[Korinek (JEL, 2023)](https://doi.org/10.1257/jel.20231736) · [Buchanan, Hill and Shapoval (American Economist, 2024)](https://doi.org/10.1177/05694345231218454)
+:::
+
+::: {.notes}
+Ninety seconds. This is where memory earns its keep: getting oriented in a
+literature you do not know. Landmark papers, the names that recur, the words
+each field uses for the same idea, and which journals to look in. Search
+terms matter most, because economists, epidemiologists and marketers use
+different words for the same thing, and students are worst at this part.
+
+Korinek, in the JEL article: GPT-4 "is often able to provide standard
+references that are frequently cited in the literature". That is the famous
+end of the literature. Buchanan, Hill and Shapoval: "the reliability of the
+model decreases as the prompts become more specific". The niche, recent
+papers that decide whether a question is new are exactly where it fails.
+
+On naming journals in the prompt: it steers the search usefully, but it
+also makes the prompt more specific, and in Korinek's own example the
+journal was the part it invented. So journal names in the answer are leads
+too. Every lead goes into a database before it goes anywhere else.
+
+Tools improve fast. The evidence here is on 2023 to 2025 models, and nobody
+has measured today's frontier models on this. Say so if asked.
+:::
+
+## Start from papers you trust
+
+::: {style="font-size:1em"}
+- Pick two or three papers you have opened and checked.
+- Follow their references back, and their citations forward.
+- On 250 computer-science papers, a search that followed citation chains recovered over **80%** of each paper's references.
+- Keyword search alone recovered under **20%**.
+- Tools: Google Scholar *Cited by*, Semantic Scholar, Connected Papers.
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+Pipeline built on GPT-OSS-120B, with Qwen3-Embedding-8B for ranking. Not yet peer reviewed.
+
+[Sahu, Charlin and Pal (arXiv, 2026)](https://arxiv.org/abs/2605.29234)
+:::
+
+::: {.notes}
+Two minutes. This is the strategy with the biggest measured gain, and it
+needs no AI at all to start.
+
+The seeds can come from a recent review article, from your advisor, or from
+the leads on the previous slide once you have checked them. Backward means
+the reference list. Forward means the papers that cite it, which is what
+Google Scholar's Cited by and Semantic Scholar show you.
+
+The numbers come from one 2026 preprint on 250 papers, not yet peer
+reviewed, comparing plain keyword search with a pipeline that followed
+bibliographic links. Say that plainly. The size of the gap is the point, and
+it matches what research librarians have taught for decades.
+:::
+
+## Search a database and let the tool screen
+
+::: {style="font-size:1em"}
+- Run the search yourself, in EconLit or Google Scholar.
+- Give the tool the results to sort and screen.
+- Screening a known set, Elicit kept **91%** of the relevant papers.
+- Across 19 studies, AI screeners wrongly dropped a median **28%**.
+- Check what it drops.
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+Mazzali tested Elicit's systematic-review workflow; no model version is named. Clark's 19 studies tested mostly ChatGPT (GPT-3.5, GPT-4, GPT-4o), with some on Claude 2, Bing AI and Perplexity.
+
+[Mazzali et al. (BMC Med Res Methodol, 2026)](https://doi.org/10.1186/s12874-026-02892-3) · [Clark et al. (Res Synth Methods, 2025)](https://doi.org/10.1017/rsm.2025.16)
+:::
+
+::: {.notes}
+Ninety seconds. The split the evidence draws is between finding and
+sorting. Used to search, generative AI missed a median 91 percent of the
+relevant studies (Clark et al., 19 comparative studies). Given a set to
+screen, it does much better.
+
+The 91 percent kept is Mazzali et al., May 2026, an umbrella review on air
+pollution and acute lower respiratory infections, using Elicit's
+systematic-review workflow; no Elicit version or model is named. It also
+over-included: it flagged 70 papers where the reviewers kept 33. The same
+study ran Elicit's own search against a Boolean search: 500 papers against
+324, and only 26 in both. A tool's search is a different set, not a bigger
+one, which is why the search stays yours.
+
+The 28 percent is the median of wrongly excluded studies across Clark's 19
+studies. That is the number that makes the last bullet the rule. EconLit is
+the field's own index and Cornell subscribes to it through the library;
+none of the AI tools lists it as a source.
+:::
+
+## Give it the papers and ask for quotes
+
+::: {style="font-size:0.84em"}
+Upload the PDFs you found, then:
+
+> *Using only these papers, find passages that bear on [your question]. Quote each one word for word and number it. If none do, say "No relevant quotes found." Then answer using only those quotes.*
+
+- Find each quote in its PDF.
+- Anthropic: these steps "*significantly reduce hallucinations, they don't eliminate them entirely.*"
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+Vendor guidance for Claude models, not a measured study.
+
+[Anthropic, Reduce hallucinations](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations)
+:::
+
+::: {.notes}
+Three minutes. CAPTURE NEEDED: upload three or four PDFs the class knows,
+run the prompt, and put the reply on the slide. Then open one PDF and find a
+quote on screen. Then ask a question the papers cannot answer and show what
+comes back.
+
+Ask the room to predict, before the reply goes up, whether every quote will
+be found in its PDF.
+
+The prompt is Anthropic's own guidance, nearly word for word: extract exact
+quotes first, allow "No relevant quotes found", answer only from the quotes,
+and restrict it to the documents. The thing you check is the quote, not the
+model's sentence. Anthropic says plainly that this reduces invention and
+does not remove it, so the last step is not optional.
+
+This is the same move as the writing section's number check, one section
+early.
+:::
+
+## Open it before you cite it
+
+::: {style="font-size:0.9em"}
+- Paste the DOI after `doi.org/`. *Not found* is a strong warning sign.
+- If it resolves, check the authors, year and title.
+- No DOI: search the exact title in Google Scholar.
+- Real papers get miscited too: **43%** of GPT-3.5's real citations had errors.
+- Open the paper and find the passage you are citing.
+- Cornell Library: "*do check whether the references are real by looking up the source material.*"
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+Walters and Wilder tested ChatGPT with GPT-3.5 and GPT-4, in 2023.
+
+[Walters and Wilder (Sci Rep, 2023)](https://doi.org/10.1038/s41598-023-41032-5) · [Cornell University Library](https://guides.library.cornell.edu/c.php?g=924363&p=10383443)
+:::
+
+::: {.notes}
+Ninety seconds. This is the block's check and it is the rule in the
+syllabus, so say it as a rule.
+
+The 43 percent is the reason the routine does not stop at DOI resolution. A
+reference list can pass every existence test and still misattribute a
+finding, and misattribution is what a reader of your proposal will actually
+catch.
+
+Close on the course rule: every reference in every submission is one you
+have opened. Then say the bolded question for this block. How would you know
+it was wrong? You opened it.
+
+VERIFY: the 43 percent and the 24 percent for GPT-4 in Walters and Wilder.
+:::
+
+# 4. AI for writing
+
+::: {.notes}
+Thirty seconds. Say the scope again in one line, because it is the section
+students will most want to over-read: meeting 10 is how to write, and this
+section is what a tool does to a draft.
+:::
+
+## What a tool cannot be responsible for
+
+::: {style="font-size:0.9em"}
+- The rules start when a document goes out under your name.
+- A tool cannot be an author: "*they cannot take responsibility for the submitted work.*"
+- Nature: polishing language is fine. Extensive writing help must be disclosed.
+- Generating your reasoning without saying so is not allowed.
+- "*Human accountability is non-transferable.*"
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+[COPE, Authorship and AI tools](https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools) · [Nature Portfolio, AI policy](https://www.nature.com/nature-portfolio/editorial-policies/ai)
+:::
+
+::: {.notes}
+Ninety seconds. This is the block's frame and it decides everything after
+it.
+
+The first bullet is the practical version. Nobody cares what you type to
+sort out your own thinking. The rules start when the document goes to
+somebody who will act on it.
+
+Nature's three tiers are worth naming because they are the most useful thing
+any publisher has published on this. Polishing is green. Extensive writing
+support is amber and needs disclosure. Generating the reasoning is red.
+
+Do not spend time on authorship as such; no student here is putting a
+chatbot on a paper. The transferable half is that responsibility does not
+move, which is what the last bullet says.
+:::
+
+## You write the outline
+
+::: {style="font-size:1em"}
+- The structure carries the argument. You write it.
+- **One bullet per paragraph**, in two parts:
+  - the **topic sentence**, in full
+  - **what the paragraph discusses**
+- Do not ask a tool to propose the structure.
+- You would not know why it picked that one.
+:::
+
+::: {.notes}
+Two minutes. This is the method, and it is the one thing in the writing
+block I want them doing this week.
+
+Say why the topic sentence is written out in full rather than summarised.
+A summary of a paragraph you have not written yet is a hope. A topic
+sentence is a commitment, and if you cannot write it, the paragraph has no
+point and should not be in the outline.
+
+The last bullet is the reason for all of it, and it is about defending your
+own work. A structure you accepted is one you cannot argue for in a
+proposal defence, because you do not know what it was chosen over.
+
+Say the size out loud: a background section is six to ten bullets, and it
+fits on one page.
+:::
+
+## Ask it to audit your plan
+
+::: {style="font-size:1em"}
+- Give it your outline. Ask what is wrong with it.
+- Which paragraph makes two claims?
+- Which bullet does not follow from the one before?
+- Which claim has no evidence named?
+- Where does the order bury the point?
+- Ask for a list of problems, not a rewrite.
+:::
+
+::: {.notes}
+Two minutes. Step one is the outline. Step two is the audit, and step two is
+where a tool earns its place.
+
+The four questions are the ones worth asking, and they are all structural.
+None of them asks whether the writing is good.
+
+The last bullet is the general rule for this whole block, so say it slowly.
+A list leaves the outline in your hands and you decide each change. A
+rewrite gives you fluent text you did not write and have not checked, and it
+quietly launders a muddle you were about to notice.
+
+Say plainly that this is permitted here and has to be disclosed, because
+several of them will have met a rule elsewhere that treats critique as
+off-limits.
+:::
+
+## Outlining a published paper
+
+::: {style="font-size:0.9em"}
+- This is where these tools are strongest.
+- Give it a paper in your area.
+- Ask what each paragraph of the introduction claims, and what job it does.
+- You get the paper's outline, in the same form as yours.
+- Three papers in your field give you a model.
+- The paper sits beside the answer, so checking is easy.
+:::
+
+::: {.notes}
+Two minutes. This is the permission slide for the block, and it goes here
+rather than at the front because it only makes sense once they know what an
+outline is.
+
+The tool is reading here, so almost nothing can go wrong. The paper
+is open next to the reply and any claim about paragraph four can be checked
+by looking at paragraph four.
+
+Say what they get out of it. Nobody in this room has written an economics
+introduction. Three unpacked introductions in their own field is a better
+model than any rule I could give them from the front, and it is twenty
+minutes of work.
+:::
+
+## It makes the claim bigger than the result
+
+::: {style="font-size:0.84em"}
+- DeepSeek, ChatGPT-4o and LLaMA 3.3 70B overgeneralised in **26–73%** of summaries.
+- Claude models were the most faithful to the original papers.
+- Across all ten models, about **5 times** as often as expert summaries.
+- Three moves to look for in your draft:
+  - a sample becomes people in general
+  - past tense becomes present tense
+  - a result becomes a recommendation
+- Asking for accuracy made it about **twice** as likely.
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+The ten models: GPT-3.5 Turbo, GPT-4 Turbo, ChatGPT-4o, ChatGPT-4.5, LLaMA 2 70B, LLaMA 3.3 70B, Claude 2, Claude 3.5 Sonnet, Claude 3.7 Sonnet, DeepSeek. 4,900 summaries.
+
+[Peters and Chin-Yee (R Soc Open Sci, 2025)](https://doi.org/10.1098/rsos.241776)
+:::
+
+::: {.notes}
+Ninety seconds. The three moves are the usable part, because a student can
+run their eye down a paragraph and find them.
+
+The last bullet closes the escape route, and it surprises people. Adding an
+accuracy instruction made overgeneralisation worse, so you cannot instruct
+your way out of it. The defence is reading your own sentences against your
+own result.
+
+Tie it back: this is the second of the two failure modes the syllabus grades
+against, the plausible-but-wrong claim.
+
+VERIFY: doi 10.1098/rsos.241776, the 26 to 73 percent range, and the
+accuracy-prompt finding.
+:::
+
+## Write the paragraphs yourself
+
+::: {style="font-size:0.9em"}
+- Step two: turn each bullet of your outline into a paragraph.
+- The question, what is new and the design are yours to write.
+- Then ask the tool what is wrong with each paragraph.
+- One job is safe to hand over: the link between two of your paragraphs.
+
+> *Write one sentence that links these two paragraphs. Add no new claim.*
+:::
+
+::: {.notes}
+Two minutes. This is step two, and the tool does not write it. The parts
+that carry a proposal, which are the question, what is new and the design,
+are where the thinking happens, and a reader can tell when it was not done.
+Each bullet of the outline becomes a paragraph in your own words.
+
+The tool's job at paragraph level is the same as at outline level: ask what
+is wrong. Which sentence makes a claim the paragraph does not support? Where
+does it drift from the topic sentence? Ask for a list, and fix the wording
+yourself.
+
+The transition is the one piece that is safe to delegate, because it adds no
+claim: the tool is given both ends and asked for the join.
+
+CAPTURE NEEDED: run the transition prompt on two paragraphs from a real
+draft and put the reply on the slide. Ask the room to predict whether it
+will slip in a claim of its own.
+
+The next slide is what happens when students lean on the tool anyway.
+:::
+
+## Loose text and the time it costs
+
+::: {style="font-size:0.9em"}
+- Leaning on the tool gives long, smooth text that says little.
+- Cutting it back takes longer than writing it.
+- You lose the practice. Editing is how writing is learned.
+- Readers learn its habits and stop trusting the text.
+:::
+
+::: {.notes}
+Ninety seconds. This is the over-reliance slide and it closes the block's
+risks.
+
+Say it plainly first: try to avoid having AI write portions of your paper,
+and if you do, you will have to edit it heavily.
+
+Bullet three is the one that matters to them and it is worth saying in the
+first person. I write for a living and the editing is where I learned to. If
+the tool drafts and you only tidy, you will be a worse writer in two years
+than you are now, and writing is most of what a research career is.
+
+The first three bullets are judgement, not measurement; say so if asked.
+
+If asked for evidence on the last bullet: [Kobak et al. (Sci Adv,
+2025)](https://doi.org/10.1126/sciadv.adt3813) counted word frequencies in
+15 million PubMed abstracts and estimated at least 13.5 percent from 2024
+were processed by a model, with *delves* 28 times as common as before. No
+model was tested. It describes prose in aggregate and is not a detector.
+:::
+
+## Numbers come from your table
+
+::: {style="font-size:0.9em"}
+- While drafting, leave placeholders for results, such as `[Table 2, row 3]`.
+- No number goes in from memory, yours or the tool's.
+- When the analysis is done, fill each placeholder from the table.
+- Then have the tool audit every number against the table:
+
+> *List every number in this section. For each one, quote the table cell it came from. Mark any number you cannot find as "NOT IN TABLE". Do not rewrite anything.*
+
+- Fix what it flags yourself.
+:::
+
+[Anthropic, Reduce hallucinations: verify with citations](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. This is the check for the writing section, and it has two
+halves.
+
+While drafting, you leave a placeholder wherever a result will go, pointing
+at the table cell it will come from. No number enters the text from memory,
+yours or the tool's, and you can write the argument before the analysis is
+finished. That is how most published papers are written: the text is built
+around the tables, not the other way round.
+
+When the analysis is done, you fill the placeholders from the table. Then
+the tool earns its place: it lists every number in the section with the
+cell it came from, and flags anything it cannot find. The prompt follows
+Anthropic's own "verify with citations" technique: find the supporting
+source for each claim, and mark what has none. "Do not rewrite anything"
+keeps the fixes in your hands.
+
+Say what the audit cannot do. It checks your transcription against the
+table. If the table itself is wrong, the audit will confirm the wrong number
+without complaint, which is what the coding section is about.
+
+The last bullet is the one they will skip. Re-prompting hands you a fresh
+paragraph that has not been audited, and the check resets to zero.
+
+Then the bolded question for this block. How would you know it was wrong?
+You found the cell.
+:::
+
+# 5. AI for coding
+
+::: {.notes}
+Thirty seconds. Most of this section distils AEM 6850's two meetings on
+AI: you decide and it writes, ask for the script, a prompt that works, how
+code fails silently, a fact it did not read, and your own check in the
+script. The rest is what session B runs on: interrogating a file and the
+five checks.
+:::
+
+## You decide the question and it writes the code
+
+::: {style="font-size:1em"}
+- It is strong at writing, fixing and explaining code.
+- It is weak at judging whether a specification answers your question.
+- Decide the sample, the weights, the fixed effects and the clustering yourself.
+- Then ask it to implement them.
+- You must be able to explain every line.
+:::
+
+[Adapted from AEM 6850, meeting 9: coding agents](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/09-ai-code.html){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Ninety seconds. This is the first lesson of AEM 6850's meeting on coding
+agents, and it is the one that matters most for a proposal.
+
+The design is yours: the estimand, the sample, the weights, the fixed
+effects, the clustering. Let the tool choose and it picks something
+plausible, and plausible is not the same as right. That is the second
+failure mode the syllabus grades against, plausible-but-wrong design
+advice.
+
+The last bullet has a practical side for a room with no programming
+prerequisite. Ask it to explain rather than write, and it becomes a tutor.
+:::
+
+## Ask for the script
+
+::: {style="font-size:0.85em"}
+| | Answer in a chat | Saved script |
+|:--|:--|:--|
+| Someone else can rerun it | no | yes |
+| You can read it line by line | no | yes |
+| You can see where each number came from | no | yes |
+:::
+
+::: {style="font-size:0.9em"}
+- The research artifact is always code.
+- OpenAI: "*review the generated code, outputs, and assumptions before relying on the result.*"
+- Step by step, in AEM 6850: [chatbots and assistants](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/08-ai-chat.html) and [coding agents](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/09-ai-code.html).
+:::
+
+::: {.notes}
+Ninety seconds. The table is AEM 6850's, from its meeting on chat.
+
+A number in a chat raises three questions the reply does not answer: where
+it came from, which calculation it is, and whether anyone can rerun it. A
+script answers all three. Even when chat runs its own Python in a sandbox,
+the number is not a result: the code has no place in your project, and
+nobody can rerun it next week.
+
+Exploring a file by asking questions is fine. Any number that goes into
+your proposal needs a script behind it. Then read the vendor's own
+sentence; it is not my rule.
+
+The last bullet is for anyone who wants the hands-on version. AEM 6850
+meetings 8 and 9 walk through chat and Claude Code on real files. The pages
+are public.
+:::
+
+## Four parts of a prompt that works
+
+::: {style="font-size:0.9em"}
+1. **What you want.** The population-weighted mean life expectancy by continent in 2007.
+2. **What it will probably get wrong.** The file has twelve years per country. Use only 2007.
+3. **A script, not the answer.** Name the file it reads and what it prints.
+4. **What not to do.** Do not invent columns. If the file is not as described, stop.
+
+- Before sending, work out one number of the answer yourself.
+:::
+
+[Adapted from AEM 6850, meeting 8: chatbots and assistants](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/08-ai-chat.html){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. This is AEM 6850's prompt shape, with its own example.
+
+Part two is the one students skip. The tool has not seen your file, so say
+what it will get wrong: here, that there are twelve years per country.
+Part four closes the scope: no invented columns, and stop if the file does
+not match.
+
+The last bullet is the test from meeting 9. If you cannot name one number
+the answer must contain and work it out yourself, the task is too big.
+Split it. For anything with a merge, add "Describe your approach before
+writing any code", and read the plan: misunderstandings are cheapest to fix
+there.
+:::
+
+## The worst errors raise no warning
+
+::: {style="font-size:0.9em"}
+- Code that fails is easy to fix. Code that runs and is wrong is the danger.
+- The usual shapes: a merge that drops or duplicates rows, missing values handled silently, a unit mismatch.
+- AEM 6850: a continent mean over twelve years instead of 2007. It ran clean.
+- Reinhart and Rogoff (AER P&P, 2010): a formula left out 5 of 20 countries.
+- Public Health England: **15,841** positive tests missing for a week, with no error.
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+[AEM 6850, meeting 8](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/08-ai-chat.html) · [Reinhart and Rogoff (AER P&P, 2010)](https://doi.org/10.1257/aer.100.2.573) · [Herndon, Ash and Pollin (CJE, 2014)](https://doi.org/10.1093/cje/bet075) · [PHE statement, 4 October 2020](https://www.gov.uk/government/news/phe-statement-on-delayed-reporting-of-covid-19-cases)
+:::
+
+::: {.notes}
+Two minutes. The first two bullets are AEM 6850's: the danger is code that
+runs.
+
+The 6850 example: asked for mean life expectancy by continent, the script
+printed five plausible numbers. Oceania's 74.33 was the mean over all
+twelve years in the file, not 2007. The prompt had not said the file held
+twelve years per country, and the model had not seen the file.
+
+Reinhart and Rogoff: corrected, the headline growth figure for high-debt
+countries went from minus 0.1 percent to 2.2 percent. Be fair about it: the
+spreadsheet error was only 0.3 points of that gap; undisclosed choices about
+years and weights made the rest (Herndon, Ash and Pollin). Public Health
+England: an old Excel format stopped at 65,536 rows and said nothing, and
+about 48,000 close contacts were not traced in time.
+
+Close by saying this is the kind of fault they will hunt in session B.
+:::
+
+## A fact it did not read is a guess
+
+::: {style="font-size:1em"}
+- AEM 6850 asked for a country column on 109 PhD placements.
+- The page named a place for 14 of them.
+- The other 95 came from memory or a default.
+- One institution was Denmark in one run and Germany in the next.
+- The script ran without error both times.
+:::
+
+[AEM 6850, meeting 9: where the countries came from](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/09-ai-code.html){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Ninety seconds. This is AEM 6850's worked case, and it connects back to the
+slide on a model without tools:
+with nothing to read, the model writes from memory.
+
+The model even said so, in a comment and in its reply, and the column still
+went into the file. Plausible is not the same as right. A fact it did not
+read is a guess, however confident the sentence around it: a country, a
+variable's units, a function's arguments.
+
+What would have caught it, from 6850: a plan before code, where the reply
+proposed a lookup table "from knowledge of the institutions"; asking of the
+code where each value comes from; and a reviewer in a fresh conversation,
+which found it in one turn.
+:::
+
+## Open the file before you prompt
+
+::: {style="font-size:1em"}
+- Spend five minutes with the file before any assistant does.
+- Read the column names and ten rows.
+- What is one row? A store, a store-week, a sale?
+- What are the units? How is a missing value written?
+- You cannot spot a wrong answer about a file you never looked at.
+:::
+
+::: {.notes}
+Ninety seconds. This is section one of the sheet they fill in after the
+break, so say it in the words the sheet uses.
+
+The last bullet is the argument. Everything else in this block is about
+checking an answer, and checking needs something to check against. Five
+minutes with the raw file is what gives you that.
+
+Say that one row is the question teams get wrong most often, and that it
+decides every count they will later quote.
+:::
+
+## Interrogating a file through an assistant
+
+::: {style="font-size:0.72em"}
+Attach the file, with code execution on. Before any analysis:
+
+> *Do not analyse this file yet. Run code, and show me the code and the output for each of these:*\
+> *1. Rows, columns, and each column's type.*\
+> *2. The first five rows, printed raw.*\
+> *3. Which columns identify a row? Count duplicates.*\
+> *4. Each numeric column: missing values, minimum, maximum, five smallest and five largest.*\
+> *5. Each text column: number of distinct values.*\
+> *6. Row counts by store by month.*\
+> *7. Any code standing in for a missing value.*\
+> *Do not fix or drop anything.*
+
+- The plain question first gives a clean table of wrong totals.
+- This prompt gets the same tool to report the faults.
+:::
+
+::: {.notes}
+Three and a half minutes. CAPTURE NEEDED: run both prompts on a small
+practice extract — NOT store-weeks.csv — and put the two replies on the
+slide. Use a file whose fault is a store name spelled two ways, so the
+demonstrated fault family is none of the four they have to find after the
+break.
+
+"Do not fix anything" is in the prompt for a reason. An assistant that
+cleans the file on the way past hides exactly what you are looking for.
+
+"Run code and show me the code" is the other load-bearing phrase, because
+without it the reply can be a plausible set of counts read off the text of
+the file. Point at the code block on screen and say that is the evidence it
+ran.
+
+Ask for a written prediction of the row count before the first reply goes
+up. Then say that the only thing that changed between the two replies is the
+prompt. On Claude, code execution has to be switched on first; ChatGPT runs
+Python on an attached file by default.
+:::
+
+## Make it show the count
+
+::: {style="font-size:1em"}
+- "*Are there duplicated rows?*" can get a confident no.
+- A confident answer is not a check.
+- Ask for the code and the count, and read the count yourself.
+- For big claims: a fresh chat, one rule, the offending line quoted.
+- If a check fails, fix that one thing. Refuse a full rewrite.
+- In Cowork or Claude Code, read the diff, not its account of the diff.
+:::
+
+::: {.notes}
+Ninety seconds, and it is the most practically important slide in the block.
+The first bullet is exactly what will go wrong after the break.
+
+Anthropic's own guidance for their coding tool says to review in a fresh
+context, because a model asked to check its own work is biased toward code
+it just wrote. Asking "are you sure?" in the same conversation is not that.
+
+The last bullet protects the twenty minutes they are about to spend. A team
+whose first check fails will re-prompt, get a new version, and quietly throw
+away the reading they already did.
+:::
+
+## Put your own check in the script
+
+```r
+# Counted by hand on 2026-09-21: 16 rows for 2026.
+stopifnot(sum(placements$year == 2026) == 16)
+```
+
+::: {style="font-size:0.9em"}
+- Count one thing yourself, then write it in as a line the script must pass.
+- Type the count in yourself.
+- If the data changes or an edit breaks something, the script stops there.
+- People catch errors almost **20%** more often when the result is unexpected, so write the number down first.
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+[Adapted from AEM 6850, meeting 9](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/09-ai-code.html) · [Ferman and Finamor (arXiv, 2025)](https://arxiv.org/abs/2508.20069)
+:::
+
+::: {.notes}
+Ninety seconds. This is AEM 6850's habit: your own check, typed into the
+script and saved with it, so the check travels with the code. In Python the
+same line is an `assert`. Students who never write code can still do this:
+give the assistant the count and ask it to add the check line.
+
+The last bullet is Ferman and Finamor: in a randomised experiment inside
+real recruitment for research jobs, people were almost 20 percent more
+likely to find a planted coding error when it produced an unexpected
+result. So the errors that confirm your expectations are the ones that
+survive, and writing the expected number down first is the defence.
+
+If asked about speed: sixteen experienced developers were measured 19
+percent slower with AI tools and believed they had been 20 percent faster
+(Becker et al., METR, arXiv 2025). Feeling fast is not evidence.
+:::
+
+## Five checks you run on any file
+
+::: {style="font-size:0.9em"}
+1. **Row counts across a join.** More rows: a duplicate key. Fewer: dropped rows.
+2. **Totals against a published figure.**
+3. **Five raw records**, read by eye.
+4. **Orders of magnitude.** Is it 58 or 58,000?
+5. **The same number, a second way.**
+
+- Check 5 has a blind spot: two routes over the same bad file can agree.
+:::
+
+::: {.notes}
+Two and a half minutes. These are the five the sheet grades against, so give
+them in these words and let the room write them down.
+
+Check five needs its caveat said out loud, because it is the one they will
+over-trust. Double programming in clinical trials has exactly this blind
+spot, and the reviews of it say plainly that it validates outputs rather
+than inputs or logic. Agreement is evidence about arithmetic.
+
+Then the framing that makes the list learnable: each check is the answer to
+"how would you know it was wrong" for one shape of fault. You pick the check
+by the shape you are worried about, which is why a team that finds a fault
+and cannot name the check has not learned the thing.
+:::
+
+## Which check would have caught this?
+
+::: {style="font-size:0.80em"}
+1. Average household income in the county comes back as 58.
+2. After joining sales to store characteristics, the row count goes from 12,480 to 13,910.
+3. The assistant reports 41 stores. The published county list has 39.
+4. A column called `status` has four distinct values and the codebook lists three.
+- One of these needs no check at all beyond reading the output.
+:::
+
+::: {.notes}
+Ninety seconds, and it is the handoff to session B.
+
+None of these four is one of the faults planted in store-weeks.csv. That is
+deliberate: this rehearses the graded question without answering it.
+
+Answers, taken from the room rather than given: one is orders of magnitude;
+two is row counts across a join; three is totals against an outside figure.
+Four needs nothing — you read the output and see four values where the
+codebook says three, which is the whole check.
+
+The last bullet is there so nobody leaves believing every step needs a
+ritual. Say it explicitly when four comes up.
+:::
+
+## Tasks not to give it
+
+::: {style="font-size:1em"}
+- Outputs you cannot check by hand.
+- Facts it did not read: a country, a variable's units, a function's arguments.
+- Restricted data. Build on an invented sample and run the real thing yourself.
+- Long stretches of work you have not read.
+:::
+
+[Adapted from AEM 6850, meeting 9: coding agents](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/09-ai-code.html){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+One minute. AEM 6850's list, adapted to this room. Each item points back to
+a slide today: the countries case for facts it did not read, meeting 4 and
+the upload rule for restricted data, and the diff for long stretches.
+:::
+
+# 6. Checks and disclosure
+
+::: {.notes}
+Thirty seconds. Say that the last four slides apply to all three blocks and
+to everything handed in.
+:::
+
+## The same move in all three places
+
+::: {style="font-size:1em"}
+- **Reference**: resolve the DOI, open the paper.
+- **Sentence**: find the number in your table.
+- **Number**: compute it a second way.
+- Each time, ask where the claim came from.
+- Check one claim per conversation. If it fails, distrust the rest.
+:::
+
+::: {.notes}
+Ninety seconds. Put the three side by side so the hour resolves into one
+habit.
+
+The last bullet is the practical compromise. Nobody checks everything. One
+check per conversation is affordable, and the conditional on the end is what
+gives it teeth: a failed spot check condemns the whole conversation, not
+just the claim you happened to test.
+:::
+
+## What you may put into these tools
+
+::: {style="font-size:0.9em"}
+- Nothing at moderate risk or above in a public AI tool. Licensed data counts.
+- If you cannot upload your file, write the code on an invented sample with the same columns, then run it yourself.
+- ChatGPT free: three file uploads a day.
+- Claude: switch on *Code execution and file creation* under Settings → Capabilities.
+- Cornell: "*You are accountable for your work, regardless of the tools you use to produce it.*"
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+[IT@Cornell, AI guidelines](https://it.cornell.edu/ai/ai-guidelines) · [Claude Help Center, code execution](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude)
+:::
+
+::: {.notes}
+Ninety seconds. One line of callback to meeting 4 and no more; they have had
+the full treatment.
+
+The second bullet is a commitment I made to this room last week and it is the one
+that matters this afternoon. Two or three teams will have data they may not
+upload, and session B asks every team to interrogate its own dataset at four
+o'clock. The invented-sample route is how they do it.
+
+The Claude settings path was checked against Anthropic's help page, dated
+6 August 2026. VERIFY ON THE MORNING: ChatGPT's free-tier upload limit
+changes often; re-read OpenAI's File Uploads FAQ before the meeting.
+:::
+
+## What you write down about what you used
+
+::: {style="font-size:0.84em"}
+Three lines on every deliverable:
+
+> **Tools.** Claude Sonnet 5 (claude.ai) and ChatGPT 5.\
+> **Used for.** Drafting the cleaning script. Auditing the outline of section 2.\
+> **Checked.** Row counts before and after the join. Every reference opened.
+
+- Too vague: *AI*, *help with the code*, *it worked*.
+- Naming a mistake the tool made counts in your favour.
+- The AER asks the same: authors are "*solely accountable for, and must thoroughly fact-check, outputs created with the help of AI software.*"
+:::
+
+[American Economic Review, editorial policy](https://www.aeaweb.org/journals/aer/editorial-policy){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Ninety seconds. Show a filled-in block rather than an empty template,
+because a template teaches nothing and every disclosure I get back otherwise
+says "AI, for help with the code, and it worked".
+
+The three failing answers in the first bullet are the marking criteria
+stated as examples, so read them.
+
+While this slide is up, answer the question they actually want answered, and
+answer it once. I do not run AI detectors. OpenAI withdrew its own because
+it caught 26 percent of AI text and falsely flagged 9 percent of human text.
+Seven commercial detectors falsely flagged 61 percent of essays by writers
+whose first language is not English, against 5 percent for US school essays.
+Vanderbilt turned Turnitin's detector off because a 1 percent false positive
+rate across their submissions is about 750 students accused wrongly. The
+standard here is that you disclose and you verify.
+:::
+
+## Where the file comes from
+
+::: {style="font-size:0.9em"}
+- Download if you can. It is boring and usually fastest.
+- An API: a key, a rate limit, stable fields, a record of your request.
+- Scrape last. Pages change, rows vanish silently, terms often forbid it.
+- Every route has a wait, from days to months. Register now.
+- The full list, with waiting times, is on the data sources page.
+:::
+
+[Where to get data](../data-sources.qmd){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Ninety seconds, and resist reading a catalogue of sources from the front.
+The page does that better and it has the waits attached, which a slide
+cannot.
+
+The one thing worth saying out loud is the timing, and that getting it
+wrong is the commonest way an MPS capstone dies. A library database is
+available now. Dewey takes days. A data-use agreement takes months and may
+fail. A team that discovers in November which row it is in has no project.
+
+For the teams with no file yet, this is what their sheet is this afternoon:
+the named route, the wait, and a plan B.
+
+Then close the hour by saying what comes after the break: the same file for
+every team, four faults in it, and the graded question, which is which check
+would have caught each one. A team with no data yet hands in its access
+route and plan B, and that counts as a deliverable. Say it so no team
+arrives at four o'clock unsure what it is handing in.
+:::
+
+::::
+
+:::: {.content-hidden when-format="revealjs"}
+
+## Session A · 2:05 to 3:15
+
+**Not yet written.** The companion prose for a meeting is written after its
+deck has settled. Until then, the slides carry the material.
+
+## Session B · 3:30 to 4:30
+
+Ten-minute team check-in. Then every team drives an assistant over the same
+file, `store-weeks.csv`, and finds what is wrong with it. Then the graded
+half, which is naming the check that would have caught each fault. Then the
+same interrogation on the team's own candidate dataset, handed in before you
+leave as your data interrogation sheet. A team with no file yet hands in the
+named access route and a plan B.
+
+::::

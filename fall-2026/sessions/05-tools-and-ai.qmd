@@ -24,21 +24,8 @@ format:
 [**Open the slides**](05-tools-and-ai-slides.html)
 :::
 
-<!-- BUILD STATE, not for students. Thirty-six content slides and six
-     dividers, about 66 minutes of notes. The three tutorials (slides 21,
-     30 and 37) carry the prompt but not the captured reply. Slides resting
-     on a number carry a VERIFY line in their speaker notes; the economics
-     fabrication rate on slide 15 is from an abstract only. The retitle to
-     "Using AI in research" is not done. Remove this comment when the deck
-     ships. -->
-
-::: {.callout-warning appearance="simple"}
-**Draft.** This page is still being written. The slides are usable; the
-three worked examples are not in place yet.
-:::
-
-::: {.callout-warning appearance="simple"}
-**Date not final.** Instructor traveling — this meeting is held remotely.
+::: {.callout-note appearance="simple"}
+**On Zoom.** This session is held on Zoom and will be recorded.
 :::
 
 **What you should be able to do after this meeting.** Choose the right way to
@@ -1314,16 +1301,10 @@ arrives at four o'clock unsure what it is handing in.
 
 ## Session A · 2:05 to 3:15
 
-**Not yet written.** The companion prose for a meeting is written after its
-deck has settled. Until then, the slides carry the material.
+The material for this session is in the [slides](05-tools-and-ai-slides.html).
 
 ## Session B · 3:30 to 4:30
 
-Ten-minute team check-in. Then every team drives an assistant over the same
-file, `store-weeks.csv`, and finds what is wrong with it. Then the graded
-half, which is naming the check that would have caught each fault. Then the
-same interrogation on the team's own candidate dataset, handed in before you
-leave as your data interrogation sheet. A team with no file yet hands in the
-named access route and a plan B.
+A live demo of how to use AI to get a research project started.
 
 ::::

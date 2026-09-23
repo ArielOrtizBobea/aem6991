@@ -241,7 +241,7 @@ Two minutes. Same model underneath all three, which is the part students get
 wrong: they think the terminal one is smarter. It is not. It has more
 access, and last section gave them the word for the difference.
 
-Chat is what this afternoon runs on, so spend most of the time there, and
+Chat is what most of them will use, so spend most of the time there, and
 be exact about code. Chat cannot run your script or touch your machine. With
 *Code execution and file creation* switched on under Settings → Capabilities
 (off by default on Free, Pro and Max; on by default for Team and
@@ -940,7 +940,6 @@ You found the cell.
 Thirty seconds. This section is four habits, distilled from AEM 6850's two
 meetings on AI: plan first and work in small steps, commit before each task,
 explore the data before you analyze it, and build checks into every step.
-The last two slides are what session B runs on.
 :::
 
 ## Plan first and work in small steps
@@ -1002,8 +1001,8 @@ script under its own name before you change it.
 :::
 
 ::: {.notes}
-Ninety seconds. These are the questions on the sheet they fill in after the
-break, so say them in the sheet's words.
+Ninety seconds. These are the questions to ask of any file, including the
+one your team is betting on.
 
 What one row is decides every count they will later quote, and it is the
 question teams get wrong most often. Whether every unit appears in every
@@ -1036,10 +1035,9 @@ Attach the file, with code execution on. Before any analysis:
 
 ::: {.notes}
 Three and a half minutes. CAPTURE NEEDED: run both prompts on a small
-practice extract — NOT store-weeks.csv — and put the two replies on the
-slide. Use a file whose fault is a store name spelled two ways, so the
-demonstrated fault family is none of the four they have to find after the
-break.
+practice extract and put the two replies on the slide. A file with one
+store name spelled two ways works well: a total by store splits that store
+in half.
 
 "Do not fix anything" is in the prompt for a reason. An assistant that
 cleans the file on the way past hides exactly what you are looking for.
@@ -1113,8 +1111,8 @@ unexpected result. So the errors that confirm your expectations are the
 ones that survive. Better still, write the expected count into the script
 as a line it must pass, so the check travels with the code.
 
-The confident "no" is the thing that will go wrong after the break: a team
-asks whether there are duplicated rows and takes the answer on trust. A
+The confident "no" is the commonest way a check goes wrong: someone asks
+whether there are duplicated rows and takes the answer on trust. A
 fresh conversation that has seen none of the work is the reviewer; a model
 checking its own work is biased toward what it just wrote.
 
@@ -1135,8 +1133,8 @@ reading you already did.
 :::
 
 ::: {.notes}
-Two and a half minutes. These are the five the sheet grades against, so give
-them in these words and let the room write them down.
+Two and a half minutes. These are five checks worth running on any file, so
+give them in these words and let the room write them down.
 
 Check five needs its caveat said out loud, because it is the one they will
 over-trust. Double programming in clinical trials has exactly this blind
@@ -1160,10 +1158,7 @@ and cannot name the check has not learned the thing.
 :::
 
 ::: {.notes}
-Ninety seconds, and it is the handoff to session B.
-
-None of these four is one of the faults planted in store-weeks.csv. That is
-deliberate: this rehearses the graded question without answering it.
+Ninety seconds. On Zoom, take answers in the chat.
 
 Answers, taken from the room rather than given: one is orders of magnitude;
 two is row counts across a join; three is totals against an outside figure.
@@ -1219,10 +1214,10 @@ just the claim you happened to test.
 Ninety seconds. One line of callback to meeting 4 and no more; they have had
 the full treatment.
 
-The second bullet is a commitment I made to this room last week and it is the one
-that matters this afternoon. Two or three teams will have data they may not
-upload, and session B asks every team to interrogate its own dataset at four
-o'clock. The invented-sample route is how they do it.
+The second bullet is a commitment I made to this room last week. Two or
+three teams will have data they may not upload. The invented-sample route is
+how they work with it: the tool sees the column names and made-up rows, and
+the real file stays on their laptop.
 
 The Claude settings path was checked against Anthropic's help page, dated
 6 August 2026. VERIFY ON THE MORNING: ChatGPT's free-tier upload limit
@@ -1285,14 +1280,13 @@ wrong is the commonest way an MPS capstone dies. A library database is
 available now. Dewey takes days. A data-use agreement takes months and may
 fail. A team that discovers in November which row it is in has no project.
 
-For the teams with no file yet, this is what their sheet is this afternoon:
-the named route, the wait, and a plan B.
+For teams with no file yet, the named route, the wait and a plan B are
+worth writing down now.
 
-Then close the hour by saying what comes after the break: the same file for
-every team, four faults in it, and the graded question, which is which check
-would have caught each one. A team with no data yet hands in its access
-route and plan B, and that counts as a deliverable. Say it so no team
-arrives at four o'clock unsure what it is handing in.
+Then close the hour by saying what comes after the break: a live demo of how
+to use AI to get a research project started. Next week's two deliverables,
+a two-page project description and the team's working agreement, will be
+posted on Canvas.
 :::
 
 ::::

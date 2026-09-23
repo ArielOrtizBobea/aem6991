@@ -1,7 +1,7 @@
 ---
-title: "5 · Coding tools and AI"
+title: "5 · Using AI in research"
 subtitle: "Wednesday, September 23, 2026"
-pagetitle: "AEM 6991 · 5 Coding tools and AI"
+pagetitle: "AEM 6991 · 5 Using AI in research"
 format:
   html:
     toc: true
@@ -25,8 +25,8 @@ format:
 :::
 
 <!-- BUILD STATE, not for students. Thirty-six content slides and six
-     dividers, about 66 minutes of notes. The three tutorials (slides 20,
-     28 and 38) carry the prompt but not the captured reply. Slides resting
+     dividers, about 66 minutes of notes. The three tutorials (slides 21,
+     30 and 37) carry the prompt but not the captured reply. Slides resting
      on a number carry a VERIFY line in their speaker notes; the economics
      fabrication rate on slide 15 is from an abstract only. The retitle to
      "Using AI in research" is not done. Remove this comment when the deck
@@ -294,27 +294,31 @@ The last bullet sets up the next slide, so do not explain it here.
 ## A record of what changed
 
 ::: {style="font-size:0.9em"}
-- **Version control**: a saved history of every change to your project.
-- It shows what a tool changed, and lets you undo it.
+- **Git**: a saved history of every change to your project.
+- **GitHub**: a website that keeps that history online, so a team shares one copy.
+- With git you can see what a tool changed, and undo it.
 - Commit your folder before connecting it to an assistant.
 - A chat transcript is not a record. The same prompt can give different answers.
-- The test: could a teammate reproduce your number next week?
+- Step by step, in AEM 6850: [version control with git](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/07-git.html).
 :::
 
 ::: {.notes}
 Ninety seconds. Two audiences on one slide, and the second one is most of
 the room.
 
-For the teams that will point Cowork at a folder, the first three bullets
-are the whole safety net. You can see every line the tool changed, and you
-can undo it. Without that you are trusting a tool you have just been told
-guesses. The concrete version is `git init` and a first commit, before the
-folder is connected.
+Git keeps the history on your laptop. GitHub keeps a copy online, which is
+how a team works from one version instead of emailing files. For the teams
+that will point Cowork or Claude Code at a folder, the first four bullets
+are the whole safety net: you can see every line the tool changed, and you
+can undo it. The concrete version is `git init` and a first commit before
+the folder is connected. AEM 6850 meeting 7 is the step-by-step version, and
+the page is public.
 
-For everyone else, bullet four is the point, and it is about evidence. A screenshot of a chat is not a method section. Nothing in a
+For everyone else, bullet five is the point, and it is about evidence. A screenshot of a chat is not a method section. Nothing in a
 transcript can be re-run.
 
-The last bullet is the test the whole course uses, so say it and let it sit.
+Close with the test the whole course uses: could a teammate reproduce your
+number on a different laptop next week? Say it and let it sit.
 :::
 
 # 3. AI for literature reviews
@@ -391,76 +395,126 @@ biomedical papers found fabricated citations rose more than twelvefold from
 One line back to the New York lawyers from meeting 4, no more.
 :::
 
+## What an anchor paper is
+
+::: {style="font-size:1em"}
+- **Anchor paper**: a published paper close to your question that you have read.
+- It asks your question in another setting, or a close question in yours.
+- Or it uses the data or the method you plan to use.
+- Start with two or three, from your advisor, a recent review or a first search.
+- Anchors change as you find closer papers.
+:::
+
+::: {.notes}
+Ninety seconds. Define it plainly, because the whole method rests on it.
+
+An anchor is the paper you would cite in the first paragraph of your
+literature section: the closest existing answer to your question. You must
+have read it, not just its abstract, because everything you find next hangs
+off it, and a bad anchor spreads.
+
+Two or three is enough to start. Say the last bullet slowly. Anchors are a
+working set: if a later round turns up a paper closer to your question, it
+becomes an anchor and the search restarts from it.
+:::
+
 ## How to find the papers
 
-<svg class="dag" viewBox="0 0 960 490" width="920" height="470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Leads from memory are looked up in a database and become anchor papers. Following references back and citations forward from the anchors builds a candidate pool. The strongest new papers become anchors in turn, until nothing new appears. The tool screens the pool, you check what it drops, and you open each paper before citing it.">
+<svg class="dag" viewBox="0 0 960 440" width="900" height="412" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A loop of four steps. One, anchor papers: two or three papers you have read. Two, related leads: their references and citations, plus AI suggestions. Three, check each lead: find it in a database, open it, keep or drop it. Four, update the anchors: a closer paper becomes an anchor. Repeat, and stop when a round adds nothing new, then write the section.">
   <defs>
     <marker id="lit-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b31b1b"/></marker>
     <marker id="lit-arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#55554f"/></marker>
   </defs>
-  <!-- boxes -->
-  <rect x="20" y="20" width="260" height="78" rx="10" fill="#fafaf7" stroke="#55554f" stroke-width="2"/>
-  <rect x="300" y="150" width="260" height="78" rx="10" fill="#ffffff" stroke="#b31b1b" stroke-width="3"/>
-  <rect x="300" y="290" width="260" height="64" rx="10" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
-  <rect x="300" y="422" width="260" height="60" rx="10" fill="#f3dede" stroke="#55554f" stroke-width="2"/>
-  <!-- arrows -->
-  <path d="M280,59 H430 V145" fill="none" stroke="#55554f" stroke-width="2.4" marker-end="url(#lit-arrg)"/>
-  <path d="M430,228 V285" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"/>
-  <path d="M560,322 H660 V189 H565" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"/>
-  <path d="M430,354 V417" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"/>
-  <!-- box labels -->
-  <text x="150" y="53" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">Leads from memory</text>
-  <text x="150" y="82" font-size="19" fill="#6b6b6b" style="text-anchor:middle">authors, terms, journals</text>
-  <text x="430" y="183" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">Anchor papers</text>
-  <text x="430" y="212" font-size="19" fill="#6b6b6b" style="text-anchor:middle">two or three you have opened</text>
-  <text x="430" y="330" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">Candidate pool</text>
-  <text x="430" y="460" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">Open and cite</text>
-  <!-- arrow labels -->
-  <text x="445" y="112" font-size="20" font-style="italic" fill="#55554f" style="text-anchor:start">look each one up in a database</text>
-  <text x="285" y="176" font-size="19" fill="#6b6b6b" style="text-anchor:end">from your advisor,</text>
-  <text x="285" y="200" font-size="19" fill="#6b6b6b" style="text-anchor:end">a review or a search</text>
-  <text x="415" y="252" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:end">follow references back</text>
-  <text x="415" y="276" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:end">and citations forward</text>
-  <text x="675" y="236" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:start">strongest new papers</text>
-  <text x="675" y="260" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:start">become anchors</text>
-  <text x="675" y="284" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:start">until nothing new appears</text>
-  <text x="445" y="381" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:start">the tool screens,</text>
-  <text x="445" y="404" font-size="20" font-style="italic" fill="#b31b1b" style="text-anchor:start">you check what it drops</text>
+  <rect x="20" y="20" width="320" height="104" rx="10" fill="#ffffff" stroke="#b31b1b" stroke-width="3"/>
+  <rect x="620" y="20" width="320" height="104" rx="10" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <rect x="620" y="236" width="320" height="104" rx="10" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <rect x="20" y="236" width="320" height="104" rx="10" fill="#ffffff" stroke="#55554f" stroke-width="2"/>
+  <rect x="330" y="375" width="310" height="50" rx="10" fill="#f3dede" stroke="#55554f" stroke-width="2"/>
+  <path d="M340,72 H612" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"/>
+  <path d="M780,124 V228" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"/>
+  <path d="M620,288 H348" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"/>
+  <path d="M180,236 V132" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"/>
+  <path d="M780,340 V400 H648" fill="none" stroke="#55554f" stroke-width="2.4" marker-end="url(#lit-arrg)"/>
+  <text x="180" y="58" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">1. Anchor papers</text>
+  <text x="180" y="86" font-size="19" fill="#6b6b6b" style="text-anchor:middle">two or three papers</text>
+  <text x="180" y="110" font-size="19" fill="#6b6b6b" style="text-anchor:middle">you have read</text>
+  <text x="780" y="58" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">2. Related leads</text>
+  <text x="780" y="86" font-size="19" fill="#6b6b6b" style="text-anchor:middle">their references and citations,</text>
+  <text x="780" y="110" font-size="19" fill="#6b6b6b" style="text-anchor:middle">plus AI suggestions</text>
+  <text x="780" y="274" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">3. Check each lead</text>
+  <text x="780" y="302" font-size="19" fill="#6b6b6b" style="text-anchor:middle">find it in a database,</text>
+  <text x="780" y="326" font-size="19" fill="#6b6b6b" style="text-anchor:middle">open it, keep or drop</text>
+  <text x="180" y="274" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">4. Update the anchors</text>
+  <text x="180" y="302" font-size="19" fill="#6b6b6b" style="text-anchor:middle">a closer paper</text>
+  <text x="180" y="326" font-size="19" fill="#6b6b6b" style="text-anchor:middle">becomes an anchor</text>
+  <text x="480" y="186" font-size="22" font-style="italic" fill="#b31b1b" style="text-anchor:middle">repeat</text>
+  <text x="792" y="372" font-size="19" font-style="italic" fill="#55554f" style="text-anchor:start">stop when a round</text>
+  <text x="792" y="394" font-size="19" font-style="italic" fill="#55554f" style="text-anchor:start">adds nothing new</text>
+  <text x="485" y="407" font-size="22" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">Write the section</text>
 </svg>
 
+- Keep a log: one row per paper, where it came from, and whether you opened it.
+
 ::: {.notes}
-Two minutes. This is the whole method on one page, and the next four slides
-take it one box at a time.
+Two minutes. This is the method, and it starts from papers you trust.
 
-Start in the middle, with the anchors. Two or three papers you have opened
-yourself and know are close to your question. They come from your advisor, a
-recent review article, or a database search. Everything else hangs off them,
-so a bad anchor spreads: check them first.
+Step 1: two or three anchor papers, as defined on the previous slide. Read
+their introductions.
 
-From each anchor, follow the reference list back and the citing papers
-forward. That fills the candidate pool. The strongest new papers in the pool
-become anchors in turn, and you go round again. Stop when a round turns up
-nothing you had not already seen. Systematic reviewers call that saturation,
-and it is the only honest stopping rule.
+Step 2: collect related leads from each anchor. Its reference list, the
+papers that cite it (Google Scholar's Cited by), and whatever the model
+suggests when you give it your anchors. Everything at this step is a lead,
+not a reference.
 
-Memory comes in on the top left, as a complement. Ask the model for
-landmark papers, authors, search terms and journals, and treat every answer
-as a lead. A lead becomes an anchor only after you have found it in a
-database and opened it.
+Step 3: check each lead. Find it in EconLit or Google Scholar, open it, read
+the abstract, and keep or drop it.
 
-At the bottom, the tool earns its place a second time: it sorts and screens
-the pool, and you check what it throws out. Nothing reaches the proposal
-until you have opened it.
+Step 4: update the anchors. If a kept paper is closer to your question than
+one of your anchors, it replaces it, and the next round starts from it.
 
-The evidence behind each arrow is on the next slides: chaining (Sahu,
-Charlin and Pal), memory for leads (Korinek; Buchanan, Hill and Shapoval),
-screening (Mazzali; Clark).
+Stop when a round adds nothing new. Systematic reviewers call that
+saturation, and it is the only honest stopping rule.
+
+The log is what makes this concrete: one row per paper, with where it came
+from (a reference list, a citing paper, the model), whether you found it in
+a database, whether you opened it, and keep or drop. It is also most of your
+disclosure, because it records what the tool suggested and what you
+checked.
+
+The next slides take steps 2 and 3 one at a time.
+:::
+
+## Follow the citations of your anchors
+
+::: {style="font-size:1em"}
+- Go back through each anchor's reference list.
+- Go forward to the papers that cite it.
+- On 250 computer-science papers, a search that followed citation chains recovered over **80%** of each paper's references.
+- Keyword search alone recovered under **20%**.
+- Tools: Google Scholar *Cited by*, Semantic Scholar, Connected Papers.
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+Pipeline built on GPT-OSS-120B, with Qwen3-Embedding-8B for ranking. Not yet peer reviewed.
+
+[Sahu, Charlin and Pal (arXiv, 2026)](https://arxiv.org/abs/2605.29234)
+:::
+
+::: {.notes}
+Ninety seconds. This is step two, and it needs no AI at all. Backward means
+the reference list. Forward means the papers that cite it, which Google
+Scholar's Cited by and Semantic Scholar show you.
+
+The numbers come from one 2026 preprint on 250 computer-science papers, not
+yet peer reviewed, comparing plain keyword search with a pipeline that
+followed bibliographic links. Say that plainly. The size of the gap is the
+point, and it matches what research librarians have taught for decades.
 :::
 
 ## Use memory for leads
 
 ::: {style="font-size:1em"}
-- Ask for landmark papers, key authors, search terms and journals.
+- Give it your anchors. Ask for related papers, authors, search terms and journals.
 - Treat every answer as a lead to look up.
 - GPT-4 is "*often able to provide standard references that are frequently cited in the literature*."
 - ChatGPT got less reliable as questions got more specific.
@@ -471,11 +525,11 @@ screening (Mazzali; Clark).
 :::
 
 ::: {.notes}
-Ninety seconds. This is where memory earns its keep: getting oriented in a
-literature you do not know. Landmark papers, the names that recur, the words
-each field uses for the same idea, and which journals to look in. Search
-terms matter most, because economists, epidemiologists and marketers use
-different words for the same thing, and students are worst at this part.
+Ninety seconds. This is the other half of step two. Give the model your
+anchors and ask what is around them: related papers, the names that recur,
+the words each field uses for the same idea, and which journals to look in.
+Search terms matter most, because economists, epidemiologists and marketers
+use different words for the same thing, and students are worst at this part.
 
 Korinek, in the JEL article: GPT-4 "is often able to provide standard
 references that are frequently cited in the literature". That is the famous
@@ -492,41 +546,10 @@ Tools improve fast. The evidence here is on 2023 to 2025 models, and nobody
 has measured today's frontier models on this. Say so if asked.
 :::
 
-## Start from papers you trust
-
-::: {style="font-size:1em"}
-- Pick two or three papers you have opened and checked.
-- Follow their references back, and their citations forward.
-- On 250 computer-science papers, a search that followed citation chains recovered over **80%** of each paper's references.
-- Keyword search alone recovered under **20%**.
-- Tools: Google Scholar *Cited by*, Semantic Scholar, Connected Papers.
-:::
-
-::: {style="font-size:0.55em; color:#6b6b6b"}
-Pipeline built on GPT-OSS-120B, with Qwen3-Embedding-8B for ranking. Not yet peer reviewed.
-
-[Sahu, Charlin and Pal (arXiv, 2026)](https://arxiv.org/abs/2605.29234)
-:::
-
-::: {.notes}
-Two minutes. This is the strategy with the biggest measured gain, and it
-needs no AI at all to start.
-
-The seeds can come from a recent review article, from your advisor, or from
-the leads on the previous slide once you have checked them. Backward means
-the reference list. Forward means the papers that cite it, which is what
-Google Scholar's Cited by and Semantic Scholar show you.
-
-The numbers come from one 2026 preprint on 250 papers, not yet peer
-reviewed, comparing plain keyword search with a pipeline that followed
-bibliographic links. Say that plainly. The size of the gap is the point, and
-it matches what research librarians have taught for decades.
-:::
-
 ## Search a database and let the tool screen
 
 ::: {style="font-size:1em"}
-- Run the search yourself, in EconLit or Google Scholar.
+- Look up each lead yourself, in EconLit or Google Scholar.
 - Give the tool the results to sort and screen.
 - Screening a known set, Elicit kept **91%** of the relevant papers.
 - Across 19 studies, AI screeners wrongly dropped a median **28%**.
@@ -593,6 +616,41 @@ does not remove it, so the last step is not optional.
 
 This is the same move as the writing section's number check, one section
 early.
+:::
+
+## Write your own framing
+
+::: {style="font-size:0.9em"}
+- **Framing**: what you ask, why it matters, and what is new compared with your anchors.
+- Tools are still weak at this. They produce the framing of an average paper.
+- Write yours first, in two or three sentences.
+- Then have the tool test it against your anchor papers:
+
+> *Here is my framing and the introductions of my anchor papers. Quote each paper's statement of its own contribution. Then list where my framing overlaps with theirs, and what a referee would say is not new.*
+
+- Revise it yourself. Do not ask for a new version.
+:::
+
+::: {.notes}
+Two minutes. Framing is the part of a proposal a reader judges first, so
+define it plainly. It is how you present your question: what you ask, why it
+matters, and what is new compared with the closest papers. It usually lives
+in the first paragraph of the introduction and the last paragraph of the
+literature section.
+
+Tools are weak here. Asked for a framing, they produce the framing of an
+average paper in the area, because that is what they have seen most, and
+they overstate what is new, which is the overgeneralisation problem the
+writing section comes back to. This is my judgement from reading
+AI-drafted introductions; I have no measurement for it, so say so.
+
+Once yours is written, the tool is useful as a tester. The prompt makes it
+do two things you can check: quote each anchor's own contribution statement,
+which you can find in the paper, and list where yours overlaps. The referee
+line is the hostile reader. If you cannot say in one sentence how your
+framing differs from each anchor, it is not finished.
+
+This links back to meeting 3, on finding the question.
 :::
 
 ## Open it before you cite it
@@ -892,182 +950,82 @@ You found the cell.
 # 5. AI for coding
 
 ::: {.notes}
-Thirty seconds. Most of this section distils AEM 6850's two meetings on
-AI: you decide and it writes, ask for the script, a prompt that works, how
-code fails silently, a fact it did not read, and your own check in the
-script. The rest is what session B runs on: interrogating a file and the
-five checks.
+Thirty seconds. This section is four habits, distilled from AEM 6850's two
+meetings on AI: plan first and work in small steps, commit before each task,
+explore the data before you analyze it, and build checks into every step.
+The last two slides are what session B runs on.
 :::
 
-## You decide the question and it writes the code
+## Plan first and work in small steps
 
 ::: {style="font-size:1em"}
-- It is strong at writing, fixing and explaining code.
-- It is weak at judging whether a specification answers your question.
-- Decide the sample, the weights, the fixed effects and the clustering yourself.
-- Then ask it to implement them.
-- You must be able to explain every line.
+- Decide the question, the sample and the method yourself.
+- Ask for a plan before any code, and read it.
+- One task per conversation. Start a new one for the next task.
+- A task is small enough when you can predict one number of its answer.
 :::
 
-[Adapted from AEM 6850, meeting 9: coding agents](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/09-ai-code.html){style="font-size:0.55em; color:#6b6b6b"}
+[Adapted from AEM 6850, meetings 8 and 9](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/09-ai-code.html){style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.notes}
-Ninety seconds. This is the first lesson of AEM 6850's meeting on coding
-agents, and it is the one that matters most for a proposal.
+Two minutes. This is the general lesson of AEM 6850's two meetings on AI,
+and it matters more than any prompt.
 
-The design is yours: the estimand, the sample, the weights, the fixed
-effects, the clustering. Let the tool choose and it picks something
-plausible, and plausible is not the same as right. That is the second
-failure mode the syllabus grades against, plausible-but-wrong design
-advice.
+The design is yours: the question, the sample, the weights, the method. Let
+the tool choose and it picks something plausible, and plausible is not the
+same as right. That is the second failure mode the syllabus grades against.
+Ask it to describe its approach before writing any code, and fix
+misunderstandings there, where they are cheapest.
 
-The last bullet has a practical side for a room with no programming
-prerequisite. Ask it to explain rather than write, and it becomes a tutor.
+Small steps, for two reasons. Long threads push early instructions out of
+the context window, and a small task is one you can check. The test from
+6850: if you cannot name one number the answer must contain and work it out
+yourself, the task is too big. Split it.
 :::
 
-## Ask for the script
-
-::: {style="font-size:0.85em"}
-| | Answer in a chat | Saved script |
-|:--|:--|:--|
-| Someone else can rerun it | no | yes |
-| You can read it line by line | no | yes |
-| You can see where each number came from | no | yes |
-:::
-
-::: {style="font-size:0.9em"}
-- The research artifact is always code.
-- OpenAI: "*review the generated code, outputs, and assumptions before relying on the result.*"
-- Step by step, in AEM 6850: [chatbots and assistants](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/08-ai-chat.html) and [coding agents](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/09-ai-code.html).
-:::
-
-::: {.notes}
-Ninety seconds. The table is AEM 6850's, from its meeting on chat.
-
-A number in a chat raises three questions the reply does not answer: where
-it came from, which calculation it is, and whether anyone can rerun it. A
-script answers all three. Even when chat runs its own Python in a sandbox,
-the number is not a result: the code has no place in your project, and
-nobody can rerun it next week.
-
-Exploring a file by asking questions is fine. Any number that goes into
-your proposal needs a script behind it. Then read the vendor's own
-sentence; it is not my rule.
-
-The last bullet is for anyone who wants the hands-on version. AEM 6850
-meetings 8 and 9 walk through chat and Claude Code on real files. The pages
-are public.
-:::
-
-## Four parts of a prompt that works
-
-::: {style="font-size:0.9em"}
-1. **What you want.** The population-weighted mean life expectancy by continent in 2007.
-2. **What it will probably get wrong.** The file has twelve years per country. Use only 2007.
-3. **A script, not the answer.** Name the file it reads and what it prints.
-4. **What not to do.** Do not invent columns. If the file is not as described, stop.
-
-- Before sending, work out one number of the answer yourself.
-:::
-
-[Adapted from AEM 6850, meeting 8: chatbots and assistants](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/08-ai-chat.html){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-Two minutes. This is AEM 6850's prompt shape, with its own example.
-
-Part two is the one students skip. The tool has not seen your file, so say
-what it will get wrong: here, that there are twelve years per country.
-Part four closes the scope: no invented columns, and stop if the file does
-not match.
-
-The last bullet is the test from meeting 9. If you cannot name one number
-the answer must contain and work it out yourself, the task is too big.
-Split it. For anything with a merge, add "Describe your approach before
-writing any code", and read the plan: misunderstandings are cheapest to fix
-there.
-:::
-
-## The worst errors raise no warning
-
-::: {style="font-size:0.9em"}
-- Code that fails is easy to fix. Code that runs and is wrong is the danger.
-- The usual shapes: a merge that drops or duplicates rows, missing values handled silently, a unit mismatch.
-- AEM 6850: a continent mean over twelve years instead of 2007. It ran clean.
-- Reinhart and Rogoff (AER P&P, 2010): a formula left out 5 of 20 countries.
-- Public Health England: **15,841** positive tests missing for a week, with no error.
-:::
-
-::: {style="font-size:0.55em; color:#6b6b6b"}
-[AEM 6850, meeting 8](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/08-ai-chat.html) · [Reinhart and Rogoff (AER P&P, 2010)](https://doi.org/10.1257/aer.100.2.573) · [Herndon, Ash and Pollin (CJE, 2014)](https://doi.org/10.1093/cje/bet075) · [PHE statement, 4 October 2020](https://www.gov.uk/government/news/phe-statement-on-delayed-reporting-of-covid-19-cases)
-:::
-
-::: {.notes}
-Two minutes. The first two bullets are AEM 6850's: the danger is code that
-runs.
-
-The 6850 example: asked for mean life expectancy by continent, the script
-printed five plausible numbers. Oceania's 74.33 was the mean over all
-twelve years in the file, not 2007. The prompt had not said the file held
-twelve years per country, and the model had not seen the file.
-
-Reinhart and Rogoff: corrected, the headline growth figure for high-debt
-countries went from minus 0.1 percent to 2.2 percent. Be fair about it: the
-spreadsheet error was only 0.3 points of that gap; undisclosed choices about
-years and weights made the rest (Herndon, Ash and Pollin). Public Health
-England: an old Excel format stopped at 65,536 rows and said nothing, and
-about 48,000 close contacts were not traced in time.
-
-Close by saying this is the kind of fault they will hunt in session B.
-:::
-
-## A fact it did not read is a guess
+## Commit before each task
 
 ::: {style="font-size:1em"}
-- AEM 6850 asked for a country column on 109 PhD placements.
-- The page named a place for 14 of them.
-- The other 95 came from memory or a default.
-- One institution was Denmark in one run and Germany in the next.
-- The script ran without error both times.
+- Commit your work before you ask the tool to change anything.
+- Afterwards, look at what changed, line by line.
+- Trust the changes you can see over the tool's summary of them.
+- Undo anything you did not ask for.
 :::
 
-[AEM 6850, meeting 9: where the countries came from](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/09-ai-code.html){style="font-size:0.55em; color:#6b6b6b"}
+[Step by step: AEM 6850, meeting 7 on version control with git](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/07-git.html){style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.notes}
-Ninety seconds. This is AEM 6850's worked case, and it connects back to the
-slide on a model without tools:
-with nothing to read, the model writes from memory.
+Ninety seconds. This is the git slide from the start of the hour, in
+practice. Every task starts from a saved state and ends with a list of
+exactly what changed. That list is the diff, and it is the honest account
+of what the tool did; its own summary is a claim like any other.
 
-The model even said so, in a comment and in its reply, and the column still
-went into the file. Plausible is not the same as right. A fact it did not
-read is a guess, however confident the sentence around it: a country, a
-variable's units, a function's arguments.
-
-What would have caught it, from 6850: a plan before code, where the reply
-proposed a lookup table "from knowledge of the institutions"; asking of the
-code where each value comes from; and a reviewer in a fresh conversation,
-which found it in one turn.
+For teams working only in chat, the same habit is saving each version of a
+script under its own name before you change it.
 :::
 
-## Open the file before you prompt
+## Explore the data before you analyze it
 
 ::: {style="font-size:1em"}
-- Spend five minutes with the file before any assistant does.
-- Read the column names and ten rows.
-- What is one row? A store, a store-week, a sale?
+- Spend time with the file before any analysis.
+- What is one row? How many rows are there?
 - What are the units? How is a missing value written?
+- Does every unit appear in every period?
 - You cannot spot a wrong answer about a file you never looked at.
 :::
 
 ::: {.notes}
-Ninety seconds. This is section one of the sheet they fill in after the
-break, so say it in the words the sheet uses.
+Ninety seconds. These are the questions on the sheet they fill in after the
+break, so say them in the sheet's words.
 
-The last bullet is the argument. Everything else in this block is about
-checking an answer, and checking needs something to check against. Five
-minutes with the raw file is what gives you that.
+What one row is decides every count they will later quote, and it is the
+question teams get wrong most often. Whether every unit appears in every
+period is the one nobody asks, and it is how a year-on-year comparison ends
+up comparing nine months against twelve.
 
-Say that one row is the question teams get wrong most often, and that it
-decides every count they will later quote.
+The last bullet is the argument for all of it. Checking needs something to
+check against, and time with the raw file is what gives you that. The next
+slide is how to do it through an assistant.
 :::
 
 ## Interrogating a file through an assistant
@@ -1110,63 +1068,71 @@ prompt. On Claude, code execution has to be switched on first; ChatGPT runs
 Python on an attached file by default.
 :::
 
-## Make it show the count
+## The worst errors raise no warning
 
 ::: {style="font-size:1em"}
-- "*Are there duplicated rows?*" can get a confident no.
-- A confident answer is not a check.
-- Ask for the code and the count, and read the count yourself.
-- For big claims: a fresh chat, one rule, the offending line quoted.
-- If a check fails, fix that one thing. Refuse a full rewrite.
-- In Cowork or Claude Code, read the diff, not its account of the diff.
-:::
-
-::: {.notes}
-Ninety seconds, and it is the most practically important slide in the block.
-The first bullet is exactly what will go wrong after the break.
-
-Anthropic's own guidance for their coding tool says to review in a fresh
-context, because a model asked to check its own work is biased toward code
-it just wrote. Asking "are you sure?" in the same conversation is not that.
-
-The last bullet protects the twenty minutes they are about to spend. A team
-whose first check fails will re-prompt, get a new version, and quietly throw
-away the reading they already did.
-:::
-
-## Put your own check in the script
-
-```r
-# Counted by hand on 2026-09-21: 16 rows for 2026.
-stopifnot(sum(placements$year == 2026) == 16)
-```
-
-::: {style="font-size:0.9em"}
-- Count one thing yourself, then write it in as a line the script must pass.
-- Type the count in yourself.
-- If the data changes or an edit breaks something, the script stops there.
-- People catch errors almost **20%** more often when the result is unexpected, so write the number down first.
+- Code that fails is easy to fix. Code that runs and is wrong is the danger.
+- The usual shapes: a merge that drops or duplicates rows, missing values handled silently, a unit mismatch.
+- Reinhart and Rogoff (AER P&P, 2010): a formula left out 5 of 20 countries.
+- Public Health England: **15,841** positive tests missing for a week, with no error.
 :::
 
 ::: {style="font-size:0.55em; color:#6b6b6b"}
-[Adapted from AEM 6850, meeting 9](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/09-ai-code.html) · [Ferman and Finamor (arXiv, 2025)](https://arxiv.org/abs/2508.20069)
+[Reinhart and Rogoff (AER P&P, 2010)](https://doi.org/10.1257/aer.100.2.573) · [Herndon, Ash and Pollin (CJE, 2014)](https://doi.org/10.1093/cje/bet075) · [PHE statement, 4 October 2020](https://www.gov.uk/government/news/phe-statement-on-delayed-reporting-of-covid-19-cases)
 :::
 
 ::: {.notes}
-Ninety seconds. This is AEM 6850's habit: your own check, typed into the
-script and saved with it, so the check travels with the code. In Python the
-same line is an `assert`. Students who never write code can still do this:
-give the assistant the count and ask it to add the check line.
+Two minutes. The first two bullets are AEM 6850's: the danger is code that
+runs.
 
-The last bullet is Ferman and Finamor: in a randomised experiment inside
-real recruitment for research jobs, people were almost 20 percent more
-likely to find a planted coding error when it produced an unexpected
-result. So the errors that confirm your expectations are the ones that
-survive, and writing the expected number down first is the defence.
+Reinhart and Rogoff: corrected, the headline growth figure for high-debt
+countries went from minus 0.1 percent to 2.2 percent. Be fair about it: the
+spreadsheet error was only 0.3 points of that gap, and undisclosed choices
+about years and weights made the rest (Herndon, Ash and Pollin). Public
+Health England: an old Excel format stopped at 65,536 rows and said nothing,
+and about 48,000 close contacts were not traced in time.
 
-If asked about speed: sixteen experienced developers were measured 19
-percent slower with AI tools and believed they had been 20 percent faster
-(Becker et al., METR, arXiv 2025). Feeling fast is not evidence.
+Neither of these is a statistics error. Both were invisible in a
+spreadsheet and would have been visible in code, which is why the next slide
+is about checks.
+:::
+
+## Build checks into every step
+
+::: {style="font-size:1em"}
+- Ask for code you can rerun, not just an answer.
+- Before you run it, write down the number you expect.
+- A confident "*no problems*" is not a check. Ask for the code and the count.
+- Check big claims in a fresh conversation.
+- When a check fails, fix that one thing.
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+[Adapted from AEM 6850, meetings 8 and 9](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/08-ai-chat.html) · [Ferman and Finamor (arXiv, 2025)](https://arxiv.org/abs/2508.20069)
+:::
+
+::: {.notes}
+Two minutes. Five habits, and each one is general.
+
+Code you can rerun is AEM 6850's rule that the research artifact is always
+code. A number in a chat, even one computed in the tool's sandbox, cannot be
+rerun next week by anyone else. OpenAI's own help page says to review the
+generated code, outputs and assumptions before relying on the result.
+
+Write down the number you expect first. Ferman and Finamor ran a randomised
+experiment inside real recruitment for research jobs: people were almost 20
+percent more likely to find a planted coding error when it produced an
+unexpected result. So the errors that confirm your expectations are the
+ones that survive. Better still, write the expected count into the script
+as a line it must pass, so the check travels with the code.
+
+The confident "no" is the thing that will go wrong after the break: a team
+asks whether there are duplicated rows and takes the answer on trust. A
+fresh conversation that has seen none of the work is the reviewer; a model
+checking its own work is biased toward what it just wrote.
+
+Fix one thing at a time. Asking for a whole new version throws away the
+reading you already did.
 :::
 
 ## Five checks you run on any file
@@ -1219,23 +1185,6 @@ codebook says three, which is the whole check.
 
 The last bullet is there so nobody leaves believing every step needs a
 ritual. Say it explicitly when four comes up.
-:::
-
-## Tasks not to give it
-
-::: {style="font-size:1em"}
-- Outputs you cannot check by hand.
-- Facts it did not read: a country, a variable's units, a function's arguments.
-- Restricted data. Build on an invented sample and run the real thing yourself.
-- Long stretches of work you have not read.
-:::
-
-[Adapted from AEM 6850, meeting 9: coding agents](https://arielortizbobea.github.io/aem6850/fall-2026/sessions/09-ai-code.html){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-One minute. AEM 6850's list, adapted to this room. Each item points back to
-a slide today: the countries case for facts it did not read, meeting 4 and
-the upload rule for restricted data, and the diff for long stretches.
 :::
 
 # 6. Checks and disclosure

@@ -1338,13 +1338,14 @@ indicates in-sample fit. It does not establish predictive accuracy, and it
 contains no information about causal effects.
 :::
 
-## eBay turned off its brand-keyword search ads
+## eBay's ads were credited with sales they did not cause
 
-<div class="m06" data-demo="ebay" style="width:84%;margin:0 auto"></div>
+<div class="m06" data-demo="ebay" style="width:74%;margin:0 auto"></div>
 
 - March 2012: eBay stopped brand-keyword ads on Yahoo! and MSN.
 - Organic search clicks recovered 99.5% of the lost click traffic.
-- Other keywords: OLS implied a return above 4,100%. A geographic experiment estimated −63%.
+- Other keywords: OLS implied a return above 4,100%. A randomized regional experiment estimated −63%.
+- Ad spending predicted revenue well. Only the experiment measured what the ads caused.
 
 [Blake, Nosko and Tadelis (2015), *Consumer Heterogeneity and Paid Search Effectiveness*, Econometrica 83, 155–174.](https://doi.org/10.3982/ECTA12423){style="font-size:0.55em; color:#6b6b6b"}
 
@@ -1359,7 +1360,7 @@ immediately below instead: 99.5% of the click traffic the ads had brought
 still arrived. The figure is a schematic of the paper's Figure 2.
 
 Non-brand keywords: eBay stopped all non-brand search advertising for 60
-days in 68 of 210 designated market areas. An OLS regression of revenue on
+days in 68 of 210 designated market areas, chosen at random. An OLS regression of revenue on
 search spending, the kind of model that predicts revenue well, implies a
 return on investment above 4,100%. The experiment estimates −63%, with a 95%
 confidence interval from −124% to −3%. The effect was concentrated among

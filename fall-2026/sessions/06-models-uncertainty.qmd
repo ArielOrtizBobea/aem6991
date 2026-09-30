@@ -2,10 +2,29 @@
 title: "6 · Models and uncertainty"
 subtitle: "Wednesday, September 30, 2026"
 pagetitle: "AEM 6991 · 6 Models and uncertainty"
+resources:
+  - sim/*.js
+format:
+  html:
+    toc: true
+    toc-depth: 2
+  revealjs:
+    output-file: 06-models-uncertainty-slides.html
+    theme: [default, slides.scss]
+    template-partials:
+      - title-slide.html
+    footer: "AEM 6991"
+    slide-number: c/t
+    incremental: false
+    history: false
+    link-external-newwindow: true
+    include-after-body: sim/m06-include.html
 ---
 
+:::: {.content-hidden when-format="revealjs"}
+
 ::: {.callout-note appearance="simple"}
-This page is a stub. Materials appear here before the meeting.
+[**Open the slides**](06-models-uncertainty-slides.html)
 :::
 
 **What you should be able to do after this meeting.** Read a coefficient in the units of the problem. Say what a p-value does and does not tell you. Tell an explanatory question apart from a predictive one.
@@ -35,3 +54,1277 @@ Your team's output is submitted before you leave.
 ## Due
 
 Rate your teammates
+
+::::
+
+:::: {.content-visible when-format="revealjs"}
+
+## Motivation
+
+- Most of your projects will involve estimating an unknown parameter.
+- You obtain that estimate from the data.
+- Your estimate should be critical for a decision maker.
+- Today we discuss estimation: how we obtain estimates from a sample, and how we capture their uncertainty.
+
+::: {.notes}
+Ninety seconds. Slow.
+
+A parameter is a fixed quantity that describes a population: a price
+premium, an elasticity, a probability, a treatment effect. It is never a
+column in the dataset. Every project in this room has to estimate one from a
+sample, and the reader of the proposal will ask how precise that estimate
+is.
+
+Most of the hour runs in simulated populations where the parameter is known
+and shown on screen as a red dashed line. That is the only setting in which
+you can watch an estimator's behavior. In their projects the parameter is
+unknown.
+:::
+
+## Parameters your projects might estimate
+
+::: {style="font-size:0.72em"}
+| Project lead | Parameter to estimate |
+|:--|:--|
+| What is a water view worth? | The average price premium for a water view, in dollars or percent |
+| When a price rises, what do shoppers switch to? | Diversion ratios: the share of lost sales captured by each substitute |
+| Does falling foot traffic predict a closure? | The probability of closure within 12 months, given the foot-traffic trend |
+| What is a "locally sourced" claim worth? | Willingness to pay for the label, in cents per unit |
+| Did PPP loans change small-business survival? | The average effect of a PPP loan on the survival rate, in percentage points |
+| Can card spending nowcast a company's earnings? | Next quarter's revenue, and the size of the forecast error |
+:::
+
+::: {style="font-size:0.55em; color:#6b6b6b"}
+Leads from the [project ideas](../project-ideas.qmd) page.
+:::
+
+::: {.notes}
+Two minutes. Read two or three rows.
+
+The left column is a question a team could choose. The right column is the
+parameter that answers it. None of these is observed directly. The water
+view premium is estimated from a comparison of thousands of sales. The
+willingness to pay is estimated from respondents' choices between products.
+
+Ask each student to identify the parameter in their own project and keep it
+in mind for the hour. Every concept today applies to it: which estimator
+produces it, what its standard error is, and whether a larger sample would
+reduce its error.
+
+The last row is a forecast. A forecast is also an estimate, and its
+uncertainty is the forecast error. Section 7 returns to it.
+:::
+
+## Outline
+
+1. Estimators and sampling distributions
+2. Properties of estimators
+3. What a larger sample does not fix
+4. Models and estimation methods
+5. Standard errors
+6. Hypothesis tests and p-values
+7. Prediction and causal inference
+
+::: {.notes}
+Thirty seconds. Sections 1 to 3 apply to any estimator and use simple
+examples: a sample mean, and the number of tanks an army produced. Section 4
+turns to regression models and the three standard estimation methods.
+Sections 5 and 6 cover the uncertainty you report. Section 7 covers what a
+predictive estimate can and cannot be used for.
+:::
+
+# 1. Estimators and sampling distributions
+
+::: {.notes}
+Thirty seconds. The section uses one simulated population: 10,000 customers
+whose monthly spend is known, so the population mean is known.
+:::
+
+## The vocabulary of estimation
+
+- **Population**: the full set of units the question is about. All 10,000 customers.
+- **Parameter**: a fixed, unknown quantity of the population. Their mean monthly spend.
+- **Sample**: the units we observe. 50 customers drawn at random.
+- **Estimator**: a rule that assigns a value to every possible sample. The sample mean.
+- **Estimate**: the value the estimator takes in the observed sample.
+
+::: {.notes}
+Two minutes. Read the five terms with their examples.
+
+The parameter here is $67.81. It is known only because the population is
+simulated.
+
+Map it onto a project. For the water view question, the population is all
+house sales in the market, the parameter is the average premium, the sample
+is the sales in the dataset, the estimator is the least squares coefficient
+on the water-view indicator, and the estimate is the coefficient reported in
+the output.
+
+The distinction to stress is between the last two. The estimator is a rule
+that could be applied to any sample. The estimate is the value it produced
+in the one sample observed.
+:::
+
+## Estimates vary across samples
+
+- **Sampling distribution**: the distribution of an estimator across repeated samples.
+
+<div class="m06" data-demo="sampling" data-n="50" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Four minutes. The slide the rest of the hour builds on.
+
+The grey histogram is the population: all 10,000 customers. It is fixed and
+never changes; only the sample drawn from it does. The solid red line is the
+population mean, $67.81. The distribution is right-skewed: most customers
+spend under $100 and a few spend several hundred.
+
+Both panels share one axis, so the solid line runs through both. Click "Draw
+one sample". Fifty customers are highlighted in red, and the dashed red line
+marks their sample mean. The dot drops straight down into the lower panel.
+Read the sample mean out. It differs from $67.81.
+
+Solid is the true value, dashed is an estimate. The same convention holds on
+every slide.
+
+Click "Draw one sample" again: a different sample, a different estimate.
+Then "Draw 10" and "Draw 1,000".
+
+The lower histogram approximates the sampling distribution of the sample
+mean. Three features. Its mean is at the population mean, so the estimator
+is unbiased. It has a standard deviation of about $7, which is the next
+slide. And on the shared axis it is far narrower than the population: the
+mean of 50 customers varies much less than one customer's spend.
+
+In a project you observe one sample and one estimate. The sampling
+distribution is never observed. The simulation shows the distribution that
+single estimate was drawn from.
+:::
+
+## The standard error measures sampling variability
+
+- **Standard error**: the standard deviation of an estimator's sampling distribution.
+- Sample mean: σ/√n, where σ is the population standard deviation ($49.02 here).
+- Estimated by s/√n, where s is the sample standard deviation.
+
+<div class="m06" data-demo="sampling" data-n="50" data-mode="se" style="width:70%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. Click "Draw 1,000".
+
+The red bracket over the lower histogram spans ±1 standard deviation of the
+sample means drawn so far. That standard deviation is the standard error. It
+appears after two samples and settles as the draws accumulate; after "Draw
+10" it is already $6.97.
+
+Three numbers in the readout. The standard deviation of the 1,000 sample
+means is about $7.0: the standard error, measured directly, which is
+possible only in a simulation. The true standard error is σ/√n = $49.02/√50
+= $6.93. The estimated standard error s/√n uses the sample standard
+deviation s of the last sample; it varies from sample to sample because s
+does, and its mean across the 1,000 samples is close to the true value.
+
+The formula uses the variability within one sample to estimate the
+variability of the estimator across samples that were never drawn. With a
+skewed population and n = 50, that estimate is itself noisy, which the last
+sample shows.
+
+The square of the standard error is the variance of the estimator.
+
+In a report: mean monthly spend is $71, with a standard error of $7. The
+standard error is a property of the estimator, not of this particular
+estimate.
+:::
+
+## The standard error falls with the square root of n
+
+- For the sample mean, σ/√n holds when the n draws are independent.
+
+<div class="m06" data-demo="samplesize" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. Click "Draw 1,000 samples of each".
+
+The same estimator, the sample mean, at n = 25, 100 and 400. All three
+sampling distributions are centered on the population mean. The simulated
+standard deviations are $9.39, $4.61 and $2.44; the true standard errors,
+σ/√n, are $9.80, $4.90 and $2.45.
+
+Each fourfold increase in n halves the standard error. Halving the standard
+error requires four times the observations. Dividing it by ten requires a
+hundred times the observations.
+
+The budget implication: doubling the sample reduces the standard error by
+about 30%, not by half.
+
+The bullet is the condition. The simulation draws customers independently.
+With dependent draws, such as shoppers clustered in a few stores, the
+standard error falls more slowly than σ/√n and the formula understates it.
+Section 3 and meeting 7 return to this.
+:::
+
+## Why the standard error falls as n grows
+
+- In a mean, deviations above and below the population mean offset each other.
+- With population variance σ², the sample mean has variance σ²/n and standard error σ/√n.
+- A poll of 1,000 has a 95% margin of error of about ±3.1 points.
+- With 4,000 respondents, the margin is about ±1.55 points.
+- Precision depends on the sample size, not the population size.
+- This requires independent observations.
+
+::: {.notes}
+Two minutes.
+
+The mechanism: one customer can be $300 from the population mean. The mean
+of 50 customers rarely is, because large and small values offset. The
+variance of a sum of n independent draws is nσ²; dividing by n² gives σ²/n
+for the mean.
+
+Here σ is about $49, and $49/√50 is about $6.9, matching the simulation.
+
+The poll figure is the same formula for a proportion near one half: 1.96 ×
+√(0.25/1,000) = 0.031.
+
+The fifth bullet surprises most people. A random sample of 1,000 has
+essentially the same precision for the United States as for Ithaca. The
+finite-population correction is negligible whenever the sample is a small
+fraction of the population.
+
+The last bullet is the key assumption. Section 3 and meeting 7 show what
+happens when observations are dependent.
+:::
+
+## What a 95% confidence interval means
+
+- **Confidence interval**: the estimate ± 1.96 standard errors.
+- [In repeated samples]{.underline}, 95% of such intervals contain the parameter.
+
+<div class="m06" data-demo="intervals" data-n="50" style="width:82%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. Click "Draw one" twice, then "Draw 100".
+
+Each line is one sample's 95% confidence interval: the sample mean ± 1.96
+estimated standard errors. Grey intervals contain the population mean. Red
+intervals do not. In expectation 5 in 100 miss; in this seeded run, 7 of
+the first 100 miss, which is within ordinary sampling variation.
+
+The 95% is a property of the procedure. Across repeated samples, 95% of the
+intervals it produces contain the parameter. Any single interval either
+contains it or does not, and you cannot tell which.
+
+A useful reading for reports: the interval is the set of parameter values
+consistent with the data at the 5% level. Section 6 relies on this reading.
+:::
+
+# 2. Properties of estimators
+
+::: {.notes}
+Thirty seconds. Three properties of an estimator, each visible in its
+sampling distribution: bias (its location relative to the parameter),
+efficiency (its variance), and consistency (its behavior as n grows). One
+historical case illustrates all three.
+:::
+
+## The Allies estimated German tank production
+
+- The Allies needed an estimate of monthly German tank production.
+- Chassis, gearboxes and wheels of captured tanks carried sequential serial numbers.
+- Economists estimated production from those serial numbers.
+
+::: {style="font-size:0.8em"}
+| Monthly production | Serial-number estimate | Intelligence estimate | German records |
+|:--|--:|--:|--:|
+| June 1940 | 169 | 1,000 | 122 |
+| June 1941 | 244 | 1,550 | 271 |
+| August 1942 | 327 | 1,550 | 342 |
+:::
+
+[Ruggles and Brodie (1947), *An Empirical Approach to Economic Intelligence in World War II*, JASA 42, 72–91.](https://doi.org/10.1080/01621459.1947.10501915){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes.
+
+The parameter was monthly production of German tanks, all types. The
+intelligence column is the combined US and UK assessment of August 1942
+(Munitions Record No. 24), so the 1940 and 1941 figures are as assessed in
+1942. It came from agents, reconnaissance and interrogations.
+
+Richard Ruggles and Henry Brodie, economists in the Economic Warfare
+Division in London, noticed that components of captured tanks carried serial
+numbers assigned in sequence. The serials observed on captured tanks are a
+sample from 1 to N, where N is the number produced. Their first report used
+about 1,200 chassis serial numbers, with engine numbers as a check. Later
+work used gearbox numbers, and the mould numbers on the rubber tyres of the
+48 bogie wheels on each of two captured Mark V tanks.
+
+After the war, the records of the Speer ministry became available. The
+serial-number estimates were close to them. The intelligence estimates
+overstated production by a factor of four to eight.
+
+The table is on p. 89 of the 1947 paper.
+
+This is estimation without regression: a population, a parameter N, a
+sample of serial numbers, and a choice of estimator. The next slides compare
+three estimators of N.
+:::
+
+## Three estimators of the same parameter
+
+- Parameter: N, the number of tanks, with serials numbered 1 to N.
+- Sample: five captured serials, 19, 40, 42, 60 and 88.
+
+1. The sample maximum: 88.
+2. Twice the sample mean, minus 1: 98.6.
+3. The sample maximum plus the average gap between serials, minus 1: 104.6.
+
+::: {.notes}
+Two minutes. The logic of each estimator.
+
+Estimator 1: N is at least the largest serial observed.
+
+Estimator 2: with serials drawn at random from 1 to N, the expected value of
+a serial is (N + 1)/2. Doubling the sample mean and subtracting 1 estimates
+N. Here the sample mean is 49.8.
+
+Estimator 3: the sample maximum falls short of N by about one gap between
+consecutive serials, and the average gap is estimated by the maximum divided
+by the sample size, 88/5 = 17.6.
+
+A single sample cannot tell us which estimator is best. Every estimator
+returns some value in every sample. Comparing estimators requires their
+sampling distributions.
+:::
+
+## The sample maximum is a biased estimator
+
+- **Bias**: the expected value of the estimator minus the true parameter.
+
+<div class="m06" data-demo="tanks" data-k="5" style="width:88%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. N = 300. Click "Draw one sample": five serials and the three
+estimates. Then "Draw 1,000 samples".
+
+The sampling distribution of the sample maximum has a mean of about 249 in
+this run (250.8 in theory). The maximum can never exceed 300 and is almost
+always below it. Its bias is about −50.
+
+The first sample after Reset is 26, 138, 175, 269 and 299, giving estimates
+of 299, 362 and 358.
+
+Estimators 2 and 3 have sampling distributions centered on 300. They are
+unbiased.
+
+Bias cannot be seen in a single sample. It is a property of the sampling
+distribution, so in a real project it has to be derived from how the
+estimator works.
+:::
+
+## Estimator 3 is more efficient than estimator 2
+
+- **Efficiency**: an unbiased estimator with smaller variance is more efficient.
+
+<div class="m06" data-demo="tanks" data-k="5" data-impossible="true" style="width:88%;margin:0 auto"></div>
+
+::: {.notes}
+Two minutes. Click "Draw 1,000 samples".
+
+Estimators 2 and 3 are both unbiased. The standard deviation of estimator 2
+is about 77; that of estimator 3 is about 50. With the same data, estimator
+3 has the smaller variance. It is more efficient.
+
+The reason: the sample maximum carries most of the information in the sample
+about N. Estimator 2 uses only the sample mean and discards that
+information.
+
+The readout shows that estimator 2 falls below the sample maximum in 206 of
+1,000 samples, about one in five (the exact probability is 0.20). The sample
+itself rules those values out. An unbiased estimator can produce impossible
+estimates.
+
+Efficiency has a cost interpretation: a less efficient estimator needs a
+larger sample to reach the same standard error.
+:::
+
+## All three estimators are consistent
+
+- **Consistency**: the estimator converges to the true parameter as n grows.
+
+<div class="m06" data-demo="tanks" data-k="5" data-ks="5,20,80" style="width:88%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. Draw 1,000 samples at n = 5, then switch to n = 20 and draw,
+then n = 80 and draw.
+
+All three sampling distributions concentrate at 300. The bias of the sample
+maximum falls from about −49 to about −13 to about −3. All three estimators
+are consistent.
+
+The rates differ. At n = 80 the standard deviation of estimator 3 is about
+3, and that of estimator 2 about 17. The standard deviation of estimator 2,
+built on a sample mean, falls with √n: four times the data halves it. The
+estimators built on the sample maximum have standard deviations that fall
+with n: four times the data divides it by four. The rate at which precision
+improves depends on the estimator.
+
+Consistency is the minimum requirement for an estimator. An inconsistent
+estimator does not converge to the parameter however large the sample.
+Section 3 shows how that happens.
+:::
+
+## The median can be more efficient than the mean
+
+<div class="m06" data-demo="medianmean"></div>
+
+- Normal population: the sample mean has the smaller variance.
+- Heavy-tailed population: the sample median has the smaller variance.
+
+::: {.notes}
+Two minutes. A second comparison of efficiency, using estimators they
+already know.
+
+Left: heights, approximately normal. Both the sample mean and the sample
+median of 25 observations are unbiased for the center. The mean has the
+smaller variance. For normal data the median's variance is π/2 ≈ 1.57 times
+the mean's, so the median needs about 57% more observations for the same
+standard error.
+
+Right: a symmetric heavy-tailed population, like daily stock returns.
+Extreme observations shift the sample mean but not the sample median. The
+median now has the smaller variance.
+
+Relative efficiency depends on the population distribution, so the choice
+of estimator requires some knowledge of the data.
+
+A caution for skewed populations: there the mean and the median are
+different parameters, and the choice between them is a choice of question.
+:::
+
+## The bias–variance trade-off
+
+<div class="m06" data-demo="darts" style="width:62%;margin:0 auto"></div>
+
+- **Mean squared error** = bias² + variance.
+- A biased estimator can have a lower mean squared error than an unbiased one.
+- Prediction methods accept some bias to reduce variance.
+
+::: {.notes}
+Two minutes.
+
+The four targets separate bias from variance. The expected squared distance
+from the bullseye, the mean squared error, combines both.
+
+The tanks give a numerical example at n = 5. The sample maximum has bias
+about −49 and standard deviation about 42: root mean squared error about 65.
+Estimator 2 is unbiased with standard deviation about 77: root mean squared
+error about 77. The biased estimator has the lower mean squared error.
+Estimator 3, unbiased with standard deviation about 50, is lower than both.
+
+Regularized regression methods such as ridge and lasso shrink coefficients
+toward zero. They introduce bias to reduce variance, and are judged by
+out-of-sample mean squared error. Section 7 returns to this.
+:::
+
+# 3. What a larger sample does not fix
+
+::: {.notes}
+Thirty seconds. A larger sample reduces the variance of a consistent
+estimator. This section covers the cases where it does not reduce the error,
+starting with the best-known polling failure.
+:::
+
+## The Literary Digest poll had 2.4 million responses
+
+<div class="m06" style="width:80%;margin:0 auto" data-demo="digest" data-poll-r="42.9" data-poll-l="57.1" data-vote-r="62.5" data-vote-l="37.5" data-poll-label="Literary Digest poll, share of the two candidates" data-vote-label="Actual vote, two-party share"></div>
+
+- 1936: about 10 million ballots mailed, 2.4 million returned.
+- The poll understated Roosevelt's share by about 20 points. He won 46 of 48 states.
+- Gallup predicted the winner with a much smaller sample.
+
+[Squire (1988), *Why the 1936 Literary Digest Poll Failed*, Public Opinion Quarterly 52, 125–133.](https://doi.org/10.1086/269085){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes.
+
+The Literary Digest had predicted several earlier elections correctly with
+the same method. In 1936 it mailed about 10 million ballots, drawn mostly
+from telephone directories and automobile registrations, and 2,376,523 came
+back, a response rate of about 24%. Its final tally gave Landon 57.1% and
+Roosevelt 42.9% of the ballots for the two candidates, and projected 370
+electoral votes for Landon.
+
+Roosevelt won 62.5% of the two-party vote (60.8% of all votes) and 523 of
+531 electoral votes. The poll's error on Roosevelt's share was about 20
+points.
+
+The standard error of a proportion estimated from 2.4 million responses is
+about 0.03 percentage points. The sample size produced a precise estimate of
+the wrong quantity.
+
+Squire used a 1937 Gallup survey that asked people whether they had taken
+part in the Digest poll. Both the initial sample and the nonresponse were
+biased. By his estimate, the flawed mailing list did more of the damage, and
+the nonresponse flipped the predicted winner: had everyone sampled replied,
+the Digest would have predicted a Roosevelt victory.
+
+Gallup's final poll gave Roosevelt about 56% of the two-party vote, from a
+sample reported in textbooks as about 50,000.
+:::
+
+## A biased sample converges to the wrong value
+
+- A larger sample reduces the variance. The bias remains.
+- May 2021: 250,000 survey responses a week overstated US vaccine uptake by 17 points.
+
+<div class="m06" data-demo="biased" style="width:72%;margin:0 auto"></div>
+
+[Bradley et al. (2021), *Unrepresentative big surveys significantly overestimated US vaccine uptake*, Nature 600, 695–700.](https://doi.org/10.1038/s41586-021-04198-4){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Draw 1,000 samples at n = 25, then at 100, 400 and 1,600.
+
+The same population, two sampling schemes. The top row samples at random.
+The bottom row samples only respondents, and each customer's probability of
+responding is proportional to the square root of their spending.
+
+As n grows, both sampling distributions narrow at the √n rate. The random
+sample mean converges to the population mean, $67.81. The respondent sample
+mean converges to about $83.6, a bias of about $16. At n = 1,600 its standard
+deviation is about $1.5 and its bias is unchanged.
+
+The standard error measures variability around the estimator's own expected
+value. It contains no information about bias, so a large biased sample
+reports a small standard error.
+
+The modern case: Bradley and co-authors compare three surveys of US adults
+with the CDC's count of first doses administered. The Delphi–Facebook
+survey, with about 250,000 responses a week, overestimated first-dose uptake
+by 17 percentage points in May 2021; the Census Household Pulse survey, with
+about 75,000 every two weeks, by 14 points. The authors compute that
+Delphi–Facebook's bias-adjusted effective sample size was below 10 in April
+2021: its 250,000 responses were no more accurate than a simple random
+sample of 10 people.
+:::
+
+## Heavy tails slow the convergence of the mean
+
+<div class="m06" data-demo="running" data-mode="both" style="width:92%;margin:0 auto"></div>
+
+- Extreme observations keep shifting the sample mean, even at large n.
+
+::: {.notes}
+Two minutes. Click "Observe 2,000 draws".
+
+Left: the running mean of customer spend as observations accumulate. It
+fluctuates early and converges to the population mean: the law of large
+numbers.
+
+Right: the running mean of draws from a Cauchy distribution. It still jumps
+after 1,000 draws, whenever an extreme value arrives. The Cauchy
+distribution has no mean, so the sample mean never converges.
+
+Business variables are rarely that extreme, but many are heavy-tailed:
+revenue per customer, insurance claims, box-office receipts, follower
+counts. Their sample means converge much more slowly than the √n rule
+suggests. Options: report the median, trim or winsorize the tail, or model
+the tail explicitly.
+:::
+
+## Four problems a larger sample does not solve
+
+1. Selection or measurement bias. The bias does not shrink with n.
+2. Dependent observations. 1,000 shoppers in 5 stores are not 1,000 independent observations.
+3. Little variation in the regressor of interest. Two price changes in three years.
+4. Heavy tails. The sample mean converges slowly.
+
+::: {.notes}
+Two minutes.
+
+1. Bias: the Literary Digest, the respondent sample, and any variable
+measured with systematic error. A larger sample gives a more precise
+estimate of the wrong value.
+
+2. Dependence: shoppers in the same store share its prices, weather and
+staff. The usual standard error formula assumes independence and treats
+1,000 shoppers as 1,000 independent observations, when the effective sample
+is closer to 5. The standard error is understated. Meeting 7.
+
+3. Variation in the regressor: estimating the price elasticity requires
+variation in price. Three years of daily data with two price changes contain
+two informative events, whatever the number of rows. Section 5 shows where
+this enters the standard error.
+
+4. Heavy tails, from the previous slide.
+
+For any large dataset in their projects, the first question is which of
+these four applies.
+:::
+
+# 4. Models and estimation methods
+
+::: {.notes}
+Thirty seconds. The model is chosen according to the type of outcome. The
+estimation method determines how the model's parameters are computed from
+the data. Two of the three methods already appeared in the tank example.
+:::
+
+## The type of outcome determines the model
+
+<div class="m06" data-demo="outcomes"></div>
+
+- Choose a model whose predictions stay within the possible values of the outcome.
+
+::: {.notes}
+Two minutes. Four outcome types that appear in their projects.
+
+House price: continuous and positive. Ordinary least squares, often on the
+log of price.
+
+Loan default: binary. The model predicts a probability, which must lie
+between 0 and 1. Logit.
+
+Complaints per store per month: a non-negative integer count with many
+zeros. Poisson regression.
+
+Monthly spend with many zeros: non-negative and right-skewed. The log is
+undefined at zero, and log(y + 1) gives estimates that depend on the units
+of y. Poisson regression estimates the conditional mean directly and handles
+the zeros. [Santos Silva and Tenreyro (2006)](https://doi.org/10.1162/rest.88.4.641)
+established this for trade flows (PPML);
+[Chen and Roth (2024)](https://doi.org/10.1093/qje/qjad054) analyze the
+problems with log(y + 1).
+:::
+
+## Linear regression can fit nonlinear relationships
+
+- "Linear" means linear in the parameters.
+- Terms such as age² or log(size) let the fitted relationship curve.
+
+<div class="m06" data-demo="curves" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Ninety seconds.
+
+A linear regression model is linear in its coefficients. The regressors can
+be any functions of the data: age and age squared, the log of size,
+indicator variables. Least squares estimates all of them.
+
+In this simulated example, price declines with age and rises again for the
+oldest, historic houses. The model linear in age misses both ends. The model
+quadratic in age fits the curvature.
+
+With a quadratic term, the marginal effect of age depends on the age at
+which it is evaluated: b₁ + 2·b₂·age. Report it at a few representative
+ages.
+:::
+
+## Linear models can predict impossible values
+
+<div class="m06" data-demo="impossible"></div>
+
+- Logit keeps predicted probabilities in [0, 1]. Poisson keeps predicted counts non-negative.
+
+::: {.notes}
+Two minutes.
+
+Left: default (0 or 1) against credit score. Least squares on a binary
+outcome is the linear probability model. It predicts probabilities above 1
+at low scores and below 0 at high scores. The logit model's predicted
+probabilities stay in [0, 1].
+
+Right: complaints against staff on shift. The linear model predicts negative
+counts at high staffing. The Poisson model's predicted mean stays positive.
+
+The linear probability model is still widely used, because its coefficients
+approximate average marginal effects well. Its predictions for individual
+units are the problem. Two of this afternoon's cards depend on this.
+:::
+
+## Three estimation methods
+
+1. **Least squares**: choose the parameters that minimize the sum of squared residuals.
+2. **Maximum likelihood**: choose the parameters that maximize the probability of the observed data.
+3. **Method of moments (GMM)**: choose the parameters that equate sample moments to the moments the model implies.
+
+- For 7 purchases in 20 visits, all three estimate the purchase probability as 0.35.
+
+::: {.notes}
+Two minutes. The three methods behind almost every estimator in their
+software.
+
+Least squares uses the residuals: it selects the parameters that make the
+sum of squared residuals as small as possible.
+
+Maximum likelihood uses a full probability model for the outcome: it
+selects the parameters under which the observed data are most probable.
+
+The method of moments uses a set of moments, such as means and covariances,
+that the model implies: it selects the parameters that make the sample
+moments equal to them.
+
+In the simplest case they coincide. For a purchase indicator with 7 ones in
+20 visits, all three give 0.35. They differ in richer models, and the
+difference is in how much each assumes. The next three slides take them in
+turn.
+:::
+
+## Least squares estimation
+
+<div class="m06" data-demo="leastsquares" style="width:84%;margin:0 auto"></div>
+
+- Chooses the coefficients that minimize the sum of squared residuals.
+- Requires no assumption about the distribution of the errors.
+
+::: {.notes}
+Three minutes. Move the slope slider, or click "Sweep".
+
+Twelve simulated houses, size against price, generated with a true slope of
+$10,000 per 100 square feet. The red line is a candidate fit. Each residual
+is the vertical distance from a house to the line, and each blue square has
+area equal to the squared residual. Squaring weights large residuals more: a
+residual of 40 contributes four times as much as a residual of 20.
+
+The right panel plots the sum of squared residuals against the slope. It is
+a parabola. At the starting slope of 3 the sum is 34,573. The least squares
+estimate is its minimum: a slope of 9.76, or $9,760 per 100 square feet, with
+a sum of 12,515. Click "Best fit".
+
+Software computes the minimum in closed form; no search is involved.
+
+Use: continuous outcomes, and the default in most applied work. Consistency
+of the coefficients requires that the errors be uncorrelated with the
+regressors, but no assumption about their distribution. Distributional
+assumptions matter only for the standard errors, and section 5 relaxes them.
+:::
+
+## Maximum likelihood estimation
+
+<div class="m06" data-demo="likelihood" style="width:80%;margin:0 auto"></div>
+
+- **Likelihood**: the probability of the observed data, as a function of the parameters.
+- Requires the outcome's full distribution. Most efficient when it is correct.
+
+::: {.notes}
+Three minutes. Move the slider, then click "Find the peak".
+
+The data are 7 purchases in 20 visits. For each candidate purchase
+probability p, the curve is the likelihood: the binomial probability of
+exactly 7 purchases in 20 visits. At p = 0.20 it is 0.055. It is maximized
+at p = 0.35, the maximum likelihood estimate.
+
+Select "Both". With 70 purchases in 200 visits the maximum is at the same p
+and the likelihood is much more concentrated. The curvature of the
+log-likelihood at its maximum gives the standard error: 0.107 with n = 20
+and 0.034 with n = 200.
+
+Use: when a distribution for the outcome can be specified. A Bernoulli
+outcome gives logit or probit, counts give Poisson or negative binomial,
+durations give survival models. When the distribution is correctly
+specified, maximum likelihood is asymptotically the most efficient
+consistent estimator. When it is misspecified, the estimates can be
+inconsistent.
+
+The tank example: if every serial from 1 to N is equally likely to be
+captured, the likelihood of the observed serials is highest at the smallest
+admissible N, the sample maximum. Estimator 1 was the maximum likelihood
+estimator: biased in small samples, consistent, and with low variance.
+:::
+
+## Method of moments estimation
+
+- Chooses the parameters that equate sample moments to the moments the model implies.
+- Tanks: setting the sample mean equal to its expected value, (N + 1)/2, gives estimator 2.
+- Least squares is a moment estimator: residuals have mean zero and are uncorrelated with each regressor.
+- **GMM** uses more moment conditions than parameters and weights them by their precision.
+- It requires only the moment conditions, not the full distribution.
+
+[Hansen (1982), *Large Sample Properties of Generalized Method of Moments Estimators*, Econometrica 50, 1029–1054.](https://doi.org/10.2307/1912775){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. The contrast with maximum likelihood is the point of the slide.
+
+Maximum likelihood used the full distribution: every serial from 1 to N
+equally likely. The method of moments used a single implication of it: the
+expected serial is (N + 1)/2. Estimator 2 was unbiased and less efficient
+than estimator 3, which exploits the full distribution. Weaker assumptions,
+lower efficiency.
+
+Least squares can be derived the same way. Its estimates solve the sample
+conditions that the residuals average zero and are uncorrelated with every
+regressor.
+
+The generalized method of moments, GMM, handles more moment conditions than
+parameters by weighting them, with more precisely estimated conditions
+receiving more weight. Lars Peter Hansen developed it, and it was cited in
+his 2013 Nobel prize. It is used when economic theory implies moment
+conditions without implying a full distribution. Instrumental variables
+estimation, in the designs meetings, is a special case.
+:::
+
+## Comparing the three estimation methods
+
+::: {style="font-size:0.72em"}
+| Method | Chooses the parameters that | Assumes | Typical use |
+|:--|:--|:--|:--|
+| Least squares | minimize the sum of squared residuals | E[Y given X] is linear in the parameters | continuous outcomes |
+| Maximum likelihood | maximize the likelihood of the data | the full distribution of Y given X | binary, count and duration outcomes |
+| GMM | equate sample moments to model moments | only the moment conditions | instrumental variables, structural models |
+:::
+
+- Stronger assumptions increase efficiency when they hold and cause bias when they fail.
+
+::: {.notes}
+Two minutes.
+
+Read across the rows. The assumptions column is the trade-off. Maximum
+likelihood assumes the most and is the most efficient when its assumptions
+hold. GMM assumes the least. Least squares requires only a correctly
+specified conditional mean.
+
+For their projects: a continuous outcome, least squares. A binary outcome,
+logit, or the linear probability model if only an average marginal effect
+is needed. A count or a non-negative outcome with zeros, Poisson. A design
+based on an instrument, GMM, which statistical software labels IV or 2SLS.
+:::
+
+## Interpreting coefficients in linear models
+
+::: {style="font-size:0.8em"}
+| Model | Interpretation of the coefficient b |
+|:--|:--|
+| Y on X | one more unit of X: a change of b in Y, in the units of Y |
+| log Y on X | one more unit of X: a change of about 100·b percent in Y |
+| log Y on log X | a 1% increase in X: a b% change in Y (an elasticity) |
+:::
+
+- For log Y, the exact percent change is 100·(e^b^ − 1). Use it when b is large.
+- Percent and percentage points are different units.
+
+::: {.notes}
+Two minutes. Say each row as a sentence with its units.
+
+Levels: a coefficient of 12,000 on a water-view indicator means houses with
+a water view sell for $12,000 more, holding the other regressors fixed.
+
+Log outcome: b = 0.08 means about 8% more. The approximation 100·b is
+accurate for small b. The exact change is 100·(e^b − 1): b = 0.5 corresponds
+to 65%, not 50%.
+
+Log on log: the row reads per 1% increase in X, not per unit. b = −1.8 is an
+elasticity: a 1% price increase is associated with a 1.8% decrease in sales.
+
+Percent and percentage points: a default rate rising from 4% to 6% is an
+increase of 2 percentage points and of 50%. State which.
+
+"Is associated with" is deliberate. Whether the association is causal is a
+question about the design, meetings 7 to 9.
+:::
+
+## Interpreting coefficients in logit and Poisson models
+
+- Logit: b is the change in the log-odds of Y = 1 for a one-unit increase in X.
+- e^b^ is the odds ratio. It is not a ratio of probabilities.
+- Report the average marginal effect: the change in P(Y = 1), in percentage points.
+- Poisson: a one-unit increase in X changes the expected count by 100·(e^b^ − 1) percent.
+
+::: {.notes}
+Two minutes.
+
+Logit coefficients are in log-odds, which have no direct interpretation for
+a decision maker. Exponentiating gives the odds ratio, which is often
+misread as a ratio of probabilities; the two are close only when the
+probability is small.
+
+The average marginal effect is the change in the predicted probability for
+a one-unit increase in X, averaged over the sample. Every statistical
+package computes it. Report it in percentage points: a coupon raises the
+probability of purchase by 3 percentage points.
+
+Poisson: b = 0.10 means about 10.5% more expected complaints per unit of X.
+e^b is the incidence rate ratio.
+:::
+
+# 5. Standard errors
+
+::: {.notes}
+Thirty seconds. The simulations computed the standard error from thousands
+of samples. In a project there is one sample. There are two ways to
+estimate the standard error from it: an analytical formula, or the
+bootstrap.
+:::
+
+## Analytical standard errors
+
+- Sample mean: s/√n, where s is the sample standard deviation of Y.
+- OLS slope: approximately s~e~/(√n · s~X~).
+- s~e~ is the standard deviation of the residuals. s~X~ is the standard deviation of X.
+- Maximum likelihood: from the curvature of the log-likelihood at its maximum.
+- All three assume independent observations.
+- Heteroskedasticity-robust and clustered standard errors relax this. Meeting 7.
+
+::: {.notes}
+Two minutes.
+
+The first appeared in section 1.
+
+The second shows what determines the precision of a slope: the standard
+deviation of the residuals, s_e, the sample size n, and the standard
+deviation of the regressor, s_X. In a simple regression the formula is
+exact up to a degrees-of-freedom correction. With little variation in X, s_X is close to zero and the
+standard error is large regardless of n. This is the two-price-changes
+problem from section 3.
+
+The third appeared on the likelihood slide: a more sharply curved
+log-likelihood gives a smaller standard error.
+
+Statistical software computes all of these. The default versions assume
+independent observations with constant error variance.
+Heteroskedasticity-robust standard errors allow the error variance to differ
+across observations. Clustered standard errors allow observations within a
+group, such as a store or a county, to be correlated. Meeting 7.
+:::
+
+## The bootstrap resamples the observed data
+
+<div class="m06" data-demo="bootstrap" style="width:88%;margin:0 auto"></div>
+
+- It treats the sample as the population and draws n observations with replacement.
+
+::: {.notes}
+Three minutes. Click "Draw one bootstrap sample" two or three times, then
+"Draw 1,000 bootstrap samples".
+
+The observed sample has 30 customers. There is no simple analytical formula
+for the standard error of a sample median. Efron (1979) proposed treating
+the sample as if it were the population and resampling from it.
+
+A bootstrap sample draws 30 observations from the 30, with replacement. Some
+customers appear two or three times and others not at all. Compute the
+median, record it, and repeat.
+
+The standard deviation of the 1,000 bootstrap medians is the bootstrap
+standard error: $8.20. The readout compares it with the true standard error,
+computed from 1,000 new samples from the population, which is possible only
+because the population is simulated: $8.19. The sample median is $52.13.
+
+Reference: [Efron (1979)](https://doi.org/10.1214/aos/1176344552).
+:::
+
+## When to use the bootstrap
+
+- No analytical formula exists: medians, ratios, percentiles.
+- The sample is small or skewed, so the normal approximation is poor.
+- The estimator has several steps, such as a forecast built from two models.
+- The data are clustered: resample clusters, not observations.
+
+::: {.notes}
+Ninety seconds.
+
+No formula: the median, a ratio of two means, the 90th percentile, a Gini
+coefficient.
+
+Small or skewed samples: analytical standard errors rely on approximations
+that improve with n and can be poor with 30 skewed observations.
+
+Multi-step estimators: a profit forecast computed from an estimated demand
+model and an estimated cost model. The bootstrap re-estimates both models
+in every bootstrap sample, so the uncertainty from both steps is included.
+
+Clustered data: resample stores rather than shoppers, keeping each store's
+shoppers together. This is the cluster bootstrap.
+:::
+
+## The bootstrap fails for the maximum
+
+<div class="m06" data-demo="bootstrap" data-stat="max" style="width:88%;margin:0 auto"></div>
+
+- No bootstrap sample can exceed the sample maximum.
+
+::: {.notes}
+Ninety seconds. Click "Draw 1,000 bootstrap samples".
+
+The same 30 customers; the statistic is now the maximum. Every bootstrap
+sample is drawn from the 30 observations, so its maximum cannot exceed the
+sample maximum. A bootstrap sample includes the largest customer with
+probability 1 − (29/30)^30 ≈ 0.64, and then its maximum equals the sample
+maximum, $199.23, exactly. In this run 631 of 1,000 do. The bootstrap
+distribution collapses at that value.
+
+It would imply that the population maximum is known almost exactly, which
+is false. The bootstrap fails because the parameter lies at the boundary of
+the support of the data.
+
+The tank problem has this structure. The standard error of estimator 3 is
+available analytically. The bootstrap also performs poorly in very small
+samples, and with dependent data unless clusters or blocks are resampled.
+:::
+
+# 6. Hypothesis tests and p-values
+
+::: {.notes}
+Thirty seconds. One experiment. The p-value is first computed by
+simulation, then by the analytical formula.
+:::
+
+## A permutation test simulates the null hypothesis
+
+- New page: 300 purchases in 5,000 visits (6.0%). Old page: 250 in 5,000 (5.0%).
+- **Null hypothesis**: the page has no effect on the purchase probability.
+
+<div class="m06" data-demo="permutation" style="width:74%;margin:0 auto"></div>
+
+::: {.notes}
+Four minutes.
+
+The observed difference in purchase rates is 1.0 percentage point. The
+question: how likely is a difference this large if the null hypothesis is
+true?
+
+Under the null, the page a visitor saw is unrelated to whether they bought.
+The page labels are exchangeable: the 550 buyers would have bought under
+either page. A permutation test randomly reassigns the labels, 5,000 to each
+page, keeps the purchases fixed, and recomputes the difference.
+
+Click "One permutation". This is one difference generated under the null.
+Repeat twice: small differences of either sign.
+
+Click "10,000 permutations". The histogram is the distribution of the
+difference under the null. The red lines mark the observed difference, ±1.0.
+317 of the 10,000 permuted differences are at least 1.0 in absolute value.
+
+That share, 0.032, is the **p-value**: the probability, under the null
+hypothesis, of a difference at least as large as the one observed. The exact
+permutation p-value, over all possible relabellings, is 0.0315.
+
+Click "Show normal approximation". The curve is the sampling distribution
+the textbook z-test assumes: z = 2.19, p = 0.028. The analytical test
+approximates the permutation distribution.
+:::
+
+## Interpreting a p-value of 0.03
+
+- If the null hypothesis were true, a difference at least this large would occur in about 3% of experiments.
+
+::: {style="font-size:0.85em"}
+- "*P-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.*"
+- "*A p-value, or statistical significance, does not measure the size of an effect or the importance of a result.*"
+- "*Scientific conclusions and business or policy decisions should not be based only on whether a p-value passes a specific threshold.*"
+:::
+
+[Wasserstein and Lazar (2016), *The ASA's Statement on p-Values: Context, Process, and Purpose*, The American Statistician 70, 129–133.](https://doi.org/10.1080/00031305.2016.1154108){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes.
+
+The first bullet is the complete interpretation. It is a probability
+computed under the null hypothesis. It is not the probability that the null
+is true, nor the probability that the new page works, and it contains no
+information about the size of the effect.
+
+The quotations are from the American Statistical Association's 2016
+statement, the first formal position the association took on a specific
+statistical practice. The third quotation names business decisions
+explicitly.
+
+The 0.05 threshold is a convention. Evidence at p = 0.049 and at p = 0.051
+is essentially the same.
+:::
+
+## What share of significant results are false positives?
+
+<div class="m06" style="width:82%;margin:0 auto" data-demo="icons" data-ideas="1000" data-real="100" data-power="0.8" data-alpha="0.05"></div>
+
+- The share depends on the proportion of true effects among the hypotheses tested.
+- In online A/B tests, 8% (Airbnb search) to 33% (Microsoft) of tested ideas succeed.
+
+[Kohavi, Deng and Vermeer (2022), *A/B Testing Intuition Busters*, KDD '22, 3168–3177.](https://doi.org/10.1145/3534678.3539160){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes.
+
+Suppose 1,000 hypotheses are tested, for example 1,000 A/B tests, and 100 of
+them are true effects. With power of 80%, 80 true effects are detected. Of
+the 900 true null hypotheses, 5% are rejected at the 5% level: 45 false
+positives.
+
+That gives 125 significant results, of which 45, or 36%, are false
+positives, with every test conducted correctly.
+
+The p-value cannot reveal this, because it is computed assuming the null and
+does not depend on the proportion of true effects among the hypotheses
+tested.
+
+Kohavi and co-authors report the success rates of experiments at large
+firms: 33% at Microsoft, 15% at Bing, about 10% at Booking.com, Google Ads
+and Netflix, 8% in Airbnb search. They count only significant improvements,
+so they use a one-sided 2.5% level. With 80% power, the implied share of
+significant results that are false positives is 5.9% at Microsoft, 22% at a
+10% success rate, and 26% at Airbnb search. With 50% power, 9% to 37%.
+
+For their projects: one significant coefficient among many specifications
+tried is weak evidence. A hypothesis stated in advance and replicated is
+strong evidence.
+:::
+
+## Intervals and the minimum relevant effect
+
+<div class="m06" data-demo="sizematters"></div>
+
+- Set the smallest effect that would change the decision before estimating.
+
+::: {.notes}
+Three minutes. The four rows.
+
+Row 1: significant and large. The confidence interval excludes zero and lies
+entirely above the minimum relevant effect.
+
+Row 2: significant and negligible. The interval excludes zero, and every
+value in it is below the minimum relevant effect. Very large samples produce
+this pattern. Statistical significance is not practical significance.
+
+Row 3: not significant and inconclusive. The interval contains zero and also
+effects of 8%. The data cannot distinguish a large effect from no effect. The
+appropriate conclusion is that more data are needed.
+
+Row 4: not significant and negligible. The interval lies within the band of
+negligible effects. This is evidence that the effect is too small to matter.
+
+Rows 3 and 4 are both "not significant" and support opposite conclusions.
+The p-value does not distinguish them. The confidence interval does.
+:::
+
+# 7. Prediction and causal inference
+
+::: {.notes}
+Thirty seconds. The distinction determines what an estimate can be used for.
+:::
+
+## Prediction questions and causal questions
+
+::: {style="font-size:0.8em"}
+| Prediction | Causal inference |
+|:--|:--|
+| Will it rain today? | Does a rain dance cause rain? |
+| Which customers will churn next month? | Does the loyalty program reduce churn? |
+| How many units will sell in December? | What is the effect of a 5% price increase on units sold? |
+| Which loans will default? | Does a lower interest rate reduce defaults? |
+:::
+
+- Prediction requires out-of-sample accuracy. Causal inference requires a valid comparison.
+
+[Kleinberg, Ludwig, Mullainathan and Obermeyer (2015), *Prediction Policy Problems*, American Economic Review 105, 491–495.](https://doi.org/10.1257/aer.p20151023){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes.
+
+The first row is from Kleinberg and co-authors. Whether to carry an umbrella
+depends only on a forecast of rain; the cause of rain is irrelevant. Whether
+to pay for a rain dance depends on the causal effect of the dance on rain.
+The two questions require different evidence.
+
+Many business decisions are pure prediction problems: which loans to audit,
+how much inventory to hold, which customers to contact. Those projects are
+evaluated on out-of-sample forecast error. The causal questions require the
+comparisons from meeting 2 and the designs in meetings 8 and 9.
+
+The common failure is a project that builds a predictive model and then
+recommends an intervention based on it.
+:::
+
+## Predictive accuracy is measured out of sample
+
+<div class="m06" data-demo="overfit"></div>
+
+- In-sample fit never decreases as regressors are added.
+- R² measures in-sample fit. Out-of-sample error measures predictive accuracy.
+
+::: {.notes}
+Two minutes.
+
+Left: 12 observations and two models. The degree-9 polynomial passes close
+to every point, and its in-sample root mean squared error is very small.
+
+Right: new observations from the same process. The polynomial's error is
+far larger than the linear model's. It fitted the noise in the estimation
+sample as well as the systematic relationship. This is overfitting.
+
+Prediction projects therefore hold out data: estimate on one part, evaluate
+on data the model has not seen. For forecasts, estimate on an earlier period
+and evaluate on a later one.
+
+R² is the share of the variance of the outcome explained by the model in the
+estimation sample. It never decreases when regressors are added. A high R²
+indicates in-sample fit. It does not establish predictive accuracy, and it
+contains no information about causal effects.
+:::
+
+## eBay turned off its brand-keyword search ads
+
+<div class="m06" data-demo="ebay" style="width:84%;margin:0 auto"></div>
+
+- March 2012: eBay stopped brand-keyword ads on Yahoo! and MSN.
+- Organic search clicks recovered 99.5% of the lost click traffic.
+- Other keywords: OLS implied a return above 4,100%. A geographic experiment estimated −63%.
+
+[Blake, Nosko and Tadelis (2015), *Consumer Heterogeneity and Paid Search Effectiveness*, Econometrica 83, 155–174.](https://doi.org/10.3982/ECTA12423){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes.
+
+Brand keywords are queries containing "eBay", such as "ebay shoes". eBay
+paid the search engines to show its ad above the results for these queries.
+In March 2012 it stopped bidding on them on Yahoo! and MSN and continued on
+Google, which served as the control. Users clicked the organic link
+immediately below instead: 99.5% of the click traffic the ads had brought
+still arrived. The figure is a schematic of the paper's Figure 2.
+
+Non-brand keywords: eBay stopped all non-brand search advertising for 60
+days in 68 of 210 designated market areas. An OLS regression of revenue on
+search spending, the kind of model that predicts revenue well, implies a
+return on investment above 4,100%. The experiment estimates −63%, with a 95%
+confidence interval from −124% to −3%. The effect was concentrated among
+users who had not bought in the previous year; for frequent buyers, who
+account for most paid clicks, it was close to zero.
+
+This is the prediction and causal-inference distinction with a budget
+attached. Spending and revenue move together largely because the ads reach
+people who were going to buy anyway. The advertising decision depends on the
+causal effect of the ads, which the predictive relationship does not
+identify.
+:::
+
+## Claims and what the evidence supports
+
+::: {style="font-size:0.72em"}
+| Claim | What the estimate supports |
+|:--|:--|
+| The effect is highly significant | The estimate is precise. Its magnitude is a separate question. |
+| We found no effect | The confidence interval includes zero. It may also include large effects. |
+| Our two million rows settle it | A large n reduces variance. It does not reduce bias. |
+| Customers were 30% more likely to buy | Check whether this is a percent or a percentage-point change. |
+| The model predicts sales very well | High in-sample fit. No evidence on the causal effect of any variable. |
+| The standard error is tiny, so the estimate is right | The standard error measures sampling variability. It does not measure bias. |
+:::
+
+::: {.notes}
+Two minutes. A reference slide and the vocabulary for this afternoon's
+cards.
+
+Read the left column as it would be said in a meeting. The right column
+states what the estimate actually supports. Do not work through them now;
+the cards do.
+:::
+
+## Which question is your project asking?
+
+- Is your parameter a forecast or a causal effect?
+- Which estimate and confidence interval would change the decision?
+- Which of today's problems could bias your estimate or understate its standard error?
+
+::: {.notes}
+One minute. Each student writes one line per question before the break and
+brings it to the cards.
+:::
+
+::::

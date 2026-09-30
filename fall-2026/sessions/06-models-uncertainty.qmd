@@ -27,7 +27,7 @@ format:
 [**Open the slides**](06-models-uncertainty-slides.html)
 :::
 
-**What you should be able to do after this meeting.** Read a coefficient in the units of the problem. Say what a p-value does and does not tell you. Tell an explanatory question apart from a predictive one.
+**What you should be able to do after this meeting.** Distinguish a parameter, an estimator and an estimate, and explain what a standard error measures. Compare estimators by their bias, efficiency and consistency. Choose a model and an estimation method for your outcome, and interpret its coefficients in the units of the problem. Read a confidence interval and a p-value correctly, and say whether your question is predictive or causal.
 
 ## Handouts
 
@@ -39,7 +39,7 @@ format:
 
 ## Session A · 2:00–3:15
 
-Linear regression, non-linear models, count models. Described, not derived. What each estimates, and how to read a coefficient in the units of the problem. Then uncertainty. Residuals and errors, sampling variation, what a standard error actually states, and where p-values come from. More usefully: what they are not. Finally the distinction that decides half the projects in this room. Explaining is not predicting. A model can predict well and still tell you nothing about what to do.
+Most projects in this course estimate an unknown parameter: a price premium, an elasticity, a probability, an effect. This session covers how that estimate is obtained from a sample and how its uncertainty is measured. Live simulations from a population with a known mean show the sampling distribution, the standard error, and why the standard error falls with the square root of the sample size. The German tank problem compares three estimators by their bias, efficiency and consistency. The Literary Digest poll opens the cases a larger sample does not fix: bias, dependent observations, little variation in the regressor, and heavy tails. The session then covers models for continuous, binary and count outcomes, and three estimation methods: least squares, maximum likelihood and the method of moments (GMM). It ends with standard errors from formulas and from the bootstrap, a p-value computed by permutation, confidence intervals read against the smallest effect that matters, and the difference between prediction and causal inference.
 
 ## Session B · 3:30–4:30
 

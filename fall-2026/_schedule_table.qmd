@@ -30,7 +30,7 @@
 
 <tr class="g-first g03"><td class="g-rail" rowspan="4"><span>Methods</span></td><td>Wed Sep 30</td>
   <td class="topic"><a href="sessions/06-models-uncertainty.html">6 · Models and uncertainty</a>
-    <span class="t-desc">What the standard models estimate, and how to read a coefficient in the units of the problem. Where uncertainty comes from, and what a p-value is not. Then the distinction that decides half your projects: explaining or predicting.</span></td>
+    <span class="t-desc">How an estimate is obtained from a sample, and how its uncertainty is measured. Estimators and their properties, three estimation methods, standard errors, p-values, and the difference between prediction and causal inference.</span></td>
   <td class="hw">Rate your teammates</td></tr>
 <tr><td>Wed Oct 7</td>
   <td class="topic"><a href="sessions/07-model-failures.html">7 · Model failures</a>

@@ -726,7 +726,14 @@
     var stat = stat0;
     var sample = B.sample(), n = sample.length, sorted = sample.slice().sort(byNum), smax = sorted[n - 1];
     var bench = B.benchmark();
-    var hiT = Math.max(300, Math.ceil(smax / 50) * 50);
+    // One axis for all three panels, wide enough for the population value:
+    // the population median for the median, the population maximum for the
+    // maximum. The true value is a solid line and the sample statistic a
+    // dashed line, both running through every panel.
+    var popVals = M06.customers().values;
+    var popV = stat0 === 'max' ? M06.max(popVals) : M06.customers().median;
+    var hiT = stat0 === 'max' ? Math.ceil((popV + 7) / 50) * 50 : Math.max(300, Math.ceil(smax / 50) * 50);
+    BINW = hiT / 50;
 
     var svg = M06.svg(root, W, H, 'The bootstrap: an observed sample of 30 customers, one bootstrap sample drawn with replacement, ' +
       'and a histogram of the statistic across bootstrap samples');
@@ -752,6 +759,7 @@
     var gMidStat = M06.g(svg), gMid = M06.g(svg);
     // Bottom: the statistic across bootstrap samples.
     var gHist = M06.g(svg), hist = null, hot = -1;
+    var gLines = M06.g(svg);
     var drop = M06.el('circle', { r: 6, fill: C.red, visibility: 'hidden' }, svg);
 
     var bar = M06.controls(root);
@@ -767,16 +775,9 @@
 
     function buildHist() {
       empty(gHist);
-      var lo, hi, w, step;
-      if (stat === 'max') {
-        lo = Math.max(0, Math.floor(sorted[Math.max(0, n - 8)] / 50) * 50);
-        hi = Math.ceil((smax + 20) / 50) * 50;
-        w = 5;
-        step = 50;
-      } else {
-        lo = 30; hi = 90; w = 1; step = 10;
-      }
-      var sxH = M06.scale(lo, hi, X0, X1);
+      // The same axis as the panels above, so every line runs straight down.
+      var lo = 0, hi = hiT, w = stat === 'max' ? 5 : 1, step = 50;
+      var sxH = sx;
       M06.text(gHist, X0, BOT.title, stat === 'max' ? 'Maximum of each bootstrap sample' : 'Median of each bootstrap sample',
         { size: 17, fill: C.grey });
       M06.axisX(gHist, sxH, BOT.base, ticks(lo, hi, step), function (t) { return '$' + t; });
@@ -792,9 +793,17 @@
     }
     function drawTopStat() {
       empty(gTopStat);
-      var v = B.stat(sample, stat), x = sx(v);
-      M06.el('line', { x1: x, x2: x, y1: TOPY.label + 6, y2: TOPY.axis, stroke: C.red, 'stroke-width': 2.5 }, gTopStat);
-      statLabel(gTopStat, x, TOPY.label, (stat === 'max' ? 'sample maximum ' : 'sample median ') + M06.fmt.money(v, 2));
+      empty(gLines);
+      var v = B.stat(sample, stat), x = sx(v), xp = sx(popV), max = stat === 'max';
+      // The true value: solid. The sample statistic: dashed. Labels sit on
+      // opposite sides of their lines so they never collide.
+      M06.el('line', { x1: xp, x2: xp, y1: TOPY.label + 6, y2: BOT.base, stroke: C.red, 'stroke-width': 2.5 }, gLines);
+      M06.el('line', { x1: x, x2: x, y1: TOPY.label + 6, y2: BOT.base, stroke: C.red, 'stroke-width': 2.5, 'stroke-dasharray': '7 5' }, gLines);
+      var popRight = xp >= x;
+      halo(M06.text(gLines, popRight ? xp + 6 : xp - 6, TOPY.label, (max ? 'population maximum ' : 'population median ') + M06.fmt.money(popV, 2),
+        { size: 17, fill: C.red, weight: 700, anchor: popRight ? 'start' : 'end' }));
+      halo(M06.text(gLines, popRight ? x - 6 : x + 6, TOPY.label, (max ? 'sample maximum ' : 'sample median ') + M06.fmt.money(v, 2),
+        { size: 17, fill: C.red, weight: 600, anchor: popRight ? 'end' : 'start' }));
     }
     function paintTop(seen, current) {
       topDots.forEach(function (c, j) {
@@ -837,7 +846,7 @@
         return M06.el('circle', { cx: binX(x), cy: MID.base - (lev[j] - 1) * gap, r: R, fill: C.ink, visibility: 'hidden' }, gMid);
       });
       var xs = sx(v), mk = M06.g(gMidStat, { visibility: 'hidden' });
-      M06.el('line', { x1: xs, x2: xs, y1: MID.label + 6, y2: MID.line, stroke: C.red, 'stroke-width': 2.5 }, mk);
+      M06.el('line', { x1: xs, x2: xs, y1: MID.label + 6, y2: MID.line, stroke: C.red, 'stroke-width': 2.5, 'stroke-dasharray': '4 3' }, mk);
       statLabel(mk, xs, MID.label, (stat === 'max' ? 'bootstrap maximum ' : 'bootstrap median ') + M06.fmt.money(v, 2));
       // Where the dot lands: the top of its bar once it is counted.
       var kb = hist.index(v), hb = hist.bins[kb] + 1, top = Math.max(histTop(), hb);

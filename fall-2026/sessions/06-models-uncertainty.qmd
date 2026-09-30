@@ -19,6 +19,7 @@ format:
     history: false
     link-external-newwindow: true
     include-after-body: sim/m06-include.html
+    html-math-method: katex
 ---
 
 :::: {.content-hidden when-format="revealjs"}
@@ -503,9 +504,15 @@ different parameters, and the choice between them is a choice of question.
 
 ## The bias–variance trade-off
 
-<div class="m06" data-demo="darts" style="width:62%;margin:0 auto"></div>
+<div class="m06" data-demo="darts" style="width:44%;margin:0 auto"></div>
 
-- **Mean squared error** = bias² + variance.
+- **Mean squared error**: the expected squared distance between an estimator $\hat\theta$ and the parameter $\theta$.
+
+$$
+\text{MSE}(\hat\theta) = E\big[(\hat\theta-\theta)^2\big] = \text{Bias}(\hat\theta)^2 + \text{Var}(\hat\theta)
+$$
+
+- $\text{Bias}(\hat\theta) = E[\hat\theta]-\theta$ and $\text{Var}(\hat\theta) = E\big[(\hat\theta-E[\hat\theta])^2\big]$. The identity holds whenever the variance is finite.
 - A biased estimator can have a lower mean squared error than an unbiased one.
 - Prediction methods accept some bias to reduce variance.
 
@@ -515,15 +522,52 @@ Two minutes.
 The four targets separate bias from variance. The expected squared distance
 from the bullseye, the mean squared error, combines both.
 
-The tanks give a numerical example at n = 5. The sample maximum has bias
-about −49 and standard deviation about 42: root mean squared error about 65.
-Estimator 2 is unbiased with standard deviation about 77: root mean squared
-error about 77. The biased estimator has the lower mean squared error.
-Estimator 3, unbiased with standard deviation about 50, is lower than both.
+The decomposition is an identity, not an approximation. Add and subtract
+E[θ̂] inside the square: the cross term has expectation zero, leaving
+variance plus squared bias. It requires the estimator to have a finite
+variance; the sample mean of the Cauchy draws in section 3 does not.
+
+For predicting a new outcome rather than estimating a parameter, the
+expected squared prediction error has a third term: bias² + variance + σ²,
+where σ² is the variance of the noise in the outcome, which no model can
+remove. The trade-off in the last bullet is between the first two terms.
 
 Regularized regression methods such as ridge and lasso shrink coefficients
 toward zero. They introduce bias to reduce variance, and are judged by
-out-of-sample mean squared error. Section 7 returns to this.
+out-of-sample mean squared error. Section 7 returns to this. The next slide
+computes the decomposition for two of the tank estimators.
+:::
+
+## The mean squared error of two estimators
+
+<div class="m06" data-demo="mse" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. The tank estimators from slides 14 to 17, with N = 300 and
+five tanks per sample. Same draws as those slides.
+
+Click "Draw one sample". In each panel, the dot is the estimate θ̂ and the
+red segment on the axis is the error θ̂ − θ. The red square is built on that
+segment, so its area is the squared error (θ̂ − θ)². The first sample is 26,
+138, 175, 269 and 299: estimator 1 gives 299, an error of −1 and a tiny
+square; estimator 2 gives 362, an error of +62 and a square of 3,844.
+
+Click "Draw one sample" a few more times. Earlier squares stay as faint
+outlines. The sample maximum's squares all sit to the left of θ, because it
+never exceeds N. Estimator 2's squares fall on both sides and some are
+large.
+
+The top row appears after two samples. It shows the means over all samples
+so far: the squared bias, the variance, and the mean squared error, as
+squares whose areas add up. Bias² + variance = MSE is visible as area.
+
+Click "Draw 1,000 samples". Estimator 1: bias −51, bias² 2,619, variance
+1,772, MSE 4,391. Estimator 2: bias −4, bias² 15, variance 5,975, MSE 5,991.
+The biased estimator has the smaller mean squared error: its bias square is
+large, and its variance square is much smaller than estimator 2's.
+
+The variance in the readout divides by the number of samples, so the
+identity holds exactly in the numbers shown.
 :::
 
 # 3. What a larger sample does not fix
@@ -534,12 +578,48 @@ estimator. This section covers the cases where it does not reduce the error,
 starting with the best-known polling failure.
 :::
 
-## The Literary Digest poll had 2.4 million responses
+## The 1936 Literary Digest poll
 
-<div class="m06" style="width:80%;margin:0 auto" data-demo="digest" data-poll-r="42.9" data-poll-l="57.1" data-vote-r="62.5" data-vote-l="37.5" data-poll-label="Literary Digest poll, share of the two candidates" data-vote-label="Actual vote, two-party share"></div>
+- The Literary Digest was a leading US weekly magazine, with a circulation above one million.
+- From 1916 it ran a straw poll by mail before each presidential election.
+- It had predicted the winner of every election from 1920 to 1932.
+- 1936: Franklin D. Roosevelt, the Democratic president, against Alf Landon, the Republican.
+- It mailed about 10 million mock ballots, mostly to names from telephone directories and car registrations.
+- It is the standard example that a very large sample does not remove bias.
 
-- 1936: about 10 million ballots mailed, 2.4 million returned.
-- The poll understated Roosevelt's share by about 20 points. He won 46 of 48 states.
+[Lohr and Brick (2017), *Roosevelt Predicted to Win: Revisiting the 1936 Literary Digest Poll*, Statistics, Politics and Policy 8, 65–84.](https://doi.org/10.1515/spp-2016-0006){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. Context first, because few in the room will know the case.
+
+The Literary Digest was one of the most widely read American magazines of
+the 1920s and 1930s. Its presidential poll was a straw poll: the magazine
+mailed mock ballots, postcards asking how the recipient intended to vote,
+and counted the ones that came back. It was not a vote in the election.
+
+Before 1936 the poll had named the winner every time from 1920 to 1932, so
+its 1936 result was taken seriously. The magazine itself had noticed that
+its polls drew too many Republican voters from 1920 onward, but the
+Republican lean had not changed the predicted winner before.
+
+The names came mostly from telephone directories and automobile
+registrations. The usual explanation, due to Gallup, is that telephone and
+car owners were better off than the average voter during the Depression.
+
+Why this case: it is the largest poll most students will ever hear of, and
+it was wrong by a wide margin. It shows that a sample of millions does not
+fix a biased way of choosing and hearing from respondents. It also ended the
+era of straw polls: the pollsters who called 1936 correctly, among them
+Gallup, used smaller, designed samples, and modern survey sampling grew
+from them ([Lusinchi 2012](https://doi.org/10.1017/S014555320001035X)).
+:::
+
+## The poll missed Roosevelt's share by about 20 points
+
+<div class="m06" style="width:76%;margin:0 auto" data-demo="digest" data-poll-r="42.9" data-poll-l="57.1" data-vote-r="62.5" data-vote-l="37.5" data-poll-label="Literary Digest poll, share of the two candidates" data-vote-label="Actual vote, two-party share"></div>
+
+- About 2.4 million people mailed their mock ballots back. Those replies were the poll's sample.
+- The poll predicted a Landon victory. Roosevelt won 46 of the 48 states.
 - Gallup predicted the winner with a much smaller sample.
 
 [Squire (1988), *Why the 1936 Literary Digest Poll Failed*, Public Opinion Quarterly 52, 125–133.](https://doi.org/10.1086/269085){style="font-size:0.55em; color:#6b6b6b"}
@@ -547,16 +627,14 @@ starting with the best-known polling failure.
 ::: {.notes}
 Two minutes.
 
-The Literary Digest had predicted several earlier elections correctly with
-the same method. In 1936 it mailed about 10 million ballots, drawn mostly
-from telephone directories and automobile registrations, and 2,376,523 came
-back, a response rate of about 24%. Its final tally gave Landon 57.1% and
-Roosevelt 42.9% of the ballots for the two candidates, and projected 370
-electoral votes for Landon.
+About 10 million mock ballots were mailed and 2,376,523 came back, a
+response rate of about 24%. Those returned mock ballots were the sample. The
+Digest's final tally gave Landon 57.1% and Roosevelt 42.9% of the two
+candidates' mock ballots, and projected 370 electoral votes for Landon.
 
-Roosevelt won 62.5% of the two-party vote (60.8% of all votes) and 523 of
-531 electoral votes. The poll's error on Roosevelt's share was about 20
-points.
+In the election, Roosevelt won 62.5% of the two-party vote (60.8% of all
+votes) and 523 of 531 electoral votes. The poll's error on Roosevelt's share
+was about 20 points.
 
 The standard error of a proportion estimated from 2.4 million responses is
 about 0.03 percentage points. The sample size produced a precise estimate of
@@ -1069,10 +1147,11 @@ simulation, then by the analytical formula.
 
 ## A permutation test simulates the null hypothesis
 
-- New page: 300 purchases in 5,000 visits (6.0%). Old page: 250 in 5,000 (5.0%).
-- **Null hypothesis**: the page has no effect on the purchase probability.
+- A/B test of a checkout web page: the old design against a redesigned one, 5,000 visitors each.
+- Old page: 250 purchases (5.0%). New page: 300 purchases (6.0%).
+- **Null hypothesis**: the page design has no effect on the purchase probability.
 
-<div class="m06" data-demo="permutation" style="width:74%;margin:0 auto"></div>
+<div class="m06" data-demo="permutation" style="width:68%;margin:0 auto"></div>
 
 ::: {.notes}
 Four minutes.

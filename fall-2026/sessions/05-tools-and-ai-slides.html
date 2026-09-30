@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
+
+  <title>AEM 6991 – AEM 6991 · 5 Using AI in research</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-03a4d26b572064457a3f52f5f719c9fd.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <p class="ttl-number">AEM 6991</p>
+  <p class="ttl-course">MPS Capstone Project I</p>
+  <p class="ttl-prof">Prof. Ariel Ortiz-Bobea</p>
+  <h1 class="title">5 · Using AI in research</h1>
+  <p class="subtitle">Wednesday, September 23, 2026</p>
+  <img class="ttl-seal" src="../images/cornell_seal.svg" alt="Cornell University">
+</section>
+<section id="motivation" class="slide level2">
+<h2>Motivation</h2>
+<ul>
+<li>So far we’ve focused on coming up with questions and data.</li>
+<li>This week we turn to tools, and specifically to using AI for research:
+<ol type="1">
+<li>Understanding the existing literature.</li>
+<li>Writing up your findings.</li>
+<li>Coding your analysis.</li>
+</ol></li>
+</ul>
+<aside class="notes">
+<p>Ninety seconds. First person. Four weeks on questions and data, and this week is the thing you will be driving both of them with.</p>
+<p>Say the policy out loud, because it is not on the slide and because other sections of this course restrict these tools and this one does the opposite on purpose. The deliverable here is a research proposal, which is the genre where unverified output does the most damage. So the skill worth teaching is checking, and checking is what the rubric grades.</p>
+<p>Name the three and say the hour has one section for each. Say which is riskiest and why: the literature, because a fabricated reference costs the tool nothing to produce and you will not notice it unless you go and open the paper. Korinek’s review for economists rates six task families and literature search is the only one he puts at the bottom, so this is not my opinion.</p>
+<p>One line that meeting 10 is how to write, and today is what a tool does to a draft. Do not preview the risks; they arrive in their own blocks.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
+<ol type="1">
+<li>How these tools work</li>
+<li>Different AI tool modalities</li>
+<li>AI for literature reviews</li>
+<li>AI for writing</li>
+<li>AI for coding</li>
+<li>Disclosure</li>
+</ol>
+<aside class="notes">
+<p>Thirty seconds. Read the six and give the shape: two short sections on what these tools are and how you reach them, then one section for each place AI enters a project, then what applies to everything you hand in.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section>
+<section id="how-these-tools-work" class="title-slide slide level1 center">
+<h1>1. How these tools work</h1>
+<aside class="notes">
+<p>Thirty seconds. Say what the section covers: what the model actually does, what is wired around it, and the one consequence that generates every risk in the rest of the hour.</p>
+<p>Keep this section moving. It is the only part of the hour that is not about their own project, and it earns its place only by making the rest predictable.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="it-predicts-the-next-token" class="slide level2">
+<h2>It predicts the next token</h2>
+<div style="font-size:1em">
+<ul>
+<li>The model predicts the next piece of text, then the next.</li>
+<li><strong>Token</strong>: the unit it predicts. A word, part of a word, or a symbol.</li>
+<li>Nothing is looked up along the way.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Two minutes. Plain and quick, and resist going further into the machinery than this. Nobody in this room needs to know what a transformer is.</p>
+<p>Give the examples out loud: <em>the</em> is one token, while rare words and long numbers split into several, which is a small reason numbers get garbled.</p>
+<p>The last bullet is the load-bearing one. There is no database behind the window and no moment where it consults anything. When it writes a reference, it is writing the kind of text that a reference is, in the same way it writes the rest of the sentence.</p>
+<p>Then move on. The next two slides are the consequences.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-model-on-its-own-can-only-write-text" class="slide level2">
+<h2>A model on its own can only write text</h2>
+<div style="font-size:0.9em">
+<ul>
+<li><strong>Context window</strong>: everything the model can see at once.</li>
+<li>Long threads push early instructions out of the window.</li>
+<li><strong>Harness</strong>: the program around the model, which controls what it sees and does.</li>
+<li><strong>Tools</strong>: what the harness connects, such as search, files and code.</li>
+<li>Without tools, the model is a brain with no eyes or hands.</li>
+<li>It can only write from memory, which is where most invented citations come from.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Two minutes. This is the slide that makes the rest of the hour make sense, and the analogy is the part they will remember.</p>
+<p>Take the three bold words in order. The context window is the model’s whole world, and nothing outside it exists. The harness is the program you are actually typing into, which loads files, calls tools and decides what the model sees. The tools are the eyes and the hands.</p>
+<p>The second bullet answers something every one of them has experienced and none has been told the reason for. You set up a conversation carefully, and forty exchanges later it is ignoring half of what you said. It did not forget. Those instructions are no longer in front of it. So: one task per conversation, and paste the material again rather than pointing back at it.</p>
+<p>The last bullet points ahead to the literature section. A model asked for a reference with no tools attached has nothing to consult, so it writes reference-shaped text. That is the only thing it can do.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="it-guesses-when-it-does-not-know" class="slide level2">
+<h2>It guesses when it does not know</h2>
+<div style="font-size:0.9em">
+<ul>
+<li>Asked something it cannot answer, it often guesses.</li>
+<li>The guess reads exactly like a correct answer.</li>
+<li>Training and scoring reward a guess over “<em>I don’t know.</em>”</li>
+<li>OpenAI researchers: “<em>Like students facing hard exam questions, large language models sometimes guess when uncertain, producing plausible yet incorrect statements instead of admitting uncertainty.</em>”</li>
+</ul>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p>A theory paper. Its examples use DeepSeek-V3, GPT-4o and Llama.</p>
+<p><a href="https://arxiv.org/abs/2509.04664">Kalai, Nachum, Vempala and Zhang (arXiv, 2025), Why language models hallucinate</a></p>
+</div>
+<aside class="notes">
+<p>Ninety seconds. The two slides before this did the setup, so this one is short.</p>
+<p>The exam-question analogy is theirs, not mine, and it carries the slide. Every risk in the rest of the hour follows from this one. A model that says “I do not know” scores zero. A model that guesses scores above zero some of the time. Train on that and you get a system that always answers. Their own line is that models are optimised to be good test-takers.</p>
+<p>Say the consequence plainly: this comes from how the models are trained and scored. So the question for the rest of the hour is whether you will be able to tell.</p>
+<p>VERIFY: arXiv 2509.04664, abstract, quotation exact.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="different-ai-tool-modalities" class="title-slide slide level1 center">
+<h1>2. Different AI tool modalities</h1>
+<aside class="notes">
+<p>Thirty seconds. Say what the section covers: the three ways you reach the same model, what changes as the tool gets more access to your work, what you may put into it, and the record you keep of what it did.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-ways-to-reach-the-same-model" class="slide level2">
+<h2>Three ways to reach the same model</h2>
+<div style="font-size:0.7em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 44%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">What it can do</th>
+<th style="text-align: left;">A good use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Chat</strong><br>claude.ai</td>
+<td style="text-align: left;">Sees only what you paste or attach.<br>Cannot run your code or touch your machine.<br>With <em>Code execution</em> on, runs its own Python on an attached file, on Anthropic’s servers.</td>
+<td style="text-align: left;">“<em>What are the top journals in environmental economics?</em>”<br><br>“<em>Is this idea a good fit for JAERE, JEEM or AJAE?</em>”</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Cowork</strong><br>desktop app, Pro plan</td>
+<td style="text-align: left;">Reads and edits the files in a folder you connect.<br>In Manual mode, asks before each change.<br>Can write code, but runs it only in its own sandbox. Not built for coding.</td>
+<td style="text-align: left;">“<em>Here are some PDFs. Search them for tables, to see if this is worth exploring as a project.</em>”</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Claude Code</strong><br>terminal</td>
+<td style="text-align: left;">The most powerful modality.<br>Edits files and runs commands on your machine, asking first by default.</td>
+<td style="text-align: left;">Setting up a full research project that is reproducible, with every change to the code and the paper tracked.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<p>Two minutes. Same model underneath all three. What differs is access: what the tool can see and what it can do. Claude Code is the most powerful because it can do the most on your machine. The model inside it is no smarter, which is the part students get wrong.</p>
+<p>Chat is what most of them will use, so spend most of the time there, and be exact about code. Chat cannot run your script or touch your machine. With <em>Code execution and file creation</em> switched on under Settings → Capabilities (off by default on Free, Pro and Max; on by default for Team and Enterprise), it runs its own Python on an attached file in a sandbox on Anthropic’s servers. ChatGPT does the same by default. The number that comes back is not a result you can rerun, which is why the coding section asks for the code. Its good uses are questions about the field whose answers you can judge yourself, such as which journals publish this work and whether an idea fits one.</p>
+<p>Cowork needs the desktop app and a Pro plan; in Manual mode it asks before each change, so leave it there. Anthropic’s help centre says it runs code in an isolated virtual machine that sees only the folder you connect, so it cannot run your analysis in your own setup. It is good at work on a pile of documents: go through a folder of PDFs, pull out the tables, and say whether a project is worth pursuing.</p>
+<p>Claude Code works in your own folders with your own software. Its good use is the whole research project, set up so that it is reproducible, with every change to the code and the paper tracked in git. Git comes two slides on.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="more-access-means-more-risk" class="slide level2">
+<h2>More access means more risk</h2>
+<div style="font-size:1em">
+<ul>
+<li>Chat cannot change your files. You copy out what you use.</li>
+<li>Cowork and Claude Code can overwrite a week of work.</li>
+<li>Use the least access the job needs.</li>
+<li>Before connecting a folder, know how to get it back.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>One minute. The rule is the third bullet and everything else is the argument for it.</p>
+<p>The copy-out step in chat is a real safety feature. You are the thing that moves the output into your work, so you see it once on the way past. Point a tool at a folder and that step is gone.</p>
+<p>The last bullet sets up the git slide after next, so do not explain it here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-you-may-put-into-these-tools" class="slide level2">
+<h2>What you may put into these tools</h2>
+<div style="font-size:0.9em">
+<ul>
+<li>Nothing at moderate risk or above in a public AI tool. Licensed data counts.</li>
+<li>If you cannot upload your file, write the code on an invented sample with the same columns, then run it yourself.</li>
+<li>ChatGPT free: three file uploads a day.</li>
+<li>Claude: switch on <em>Code execution and file creation</em> under Settings → Capabilities.</li>
+<li>Cornell: “<em>You are accountable for your work, regardless of the tools you use to produce it.</em>”</li>
+</ul>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p><a href="https://it.cornell.edu/ai/ai-guidelines">IT@Cornell, AI guidelines</a> · <a href="https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude">Claude Help Center, code execution</a></p>
+</div>
+<aside class="notes">
+<p>Ninety seconds. One line of callback to meeting 4 and no more; they have had the full treatment.</p>
+<p>The second bullet is a commitment I made to this room last week. Two or three teams will have data they may not upload. The invented-sample route is how they work with it: the tool sees the column names and made-up rows, and the real file stays on their laptop.</p>
+<p>The Claude settings path was checked against Anthropic’s help page, dated 6 August 2026. VERIFY ON THE MORNING: ChatGPT’s free-tier upload limit changes often; re-read OpenAI’s File Uploads FAQ before the meeting.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-record-of-what-changed" class="slide level2">
+<h2>A record of what changed</h2>
+<div style="font-size:0.9em">
+<ul>
+<li><strong>Git</strong>: a saved history of every change to your project.</li>
+<li><strong>GitHub</strong>: a website that keeps that history online, so a team shares one copy.</li>
+<li>With git you can see what a tool changed, and undo it.</li>
+<li>Commit your folder before connecting it to an assistant.</li>
+<li>A chat transcript is not a record. The same prompt can give different answers.</li>
+<li>Step by step, in AEM 6850: <a href="https://arielortizbobea.github.io/aem6850/fall-2026/sessions/07-git.html">version control with git</a>.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Ninety seconds. Two audiences on one slide, and the second one is most of the room.</p>
+<p>Git keeps the history on your laptop. GitHub keeps a copy online, which is how a team works from one version instead of emailing files. For the teams that will point Cowork or Claude Code at a folder, the first four bullets are the whole safety net: you can see every line the tool changed, and you can undo it. The concrete version is <code>git init</code> and a first commit before the folder is connected. AEM 6850 meeting 7 is the step-by-step version, and the page is public.</p>
+<p>For everyone else, bullet five is the point, and it is about evidence. A screenshot of a chat is not a method section. Nothing in a transcript can be re-run.</p>
+<p>Close with the test the whole course uses: could a teammate reproduce your number on a different laptop next week? Say it and let it sit.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="ai-for-literature-reviews" class="title-slide slide level1 center">
+<h1>3. AI for literature reviews</h1>
+<aside class="notes">
+<p>Thirty seconds. Say what the section covers: what the literature section of a proposal is for, what these tools do well in a search, the ways a reference list goes wrong, and the check.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-review-the-literature" class="slide level2">
+<h2>Why review the literature?</h2>
+<div style="font-size:1em">
+<ul>
+<li>Your proposal has to say why the study is new and why it matters.</li>
+<li>Saying that clearly is <strong>framing</strong>.</li>
+<li>You can only frame a question well if you know the literature.</li>
+<li>The review explains and justifies the existence of your study.</li>
+<li>A tool cannot tell you what it failed to find.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>One minute, and it is the argument the rest of the block rests on.</p>
+<p>Put the title to the room and take one answer in the chat. The answer to land on: a proposal has to say why the study is new and why it matters, and saying that clearly is framing. You cannot say what is new without knowing what exists, so the literature is what the framing is built from. A review written for its own sake, one summary per paper, does none of that work, and it is what most first drafts look like. Framing gets its own slide at the end of the block; here it only needs a name.</p>
+<p>The commonest way an MPS proposal fails on this section is a claim of novelty that a reader can puncture in thirty seconds, because they know the paper you missed.</p>
+<p>The last bullet is the one to say slowly. A tool reports what it found. Nothing in the answer tells you the size of what it did not find, and there is no prompt that fixes that. Every slide after this is a version of that point.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="references-from-memory-are-often-wrong" class="slide level2">
+<h2>References from memory are often wrong</h2>
+<div style="font-size:1em">
+<ul>
+<li>8 free chatbots (February 2025): <strong>26.5%</strong> of references fully correct.</li>
+<li>Economics: over <strong>30%</strong> of GPT-3.5’s citations did not exist. GPT-4 was barely better.</li>
+<li>Korinek (JEL, 2023) asked GPT-4 for his own paper: real title, invented journal.</li>
+<li>Elicit, Perplexity, Ai2 ScholarQA and Consensus cited 5 to <strong>18</strong> of 21 retracted papers without saying so.</li>
+</ul>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p>The 8 chatbots, free versions: GPT-4o-mini, Claude 3.5 Sonnet, Copilot (GPT-4), DeepSeek-V3, Gemini 2.0 Flash, Grok-3, Mistral Large (Le Chat), Perplexity Sonar.</p>
+<p><a href="https://doi.org/10.1515/jdis-2025-0326">Cabezas-Clavijo and Sidorenko-Bautista (JDIS, 2026)</a> · <a href="https://doi.org/10.1177/05694345231218454">Buchanan, Hill and Shapoval (American Economist, 2024)</a> · <a href="https://doi.org/10.1257/jel.20231736">Korinek (JEL, 2023)</a> · <a href="https://www.technologyreview.com/2025/09/23/1123897/ai-models-are-using-material-from-retracted-scientific-papers/">MIT Technology Review, 2025</a></p>
+</div>
+<aside class="notes">
+<p>Ninety seconds, and no more. This is the whole of the failure evidence; the rest of the section is what to do about it.</p>
+<p>Say the mechanism in one line: with no search attached, the model writes text shaped like a reference. The 26.5 percent is current and about the free tools they will use. Tested 7 to 9 February 2025: ChatGPT (GPT-4o-mini), Claude (3.5 Sonnet), Copilot (GPT-4), DeepSeek (V3), Gemini (2.0 Flash), Grok (Grok-3), Le Chat (Mistral Large), Perplexity (Sonar). Grok and DeepSeek produced no false references; Copilot, Perplexity and Claude produced the most. Perplexity searches the web and was still among the worst.</p>
+<p>The economics number is Buchanan, Hill and Shapoval, GPT-3.5 and GPT-4 in 2023, stated verbatim in the abstract and cited by Korinek; the full text is paywalled and unread. Korinek’s example is GPT-4, December 2023 JEL: his paper with Zach Bethune, close to 200 citations, returned as Journal of Monetary Economics 117, 1-13, which is invented.</p>
+<p>The retraction bullet: Elicit 5, Perplexity 11, Ai2 ScholarQA 17, Consensus 18, reported September 2025; Consensus was down to 5 by the time the article ran. People did this long before AI: only 5.4 percent of citations to retracted papers mention the retraction (Hsiao and Schneider, QSS, 2021).</p>
+<p>If asked whether it is getting better: the Lancet audit of 2.5 million biomedical papers found fabricated citations rose more than twelvefold from 2023 to early 2026, so it is reaching print faster, not slower.</p>
+<p>One line back to the New York lawyers from meeting 4, no more.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-an-anchor-paper-is" class="slide level2">
+<h2>What an anchor paper is</h2>
+<div style="font-size:1em">
+<ul>
+<li><strong>Anchor paper</strong>: a published paper close to your question that you have read.</li>
+<li>It asks your question in another setting, or a close question in yours.</li>
+<li>Or it uses the data or the method you plan to use.</li>
+<li>Start with two or three, from your advisor, a recent review or a first search.</li>
+<li>Anchors change as you find closer papers.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Ninety seconds. Define it plainly, because the whole method rests on it.</p>
+<p>An anchor is the paper you would cite in the first paragraph of your literature section: the closest existing answer to your question. You must have read it, not just its abstract, because everything you find next hangs off it, and a bad anchor spreads.</p>
+<p>Two or three is enough to start. Say the last bullet slowly. Anchors are a working set: if a later round turns up a paper closer to your question, it becomes an anchor and the search restarts from it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-to-find-the-papers" class="slide level2">
+<h2>How to find the papers</h2>
+<svg class="dag" viewbox="0 0 960 440" width="900" height="412" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A loop of four steps. One, anchor papers: two or three papers you have read. Two, related leads: their references and citations, plus AI suggestions. Three, check each lead: find it in a database, open it, keep or drop it. Four, update the anchors: a closer paper becomes an anchor. Repeat, and stop when a round adds nothing new, then write the section.">
+<defs> <marker id="lit-arr" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b31b1b"></path></marker> <marker id="lit-arrg" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#55554f"></path></marker> </defs> <rect x="20" y="20" width="320" height="104" rx="10" fill="#ffffff" stroke="#b31b1b" stroke-width="3"></rect> <rect x="620" y="20" width="320" height="104" rx="10" fill="#ffffff" stroke="#55554f" stroke-width="2"></rect> <rect x="620" y="236" width="320" height="104" rx="10" fill="#ffffff" stroke="#55554f" stroke-width="2"></rect> <rect x="20" y="236" width="320" height="104" rx="10" fill="#ffffff" stroke="#55554f" stroke-width="2"></rect> <rect x="330" y="375" width="310" height="50" rx="10" fill="#f3dede" stroke="#55554f" stroke-width="2"></rect> <path d="M340,72 H612" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"></path> <path d="M780,124 V228" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"></path> <path d="M620,288 H348" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"></path> <path d="M180,236 V132" fill="none" stroke="#b31b1b" stroke-width="3" marker-end="url(#lit-arr)"></path> <path d="M780,340 V400 H648" fill="none" stroke="#55554f" stroke-width="2.4" marker-end="url(#lit-arrg)"></path> <text x="180" y="58" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">1. Anchor papers</text> <text x="180" y="86" font-size="19" fill="#6b6b6b" style="text-anchor:middle">two or three papers</text> <text x="180" y="110" font-size="19" fill="#6b6b6b" style="text-anchor:middle">you have read</text> <text x="780" y="58" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">2. Related leads</text> <text x="780" y="86" font-size="19" fill="#6b6b6b" style="text-anchor:middle">their references and citations,</text> <text x="780" y="110" font-size="19" fill="#6b6b6b" style="text-anchor:middle">plus AI suggestions</text> <text x="780" y="274" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">3. Check each lead</text> <text x="780" y="302" font-size="19" fill="#6b6b6b" style="text-anchor:middle">find it in a database,</text> <text x="780" y="326" font-size="19" fill="#6b6b6b" style="text-anchor:middle">open it, keep or drop</text> <text x="180" y="274" font-size="24" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">4. Update the anchors</text> <text x="180" y="302" font-size="19" fill="#6b6b6b" style="text-anchor:middle">a closer paper</text> <text x="180" y="326" font-size="19" fill="#6b6b6b" style="text-anchor:middle">becomes an anchor</text> <text x="480" y="186" font-size="22" font-style="italic" fill="#b31b1b" style="text-anchor:middle">repeat</text> <text x="792" y="372" font-size="19" font-style="italic" fill="#55554f" style="text-anchor:start">stop when a round</text> <text x="792" y="394" font-size="19" font-style="italic" fill="#55554f" style="text-anchor:start">adds nothing new</text> <text x="485" y="407" font-size="22" font-weight="700" fill="#1b1b1b" style="text-anchor:middle">Write the section</text>
+</svg>
+<ul>
+<li>Keep a log: one row per paper, where it came from, and whether you opened it.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes. This is the method, and it starts from papers you trust.</p>
+<p>Step 1: two or three anchor papers, as defined on the previous slide. Read their introductions.</p>
+<p>Step 2: collect related leads from each anchor. Its reference list, the papers that cite it (Google Scholar’s Cited by), and whatever the model suggests when you give it your anchors. Everything at this step is a lead, not a reference.</p>
+<p>Step 3: check each lead. Find it in EconLit or Google Scholar, open it, read the abstract, and keep or drop it.</p>
+<p>Step 4: update the anchors. If a kept paper is closer to your question than one of your anchors, it replaces it, and the next round starts from it.</p>
+<p>Stop when a round adds nothing new. Systematic reviewers call that saturation, and it is the only honest stopping rule.</p>
+<p>The log is what makes this concrete: one row per paper, with where it came from (a reference list, a citing paper, the model), whether you found it in a database, whether you opened it, and keep or drop. It is also most of your disclosure, because it records what the tool suggested and what you checked.</p>
+<p>The next slides take steps 2 and 3 one at a time.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="follow-the-citations-of-your-anchors" class="slide level2">
+<h2>Follow the citations of your anchors</h2>
+<div style="font-size:1em">
+<ul>
+<li>Go back through each anchor’s reference list.</li>
+<li>Go forward to the papers that cite it.</li>
+<li>On 250 computer-science papers, a search that followed citation chains recovered over <strong>80%</strong> of each paper’s references.</li>
+<li>Keyword search alone recovered under <strong>20%</strong>.</li>
+<li>Tools: Google Scholar <em>Cited by</em>, Semantic Scholar, Connected Papers.</li>
+</ul>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p>Pipeline built on GPT-OSS-120B, with Qwen3-Embedding-8B for ranking. Not yet peer reviewed.</p>
+<p><a href="https://arxiv.org/abs/2605.29234">Sahu, Charlin and Pal (arXiv, 2026)</a></p>
+</div>
+<aside class="notes">
+<p>Ninety seconds. This is step two, and it needs no AI at all. Backward means the reference list. Forward means the papers that cite it, which Google Scholar’s Cited by and Semantic Scholar show you.</p>
+<p>The numbers come from one 2026 preprint on 250 computer-science papers, not yet peer reviewed, comparing plain keyword search with a pipeline that followed bibliographic links. Say that plainly. The size of the gap is the point, and it matches what research librarians have taught for decades.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="use-memory-for-leads" class="slide level2">
+<h2>Use memory for leads</h2>
+<div style="font-size:1em">
+<ul>
+<li>Give it your anchors. Ask for related papers, authors, search terms and journals.</li>
+<li>Treat every answer as a lead to look up.</li>
+<li>GPT-4 is “<em>often able to provide standard references that are frequently cited in the literature</em>.”</li>
+<li>ChatGPT got less reliable as questions got more specific.</li>
+</ul>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p><a href="https://doi.org/10.1257/jel.20231736">Korinek (JEL, 2023)</a> · <a href="https://doi.org/10.1177/05694345231218454">Buchanan, Hill and Shapoval (American Economist, 2024)</a></p>
+</div>
+<aside class="notes">
+<p>Ninety seconds. This is the other half of step two. Give the model your anchors and ask what is around them: related papers, the names that recur, the words each field uses for the same idea, and which journals to look in. Search terms matter most, because economists, epidemiologists and marketers use different words for the same thing, and students are worst at this part.</p>
+<p>Korinek, in the JEL article: GPT-4 “is often able to provide standard references that are frequently cited in the literature”. That is the famous end of the literature. Buchanan, Hill and Shapoval: “the reliability of the model decreases as the prompts become more specific”. The niche, recent papers that decide whether a question is new are exactly where it fails.</p>
+<p>On naming journals in the prompt: it steers the search usefully, but it also makes the prompt more specific, and in Korinek’s own example the journal was the part it invented. So journal names in the answer are leads too. Every lead goes into a database before it goes anywhere else.</p>
+<p>Tools improve fast. The evidence here is on 2023 to 2025 models, and nobody has measured today’s frontier models on this. Say so if asked.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="search-a-database-and-let-the-tool-screen" class="slide level2">
+<h2>Search a database and let the tool screen</h2>
+<div style="font-size:1em">
+<ul>
+<li>Look up each lead yourself, in EconLit or Google Scholar.</li>
+<li>Give the tool the results to sort and screen.</li>
+<li>Screening a known set, Elicit kept <strong>91%</strong> of the relevant papers.</li>
+<li>Across 19 studies, AI screeners wrongly dropped a median <strong>28%</strong>.</li>
+<li>Check what it drops.</li>
+</ul>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p>Mazzali tested Elicit’s systematic-review workflow; no model version is named. Clark’s 19 studies tested mostly ChatGPT (GPT-3.5, GPT-4, GPT-4o), with some on Claude 2, Bing AI and Perplexity.</p>
+<p><a href="https://doi.org/10.1186/s12874-026-02892-3">Mazzali et al.&nbsp;(BMC Med Res Methodol, 2026)</a> · <a href="https://doi.org/10.1017/rsm.2025.16">Clark et al.&nbsp;(Res Synth Methods, 2025)</a></p>
+</div>
+<aside class="notes">
+<p>Ninety seconds. The split the evidence draws is between finding and sorting. Used to search, generative AI missed a median 91 percent of the relevant studies (Clark et al., 19 comparative studies). Given a set to screen, it does much better.</p>
+<p>The 91 percent kept is Mazzali et al., May 2026, an umbrella review on air pollution and acute lower respiratory infections, using Elicit’s systematic-review workflow; no Elicit version or model is named. It also over-included: it flagged 70 papers where the reviewers kept 33. The same study ran Elicit’s own search against a Boolean search: 500 papers against 324, and only 26 in both. A tool’s search is a different set, not a bigger one, which is why the search stays yours.</p>
+<p>The 28 percent is the median of wrongly excluded studies across Clark’s 19 studies. That is the number that makes the last bullet the rule. EconLit is the field’s own index and Cornell subscribes to it through the library; none of the AI tools lists it as a source.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="write-your-own-framing" class="slide level2">
+<h2>Write your own framing</h2>
+<div style="font-size:0.9em">
+<ul>
+<li><strong>Framing</strong>: what you ask, why it matters, and what is new compared with your anchors.</li>
+<li>Tools are still weak at this. They produce the framing of an average paper.</li>
+<li>Write yours first, in two or three sentences.</li>
+<li>Then have the tool test it against your anchor papers:</li>
+</ul>
+<blockquote>
+<p><em>Here is my framing and the introductions of my anchor papers. Quote each paper’s statement of its own contribution. Then list where my framing overlaps with theirs, and what a referee would say is not new.</em></p>
+</blockquote>
+<ul>
+<li>Revise it yourself. Do not ask for a new version.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Two minutes. Framing is the part of a proposal a reader judges first, so define it plainly. It is how you present your question: what you ask, why it matters, and what is new compared with the closest papers. It usually lives in the first paragraph of the introduction and the last paragraph of the literature section.</p>
+<p>Tools are weak here. Asked for a framing, they produce the framing of an average paper in the area, because that is what they have seen most, and they overstate what is new, which is the overgeneralisation problem the writing section comes back to. This is my judgement from reading AI-drafted introductions; I have no measurement for it, so say so.</p>
+<p>Once yours is written, the tool is useful as a tester. The prompt makes it do two things you can check: quote each anchor’s own contribution statement, which you can find in the paper, and list where yours overlaps. The referee line is the hostile reader. If you cannot say in one sentence how your framing differs from each anchor, it is not finished.</p>
+<p>This links back to meeting 3, on finding the question.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="avoiding-hallucinated-references" class="slide level2">
+<h2>Avoiding hallucinated references</h2>
+<div style="font-size:0.9em">
+<ul>
+<li>Paste the DOI after <code>doi.org/</code>. <em>Not found</em> is a strong warning sign.</li>
+<li>If it resolves, check the authors, year and title.</li>
+<li>No DOI: search the exact title in Google Scholar.</li>
+<li>Real papers get miscited too: <strong>43%</strong> of GPT-3.5’s real citations had errors.</li>
+<li>Open the paper and find the passage you are citing.</li>
+<li>Cornell Library: “<em>do check whether the references are real by looking up the source material.</em>”</li>
+</ul>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p>Walters and Wilder tested ChatGPT with GPT-3.5 and GPT-4, in 2023.</p>
+<p><a href="https://doi.org/10.1038/s41598-023-41032-5">Walters and Wilder (Sci Rep, 2023)</a> · <a href="https://guides.library.cornell.edu/c.php?g=924363&amp;p=10383443">Cornell University Library</a></p>
+</div>
+<aside class="notes">
+<p>Ninety seconds. This is the block’s check and it is the rule in the syllabus, so say it as a rule.</p>
+<p>The 43 percent is the reason the routine does not stop at DOI resolution. A reference list can pass every existence test and still misattribute a finding, and misattribution is what a reader of your proposal will actually catch.</p>
+<p>Close on the course rule: every reference in every submission is one you have opened. Then ask how you would know a reference was wrong. You opened it.</p>
+<p>VERIFY: the 43 percent and the 24 percent for GPT-4 in Walters and Wilder.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="ai-for-writing" class="title-slide slide level1 center">
+<h1>4. AI for writing</h1>
+<aside class="notes">
+<p>Thirty seconds. Say the scope again in one line, because it is the section students will most want to over-read: meeting 10 is how to write, and this section is what a tool does to a draft.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-a-tool-cannot-be-responsible-for" class="slide level2">
+<h2>What a tool cannot be responsible for</h2>
+<div style="font-size:0.9em">
+<ul>
+<li>The rules start when a document goes out under your name.</li>
+<li>A tool cannot be an author: “<em>they cannot take responsibility for the submitted work.</em>”</li>
+<li>Nature: polishing language is fine. Extensive writing help must be disclosed.</li>
+<li>Generating your reasoning without saying so is not allowed.</li>
+<li>“<em>Human accountability is non-transferable.</em>”</li>
+</ul>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p><a href="https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools">COPE, Authorship and AI tools</a> · <a href="https://www.nature.com/nature-portfolio/editorial-policies/ai">Nature Portfolio, AI policy</a></p>
+</div>
+<aside class="notes">
+<p>Ninety seconds. This is the block’s frame and it decides everything after it.</p>
+<p>The first bullet is the practical version. Nobody cares what you type to sort out your own thinking. The rules start when the document goes to somebody who will act on it.</p>
+<p>Nature’s three tiers are worth naming because they are the most useful thing any publisher has published on this. Polishing is green. Extensive writing support is amber and needs disclosure. Generating the reasoning is red.</p>
+<p>Do not spend time on authorship as such; no student here is putting a chatbot on a paper. The transferable half is that responsibility does not move, which is what the last bullet says.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="you-write-the-outline" class="slide level2">
+<h2>You write the outline</h2>
+<div style="font-size:1em">
+<ul>
+<li>The structure carries the argument. You write it.</li>
+<li><strong>One bullet per paragraph</strong>, in two parts:
+<ul>
+<li>the <strong>topic sentence</strong>, in full</li>
+<li><strong>what the paragraph discusses</strong></li>
+</ul></li>
+<li>Do not ask a tool to propose the structure.</li>
+<li>You would not know why it picked that one.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Two minutes. This is the method, and it is the one thing in the writing block I want them doing this week.</p>
+<p>Say why the topic sentence is written out in full rather than summarised. A summary of a paragraph you have not written yet is a hope. A topic sentence is a commitment, and if you cannot write it, the paragraph has no point and should not be in the outline.</p>
+<p>The last bullet is the reason for all of it, and it is about defending your own work. A structure you accepted is one you cannot argue for in a proposal defence, because you do not know what it was chosen over.</p>
+<p>Say the size out loud: a background section is six to ten bullets, and it fits on one page.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ask-it-to-audit-your-plan" class="slide level2">
+<h2>Ask it to audit your plan</h2>
+<div style="font-size:1em">
+<ul>
+<li>Give it your outline. Ask what is wrong with it.</li>
+<li>Which paragraph makes two claims?</li>
+<li>Which bullet does not follow from the one before?</li>
+<li>Which claim has no evidence named?</li>
+<li>Where does the order bury the point?</li>
+<li>Ask for a list of problems, not a rewrite.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Two minutes. Step one is the outline. Step two is the audit, and step two is where a tool earns its place.</p>
+<p>The four questions are the ones worth asking, and they are all structural. None of them asks whether the writing is good.</p>
+<p>The last bullet is the general rule for this whole block, so say it slowly. A list leaves the outline in your hands and you decide each change. A rewrite gives you fluent text you did not write and have not checked, and it quietly launders a muddle you were about to notice.</p>
+<p>Say plainly that this is permitted here and has to be disclosed, because several of them will have met a rule elsewhere that treats critique as off-limits.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="outlining-a-published-paper" class="slide level2">
+<h2>Outlining a published paper</h2>
+<div style="font-size:0.9em">
+<ul>
+<li>This is where these tools are strongest.</li>
+<li>Give it a paper in your area.</li>
+<li>Ask what each paragraph of the introduction claims, and what job it does.</li>
+<li>You get the paper’s outline, in the same form as yours.</li>
+<li>Three papers in your field give you a model.</li>
+<li>The paper sits beside the answer, so checking is easy.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Two minutes. This is the permission slide for the block, and it goes here rather than at the front because it only makes sense once they know what an outline is.</p>
+<p>The tool is reading here, so almost nothing can go wrong. The paper is open next to the reply and any claim about paragraph four can be checked by looking at paragraph four.</p>
+<p>Say what they get out of it. Nobody in this room has written an economics introduction. Three unpacked introductions in their own field is a better model than any rule I could give them from the front, and it is twenty minutes of work.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="it-makes-the-claim-bigger-than-the-result" class="slide level2">
+<h2>It makes the claim bigger than the result</h2>
+<div style="font-size:0.84em">
+<ul>
+<li>DeepSeek, ChatGPT-4o and LLaMA 3.3 70B overgeneralised in <strong>26–73%</strong> of summaries.</li>
+<li>Claude models were the most faithful to the original papers.</li>
+<li>Across all ten models, about <strong>5 times</strong> as often as expert summaries.</li>
+<li>Three moves to look for in your draft:
+<ul>
+<li>a sample becomes people in general</li>
+<li>past tense becomes present tense</li>
+<li>a result becomes a recommendation</li>
+</ul></li>
+<li>Asking for accuracy made it about <strong>twice</strong> as likely.</li>
+</ul>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p>The ten models: GPT-3.5 Turbo, GPT-4 Turbo, ChatGPT-4o, ChatGPT-4.5, LLaMA 2 70B, LLaMA 3.3 70B, Claude 2, Claude 3.5 Sonnet, Claude 3.7 Sonnet, DeepSeek. 4,900 summaries.</p>
+<p><a href="https://doi.org/10.1098/rsos.241776">Peters and Chin-Yee (R Soc Open Sci, 2025)</a></p>
+</div>
+<aside class="notes">
+<p>Ninety seconds. The three moves are the usable part, because a student can run their eye down a paragraph and find them.</p>
+<p>The last bullet closes the escape route, and it surprises people. Adding an accuracy instruction made overgeneralisation worse, so you cannot instruct your way out of it. The defence is reading your own sentences against your own result.</p>
+<p>Tie it back: this is the second of the two failure modes the syllabus grades against, the plausible-but-wrong claim.</p>
+<p>VERIFY: doi 10.1098/rsos.241776, the 26 to 73 percent range, and the accuracy-prompt finding.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="write-the-paragraphs-yourself" class="slide level2">
+<h2>Write the paragraphs yourself</h2>
+<div style="font-size:0.9em">
+<ul>
+<li>Step two: turn each bullet of your outline into a paragraph.</li>
+<li>The question, what is new and the design are yours to write.</li>
+<li>Then ask the tool what is wrong with each paragraph.</li>
+<li>One job is safe to hand over: the link between two of your paragraphs.</li>
+</ul>
+<blockquote>
+<p><em>Write one sentence that links these two paragraphs. Add no new claim.</em></p>
+</blockquote>
+</div>
+<aside class="notes">
+<p>Two minutes. This is step two, and the tool does not write it. The parts that carry a proposal, which are the question, what is new and the design, are where the thinking happens, and a reader can tell when it was not done. Each bullet of the outline becomes a paragraph in your own words.</p>
+<p>The tool’s job at paragraph level is the same as at outline level: ask what is wrong. Which sentence makes a claim the paragraph does not support? Where does it drift from the topic sentence? Ask for a list, and fix the wording yourself.</p>
+<p>The transition is the one piece that is safe to delegate, because it adds no claim: the tool is given both ends and asked for the join.</p>
+<p>CAPTURE NEEDED: run the transition prompt on two paragraphs from a real draft and put the reply on the slide. Ask the room to predict whether it will slip in a claim of its own.</p>
+<p>The next slide is what happens when students lean on the tool anyway.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="loose-text-and-the-time-it-costs" class="slide level2">
+<h2>Loose text and the time it costs</h2>
+<div style="font-size:0.9em">
+<ul>
+<li>Leaning on the tool gives long, smooth text that says little.</li>
+<li>Cutting it back takes longer than writing it.</li>
+<li>You lose the practice. Editing is how writing is learned.</li>
+<li>Readers learn its habits and stop trusting the text.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Ninety seconds. This is the over-reliance slide and it closes the block’s risks.</p>
+<p>Say it plainly first: try to avoid having AI write portions of your paper, and if you do, you will have to edit it heavily.</p>
+<p>Bullet three is the one that matters to them and it is worth saying in the first person. I write for a living and the editing is where I learned to. If the tool drafts and you only tidy, you will be a worse writer in two years than you are now, and writing is most of what a research career is.</p>
+<p>The first three bullets are judgement, not measurement; say so if asked.</p>
+<p>If asked for evidence on the last bullet: <a href="https://doi.org/10.1126/sciadv.adt3813">Kobak et al.&nbsp;(Sci Adv, 2025)</a> counted word frequencies in 15 million PubMed abstracts and estimated at least 13.5 percent from 2024 were processed by a model, with <em>delves</em> 28 times as common as before. No model was tested. It describes prose in aggregate and is not a detector.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="numbers-come-from-your-table" class="slide level2">
+<h2>Numbers come from your table</h2>
+<div style="font-size:0.9em">
+<ul>
+<li>While drafting, leave placeholders for results, such as <code>[Table 2, row 3]</code>.</li>
+<li>No number goes in from memory, yours or the tool’s.</li>
+<li>When the analysis is done, fill each placeholder from the table.</li>
+<li>Then have the tool audit every number against the table:</li>
+</ul>
+<blockquote>
+<p><em>List every number in this section. For each one, quote the table cell it came from. Mark any number you cannot find as “NOT IN TABLE”. Do not rewrite anything.</em></p>
+</blockquote>
+<ul>
+<li>Fix what it flags yourself.</li>
+</ul>
+</div>
+<p><a href="https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations" style="font-size:0.55em; color:#6b6b6b">Anthropic, Reduce hallucinations: verify with citations</a></p>
+<aside class="notes">
+<p>Two minutes. This is the check for the writing section, and it has two halves.</p>
+<p>While drafting, you leave a placeholder wherever a result will go, pointing at the table cell it will come from. No number enters the text from memory, yours or the tool’s, and you can write the argument before the analysis is finished. That is how most published papers are written: the text is built around the tables, not the other way round.</p>
+<p>When the analysis is done, you fill the placeholders from the table. Then the tool earns its place: it lists every number in the section with the cell it came from, and flags anything it cannot find. The prompt follows Anthropic’s own “verify with citations” technique: find the supporting source for each claim, and mark what has none. “Do not rewrite anything” keeps the fixes in your hands.</p>
+<p>Say what the audit cannot do. It checks your transcription against the table. If the table itself is wrong, the audit will confirm the wrong number without complaint, which is what the coding section is about.</p>
+<p>The last bullet is the one they will skip. Re-prompting hands you a fresh paragraph that has not been audited, and the check resets to zero.</p>
+<p>Then ask how you would know a sentence was wrong. You found the cell.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="ai-for-coding" class="title-slide slide level1 center">
+<h1>5. AI for coding</h1>
+<aside class="notes">
+<p>Thirty seconds. This section is four habits, distilled from AEM 6850’s two meetings on AI: plan first and work in small steps, commit before each task, explore the data before you analyze it, and build checks into every step. Before the third, one slide on how to acquire data.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="plan-first-and-work-in-small-steps" class="slide level2">
+<h2>Plan first and work in small steps</h2>
+<div style="font-size:1em">
+<ul>
+<li>Decide the question, the sample and the method yourself.</li>
+<li>Ask for a plan before any code, and read it.</li>
+<li>One task per conversation. Start a new one for the next task.</li>
+<li>A task is small enough when you can predict one number of its answer.</li>
+</ul>
+</div>
+<p><a href="https://arielortizbobea.github.io/aem6850/fall-2026/sessions/09-ai-code.html" style="font-size:0.55em; color:#6b6b6b">Adapted from AEM 6850, meetings 8 and 9</a></p>
+<aside class="notes">
+<p>Two minutes. This is the general lesson of AEM 6850’s two meetings on AI, and it matters more than any prompt.</p>
+<p>The design is yours: the question, the sample, the weights, the method. Let the tool choose and it picks something plausible, and plausible is not the same as right. That is the second failure mode the syllabus grades against. Ask it to describe its approach before writing any code, and fix misunderstandings there, where they are cheapest.</p>
+<p>Small steps, for two reasons. Long threads push early instructions out of the context window, and a small task is one you can check. The test from 6850: if you cannot name one number the answer must contain and work it out yourself, the task is too big. Split it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="commit-before-each-task" class="slide level2">
+<h2>Commit before each task</h2>
+<div style="font-size:1em">
+<ul>
+<li>Commit your work before you ask the tool to change anything.</li>
+<li>Afterwards, look at what changed, line by line.</li>
+<li>Trust the changes you can see over the tool’s summary of them.</li>
+<li>Undo anything you did not ask for.</li>
+</ul>
+</div>
+<p><a href="https://arielortizbobea.github.io/aem6850/fall-2026/sessions/07-git.html" style="font-size:0.55em; color:#6b6b6b">Step by step: AEM 6850, meeting 7 on version control with git</a></p>
+<aside class="notes">
+<p>Ninety seconds. This is the git slide from the start of the hour, in practice. Every task starts from a saved state and ends with a list of exactly what changed. That list is the diff, and it is the honest account of what the tool did; its own summary is a claim like any other.</p>
+<p>For teams working only in chat, the same habit is saving each version of a script under its own name before you change it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-to-acquire-data" class="slide level2">
+<h2>How to acquire data</h2>
+<div style="font-size:0.9em">
+<ul>
+<li>Download if you can. It is boring and usually fastest.</li>
+<li>An API: a key, a rate limit, stable fields, a record of your request.</li>
+<li>Scrape last. Pages change, rows vanish silently, terms often forbid it.</li>
+<li>Every route has a wait, from days to months. Register now.</li>
+<li>The full list, with waiting times, is on the data sources page.</li>
+</ul>
+</div>
+<p><a href="../../fall-2026/data-sources.html" style="font-size:0.55em; color:#6b6b6b">Where to get data</a></p>
+<aside class="notes">
+<p>Ninety seconds, and resist reading a catalogue of sources from the front. The page does that better and it has the waits attached, which a slide cannot.</p>
+<p>The one thing worth saying out loud is the timing, and that getting it wrong is the commonest way an MPS capstone dies. A library database is available now. Dewey takes days. A data-use agreement takes months and may fail. A team that discovers in November which row it is in has no project.</p>
+<p>For teams with no file yet, the named route, the wait and a plan B are worth writing down now. Once the file arrives, the next slide is the first thing to do with it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="explore-the-data-before-you-analyze-it" class="slide level2">
+<h2>Explore the data before you analyze it</h2>
+<div style="font-size:0.9em">
+<ul>
+<li>Spend time with the file before any analysis.</li>
+<li>What is one row? What are the units? How is a missing value written?</li>
+<li>Plot it: maps for spatial data, line plots for time series.</li>
+<li>The plot shows the structure and the patterns in the data.</li>
+<li>It is also a check. A bad merge shows up as a hole or a jump.</li>
+<li>You cannot spot a wrong answer about a file you never looked at.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Ninety seconds. These are the questions to ask of any file, including the one your team is betting on.</p>
+<p>What one row is decides every count they will later quote, and it is the question teams get wrong most often.</p>
+<p>Then plot it, before any model. Spatial data go on a map, time series on a line plot, one line per unit when there are few. The aim is to see the structure: which units, which periods, where the data are dense and where they are thin. Whether every unit appears in every period is the question nobody asks, a plot answers it at a glance, and it is how a year-on-year comparison ends up comparing nine months against twelve.</p>
+<p>Looking is also the cheapest quality check there is. A merge that dropped a state shows up as a hole in the map. A column that switched from thousands to units shows up as a cliff in the line. Ask of every plot whether you can spot something wrong.</p>
+<p>The last bullet is the argument for all of it. Checking needs something to check against, and time with the raw file is what gives you that.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-worst-errors-raise-no-warning" class="slide level2">
+<h2>The worst errors raise no warning</h2>
+<div style="font-size:0.9em">
+<ul>
+<li>Code that fails is easy to fix. Code that runs and is wrong is the danger.</li>
+<li>The usual shapes: a merge that drops or duplicates rows, missing values handled silently, a unit mismatch.</li>
+<li><strong>Reinhart and Rogoff (AER P&amp;P, 2010)</strong>
+<ul>
+<li>Reported slower growth once public debt passes 90% of GDP.</li>
+<li>A spreadsheet formula left out 5 of their 20 countries.</li>
+</ul></li>
+<li><strong>Public Health England (October 2020)</strong>
+<ul>
+<li>Moved COVID-19 test results through an old Excel format capped at 65,536 rows.</li>
+<li><strong>15,841</strong> positive cases went unreported for a week, with no error.</li>
+</ul></li>
+</ul>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p><a href="https://doi.org/10.1257/aer.100.2.573">Reinhart and Rogoff (AER P&amp;P, 2010)</a> · <a href="https://doi.org/10.1093/cje/bet075">Herndon, Ash and Pollin (CJE, 2014)</a> · <a href="https://www.gov.uk/government/news/phe-statement-on-delayed-reporting-of-covid-19-cases">PHE statement, 4 October 2020</a></p>
+</div>
+<aside class="notes">
+<p>Two minutes. The first two bullets are AEM 6850’s: the danger is code that runs.</p>
+<p>Reinhart and Rogoff’s 90 percent threshold was quoted by policymakers arguing for austerity after 2010, which is why the error mattered. Corrected, the headline growth figure for high-debt countries went from minus 0.1 percent to 2.2 percent. Be fair about it: the spreadsheet error was only 0.3 points of that gap, and undisclosed choices about years and weights made the rest (Herndon, Ash and Pollin). Public Health England: an old Excel format stopped at 65,536 rows and said nothing, and about 48,000 close contacts were not traced in time.</p>
+<p>Neither of these is a statistics error. Both were invisible in a spreadsheet and would have been visible in code, which is why the next slide is about checks.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="build-checks-into-every-step" class="slide level2">
+<h2>Build checks into every step</h2>
+<div style="font-size:1em">
+<ul>
+<li>Ask for code you can rerun, not just an answer.</li>
+<li>Before you run it, write down the number you expect.</li>
+<li>A confident “<em>no problems</em>” is not a check. Ask for the code and the count.</li>
+<li>Check big claims in a fresh conversation.</li>
+<li>When a check fails, fix that one thing.</li>
+</ul>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p><a href="https://arielortizbobea.github.io/aem6850/fall-2026/sessions/08-ai-chat.html">Adapted from AEM 6850, meetings 8 and 9</a> · <a href="https://arxiv.org/abs/2508.20069">Ferman and Finamor (arXiv, 2025)</a></p>
+</div>
+<aside class="notes">
+<p>Two minutes. Five habits, and each one is general.</p>
+<p>Code you can rerun is AEM 6850’s rule that the research artifact is always code. A number in a chat, even one computed in the tool’s sandbox, cannot be rerun next week by anyone else. OpenAI’s own help page says to review the generated code, outputs and assumptions before relying on the result.</p>
+<p>Write down the number you expect first. Ferman and Finamor ran a randomised experiment inside real recruitment for research jobs: people were almost 20 percent more likely to find a planted coding error when it produced an unexpected result. So the errors that confirm your expectations are the ones that survive. Better still, write the expected count into the script as a line it must pass, so the check travels with the code.</p>
+<p>The confident “no” is the commonest way a check goes wrong: someone asks whether there are duplicated rows and takes the answer on trust. A fresh conversation that has seen none of the work is the reviewer; a model checking its own work is biased toward what it just wrote.</p>
+<p>Fix one thing at a time. Asking for a whole new version throws away the reading you already did.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="five-checks-you-run-on-any-file" class="slide level2">
+<h2>Five checks you run on any file</h2>
+<div style="font-size:0.9em">
+<ol type="1">
+<li><strong>Row counts across a join.</strong> More rows: a duplicate key. Fewer: dropped rows.</li>
+<li><strong>Totals against a published figure.</strong></li>
+<li><strong>Check a few raw records</strong> by eye.</li>
+<li><strong>Orders of magnitude.</strong> Is it 58 or 58,000?</li>
+<li><strong>Obtain the same result using an independent route.</strong></li>
+</ol>
+</div>
+<aside class="notes">
+<p>Two and a half minutes. These are five checks worth running on any file, so give them in these words and let the room write them down.</p>
+<p>Check five turns on the word independent. Two routes over the same bad file can agree and both be wrong. Double programming in clinical trials has exactly this blind spot, and the reviews of it say plainly that it validates outputs rather than inputs or logic. The strongest second route uses a different source, a different person, or both.</p>
+<p>Then the framing that makes the list learnable: each check is the answer to “how would you know it was wrong” for one shape of fault. You pick the check by the shape you are worried about, which is why a team that finds a fault and cannot name the check has not learned the thing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="disclosure" class="title-slide slide level1 center">
+<h1>6. Disclosure</h1>
+<aside class="notes">
+<p>Thirty seconds. Say that the last two slides apply to everything handed in, wherever AI entered the work.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="disclosure-is-required" class="slide level2">
+<h2>Disclosure is required</h2>
+<div style="font-size:0.9em">
+<ul>
+<li>Every deliverable in this course carries a disclosure block.</li>
+<li>Leaving it out is an academic integrity violation.</li>
+<li>Cornell’s Code counts AI help “<em>not explicitly permitted by the instructor</em>” as unauthorized assistance.</li>
+<li>The AER: AI use “<em>must be briefly described during the submission process</em>”.</li>
+</ul>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p><a href="../../fall-2026/syllabus.html#ai-policy">Syllabus, AI policy</a> · <a href="https://deanoffaculty.cornell.edu/faculty-and-academic-affairs/academic-integrity/upcoming-code-of-academic-integrity/">Cornell Code of Academic Integrity, 2026</a> · <a href="https://www.aeaweb.org/journals/aer/editorial-policy">American Economic Review, editorial policy</a></p>
+</div>
+<aside class="notes">
+<p>One minute. The first two bullets are the syllabus rule. The third is why the second holds: this course permits AI with a disclosure block, so use without one is aid the instructor did not permit.</p>
+<p>Cornell’s new Code took effect on August 24 and names artificial intelligence twice. The second is under fabricated sources: citing “false citations generated by artificial intelligence or other tools” is a violation, and students are responsible for every source they cite “regardless of how those sources were generated or obtained”. That is section 3’s rule with the university’s name on it, so say it.</p>
+<p>The AER line is there so nobody hears this as a classroom rule. The journal asks for the same description at submission, and says authors are “solely accountable for, and must thoroughly fact-check, outputs created with the help of AI software”. Both texts were checked against the live pages on 23 September 2026.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-you-write-down-about-what-you-used" class="slide level2">
+<h2>What you write down about what you used</h2>
+<div style="font-size:0.9em">
+<p>Three lines on every deliverable:</p>
+<blockquote>
+<p><strong>Tools.</strong> Claude Sonnet 5 (claude.ai) and ChatGPT 5.<br>
+<strong>Used for.</strong> Drafting the cleaning script. Auditing the outline of section 2.<br>
+<strong>Checked.</strong> Row counts before and after the join. Every reference opened.</p>
+</blockquote>
+<ul>
+<li>Too vague: <em>AI</em>, <em>help with the code</em>, <em>it worked</em>.</li>
+<li>Naming a mistake the tool made counts in your favour.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Ninety seconds. Show a filled-in block rather than an empty template, because a template teaches nothing and every disclosure I get back otherwise says “AI, for help with the code, and it worked”.</p>
+<p>The three failing answers in the first bullet are the marking criteria stated as examples, so read them.</p>
+<p>While this slide is up, answer the question they actually want answered, and answer it once. I do not run AI detectors. OpenAI withdrew its own because it caught 26 percent of AI text and falsely flagged 9 percent of human text. Seven commercial detectors falsely flagged 61 percent of essays by writers whose first language is not English, against 5 percent for US school essays. Vanderbilt turned Turnitin’s detector off because a 1 percent false positive rate across their submissions is about 750 students accused wrongly. The standard here is that you disclose and you verify.</p>
+<p>Then close the hour by saying what comes after the break: a live demo of how to use AI to get a research project started. Next week’s two deliverables, a two-page project description and the team’s working agreement, will be posted on Canvas.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>AEM 6991</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/arielortizbobea\.github\.io\/aem6991\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

@@ -1230,7 +1230,7 @@ or a simulation of your own design, which also handles clustering.
 - In 1,000 simulated coupon tests on a 5% purchase rate, the true effect is 1 point.
 - The significant estimates, in blue, are the ones most likely to be published.
 - Nearly 80% of reported effects in economics are exaggerated ([Ioannidis et al. 2017](https://doi.org/10.1111/ecoj.12461)).
-- [**Solution**: plan a sample with 80% power, and report every estimate.]{.solution}
+- [**Solution**: plan for 80% power, and report estimates whether or not significant.]{.solution}
 
 <div class="m06 m07-compact" data-demo="power" style="width:92%;margin:0 auto"></div>
 
@@ -1258,10 +1258,20 @@ Ioannidis, Stanley and Doucouliagos estimate that nearly 80% of reported
 effects in economics are exaggerated, typically by a factor of two, and a
 third by a factor of four or more.
 
+The solution has two parts, one for each half of the mechanism. The
+exaggeration comes from a filter: an underpowered test reaches
+significance only when its estimate lands far above the truth, and only
+the significant results get reported. Planning for 80% power shrinks the
+exaggeration itself (1.1 times at 8,000 per arm). Reporting the estimate
+whether or not it is significant removes the filter: the readout's "mean
+of all 1,000 estimates" is 1.0 at every sample size, centered on the true
+effect. The overstatement is entirely in the selection of the significant
+ones.
+
 The lesson for a proposal: if the minimum detectable effect is larger than
 the effect you expect, the significant result you hope for will overstate
-it. Either enlarge the sample, or report the estimate and its interval
-whatever their significance.
+it. Either enlarge the sample, or commit to reporting the estimate and its
+interval whatever their significance.
 :::
 
 ## Clusters and strata in a power calculation

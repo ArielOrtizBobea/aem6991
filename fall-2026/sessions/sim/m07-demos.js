@@ -1351,6 +1351,7 @@
           n: n, se: s, mde: 2.8 * s, est: est, sig: sig.length, power: sig.length / POW.K,
           meanSig: sig.length ? M06.mean(sig) : null,
           meanAbsSig: sig.length ? absSum / sig.length : null,
+          meanAll: M06.mean(est),
           exag: sig.length ? absSum / sig.length / POW.theta : null,
           typeS: sig.length ? wrong / sig.length : null
         };
@@ -1375,11 +1376,12 @@
 
     var R0 = 680, rows = [
       ['Sample size per arm', col.ink], ['Standard error', col.ink], ['Minimum detectable effect', col.ink],
-      ['Power', col.blue], ['Mean absolute significant estimate', col.blue], ['Significant with the wrong sign', col.blue]
+      ['Power', col.blue], ['Mean of all 1,000 estimates', col.ink], ['Mean absolute significant estimate', col.blue],
+      ['Significant with the wrong sign', col.blue]
     ];
     var vals = rows.map(function (rw, i) {
-      M06.text(svg, R0, 40 + i * 50, rw[0], { size: 15, fill: col.grey });
-      return M06.text(svg, R0, 62 + i * 50, '', { size: 21, fill: rw[1], weight: 700 });
+      M06.text(svg, R0, 36 + i * 44, rw[0], { size: 15, fill: col.grey });
+      return M06.text(svg, R0, 56 + i * 44, '', { size: 20, fill: rw[1], weight: 700 });
     });
 
     var bar = M06.controls(root), out = M06.readout(root), k = POW.start;
@@ -1414,8 +1416,9 @@
       vals[1].textContent = num(d.se, 2) + ' points';
       vals[2].textContent = num(d.mde, 1) + ' points';
       vals[3].textContent = pct(d.power);
-      vals[4].textContent = d.meanAbsSig == null ? DASH : num(d.meanAbsSig, 1) + ' (' + num(d.exag, 1) + '× the true effect)';
-      vals[5].textContent = d.typeS == null ? DASH : pct(d.typeS, 1);
+      vals[4].textContent = num(d.meanAll, 1) + ' (the true effect is 1)';
+      vals[5].textContent = d.meanAbsSig == null ? DASH : num(d.meanAbsSig, 1) + ' (' + num(d.exag, 1) + '× the true effect)';
+      vals[6].textContent = d.typeS == null ? DASH : pct(d.typeS, 1);
       out.innerHTML = 'Base purchase rate 5%' + SEP + 'True effect ' + bold('+1 point') + SEP + 'Significant studies: ' + bold(num(d.sig)) + ' of 1,000';
     }
     draw();

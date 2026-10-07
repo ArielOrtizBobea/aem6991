@@ -2,10 +2,30 @@
 title: "7 · Model failures"
 subtitle: "Wednesday, October 7, 2026"
 pagetitle: "AEM 6991 · 7 Model failures"
+resources:
+  - sim/*.js
+format:
+  html:
+    toc: true
+    toc-depth: 2
+  revealjs:
+    output-file: 07-model-failures-slides.html
+    theme: [default, slides.scss]
+    template-partials:
+      - title-slide.html
+    footer: "AEM 6991"
+    slide-number: c/t
+    incremental: false
+    history: false
+    link-external-newwindow: true
+    include-after-body: sim/m07-include.html
+    html-math-method: katex
 ---
 
+:::: {.content-hidden when-format="revealjs"}
+
 ::: {.callout-note appearance="simple"}
-This page is a stub. Materials appear here before the meeting.
+[**Open the slides**](07-model-failures-slides.html)
 :::
 
 **What you should be able to do after this meeting.** Take a number apart and name the failure that produced it. Say which way it pushes the estimate, and whether more data would fix it. Then say what your own controls would have to close, and what they cannot.
@@ -16,7 +36,7 @@ This page is a stub. Materials appear here before the meeting.
 
 ## Session A · 2:00–3:15
 
-Two families of failure, and they are not the same problem. Bias moves the number. False precision leaves the number where it is and shrinks the error bar around it. Bias first, and there are four. Selection and sorting: the retention email went to the customers already most likely to renew, so the lift is who was picked, not what was sent. Omitted variables, with a rule for the direction — the omitted thing's effect on the outcome, times its correlation with the treatment. Two signs multiplied. You can usually work out which way you are wrong before you have the data. Measurement error next. Classical error in the variable you care about pulls the estimate toward zero, always: self-reported spend, survey income, recalled hours. Non-classical error does not. People round, they under-report, and top-coded income errs one way only. Then it can go anywhere. Fourth, endogeneity and reverse causality. More police, more crime. The firm raised price in the quarter demand was strongest. And then the question I will ask of every one of them: does more data fix it? No. A biased estimate with a million rows is a more precisely wrong number. Then the quieter family, which leaves the estimate untouched. Dependence ignored: five hundred shoppers in ten stores is closer to ten observations than five hundred, and Bertrand, Duflo and Mullainathan found placebo policies in state panels rejecting at 45% instead of 5%. Multiple testing: twenty subgroups, one significant, one slide. Specification search: Silberzahn gave 29 teams one dataset and one question, and got estimates from 0.89 to 2.93. None of the three moves the number. All three make you sure of it. Last, the fixes and their ceiling. Conditioning on observables, drawn on the graph — which back doors a set of controls closes, and the two controls that make things worse. One sits on the path from cause to effect. One opens a path by being conditioned on. Then matching, which is the same claim made by comparison rather than by regression, and it needs somebody to compare to. If no untreated store looks like your treated stores, there is nothing there. Then the ceiling. LaLonde put observational estimates with controls up against a randomised benchmark, and they did not reproduce it. 'I added controls' is a claim about the graph, not a technique. So state the claim out loud, and report how far your coefficient moved when the controls went in.
+Four kinds of failure. Bias moves the estimate. False precision leaves the estimate where it is and shrinks the error bar around it. Low power leaves the error bar correct and too wide for the question. External validity asks whether a correct estimate holds for the population the decision concerns. Bias first, and there are five. Selection and sorting: the retention email went to the customers already most likely to renew, so the lift is who was picked, not what was sent. Omitted variables, with a rule for the direction — the omitted thing's effect on the outcome, times its correlation with the treatment. Two signs multiplied. You can usually work out which way you are wrong before you have the data. Measurement error next. Classical error in the variable you care about pulls the estimate toward zero, always: self-reported spend, survey income, recalled hours. Non-classical error does not. People round, they under-report, and top-coded income errs one way only. Then it can go anywhere. Fourth, endogeneity and reverse causality. More police, more crime. The firm raised price in the quarter demand was strongest. Fifth, selection into the sample, the cousin of selection into treatment: trainees who found no job stop answering the follow-up survey, and only the firms that survived appear in the data. And then the question I will ask of every one of them: does more data fix it? No. A biased estimate with a million rows is a more precisely wrong number. Then the fix everybody reaches for, and its ceiling. Conditioning on observables, drawn on the graph — which back doors a set of controls closes, and the two controls that make things worse. One sits on the path from cause to effect. One opens a path by being conditioned on. Then matching, which is the same claim made by comparison rather than by regression, and it needs somebody to compare to. If no untreated store looks like your treated stores, there is nothing there. Then the ceiling. LaLonde put observational estimates with controls up against a randomised benchmark, and they did not reproduce it. 'I added controls' is a claim about the graph, not a technique. So state the claim out loud, and report how far your coefficient moved when the controls went in. Then the quieter family, which leaves the estimate untouched. Heteroskedasticity, and dependence ignored over time, within groups or across space: five hundred shoppers in ten stores is closer to ten observations than five hundred, and Bertrand, Duflo and Mullainathan found placebo policies in state panels rejecting at 45% instead of 5%. Multiple testing: twenty subgroups, one significant, one slide. Specification search: Silberzahn gave 29 teams one dataset and one question, and got estimates from 0.89 to 2.93. None of the six moves the number. All six make you sure of it. Then power. Last week's checkout test could detect a lift of about 1.3 points, and median power across economics is 18% or less. The significant results of an underpowered study overstate the effect. With clustered data, power depends mostly on the number of clusters, and strata built on baseline outcomes raise it at little cost. Last, external validity. Opower's first ten experiments overstated its energy savings in the next 101 sites. Name the population your decision concerns, and check that your sample covers it.
 
 ## Session B · 3:30–4:30
 
@@ -28,3 +48,1225 @@ Ten minutes of team check-in, then the results-critique cards again — the same
 
 Your team's output is submitted before you leave.
 
+::::
+
+:::: {.content-visible when-format="revealjs"}
+
+## Motivation
+
+- Last week's estimators were unbiased and consistent under their assumptions.
+- Applied data often violate those assumptions.
+- **Bias**: the expected value of the estimator differs from the parameter.
+- **False precision**: the reported standard error understates the estimator's standard deviation.
+- **Low power**: the standard error is too large to detect the minimum relevant effect.
+- **External validity**: whether the estimate holds for the population the decision concerns.
+- Today we discuss the sources of each failure and their solutions.
+
+::: {.notes}
+Ninety seconds.
+
+Last week every simulation drew customers at random and independently, and
+the estimators behaved as the theory said: unbiased, consistent, with
+correct standard errors. Those properties are conditional on assumptions.
+This week the same estimators run on data that violate them. Nobody
+chooses a biased estimator. They choose one that is unbiased under
+assumptions their data do not satisfy.
+
+Four definitions carry the hour. Bias is a property of the estimator's
+location: its sampling distribution is centered away from the parameter.
+False precision is a property of the reported uncertainty: the estimate may
+be centered correctly, but the standard error printed beside it understates
+how much it varies across samples.
+
+Low power is the third: a correct standard error that is too large for
+the question. External validity is the fourth: an estimate that is right
+for the units studied and wrong for the units the decision concerns. Its significant results overstate the effect.
+
+The session B cards rest on telling these apart.
+:::
+
+## Outline
+
+1. Bias
+2. Control variables and their limits
+3. False precision
+4. Statistical power
+5. External validity
+
+::: {.notes}
+Thirty seconds. One section per failure, in the order of the motivation
+slide, with control variables after bias because they are the solution
+most projects reach for. Section 1 takes the sources of bias, each with
+its solution and the question of whether more data would fix it. Section 2
+covers control variables and the evidence on how far they go. Section 3
+takes the sources of false precision, each with the standard error that
+corrects it. Section 4 covers the opposite problem, a correct standard
+error too large to answer the question, and how a design gets the power it
+needs. Section 5 asks whether the estimate holds for the population the
+decision concerns.
+:::
+
+# 1. Bias
+
+::: {.notes}
+Thirty seconds. The section opens with one animation, in the format of last
+week's confidence interval slide, then takes the sources one at a time.
+:::
+
+## A failed assumption biases the estimator
+
+- OLS is consistent when the error is uncorrelated with the regressor: **exogeneity**.
+- Each source of bias in this section violates exogeneity.
+- The same estimator then centers every 95% interval away from θ.
+
+<div class="m06" data-demo="coverage" data-kinds="0,1" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. Click "Draw 20", then Reset and "Draw 100". "Draw 1,000"
+settles the shares near their expected values.
+
+One estimator, such as OLS, on two data-generating processes, with the
+same sampling draws: each row lines up across the two panels. Left: its
+assumptions hold, so it is centered on θ and its standard error is
+correct. Right: exogeneity fails, for example because a confounder is
+omitted, so the same estimator is centered 1.5 standard deviations away
+from θ. Its standard error is still correct.
+
+After Reset and "Draw 100": 2 and 31 of the 100 intervals miss θ. In
+expectation the shares are 5% and 32%. Then "Draw 1,000" on top: 43 and
+360 of the 1,100 intervals miss θ (4% and 33%). With 1,100 intervals the
+share has a standard error of about 0.7 points, so 4% against 5% is
+chance.
+
+The stated 95% is false, and nothing in the regression table shows it: the
+estimator prints a correct standard error around the wrong center. The
+estimator was a good choice. The assumption behind it failed.
+
+The five sources that follow are five ways exogeneity fails: the
+treatment is chosen on the outcome's prospects, the sample is chosen on
+the outcome, a confounder is left in the error, the regressor is measured
+with error, or the outcome feeds back into the regressor. Error in the
+outcome alone leaves exogeneity intact, which is why it causes no bias.
+Section 3 opens with the same animation for the assumptions behind the
+standard error.
+:::
+
+## Five sources of bias
+
+1. Selection into treatment
+2. Selection into the sample
+3. Omitted variables
+4. Measurement error
+5. Simultaneity and reverse causality
+
+::: {.notes}
+One minute. For each source: which way it pushes the estimate, whether a
+larger sample would help, and the solution. The answer to the second question is no every
+time, apart from error in the outcome. The table at the end of the section
+collects the answers under the same numbers.
+:::
+
+## Selection into treatment
+
+- **Selection bias**: treated and untreated units would differ even without the treatment.
+- A retention email to 3,000 of 10,000 customers raises renewal probability by 2 points.
+- The firm chooses who gets it using a renewal score.
+- [**Solution**: randomize who gets the email, or compare customers near the score cutoff.]{.solution}
+
+<div class="m06 m07-compact" data-demo="selection" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. The slider starts at 0: emails sent at random.
+
+At 0, emailed customers renew at 57.9% and the others at 55.5%. The
+difference, 2.4 points, is close to the true effect of 2.0; the remaining
+0.4 is chance in who was picked.
+
+Click "Sweep". As the email goes more and more to customers the score rates
+as likely to renew, the difference grows. At full targeting it is 87.3%
+against 42.9%: 44.5 points, of which 2.0 is the email and 42.5 is
+selection.
+
+The decomposition uses the potential outcomes from meeting 2. The observed
+difference equals the average effect on the emailed,
+E[Y₁ − Y₀ | emailed], plus the selection bias,
+E[Y₀ | emailed] − E[Y₀ | not emailed]: the gap in renewal rates had nobody
+received the email.
+
+Direction: when the treatment goes to units that would have done better
+anyway, the comparison overstates the effect. A firm that sends its
+turnaround team to its worst stores has the opposite problem.
+
+A million customers would not change the 42.5 points. Selection bias does
+not shrink with n.
+
+Sorting is the same structure with the choice made by the unit: customers
+choose the loyalty app, workers choose training, firms choose to adopt a
+technology.
+
+Solution. Random assignment removes the selection bias, because it makes
+the two groups alike in expectation. If the email depended on the score and
+otherwise on chance, comparing customers with the same score also removes
+it: that is matching on the score, in section 2. If the firm emailed
+everyone above a score cutoff, as at full targeting, customers with the
+same score all share one treatment and no match exists. Customers just
+above and just below the cutoff are comparable, and that comparison is a
+regression discontinuity, one of the designs ahead.
+:::
+
+## Selection into the sample
+
+- **Selection into the sample**: whether a unit is observed depends on its outcome.
+- Examples:
+    - Trainees who found no job stop answering the follow-up survey.
+    - Only the firms that survived appear in the data.
+- The comparison among the units observed is biased, in either direction.
+- [**Solution**: follow up everyone, or bound the effect.]{.solution}
+
+[Lee (2009), *Training, Wages, and Sample Selection: Estimating Sharp Bounds on Treatment Effects*, Review of Economic Studies 76, 1071–1102.](https://doi.org/10.1111/j.1467-937X.2009.00536.x){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Ninety seconds.
+
+Selection into the sample is the cousin of source 1. Selection into
+treatment decides who gets the treatment; selection into the sample
+decides who ends up in the data. In both, the choice depends on the
+outcome, so the comparison among the units we see is not the comparison we
+want. Selection into the sample is meeting 2's collider: selecting on the
+outcome. Last week's Literary Digest poll had it through nonresponse.
+
+The first example is attrition. If trainees who found no job stop
+answering and the controls keep answering, the trainees observed earn more
+than all trainees, and the effect is overstated. If the program instead
+keeps its jobless participants answering while jobless controls drop out,
+the control mean is inflated more and the effect is understated. Either
+way, a randomized experiment is no longer balanced among those observed.
+
+The second is survivorship. A comparison of practices among surviving firms
+leaves out the firms the practice may have killed.
+
+Solution. Follow up everyone, preferably from administrative records that
+do not depend on a response. Report the attrition rate by group. When the
+rates differ in a randomized experiment, Lee's bounds trim the excess
+share from the group with less attrition, once from the top of its outcome
+distribution and once from the bottom. They bound the effect for the units
+who would have answered in either group, and they assume the treatment
+changes whether a unit answers in one direction only.
+[Heckman (1979)](https://doi.org/10.2307/1912352) models the selection
+directly. It assumes jointly normal errors, and a credible version needs a
+variable that affects whether a unit is observed and not its outcome.
+:::
+
+## Omitted variables
+
+- True model: $Y = \beta X + \gamma Z + u$, and $b$ is the slope of $Y$ on $X$ alone.
+- **Omitted variable bias**: $E[b] - \beta = \gamma\delta$, with $\delta$ the slope of $Z$ on $X$.
+
+::: {style="font-size:0.85em; width:70%; margin:0 auto"}
+| Bias of $b$ | $\gamma > 0$ | $\gamma < 0$ |
+|:--|:--:|:--:|
+| $\delta > 0$ | upward | downward |
+| $\delta < 0$ | downward | upward |
+:::
+
+- Example: the effect of job training on earnings, omitting prior earnings.
+- [**Solution**: control for $Z$, or use a design that holds $Z$ fixed.]{.solution}
+
+::: {.notes}
+Three minutes.
+
+The formula is the regression version of meeting 2's confounder. Regressing
+Y on X alone gives a slope of β + γ·Cov(X, Z)/Var(X). The bias is the
+product of two quantities: the omitted variable's effect on the outcome,
+and its association with the treatment. If either is zero there is no
+bias.
+
+The sign can usually be worked out before estimating anything, because it
+needs only the two signs.
+
+The example works both ways. A firm that sends its strongest workers to
+training: prior earnings rise with training (δ > 0) and raise current
+earnings (γ > 0), so the estimate overstates the return. A public program
+that enrolls people with low earnings: δ < 0 and γ > 0, so the estimate
+understates the return, and can be negative when the true effect is
+positive. Section 2 returns to the second case with LaLonde.
+
+γ and δ are population quantities, so a larger sample leaves the bias
+unchanged.
+
+Solution. If Z is measured, control for it; section 2 shows when that
+works. If it is not, a design that holds it fixed: unit fixed effects for a
+Z that does not change over time, or a comparison in which Z is balanced by
+construction.
+:::
+
+## Classical measurement error
+
+- **Classical measurement error**: noise uncorrelated with the true values of $X$ and $Y$.
+- In $X$: the estimated slope converges to λβ, where λ is the **reliability ratio**.
+- In $Y$: the slope estimator stays unbiased and its standard error rises.
+- [**Solution**: measure $X$ with less error, or instrument it with a second measurement.]{.solution}
+
+<div class="m06" data-demo="attenuation" style="width:88%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. 200 simulated households. Monthly spend rises by $0.80 per
+$1,000 of income.
+
+At zero error the estimate is 0.80, with a standard error of 0.055. Move
+the slider to 15: income is now measured with an error whose standard
+deviation, $15k, equals that of true income. The points spread
+horizontally and the fitted line flattens. λ = 15²/(15² + 15²) = 0.5, so
+the slope should fall to about 0.40; in this sample it is 0.39. Click
+"Sweep" to see the full range.
+
+Why: part of the variation in measured income is noise, and the noise does
+not move spend. The regression averages the true slope with a slope of
+zero, weighted by their shares of the variance. That gives β·λ, where
+λ = Var(true X)/Var(measured X).
+
+Switch to "Error in spend (Y)" and repeat. At an error SD of 15 the slope is
+0.77 and its standard error 0.098, against 0.055 with no error. In
+expectation the slope stays at 0.80; in this one sample it moves slightly
+as the draws shift.
+
+Examples: self-reported spend, survey income, recalled hours worked.
+
+For error in Y, the slope estimator stays unbiased only if the noise is
+unrelated to X.
+
+Solution. Better measurement: administrative records, receipts, devices.
+When two noisy measurements of X exist, one can instrument the other. This
+removes the attenuation if the error in the instrumented measure is
+classical, the two errors are unrelated to each other, and neither is
+related to the error in Y. Put the measurement with the more nearly
+classical error on the right-hand side and use the other as the
+instrument. Survey earnings, whose error is mean-reverting, belong in the
+instrument role.
+
+Two cautions. Adding controls usually makes attenuation worse, because the
+controls absorb part of the true variation in X and leave the noise. With
+several regressors, error in one of them can bias the others in either
+direction.
+:::
+
+## Non-classical measurement error
+
+- **Non-classical measurement error**: the error is correlated with the true value.
+- **Mean reversion**: reports are too low at the top and too high at the bottom.
+- Mean reversion biases the slope away from zero in X and toward zero in Y.
+- [**Solution**: validate against administrative records, or use them directly.]{.solution}
+
+<div class="m06 m07-compact" data-demo="nonclassical" style="width:92%;margin:0 auto"></div>
+
+[Bound and Krueger (1991), *The Extent of Measurement Error in Longitudinal Earnings Data: Do Two Wrongs Make a Right?*, Journal of Labor Economics 9, 1–24.](https://doi.org/10.1086/298256){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. The same 200 households as the classical error slide. Move
+the κ slider with "Error in income (X)", then switch to "Error in spend
+(Y)" and move it again.
+
+Bound and Krueger matched survey earnings to Social Security records. The
+error was negatively correlated with true earnings: high earners reported
+too little and low earners too much. The demo builds that pattern. Each
+report keeps a share 1 − κ of the household's true deviation from the
+mean, plus a little noise.
+
+Error in income: at κ = 0.3 the estimated slope is 1.12, against a true
+0.80, and the estimator converges to 1.11. Reported incomes are squeezed
+toward the mean while spend keeps its full spread, so the same change in
+spend is attributed to a smaller change in income. The slope is biased
+away from zero, the opposite of classical error in X.
+
+Error in spend: at κ = 0.3 the slope is 0.57 and converges to
+(1 − κ) × 0.80 = 0.56. Reported spend is squeezed and income is not, so
+the slope is biased toward zero. Classical error in Y caused no bias at
+all.
+
+So the direction depends on where the error sits and how it relates to
+the truth. Other patterns from their projects: rounding (hours reported as
+40), top-coding (incomes above a cap recorded at the cap), and
+under-reporting of program benefits such as food stamps, which
+[Meyer, Mok and Sullivan (2015)](https://doi.org/10.1257/jep.29.4.199)
+document in household surveys.
+
+The worst case for a project is error correlated with the treatment. If a
+program's participants know what it targets, they may over-report the
+targeted behavior. The estimate is then biased in the program's favor, and
+a program with no effect can appear to work.
+
+Solution. Better measurement: administrative records, or a validation
+subsample where both measures are observed.
+:::
+
+## Simultaneity and reverse causality
+
+- **Simultaneity**: X affects Y and Y affects X.
+- **Reverse causality**: Y affects X, as when cities hire police after crime rises.
+- Regressing quantity on price recovers the demand slope only if supply alone shifts.
+- [**Solution**: use an instrument that shifts supply only, such as an input cost.]{.solution}
+
+<div class="m06 m07-compact" data-demo="simultaneity" style="width:92%;margin:0 auto"></div>
+
+[Working (1927), *What Do Statistical "Demand Curves" Show?*, Quarterly Journal of Economics 41, 212–235.](https://doi.org/10.2307/1883501){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Start in "Both shift" and click "Draw 100 weeks".
+
+Demand has slope −2 (quantity per dollar), supply +1. Each week both curves
+shift by a random amount, and each week's price and quantity is where that
+week's supply meets demand. The faint lines are the current week's curves.
+
+The regression of quantity on price gives −0.27 in these 100 weeks; the
+demand slope is −2. Switch to "Supply shifts" and draw 100 weeks: the points lie on the
+demand curve and the slope is −2.00. Switch to "Demand shifts": the points
+lie on the supply curve and the slope is +1.00.
+
+The data alone cannot tell which curve they trace. That requires knowing
+which curve moved. Working made this point in 1927.
+
+Reverse causality is the same problem. More police, more crime: cities hire
+police when crime rises, so a regression of crime on police across cities
+has a positive slope. A firm raised its price in the quarter demand was
+strongest. Card 7 this afternoon: the advertising budget was set from the
+sales forecast.
+
+A larger sample shrinks the standard error, and the estimate converges to
+−0.5, not to −2. That limit weights the supply slope by the variance of
+the demand shocks and the demand slope by the variance of the supply
+shocks: (1 × 64 − 2 × 64)/(64 + 64) = −0.5.
+
+Solution. A variable that shifts one curve and not the other, an
+instrument, which comes with the designs in meetings 8 and 9.
+:::
+
+## Direction and solution for each source of bias
+
+::: {style="font-size:0.62em"}
+|  | Source | Direction | More data fixes it? | Solution |
+|:-|:---------|:-----------|:-------|:-------------|
+| 1 | Selection into treatment | Overstates if the treated would have done better anyway | No | Randomize, or compare units near the assignment cutoff |
+| 2 | Selection into the sample | Either direction | No | Follow up everyone, or bound the effect |
+| 3 | Omitted variables | Sign of γ times sign of δ | No | Control for Z, or use a design that holds Z fixed |
+| 4 | Classical measurement error in X | Toward zero | No | Reduce the error, or instrument with a second measurement |
+| 4 | Classical measurement error in Y | No bias. Larger standard error | Yes | Use a larger sample |
+| 4 | Non-classical measurement error | Either direction | No | Validate against administrative records |
+| 5 | Simultaneity or reverse causality | Either direction | No | Use an instrument that shifts one side only |
+:::
+
+- A larger sample reduces the variance and leaves the bias unchanged.
+
+::: {.notes}
+Two minutes. A reference slide for the session B cards.
+
+Read down the "More data fixes it?" column. The only case where more data
+helps is the one with no bias. More
+data shrinks the standard error around whatever the estimator converges
+to, so a biased estimate with a million rows is a precise estimate of the
+wrong value. Last week's Literary Digest poll is the example.
+:::
+
+# 2. Control variables and their limits
+
+::: {.notes}
+Thirty seconds. The solution most projects reach for. Four slides: what
+controls assume, which variables to control for, what matching adds, and
+whether it works when tested against an experiment.
+:::
+
+## What control variables assume
+
+- Controls address omitted variables and selection into treatment.
+- **Selection on observables**: given the controls, treatment is independent of the potential outcomes.
+- Untreated units must also exist at every treated unit's control values.
+- If both hold, comparing units with equal controls removes both biases.
+- Two ways to compare: regression with controls, and matching.
+
+::: {.notes}
+Two minutes. The bridge from section 1.
+
+Two of the five sources of bias, omitted variables and selection into
+treatment, have the same structure: something that drives the outcome also
+drove who got the treatment. If that something is measured, compare units
+that share its value. Heavy shoppers with heavy shoppers, from meeting 2.
+Customers with the same renewal score, from the email slide.
+
+The assumption has several names. Economists say selection on observables
+or conditional independence; the Remix reading calls it unconfoundedness.
+It says that, among units with the same values of the controls, who got
+the treatment is as good as random. It cannot be tested with the data. It
+is a claim about how the treatment was assigned, and the graph from
+meeting 2 is how you argue it.
+
+The third bullet is common support, which the matching slide draws. The
+email at full targeting satisfies selection on observables, because the
+score decides who is emailed, and fails common support. The email slide's
+solution was therefore a regression discontinuity. A regression makes the
+comparison through its functional form, so where common support fails it
+extrapolates. Matching makes the comparison only where both kinds of unit
+exist.
+
+The section asks three questions. Which variables belong among the
+controls (next slide). What matching adds over a regression (the slide
+after). Whether the assumption holds in practice, tested against an
+experiment (LaLonde).
+:::
+
+## Good and bad controls
+
+- Controlling for a **confounder** closes a back door.
+- Controlling for a **mediator** removes part of the effect.
+- Controlling for a **collider** opens a path that was closed.
+
+<div class="m06" data-demo="controls" style="width:92%;margin:0 auto"></div>
+
+[Cinelli, Forney and Pearl (2024), *A Crash Course in Good and Bad Controls*, Sociological Methods & Research 53, 1071–1104.](https://doi.org/10.1177/00491241221099552){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Four minutes. Click "Draw 1,000 samples", then the four toggles in turn.
+
+The story: a chain's ad spend by store (X) and its sales (Y). Market size
+(Z) raises both. Part of the effect runs through store visits (M). The
+head office rates each store manager (C) on both ad spend and sales. The
+true total effect of ad spend on sales is 1.0.
+
+Means of the four estimators over 1,000 samples of 200 stores:
+
+1. No controls: 1.49. Omitted variable bias, γδ = 1 × 0.49.
+2. Controlling for market size: 1.00. The back door is closed.
+3. Adding store visits: 0.50. That is the direct effect only; the half
+   that runs through visits has been controlled away.
+4. Adding the rating instead: −0.11. The sign flips. Among managers with
+   the same rating, high spend has to come with low sales, so the
+   regression manufactures a negative association.
+
+The toggles box the variables each regression conditions on.
+
+Every row has a small standard error. The output of all four regressions
+looks equally valid, and only the graph says which one estimates the
+effect.
+
+Angrist and Pischke call 3 and 4 bad controls: variables that are
+themselves outcomes of the treatment. The working rule is to control only
+for variables determined before the treatment.
+:::
+
+## Matching needs comparable untreated units
+
+- Example: larger stores adopted self-checkout, and store size raises sales.
+- **Matching**: compare each adopter with non-adopters of similar size.
+- **Common support**: the range of sizes where both kinds of store exist.
+- Ten adopters exceed 23,000 sq ft, so no non-adopter matches them.
+
+<div class="m06" data-demo="overlap" style="width:88%;margin:0 auto"></div>
+
+::: {.notes}
+Two and a half minutes.
+
+The question: a chain wants to know whether self-checkout raised sales.
+The 40 stores that adopted it are larger on average than the 120 that did not, and
+larger stores sell more, so store size is a confounder. Comparing adopters
+with non-adopters overstates the effect. Matching compares each adopter
+with non-adopters of about the same size, which closes the same back door
+as a regression that controls for size.
+
+The figure is a simulated chain, one dot per store. Ten of the 40
+adopters are at least 23,000 sq ft, and the largest non-adopter is under
+23,000, so no comparable untreated store exists for them.
+
+A regression on store size would still report an estimate. It fills the
+gap by extrapolating its functional form, without any warning. Matching
+makes the gap visible. The options are to drop those stores, which
+changes the parameter to the effect for small and medium stores, or to
+find a different design.
+
+With many covariates, units are matched on the propensity score, the
+probability of treatment given the covariates
+([Rosenbaum and Rubin 1983](https://doi.org/10.1093/biomet/70.1.41)).
+
+Matching closes only the back doors that run through measured covariates.
+An unmeasured confounder biases it exactly as it biases regression.
+:::
+
+## Testing controls against an experiment
+
+- A 1970s experiment estimates that a job program raised men's 1978 earnings by $886.
+- LaLonde replaced its control group with PSID and CPS survey respondents.
+- With all observed controls, his estimates were −$1,228 and −$805.
+- An observational estimate in your project has no experimental benchmark.
+
+<div class="m06 m07-compact" data-demo="lalonde" style="width:92%;margin:0 auto"></div>
+
+[LaLonde (1986), *Evaluating the Econometric Evaluations of Training Programs with Experimental Data*, American Economic Review 76, 604–620.](https://www.jstor.org/stable/1806062){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. The question this slide answers: if a researcher had only
+observational data and controls, would the answer match what an
+experiment found?
+
+The National Supported Work Demonstration guaranteed ex-offenders,
+ex-addicts, high school dropouts and long-term welfare mothers a job for 9
+to 18 months. They worked in crews of three to five and met often with a
+counselor. The program assigned applicants to the program or to a control
+group at random. For men, the experiment estimates that the
+program raised 1978 earnings by $886 (standard error $476, in 1982
+dollars).
+
+Because the experiment randomized, its $886 is the benchmark: the effect
+the other methods should find. LaLonde kept the treated men and threw
+away the experimental controls. In their place he used men from two
+national surveys, the PSID and the CPS, and asked whether the econometric
+methods of the day, with the controls available in survey data, would
+recover $886. The figure shows six of his estimates for men, from Table 5
+of the paper. Across all six comparison groups and the estimators in Table
+5, his estimates for men ran from −$15,578 to +$1,714.
+
+The simple differences are −$15,578 and −$8,870. Regression adjustment
+moves them to −$8,067 and −$4,416. With every observed control, including
+earnings before the program, they are −$1,228 and −$805. The
+difference-in-differences estimates, not shown, are $425 and $1,714;
+controlling for age moves them to −$749 and $195. None
+reproduces the experiment reliably, and the answer depends on which
+comparison group and which specification was chosen. For women, the
+non-experimental estimates were mostly too large. In his words, many of
+the econometric procedures "*do not replicate the experimentally
+determined results*".
+
+The direction for men follows the omitted variable rule from section 1.
+Participants had much lower earnings potential than the average survey
+respondent: in 1975 the treated men earned $3,066 on average, against
+$19,056 for the PSID men and $13,650 for the CPS men (LaLonde Table 3,
+1982 dollars). So δ < 0, and earnings potential raises earnings (γ > 0), so
+the estimates are biased downward.
+
+Your projects are in the position of LaLonde's survey comparisons. You
+will have observational data and controls, and no experiment to tell you
+how far off the estimate is. The regression output gives no warning, so
+the case for your controls has to be made in words. The next slide says
+what to report.
+
+The follow-up literature matters for their projects.
+[Dehejia and Wahba (1999)](https://doi.org/10.1080/01621459.1999.10473858)
+used propensity-score matching on a subsample of LaLonde's data and came
+close to its experimental benchmark of $1,794.
+[Smith and Todd (2005)](https://doi.org/10.1016/j.jeconom.2004.04.011)
+showed those estimates were sensitive to which variables entered the score
+and which sample was used. Controls and matching can work. Whether they
+work is a claim about the selection process, and it has to be argued.
+:::
+
+## What to report about your controls
+
+- Draw the causal graph your controls assume.
+- Name the confounders you cannot measure.
+- Report the coefficient with and without controls.
+- A large movement warns that unmeasured confounders may also matter.
+
+[Oster (2019), *Unobservable Selection and Coefficient Stability: Theory and Evidence*, Journal of Business & Economic Statistics 37, 187–204.](https://doi.org/10.1080/07350015.2016.1227711){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Ninety seconds.
+
+"I added controls" states a graph. The reader is entitled to see it, so
+write it down.
+
+The coefficient movement is the cheapest piece of evidence available.
+[Altonji, Elder and Taber (2005)](https://doi.org/10.1086/426036) and
+Oster formalize the intuition: if adding the observed controls moved the
+coefficient a lot, the unobserved ones probably would too. A coefficient
+that is stable as controls go in, while R² rises, is more credible.
+
+Report it as a table with the specification in columns: no controls, then
+each block of controls added.
+
+LaLonde's PSID estimate moved from −$15,578 to −$1,228 as controls went
+in. A movement that large was the warning, and the experiment showed the
+remaining estimate was still wrong.
+:::
+
+# 3. False precision
+
+::: {.notes}
+Thirty seconds. The same animation that opened section 1, now for the
+second failure.
+:::
+
+## A failed assumption biases the standard error
+
+- The default standard error assumes independent observations with constant variance.
+- Each source in this section violates an assumption behind the standard error or p-value.
+- The estimator stays centered on θ, and every 95% interval narrows.
+
+<div class="m06" data-demo="coverage" data-kinds="0,2" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Two minutes. Click "Draw 100", then "Draw 1,000".
+
+Left: the same estimator with its assumptions holding, as in section 1.
+Right: independence fails, as when shoppers in the same store share its
+shocks. The estimator is still centered on θ, and the default standard
+error is half the true one.
+
+After Reset and "Draw 100": 2 and 30 of the 100 intervals miss θ, against
+5% and 33% in expectation. After "Draw 1,000" on top: 43 and 348 of 1,100
+(4% and 32%).
+
+The symptom is the one section 1 showed: the stated 95% is false. The
+failed assumption is different. Exogeneity holds, so every estimate is
+centered on θ, and the regression table prints an unbiased estimate beside
+a standard error that is too small. Sources 1 to 4 violate independence or
+constant variance. Sources 5 and 6 violate the assumption behind every
+p-value, that one test was run.
+:::
+
+## Six sources of false precision
+
+1. Heteroskedasticity
+2. Serial correlation
+3. Clustered observations
+4. Spatial correlation
+5. Multiple testing
+6. Specification search
+
+::: {style="color:#6b6b6b; margin-top:0.8em"}
+Sources 1 to 4 make the default standard error wrong. Sources 5 and 6 make the reported p-value wrong.
+:::
+
+::: {.notes}
+One minute.
+
+Sources 1 to 4 are about the observations. The default standard error
+assumes independent observations with a constant error variance. When the
+error variance differs, or the observations are correlated over time,
+within groups or across space, the estimate stays the same and its
+reported standard error is usually too small.
+
+Sources 5 and 6 are about the analyst. Each test is computed correctly,
+but the one reported was chosen from many.
+
+The next four slides share one layout: a placebo with no true effect, run
+1,000 times. Each compares where the estimates actually fall with the 95%
+interval the default standard error reports. Each starts in a setting where
+the default standard error is right, with a constant error variance or
+independent observations, and then switches to one where it is wrong. The
+spread of the estimates roughly doubles or more, while the default
+standard error moves little.
+:::
+
+## Heteroskedasticity
+
+- **Heteroskedasticity**: the error variance differs across observations.
+- In 400 simulated firms, marketing spend has no effect on revenue.
+- The default standard error can be too small or too large.
+- [**Solution**: use heteroskedasticity-robust standard errors.]{.solution}
+
+<div class="m06 m07-compact" data-demo="hetero" style="width:92%;margin:0 auto"></div>
+
+[White (1980), *A Heteroskedasticity-Consistent Covariance Matrix Estimator and a Direct Test for Heteroskedasticity*, Econometrica 48, 817–838.](https://doi.org/10.2307/1912934){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Explain the layout once; the next three slides reuse it.
+
+Left: one sample of 400 simulated firms. Marketing spend has no effect on
+the change in revenue, so the true slope is zero (the red line). The
+dashed line is this sample's fitted slope.
+
+Right: the estimated slope from each of many repeated samples, with the
+true value in red. Three brackets sit above it. Black: where 95% of the
+estimates actually fall. Grey: the 95% interval the default standard error
+reports, 0 ± 1.96 times its average. Blue: the same interval from the
+heteroskedasticity-robust standard error. A standard error is right when
+its bracket matches the black one. This is meeting 6's definition: the
+standard error is the standard deviation of the estimates across samples.
+
+The toggle starts on "Constant variance". Click "Run 1,000". The three
+brackets coincide: the estimates have an SD of 0.09, and both standard
+errors average 0.09. Each test finds a significant effect in 6% and 7% of
+samples, close to the 5% it should.
+
+Switch to "Rising variance". Click "Run one": firms that spend more are
+larger and their revenue varies more, so the scatter fans out. Click "Run
+1,000". The estimates now have an SD of 0.21. The default standard error
+averages 0.11, so its bracket is half as wide as the spread of the
+estimates; the robust one averages 0.20. Rejection rate at 5%: default
+31%, robust 7%.
+
+Switch to "Falling variance". Click "Run one": above the median spend,
+revenue gets steadier as spend rises, so the scatter narrows to the right.
+Click "Run 1,000". The estimates have an SD of 0.07. The default standard
+error averages 0.10, so now its bracket is wider than the spread of the
+estimates; the robust one averages 0.07. Rejection rate at 5%: default 1%,
+robust 6%. The default test is too conservative: it rarely finds an
+effect that is not there, and it also misses real ones.
+
+Why the default fails in both directions: it applies one average error
+variance to every firm. The firms with extreme spend pin down the slope.
+When they are the noisiest, the slope varies more than the formula says
+and the default is too small. When they are the steadiest, it varies less
+and the default is too large. Whether the variance rises or falls matters
+less than where it is high relative to the average spend.
+
+White's standard error uses each observation's own squared residual. The
+HC1 version shown here, Stata's "robust", is slightly too small in finite
+samples (7%); the HC3 version, the default in R's sandwich package, gives
+about 6%.
+:::
+
+## Serial correlation
+
+- **Serial correlation**: a unit's errors are correlated over time.
+- In 50 simulated states over 21 years, a placebo law with no effect starts in 25.
+- Placebo laws in CPS state panels were significant up to 45% of the time.
+- [**Solution**: cluster by state, which allows any correlation within a state over time.]{.solution}
+
+<div class="m06 m07-compact" data-demo="panel" style="width:92%;margin:0 auto"></div>
+
+[Bertrand, Duflo and Mullainathan (2004), *How Much Should We Trust Differences-in-Differences Estimates?*, Quarterly Journal of Economics 119, 249–275.](https://doi.org/10.1162/003355304772839588){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Same layout.
+
+Left: eight of the 50 simulated states. In four of them a placebo law
+starts in a random year and stays on, shown in red. The regression is the
+outcome on the law with state and year fixed effects, a
+difference-in-differences. The law does nothing.
+
+The toggle starts on "Independent years": each year's outcome is a fresh
+draw. Click "Run 1,000". The estimates have an SD of 0.19; the default and
+clustered standard errors both average 0.19. Rejection rate at 5%: 5% and 6%.
+
+Switch to "Correlated years". Click "Run one": each state's outcome now
+drifts, with an autocorrelation of 0.8, so good years come in runs. Click
+"Run 1,000". The estimates have an SD of 0.36. The default standard error
+averages 0.16, slightly smaller than before; the clustered one averages
+0.34.
+Rejection rate at 5%: default 38%, clustered 5%.
+
+The point to make out loud: the spread of the estimates nearly doubled,
+from 0.19 to 0.36, while the default standard error fell slightly, from
+0.19 to 0.16. The formula treats every state-year as a new, independent
+observation, so it reports no loss of precision. It falls a little
+because the state fixed effects absorb part of each state's persistent
+drift, which shrinks the residuals. A run of
+good years after the law looks like an effect, and 21 correlated years
+carry much less information than 21 independent ones.
+
+This is the Bertrand, Duflo and Mullainathan design. They generated
+placebo laws at random in state panels of women's wages from the CPS,
+1979 to 1999. With standard errors that ignore the correlation within a
+state over time, up to 45% of the placebo laws had a significant effect at
+the 5% level (67.5% in the individual-level data with no correction at
+all). Clustering by state brought the rejection rate down to 6.3%.
+
+The fix in a panel is to cluster by unit, here by state, which allows any
+correlation within a state over time. A single time series has no unit to
+cluster on: [Newey and West (1987)](https://doi.org/10.2307/1913610)
+standard errors allow correlation up to a chosen lag. With very persistent
+series and short samples they still reject too often.
+:::
+
+## Clustered observations
+
+- **Clustered observations**: units in the same group share common shocks.
+- In 20 simulated stores of 50 shoppers, a treatment with no effect goes to 10 stores.
+- [**Solution**: cluster the standard errors by store, the unit of treatment assignment.]{.solution}
+
+<div class="m06 m07-compact" data-demo="cluster" style="width:92%;margin:0 auto"></div>
+
+[Moulton (1990), *An Illustration of a Pitfall in Estimating the Effects of Aggregate Variables on Micro Units*, Review of Economics and Statistics 72, 334–338.](https://doi.org/10.2307/2109724){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes. Same layout.
+
+Left: one experiment, 1,000 shoppers in 20 columns, treated stores in red.
+The black ticks are store means. The treatment does nothing.
+
+The toggle starts on "Independent shoppers": no store shock, the same
+total spread. Click "Run 1,000". The estimated differences have an SD of
+$0.98; the default standard error averages $1.00 and the clustered one
+$0.98. Rejection rate at 5%: 4% and 5%.
+
+Switch to "Correlated within stores". Click "Run one": the store means now vary by more
+than the noise of 50 shoppers explains, because each store has its own
+shock: its location, staff, weather. Click "Run 1,000". The estimates have
+an SD of $2.49. The default standard error still averages $1.00; the
+clustered one averages $2.41. Rejection rate at 5%: default 45%, clustered 5%.
+
+Why: with a store shock of SD $5 and shopper noise of SD $15, the
+intraclass correlation is 0.1. The variance of the difference in means is
+1 + (m − 1)ρ = 1 + 49 × 0.1 = 5.9 times what the default formula assumes,
+so the default standard error is about 2.4 times too small. The 1,000
+shoppers carry about as much information as 170 independent ones.
+
+The clustered standard error here is computed from the 20 store means, and
+the test uses the t distribution with 18 degrees of freedom (critical value
+2.10).
+
+Moulton showed the same problem for individual outcomes regressed on
+variables that vary only by group, such as a state's policy.
+
+More shoppers per store help little. The effective sample size,
+Gm/(1 + (m − 1)ρ), is 170 at m = 50 and can never exceed G/ρ = 200,
+however many shoppers each store has. More stores raise it in proportion.
+:::
+
+## Spatial correlation
+
+- **Spatial correlation**: the errors of nearby units are correlated.
+- In 1,600 simulated counties, a program with no effect covers some of them.
+- Neighboring counties share weather, soils and markets.
+- [**Solution**: use Conley standard errors, which allow correlation within a chosen distance.]{.solution}
+
+<div class="m06 m07-compact" data-demo="spatial" style="width:92%;margin:0 auto"></div>
+
+[Conley (1999), *GMM Estimation with Cross Sectional Dependence*, Journal of Econometrics 92, 1–45.](https://doi.org/10.1016/S0304-4076(98)00084-0){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes. Same layout. Each "Run 1,000" takes a second to
+compute.
+
+Left: a 40 by 40 grid of simulated counties. The program in red, yield in
+blue. The two maps are unrelated: the program does nothing.
+
+The toggle starts on "Independent counties": both maps look like static.
+Click "Run 1,000". The estimates have an SD of 0.055; the default standard
+error averages 0.056 and Conley's 0.054. Rejection rate at 5%: 5% and 6%.
+
+Switch to "Correlated counties". Click "Run one": the program now covers
+contiguous regions, and yield is similar in neighboring counties because
+they share weather and soils. Click "Run 1,000". The estimates have an SD
+of 0.135. The default standard error still averages 0.056; Conley's
+averages 0.126. Rejection rate at 5%: default 42%, Conley 7%.
+
+The same point as serial correlation, in space instead of time. The
+default standard error is identical in the two settings. A region of
+program counties that happens to sit on a region of good yields looks like
+an effect, and the real number of independent pieces of information is
+closer to the number of regions than to 1,600.
+
+Conley's standard error allows correlation between any two counties within
+a chosen distance, here 5 counties, with equal weight. The distance is the
+analyst's choice and should cover the range over which the errors are
+correlated. The correction works best when the study area is large
+relative to that range; here it still rejects 7% of the time.
+
+Examples: weather and crop yields, house prices, local labor markets. A
+cruder alternative is to cluster by a larger geographic unit, such as the
+state.
+:::
+
+## Multiple testing
+
+- **Multiple testing**: testing many hypotheses on the same data.
+- A coupon with no effect is tested in 20 subgroups: P(any p < 0.05) = 1 − 0.95²⁰ = 64%.
+- [**Solution**: pre-specify the hypotheses, or test each of k at level 0.05/k (Bonferroni).]{.solution}
+
+<div class="m06" data-demo="subgroups" style="width:82%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. Click "Run one study" three or four times, then "Run 1,000
+studies".
+
+Each study is one coupon test, cut by four regions and five age groups.
+The coupon does nothing in any subgroup. Red intervals exclude zero.
+
+After 1,000 studies, 65% contain at least one significant subgroup, close
+to the 64% from the formula. The formula treats the 20 tests as
+independent, which these are.
+
+Switch to "Bonferroni": each interval is now a 99.75% interval, and the
+share of studies with any significant subgroup falls to 5%. The cost is
+power: a real effect in one subgroup is also harder to detect.
+
+Alternatives: state the subgroups in advance and test only those, or
+control the false discovery rate
+([Benjamini and Hochberg 1995](https://doi.org/10.1111/j.2517-6161.1995.tb02031.x))
+instead of the chance of any false positive.
+
+The pattern to recognize in a deck: twenty subgroups, one significant, one
+slide.
+:::
+
+## Specification search
+
+- **Specification search**: choosing the reported specification after seeing the estimates.
+- 29 teams, one dataset: do referees give dark-skinned players more red cards?
+- Estimated odds ratios ranged from 0.89 to 2.93.
+- 20 of the 29 teams found a significant effect.
+- [**Solution**: set the specification in a **pre-analysis plan** before seeing the outcome data.]{.solution}
+
+[Silberzahn et al. (2018), *Many Analysts, One Data Set*, Advances in Methods and Practices in Psychological Science 1, 337–356.](https://doi.org/10.1177/2515245917747646){style="font-size:0.55em; color:#6b6b6b"}
+
+[Simmons, Nelson and Simonsohn (2011), *False-Positive Psychology*, Psychological Science 22, 1359–1366.](https://doi.org/10.1177/0956797611417632){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes.
+
+Silberzahn and co-authors gave 29 teams of analysts the same data on
+soccer players and referees and the same question. The teams chose their
+own models, controls and samples. Each choice was defensible. The
+estimates ranged from no effect to nearly three times the odds.
+
+Simmons, Nelson and Simonsohn simulated four common choices: which of two
+outcomes to report, whether to add observations after a first look,
+whether to add a control, and whether to drop a condition. Combined, they
+raised the false-positive rate at a nominal 5% to 61%.
+
+A p-value assumes one test was run. When the reported specification is the
+best of many tries, it is a statement about that search.
+
+Remedies: a pre-analysis plan, registered before the outcome data are
+seen (the AEA RCT Registry for experiments); reporting every specification
+tried, for example as a specification curve; and a robustness appendix
+that the main text refers to.
+:::
+
+## Solution for each source of false precision
+
+::: {style="font-size:0.68em"}
+|  | Source | Solution | Reference |
+|:-|:--------|:--------------|:--------|
+| 1 | Heteroskedasticity | Use heteroskedasticity-robust standard errors | [White (1980)](https://doi.org/10.2307/1912934) |
+| 2 | Serial correlation | Cluster by unit in a panel. Use Newey–West in a single time series | [Newey and West (1987)](https://doi.org/10.2307/1913610) |
+| 3 | Clustered observations | Cluster at the level at which the treatment was assigned | [Abadie et al. (2023)](https://doi.org/10.1093/qje/qjac038) |
+| 4 | Spatial correlation | Use Conley standard errors | [Conley (1999)](https://doi.org/10.1016/S0304-4076(98)00084-0) |
+| 5 | Multiple testing | Apply Bonferroni, or control the false discovery rate | [Benjamini and Hochberg (1995)](https://doi.org/10.1111/j.2517-6161.1995.tb02031.x) |
+| 6 | Specification search | Write a pre-analysis plan. Report every specification | [Simmons et al. (2011)](https://doi.org/10.1177/0956797611417632) |
+:::
+
+- Solutions 1 to 4 change only the standard error.
+
+::: {.notes}
+Two minutes. A reference slide for the session B cards and for their
+proposals.
+
+In software. Stata: `vce(robust)`, `vce(cluster store)`, `newey`. R
+`fixest`: `vcov = "hetero"`, `vcov = ~store`, and Newey–West and Conley
+options. Python `statsmodels`: `cov_type="HC1"`, `"cluster"` and `"HAC"`.
+
+The rule from Abadie and co-authors: cluster at the level at which the
+treatment was assigned or the sample was drawn. If the price changed by
+store, cluster by store. Clustering by state also covers serial
+correlation within a state.
+
+With few clusters, the clustered standard error is itself too small.
+[Cameron and Miller (2015)](https://doi.org/10.3368/jhr.50.2.317) review
+the fixes, among them the wild cluster bootstrap.
+:::
+
+# 4. Statistical power
+
+::: {.notes}
+Thirty seconds. The third failure from the motivation slide. The standard
+error is correct and too large for the question.
+:::
+
+## Power and the minimum detectable effect
+
+- **Power**: the probability of rejecting the null hypothesis when the true effect has a given size.
+- **Minimum detectable effect** (MDE): the effect detected with 80% power at the 5% level, about 2.8 standard errors.
+- Last week's checkout test, 5,000 visitors per page, had an MDE of 1.3 points.
+- The median power across 159 literatures in economics is 18% or less.
+- [**Solution**: compute the MDE before collecting the data.]{.solution}
+
+[Ioannidis, Stanley and Doucouliagos (2017), *The Power of Bias in Economics Research*, Economic Journal 127, F236–F265.](https://doi.org/10.1111/ecoj.12461){style="font-size:0.55em; color:#6b6b6b"}
+
+[Duflo, Glennerster and Kremer (2007), *Using Randomization in Development Economics Research: A Toolkit*, Handbook of Development Economics 4, 3895–3962.](https://doi.org/10.1016/S1573-4471(07)04061-2){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes.
+
+Power depends on three things: the size of the true effect, the standard
+error, and the significance level. At the 5% level, an effect of 1.96
+standard errors is detected half the time. To detect it 80% of the time it
+must be 1.96 + 0.84 = 2.8 standard errors. That threshold is the minimum
+detectable effect.
+
+Last week's checkout test had 5,000 visitors per page and purchase rates of
+5.0% and 6.0%. Its standard error is about 0.46 points, so its minimum
+detectable effect is about 1.3 points. If 1 point is the smallest lift that
+would justify the redesign, this test detects it about 59% of the time.
+Compute power before the test, at the smallest effect that matters. Power
+computed at the observed difference only restates the p-value, and a
+significant difference from a test this size tends to overstate the
+effect, as the next slide shows.
+
+The sample size for a two-group comparison follows from the same
+arithmetic: n per group = 2σ²(1.96 + 0.84)² / MDE², with σ² the outcome
+variance; for a binary outcome use p̄(1 − p̄) at the average of the two
+rates. Detecting 1 point on a 5% base rate takes about 8,150 customers per
+group, which is what Stata's `power twoproportions 0.05 0.06` returns. With clustered data,
+multiply by the design effect from section 3; power then depends mainly on
+the number of clusters, which the next slide shows.
+
+Ioannidis, Stanley and Doucouliagos collected 64,076 estimates from 159
+literatures in economics. The median power was 18% or less.
+
+For the proposal: state the minimum detectable effect your sample allows,
+and compare it with the minimum relevant effect from meeting 6. Software: Stata `power twoproportions`, R's `pwr` package,
+or a simulation of your own design, which also handles clustering.
+:::
+
+## Underpowered studies exaggerate significant effects
+
+- In 1,000 simulated coupon tests on a 5% purchase rate, the true effect is 1 point.
+- The significant estimates, in blue, are the ones most likely to be published.
+- Nearly 80% of reported effects in economics are exaggerated ([Ioannidis et al. 2017](https://doi.org/10.1111/ecoj.12461)).
+- [**Solution**: plan a sample with 80% power, and report every estimate.]{.solution}
+
+<div class="m06 m07-compact" data-demo="power" style="width:92%;margin:0 auto"></div>
+
+[Gelman and Carlin (2014), *Beyond Power Calculations: Assessing Type S (Sign) and Type M (Magnitude) Errors*, Perspectives on Psychological Science 9, 641–651.](https://doi.org/10.1177/1745691614551642){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Move the slider.
+
+Each bar counts estimates from 1,000 simulated coupon tests with a true
+effect of 1 point. Blue estimates are significant at 5%. The dashed blue
+line is the mean absolute value of the significant estimates.
+
+At 1,000 customers per arm: standard error 1.02 points, minimum detectable
+effect 2.9 points, power 17%. The significant estimates average 2.6 points
+in absolute value, 2.6 times the true effect. In expectation about 1% of
+them have the wrong sign; in these 1,000 draws it is 2.4%. A study this
+size can only reach significance by overstating the effect.
+
+Move to 8,000 per arm: power 81%, and the significant estimates average
+1.1. Move down to 500: power 12%, exaggeration 3.5 times, and about 4%
+with the wrong sign in expectation (6.6% in these draws).
+
+Gelman and Carlin call these Type M (magnitude) and Type S (sign) errors.
+Ioannidis, Stanley and Doucouliagos estimate that nearly 80% of reported
+effects in economics are exaggerated, typically by a factor of two, and a
+third by a factor of four or more.
+
+The lesson for a proposal: if the minimum detectable effect is larger than
+the effect you expect, the significant result you hope for will overstate
+it. Either enlarge the sample, or report the estimate and its interval
+whatever their significance.
+:::
+
+## Clusters and strata in a power calculation
+
+- **Intraclass correlation**: the share of the outcome's variance between clusters.
+- With clustered data, power depends mostly on the number of clusters.
+- **Stratification**: randomizing within groups of similar stores.
+- [**Solution**: randomize more clusters, and stratify on the baseline outcome.]{.solution}
+
+<div class="m06 m07-compact" data-demo="mde" style="width:92%;margin:0 auto"></div>
+
+[Bruhn and McKenzie (2009), *In Pursuit of Balance: Randomization in Practice in Development Field Experiments*, American Economic Journal: Applied Economics 1, 200–232.](https://doi.org/10.1257/app.1.4.200){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Move both sliders.
+
+The curves are the minimum detectable effect, in standard deviations of
+the outcome, for an experiment that randomizes stores, half treated, at
+the 5% level with 80% power. The formula, from Duflo, Glennerster and
+Kremer: MDE = 2.8 × √(4/G) × √[ρ(1 − R²) + (1 − ρ)/m] standard
+deviations, with G stores, m shoppers per store, intraclass correlation ρ,
+and R² the share of the between-store variance explained by the strata.
+
+The red dot is the store experiment from section 3: 20 stores of 50
+shoppers, ρ = 0.1. Its MDE is 0.43 standard deviations. More shoppers per
+store barely help: the curve flattens toward a floor of 0.40. Doubling to
+40 stores brings it to 0.30, and 80 stores to 0.22. With 1,000 independent
+shoppers it would be 0.18. With only 20 stores, the test in section 3 uses
+the t distribution on 18 degrees of freedom, which replaces 2.8 with
+2.10 + 0.86 = 2.96 and raises the MDE to about 0.46.
+
+Set ρ to 0 and only the total number of shoppers matters: 40 stores of 25
+give the same 0.18 as 20 stores of 50, or 1,000 independent shoppers.
+Raise ρ to 0.2 and the floor rises.
+
+Move "Between-store variance explained by strata" to 0.5: the 20-store MDE
+falls from 0.43 to 0.33, and its floor from 0.40 to 0.28. Doubling to 40
+stores gives 0.30, so good strata buy most of what 20 more stores would.
+Stratification means grouping similar stores, for example by past sales,
+and randomizing within each group. It, or controlling for baseline store
+sales, removes the part of the between-store variance that the strata
+predict. Bruhn and McKenzie compare stratification and pair-matching in
+practice; include the strata as fixed effects in the regression. Each
+stratum costs a degree of freedom: ten matched pairs of stores leave 9,
+and a multiplier of about 3.15, so pairing pays only when the pairs
+predict the outcome well.
+
+If only a share c of the treated group takes up the treatment, the MDE of
+the treatment itself is the MDE divided by c: with 50% take-up the effect
+must be twice as large to be detected, or the sample four times as large.
+With a share P of stores treated, replace 4 with 1/[P(1 − P)].
+
+For the proposal: the number of clusters is the sample size that matters,
+and a baseline measure of the outcome is the least costly way to raise
+power.
+:::
+
+# 5. External validity
+
+::: {.notes}
+Thirty seconds. The fourth failure. An estimate can be unbiased, correctly
+reported and well powered, and still describe units other than the ones
+the decision concerns.
+:::
+
+## External validity
+
+- **External validity**: whether an estimate holds for the population and conditions of the decision.
+- Examples:
+    - A pilot in urban stores is used to decide for rural stores.
+    - An instrument identifies the effect only for the units it moves.
+    - Data on price cuts of up to 5% inform a 20% cut.
+- Predictions from Opower's first 10 experiments overstated savings in the next 101 sites.
+- [**Solution**: name the target population and parameter, and check that the sample covers them.]{.solution}
+
+[Allcott (2015), *Site Selection Bias in Program Evaluation*, Quarterly Journal of Economics 130, 1117–1165.](https://doi.org/10.1093/qje/qjv015){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes.
+
+Sections 1 to 4 ask whether the estimate is right for the units studied:
+internal validity. External validity asks whether it transfers to the
+units, places and conditions of the decision.
+
+The three examples are three ways it fails. Population: the effect varies
+with characteristics that differ between the units studied and the units
+the decision concerns, such as urban and rural shoppers. Parameter: an
+instrument identifies a local average treatment effect, the effect for the
+units whose treatment it changes
+([Imbens and Angrist 1994](https://doi.org/10.2307/2951620)), and an
+experiment on volunteers identifies the effect for volunteers, as in
+LaLonde's training program in section 2. Extrapolation: beyond the range
+of the data, the estimate is only the functional form, as on the matching
+slide.
+
+Allcott studied Opower's home energy reports: 111 randomized experiments
+with 8.6 million households across the United States. Predictions based on
+the first ten sites substantially overstated the savings in the next 101.
+Utilities in more environmentalist areas adopted the program first, and
+their customers responded more; utilities also targeted high-usage
+households first. Many replications in a selected set of sites did not
+fix it.
+
+Solution. State the target population and the parameter in the proposal.
+Compare the sample with the target on observable characteristics, and
+reweight when the effect varies with them. Report how the effect varies
+across groups. When the decision concerns new sites, evaluate in sites
+that resemble them, or choose the sites at random.
+:::
+
+## Which failure threatens your project?
+
+- Which bias is most likely in your estimate, and in which direction?
+- Would more data fix it, and which variable would close it?
+- Which standard error does your design need?
+- What is the minimum detectable effect of your design?
+- Who is your estimate about, and who does the decision affect?
+
+::: {.notes}
+One minute. Each student writes one line per question before the break.
+The team sheet in session B starts from these. The fourth question is the
+power calculation their proposal will need; the fifth is the population
+it must name.
+:::
+
+::::

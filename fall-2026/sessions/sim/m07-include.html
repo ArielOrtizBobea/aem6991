@@ -1,0 +1,24 @@
+<style>
+/* Meeting 7: bullets on slides that carry a figure or an animation are set
+   at 80% so the figure, its controls and the source line fit. */
+.reveal .slides section.slide.level2:has(> .m06) > ul,
+.reveal .slides section.slide.level2:has(> .m06) > ol { font-size: 0.8em; }
+/* A compact demo keeps a full-width control bar and caps the figure's
+   height; the figure scales down and stays centered. */
+.reveal .m06.m07-compact .m06-svg { max-height: 272px; }
+.reveal .m06[data-demo="mde"] .m06-slider { width: 170px; }
+.reveal .m06[data-demo="controls"] .m06-svg { max-height: 296px; }
+.reveal .m06[data-demo="coverage"] .m06-svg { max-height: 330px; }
+.reveal .m06[data-demo="nonclassical"] .m06-svg { max-height: 262px; }
+.reveal .m06[data-demo="lalonde"] .m06-svg { max-height: 296px; }
+/* The solution line on each failure slide. */
+.reveal .slides section .solution { color: #b31b1b; }
+.reveal .m06[data-demo="attenuation"] .m06-svg { max-height: 292px; }
+/* Source lines are 0.55em links inside a full-size paragraph, which gave a
+   two-line source the line spacing of body text. Size the paragraph instead. */
+.reveal .slides section p:has(> a[style*="font-size:0.55em"]) { font-size: 0.55em; line-height: 1.3; margin: 0.5em 0 0; }
+.reveal .slides section p:has(> a[style*="font-size:0.55em"]) > a { font-size: 1em !important; }
+</style>
+<script src="sim/m06-core.js"></script>
+<script src="sim/m07-demos.js"></script>
+<script>window.M06 && M06.init();</script>

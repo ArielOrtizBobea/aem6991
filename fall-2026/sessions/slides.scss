@@ -55,6 +55,22 @@ $code-block-font-size:        0.55em;
   font-size: 1em;
 }
 
+// Tables carry three horizontal rules and no others: one above the header,
+// one below it, one under the last row. No rule between body rows
+// (instructor's rule, 2026-10-06).
+.reveal table {
+  border-collapse: collapse;
+  border-top: 2px solid #1b1b1b;
+  border-bottom: 2px solid #1b1b1b;
+}
+.reveal table th,
+.reveal table td {
+  border-bottom: none;
+}
+.reveal table thead th {
+  border-bottom: 1px solid #1b1b1b;
+}
+
 .reveal .callout {
   font-size: 0.8em;
 }

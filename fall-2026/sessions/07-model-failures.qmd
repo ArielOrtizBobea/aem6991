@@ -216,18 +216,20 @@ regression discontinuity, one of the designs ahead.
 
 ## Selection into the sample
 
-- **Selection into the sample**: whether a unit is in the data depends on its outcome.
-- Selection into treatment is about who is treated; this is about who is observed.
+- **Selection into the sample**: being in the data depends on the outcome.
+- Selection into treatment is confounding; this conditions on a collider.
 - It biases the comparison even when the treatment was randomized.
 - Examples:
+    - Wages are observed only for women who work.
     - Trainees who found no job stop answering the follow-up survey.
-    - Only the firms that survived appear in the data.
-- [**Solution**: follow up everyone, or bound the effect.]{.solution}
+- [**Solution**: follow up everyone, bound the effect, or model the selection.]{.solution}
+
+[Heckman (1979), *Sample Selection Bias as a Specification Error*, Econometrica 47, 153–161.](https://doi.org/10.2307/1912352){style="font-size:0.55em; color:#6b6b6b"}
 
 [Lee (2009), *Training, Wages, and Sample Selection: Estimating Sharp Bounds on Treatment Effects*, Review of Economic Studies 76, 1071–1102.](https://doi.org/10.1111/j.1467-937X.2009.00536.x){style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.notes}
-Ninety seconds.
+Two minutes.
 
 Selection into the sample is the cousin of source 1. Selection into
 treatment decides who gets the treatment; selection into the sample
@@ -236,18 +238,37 @@ outcome, so the comparison among the units we see is not the comparison we
 want. The practical difference: random assignment removes selection into
 treatment, while attrition after random assignment brings selection back
 among the units that remain in the data. The bias can go either way, as
-the next paragraph shows. Selection into the sample is meeting 2's collider: selecting on the
+the attrition example below shows. Selection into the sample is meeting 2's collider: selecting on the
 outcome. Last week's Literary Digest poll had it through nonresponse.
 
-The first example is attrition. If trainees who found no job stop
+In a causal graph the two are different structures. Selection into
+treatment is confounding: something that drives the outcome also drove who
+was treated, a back door. Selection into the sample conditions on a
+collider: being in the data depends on the outcome, so looking only at the
+units observed opens a path that was closed. That is why randomization
+fixes the first and not the second. The names clash across fields:
+economists call the first selection bias (Angrist and Pischke), while
+epidemiologists reserve the term for the second
+([Hernán, Hernández-Díaz and Robins 2004](https://doi.org/10.1097/01.ede.0000135174.63482.43)).
+
+The classic example is Heckman's and Gronau's: what determines women's
+wages, such as the return to education. Wages are observed only for women
+who work, and a woman works when her wage offer exceeds her reservation
+wage. Among working women, those with little education are there because
+their wage offer was unusually high, so the return to education is
+understated among the women observed
+([Gronau 1974](https://doi.org/10.1086/260267);
+[Heckman 1974](https://doi.org/10.2307/1913937)).
+
+The second example is attrition. If trainees who found no job stop
 answering and the controls keep answering, the trainees observed earn more
 than all trainees, and the effect is overstated. If the program instead
 keeps its jobless participants answering while jobless controls drop out,
 the control mean is inflated more and the effect is understated. Either
 way, a randomized experiment is no longer balanced among those observed.
 
-The second is survivorship. A comparison of practices among surviving firms
-leaves out the firms the practice may have killed.
+Survivorship is the same structure. A comparison of practices among
+surviving firms leaves out the firms the practice may have killed.
 
 Solution. Follow up everyone, preferably from administrative records that
 do not depend on a response. Report the attrition rate by group. When the
@@ -256,9 +277,16 @@ share from the group with less attrition, once from the top of its outcome
 distribution and once from the bottom. They bound the effect for the units
 who would have answered in either group, and they assume the treatment
 changes whether a unit answers in one direction only.
-[Heckman (1979)](https://doi.org/10.2307/1912352) models the selection
-directly. It assumes jointly normal errors, and a credible version needs a
-variable that affects whether a unit is observed and not its outcome.
+Heckman (1979) models the selection directly, in two steps: a probit for
+whether the unit is observed (whether she works), then the outcome
+regression with a correction term, the inverse Mills ratio. It assumes
+jointly normal errors, and a credible version needs a variable that
+affects whether a unit is observed and not its outcome: for wages, young
+children at home or non-labor income. Applied work now often prefers
+bounds or better follow-up, because that variable is hard to defend; the
+model remains the standard reference. The same machinery, a selection
+equation with errors correlated with the outcome's, also models selection
+into treatment.
 :::
 
 ## Omitted variables
@@ -273,7 +301,7 @@ variable that affects whether a unit is observed and not its outcome.
 | $\delta < 0$ | downward | upward |
 :::
 
-- Example: the effect of job training on earnings, omitting prior earnings.
+- Example: job training and earnings, omitting ability: able workers seek training.
 - [**Solution**: control for $Z$, or use a design that holds $Z$ fixed.]{.solution}
 
 ::: {.notes}
@@ -288,12 +316,22 @@ bias.
 The sign can usually be worked out before estimating anything, because it
 needs only the two signs.
 
-The example works both ways. A firm that sends its strongest workers to
-training: prior earnings rise with training (δ > 0) and raise current
-earnings (γ > 0), so the estimate overstates the return. A public program
-that enrolls people with low earnings: δ < 0 and γ > 0, so the estimate
-understates the return, and can be negative when the true effect is
-positive. Section 2 returns to the second case with LaLonde.
+The example is ability bias, the classic case in the returns to schooling
+([Griliches 1977](https://doi.org/10.2307/1913285)). Ability is not in the
+data. More able workers seek training (δ > 0), and ability raises earnings
+with or without training (γ > 0), so the regression credits training with
+part of what ability earns: the return is overstated. The same logic, the
+other way, applies to a public program that enrolls people with low
+earnings potential: δ < 0 and γ > 0, so the return is understated, and can
+be negative when the true effect is positive. Section 2 returns to that
+case with LaLonde.
+
+A related but different problem: workers may also seek training because
+their own return to it is high. That is selection on gains, the Roy model
+([Roy 1951](https://doi.org/10.1093/oxfordjournals.oep.a041827)). Even
+with ability held fixed, the comparison then measures the effect for those
+who chose training, which exceeds the effect for a typical worker. Section
+5 treats it as a question of external validity.
 
 γ and δ are population quantities, so a larger sample leaves the bias
 unchanged.
@@ -307,7 +345,7 @@ construction.
 ## Classical measurement error
 
 - **Classical measurement error**: noise uncorrelated with the true values of $X$ and $Y$.
-- In $X$: the estimated slope converges to λβ, where λ is the **reliability ratio**.
+- In $X$: the slope converges to $\lambda\beta$, with **reliability ratio** $\lambda = \text{Var}(X^*)/\text{Var}(X)$.
 - In $Y$: the slope estimator stays unbiased and its standard error rises.
 - [**Solution**: measure $X$ with less error, or instrument it with a second measurement.]{.solution}
 
@@ -323,6 +361,15 @@ deviation, $15k, equals that of true income. The points spread
 horizontally and the fitted line flattens. λ = 15²/(15² + 15²) = 0.5, so
 the slope should fall to about 0.40; in this sample it is 0.39. Click
 "Sweep" to see the full range.
+
+The reliability ratio is the share of the variance of measured income
+that is true variation: 1 with no error, 0 if the measure is pure noise. It
+is a property of the measurement, unrelated to behavior; the slope here is
+in levels ($ of monthly spend per $1,000 of income), so it is not an
+elasticity. The name comes from psychometrics: with classical errors, λ is
+the correlation between two independent measurements of the same
+variable, which is how it is estimated in practice from repeated or matched
+measurements.
 
 Why: part of the variation in measured income is noise, and the noise does
 not move spend. The regression averages the true slope with a slope of
@@ -450,7 +497,7 @@ instrument, which comes with the designs in meetings 8 and 9.
 |  | Source | Direction | More data fixes it? | Solution |
 |:-|:---------|:-----------|:-------|:-------------|
 | 1 | Selection into treatment | Overstates if the treated would have done better anyway | No | Randomize, or compare units near the assignment cutoff |
-| 2 | Selection into the sample | Either direction | No | Follow up everyone, or bound the effect |
+| 2 | Selection into the sample | Either direction | No | Follow up everyone, bound the effect, or model the selection |
 | 3 | Omitted variables | Sign of γ times sign of δ | No | Control for Z, or use a design that holds Z fixed |
 | 4 | Classical measurement error in X | Toward zero | No | Reduce the error, or instrument with a second measurement |
 | 4 | Classical measurement error in Y | No bias. Larger standard error | Yes | Use a larger sample |
@@ -1220,8 +1267,9 @@ the decision concerns.
     - A pilot in urban stores is used to decide for rural stores.
     - An instrument identifies the effect only for the units it moves.
     - Data on price cuts of up to 5% inform a 20% cut.
-- Predictions from Opower's first 10 experiments overstated savings in the next 101 sites.
-- [**Solution**: name the target population and parameter, and check that the sample covers them.]{.solution}
+    - Self-selected enrollees gain more than the average worker would.
+- Opower's first 10 sites overpredicted savings in the next 101.
+- [**Solution**: name the target population, and check the sample covers it.]{.solution}
 
 [Allcott (2015), *Site Selection Bias in Program Evaluation*, Quarterly Journal of Economics 130, 1117–1165.](https://doi.org/10.1093/qje/qjv015){style="font-size:0.55em; color:#6b6b6b"}
 
@@ -1241,7 +1289,10 @@ units whose treatment it changes
 experiment on volunteers identifies the effect for volunteers, as in
 LaLonde's training program in section 2. Extrapolation: beyond the range
 of the data, the estimate is only the functional form, as on the matching
-slide.
+slide. Selection on gains: when units choose the treatment because their
+own effect is large (the Roy model from section 1), even a correct
+comparison measures the effect for those who chose, which exceeds the
+effect for units that would be enrolled by a policy.
 
 Allcott studied Opower's home energy reports: 111 randomized experiments
 with 8.6 million households across the United States. Predictions based on

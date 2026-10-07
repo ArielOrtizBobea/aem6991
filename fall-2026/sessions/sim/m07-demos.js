@@ -32,6 +32,8 @@
  *                 significant estimates, as the sample size changes.
  *   controls      Good and bad controls on one graph, 1,000 samples.
  *   overlap       Store sizes of adopters and non-adopters (static).
+ *   lalondeDesign The design of LaLonde's test: the experiment against
+ *                 the same trainees compared with survey men (static).
  *   lalonde       Experimental and non-experimental estimates of one
  *                 training program (static).
  *
@@ -1543,6 +1545,44 @@
     M06.text(svg, bandX1 + 10, bC - 12, 'Stores without self-checkout (120)', { size: 16, fill: col.axis, weight: 600 });
     M06.text(svg, X0 + 4, bT - 44, 'Stores that adopted it (40)', { size: 16, fill: col.red, weight: 600 });
     M06.axisX(svg, sx, bT, ticks(0, 40, 5), function (v) { return num0(v) + 'k'; }, { title: 'Store size (sq ft)' });
+  };
+
+
+  // =================================================================================
+  // 9b · lalondeDesign (static)
+  // =================================================================================
+  // The design of LaLonde's test in two rows. The experiment compares the
+  // NSW trainees with a randomized control group; LaLonde's test keeps the
+  // trainees and compares them with survey men, adjusting for observed
+  // controls. Sample sizes for men from LaLonde (1986), Table 3 (297 treated,
+  // 425 controls) and Table 5 (PSID-1, 2,493; CPS-SSA-1, 15,992).
+  M06.demos.lalondeDesign = function (root) {
+    var svg = M06.svg(root, 960, 300, 'Two comparisons: NSW trainees against a randomized control group, which gives ' +
+      'the benchmark of $886, and the same trainees against men from national surveys with controls, which is the test');
+    function box(x, y, w, l1, l2, stroke, fill) {
+      M06.el('rect', { x: x, y: y, width: w, height: 70, rx: 10, fill: fill || '#fff', stroke: stroke, 'stroke-width': 2.5 }, svg);
+      M06.text(svg, x + w / 2, y + (l2 ? 30 : 41), l1, { size: 19, weight: 700, anchor: 'middle' });
+      if (l2) M06.text(svg, x + w / 2, y + 54, l2, { size: 15, fill: col.grey, anchor: 'middle' });
+    }
+    function arrow(x1, x2, y) {
+      M06.el('line', { x1: x1, x2: x2 - 8, y1: y, y2: y, stroke: col.axis, 'stroke-width': 2.5 }, svg);
+      M06.el('path', { d: 'M' + (x2 - 12) + ',' + (y - 7) + 'L' + x2 + ',' + y + 'L' + (x2 - 12) + ',' + (y + 7) + 'Z', fill: col.axis }, svg);
+    }
+    var rows = [
+      { y: 40, label: 'The experiment', l2: 'random assignment', B: ['425 control men', 'chosen at random'], res: '+$886', resSub: 'the benchmark', resCol: col.red },
+      { y: 190, label: "LaLonde's test", l2: 'same trainees', B: ['Men from the PSID or CPS', 'with observed controls'], res: '?', resSub: 'does it match?', resCol: col.ink }
+    ];
+    rows.forEach(function (r) {
+      M06.text(svg, 20, r.y + 32, r.label, { size: 18, weight: 700, fill: r.resCol });
+      M06.text(svg, 20, r.y + 54, r.l2, { size: 15, fill: col.grey });
+      box(190, r.y, 210, '297 trainees', 'NSW men', col.red, col.pale);
+      M06.text(svg, 430, r.y + 42, 'vs', { size: 18, fill: col.grey, anchor: 'middle' });
+      box(460, r.y, 250, r.B[0], r.B[1], col.axis);
+      arrow(725, 775, r.y + 35);
+      M06.text(svg, 850, r.y + 40, r.res, { size: 30, weight: 700, fill: r.resCol, anchor: 'middle' });
+      M06.text(svg, 850, r.y + 62, r.resSub, { size: 15, fill: col.grey, anchor: 'middle' });
+    });
+    M06.text(svg, 480, 150, 'Throw away the randomized controls and use survey respondents instead', { size: 15, fill: col.grey, anchor: 'middle', style: 'italic' });
   };
 
   // =================================================================================

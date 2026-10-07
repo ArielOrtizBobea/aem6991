@@ -520,10 +520,10 @@ wrong value. Last week's Literary Digest poll is the example.
 # 2. Control variables and their limits
 
 ::: {.notes}
-Thirty seconds. The solution most projects reach for. Five slides: what
-controls assume, which variables to control for, controls in an
-experiment, what matching adds, and whether it works when tested against
-an experiment.
+Thirty seconds. The solution most projects reach for: what controls
+assume, which variables to control for, controls in an experiment, what
+matching adds, and whether controls recover the true effect when graded
+against an experiment.
 :::
 
 ## What control variables assume
@@ -560,8 +560,8 @@ exist.
 
 The section asks four questions. Which variables belong among the controls
 (next slide). What controls add when the treatment was randomized. What
-matching adds over a regression. Whether the assumption holds in
-practice, tested against an experiment (LaLonde).
+matching adds over a regression. Whether controls recover the true effect
+in practice, graded against an experiment (LaLonde, two slides).
 :::
 
 ## Good and bad controls
@@ -689,49 +689,63 @@ Matching closes only the back doors that run through measured covariates.
 An unmeasured confounder biases it exactly as it biases regression.
 :::
 
-## Testing controls against an experiment
+## Can controls recover an experimental estimate?
 
-- A 1970s experiment estimates that a job program raised men's 1978 earnings by $886.
-- LaLonde replaced its control group with PSID and CPS survey respondents.
-- With all observed controls, his estimates were −$1,228 and −$805.
-- An observational estimate in your project has no experimental benchmark.
+- An experiment gives the true effect, so it can grade other methods.
+- National Supported Work randomly assigned disadvantaged workers to a job program.
+- LaLonde kept its trainees and replaced its control group with survey respondents.
 
-<div class="m06 m07-compact" data-demo="lalonde" style="width:92%;margin:0 auto"></div>
+<div class="m06" data-demo="lalondeDesign" style="width:88%;margin:0 auto"></div>
 
 [LaLonde (1986), *Evaluating the Econometric Evaluations of Training Programs with Experimental Data*, American Economic Review 76, 604–620.](https://www.jstor.org/stable/1806062){style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.notes}
-Three minutes. The question this slide answers: if a researcher had only
-observational data and controls, would the answer match what an
-experiment found?
+Two minutes. The point of these two slides: the only way to know whether
+controls work is to grade them against a case where the true effect is
+known. A randomized experiment provides that case.
 
-The National Supported Work Demonstration guaranteed ex-offenders,
-ex-addicts, high school dropouts and long-term welfare mothers a job for 9
-to 18 months. They worked in crews of three to five and met often with a
-counselor. The program assigned applicants to the program or to a control
-group at random. For men, the experiment estimates that the
-program raised 1978 earnings by $886 (standard error $476, in 1982
-dollars).
+The National Supported Work Demonstration, in the 1970s, guaranteed
+ex-offenders, ex-addicts, high school dropouts and long-term welfare
+mothers a job for 9 to 18 months. They worked in crews of three to five
+and met often with a counselor. Applicants were assigned to the program or
+to a control group at random. For the 297 treated and 425 control men, the
+experiment estimates that the program raised 1978 earnings by $886
+(standard error $476, in 1982 dollars). Because assignment was random,
+that is the benchmark.
 
-Because the experiment randomized, its $886 is the benchmark: the effect
-the other methods should find. LaLonde kept the treated men and threw
-away the experimental controls. In their place he used men from two
-national surveys, the PSID and the CPS, and asked whether the econometric
-methods of the day, with the controls available in survey data, would
-recover $886. The figure shows six of his estimates for men, from Table 5
-of the paper. Across all six comparison groups and the estimators in Table
-5, his estimates for men ran from −$15,578 to +$1,714.
+LaLonde kept the 297 trainees and threw away the 425 randomized controls.
+In their place he used men from two national surveys, the PSID and the
+CPS, which is what a researcher without an experiment would have, and
+applied the econometric methods of the day with the controls available in
+survey data. If the methods worked, they would land near $886.
+:::
 
+## Controls did not recover the experimental estimate
+
+- The experiment: +$886 on men's 1978 earnings.
+- Without controls: −$15,578 (PSID) and −$8,870 (CPS).
+- With all observed controls: −$1,228 and −$805.
+- Without an experiment, nothing in your output shows whether your controls were enough.
+
+<div class="m06 m07-compact" data-demo="lalonde" style="width:92%;margin:0 auto"></div>
+
+[LaLonde (1986), Table 5: male participants, effects on 1978 earnings in 1982 dollars, 95% intervals.](https://www.jstor.org/stable/1806062){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes.
+
+The figure shows six of his estimates for men, from Table 5 of the paper.
 The simple differences are −$15,578 and −$8,870. Regression adjustment
 moves them to −$8,067 and −$4,416. With every observed control, including
-earnings before the program, they are −$1,228 and −$805. The
-difference-in-differences estimates, not shown, are $425 and $1,714;
-controlling for age moves them to −$749 and $195. None
-reproduces the experiment reliably, and the answer depends on which
-comparison group and which specification was chosen. For women, the
-non-experimental estimates were mostly too large. In his words, many of
-the econometric procedures "*do not replicate the experimentally
-determined results*".
+earnings before the program, they are −$1,228 and −$805: closer, and still
+the wrong sign. The difference-in-differences estimates, not shown, are
+$425 and $1,714; controlling for age moves them to −$749 and $195. Across
+all six comparison groups and the estimators in Table 5, his estimates for
+men ran from −$15,578 to +$1,714. None reproduces the experiment reliably,
+and the answer depends on which comparison group and which specification
+was chosen. For women, the non-experimental estimates were mostly too
+large. In his words, many of the econometric procedures "*do not replicate
+the experimentally determined results*".
 
 The direction for men follows the omitted variable rule from section 1.
 Participants had much lower earnings potential than the average survey
@@ -740,11 +754,14 @@ $19,056 for the PSID men and $13,650 for the CPS men (LaLonde Table 3,
 1982 dollars). So δ < 0, and earnings potential raises earnings (γ > 0), so
 the estimates are biased downward.
 
-Your projects are in the position of LaLonde's survey comparisons. You
-will have observational data and controls, and no experiment to tell you
-how far off the estimate is. The regression output gives no warning, so
-the case for your controls has to be made in words. The next slide says
-what to report.
+The last bullet is the lesson for their projects. LaLonde could tell the
+controls had failed only because the experiment gave him the true answer.
+A project with observational data and controls is in the position of his
+survey comparisons, with no experiment to check against. The regression
+output looks equally valid whether the controls were enough or not, so the
+case for them has to be argued: the causal graph, the confounders that
+cannot be measured, and how far the estimate moves as controls go in. The
+next slide says what to report.
 
 The follow-up literature matters for their projects.
 [Dehejia and Wahba (1999)](https://doi.org/10.1080/01621459.1999.10473858)

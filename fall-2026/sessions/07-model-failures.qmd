@@ -520,9 +520,10 @@ wrong value. Last week's Literary Digest poll is the example.
 # 2. Control variables and their limits
 
 ::: {.notes}
-Thirty seconds. The solution most projects reach for. Four slides: what
-controls assume, which variables to control for, what matching adds, and
-whether it works when tested against an experiment.
+Thirty seconds. The solution most projects reach for. Five slides: what
+controls assume, which variables to control for, controls in an
+experiment, what matching adds, and whether it works when tested against
+an experiment.
 :::
 
 ## What control variables assume
@@ -557,10 +558,10 @@ comparison through its functional form, so where common support fails it
 extrapolates. Matching makes the comparison only where both kinds of unit
 exist.
 
-The section asks three questions. Which variables belong among the
-controls (next slide). What matching adds over a regression (the slide
-after). Whether the assumption holds in practice, tested against an
-experiment (LaLonde).
+The section asks four questions. Which variables belong among the controls
+(next slide). What controls add when the treatment was randomized. What
+matching adds over a regression. Whether the assumption holds in
+practice, tested against an experiment (LaLonde).
 :::
 
 ## Good and bad controls
@@ -600,6 +601,55 @@ effect.
 Angrist and Pischke call 3 and 4 bad controls: variables that are
 themselves outcomes of the treatment. The working rule is to control only
 for variables determined before the treatment.
+:::
+
+## Controls in a randomized experiment
+
+- Randomization alone removes bias, so controls are optional.
+- Baseline controls that predict the outcome lower the standard error.
+- Pre-specify the controls, and include the randomization strata.
+- Never control for a variable the treatment can change.
+- **Balance check**: compare the groups on baseline characteristics.
+
+[Lin (2013), *Agnostic Notes on Regression Adjustments to Experimental Data: Reexamining Freedman's Critique*, Annals of Applied Statistics 7, 295–318.](https://doi.org/10.1214/12-AOAS583){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. When to use controls, in one line each: in observational
+data, controls are the identification strategy and must close the back
+doors; in an experiment, randomization has already closed them, and
+controls only sharpen the estimate.
+
+Randomization balances every variable determined before treatment, observed
+or not, in expectation. The difference in means is unbiased with no
+controls at all.
+
+Controls still pay in an experiment when they predict the outcome. The
+baseline value of the outcome is usually the best one: it removes the part
+of the outcome that was there before treatment, which lowers the residual
+variance, the standard error and the minimum detectable effect (section
+4). [McKenzie (2012)](https://doi.org/10.1016/j.jdeveco.2012.01.002) shows
+that controlling for the baseline outcome (ANCOVA) is more powerful than
+differencing it out when outcomes are not very persistent.
+
+Three rules. Use only variables measured before treatment. Pre-specify
+them, or the choice of controls becomes a specification search (section
+4). Always include the strata the randomization used. Never control for a
+variable the treatment can change: in a training experiment, controlling
+for employment compares the employed treated with the employed controls,
+and the bad-control problem from the previous slide returns.
+
+Regression adjustment in a small experiment can be slightly biased and,
+with heterogeneous effects, can even lose precision
+([Freedman 2008](https://doi.org/10.1016/j.aam.2006.12.003)). Lin shows
+that interacting the treatment with demeaned covariates and using robust
+standard errors fixes this in samples of moderate size.
+
+As a check. A balance table compares treated and control units on baseline
+characteristics, to catch a failed randomization or differential
+attrition. About 1 in 20 variables will differ at the 5% level by chance,
+so use a joint test rather than counting stars. And the estimate should
+barely move when the controls go in; in an experiment a large movement
+signals a problem with the randomization or the sample, not a confounder.
 :::
 
 ## Matching needs comparable untreated units

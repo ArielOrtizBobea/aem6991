@@ -328,7 +328,7 @@
   })();
 
   M06.demos.selection = function (root) {
-    var svg = M06.svg(root, 960, 380, 'Renewal rates of emailed and not-emailed customers, split into the rate ' +
+    var svg = M06.svg(root, 960, 410, 'Renewal rates of emailed and not-emailed customers, split into the rate ' +
       'without the email and the effect of the email, as the email is targeted on the renewal score');
     var B = 330, T = 40, sy = M06.scale(0, 1, B, T), X0 = 100;
     M06.axisY(svg, sy, X0, [0, 0.2, 0.4, 0.6, 0.8, 1], function (v) { return pct(v); }, { title: 'Renewal rate' });
@@ -340,6 +340,16 @@
     var baseN = M06.el('rect', { x: bx[1].x, width: W, fill: col.mid, 'fill-opacity': 0.7 }, svg);
     var guide = M06.el('line', { x1: bx[0].x - 6, x2: bx[1].x + W, stroke: col.ink, 'stroke-width': 1.5, 'stroke-dasharray': '6 4' }, svg);
     var brace = M06.el('path', { fill: 'none', stroke: col.blue, 'stroke-width': 2.5 }, svg);
+    // Legend under the bars: what each colour on the emailed bar means.
+    var LY = 392, lx = X0;
+    M06.el('rect', { x: lx, y: LY - 12, width: 14, height: 14, fill: col.mid, 'fill-opacity': 0.7 }, svg);
+    M06.text(svg, lx + 20, LY, 'would renew without the email', { size: 15, fill: col.ink });
+    lx += 245;
+    M06.el('rect', { x: lx, y: LY - 12, width: 14, height: 14, fill: col.red }, svg);
+    M06.text(svg, lx + 20, LY, 'added by the email', { size: 15, fill: col.red });
+    lx += 165;
+    M06.el('path', { d: 'M' + (lx + 6) + ',' + (LY - 13) + 'H' + lx + 'V' + (LY + 1) + 'H' + (lx + 6), fill: 'none', stroke: col.blue, 'stroke-width': 2.5 }, svg);
+    M06.text(svg, lx + 14, LY, 'selection bias', { size: 15, fill: col.blue });
     var vE = M06.text(svg, bx[0].x + W / 2, 0, '', { size: 17, anchor: 'middle', weight: 700 });
     var vN = M06.text(svg, bx[1].x + W / 2, 0, '', { size: 17, anchor: 'middle', weight: 700 });
 
@@ -357,7 +367,7 @@
     M06.text(svg, R0, 324, 'rates had nobody received the email.', { size: 15, fill: col.grey });
 
     var bar = M06.controls(root), out = M06.readout(root), run = runner(), tNow = 0;
-    var sl = M06.slider(bar, 'Targeting on the renewal score', 0, 1, 0.05, 0, function (v) { run.cancel(); draw(v); });
+    var sl = M06.slider(bar, 'Targeting on the score (0 = random, 1 = top scores)', 0, 1, 0.05, 0, function (v) { run.cancel(); draw(v); });
     function pts(x) { return signed(100 * x, 1) + ' points'; }
     function draw(t) {
       tNow = t;

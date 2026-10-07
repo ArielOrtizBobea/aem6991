@@ -168,9 +168,9 @@ collects the answers under the same numbers.
 
 ## Selection into treatment
 
-- **Selection bias**: treated and untreated units would differ even without the treatment.
+- **Selection bias**: treated and untreated outcomes would differ even without treatment.
 - A retention email to 3,000 of 10,000 customers raises renewal probability by 2 points.
-- The firm chooses who gets it using a renewal score.
+- The firm targets the email by **renewal score**, a predicted probability of renewing.
 - [**Solution**: randomize who gets the email, or compare customers near the score cutoff.]{.solution}
 
 <div class="m06 m07-compact" data-demo="selection" style="width:92%;margin:0 auto"></div>
@@ -216,11 +216,12 @@ regression discontinuity, one of the designs ahead.
 
 ## Selection into the sample
 
-- **Selection into the sample**: whether a unit is observed depends on its outcome.
+- **Selection into the sample**: whether a unit is in the data depends on its outcome.
+- Selection into treatment is about who is treated; this is about who is observed.
+- It biases the comparison even when the treatment was randomized.
 - Examples:
     - Trainees who found no job stop answering the follow-up survey.
     - Only the firms that survived appear in the data.
-- The comparison among the units observed is biased, in either direction.
 - [**Solution**: follow up everyone, or bound the effect.]{.solution}
 
 [Lee (2009), *Training, Wages, and Sample Selection: Estimating Sharp Bounds on Treatment Effects*, Review of Economic Studies 76, 1071–1102.](https://doi.org/10.1111/j.1467-937X.2009.00536.x){style="font-size:0.55em; color:#6b6b6b"}
@@ -232,7 +233,10 @@ Selection into the sample is the cousin of source 1. Selection into
 treatment decides who gets the treatment; selection into the sample
 decides who ends up in the data. In both, the choice depends on the
 outcome, so the comparison among the units we see is not the comparison we
-want. Selection into the sample is meeting 2's collider: selecting on the
+want. The practical difference: random assignment removes selection into
+treatment, while attrition after random assignment brings selection back
+among the units that remain in the data. The bias can go either way, as
+the next paragraph shows. Selection into the sample is meeting 2's collider: selecting on the
 outcome. Last week's Literary Digest poll had it through nonresponse.
 
 The first example is attrition. If trainees who found no job stop

@@ -1,0 +1,20 @@
+| \# | Date | Meeting | Due |
+|---:|:---|:---|:---|
+| 1 | Aug 26 | **Introductions** | Research interest survey, on Canvas before meeting 2 |
+| 2 | Sep 2 | **Theory and causality** | Your team's written ground rules — agreed and handed in today |
+| 3 | Sep 9 | **Finding the question** |  |
+| 4 | Sep 16 | **Ethical and legal obligations** | CITI human-participants training, for teams whose project involves human participants — certificate on Canvas before meeting 6 (September 30) |
+| 5 | Sep 23 | **Using AI in research** |  |
+| 6 | Sep 30 | **Models and uncertainty** | Rate your teammates |
+| 7 | Oct 7 | **Model failures** |  |
+| 8 | Oct 14 | **Research designs I** |  |
+| 9 | Oct 21\* | **Research designs II** | Project pitch — one page, presented in class |
+| 10 | Oct 28 | **Writing** |  |
+| 11 | Nov 4 | **Figures** |  |
+| 12 | Nov 11 | **Speaking** | Proposal outline · Rate your teammates |
+| 13 | Nov 18\* | **Midterm** |  |
+| | Nov 25 | *Thanksgiving recess — no class* | |
+| 14 | Dec 2 | **The pitch** | Final presentation, in class |
+| | Dec 11 | *Research proposal due — the final write-up. Date to be confirmed* | |
+
+\* These dates are not final: **Oct 21** --- Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed · **Nov 18** --- Instructor off campus — the midterm is proctored; arrangements announced by week 10

@@ -142,7 +142,7 @@ deliverables:
     name: "Research proposal"
     weight: "30 %"
     due_date: 2026-12-11
-    desc: "~5 pages, written out from the outline you workshopped. The plan somebody could pick up and execute in January."
+    desc: "~5 pages, written out from the outline you workshopped, and presented to the class at meeting 14. The plan somebody could pick up and execute in January."
 
 meetings:
   - num: 1

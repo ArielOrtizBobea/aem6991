@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
+
+  <title>AEM 6991 – AEM 6991 · 6 Models and uncertainty</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-638d68159db5c4da088d5ac853e4cd78.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <p class="ttl-number">AEM 6991</p>
+  <p class="ttl-course">MPS Capstone Project I</p>
+  <p class="ttl-prof">Prof. Ariel Ortiz-Bobea</p>
+  <h1 class="title">6 · Models and uncertainty</h1>
+  <p class="subtitle">Wednesday, September 30, 2026</p>
+  <img class="ttl-seal" src="../images/cornell_seal.svg" alt="Cornell University">
+</section>
+<section id="motivation" class="slide level2">
+<h2>Motivation</h2>
+<ul>
+<li>Most of your projects will involve estimating an unknown parameter.</li>
+<li>You obtain that estimate from the data.</li>
+<li>Your estimate should be critical for a decision maker.</li>
+<li>Today we discuss estimation: how we obtain estimates from a sample, and how we capture their uncertainty.</li>
+</ul>
+<aside class="notes">
+<p>Ninety seconds. Slow.</p>
+<p>A parameter is a fixed quantity that describes a population: a price premium, an elasticity, a probability, a treatment effect. It is never a column in the dataset. Every project in this room has to estimate one from a sample, and the reader of the proposal will ask how precise that estimate is.</p>
+<p>Most of the hour runs in simulated populations where the parameter is known and shown on screen as a red dashed line. That is the only setting in which you can watch an estimator’s behavior. In their projects the parameter is unknown.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="parameters-your-projects-might-estimate" class="slide level2">
+<h2>Parameters your projects might estimate</h2>
+<div style="font-size:0.72em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Project lead</th>
+<th style="text-align: left;">Parameter to estimate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">What is a water view worth?</td>
+<td style="text-align: left;">The average price premium for a water view, in dollars or percent</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">When a price rises, what do shoppers switch to?</td>
+<td style="text-align: left;">Diversion ratios: the share of lost sales captured by each substitute</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Does falling foot traffic predict a closure?</td>
+<td style="text-align: left;">The probability of closure within 12 months, given the foot-traffic trend</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">What is a “locally sourced” claim worth?</td>
+<td style="text-align: left;">Willingness to pay for the label, in cents per unit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Did PPP loans change small-business survival?</td>
+<td style="text-align: left;">The average effect of a PPP loan on the survival rate, in percentage points</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Can card spending nowcast a company’s earnings?</td>
+<td style="text-align: left;">Next quarter’s revenue, and the size of the forecast error</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="font-size:0.55em; color:#6b6b6b">
+<p>Leads from the <a href="../../fall-2026/project-ideas.html">project ideas</a> page.</p>
+</div>
+<aside class="notes">
+<p>Two minutes. Read two or three rows.</p>
+<p>The left column is a question a team could choose. The right column is the parameter that answers it. None of these is observed directly. The water view premium is estimated from a comparison of thousands of sales. The willingness to pay is estimated from respondents’ choices between products.</p>
+<p>Ask each student to identify the parameter in their own project and keep it in mind for the hour. Every concept today applies to it: which estimator produces it, what its standard error is, and whether a larger sample would reduce its error.</p>
+<p>The last row is a forecast. A forecast is also an estimate, and its uncertainty is the forecast error. Section 7 returns to it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
+<ol type="1">
+<li>Estimators and sampling distributions</li>
+<li>Properties of estimators</li>
+<li>What a larger sample does not fix</li>
+<li>Models and estimation methods</li>
+<li>Standard errors</li>
+<li>Hypothesis tests and p-values</li>
+<li>Prediction and causal inference</li>
+</ol>
+<aside class="notes">
+<p>Thirty seconds. Sections 1 to 3 apply to any estimator and use simple examples: a sample mean, and the number of tanks an army produced. Section 4 turns to regression models and the three standard estimation methods. Sections 5 and 6 cover the uncertainty you report. Section 7 covers what a predictive estimate can and cannot be used for.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section>
+<section id="estimators-and-sampling-distributions" class="title-slide slide level1 center">
+<h1>1. Estimators and sampling distributions</h1>
+<aside class="notes">
+<p>Thirty seconds. The section uses one simulated population: 10,000 customers whose monthly spend is known, so the population mean is known.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-vocabulary-of-estimation" class="slide level2">
+<h2>The vocabulary of estimation</h2>
+<ul>
+<li><strong>Population</strong>: the full set of units the question is about. All 10,000 customers.</li>
+<li><strong>Parameter</strong>: a fixed, unknown quantity of the population. Their mean monthly spend.</li>
+<li><strong>Sample</strong>: the units we observe. 50 customers drawn at random.</li>
+<li><strong>Estimator</strong>: a rule that assigns a value to every possible sample. The sample mean.</li>
+<li><strong>Estimate</strong>: the value the estimator takes in the observed sample.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes. Read the five terms with their examples.</p>
+<p>The parameter here is $67.81. It is known only because the population is simulated.</p>
+<p>Map it onto a project. For the water view question, the population is all house sales in the market, the parameter is the average premium, the sample is the sales in the dataset, the estimator is the least squares coefficient on the water-view indicator, and the estimate is the coefficient reported in the output.</p>
+<p>The distinction to stress is between the last two. The estimator is a rule that could be applied to any sample. The estimate is the value it produced in the one sample observed.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="estimates-vary-across-samples" class="slide level2">
+<h2>Estimates vary across samples</h2>
+<ul>
+<li><strong>Sampling distribution</strong>: the distribution of an estimator across repeated samples.</li>
+</ul>
+<div class="m06" data-demo="sampling" data-n="50" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Four minutes. The slide the rest of the hour builds on.</p>
+<p>The grey histogram is the population: all 10,000 customers. It is fixed and never changes; only the sample drawn from it does. The solid red line is the population mean, $67.81. The distribution is right-skewed: most customers spend under $100 and a few spend several hundred.</p>
+<p>Both panels share one axis, so the solid line runs through both. Click “Draw one sample”. Fifty customers are highlighted in red, and the dashed red line marks their sample mean. The dot drops straight down into the lower panel. Read the sample mean out. It differs from $67.81.</p>
+<p>Solid is the true value, dashed is an estimate. The same convention holds on every slide.</p>
+<p>Click “Draw one sample” again: a different sample, a different estimate. Then “Draw 10” and “Draw 1,000”.</p>
+<p>The lower histogram approximates the sampling distribution of the sample mean. Three features. Its mean is at the population mean, so the estimator is unbiased. It has a standard deviation of about $7, which is the next slide. And on the shared axis it is far narrower than the population: the mean of 50 customers varies much less than one customer’s spend.</p>
+<p>In a project you observe one sample and one estimate. The sampling distribution is never observed. The simulation shows the distribution that single estimate was drawn from.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-standard-error-measures-sampling-variability" class="slide level2">
+<h2>The standard error measures sampling variability</h2>
+<ul>
+<li><strong>Standard error</strong>: the standard deviation of an estimator’s sampling distribution.</li>
+<li>Sample mean: σ/√n, where σ is the population standard deviation ($49.02 here).</li>
+<li>Estimated by s/√n, where s is the sample standard deviation.</li>
+</ul>
+<div class="m06" data-demo="sampling" data-n="50" data-mode="se" style="width:70%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Click “Draw 1,000”.</p>
+<p>The red bracket over the lower histogram spans ±1 standard deviation of the sample means drawn so far. That standard deviation is the standard error. It appears after two samples and settles as the draws accumulate; after “Draw 10” it is already $6.97.</p>
+<p>Three numbers in the readout. The standard deviation of the 1,000 sample means is about $7.0: the standard error, measured directly, which is possible only in a simulation. The true standard error is σ/√n = $49.02/√50 = $6.93. The estimated standard error s/√n uses the sample standard deviation s of the last sample; it varies from sample to sample because s does, and its mean across the 1,000 samples is close to the true value.</p>
+<p>The formula uses the variability within one sample to estimate the variability of the estimator across samples that were never drawn. With a skewed population and n = 50, that estimate is itself noisy, which the last sample shows.</p>
+<p>The square of the standard error is the variance of the estimator.</p>
+<p>In a report: mean monthly spend is $71, with a standard error of $7. The standard error is a property of the estimator, not of this particular estimate.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-standard-error-falls-with-the-square-root-of-n" class="slide level2">
+<h2>The standard error falls with the square root of n</h2>
+<ul>
+<li>For the sample mean, σ/√n holds when the n draws are independent.</li>
+</ul>
+<div class="m06" data-demo="samplesize" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Click “Draw 1,000 samples of each”.</p>
+<p>The same estimator, the sample mean, at n = 25, 100 and 400. All three sampling distributions are centered on the population mean. The simulated standard deviations are $9.39, $4.61 and $2.44; the true standard errors, σ/√n, are $9.80, $4.90 and $2.45.</p>
+<p>Each fourfold increase in n halves the standard error. Halving the standard error requires four times the observations. Dividing it by ten requires a hundred times the observations.</p>
+<p>The budget implication: doubling the sample reduces the standard error by about 30%, not by half.</p>
+<p>The bullet is the condition. The simulation draws customers independently. With dependent draws, such as shoppers clustered in a few stores, the standard error falls more slowly than σ/√n and the formula understates it. Section 3 and meeting 7 return to this.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-the-standard-error-falls-as-n-grows" class="slide level2">
+<h2>Why the standard error falls as n grows</h2>
+<ul>
+<li>In a mean, deviations above and below the population mean offset each other.</li>
+<li>With population variance σ², the sample mean has variance σ²/n and standard error σ/√n.</li>
+<li>A poll of 1,000 has a 95% margin of error of about ±3.1 points.</li>
+<li>With 4,000 respondents, the margin is about ±1.55 points.</li>
+<li>Precision depends on the sample size, not the population size.</li>
+<li>This requires independent observations.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The mechanism: one customer can be $300 from the population mean. The mean of 50 customers rarely is, because large and small values offset. The variance of a sum of n independent draws is nσ²; dividing by n² gives σ²/n for the mean.</p>
+<p>Here σ is about $49, and $49/√50 is about $6.9, matching the simulation.</p>
+<p>The poll figure is the same formula for a proportion near one half: 1.96 × √(0.25/1,000) = 0.031.</p>
+<p>The fifth bullet surprises most people. A random sample of 1,000 has essentially the same precision for the United States as for Ithaca. The finite-population correction is negligible whenever the sample is a small fraction of the population.</p>
+<p>The last bullet is the key assumption. Section 3 and meeting 7 show what happens when observations are dependent.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-a-95-confidence-interval-means" class="slide level2">
+<h2>What a 95% confidence interval means</h2>
+<ul>
+<li><strong>Confidence interval</strong>: the estimate ± 1.96 standard errors.</li>
+<li><u>In repeated samples</u>, 95% of such intervals contain the parameter.</li>
+</ul>
+<div class="m06" data-demo="intervals" data-n="50" style="width:82%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Click “Draw one” twice, then “Draw 100”.</p>
+<p>Each line is one sample’s 95% confidence interval: the sample mean ± 1.96 estimated standard errors. Grey intervals contain the population mean. Red intervals do not. In expectation 5 in 100 miss; in this seeded run, 7 of the first 100 miss, which is within ordinary sampling variation.</p>
+<p>The 95% is a property of the procedure. Across repeated samples, 95% of the intervals it produces contain the parameter. Any single interval either contains it or does not, and you cannot tell which.</p>
+<p>A useful reading for reports: the interval is the set of parameter values consistent with the data at the 5% level. Section 6 relies on this reading.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="properties-of-estimators" class="title-slide slide level1 center">
+<h1>2. Properties of estimators</h1>
+<aside class="notes">
+<p>Thirty seconds. Three properties of an estimator, each visible in its sampling distribution: bias (its location relative to the parameter), efficiency (its variance), and consistency (its behavior as n grows). One historical case illustrates all three.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-allies-estimated-german-tank-production" class="slide level2">
+<h2>The Allies estimated German tank production</h2>
+<ul>
+<li>The Allies needed an estimate of monthly German tank production.</li>
+<li>Chassis, gearboxes and wheels of captured tanks carried sequential serial numbers.</li>
+<li>Economists estimated production from those serial numbers.</li>
+</ul>
+<div style="font-size:0.8em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Monthly production</th>
+<th style="text-align: right;">Serial-number estimate</th>
+<th style="text-align: right;">Intelligence estimate</th>
+<th style="text-align: right;">German records</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">June 1940</td>
+<td style="text-align: right;">169</td>
+<td style="text-align: right;">1,000</td>
+<td style="text-align: right;">122</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">June 1941</td>
+<td style="text-align: right;">244</td>
+<td style="text-align: right;">1,550</td>
+<td style="text-align: right;">271</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">August 1942</td>
+<td style="text-align: right;">327</td>
+<td style="text-align: right;">1,550</td>
+<td style="text-align: right;">342</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a href="https://doi.org/10.1080/01621459.1947.10501915" style="font-size:0.55em; color:#6b6b6b">Ruggles and Brodie (1947), <em>An Empirical Approach to Economic Intelligence in World War II</em>, JASA 42, 72–91.</a></p>
+<aside class="notes">
+<p>Three minutes.</p>
+<p>The parameter was monthly production of German tanks, all types. The intelligence column is the combined US and UK assessment of August 1942 (Munitions Record No.&nbsp;24), so the 1940 and 1941 figures are as assessed in 1942. It came from agents, reconnaissance and interrogations.</p>
+<p>Richard Ruggles and Henry Brodie, economists in the Economic Warfare Division in London, noticed that components of captured tanks carried serial numbers assigned in sequence. The serials observed on captured tanks are a sample from 1 to N, where N is the number produced. Their first report used about 1,200 chassis serial numbers, with engine numbers as a check. Later work used gearbox numbers, and the mould numbers on the rubber tyres of the 48 bogie wheels on each of two captured Mark V tanks.</p>
+<p>After the war, the records of the Speer ministry became available. The serial-number estimates were close to them. The intelligence estimates overstated production by a factor of four to eight.</p>
+<p>The table is on p.&nbsp;89 of the 1947 paper.</p>
+<p>This is estimation without regression: a population, a parameter N, a sample of serial numbers, and a choice of estimator. The next slides compare three estimators of N.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-estimators-of-the-same-parameter" class="slide level2">
+<h2>Three estimators of the same parameter</h2>
+<ul>
+<li>Parameter: N, the number of tanks, with serials numbered 1 to N.</li>
+<li>Sample: five captured serials, 19, 40, 42, 60 and 88.</li>
+</ul>
+<ol type="1">
+<li>The sample maximum: 88.</li>
+<li>Twice the sample mean, minus 1: 98.6.</li>
+<li>The sample maximum plus the average gap between serials, minus 1: 104.6.</li>
+</ol>
+<aside class="notes">
+<p>Two minutes. The logic of each estimator.</p>
+<p>Estimator 1: N is at least the largest serial observed.</p>
+<p>Estimator 2: with serials drawn at random from 1 to N, the expected value of a serial is (N + 1)/2. Doubling the sample mean and subtracting 1 estimates N. Here the sample mean is 49.8.</p>
+<p>Estimator 3: the sample maximum falls short of N by about one gap between consecutive serials, and the average gap is estimated by the maximum divided by the sample size, 88/5 = 17.6.</p>
+<p>A single sample cannot tell us which estimator is best. Every estimator returns some value in every sample. Comparing estimators requires their sampling distributions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-sample-maximum-is-a-biased-estimator" class="slide level2">
+<h2>The sample maximum is a biased estimator</h2>
+<ul>
+<li><strong>Bias</strong>: the expected value of the estimator minus the true parameter.</li>
+</ul>
+<div class="m06" data-demo="tanks" data-k="5" style="width:88%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. N = 300. Click “Draw one sample”: five serials and the three estimates. Then “Draw 1,000 samples”.</p>
+<p>The sampling distribution of the sample maximum has a mean of about 249 in this run (250.8 in theory). The maximum can never exceed 300 and is almost always below it. Its bias is about −50.</p>
+<p>The first sample after Reset is 26, 138, 175, 269 and 299, giving estimates of 299, 362 and 358.</p>
+<p>Estimators 2 and 3 have sampling distributions centered on 300. They are unbiased.</p>
+<p>Bias cannot be seen in a single sample. It is a property of the sampling distribution, so in a real project it has to be derived from how the estimator works.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="estimator-3-is-more-efficient-than-estimator-2" class="slide level2">
+<h2>Estimator 3 is more efficient than estimator 2</h2>
+<ul>
+<li><strong>Efficiency</strong>: an unbiased estimator with smaller variance is more efficient.</li>
+</ul>
+<div class="m06" data-demo="tanks" data-k="5" data-impossible="true" style="width:88%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Two minutes. Click “Draw 1,000 samples”.</p>
+<p>Estimators 2 and 3 are both unbiased. The standard deviation of estimator 2 is about 77; that of estimator 3 is about 50. With the same data, estimator 3 has the smaller variance. It is more efficient.</p>
+<p>The reason: the sample maximum carries most of the information in the sample about N. Estimator 2 uses only the sample mean and discards that information.</p>
+<p>The readout shows that estimator 2 falls below the sample maximum in 206 of 1,000 samples, about one in five (the exact probability is 0.20). The sample itself rules those values out. An unbiased estimator can produce impossible estimates.</p>
+<p>Efficiency has a cost interpretation: a less efficient estimator needs a larger sample to reach the same standard error.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="all-three-estimators-are-consistent" class="slide level2">
+<h2>All three estimators are consistent</h2>
+<ul>
+<li><strong>Consistency</strong>: the estimator converges to the true parameter as n grows.</li>
+</ul>
+<div class="m06" data-demo="tanks" data-k="5" data-ks="5,20,80" style="width:88%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Draw 1,000 samples at n = 5, then switch to n = 20 and draw, then n = 80 and draw.</p>
+<p>All three sampling distributions concentrate at 300. The bias of the sample maximum falls from about −49 to about −13 to about −3. All three estimators are consistent.</p>
+<p>The rates differ. At n = 80 the standard deviation of estimator 3 is about 3, and that of estimator 2 about 17. The standard deviation of estimator 2, built on a sample mean, falls with √n: four times the data halves it. The estimators built on the sample maximum have standard deviations that fall with n: four times the data divides it by four. The rate at which precision improves depends on the estimator.</p>
+<p>Consistency is the minimum requirement for an estimator. An inconsistent estimator does not converge to the parameter however large the sample. Section 3 shows how that happens.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-median-can-be-more-efficient-than-the-mean" class="slide level2">
+<h2>The median can be more efficient than the mean</h2>
+<div class="m06" data-demo="medianmean">
+
+</div>
+<ul>
+<li>Normal population: the sample mean has the smaller variance.</li>
+<li>Heavy-tailed population: the sample median has the smaller variance.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes. A second comparison of efficiency, using estimators they already know.</p>
+<p>Left: heights, approximately normal. Both the sample mean and the sample median of 25 observations are unbiased for the center. The mean has the smaller variance. For normal data the median’s variance is π/2 ≈ 1.57 times the mean’s, so the median needs about 57% more observations for the same standard error.</p>
+<p>Right: a symmetric heavy-tailed population, like daily stock returns. Extreme observations shift the sample mean but not the sample median. The median now has the smaller variance.</p>
+<p>Relative efficiency depends on the population distribution, so the choice of estimator requires some knowledge of the data.</p>
+<p>A caution for skewed populations: there the mean and the median are different parameters, and the choice between them is a choice of question.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-biasvariance-trade-off" class="slide level2">
+<h2>The bias–variance trade-off</h2>
+<div class="m06" data-demo="darts" style="width:44%;margin:0 auto">
+
+</div>
+<ul>
+<li><strong>Mean squared error</strong>: the expected squared distance between an estimator <span class="math inline">\hat\theta</span> and the parameter <span class="math inline">\theta</span>.</li>
+</ul>
+<p><span class="math display">
+\text{MSE}(\hat\theta) = E\big[(\hat\theta-\theta)^2\big] = \text{Bias}(\hat\theta)^2 + \text{Var}(\hat\theta)
+</span></p>
+<ul>
+<li><span class="math inline">\text{Bias}(\hat\theta) = E[\hat\theta]-\theta</span> and <span class="math inline">\text{Var}(\hat\theta) = E\big[(\hat\theta-E[\hat\theta])^2\big]</span>. The identity holds whenever the variance is finite.</li>
+<li>A biased estimator can have a lower mean squared error than an unbiased one.</li>
+<li>Prediction methods accept some bias to reduce variance.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The four targets separate bias from variance. The expected squared distance from the bullseye, the mean squared error, combines both.</p>
+<p>The decomposition is an identity, not an approximation. Add and subtract E[θ̂] inside the square: the cross term has expectation zero, leaving variance plus squared bias. It requires the estimator to have a finite variance; the sample mean of the Cauchy draws in section 3 does not.</p>
+<p>For predicting a new outcome rather than estimating a parameter, the expected squared prediction error has a third term: bias² + variance + σ², where σ² is the variance of the noise in the outcome, which no model can remove. The trade-off in the last bullet is between the first two terms.</p>
+<p>Regularized regression methods such as ridge and lasso shrink coefficients toward zero. They introduce bias to reduce variance, and are judged by out-of-sample mean squared error. Section 7 returns to this. The next slide computes the decomposition for two of the tank estimators.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-mean-squared-error-of-two-estimators" class="slide level2">
+<h2>The mean squared error of two estimators</h2>
+<div class="m06" data-demo="mse" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. The tank estimators from slides 14 to 17, with N = 300 and five tanks per sample. Same draws as those slides.</p>
+<p>Click “Draw one sample”. In each panel, the dot is the estimate θ̂ and the red segment on the axis is the error θ̂ − θ. The red square is built on that segment, so its area is the squared error (θ̂ − θ)². The first sample is 26, 138, 175, 269 and 299: estimator 1 gives 299, an error of −1 and a tiny square; estimator 2 gives 362, an error of +62 and a square of 3,844.</p>
+<p>Click “Draw one sample” a few more times. Earlier squares stay as faint outlines. The sample maximum’s squares all sit to the left of θ, because it never exceeds N. Estimator 2’s squares fall on both sides and some are large.</p>
+<p>The top row appears after two samples. It shows the means over all samples so far: the squared bias, the variance, and the mean squared error, as squares whose areas add up. Bias² + variance = MSE is visible as area.</p>
+<p>Click “Draw 1,000 samples”. Estimator 1: bias −51, bias² 2,619, variance 1,772, MSE 4,391. Estimator 2: bias −4, bias² 15, variance 5,975, MSE 5,991. The biased estimator has the smaller mean squared error: its bias square is large, and its variance square is much smaller than estimator 2’s.</p>
+<p>The variance in the readout divides by the number of samples, so the identity holds exactly in the numbers shown.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="what-a-larger-sample-does-not-fix" class="title-slide slide level1 center">
+<h1>3. What a larger sample does not fix</h1>
+<aside class="notes">
+<p>Thirty seconds. A larger sample reduces the variance of a consistent estimator. This section covers the cases where it does not reduce the error, starting with the best-known polling failure.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-1936-literary-digest-poll" class="slide level2">
+<h2>The 1936 Literary Digest poll</h2>
+<ul>
+<li>The Literary Digest was a leading US weekly magazine, with a circulation above one million.</li>
+<li>From 1916 it ran a straw poll by mail before each presidential election.</li>
+<li>It had predicted the winner of every election from 1920 to 1932.</li>
+<li>1936: Franklin D. Roosevelt, the Democratic president, against Alf Landon, the Republican.</li>
+<li>It mailed about 10 million mock ballots, mostly to names from telephone directories and car registrations.</li>
+<li>It is the standard example that a very large sample does not remove bias.</li>
+</ul>
+<p><a href="https://doi.org/10.1515/spp-2016-0006" style="font-size:0.55em; color:#6b6b6b">Lohr and Brick (2017), <em>Roosevelt Predicted to Win: Revisiting the 1936 Literary Digest Poll</em>, Statistics, Politics and Policy 8, 65–84.</a></p>
+<aside class="notes">
+<p>Two minutes. Context first, because few in the room will know the case.</p>
+<p>The Literary Digest was one of the most widely read American magazines of the 1920s and 1930s. Its presidential poll was a straw poll: the magazine mailed mock ballots, postcards asking how the recipient intended to vote, and counted the ones that came back. It was not a vote in the election.</p>
+<p>Before 1936 the poll had named the winner every time from 1920 to 1932, so its 1936 result was taken seriously. The magazine itself had noticed that its polls drew too many Republican voters from 1920 onward, but the Republican lean had not changed the predicted winner before.</p>
+<p>The names came mostly from telephone directories and automobile registrations. The usual explanation, due to Gallup, is that telephone and car owners were better off than the average voter during the Depression.</p>
+<p>Why this case: it is the largest poll most students will ever hear of, and it was wrong by a wide margin. It shows that a sample of millions does not fix a biased way of choosing and hearing from respondents. It also ended the era of straw polls: the pollsters who called 1936 correctly, among them Gallup, used smaller, designed samples, and modern survey sampling grew from them (<a href="https://doi.org/10.1017/S014555320001035X">Lusinchi 2012</a>).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-poll-missed-roosevelts-share-by-about-20-points" class="slide level2">
+<h2>The poll missed Roosevelt’s share by about 20 points</h2>
+<div class="m06" style="width:76%;margin:0 auto" data-demo="digest" data-poll-r="42.9" data-poll-l="57.1" data-vote-r="62.5" data-vote-l="37.5" data-poll-label="Literary Digest poll, share of the two candidates" data-vote-label="Actual vote, two-party share">
+
+</div>
+<ul>
+<li>About 2.4 million people mailed their mock ballots back. Those replies were the poll’s sample.</li>
+<li>The poll predicted a Landon victory. Roosevelt won 46 of the 48 states.</li>
+<li>Gallup predicted the winner with a much smaller sample.</li>
+</ul>
+<p><a href="https://doi.org/10.1086/269085" style="font-size:0.55em; color:#6b6b6b">Squire (1988), <em>Why the 1936 Literary Digest Poll Failed</em>, Public Opinion Quarterly 52, 125–133.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>About 10 million mock ballots were mailed and 2,376,523 came back, a response rate of about 24%. Those returned mock ballots were the sample. The Digest’s final tally gave Landon 57.1% and Roosevelt 42.9% of the two candidates’ mock ballots, and projected 370 electoral votes for Landon.</p>
+<p>In the election, Roosevelt won 62.5% of the two-party vote (60.8% of all votes) and 523 of 531 electoral votes. The poll’s error on Roosevelt’s share was about 20 points.</p>
+<p>The standard error of a proportion estimated from 2.4 million responses is about 0.03 percentage points. The sample size produced a precise estimate of the wrong quantity.</p>
+<p>Squire used a 1937 Gallup survey that asked people whether they had taken part in the Digest poll. Both the initial sample and the nonresponse were biased. By his estimate, the flawed mailing list did more of the damage, and the nonresponse flipped the predicted winner: had everyone sampled replied, the Digest would have predicted a Roosevelt victory.</p>
+<p>Gallup’s final poll gave Roosevelt about 56% of the two-party vote, from a sample reported in textbooks as about 50,000.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-biased-sample-converges-to-the-wrong-value" class="slide level2">
+<h2>A biased sample converges to the wrong value</h2>
+<ul>
+<li>A larger sample reduces the variance. The bias remains.</li>
+<li>May 2021: 250,000 survey responses a week overstated US vaccine uptake by 17 points.</li>
+</ul>
+<div class="m06" data-demo="biased" style="width:72%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1038/s41586-021-04198-4" style="font-size:0.55em; color:#6b6b6b">Bradley et al.&nbsp;(2021), <em>Unrepresentative big surveys significantly overestimated US vaccine uptake</em>, Nature 600, 695–700.</a></p>
+<aside class="notes">
+<p>Three minutes. Draw 1,000 samples at n = 25, then at 100, 400 and 1,600.</p>
+<p>The same population, two sampling schemes. The top row samples at random. The bottom row samples only respondents, and each customer’s probability of responding is proportional to the square root of their spending.</p>
+<p>As n grows, both sampling distributions narrow at the √n rate. The random sample mean converges to the population mean, $67.81. The respondent sample mean converges to about $83.6, a bias of about $16. At n = 1,600 its standard deviation is about $1.5 and its bias is unchanged.</p>
+<p>The standard error measures variability around the estimator’s own expected value. It contains no information about bias, so a large biased sample reports a small standard error.</p>
+<p>The modern case: Bradley and co-authors compare three surveys of US adults with the CDC’s count of first doses administered. The Delphi–Facebook survey, with about 250,000 responses a week, overestimated first-dose uptake by 17 percentage points in May 2021; the Census Household Pulse survey, with about 75,000 every two weeks, by 14 points. The authors compute that Delphi–Facebook’s bias-adjusted effective sample size was below 10 in April 2021: its 250,000 responses were no more accurate than a simple random sample of 10 people.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="heavy-tails-slow-the-convergence-of-the-mean" class="slide level2">
+<h2>Heavy tails slow the convergence of the mean</h2>
+<div class="m06" data-demo="running" data-mode="both" style="width:92%;margin:0 auto">
+
+</div>
+<ul>
+<li>Extreme observations keep shifting the sample mean, even at large n.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes. Click “Observe 2,000 draws”.</p>
+<p>Left: the running mean of customer spend as observations accumulate. It fluctuates early and converges to the population mean: the law of large numbers.</p>
+<p>Right: the running mean of draws from a Cauchy distribution. It still jumps after 1,000 draws, whenever an extreme value arrives. The Cauchy distribution has no mean, so the sample mean never converges.</p>
+<p>Business variables are rarely that extreme, but many are heavy-tailed: revenue per customer, insurance claims, box-office receipts, follower counts. Their sample means converge much more slowly than the √n rule suggests. Options: report the median, trim or winsorize the tail, or model the tail explicitly.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="four-problems-a-larger-sample-does-not-solve" class="slide level2">
+<h2>Four problems a larger sample does not solve</h2>
+<ol type="1">
+<li>Selection or measurement bias. The bias does not shrink with n.</li>
+<li>Dependent observations. 1,000 shoppers in 5 stores are not 1,000 independent observations.</li>
+<li>Little variation in the regressor of interest. Two price changes in three years.</li>
+<li>Heavy tails. The sample mean converges slowly.</li>
+</ol>
+<aside class="notes">
+<p>Two minutes.</p>
+<ol type="1">
+<li><p>Bias: the Literary Digest, the respondent sample, and any variable measured with systematic error. A larger sample gives a more precise estimate of the wrong value.</p></li>
+<li><p>Dependence: shoppers in the same store share its prices, weather and staff. The usual standard error formula assumes independence and treats 1,000 shoppers as 1,000 independent observations, when the effective sample is closer to 5. The standard error is understated. Meeting 7.</p></li>
+<li><p>Variation in the regressor: estimating the price elasticity requires variation in price. Three years of daily data with two price changes contain two informative events, whatever the number of rows. Section 5 shows where this enters the standard error.</p></li>
+<li><p>Heavy tails, from the previous slide.</p></li>
+</ol>
+<p>For any large dataset in their projects, the first question is which of these four applies.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="models-and-estimation-methods" class="title-slide slide level1 center">
+<h1>4. Models and estimation methods</h1>
+<aside class="notes">
+<p>Thirty seconds. The model is chosen according to the type of outcome. The estimation method determines how the model’s parameters are computed from the data. Two of the three methods already appeared in the tank example.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-type-of-outcome-determines-the-model" class="slide level2">
+<h2>The type of outcome determines the model</h2>
+<div class="m06" data-demo="outcomes">
+
+</div>
+<ul>
+<li>Choose a model whose predictions stay within the possible values of the outcome.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes. Four outcome types that appear in their projects.</p>
+<p>House price: continuous and positive. Ordinary least squares, often on the log of price.</p>
+<p>Loan default: binary. The model predicts a probability, which must lie between 0 and 1. Logit.</p>
+<p>Complaints per store per month: a non-negative integer count with many zeros. Poisson regression.</p>
+<p>Monthly spend with many zeros: non-negative and right-skewed. The log is undefined at zero, and log(y + 1) gives estimates that depend on the units of y. Poisson regression estimates the conditional mean directly and handles the zeros. <a href="https://doi.org/10.1162/rest.88.4.641">Santos Silva and Tenreyro (2006)</a> established this for trade flows (PPML); <a href="https://doi.org/10.1093/qje/qjad054">Chen and Roth (2024)</a> analyze the problems with log(y + 1).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="linear-regression-can-fit-nonlinear-relationships" class="slide level2">
+<h2>Linear regression can fit nonlinear relationships</h2>
+<ul>
+<li>“Linear” means linear in the parameters.</li>
+<li>Terms such as age² or log(size) let the fitted relationship curve.</li>
+</ul>
+<div class="m06" data-demo="curves" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Ninety seconds.</p>
+<p>A linear regression model is linear in its coefficients. The regressors can be any functions of the data: age and age squared, the log of size, indicator variables. Least squares estimates all of them.</p>
+<p>In this simulated example, price declines with age and rises again for the oldest, historic houses. The model linear in age misses both ends. The model quadratic in age fits the curvature.</p>
+<p>With a quadratic term, the marginal effect of age depends on the age at which it is evaluated: b₁ + 2·b₂·age. Report it at a few representative ages.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="linear-models-can-predict-impossible-values" class="slide level2">
+<h2>Linear models can predict impossible values</h2>
+<div class="m06" data-demo="impossible">
+
+</div>
+<ul>
+<li>Logit keeps predicted probabilities in [0, 1]. Poisson keeps predicted counts non-negative.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>Left: default (0 or 1) against credit score. Least squares on a binary outcome is the linear probability model. It predicts probabilities above 1 at low scores and below 0 at high scores. The logit model’s predicted probabilities stay in [0, 1].</p>
+<p>Right: complaints against staff on shift. The linear model predicts negative counts at high staffing. The Poisson model’s predicted mean stays positive.</p>
+<p>The linear probability model is still widely used, because its coefficients approximate average marginal effects well. Its predictions for individual units are the problem. Two of this afternoon’s cards depend on this.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-estimation-methods" class="slide level2">
+<h2>Three estimation methods</h2>
+<ol type="1">
+<li><strong>Least squares</strong>: choose the parameters that minimize the sum of squared residuals.</li>
+<li><strong>Maximum likelihood</strong>: choose the parameters that maximize the probability of the observed data.</li>
+<li><strong>Method of moments (GMM)</strong>: choose the parameters that equate sample moments to the moments the model implies.</li>
+</ol>
+<ul>
+<li>For 7 purchases in 20 visits, all three estimate the purchase probability as 0.35.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes. The three methods behind almost every estimator in their software.</p>
+<p>Least squares uses the residuals: it selects the parameters that make the sum of squared residuals as small as possible.</p>
+<p>Maximum likelihood uses a full probability model for the outcome: it selects the parameters under which the observed data are most probable.</p>
+<p>The method of moments uses a set of moments, such as means and covariances, that the model implies: it selects the parameters that make the sample moments equal to them.</p>
+<p>In the simplest case they coincide. For a purchase indicator with 7 ones in 20 visits, all three give 0.35. They differ in richer models, and the difference is in how much each assumes. The next three slides take them in turn.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="least-squares-estimation" class="slide level2">
+<h2>Least squares estimation</h2>
+<div class="m06" data-demo="leastsquares" style="width:84%;margin:0 auto">
+
+</div>
+<ul>
+<li>Chooses the coefficients that minimize the sum of squared residuals.</li>
+<li>Requires no assumption about the distribution of the errors.</li>
+</ul>
+<aside class="notes">
+<p>Three minutes. Move the slope slider, or click “Sweep”.</p>
+<p>Twelve simulated houses, size against price, generated with a true slope of $10,000 per 100 square feet. The red line is a candidate fit. Each residual is the vertical distance from a house to the line, and each blue square has area equal to the squared residual. Squaring weights large residuals more: a residual of 40 contributes four times as much as a residual of 20.</p>
+<p>The right panel plots the sum of squared residuals against the slope. It is a parabola. At the starting slope of 3 the sum is 34,573. The least squares estimate is its minimum: a slope of 9.76, or $9,760 per 100 square feet, with a sum of 12,515. Click “Best fit”.</p>
+<p>Software computes the minimum in closed form; no search is involved.</p>
+<p>Use: continuous outcomes, and the default in most applied work. Consistency of the coefficients requires that the errors be uncorrelated with the regressors, but no assumption about their distribution. Distributional assumptions matter only for the standard errors, and section 5 relaxes them.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="maximum-likelihood-estimation" class="slide level2">
+<h2>Maximum likelihood estimation</h2>
+<div class="m06" data-demo="likelihood" style="width:80%;margin:0 auto">
+
+</div>
+<ul>
+<li><strong>Likelihood</strong>: the probability of the observed data, as a function of the parameters.</li>
+<li>Requires the outcome’s full distribution. Most efficient when it is correct.</li>
+</ul>
+<aside class="notes">
+<p>Three minutes. Move the slider, then click “Find the peak”.</p>
+<p>The data are 7 purchases in 20 visits. For each candidate purchase probability p, the curve is the likelihood: the binomial probability of exactly 7 purchases in 20 visits. At p = 0.20 it is 0.055. It is maximized at p = 0.35, the maximum likelihood estimate.</p>
+<p>Select “Both”. With 70 purchases in 200 visits the maximum is at the same p and the likelihood is much more concentrated. The curvature of the log-likelihood at its maximum gives the standard error: 0.107 with n = 20 and 0.034 with n = 200.</p>
+<p>Use: when a distribution for the outcome can be specified. A Bernoulli outcome gives logit or probit, counts give Poisson or negative binomial, durations give survival models. When the distribution is correctly specified, maximum likelihood is asymptotically the most efficient consistent estimator. When it is misspecified, the estimates can be inconsistent.</p>
+<p>The tank example: if every serial from 1 to N is equally likely to be captured, the likelihood of the observed serials is highest at the smallest admissible N, the sample maximum. Estimator 1 was the maximum likelihood estimator: biased in small samples, consistent, and with low variance.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="method-of-moments-estimation" class="slide level2">
+<h2>Method of moments estimation</h2>
+<ul>
+<li>Chooses the parameters that equate sample moments to the moments the model implies.</li>
+<li>Tanks: setting the sample mean equal to its expected value, (N + 1)/2, gives estimator 2.</li>
+<li>Least squares is a moment estimator: residuals have mean zero and are uncorrelated with each regressor.</li>
+<li><strong>GMM</strong> uses more moment conditions than parameters and weights them by their precision.</li>
+<li>It requires only the moment conditions, not the full distribution.</li>
+</ul>
+<p><a href="https://doi.org/10.2307/1912775" style="font-size:0.55em; color:#6b6b6b">Hansen (1982), <em>Large Sample Properties of Generalized Method of Moments Estimators</em>, Econometrica 50, 1029–1054.</a></p>
+<aside class="notes">
+<p>Two minutes. The contrast with maximum likelihood is the point of the slide.</p>
+<p>Maximum likelihood used the full distribution: every serial from 1 to N equally likely. The method of moments used a single implication of it: the expected serial is (N + 1)/2. Estimator 2 was unbiased and less efficient than estimator 3, which exploits the full distribution. Weaker assumptions, lower efficiency.</p>
+<p>Least squares can be derived the same way. Its estimates solve the sample conditions that the residuals average zero and are uncorrelated with every regressor.</p>
+<p>The generalized method of moments, GMM, handles more moment conditions than parameters by weighting them, with more precisely estimated conditions receiving more weight. Lars Peter Hansen developed it, and it was cited in his 2013 Nobel prize. It is used when economic theory implies moment conditions without implying a full distribution. Instrumental variables estimation, in the designs meetings, is a special case.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="comparing-the-three-estimation-methods" class="slide level2">
+<h2>Comparing the three estimation methods</h2>
+<div style="font-size:0.72em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Method</th>
+<th style="text-align: left;">Chooses the parameters that</th>
+<th style="text-align: left;">Assumes</th>
+<th style="text-align: left;">Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Least squares</td>
+<td style="text-align: left;">minimize the sum of squared residuals</td>
+<td style="text-align: left;">E[Y given X] is linear in the parameters</td>
+<td style="text-align: left;">continuous outcomes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Maximum likelihood</td>
+<td style="text-align: left;">maximize the likelihood of the data</td>
+<td style="text-align: left;">the full distribution of Y given X</td>
+<td style="text-align: left;">binary, count and duration outcomes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GMM</td>
+<td style="text-align: left;">equate sample moments to model moments</td>
+<td style="text-align: left;">only the moment conditions</td>
+<td style="text-align: left;">instrumental variables, structural models</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Stronger assumptions increase efficiency when they hold and cause bias when they fail.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>Read across the rows. The assumptions column is the trade-off. Maximum likelihood assumes the most and is the most efficient when its assumptions hold. GMM assumes the least. Least squares requires only a correctly specified conditional mean.</p>
+<p>For their projects: a continuous outcome, least squares. A binary outcome, logit, or the linear probability model if only an average marginal effect is needed. A count or a non-negative outcome with zeros, Poisson. A design based on an instrument, GMM, which statistical software labels IV or 2SLS.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="interpreting-coefficients-in-linear-models" class="slide level2">
+<h2>Interpreting coefficients in linear models</h2>
+<div style="font-size:0.8em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Model</th>
+<th style="text-align: left;">Interpretation of the coefficient b</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Y on X</td>
+<td style="text-align: left;">one more unit of X: a change of b in Y, in the units of Y</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log Y on X</td>
+<td style="text-align: left;">one more unit of X: a change of about 100·b percent in Y</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">log Y on log X</td>
+<td style="text-align: left;">a 1% increase in X: a b% change in Y (an elasticity)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>For log Y, the exact percent change is 100·(e<sup>b</sup> − 1). Use it when b is large.</li>
+<li>Percent and percentage points are different units.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes. Say each row as a sentence with its units.</p>
+<p>Levels: a coefficient of 12,000 on a water-view indicator means houses with a water view sell for $12,000 more, holding the other regressors fixed.</p>
+<p>Log outcome: b = 0.08 means about 8% more. The approximation 100·b is accurate for small b. The exact change is 100·(e^b − 1): b = 0.5 corresponds to 65%, not 50%.</p>
+<p>Log on log: the row reads per 1% increase in X, not per unit. b = −1.8 is an elasticity: a 1% price increase is associated with a 1.8% decrease in sales.</p>
+<p>Percent and percentage points: a default rate rising from 4% to 6% is an increase of 2 percentage points and of 50%. State which.</p>
+<p>“Is associated with” is deliberate. Whether the association is causal is a question about the design, meetings 7 to 9.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="interpreting-coefficients-in-logit-and-poisson-models" class="slide level2">
+<h2>Interpreting coefficients in logit and Poisson models</h2>
+<ul>
+<li>Logit: b is the change in the log-odds of Y = 1 for a one-unit increase in X.</li>
+<li>e<sup>b</sup> is the odds ratio. It is not a ratio of probabilities.</li>
+<li>Report the average marginal effect: the change in P(Y = 1), in percentage points.</li>
+<li>Poisson: a one-unit increase in X changes the expected count by 100·(e<sup>b</sup> − 1) percent.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>Logit coefficients are in log-odds, which have no direct interpretation for a decision maker. Exponentiating gives the odds ratio, which is often misread as a ratio of probabilities; the two are close only when the probability is small.</p>
+<p>The average marginal effect is the change in the predicted probability for a one-unit increase in X, averaged over the sample. Every statistical package computes it. Report it in percentage points: a coupon raises the probability of purchase by 3 percentage points.</p>
+<p>Poisson: b = 0.10 means about 10.5% more expected complaints per unit of X. e^b is the incidence rate ratio.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="standard-errors" class="title-slide slide level1 center">
+<h1>5. Standard errors</h1>
+<aside class="notes">
+<p>Thirty seconds. The simulations computed the standard error from thousands of samples. In a project there is one sample. There are two ways to estimate the standard error from it: an analytical formula, or the bootstrap.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="analytical-standard-errors" class="slide level2">
+<h2>Analytical standard errors</h2>
+<ul>
+<li>Sample mean: s/√n, where s is the sample standard deviation of Y.</li>
+<li>OLS slope: approximately s<sub>e</sub>/(√n · s<sub>X</sub>).</li>
+<li>s<sub>e</sub> is the standard deviation of the residuals. s<sub>X</sub> is the standard deviation of X.</li>
+<li>Maximum likelihood: from the curvature of the log-likelihood at its maximum.</li>
+<li>All three assume independent observations.</li>
+<li>Heteroskedasticity-robust and clustered standard errors relax this. Meeting 7.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The first appeared in section 1.</p>
+<p>The second shows what determines the precision of a slope: the standard deviation of the residuals, s_e, the sample size n, and the standard deviation of the regressor, s_X. In a simple regression the formula is exact up to a degrees-of-freedom correction. With little variation in X, s_X is close to zero and the standard error is large regardless of n.&nbsp;This is the two-price-changes problem from section 3.</p>
+<p>The third appeared on the likelihood slide: a more sharply curved log-likelihood gives a smaller standard error.</p>
+<p>Statistical software computes all of these. The default versions assume independent observations with constant error variance. Heteroskedasticity-robust standard errors allow the error variance to differ across observations. Clustered standard errors allow observations within a group, such as a store or a county, to be correlated. Meeting 7.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-bootstrap-resamples-the-observed-data" class="slide level2">
+<h2>The bootstrap resamples the observed data</h2>
+<div class="m06" data-demo="bootstrap" style="width:88%;margin:0 auto">
+
+</div>
+<ul>
+<li>It treats the sample as the population and draws n observations with replacement.</li>
+</ul>
+<aside class="notes">
+<p>Three minutes. Click “Draw one bootstrap sample” two or three times, then “Draw 1,000 bootstrap samples”.</p>
+<p>The observed sample has 30 customers. There is no simple analytical formula for the standard error of a sample median. Efron (1979) proposed treating the sample as if it were the population and resampling from it.</p>
+<p>A bootstrap sample draws 30 observations from the 30, with replacement. Some customers appear two or three times and others not at all. Compute the median, record it, and repeat.</p>
+<p>The standard deviation of the 1,000 bootstrap medians is the bootstrap standard error: $8.20. The readout compares it with the true standard error, computed from 1,000 new samples from the population, which is possible only because the population is simulated: $8.19. The sample median is $52.13.</p>
+<p>Reference: <a href="https://doi.org/10.1214/aos/1176344552">Efron (1979)</a>.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="when-to-use-the-bootstrap" class="slide level2">
+<h2>When to use the bootstrap</h2>
+<ul>
+<li>No analytical formula exists: medians, ratios, percentiles.</li>
+<li>The sample is small or skewed, so the normal approximation is poor.</li>
+<li>The estimator has several steps, such as a forecast built from two models.</li>
+<li>The data are clustered: resample clusters, not observations.</li>
+</ul>
+<aside class="notes">
+<p>Ninety seconds.</p>
+<p>No formula: the median, a ratio of two means, the 90th percentile, a Gini coefficient.</p>
+<p>Small or skewed samples: analytical standard errors rely on approximations that improve with n and can be poor with 30 skewed observations.</p>
+<p>Multi-step estimators: a profit forecast computed from an estimated demand model and an estimated cost model. The bootstrap re-estimates both models in every bootstrap sample, so the uncertainty from both steps is included.</p>
+<p>Clustered data: resample stores rather than shoppers, keeping each store’s shoppers together. This is the cluster bootstrap.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-bootstrap-fails-for-the-maximum" class="slide level2">
+<h2>The bootstrap fails for the maximum</h2>
+<div class="m06" data-demo="bootstrap" data-stat="max" style="width:88%;margin:0 auto">
+
+</div>
+<ul>
+<li>No bootstrap sample can exceed the sample maximum.</li>
+</ul>
+<aside class="notes">
+<p>Ninety seconds. Click “Draw 1,000 bootstrap samples”.</p>
+<p>The same 30 customers; the statistic is now the maximum. Every bootstrap sample is drawn from the 30 observations, so its maximum cannot exceed the sample maximum. A bootstrap sample includes the largest customer with probability 1 − (29/30)^30 ≈ 0.64, and then its maximum equals the sample maximum, $199.23, exactly. In this run 631 of 1,000 do. The bootstrap distribution collapses at that value.</p>
+<p>It would imply that the population maximum is known almost exactly, which is false. The bootstrap fails because the parameter lies at the boundary of the support of the data.</p>
+<p>The tank problem has this structure. The standard error of estimator 3 is available analytically. The bootstrap also performs poorly in very small samples, and with dependent data unless clusters or blocks are resampled.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="hypothesis-tests-and-p-values" class="title-slide slide level1 center">
+<h1>6. Hypothesis tests and p-values</h1>
+<aside class="notes">
+<p>Thirty seconds. One experiment. The p-value is first computed by simulation, then by the analytical formula.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-permutation-test-simulates-the-null-hypothesis" class="slide level2">
+<h2>A permutation test simulates the null hypothesis</h2>
+<ul>
+<li>A/B test of a checkout web page: the old design against a redesigned one, 5,000 visitors each.</li>
+<li>Old page: 250 purchases (5.0%). New page: 300 purchases (6.0%).</li>
+<li><strong>Null hypothesis</strong>: the page design has no effect on the purchase probability.</li>
+</ul>
+<div class="m06" data-demo="permutation" style="width:68%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Four minutes.</p>
+<p>The observed difference in purchase rates is 1.0 percentage point. The question: how likely is a difference this large if the null hypothesis is true?</p>
+<p>Under the null, the page a visitor saw is unrelated to whether they bought. The page labels are exchangeable: the 550 buyers would have bought under either page. A permutation test randomly reassigns the labels, 5,000 to each page, keeps the purchases fixed, and recomputes the difference.</p>
+<p>Click “One permutation”. This is one difference generated under the null. Repeat twice: small differences of either sign.</p>
+<p>Click “10,000 permutations”. The histogram is the distribution of the difference under the null. The red lines mark the observed difference, ±1.0. 317 of the 10,000 permuted differences are at least 1.0 in absolute value.</p>
+<p>That share, 0.032, is the <strong>p-value</strong>: the probability, under the null hypothesis, of a difference at least as large as the one observed. The exact permutation p-value, over all possible relabellings, is 0.0315.</p>
+<p>Click “Show normal approximation”. The curve is the sampling distribution the textbook z-test assumes: z = 2.19, p = 0.028. The analytical test approximates the permutation distribution.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="interpreting-a-p-value-of-0.03" class="slide level2">
+<h2>Interpreting a p-value of 0.03</h2>
+<ul>
+<li>If the null hypothesis were true, a difference at least this large would occur in about 3% of experiments.</li>
+</ul>
+<div style="font-size:0.85em">
+<ul>
+<li>“<em>P-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.</em>”</li>
+<li>“<em>A p-value, or statistical significance, does not measure the size of an effect or the importance of a result.</em>”</li>
+<li>“<em>Scientific conclusions and business or policy decisions should not be based only on whether a p-value passes a specific threshold.</em>”</li>
+</ul>
+</div>
+<p><a href="https://doi.org/10.1080/00031305.2016.1154108" style="font-size:0.55em; color:#6b6b6b">Wasserstein and Lazar (2016), <em>The ASA’s Statement on p-Values: Context, Process, and Purpose</em>, The American Statistician 70, 129–133.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The first bullet is the complete interpretation. It is a probability computed under the null hypothesis. It is not the probability that the null is true, nor the probability that the new page works, and it contains no information about the size of the effect.</p>
+<p>The quotations are from the American Statistical Association’s 2016 statement, the first formal position the association took on a specific statistical practice. The third quotation names business decisions explicitly.</p>
+<p>The 0.05 threshold is a convention. Evidence at p = 0.049 and at p = 0.051 is essentially the same.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-share-of-significant-results-are-false-positives" class="slide level2">
+<h2>What share of significant results are false positives?</h2>
+<div class="m06" style="width:82%;margin:0 auto" data-demo="icons" data-ideas="1000" data-real="100" data-power="0.8" data-alpha="0.05">
+
+</div>
+<ul>
+<li>The share depends on the proportion of true effects among the hypotheses tested.</li>
+<li>In online A/B tests, 8% (Airbnb search) to 33% (Microsoft) of tested ideas succeed.</li>
+</ul>
+<p><a href="https://doi.org/10.1145/3534678.3539160" style="font-size:0.55em; color:#6b6b6b">Kohavi, Deng and Vermeer (2022), <em>A/B Testing Intuition Busters</em>, KDD ’22, 3168–3177.</a></p>
+<aside class="notes">
+<p>Three minutes.</p>
+<p>Suppose 1,000 hypotheses are tested, for example 1,000 A/B tests, and 100 of them are true effects. With power of 80%, 80 true effects are detected. Of the 900 true null hypotheses, 5% are rejected at the 5% level: 45 false positives.</p>
+<p>That gives 125 significant results, of which 45, or 36%, are false positives, with every test conducted correctly.</p>
+<p>The p-value cannot reveal this, because it is computed assuming the null and does not depend on the proportion of true effects among the hypotheses tested.</p>
+<p>Kohavi and co-authors report the success rates of experiments at large firms: 33% at Microsoft, 15% at Bing, about 10% at Booking.com, Google Ads and Netflix, 8% in Airbnb search. They count only significant improvements, so they use a one-sided 2.5% level. With 80% power, the implied share of significant results that are false positives is 5.9% at Microsoft, 22% at a 10% success rate, and 26% at Airbnb search. With 50% power, 9% to 37%.</p>
+<p>For their projects: one significant coefficient among many specifications tried is weak evidence. A hypothesis stated in advance and replicated is strong evidence.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="intervals-and-the-minimum-relevant-effect" class="slide level2">
+<h2>Intervals and the minimum relevant effect</h2>
+<div class="m06" data-demo="sizematters">
+
+</div>
+<ul>
+<li>Set the smallest effect that would change the decision before estimating.</li>
+</ul>
+<aside class="notes">
+<p>Three minutes. The four rows.</p>
+<p>Row 1: significant and large. The confidence interval excludes zero and lies entirely above the minimum relevant effect.</p>
+<p>Row 2: significant and negligible. The interval excludes zero, and every value in it is below the minimum relevant effect. Very large samples produce this pattern. Statistical significance is not practical significance.</p>
+<p>Row 3: not significant and inconclusive. The interval contains zero and also effects of 8%. The data cannot distinguish a large effect from no effect. The appropriate conclusion is that more data are needed.</p>
+<p>Row 4: not significant and negligible. The interval lies within the band of negligible effects. This is evidence that the effect is too small to matter.</p>
+<p>Rows 3 and 4 are both “not significant” and support opposite conclusions. The p-value does not distinguish them. The confidence interval does.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="prediction-and-causal-inference" class="title-slide slide level1 center">
+<h1>7. Prediction and causal inference</h1>
+<aside class="notes">
+<p>Thirty seconds. The distinction determines what an estimate can be used for.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="prediction-questions-and-causal-questions" class="slide level2">
+<h2>Prediction questions and causal questions</h2>
+<div style="font-size:0.8em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Prediction</th>
+<th style="text-align: left;">Causal inference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Will it rain today?</td>
+<td style="text-align: left;">Does a rain dance cause rain?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Which customers will churn next month?</td>
+<td style="text-align: left;">Does the loyalty program reduce churn?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">How many units will sell in December?</td>
+<td style="text-align: left;">What is the effect of a 5% price increase on units sold?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Which loans will default?</td>
+<td style="text-align: left;">Does a lower interest rate reduce defaults?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Prediction requires out-of-sample accuracy. Causal inference requires a valid comparison.</li>
+</ul>
+<p><a href="https://doi.org/10.1257/aer.p20151023" style="font-size:0.55em; color:#6b6b6b">Kleinberg, Ludwig, Mullainathan and Obermeyer (2015), <em>Prediction Policy Problems</em>, American Economic Review 105, 491–495.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The first row is from Kleinberg and co-authors. Whether to carry an umbrella depends only on a forecast of rain; the cause of rain is irrelevant. Whether to pay for a rain dance depends on the causal effect of the dance on rain. The two questions require different evidence.</p>
+<p>Many business decisions are pure prediction problems: which loans to audit, how much inventory to hold, which customers to contact. Those projects are evaluated on out-of-sample forecast error. The causal questions require the comparisons from meeting 2 and the designs in meetings 8 and 9.</p>
+<p>The common failure is a project that builds a predictive model and then recommends an intervention based on it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="predictive-accuracy-is-measured-out-of-sample" class="slide level2">
+<h2>Predictive accuracy is measured out of sample</h2>
+<div class="m06" data-demo="overfit">
+
+</div>
+<ul>
+<li>In-sample fit never decreases as regressors are added.</li>
+<li>R² measures in-sample fit. Out-of-sample error measures predictive accuracy.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>Left: 12 observations and two models. The degree-9 polynomial passes close to every point, and its in-sample root mean squared error is very small.</p>
+<p>Right: new observations from the same process. The polynomial’s error is far larger than the linear model’s. It fitted the noise in the estimation sample as well as the systematic relationship. This is overfitting.</p>
+<p>Prediction projects therefore hold out data: estimate on one part, evaluate on data the model has not seen. For forecasts, estimate on an earlier period and evaluate on a later one.</p>
+<p>R² is the share of the variance of the outcome explained by the model in the estimation sample. It never decreases when regressors are added. A high R² indicates in-sample fit. It does not establish predictive accuracy, and it contains no information about causal effects.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ebays-ads-were-credited-with-sales-they-did-not-cause" class="slide level2">
+<h2>eBay’s ads were credited with sales they did not cause</h2>
+<div class="m06" data-demo="ebay" style="width:74%;margin:0 auto">
+
+</div>
+<ul>
+<li>March 2012: eBay stopped brand-keyword ads on Yahoo! and MSN.</li>
+<li>Organic search clicks recovered 99.5% of the lost click traffic.</li>
+<li>Other keywords: OLS implied a return above 4,100%. A randomized regional experiment estimated −63%.</li>
+<li>Ad spending predicted revenue well. Only the experiment measured what the ads caused.</li>
+</ul>
+<p><a href="https://doi.org/10.3982/ECTA12423" style="font-size:0.55em; color:#6b6b6b">Blake, Nosko and Tadelis (2015), <em>Consumer Heterogeneity and Paid Search Effectiveness</em>, Econometrica 83, 155–174.</a></p>
+<aside class="notes">
+<p>Three minutes.</p>
+<p>Brand keywords are queries containing “eBay”, such as “ebay shoes”. eBay paid the search engines to show its ad above the results for these queries. In March 2012 it stopped bidding on them on Yahoo! and MSN and continued on Google, which served as the control. Users clicked the organic link immediately below instead: 99.5% of the click traffic the ads had brought still arrived. The figure is a schematic of the paper’s Figure 2.</p>
+<p>Non-brand keywords: eBay stopped all non-brand search advertising for 60 days in 68 of 210 designated market areas, chosen at random. An OLS regression of revenue on search spending, the kind of model that predicts revenue well, implies a return on investment above 4,100%. The experiment estimates −63%, with a 95% confidence interval from −124% to −3%. The effect was concentrated among users who had not bought in the previous year; for frequent buyers, who account for most paid clicks, it was close to zero.</p>
+<p>This is the prediction and causal-inference distinction with a budget attached. Spending and revenue move together largely because the ads reach people who were going to buy anyway. The advertising decision depends on the causal effect of the ads, which the predictive relationship does not identify.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="claims-and-what-the-evidence-supports" class="slide level2">
+<h2>Claims and what the evidence supports</h2>
+<div style="font-size:0.72em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Claim</th>
+<th style="text-align: left;">What the estimate supports</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">The effect is highly significant</td>
+<td style="text-align: left;">The estimate is precise. Its magnitude is a separate question.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">We found no effect</td>
+<td style="text-align: left;">The confidence interval includes zero. It may also include large effects.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Our two million rows settle it</td>
+<td style="text-align: left;">A large n reduces variance. It does not reduce bias.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Customers were 30% more likely to buy</td>
+<td style="text-align: left;">Check whether this is a percent or a percentage-point change.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">The model predicts sales very well</td>
+<td style="text-align: left;">High in-sample fit. No evidence on the causal effect of any variable.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">The standard error is tiny, so the estimate is right</td>
+<td style="text-align: left;">The standard error measures sampling variability. It does not measure bias.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<p>Two minutes. A reference slide and the vocabulary for this afternoon’s cards.</p>
+<p>Read the left column as it would be said in a meeting. The right column states what the estimate actually supports. Do not work through them now; the cards do.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="which-question-is-your-project-asking" class="slide level2">
+<h2>Which question is your project asking?</h2>
+<ul>
+<li>Is your parameter a forecast or a causal effect?</li>
+<li>Which estimate and confidence interval would change the decision?</li>
+<li>Which of today’s problems could bias your estimate or understate its standard error?</li>
+</ul>
+<aside class="notes">
+<p>One minute. Each student writes one line per question before the break and brings it to the cards.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>AEM 6991</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <style>
+    /* Meeting 6 only: bullets on slides that carry a figure or an animation are
+       set at 80% so the figure, its controls and the source line fit. */
+    .reveal .slides section.slide.level2:has(> .m06) > ul,
+    .reveal .slides section.slide.level2:has(> .m06) > ol { font-size: 0.8em; }
+    </style>
+    <script src="sim/m06-core.js"></script>
+    <script src="sim/m06-sampling.js"></script>
+    <script src="sim/m06-estimators.js"></script>
+    <script src="sim/m06-mse.js"></script>
+    <script src="sim/m06-figs.js"></script>
+    <script>window.M06 && M06.init();</script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/arielortizbobea\.github\.io\/aem6991\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

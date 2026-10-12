@@ -8,10 +8,11 @@ toc: false
   <p class="hero-number">AEM 6991</p>
   <p class="hero-title">MPS Capstone Project I</p>
   <p class="hero-instructors">Taught by
-    <a href="https://arielortizbobea.github.io">Prof.&nbsp;Ariel Ortiz-Bobea</a></p>
+    <a href="https://arielortizbobea.github.io">Prof.&nbsp;Ariel Ortiz-Bobea</a>,
+    with Yichen&nbsp;Li as teaching assistant</p>
   <div class="hero-meta">
     Fall 2026 · Wednesdays 2:00 to 4:30 pm · Riley-Robb Hall B15<br>
-    Office hours: TBA in week 1, posted on Canvas
+    Office hours: Thursdays 3:00 to 5:00 pm, 450B Warren Hall, and by appointment
   </div>
 </div>
 

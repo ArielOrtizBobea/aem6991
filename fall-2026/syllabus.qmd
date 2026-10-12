@@ -5,16 +5,30 @@ toc: true
 toc-depth: 3
 format:
   html: default
+  # The PDF follows the house look of the other AEM 6991 sections, which are
+  # Word documents: Calibri, blue headings, "Page n of N". Calibri ships
+  # inside Microsoft Word, so the Makefile and publish.sh point Typst at
+  # Word's font folder through TYPST_FONT_PATHS; without it the font list
+  # falls back to Helvetica Neue. mainfont stays unset so that the list in
+  # the header is the one that applies.
   typst:
-    title: "AEM 6991 — MPS Capstone Project I"
-    subtitle: "Syllabus, Fall 2026"
+    title: "MPS Capstone Project I (AEM 6991 LEC 004)"
+    subtitle: "Dyson School of Applied Economics and Management · Fall 2026"
     output-file: AEM6991-Fall2026-syllabus.pdf
     papersize: us-letter
     margin:
       x: 1in
-      y: 0.9in
-    fontsize: 10pt
+      y: 1in
+    fontsize: 11pt
     toc: false
+    include-in-header:
+      - text: |
+          #set text(font: ("Calibri", "Helvetica Neue", "Arial"))
+          #show heading: set text(fill: rgb("#1F4E79"))
+          #show table.cell: set par(justify: false)
+          #show table.cell: set text(hyphenate: false)
+          #set page(footer: context align(center, text(size: 9pt)[
+            Page #counter(page).display() of #counter(page).final().first()]))
     filters:
       - _typst-table-widths.lua
 # Naming a format as a plain string stops Quarto appending a second link
@@ -49,23 +63,42 @@ phone: (607) 255-0220.
 **Office hours.** Thursdays, 3:00--5:00 pm, 450B Warren Hall. Also
 by appointment.
 
+**Course website.**
+[arielortizbobea.github.io/aem6991](https://arielortizbobea.github.io/aem6991/)
+carries the schedule, slides, handouts and readings, with a page for every
+meeting. Canvas carries grades and submissions.
+
 **Credit hours.** 3. Enrollment limited to AEM MPS students.
 
 ## Course description
 
-AEM 6991 is the first half of the MPS capstone sequence. Each team moves
-from a vague interest to a research plan that can be executed in AEM 6992
-in the spring. That plan is the deliverable.
+This is a core course for Master of Professional Studies (MPS) in Applied
+Economics and Management. It provides students with the opportunity to
+explore strategies for behavioral, quantitative, and qualitative
+problem-solving projects. We consider the conceptual challenges associated
+with identifying and defining a project topic and examine the practical
+tasks of selecting or collecting data, analyzing data, and reporting the
+results, including visualization and writing. The objective of the course
+is for students to understand how problems associated with different kinds
+of projects can be addressed with empirical methods. Many course
+activities will be structured as teamwork, and team leadership and
+management skills are a major component of the course. The course topics
+are introduced through readings, class discussion, and independent
+team-based research.
+
+AEM 6991 is the first half of the MPS capstone sequence. In this section,
+each team moves from a vague interest to a research plan that can be
+executed in AEM 6992 in the spring. That plan is the deliverable.
 
 The course runs in the order the work actually happens.
 
-| Part | What it does |
+| Part | What it covers |
 |:---|:---|
-| **Getting started** | Who is in the room, and what everyone is interested in |
-| **Foundations** | Causal language, where questions come from, ethical and legal obligations, and the tools |
-| **Methods & designs** | What models estimate, how estimates fail, and the designs that survive |
-| **Communication** | Writing, figures, and speaking --- each with session B on your own project |
-| **Delivery** | The midterm, and the pitch |
+| **Getting started** | Who is in the room, how the course runs, and what everyone is interested in |
+| **Foundations** | Theory and causal graphs. Where research questions come from and how to filter them. Ethical and legal obligations, including IRB review and data-use agreements. Using AI in research |
+| **Methods & designs** | Parameters, estimators and standard errors. How estimates fail, and what control variables can and cannot fix. Experiments, instrumental variables, regression discontinuity, difference-in-differences and panel designs |
+| **Communication** | Writing, figures and speaking, each applied in session B to your own project |
+| **Delivery** | The midterm, and the final presentations |
 
 Three commitments shape it.
 
@@ -74,13 +107,14 @@ rationalise a question around whatever they found. That is the most common
 way a capstone goes wrong. The conceptual half is taught on examples from
 industry and the news, before anyone opens a dataset.
 
-**Finding the question is a skill, not a preamble.** Most of your education
-has rewarded execution. AEM 6992 is where the executing happens. A bad
-question executed beautifully is still a bad project.
+**Finding the question is a skill.** Most of your education has rewarded
+execution. AEM 6992 is where the executing happens. A bad question executed
+beautifully is still a bad project.
 
 **Writing and teamwork run through the whole term.** Writing, figures
-and speaking each get a meeting. Each team writes its own ground rules in meeting 2, and every session B
-opens with a check-in that is written down and graded.
+and speaking each get a meeting. Each team writes its own ground rules in
+meeting 2, and every session B opens with a check-in that is written down
+and counts toward participation.
 
 No prior econometrics or programming is assumed.
 
@@ -121,78 +155,47 @@ This section adds two outcomes that serve the four above:
     relies on, what it assumes, and what it therefore can and cannot
     claim.
 
-## AI policy
-
-Generative AI tools are **permitted by default** for all coursework.
-Students are expected to use them, and to use them well. Three rules
-apply to every deliverable:
-
-1.  **Disclose what you used.** Every submitted deliverable carries a
-    short disclosure block: which tools, on which parts of the work.
-    The form is brief; what matters is that it exists.
-2.  **Verify what the AI produced.** AI output is your work, exactly as
-    code from a colleague would be. Two failure modes are graded
-    against explicitly, because they are the ones that destroy a
-    research proposal:
-    -   **Fabricated citations.** Models invent references, and they
-        do it convincingly. Every reference in every submission must be
-        one you have opened. A citation to a paper that does not exist
-        is a fabrication, not a typo.
-    -   **Plausible-but-wrong design advice.** Models will confidently
-        recommend an estimator whose assumptions your data violates.
-        The design you propose is yours.
-3.  **Do not paste restricted data into a public chatbot.**
-    Confidential, IRB-restricted, and proprietary data stay on your
-    machine. Cornell's rule gives restricted a definition: nothing
-    classified as [moderate risk or above](https://it.cornell.edu/regulated-data)
-    goes into a publicly available AI tool, and licensed data counts.
-    The approved tools are listed at the
-    [AI Innovation Hub](https://innovationhub.ai.cornell.edu/tools-resources/).
-
-Failure to disclose is an academic integrity violation under the
-Cornell Code. Failure to verify is graded against the rubric like any
-other error.
-
-::: {.callout-note appearance="simple"}
-**Note.** Other sections of AEM 6991 restrict generative AI. This one
-takes the opposite position, deliberately.
-
-The deliverable here is a research proposal. That is exactly the genre
-where unverified AI output does the most damage. So the skill worth
-teaching is verification, not abstinence.
-:::
-
 ## Assessment
 
-Half the grade is individual and half is team-based, so that no student can
-be carried and no student is sunk by a team.
+Half the grade is individual and half is team-based.
 
-| Component | Weight | Type |
-|:---|---:|:---|
-| In-class quizzes | 15 % | Individual |
-| Midterm | 15 % | Individual |
-| Participation | 20 % | Individual |
-| *Individual subtotal* | *50 %* | |
-| Project pitch --- 1 page, presented | 5 % | Team |
-| Proposal outline | 15 % | Team |
-| Research proposal --- written, and presented at meeting 14 | 30 % | Team |
-| *Team subtotal* | *50 %* | |
+| Component | Type | Due | Weight |
+|:---|:---|:---|---:|
+| In-class quizzes | Individual | Most weeks through Nov 11, in class | 15 % |
+| Midterm | Individual | Nov 18, in class | 15 % |
+| Participation | Individual | Throughout | 20 % |
+| *Individual subtotal* | | | *50 %* |
+| Project pitch --- one page, presented | Team | Oct 21\*, in class | 5 % |
+| Proposal outline | Team | Nov 11 | 15 % |
+| Final presentation | Team | Dec 2, in class | 10 % |
+| Research proposal, written | Team | Dec 11 | 20 % |
+| *Team subtotal* | | | *50 %* |
+| **Total** | | | **100 %** |
 
-Grading scale: A+ (≥ 98), A (≥ 92), A- (≥ 88), B+ (≥ 85), B (≥ 80),
-B- (≥ 75), C+ (≥ 70), C (≥ 65), C- (≥ 60), D (≥ 50), F (\< 50).
+\* Date to be confirmed. See the schedule.
+
+Each component is scored out of 100 and weighted as above. Grading scale:
+A+ (≥ 98), A (≥ 92), A- (≥ 88), B+ (≥ 85), B (≥ 80), B- (≥ 75), C+ (≥ 70),
+C (≥ 65), C- (≥ 60), D (≥ 50), F (\< 50). The final percentage is not
+rounded before the scale is applied.
 
 ### In-class quizzes (15 %)
 
-**A short quiz each week, in class, on your own device.** Each one
-closes session A. Each quiz is announced with the meetings it covers,
-and its questions come from those lectures.
+**Short quizzes in class, on your own device.** A quiz closes session A,
+and it is announced in advance together with the meetings it covers. Its
+questions come from those lectures. Expect one in most weeks through
+meeting 12. The exact number is not fixed.
 
 Most are scenario questions. *Here is a situation --- which design
 fits, and what would have to be true?* *Here is a design --- what would
 break it?* *Here is a step an AI just did for you --- how would you
 check it without reading the code?*
 
-**The lowest score is dropped, and there are no make-ups.**
+**How the quiz grade is computed.** Each quiz is scored as a percentage,
+and all quizzes count equally. Your lowest score is dropped and the rest
+are averaged. A missed quiz scores zero, and there are no make-ups. A
+quiz missed for an absence covered by an accommodation letter, a
+religious observance or documented illness is left out of the average.
 
 ### Midterm (15 %)
 
@@ -209,13 +212,15 @@ have not seen. There is nothing to revise beyond having turned up all term.
 
 ### Participation (20 %)
 
-You start with full marks and lose them. What costs points:
+**Participation is scored out of 100.** You start at 100 and lose points
+for the items below, down to a floor of zero. At a weight of 20 %, each
+point here is worth 0.2 of a point on the final grade.
 
-| | |
-|:---|:---|
+| | Points |
+|:---|---:|
 | Research interest survey not submitted, or late | −5 |
 | CITI human-participants training certificate not on Canvas by September 30, for a project with human participants | −5 |
-| Session-B check-in not filed | −2 each |
+| Your team's session-B check-in not filed | −2 each |
 | Peer evaluation not submitted on time | −3 each |
 | Arriving late, or leaving at the break | −2 each |
 | Absent without notice | −4 each |
@@ -228,19 +233,22 @@ what your team did since last week, what is stuck, and who does what next.
 Written down and handed in. It is the record that makes an uneven split of
 the work visible in week 4 rather than week 13.
 
-Peer evaluation runs twice, at meetings 6 and 12.
+Peer evaluation runs twice, at meetings 6 and 12, on
+[CATME](https://arielortizbobea.github.io/aem6991/fall-2026/teamwork.html#what-we-will-use-to-assess-it).
+It enters the grade only through the deduction above. Peer ratings do not
+adjust team grades.
 
 ### Team deliverables (50 %)
 
-**One paper, reached in three milestones.** A one-page pitch, then the whole
-argument as a detailed outline, then the written proposal. The argument is
-fixed before the sentences are, so a broken argument is caught at the
-outline where fixing it costs an afternoon rather than a week.
+**One paper, reached in three milestones and presented once.** A one-page
+pitch, then the whole argument as a detailed outline, then the written
+proposal, which the team presents at meeting 14 before handing it in. The
+argument is fixed before the sentences are, so a broken argument is caught
+at the outline where fixing it costs an afternoon rather than a week.
 
 {{< include _deliverables.qmd >}}
 
-The research proposal grade covers both the written proposal and the
-team's presentation of it at meeting 14.
+Every member of a team receives the same grade on each team deliverable.
 
 **The data section of the outline is the one that kills projects.** The most
 common way an MPS capstone fails is not a bad question. It is a good
@@ -278,12 +286,15 @@ self-critique** · work plan · research ethics · references.
 | **Weak** | Substantial sections restate the prompt or borrow text. The argument does not cohere. |
 | **Unacceptable** | Not submitted, submitted beyond the late policy, or so thin it shows no thought. |
 
+The final presentation is graded on the same scale. It is also graded on
+whether it fits the time allowed and on how the team answers questions.
+
 Two questions move a grade more than anything else. **Is the claim in the
 first sentence?** And **could it come out the other way?**
 
-**Late policy.** Team deliverables lose 10 % up to 8 hours late, 50 % from 8
-to 72 hours, and are not accepted after 72 hours. Notify me before the
-deadline if something has gone wrong.
+**Late policy.** Written team deliverables lose 10 % up to 8 hours late,
+50 % from 8 to 72 hours, and are not accepted after 72 hours. Notify me
+before the deadline if something has gone wrong.
 
 ## Course schedule
 
@@ -295,15 +306,14 @@ Fourteen meetings. Each runs the same shape:
 | 3:15--3:30 | Break |
 | 3:30--4:30 | Session B --- **your own project**, submitted before you leave |
 
-The weekly quiz closes session A.
+When there is a quiz, it closes session A.
 
-Session B is not a lab exercise on someone else's data. It applies the
-day's work to the team's actual project: conceptual clinics early in the
-term --- draw your graph, name your design, work out what data it needs
---- and hands-on work with the team's own data later in the term. The
-output is submitted the same
-day. Fourteen of these, accumulated, are most of the research design
-paper.
+Session B tests the day's concept on a shared case, then applies it to the
+team's own project. Early in the term that means drawing your graph, naming
+your design and working out what data it needs. Later it means writing,
+figures and a rehearsed presentation of your project. The output is
+submitted the same day. Accumulated, these pieces are most of the research
+proposal.
 
 ::: {.content-visible when-format="html"}
 Every meeting has its own page, reachable from the sidebar, carrying the
@@ -401,29 +411,66 @@ Mortensen on
 Stanley & Castles, *The So What Strategy*; Zelazny, *Say It With
 Charts*.
 
-## Attendance
+## Course policies
+
+### Attendance
 
 The format is once a week. So missing one meeting means missing two
 sessions.
 
 Attendance is recorded by the session-B check-in, which cannot be filed
-retrospectively. A quiz missed through absence scores zero. The dropped score absorbs
-one absence without penalty and without a conversation.
+retrospectively. To give notice of an absence, email me before the meeting
+starts. An absence with notice costs no participation points.
+
+A quiz missed through absence scores zero, unless the absence is excused
+as set out under the quizzes. The dropped score absorbs one absence without
+penalty and without a conversation.
 
 If you are going to miss more than two meetings, talk to me early
 rather than late.
 
-## Data practices
+### AI policy
 
-Quiz submissions are tied to your netid and timestamped. They are used
-for grading and attendance.
+Generative AI tools are **permitted by default** for all coursework.
+Students are expected to use them, and to use them well. Three rules
+apply to every deliverable:
 
-The roster, your submissions, and any per-student credentials are held
-in Cornell-managed or instructor-controlled storage. None of it is
-published. Course materials in the public repository never contain
-student-identifying data.
+1.  **Disclose what you used.** Every submitted deliverable carries a
+    short disclosure block: which tools, on which parts of the work.
+    The form is brief; what matters is that it exists.
+2.  **Verify what the AI produced.** AI output is your work, exactly as
+    code from a colleague would be. Two failure modes are graded
+    against explicitly, because they are the ones that destroy a
+    research proposal:
+    -   **Fabricated citations.** Models invent references, and they
+        do it convincingly. Every reference in every submission must be
+        one you have opened. A citation to a paper that does not exist
+        is treated as fabrication.
+    -   **Plausible-but-wrong design advice.** Models will confidently
+        recommend an estimator whose assumptions your data violates.
+        The design you propose is yours.
+3.  **Do not paste restricted data into a public chatbot.**
+    Confidential, IRB-restricted, and proprietary data stay on your
+    machine. Cornell's rule gives restricted a definition: nothing
+    classified as [moderate risk or above](https://it.cornell.edu/regulated-data)
+    goes into a publicly available AI tool, and licensed data counts.
+    The approved tools are listed at the
+    [AI Innovation Hub](https://innovationhub.ai.cornell.edu/tools-resources/).
 
-## Academic integrity
+Failure to disclose is an academic integrity violation under the
+Cornell Code. Failure to verify is graded against the rubric like any
+other error.
+
+::: {.callout-note appearance="simple"}
+**Note.** Other sections of AEM 6991 restrict generative AI. This one
+takes the opposite position, deliberately.
+
+The deliverable here is a research proposal. That is exactly the genre
+where unverified AI output does the most damage. So the skill worth
+teaching is verification, not abstinence.
+:::
+
+### Academic integrity
 
 Every student is expected to abide by the [Cornell University Code of
 Academic Integrity](https://theuniversityfaculty.cornell.edu/academic-integrity/).
@@ -436,21 +483,30 @@ real one.
 Collaboration is expected on team assignments. It is not permitted on
 individual ones.
 
-## Accommodations
+### Accommodations
 
 If you need academic accommodations, contact [Student Disability
 Services](https://sds.cornell.edu/). Then give me your accommodation
 letter as early in the semester as you can, so arrangements can be
 made.
 
-## Course materials
+### Inclusion
 
-Slides, readings, assignment specifications and the schedule live on
-the [course site](https://arielortizbobea.github.io/aem6991/). It is
-generated from a public repository and updated through the term.
+Students in this course come from many countries and backgrounds.
+Everyone should be able to ask a question and be wrong out loud. Argue
+hard about ideas and treat the people holding them with respect. If something in
+class gets in the way of that, tell me or the TA.
 
-Canvas carries grades and submissions.
+### Data practices
+
+Quiz submissions are tied to your netid and timestamped. They are used
+for grading and attendance.
+
+The roster, your submissions, and any per-student credentials are held
+in Cornell-managed or instructor-controlled storage. None of it is
+published. Course materials in the public repository never contain
+student-identifying data.
 
 ------------------------------------------------------------------------
 
-*Last updated: 2026-10-06. Schedule and policies may still change.*
+*Last updated: 2026-10-12. Dates marked with an asterisk in the schedule are still to be confirmed.*

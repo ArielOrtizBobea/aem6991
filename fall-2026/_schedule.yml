@@ -49,6 +49,8 @@
 #             sporadic and drawn from the lecture, so this is not a gate.
 #   books     "where to read more" — chapters of the three handbooks that
 #             fit this meeting. Markdown, rendered under its own heading.
+#   chapters  the same chapters in a few words, for the Readings column of
+#             the printed calendar
 #   due       anything due on or around this meeting
 #   links     extra sidebar entries belonging to this meeting, each with
 #             `text` and `href`. They sit under the meeting, indented to
@@ -112,15 +114,18 @@ parts:
     tab: "Delivery"
     title: "Delivery"
     blurb: >
-      The midterm, and then the pitch. A semester of weekly pieces becomes
-      one proposal somebody could pick up and execute in January.
+      The midterm, and then the final presentations. A semester of weekly
+      pieces becomes one proposal somebody could pick up and execute in
+      January.
 
 # Individual writing pieces, assessed together as the writing portfolio.
 # Two of them are reverse-outlining: going from a finished text back to the
 # outline that must have produced it. You cannot build an outline until you
 # can see one.
 # Team deliverables. One paper, reached in three milestones: a one-page pitch,
-# then the whole argument as a detailed outline, then the written proposal.
+# then the whole argument as a detailed outline, then the written proposal,
+# presented at meeting 14 before it is handed in. The presentation is graded
+# separately (10 %) from the written proposal (20 %).
 # Nothing is submitted as a finished paper out of nowhere — the argument is
 # fixed before the sentences are. The syllabus table is generated from this
 # block, so the dates cannot drift from the meeting schedule.
@@ -139,10 +144,17 @@ deliverables:
     desc: "The whole proposal as a detailed outline. One topic sentence per paragraph, in order, with the evidence noted underneath — the citation, the number, the figure you will point at. It has to cover the question, the identification strategy and the assumption carrying it, the unit and sample, the data and exactly how you get it, the threats to validity, and the work plan for the spring. Exchanged with a partner team at meeting 12, who referee it. If the argument does not work here, it will not work at 5,000 words."
 
   - num: 3
+    name: "Final presentation"
+    weight: "10 %"
+    due_meeting: 14
+    when: "in class"
+    desc: "The proposal presented to the class in the time allowed, followed by questions from the room."
+
+  - num: 4
     name: "Research proposal"
-    weight: "30 %"
+    weight: "20 %"
     due_date: 2026-12-11
-    desc: "~5 pages, written out from the outline you workshopped, and presented to the class at meeting 14. The plan somebody could pick up and execute in January."
+    desc: "~5 pages, written out from the outline you workshopped and the presentation you gave. The plan somebody could pick up and execute in January."
 
 meetings:
   - num: 1
@@ -156,6 +168,7 @@ meetings:
     b: "Ten-minute team check-in first, in writing, on the sheet on your table. Who is here. What you did since last week. What is stuck. Who does what next, by name and by date. In week three, nothing is stuck yet is an acceptable answer. Then your own project, which is the half you hand in. You write candidate questions and put each one through the four tests, and you kill the ones that fail. The tests you cannot run on your own work are run by another team, because every team thinks its own question matters and a stranger is the only honest judge of that. Your sheet goes in before you leave, and it is what your pitch gets built from. A question you kill in September is a month you do not lose in March."
     builds: "Your team's question sheet: candidate questions, each run through the four tests of a good idea, with the ones that fail killed on the record and the reason named"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 1 on what research is."
+    chapters: "Adams ch. 1"
     reading: "TBD"
     due: "Research interest survey, on Canvas before meeting 2"
 
@@ -170,6 +183,7 @@ meetings:
     b: "Your team is already yours. I email the teams on Tuesday night and there is a numbered sheet on each table, so the first three minutes are sitting down rather than listening to a list. Then ground rules, one page, signed by everyone, written while the team still gets along. Who does what. What happens when somebody misses a deadline. How you settle a disagreement, and who breaks a tie. Then your own project, on paper, by hand. Your team has a shared interest and not yet a question, so take the closest thing you have and draw it: the treatment, the outcome, the one back door you would have to close, and the one variable you must not touch. Then every team reports. Two and a half minutes each, hard stop, on a timer. Your question, and the graph you drew. Nine teams means you hear eight other projects before you leave, and this is the only afternoon all term when the whole room sees what everybody chose. Your sheet is disposable and it will be wrong, which is the point of drawing it in September. You redraw it when we reach research designs, and the version that survives the room is the figure in your identification section. Both sheets go in before you leave."
     builds: "Your team's ground rules, and the first causal graph of your own question — treatment, outcome, the back door you must close, and the variable you must not touch"
     books: "[Remix](https://mixtape.scunning.com/) ch. 3 on directed acyclic graphs and ch. 4 on potential outcomes. [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) ch. 1, *Questions about Questions*, is eight pages and needs no maths."
+    chapters: "Remix ch. 3--4; Mostly Harmless ch. 1"
     reading: "TBD"
     due: "Your team's written ground rules — agreed and handed in today"
     links:
@@ -189,6 +203,7 @@ meetings:
     b: "Check in first, in writing, nine minutes, on the sheet already in your envelope. Who is here. What you did since last week. What is stuck. Who does what next, by name and by date. In week three, nothing is stuck yet is an acceptable answer. Then the shared case. Every team maps the same question from the same two dataset cards: is flood risk priced into house prices, and did a local flood change that? Six rows, all of them, with how you checked each thing you claim to have. Then the two lines at the bottom: the row that binds and its date, and what the question becomes if it does not close. The same object for nine teams, so the maps are comparable. Three things about these datasets are easy to miss, and the draw is where you find out whether you missed them. One team is drawn at random to read its map aloud, blanks included, while the room attacks. Naming a specific row that is blank, unchecked or wrong is an attack. Calling the whole map thin is not. A point for every attack that lands, and I close with whichever trap nobody found. Then your own project, which is the half you hand in. Three candidate questions, and label the route of each. Each with its archetype and the role of the person who would act on the answer or pay for it. One of them run through all four filters in writing, not in your heads. A second crossed out with the filter that killed it named, because a team that kills nothing has not used the filter. For the third, the one row that would kill it. Then a resource map for the strongest survivor, with every gap owned by somebody and dated, or the question moved. The last lines on the sheet are the ones I read first: the row that binds and the date it has to close by, and what the question becomes if it does not. A second team defends its own map if the clock allows. Four sheets go in your envelope before you leave: the check-in, the shared map, the slate and your own map. The slate and the map are what your pitch gets built from. A question you kill in September is a month you do not lose in March."
     builds: "Your team's question sheet, three candidates each labelled with its route, its shape and who acts or pays, run through the four filters with one killed on the record, and the resource map of the survivor with the row that stops them dated and the question it becomes if that row does not close"
     books: "[Adams, Khan, Raeside and White (2007)](https://doi.org/10.4135/9788132108498), Research Methods for Graduate Business and Social Science Students, ch. 3 on the research cycle and ch. 4 on literature review and critical reading."
+    chapters: "Adams ch. 3--4"
     reading: "TBD"
     links:
       - text: "Resource map and question slate"
@@ -207,6 +222,7 @@ meetings:
     builds: "Your project's IRB and DUA checklist, signed by every member: whether it needs an IRB application, whether any data source needs a data-use agreement, and the date the slowest gate has to start"
     due: "CITI human-participants training, for teams whose project involves human participants — certificate on Canvas before meeting 6 (September 30)"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 2 on research ethics."
+    chapters: "Adams ch. 2"
     reading: "TBD"
     links:
       - text: "IRB and DUA checklist"
@@ -227,6 +243,7 @@ meetings:
     b: "A live demo of how to use AI to get a research project started."
     builds: "Your candidate dataset interrogated — or, if you do not hold one yet, the named access route and plan B for getting it"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 7 on secondary data collection."
+    chapters: "Adams ch. 7"
     reading: "TBD"
 
   - num: 6
@@ -240,6 +257,7 @@ meetings:
     b: "Ten minutes of simulation first, driven from the front. Draw from a world you control. Watch the p-value distribution under the null. Move the sample size and the variation, and watch it shift. Then fit the same world in and out of sample, and watch an excellent-looking model fail on data it has not seen. Nothing to install. Then the cards. Each team gets an analyst who ran something and said something about it, and every one overclaims differently. A count outcome fitted by OLS and predicted below zero. A 0.03% lift called highly significant across two million users. A wide interval called no effect. An elasticity estimated off two price changes in three years. A churn probability of 112%. Work out what they are actually entitled to claim. Then a team is drawn at random to defend that while the room pushes back. The last line on the sheet is the one that matters: is your own project at risk of the same error?"
     builds: "The overclaim your own project is most at risk of making"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 11 on descriptive statistics and ch. 12 on correlation and regression."
+    chapters: "Adams ch. 11--12"
     reading: "TBD"
     due: "Rate your teammates"
     links:
@@ -257,6 +275,7 @@ meetings:
     b: "Ten minutes of team check-in, then the results-critique cards again — the same eight analysts, dealt fresh, and this time each one has come back with a fix. They added controls. Fifteen minutes to rule on it. Name the failure in the morning's vocabulary. Say which way it pushes the estimate. Say whether more data would fix it. Then rule on the fix itself: does the control close a back door, sit on the path from cause to effect, or open a door by being conditioned on? Then one team is drawn at random to defend at the front while the room attacks, and we draw again as far as the clock allows. Nobody knows in advance whether they are up. Points for attacks that land, and you have to name what is wrong, not just dislike it. Card 7 is the one to watch. The advertising model with an R² of 0.94, now with month and competitor spend added, and still uninterpretable — the budget was set from the sales forecast, so the arrow runs backwards, and no control fixes an arrow that runs backwards. Then your own project. One threat, the one your design actually has to survive. Write down which way it pushes your estimate, whether more data would fix it, the variable that would close it, and whether you can obtain that variable before January. If you cannot, write the sentence you will put in your limitations section instead. One page, per team, handed in before you leave. You will be answering that threat in November."
     builds: "The one threat your design must survive — its direction, and whether controls can close it"
     books: "[Remix](https://mixtape.scunning.com/) ch. 5 on unconfoundedness. [Adams](https://doi.org/10.4135/9788132108498) ch. 14 on reliability and validity."
+    chapters: "Remix ch. 5; Adams ch. 14"
     reading: "TBD"
 
   - num: 8
@@ -270,6 +289,7 @@ meetings:
     b: "Each team draws a setting nobody in the room owns. A bank with an email list. A scholarship cutoff. An NGO that gave filters to whoever asked. Fifteen minutes to draw the graph, name a design, and state the assumption carrying it. Then teams are drawn at random to defend for four minutes while the room attacks. What breaks this? Nobody knows in advance whether they are up. One card cannot be answered honestly at all, and the team holding it has to be willing to say so. Last: is an experiment, an instrument or a discontinuity actually open to your own project? Most teams find the answer is no. Finding that out today rather than in November is the point."
     builds: "Whether an experiment, instrument or discontinuity is open to you"
     books: "[Remix](https://mixtape.scunning.com/) ch. 4 on randomization, ch. 6 on regression discontinuity, ch. 7 on instrumental variables. In [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/), the same three are ch. 2, 6 and 4."
+    chapters: "Remix ch. 4, 6--7; Mostly Harmless ch. 2, 4, 6"
     reading: "TBD"
     links:
       - text: "Design scenarios"
@@ -286,6 +306,7 @@ meetings:
     b: "Same format, higher stakes. First a card apiece — a staggered rollout, a state border, a fee that changed for accounts opened after a date. Fifteen minutes to draw it and name the design. Then the part that counts. Teams are drawn at random to put up their own project's design, draw the graph, state the assumption carrying the estimate, and defend it while the room tries to break it. Everyone presents eventually. Nobody knows when. Whatever survives is the figure that goes in your identification section, so draw it to keep. And write down the attack that landed. That is your limitations paragraph."
     builds: "Your design defended in public, plus the attack that landed — the identification section and the limitation"
     books: "[Remix](https://mixtape.scunning.com/) ch. 8 and 9 on panel designs and difference-in-differences, ch. 10 if your rollout is staggered. [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) ch. 5."
+    chapters: "Remix ch. 8--10; Mostly Harmless ch. 5"
     reading: "TBD"
     due: "Project pitch — one page, presented in class"
     reschedule: "Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed"
@@ -301,6 +322,7 @@ meetings:
     b: "Your own problem statement, written in the room. One topic sentence per paragraph, in order, and nothing else — no prose. Then swap with another team. They get your skeleton and nothing else, and they have to tell you what your argument is. Where they cannot, your argument is not there yet. Whatever survives that is the spine of your pitch next week, and of the proposal outline in November."
     builds: "Your problem statement, as an outline somebody outside your team could follow"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 4 on literature review and critical reading, and ch. 16 on writing up."
+    chapters: "Adams ch. 4, 16"
     reading: "TBD"
 
   - num: 11
@@ -314,6 +336,7 @@ meetings:
     b: "Six figures, each lying a different way, one per team, twenty minutes. A truncated axis turning three points of satisfaction into a soaring bar chart. Two axes on unrelated scales manufacturing a correlation between ad spend and sales. Four quarters shown out of eight years. An aggregate rising while every single region falls. Circles where two million got twice the radius of one million, so the picture is four times bigger and not two. Complaints by state with no population underneath. Name the trick, say what the figure is entitled to claim, and redraw it honestly on the sheet. The redraw still has to make a point, and that is where most teams stall — naming the lie takes two minutes, replacing it takes the rest. Then one team is drawn at random to put its redraw at the front while the room attacks, and we draw again as far as the clock allows. Points for an attack that lands, and you have to name the trick rather than say you dislike the picture. Card 4 is the aggregation one and card 6 is the rate one. Those two are where the morning either landed or it did not. Then your own project, on paper, by hand. Draw the one figure it lives or dies on. Not a figure — the figure, the one a reader looks at before deciding whether to believe you. For most of you it is one of three: the picture showing that your variation exists, the picture showing your comparison group looked like your treated group before anything happened, or the picture showing the outcome move. You do not have the data yet, so you draw it empty. Both axes labelled with their units. What one point on it is. Which comparison is on the page. The claim written across the top as a sentence. Then draw it a second time as it would look if you are wrong. If the two drawings look the same, the figure cannot support the claim, and finding that out in November is cheap. Both drawings are handed in before you leave."
     builds: "Your project's key figure, drawn twice — as you expect it to look, and as it looks if you are wrong"
     books: "Zelazny, *Say It With Charts*, for the grammar of it. [Adams](https://doi.org/10.4135/9788132108498) ch. 11 for what a descriptive figure is doing."
+    chapters: "Zelazny; Adams ch. 11"
     reading: "TBD"
     links:
       - text: "Figure critique cards"
@@ -330,6 +353,7 @@ meetings:
     b: "Ten minutes of team check-in first, with one agenda item today: who says which slide at meeting 14, and who holds the clock. Then the shared case. I give a five-minute pitch from the front and it is deliberately bad — an agenda slide, a title called \"Results,\" four bullets a slide, the claim arriving on slide 4, forty seconds over, and one question answered with a bluff. Everybody scores the same pitch on the same card. What did the first thirty seconds do? Where did the claim first appear? What was the ask? Then the part that gets compared: every team rewrites my five slide titles as claims, working from the same five labels, and the best set goes on the screen next to mine. Same object, same constraint, so a good rewrite and a lazy one are visible side by side. Then the dress rehearsal, which is the rest of the hour. Order is drawn at random. Every team pitches its own project, three minutes, hard stop, five slides with claim titles. Then the room attacks — and it attacks the argument, not the delivery. Attacks come in four named types and nothing else counts: the data cannot answer this question, the assumption carrying the estimate is false in this setting, the comparison group is not comparable, or the answer would not change anyone's decision. \"You seemed nervous\" is not an attack and scores nothing. Points for attacks that land, as always. Each team leaves with four things in writing. Their actual clock time. The attack slips, each naming its type. One line from me. And the one that does the real work: before any discussion, two other teams write down in a single sentence the claim they think you just made, and you write down the claim you meant. You leave holding both. Where those two sentences differ is your meeting-14 rewrite, and you have three weeks to close the gap. Handed in before you leave: the five-slide dress-rehearsal deck, your written thirty-second opening and thirty-second close, and the claim-we-meant against claim-they-heard sheet."
     builds: "Your final-presentation deck, rehearsed and attacked — plus the gap between the claim you made and the claim the room heard"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 16 on presenting."
+    chapters: "Adams ch. 16"
     reading: "TBD"
     due: "Proposal outline · Rate your teammates"
 
@@ -353,13 +377,14 @@ meetings:
     slug: "14-final-presentations"
     date: 2026-12-02
     part: 5
-    title: "The pitch"
+    title: "Final presentations"
     desc: "Final presentations, and each team reviews another team's work. Then what your team owes AEM 6992 over the break."
     goal: "Present a plan somebody could pick up and execute in January. Know what your team owes AEM 6992 over the break."
     a: "Final presentations. Each team reviews another team's work."
     b: "The handoff to AEM 6992. What each team does over the break."
     builds: "Your plan, pitched — and what your team owes AEM 6992 over the break"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 15 on conducting your research, which is mostly about the months after this one."
+    chapters: "Adams ch. 15"
     reading: "TBD"
     due: "Final presentation, in class"
 

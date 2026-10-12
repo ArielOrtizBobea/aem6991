@@ -62,7 +62,7 @@ website:
           contents:
             - text: "13 Midterm"
               href: fall-2026/sessions/13-midterm.qmd
-            - text: "14 The pitch"
+            - text: "14 Final presentations"
               href: fall-2026/sessions/14-final-presentations.qmd
         - section: "Resources"
           contents:

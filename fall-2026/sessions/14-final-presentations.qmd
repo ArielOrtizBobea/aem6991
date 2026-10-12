@@ -1,7 +1,7 @@
 ---
-title: "14 · The pitch"
+title: "14 · Final presentations"
 subtitle: "Wednesday, December 2, 2026"
-pagetitle: "AEM 6991 · 14 The pitch"
+pagetitle: "AEM 6991 · 14 Final presentations"
 ---
 
 ::: {.callout-note appearance="simple"}

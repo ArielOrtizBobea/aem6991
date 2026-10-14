@@ -213,6 +213,7 @@ estimates were sensitive to the sample and the variables used.
 1. **Randomized experiments.** A coin assigns the treatment. eBay switched off its Google ads in 68 of 210 US market areas, picked by a randomized draw.
 2. **Instrumental variables.** Something as good as random pushes some units into the treatment and affects the outcome only through it. The Vietnam-era draft lottery pushed some men into the army.
 3. **Regression discontinuity.** Units just above and just below a cutoff are alike but treated differently. Yelp shows an average rating of 3.74 as 3½ stars and 3.76 as 4.
+4. **Matching a design to a question.** Seven published studies each pose a question in the setting their authors faced.
 
 ::: {.notes}
 One minute. Say the three in a sentence each; the slide gives the room
@@ -1371,6 +1372,299 @@ researcher the fewest choices show the least evidence of choice.
 The population column is the session B question that matters for the
 proposal: when the team names the design, they name who the estimate is
 about, and the card asks whether that is who the decision concerns.
+:::
+
+# 4. Matching a design to a question
+
+::: {.notes}
+Thirty seconds. Seven research questions, each from a published study and
+told as the setting its authors faced. For each, the room proposes a
+design and names the assumption before the click shows what the authors
+did. The order is two experiments, two instruments, two discontinuities,
+and one that needs next week's design. Budget about five minutes each.
+:::
+
+## Does treating children for worms keep them in school? {.case}
+
+- In 1998 a nonprofit in western Kenya planned free deworming for 75 primary schools. It could not afford to treat them all at once.
+- Worms spread through soil contaminated by infected children.
+- **Which design could identify the effect, and what would it assume?**
+
+::: {.fragment}
+- **What the authors did**: assigned schools, by alphabetical rotation within zones, to three groups of 25 starting in 1998, 1999 and 2001.
+- School participation rose 7.5 points in treated schools. Assigning children within schools would have missed the gains of untreated classmates.
+
+[Miguel and Kremer (2004), *Worms: Identifying Impacts on Education and Health in the Presence of Treatment Externalities*, Econometrica 72, 159–217.](https://doi.org/10.1111/j.1468-0262.2004.00481.x){style="font-size:0.55em; color:#6b6b6b"}
+:::
+
+::: {.notes}
+Five minutes. The answer to draw out: randomize schools, because of
+spillovers. If children were randomized within a school, the untreated
+children would catch fewer worms from their treated classmates, so the
+control group would be partly treated and the comparison would
+understate the effect. The paper says individual randomization would
+"doubly" underestimate: it misses the spillover and shrinks the
+difference. The phase-in answers the NGO's budget constraint and the
+ethics question: every school is treated eventually, and the
+not-yet-treated are the comparison. This is the unit-of-randomization
+slide from section 1, with a real cost.
+
+Details for questions. The NGO was ICS Africa, working with the Busia
+District health office; over 30,000 pupils. Assignment was stratified by
+zone, then schools were listed alphabetically and every third went to a
+group. That is close to random but is not a lottery, and the
+epidemiologists who re-analyzed the data call it quasi-randomized. The
+headline 7.5 points is the total effect in treated schools, including
+spillovers within the school; the simple treated-minus-comparison
+difference is 5.1 points, and spillovers raised participation across the area, comparison schools
+included, by about 2
+points. Absenteeism fell by a quarter. Test scores did not move. The
+treatment came with worm-prevention lessons, so it is a bundle.
+
+The replication dispute. In 2015 Aiken, Davey, Hargreaves and Hayes
+re-ran the analysis with the original data, code and methods
+(International Journal of Epidemiology 44,
+<https://doi.org/10.1093/ije/dyv127>). After correcting coding errors,
+chiefly in the spillover to schools 3 to 6 km away, they found little
+evidence of spillovers to nearby schools, and the combined effect fell to
+3.9 points and lost significance. A companion paper by Davey, Aiken,
+Hayes and Hargreaves re-analyzed the data with epidemiological methods
+(<https://doi.org/10.1093/ije/dyv128>). Hicks, Kremer and Miguel replied that the main effects survive
+(<https://doi.org/10.1093/ije/dyv129>). A good example of why data and
+code are published.
+:::
+
+## How much does the look of a loan offer matter next to its price? {.case}
+
+- In 2003 a South African lender mailed loan offers to 53,194 former clients, to learn what brought them back.
+- Each letter carried an interest rate, a deadline, and design features such as a photo.
+- **Which design could identify the effect, and what would it assume?**
+
+::: {.fragment}
+- **What the authors did**: the rate, the deadline and eight design features were each randomized, independently, on every letter.
+- A woman's photo instead of a man's raised demand about as much as a 25% rate cut.
+
+[Bertrand, Karlan, Mullainathan, Shafir and Zinman (2010), *What's Advertising Content Worth? Evidence from a Consumer Credit Marketing Field Experiment*, Quarterly Journal of Economics 125, 263–305.](https://doi.org/10.1162/qjec.2010.125.1.263){style="font-size:0.55em; color:#6b6b6b"}
+:::
+
+::: {.notes}
+Five minutes. The answer to draw out: randomize each feature
+independently on each letter, a factorial design. Every feature then has
+its own randomized comparison, and the randomized interest rate gives a
+price to measure each feature against. The unit is the client, because
+each client gets one letter and clients do not interact.
+
+What to press on. Thirteen content dummies, coding the eight features, mean about one significant
+result by chance at 5%, which the authors say themselves: meeting 7's
+multiple-testing problem. They also say they had power to detect only
+large effects, equivalent to a 25% to 38% rate cut. The photo comparison
+is a woman's photo against a man's photo; any photo against no photo had
+no significant effect. In the working paper, the effect was significant
+for male clients and not for female clients. Longer deadlines raised
+take-up strongly. Mean take-up was 8.5%.
+
+The lender made small, short-term, high-interest loans to working poor
+clients; offered monthly rates ran from 3.25% to 11.75%. For a firm, this
+is the A/B test done properly: many arms, one randomization each, and a
+price arm to put every effect in money.
+:::
+
+## Does a third child reduce how much mothers work? {.case}
+
+- In US census data, mothers of three children work less than mothers of two.
+- Women who want large families may also prefer to work less, which confounds the comparison.
+- The 1980 and 1990 censuses record each mother's children and her work.
+- **Which design could identify the effect, and what would it assume?**
+
+::: {.fragment}
+- **What the authors did**: the instrument was whether the first two children had the same sex. It raised the chance of a third by 6 points.
+- By IV, a third child cut compliers' work by 5.7 weeks a year. OLS gave 9.0 weeks.
+
+[Angrist and Evans (1998), *Children and Their Parents' Labor Supply: Evidence from Exogenous Variation in Family Size*, American Economic Review 88, 450–477.](https://doi.org/10.3386/w5778){style="font-size:0.55em; color:#6b6b6b"}
+:::
+
+::: {.notes}
+Five minutes. The answer to draw out: something as good as random that
+moves family size and touches work only through it. Many parents want
+one boy and one girl, and the sex of a child is close to a coin flip, so
+parents of two boys or two girls are more likely to try again. 37.2% of
+mothers with a boy and a girl had a third child, against 43.2% with two
+of the same sex (1980). Numbers above are for all women in the 1980
+census; the 1990 census gives similar results. OLS overstates the effect,
+as the selection story predicts. Husbands' work did not respond.
+
+The assumptions to argue. Exclusion: same-sex siblings can share clothes
+and rooms, which lowers the cost of children and could change work
+directly (Rosenzweig and Wolpin 2000, Journal of Economic Literature 38,
+827–874, <https://doi.org/10.1257/jel.38.4.827>). Monotonicity: no parent may
+do the opposite of what the instrument pushes. Parents who want two sons
+would stop after two boys and try again after a boy and a girl, which
+makes them defiers. Son preference among US parents is the reason to
+think some exist (Dahl and Moretti 2008, Review of Economic Studies 75,
+1085–1120, <https://doi.org/10.1111/j.1467-937X.2008.00514.x>; Huber
+2015, LABOUR 29, 1–14, <https://doi.org/10.1111/labr.12045>, who tests
+the instrument and finds no violation). The compliers are
+parents who had a third child only because the first two matched.
+
+The authors also used twins at the second birth as an instrument, with a
+first stage of 60 points. Twin births turn out to be related to the
+mother's health (Bhalotra and Clarke 2019, Review of Economics and
+Statistics 101, 853–864, <https://doi.org/10.1162/rest_a_00789>), so
+nature's coin is not always fair. The journal article has no DOI; the
+link goes to the NBER working paper.
+:::
+
+## How sensitive are fish buyers to price? {.case}
+
+- At New York's Fulton Fish Market, dealers sell fresh whiting to shops and restaurants at unposted prices.
+- Supply and demand both shift from day to day, so price and quantity alone do not trace out demand.
+- One dealer's records cover 111 trading days in 1991 and 1992.
+- **Which design could identify the effect, and what would it assume?**
+
+::: {.fragment}
+- **What the authors did**: stormy weather at sea cut the catch and raised the price. Weather at sea was the instrument.
+- By IV, a 10% price rise cut quantity by about 10%. OLS gave about 5%.
+
+[Angrist, Graddy and Imbens (2000), *The Interpretation of Instrumental Variables Estimators in Simultaneous Equations Models with an Application to the Demand for Fish*, Review of Economic Studies 67, 499–527.](https://doi.org/10.1111/1467-937X.00141){style="font-size:0.55em; color:#6b6b6b"}
+:::
+
+::: {.notes}
+Five minutes. This is the bike-rental demo from section 2 with real
+data: something that shifts supply and not demand. Students who
+remember the fuel price will reach for weather. Stormy days were defined
+by wave height above 4.5 feet and wind above 18 knots off Long Island,
+averaged over the three days before the market. 32 of the 111 days were
+stormy.
+
+The numbers. The IV price elasticity is about −1.1 with the stormy
+instrument, the OLS about −0.5, from the working-paper version of the
+article and Imbens's 2014 restatement on the same data (Statistical
+Science 29, 323–358, <https://doi.org/10.1214/14-STS480>). The journal
+tables may differ slightly, so the slide rounds.
+
+The assumptions to argue, which the authors list themselves. Weather at
+sea may go with weather on shore, which could change how many people buy
+fish. Buyers who know a storm is coming might change when they shop. The
+data are one dealer's, so storms must hit all dealers alike. The
+estimate is local: storms move prices in the middle of the range, so it
+says little about demand at very low or very high prices. The paper's
+own contribution is what IV estimates when demand is neither a straight
+line nor the same every day, stated in potential outcomes: a weighted average of slopes, the LATE idea for supply and demand.
+:::
+
+## Does drinking raise death rates among young adults? {.case}
+
+- Young adults who drink more die more often, but risk-takers also drink more.
+- In the United States, buying alcohol becomes legal on the 21st birthday.
+- US death records give the exact dates of birth and death for every death from 1997 to 2004.
+- **Which design could identify the effect, and what would it assume?**
+
+::: {.fragment}
+- **What the authors did**: compared people just before and just after their 21st birthday. Days spent drinking rose about 21% at 21.
+- Deaths jumped about 9%, mostly from motor vehicle accidents, suicides and alcohol-related causes.
+
+[Carpenter and Dobkin (2009), *The Effect of Alcohol Consumption on Mortality: Regression Discontinuity Evidence from the Minimum Drinking Age*, American Economic Journal: Applied Economics 1, 164–182.](https://doi.org/10.1257/app.1.1.164){style="font-size:0.55em; color:#6b6b6b"}
+:::
+
+::: {.notes}
+Five minutes. The answer to draw out: a discontinuity in age at 21. The
+running variable is age in days; nobody can choose their birthday, so the
+manipulation worry from the density slide does not arise, though the
+paper itself runs no density test. Drinking comes from a national health
+survey with exact birth and interview dates.
+
+The assumption to argue is continuity: nothing else that affects deaths
+may change at 21. Students may name other things that switch on at 21
+in the United States, which is the right attack. The authors show
+education, employment and insurance do not jump. They also add dummies
+for the birthday itself, because deaths spike on the day of the party.
+
+The numbers. Deaths rose about 9% (0.087 in the preferred specification,
+0.074 to 0.096 across the four), about 10
+per 100,000 person-years. Deaths mentioning alcohol rose 35%, suicides
+16%, motor vehicle deaths 15%; homicides did not change. Dividing the
+jump in deaths by the jump in drinking days gives an elasticity of 0.43,
+which is a fuzzy discontinuity: it assumes the whole jump in deaths runs
+through drinking days, an exclusion restriction. The drinking jump is
+only marginally significant (t about 1.9). The estimate is local to 21
+and says nothing direct about a drinking age of 18.
+:::
+
+## Do decades of polluted air shorten lives? {.case}
+
+- From the 1950s, China gave free heating coal only north of the Huai River.
+- The river lies near where January averages 0°C. Coal boilers heat homes to the north.
+- Death records by cause cover 145 sites from 1991 to 2000.
+- **Which design could identify the effect, and what would it assume?**
+
+::: {.fragment}
+- **What the authors did**: fit one cubic curve in latitude with a jump at the river. Particle pollution was 55% higher to the north.
+- Life expectancy was 5.5 years lower to the north. A 2017 study with local linear fits found 3.1 years.
+
+[Chen, Ebenstein, Greenstone and Li (2013), *Evidence on the Impact of Sustained Exposure to Air Pollution on Life Expectancy from China's Huai River Policy*, PNAS 110, 12936–12941.](https://doi.org/10.1073/pnas.1300018110){style="font-size:0.55em; color:#6b6b6b"}
+:::
+
+::: {.notes}
+Five minutes. The answer to draw out: a discontinuity in geography, with
+latitude relative to the river as the running variable. People were not
+assigned to a side by their health, and the policy was set on a climate
+line decades earlier. Pollution here is total suspended particulates,
+dust and soot, measured in 90 cities.
+
+The assumptions to argue. Continuity: places just north and south of the
+river differ only in heating. Attacks: the line is a climate boundary, so
+winters are colder to the north, which could matter for health directly;
+people may migrate across the line. The authors find no jump in deaths
+from causes unrelated to the heart and lungs, a placebo outcome.
+
+The method lesson ties to the local-linear slide. The 2013 estimate fit
+one cubic polynomial in latitude across the whole country. Gelman and
+Zelizer criticized that fit (Research and Politics 2, 2015,
+<https://doi.org/10.1177/2053168015569830>), and Gelman and Imbens made
+the general case against high-order polynomials in discontinuity designs
+(Journal of Business and Economic Statistics 37, 447–456, 2019,
+<https://doi.org/10.1080/07350015.2017.1366909>). The 2017 follow-up by
+Ebenstein, Fan, Greenstone, He and Zhou used newer data, a different
+pollutant (PM10) and local linear fits: PM10 46% higher and life
+expectancy 3.1 years lower north of the river (PNAS 114, 10384–10389,
+<https://doi.org/10.1073/pnas.1616784114>). The finding survived with a
+smaller magnitude.
+:::
+
+## Did mobile phones raise fishermen's profits? {.case}
+
+- Fishermen in Kerala, India, could reach one beach market a day and saw no other prices. Some days they dumped unsold fish.
+- Mobile service reached three coastal regions in 1997, 1998 and 2000. A survey tracked 15 markets weekly.
+- **Which design could identify the effect, and what would it assume?**
+
+::: {.fragment}
+- **What the author did**: compared each region's change after service arrived with the change in the other regions, next week's difference-in-differences.
+- Price gaps between markets shrank sharply, waste fell from 5–8% of the catch to zero, and profits rose 8%.
+
+[Jensen (2007), *The Digital Provide: Information (Technology), Market Performance, and Welfare in the South Indian Fisheries Sector*, Quarterly Journal of Economics 122, 879–924.](https://doi.org/10.1162/qjec.122.3.879){style="font-size:0.55em; color:#6b6b6b"}
+:::
+
+::: {.notes}
+Five minutes. The case none of today's three designs fits well. Nobody
+randomized the towers, no instrument moves phone use without touching
+fishing, and there is no score with a cutoff. What there is: the same
+change arriving in different places at different times. The comparison
+is each region before and after, against each of the other regions.
+Some of those were already connected, such as region I as the control
+for region II, which is the staggered-timing problem next week takes up.
+
+The assumption to argue: without phones, the regions would have moved
+alike. Providers rolled out service city by city in order of population,
+which is not random but is unrelated to the fish catch on its face.
+Next week covers this assumption, parallel trends, and how staggered
+timing can mislead.
+
+Numbers. The coefficient of variation of prices across markets fell from 60–70% to 15% or
+less; by 2001 over 60% of boats used phones; retail sardine prices fell
+just under 4%. Boats without phones also gained, through better-behaved
+prices. Later field work argues the result rests partly on Kerala's coastline
+and credit relationships (Srinivasan and Burrell 2013,
+<https://doi.org/10.1145/2516604.2516618>).
 :::
 
 ## Can your project use one of these designs?

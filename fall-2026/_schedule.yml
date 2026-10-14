@@ -122,8 +122,8 @@ parts:
 # Two of them are reverse-outlining: going from a finished text back to the
 # outline that must have produced it. You cannot build an outline until you
 # can see one.
-# Team deliverables. One paper, reached in three milestones: a one-page pitch,
-# then the whole argument as a detailed outline, then the written proposal,
+# Team deliverables. One paper, reached in three milestones: a two-page project
+# description, then the whole argument as a detailed outline, then the written proposal,
 # presented at meeting 14 before it is handed in. The presentation is graded
 # separately (10 %) from the written proposal (20 %).
 # Nothing is submitted as a finished paper out of nowhere — the argument is
@@ -131,11 +131,11 @@ parts:
 # block, so the dates cannot drift from the meeting schedule.
 deliverables:
   - num: 1
-    name: "Project pitch"
+    name: "Project description"
     weight: "5 %"
     due_meeting: 9
-    when: "in class"
-    desc: "One page, and five minutes in front of the room. The question, why it matters, which archetype it is, and what data would answer it. This is the first time the project has to survive an audience, and the page is what you hand in."
+    when: "on Canvas before class"
+    desc: "Two pages, and five minutes in front of the room. The question and who acts on the answer, why it matters, how you would answer it, the data and how you get it, what could go wrong, and who on the team does what. This is the first time the project has to survive an audience, and the two pages are what you hand in. The brief is on the [project description](https://arielortizbobea.github.io/aem6991/fall-2026/handouts/project-description.html) page."
 
   - num: 2
     name: "Proposal outline"
@@ -283,9 +283,9 @@ meetings:
     date: 2026-10-14
     part: 3
     title: "Research designs I"
-    desc: "Experiments, instrumental variables, regression discontinuity. What variation each exploits, what each assumes, and how each fails."
+    desc: "Experiments, instrumental variables, regression discontinuity. For each: the graph, the one assumption, the checks, and who the estimate is about."
     goal: "Draw the graph for an experiment, an instrument and a discontinuity. Say whether any of the three is open to your question."
-    a: "Three designs, each drawn before it is described. Experiments first. Randomisation cuts every arrow into treatment, so there is no back door left to close. Then the decisions that actually make one work. What is the unit you randomise — the person, the store, the week? How many arms can you afford before each one is too thin? Why you check balance afterwards, and what a failure would mean. And pre-registration, the cheapest honesty device in research: say what you will test before you look, and specification search stops being available to you. Instrumental variables next. An arrow into treatment, and none into the outcome except through it. The exclusion restriction is that missing arrow, which is why it cannot be tested. Then regression discontinuity: nothing else jumps at the cutoff. For each, what variation it exploits, what it assumes, how it fails, and what it looks like done well."
+    a: "Three designs, each drawn before it is described. A research design is the plan for which units you compare and where the variation in their treatment comes from. The identification strategy is the argument that this variation is as good as random. LaLonde's job-training study shows why the design matters more than the model: against survey comparison groups the standard estimators gave anything from −$15,578 to +$1,714, while the randomized comparison gave +$886. Experiments first, opened by eBay, which switched its Google search ads off for 60 days in 68 of 210 US market areas picked by a randomized draw. A regression had implied a return above 4,100%, and the experiment found −63%. A simulated retention email shows randomization recovering the true effect where targeting overstates it twentyfold. Then the decisions that make an experiment work: the unit you randomize, and the interference that breaks it, shown by an eBay reminder email that only moved sales between bidders; how many arms the sample affords; checking balance; pre-registration and pre-analysis plans; survey and choice experiments; and non-compliance, through the Oregon Medicaid lottery. Instrumental variables next, opened by the Vietnam draft lottery: relevance, exclusion and independence; a simulated bike-rental market where the fuel price recovers the demand slope; an exclusion violation that no statistic detects; weak instruments; and the compliers the estimate is about. Then regression discontinuity, opened by Yelp's half-star rounding: continuity at the cutoff, local linear fits and the bandwidth, manipulation and the density test, fuzzy designs, and who the estimate is about."
     b: "Each team draws a setting nobody in the room owns. A bank with an email list. A scholarship cutoff. An NGO that gave filters to whoever asked. Fifteen minutes to draw the graph, name a design, and state the assumption carrying it. Then teams are drawn at random to defend for four minutes while the room attacks. What breaks this? Nobody knows in advance whether they are up. One card cannot be answered honestly at all, and the team holding it has to be willing to say so. Last: is an experiment, an instrument or a discontinuity actually open to your own project? Most teams find the answer is no. Finding that out today rather than in November is the point."
     builds: "Whether an experiment, instrument or discontinuity is open to you"
     books: "[Remix](https://mixtape.scunning.com/) ch. 4 on randomization, ch. 6 on regression discontinuity, ch. 7 on instrumental variables. In [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/), the same three are ch. 2, 6 and 4."
@@ -294,6 +294,8 @@ meetings:
     links:
       - text: "Design scenarios"
         href: fall-2026/handouts/design-scenarios.qmd
+      - text: "Project description brief"
+        href: fall-2026/handouts/project-description.qmd
 
   - num: 9
     slug: "09-designs-ii"
@@ -308,7 +310,10 @@ meetings:
     books: "[Remix](https://mixtape.scunning.com/) ch. 8 and 9 on panel designs and difference-in-differences, ch. 10 if your rollout is staggered. [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) ch. 5."
     chapters: "Remix ch. 8--10; Mostly Harmless ch. 5"
     reading: "TBD"
-    due: "Project pitch — one page, presented in class"
+    due: "Project description — two pages on Canvas before class, and five minutes in front of the room"
+    links:
+      - text: "Project description brief"
+        href: fall-2026/handouts/project-description.qmd
     reschedule: "Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed"
 
   - num: 10

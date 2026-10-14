@@ -1,0 +1,281 @@
+---
+title: "Project description"
+pagetitle: "AEM 6991 · Project description"
+toc: true
+toc-depth: 2
+editor:
+  markdown:
+    wrap: 72
+---
+
+::: {.callout-important appearance="simple"}
+**Due on Canvas before meeting 9 starts.** Meeting 9 is scheduled for
+Wednesday, October 21, at 2:00 pm. My travel may move it to October 20
+or 22, and the deadline moves with it. The
+[schedule](../syllabus.qmd#course-schedule) shows the final date.
+:::
+
+This is the first written piece of your team's proposal. It replaces
+the one-page pitch announced in meetings 1 and 3.
+
+## The assignment in brief
+
+| | |
+|:--|:--|
+| **What** | A two-page description of your project, and a five-minute talk about it |
+| **Who** | One submission per team |
+| **Weight** | 5 % of the course grade. Every member receives the same grade |
+| **Due** | On Canvas, before meeting 9 starts |
+| **Length** | Two pages for the six sections. A third page holds only the references and the AI disclosure |
+| **File** | One PDF, named `Team-A_project-description.pdf` with your team's letter |
+| **Talk** | Five minutes at meeting 9, followed by questions from the room |
+
+## What the document must contain
+
+The first line of page 1 gives your team letter and a working title.
+The second line lists every member's full name. A name on that line
+means the member has read the document and agrees with it.
+
+Then use the six headings below, numbered and worded as they are here,
+in this order. Each one gives a rough length and the session-B sheet to
+start from.
+
+### 1. Research question
+
+About five lines. Start from your meeting 3 slate.
+
+- State the question in one sentence ending with a question mark. It is
+  the first sentence of the section.
+- Name its shape from [meeting
+  3](../sessions/03-questions.qmd#the-seven-shapes-in-full):
+  evaluation, preference and pricing, prediction and risk, diagnosis,
+  feasibility, measurement, or valuation.
+- Name who would act on the answer or pay for it, by role. "The pricing
+  manager of a regional grocery chain" is specific enough.
+  "Policymakers" is too vague.
+- State the answer you expect, and the result that would show you were
+  wrong.
+
+### 2. Why it matters
+
+About a quarter of a page. Start from the value line on your meeting 3
+slate.
+
+- Name the decision that would change with the answer, and who makes
+  it.
+- Summarize the two or three studies closest to yours, one sentence
+  each, and say what your project adds. [Meeting
+  5](../sessions/05-tools-and-ai.qmd) showed how to find them.
+- Cite each study by author and year, and list it on page 3.
+
+### 3. Approach
+
+About a third of a page, plus your causal graph if you include one.
+Start from your meeting 2 graph and your meeting 8 design sheet.
+
+Every project states these three things.
+
+- Name the unit of observation, such as a store-week or a household.
+- Name the outcome, the variable that measures it, and its source.
+- Describe the sample: which units, where, and which years.
+
+If your question asks what a change caused, state these four as well.
+
+- Name the **treatment**, the change whose effect you want to estimate.
+- Describe the **counterfactual**, the comparison group or period that
+  stands in for what would have happened without the treatment.
+- Name the research design, such as an experiment, instrumental
+  variables, regression discontinuity, difference-in-differences, or
+  panel data with fixed effects.
+- State the **identifying assumption** in one sentence. It is the
+  assumption that makes your comparison a valid stand-in for the
+  counterfactual.
+
+If your question asks for a prediction or a measurement, state this
+instead.
+
+- Say what the prediction or measurement has to get right to be useful,
+  and how you will check it, for example by out-of-sample prediction
+  error.
+
+### 4. Data and access
+
+About half a page. Start from your meeting 3 resource map. I read this
+section first, because most capstones that fail had a good question
+whose data never arrived.
+
+Give one row per dataset, in a table with these six columns.
+
+| Dataset | Holder | Unit and period | Variables you need | Access time | Status |
+|:--|:--|:--|:--|:--|:--|
+| *Example:* Weekly Patterns Plus | Dewey, through Cornell's subscription | Store-week, 2019–2024 | Weekly visits, store category, location | Days | File opened Oct 12 |
+
+- **Access time** is your dataset's row on the [access
+  ladder](../data-sources.qmd#the-access-ladder-read-this-one): now,
+  days, weeks, months, or longer.
+- **Status** is one of four entries, each with its date: file opened,
+  access requested, holder contacted, or not started.
+
+Below the table, add three things.
+
+- Give the date by which you expect to hold every dataset.
+- Give your plan B, the question your project becomes if the data has
+  not arrived by that date.
+- Say whether the project needs IRB review or a data-use agreement,
+  using your meeting 4 [IRB and DUA checklist](ethics-checklist.qmd).
+  If it does, give the date the slowest approval has to start.
+
+### 5. Anticipated challenges
+
+About a quarter of a page. Start from your meeting 7 threat sheet.
+
+Name two or three challenges. For each one, say what you will do if it
+is not resolved, and by what date. One of them must be the main threat
+to your estimate.
+
+- For a causal question, name the source of bias, the direction in
+  which it pushes the estimate, and whether you can measure the
+  variable that would remove it.
+- For a prediction or a measurement, name the main way it could be
+  wrong.
+
+The other challenges can be the row of your resource map most likely
+to stop the project, or an approval you are still waiting for.
+
+### 6. Team plan
+
+About half a page, in two parts. Start from your meeting 2 ground
+rules.
+
+**Roles.** Give one row per member, in a table with these five
+columns. Each *Delivers* cell names a specific output. Each *By* cell
+gives a date before December 11. Name a coordinator, who runs the
+weekly check-in and uploads the team's work. Name a backup for every
+main task. For example:
+
+| Member | Role | Delivers | By | Backup |
+|:-----|:-------|:------------------------|:--------|:------|
+| Ana | Coordinator | Runs the check-in. Uploads each deliverable | Every Wednesday | Ben |
+| Ben | Data | Dewey account approved. First extract opened and described | Oct 30 | Carla |
+| Carla | Design | Causal graph and identifying assumption, written for the outline | Nov 4 | Dev |
+| Dev | Literature | Three anchor papers, each opened, and what ours adds | Nov 4 | Eva |
+| Eva | Writing | Outline merged and edited into one voice | Nov 10 | Ana |
+
+**Missed work.** Write the steps your team follows when a member does
+not deliver. A miss is a task not done by its date without warning. A
+member who warns the team before the date has not missed it, and the
+team sets a new date at the next check-in. Give at least three numbered
+steps, ending with the team bringing the problem to me. For example:
+
+1. **First miss.** It is raised at the next check-in and written down,
+   with a new date.
+2. **Second miss.** The coordinator talks to the member that week. The
+   task goes to the backup or is split, and the check-in records it.
+3. **No change, or a week with no reply.** The team brings it to me,
+   with the check-ins as the record.
+
+## Page 3: references and AI disclosure
+
+Page 3 holds only these two items.
+
+**References.** List every work you cite, in any consistent citation
+style, each with a link or DOI. Cite only works you have opened. A
+citation to a work that does not exist is treated as fabrication under
+the [AI policy](../syllabus.qmd#ai-policy).
+
+**AI disclosure.** Write the three lines from [meeting
+5](../sessions/05-tools-and-ai-slides.html#/what-you-write-down-about-what-you-used):
+the tools you used, what you used them for, and what you checked. If
+you used none, write "Tools: none." For example:
+
+> **Tools.** Claude (claude.ai).\
+> **Used for.** Finding candidate anchor papers. Tightening the wording
+> of section 2.\
+> **Checked.** We opened every reference and wrote each summary
+> ourselves.
+
+## Format and submission
+
+- Use letter paper, one-inch margins, and 11-point type or larger.
+  Single spacing is fine. Tables and figure labels may use 9-point
+  type.
+- Fit sections 1 to 6, including tables and figures, on two pages. I do
+  not read anything past page 2 except the references and the AI
+  disclosure on page 3. Do not add appendices.
+- Name the file `Team-A_project-description.pdf`, with your team's
+  letter.
+- One member uploads it to the Canvas group assignment for the team. I
+  do not accept submissions by email.
+- You may resubmit before the deadline. I grade the last version.
+- The syllabus [late
+  policy](../syllabus.qmd#what-you-are-graded-against) applies. A late
+  submission loses 10 % up to 8 hours late and 50 % from 8 to 72 hours.
+  After 72 hours it is not accepted.
+
+## The talk at meeting 9
+
+- Every team presents. The order is drawn at random, so be ready from
+  the start of session B.
+- You have five minutes, timed, and I stop you at five. Questions from
+  the room follow.
+- Cover the question, who acts on the answer, your approach, and your
+  data with its status. For a causal question, the approach includes
+  the design and its identifying assumption.
+- Your team decides who speaks.
+- Slides are optional, three at most. Upload them to the same Canvas
+  assignment by the same deadline, as `Team-A_slides.pdf`. I show them
+  from the room computer.
+
+## How it is graded
+
+The document and the talk are scored together out of 100. That score is
+worth 5 % of the course grade, and every member of the team receives
+it.
+
+| Part | Points |
+|:--|--:|
+| 1. Research question | 15 |
+| 2. Why it matters | 10 |
+| 3. Approach | 15 |
+| 4. Data and access | 20 |
+| 5. Anticipated challenges | 10 |
+| 6. Team plan | 10 |
+| The talk | 20 |
+| **Total** | **100** |
+
+Each part is scored on the [syllabus
+scale](../syllabus.qmd#what-you-are-graded-against). Excellent earns
+full points. Adequate earns three quarters, weak earns half, and a
+missing part earns zero. The talk is scored on whether it covers the
+four items within five minutes, and on how the team answers questions.
+
+## Questions students ask
+
+**Can we change our question after this?** Yes. Record the change and
+the reason in your team's [decision
+log](../teamwork.qmd#the-decision-log).
+
+**We do not have the data yet. Is that a problem?** No. Show what you
+have checked and requested, with dates, and give your plan B. A dataset
+you have named but not checked scores weak.
+
+**Our question is a prediction or a measurement. Do we need a research
+design?** No. Complete the last part of section 3 instead.
+
+**We expect to use difference-in-differences, which is taught at
+meeting 9. What do we write?** Name the design and describe the
+comparison in plain words. [Remix](https://mixtape.scunning.com/)
+chapters 8 and 9 cover it, and you refine it in the outline.
+
+**Can the team lower a member's grade for not contributing?** No. Every
+member receives the same grade on team work. Follow your missed-work
+steps, which end with the team bringing the problem to me.
+
+**Why do we have to write roles and a missed-work procedure?** Writing
+them down early is standard practice, and there is evidence for it.
+[Mathieu and Rapp](https://doi.org/10.1037/a0013257) followed 32 teams
+of MBA students through a business strategy simulation. The teams that
+sustained the best performance had written both a good team charter and
+a good plan for the work. [Oakley and
+colleagues](https://engr.ncsu.edu/wp-content/uploads/drive/1ofGhdOciEwloA2zofffqkr7jG3SeKRq3/2004-Oakley-paper%28JSCL%29.pdf)
+give a template for both.

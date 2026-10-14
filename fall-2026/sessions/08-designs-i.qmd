@@ -2,17 +2,37 @@
 title: "8 · Research designs I"
 subtitle: "Wednesday, October 14, 2026"
 pagetitle: "AEM 6991 · 8 Research designs I"
+resources:
+  - sim/*.js
+format:
+  html:
+    toc: true
+    toc-depth: 2
+  revealjs:
+    output-file: 08-designs-i-slides.html
+    theme: [default, slides.scss]
+    template-partials:
+      - title-slide.html
+    footer: "AEM 6991"
+    slide-number: c/t
+    incremental: false
+    history: false
+    link-external-newwindow: true
+    include-after-body: sim/m08-include.html
+    html-math-method: katex
 ---
 
+:::: {.content-hidden when-format="revealjs"}
+
 ::: {.callout-note appearance="simple"}
-This page is a stub. Materials appear here before the meeting.
+[**Open the slides**](08-designs-i-slides.html)
 :::
 
 **What you should be able to do after this meeting.** Draw the graph for an experiment, an instrument and a discontinuity. Say whether any of the three is open to your question.
 
 ## Handouts
 
-[Design scenarios](../handouts/design-scenarios.qmd)
+[Design scenarios](../handouts/design-scenarios.qmd) · [Project description brief](../handouts/project-description.qmd)
 
 ## Where to read more
 
@@ -20,7 +40,7 @@ This page is a stub. Materials appear here before the meeting.
 
 ## Session A · 2:00–3:15
 
-Three designs, each drawn before it is described. Experiments first. Randomisation cuts every arrow into treatment, so there is no back door left to close. Then the decisions that actually make one work. What is the unit you randomise — the person, the store, the week? How many arms can you afford before each one is too thin? Why you check balance afterwards, and what a failure would mean. And pre-registration, the cheapest honesty device in research: say what you will test before you look, and specification search stops being available to you. Instrumental variables next. An arrow into treatment, and none into the outcome except through it. The exclusion restriction is that missing arrow, which is why it cannot be tested. Then regression discontinuity: nothing else jumps at the cutoff. For each, what variation it exploits, what it assumes, how it fails, and what it looks like done well.
+Three designs, each drawn before it is described. A research design is the plan for which units you compare and where the variation in their treatment comes from. The identification strategy is the argument that this variation is as good as random. LaLonde's job-training study shows why the design matters more than the model: against survey comparison groups the standard estimators gave anything from −$15,578 to +$1,714, while the randomized comparison gave +$886. Experiments first, opened by eBay, which switched its Google search ads off for 60 days in 68 of 210 US market areas picked by a randomized draw. A regression had implied a return above 4,100%, and the experiment found −63%. A simulated retention email shows randomization recovering the true effect where targeting overstates it twentyfold. Then the decisions that make an experiment work: the unit you randomize, and the interference that breaks it, shown by an eBay reminder email that only moved sales between bidders; how many arms the sample affords; checking balance; pre-registration and pre-analysis plans; survey and choice experiments; and non-compliance, through the Oregon Medicaid lottery. Instrumental variables next, opened by the Vietnam draft lottery: relevance, exclusion and independence; a simulated bike-rental market where the fuel price recovers the demand slope; an exclusion violation that no statistic detects; weak instruments; and the compliers the estimate is about. Then regression discontinuity, opened by Yelp's half-star rounding: continuity at the cutoff, local linear fits and the bandwidth, manipulation and the density test, fuzzy designs, and who the estimate is about.
 
 ## Session B · 3:30–4:30
 
@@ -32,3 +52,1345 @@ Each team draws a setting nobody in the room owns. A bank with an email list. A 
 
 Your team's output is submitted before you leave.
 
+::::
+
+:::: {.content-visible when-format="revealjs"}
+
+## Motivation
+
+- A **research design** is the plan for which units you compare, such as customers or regions, and where the variation in their treatment comes from.
+- Comparing veterans' earnings with non-veterans' earnings is a poor design. The two groups differed before anyone served.
+- The **identification strategy** is the argument that the variation a design uses is as good as random.
+
+[Angrist and Krueger (1999), *Empirical Strategies in Labor Economics*, Handbook of Labor Economics 3, 1277–1366.](https://doi.org/10.1016/S1573-4463(99)03004-7){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+One and a half minutes.
+
+Meeting 2 promised that every design ahead closes a back door, and that
+they would draw each one before hearing its name. Meeting 7 ended on a
+table whose Solution column said: randomize, compare at the cutoff, use an
+instrument, hold the confounder fixed. Today pays off the first three.
+Next week pays off the fourth with the designs that use time.
+
+The definition. A research design is the plan: which units are compared
+with which, and where the variation in their treatment comes from. That is
+the general meaning, and it allows poor designs. A comparison of veterans
+with non-veterans is a design, and the two groups differed in health,
+schooling and family before anyone served. A credible design isolates
+variation that is as good as random: all of it, when a coin decides; the
+part an instrument moves; the margin at a cutoff, where units just above
+and just below are alike. Economists call that argument the
+identification strategy, which Angrist and Krueger (1999) define as the
+way a researcher uses observational data to approximate a real
+experiment.
+
+Where else the idea is treated formally. Rubin's version is the
+assignment mechanism: the design is everything decided before the
+outcomes are seen, and *design trumps analysis* (Rubin 2008, Annals of
+Applied Statistics 2, 808–840, <https://doi.org/10.1214/08-AOAS187>).
+Angrist and Pischke (2010, Journal of Economic Perspectives 24, 3–30,
+<https://doi.org/10.1257/jep.24.2.3>) call the shift toward this way of
+working the credibility revolution. Outside economics, Shadish, Cook and
+Campbell's *Experimental and Quasi-Experimental Designs for Generalized
+Causal Inference* (2002) is the standard treatment, organized around
+threats to validity.
+
+The 2021 Nobel prize went to Card *for his empirical contributions to
+labour economics*, and to Angrist and Imbens *for their methodological
+contributions to the analysis of causal relationships*
+(<https://www.nobelprize.org/prizes/economic-sciences/2021/summary/>).
+The designs on today's slides are what the citation means.
+:::
+
+## Terms used in every design
+
+- The **treatment** is the cause we study, such as an email or military service. The **units** are who may receive it.
+- Each unit has two **potential outcomes**, one with the treatment and one without. We observe only one of them.
+- The **average treatment effect** is the average difference between the two potential outcomes.
+- A **confounder** affects both who is treated and the outcome.
+- A **covariate** is a characteristic measured before treatment, such as age or past earnings.
+- In a **causal graph**, an arrow runs from a cause to its effect.
+
+::: {.notes}
+One minute. Meeting 2's vocabulary, restated so the deck stands on its
+own. Say each line once; they return on every slide.
+
+The potential outcomes are the heart of it: the comparison any design
+makes is a stand-in for the outcome each treated unit would have had
+without the treatment, which nobody observes. A confounder is what makes
+the naive stand-in wrong. The graphs today always draw the unobserved
+confounder as U, the treatment as X and the outcome as Y.
+:::
+
+## The estimator and the design do different jobs
+
+- An **estimator** turns data into an estimate, such as a difference in means or ordinary least squares (OLS).
+- The design picks the comparison group. The estimator works with the group it is given.
+- In the 1970s the National Supported Work program offered disadvantaged workers a job, decided at random. Those not chosen formed the control group.
+- LaLonde (1986) swapped the random controls for men from two national surveys. Would standard estimators still find the experiment's answer?
+
+[LaLonde (1986), *Evaluating the Econometric Evaluations of Training Programs with Experimental Data*, American Economic Review 76, 604–620.](https://www.jstor.org/stable/1806062){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. The slide the room needs before any design is named,
+because the instinct from meeting 6 is that the fix for a bad number is a
+better model.
+
+The definitions. An estimator is the arithmetic: a difference in means,
+a regression, a logit. A research design is the choice of comparison:
+which units stand in for the treated units' missing outcomes, and so
+which variation in the treatment the arithmetic gets to use.
+Identification comes from the design; precision comes from the estimator.
+
+The case, told in full because meeting 7 covered it and not everyone was
+there. The National Supported Work Demonstration, in the 1970s,
+guaranteed ex-offenders, ex-addicts, high school dropouts and long-term
+welfare recipients a job for 9 to 18 months, working in crews with a
+counselor. Applicants were assigned to the program or to a control group
+by lot. Because assignment was random, comparing the 297 trainees with the
+425 controls gives the program's effect.
+
+LaLonde then did what a researcher without an experiment would do. He set
+the randomized controls aside and compared the trainees with men from two
+national surveys, the Panel Study of Income Dynamics and the Current
+Population Survey, using the estimators of the day with the covariates
+those surveys offer. If the estimators worked, they would land near the
+experiment's answer. The next slide is the result.
+:::
+
+## No estimator rescued the survey comparisons
+
+::: {style="font-size:0.64em"}
+| Comparison group for the 297 trainees | Difference in means | OLS with every observed covariate |
+|:----------------------|:------------|:------------|
+| 425 men assigned at random to the control group | +$886 | not needed |
+| 2,493 men from the Panel Study of Income Dynamics, a national household survey | −$15,578 | −$1,228 |
+| 15,992 men from the Current Population Survey, a national labour survey | −$8,870 | −$805 |
+:::
+
+- The randomized comparison is the benchmark. It needs no covariates.
+- Across all of LaLonde's specifications, the survey comparisons ranged from −$15,578 to +$1,714, against the experiment's +$886.
+- Each design today tries to reproduce the randomized comparison in the first row.
+
+[LaLonde (1986), Table 5: male participants, effects on 1978 earnings in 1982 dollars.](https://www.jstor.org/stable/1806062){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes.
+
+The first row is the experiment: +$886 (standard error $476, 1982
+dollars), from a plain difference in means. The lottery balanced
+everything, so covariates add nothing to the bias.
+
+The survey rows. The survey men were not comparable: in 1975 the trainees
+earned $3,066 on average, against $19,056 for the Panel Study men and
+$13,650 for the Current Population Survey men (LaLonde Table 3, 1982
+dollars), four to six times more. So the simple difference is hugely
+negative. Adding every covariate the surveys offered, including earnings
+before the program, moves −$15,578 to −$1,228 and −$8,870 to −$805: much
+closer, and still below zero. Across all the estimators and comparison
+groups in his Table 5, his estimates for men ran from −$15,578 to
++$1,714. Some land near $886 and most do not, and nothing in the output
+says which to believe. That is the lesson: the estimators were fine; the
+comparison group was the problem, and no estimator fixed it.
+
+The last bullet is the thread through the lecture. It is the second of
+the four questions Angrist and Pischke ask of every empirical project in
+chapter 1 of *Mostly Harmless Econometrics*: what experiment would
+ideally answer the question? eBay could run its ideal experiment. Nobody
+can randomize military service or Yelp ratings, so the draft lottery and
+the rounding rule stand in for the coin.
+
+Follow-up literature, if asked. Dehejia and Wahba (1999,
+<https://doi.org/10.1080/01621459.1999.10473858>) came close to the
+benchmark with propensity-score matching on a subsample; Smith and Todd
+(2005, <https://doi.org/10.1016/j.jeconom.2004.04.011>) showed those
+estimates were sensitive to the sample and the variables used.
+:::
+
+## Outline
+
+1. **Randomized experiments.** A coin assigns the treatment. eBay switched off its Google ads in 68 of 210 US market areas, picked by a randomized draw.
+2. **Instrumental variables.** Something as good as random pushes some units into the treatment and affects the outcome only through it. The Vietnam-era draft lottery pushed some men into the army.
+3. **Regression discontinuity.** Units just above and just below a cutoff are alike but treated differently. Yelp shows an average rating of 3.74 as 3½ stars and 3.76 as 4.
+
+::: {.notes}
+One minute. Say the three in a sentence each; the slide gives the room
+the picture before the vocabulary. Each section opens with its real
+study, then the graph, then the animation, then the decisions and the
+failures. Section 1 is the longest because the experiment is the design
+the other two imitate. Every design here is a way to get a comparison
+group as good as the first row of the LaLonde table when nobody ran the
+lottery.
+:::
+
+# 1. Randomized experiments
+
+::: {.notes}
+Thirty seconds. The section opens with eBay, then draws the graph, then
+the decisions that make an experiment work.
+:::
+
+## eBay switched off its search ads in some regions
+
+- eBay paid Google for ads on searches that do not name eBay, such as "used gibson les paul".
+- Shoppers already headed to eBay also clicked its ads, so a regression implied the ads returned above 4,100%.
+- eBay could not randomize searchers, but Google let it switch ads off by market area.
+- For 60 days it switched them off in 68 of 210 areas, picked by a randomized draw.
+- The same return formula then gave −63%: each ad dollar brought back about 37 cents.
+
+<div class="m06" data-demo="geo" style="width:72%;margin:0 auto"></div>
+
+[Blake, Nosko and Tadelis (2015), *Consumer Heterogeneity and Paid Search Effectiveness: A Large-Scale Field Experiment*, Econometrica 83, 155–174.](https://doi.org/10.3982/ECTA12423){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. The study from meeting 6, told as a design.
+
+The setting. Search engines auction the ad slots above their results.
+eBay bid on over 100 million keywords. The ones here are non-brand
+keywords: searches that do not contain the word eBay. (A separate test
+showed that ads on searches for "eBay" itself did nothing, because people
+clicked the free link below the ad; eBay stopped buying those.)
+
+The regression every marketing team runs: revenue on ad spending, across
+areas and days. Clicks and purchases move together because the people who
+click an eBay ad are mostly people already shopping on eBay. The paper
+computes a return on investment, defined as extra revenue divided by ad
+spending, minus one. With the regression's estimate of the effect of
+spending, it is 4,173% without controls and 1,632% with day and area
+controls.
+
+The design. Google offered a geographic bid feature that let eBay switch
+ads off by Nielsen designated market area, the 210 regions US television
+advertising is sold in. eBay assigned buyers to areas by their shipping
+zip code. The paper calls user-level randomization the ideal experiment,
+which the ad platform did not allow at the time. The 68 areas came from a
+randomized draw: 133 candidates were chosen at random, random groups of
+68 were drawn, draws whose past sales trends looked too different were
+discarded, and a coin flip decided which group lost its ads. That is a
+form of re-randomization, the balance slide's idea applied before the
+fact.
+
+The result. With the ads off, revenue in the 68 areas barely moved:
+paid search added about 0.66% to sales. Plugged into the same return
+formula, with the same public figures for revenue ($2.9 billion) and
+spending ($51 million a year), the return is −63%, 95% interval −124% to
+−3%. So the 4,100% and the −63% are the same quantity, estimated two
+ways. −63% means each dollar of ads brought back about 37 cents of
+revenue. It is a 60-day return and leaves out the long-run value of new
+customers, which the authors argue is small.
+
+Who was moved. The ads raised purchases by new users and by people who
+had bought only once or twice the year before. Frequent buyers were not
+moved, and they received most of the ad spending. The implication is to
+aim the ads at people who do not know eBay, not to buy ads in general.
+A small, unknown firm may gain much more from search ads.
+:::
+
+## A coin alone decides who is treated
+
+- A firm picks which customers to email to raise renewals. Something unobserved, U, such as loyalty, drives both who is emailed and who renews.
+- **Randomization** lets a coin alone decide who is emailed, whatever U is.
+- The email is then independent of both potential outcomes, by construction.
+- The difference in means estimates the average treatment effect, with no assumption about U.
+
+<div class="m06" data-demo="dag" data-design="experiment" style="width:58%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. Introduce the running example first: a subscription firm
+can send a retention email, and the outcome is whether the customer
+renews. It returns on the next two slides and in section 3. Then click the
+button twice.
+
+The starting graph: something unobserved, U, such as how much the
+customer likes the product, drives both who gets the email (the firm
+targets keen customers) and who renews. That is meeting 7's selection
+into treatment, and last week the fix was a control variable, which needs
+U to be measured.
+
+Click once. A coin takes over the assignment. The arrow from U into the
+email is gone, because the coin does not consult U. There is no back door
+left to close, which is why no control is needed. Click again. U still
+drives renewal, and that is fine: it is now balanced between the emailed
+and the not emailed in expectation, so the difference in renewal rates has
+nothing in it but the email.
+
+In potential-outcomes terms: the email is independent of the two
+potential outcomes. The difference in means is an unbiased estimator of
+the average treatment effect, averaged over the population that was
+randomized. That last clause is meeting 7's external validity: eBay
+learned about eBay's market areas in those 60 days.
+
+Covariates in an experiment add nothing to the bias and add precision if
+they predict the outcome, provided they were measured before treatment
+and chosen in advance.
+:::
+
+## Randomizing the email recovers its effect
+
+- In this simulation the email adds 2 points to each customer's chance of renewing.
+- **Targeting** emails the 600 of 2,000 most likely to renew. Across 1,000 samples its estimates centre on 44.5 points.
+- **Randomization** draws the 600 by lot. The estimates average 1.9, close to the true 2.0.
+- The **standard error** (SE) estimates, from one sample, how much the estimate varies across samples. Here it is 2.4 points, as the 1,000 draws confirm.
+
+<div class="m06" data-demo="randomize" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. Start on "Randomized". Click "Draw one sample", then
+"Draw 1,000 samples". Then switch to "Targeted" and draw 1,000 again.
+
+The population: 10,000 customers, each with a probability of renewing,
+and an email that adds 2 points to everyone's probability. The firm has a
+renewal score for every customer, its model's predicted probability of
+renewing. Each sample draws 2,000 customers. Targeting sends the email to
+the 600 with the highest scores, which is what a marketing team does by
+default. Randomization draws the 600 by lot.
+
+One sample: the two bars, and a difference of a few points either side of
+2, with a standard error of about 2.4 points. The single sample does not
+settle it. A thousand samples: the estimates average 1.9, within
+simulation error of 2.0, with a standard deviation of 2.4, which matches
+the standard error each sample reports. The estimator is unbiased and its
+standard error is right, as in meeting 6.
+
+Switch to targeting. The estimates centre on 44.5 points, of which 2.0 is
+the email and 42.5 is selection: the emailed customers would have renewed
+more often anyway. The spread is smaller, 1.9, because the emailed group
+is more alike. A tighter interval around the wrong number.
+
+The point of the pair: the estimator is the same difference in means in
+both settings, with the same standard error formula. Only the design
+changed. Randomization does not make the estimate more precise. It puts
+the centre of the sampling distribution on the parameter.
+:::
+
+## The unit of randomization
+
+- The **unit of randomization** is what the coin assigns, such as a customer, a store or a region.
+- The email test assigned customers. eBay's ad test assigned market areas.
+- **Interference** means one unit's treatment changes another unit's outcome.
+- The control group then no longer shows what would happen without the treatment.
+- Interference is likely when treated and control units compete for the same goods or customers.
+
+::: {.notes}
+Two minutes.
+
+The first design decision, and the one most often made by default. A
+website test assigns visitors or customers. eBay assigned market areas,
+because Google let it switch ads off by region and not by searcher.
+
+The difference in means assumes that a unit's outcome depends on its own
+treatment only, which the literature calls the stable unit treatment
+value assumption. Interference breaks it. It is common wherever treated
+and control units share a market: buyers bidding on the same items, riders
+and drivers on one platform, stores competing for the same shoppers. A
+pricing test on half the riders in a city changes which drivers the other
+half see.
+
+The next slide is a case. The remedy is to choose a unit large enough
+that the competition stays inside it. When even a city cannot be split, a
+switchback assigns periods: a ride-hailing platform turns a new pricing
+rule on for two hours and off for two hours in one city, and compares the
+hours (Bojinov, Simchi-Levi and Zhao 2023, *Design and Analysis of
+Switchback Experiments*, Management Science 69, 3759–3777,
+<https://doi.org/10.1287/mnsc.2022.4583>). The price is meeting 7's:
+with regions assigned, the effective sample size is the number of regions,
+the standard error must be clustered, and power depends mainly on the
+number of units, not the number of people inside them.
+:::
+
+## A reminder email moved sales between bidders
+
+- In 2013 eBay emailed a random half of 4.9 million bidders a reminder six hours before their auctions ended.
+- It wanted to know whether the reminder raises auction sales.
+- Emailed bidders spent 0.74% more, which looked like a success.
+- But both groups bid in the same auctions. Each auction an emailed bidder won, a control bidder lost.
+- Auctions with a larger share of emailed bidders sold no more than auctions with a smaller share.
+- [**Solution**: randomize whole auctions or markets, so treated and control units do not compete.]{.solution}
+
+[Blake and Coey (2014), *Why Marketplace Experimentation Is Harder Than It Seems: The Role of Test-Control Interference*, EC '14, 567–582.](https://doi.org/10.1145/2600057.2602837){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes. The paper is by two economists at eBay Research
+Labs.
+
+The experiment. eBay's "Bid Item Ending Soon" campaign ran for four weeks
+in July and August 2013. The 4.9 million US users who bid in auctions
+were split at random into equal halves. About six hours before an auction
+ended, test users who had bid in it got an email saying it was ending soon
+and encouraging them to win. Control users got nothing. The outcome was
+auction revenue, meaning the selling price.
+
+The naive analysis, the one any marketing team would run: test users
+generated about 0.74% more revenue than control users, a significant
+difference. With emails nearly free to send, that looks like a large
+return.
+
+The problem. Test and control users bid against each other. If the email
+pushes a test user to raise a bid and win, a control user loses that
+auction. The sale would have happened anyway; the email moved it from one
+bidder to the other. The test-minus-control gap counts the moved sale
+twice: once as a gain for the test group and once as a loss for the
+control group.
+
+The authors' fix. The share of test bidders in an auction is random,
+because users were randomized. So compare auctions with many test bidders
+with auctions with few, holding the number of bidders fixed. Revenue does
+not rise with the number of emailed bidders: the campaign's effect was not
+significantly different from zero, and the naive estimate was too large
+by a factor of about two. Control users also earned less when they bid
+against test users, which is the interference made visible.
+
+The solution line: randomize at the level of the auction or the market,
+so that everyone competing for the same goods gets the same treatment.
+:::
+
+## More arms mean less power for each comparison
+
+- An **arm** is one group in a test, such as one checkout page. The control is an arm too.
+- **Power** is the chance a test detects a real effect. The **minimum detectable effect** (MDE) is the smallest true effect detected 80% of the time.
+- Each arm splits the sample. With 10,000 visitors buying at 5%, the MDE is 1.3 points with two arms, 2.0 with five and 2.9 with ten.
+- Each arm also adds a comparison. With nine new arms and no real effect, at least one looks significant in about 28% of experiments.
+- [**Solution**: before adding an arm, check that each comparison's MDE stays below the smallest lift worth acting on.]{.solution}
+
+::: {.notes}
+One and a half minutes. Meeting 7's section 4 covered power in full:
+the definitions, the checkout test's MDE of 1.3 points, why underpowered
+studies exaggerate significant effects, and clusters and strata. This
+slide adds only what an experiment's design decision needs: what happens
+when you test several versions at once.
+
+The setting. A store has 10,000 visitors for a test of checkout pages,
+and the old page converts 5% of them. Two arms give 5,000 visitors each,
+a standard error of the difference of about 0.46 points, and an MDE of
+2.8 × 0.46 = 1.3 points (80% power at the 5% level). Five arms give
+2,000 visitors each and an MDE of 2.0 points; ten arms give 1,000 each and
+an MDE of 2.9 points, more than half the base rate. A real 1-point lift
+would be detected 59% of the time with two arms, 28% with five and 16%
+with ten. (These are the numbers for a new page converting 6%, with the
+standard error √[(p₀(1 − p₀) + p₁(1 − p₁))/n] and n visitors per arm.)
+
+The second cost is multiple testing, also from meeting 7. Nine new pages
+compared with one shared control, with no true effect anywhere: in a
+simulation, at least one comparison is significant at 5% in about 28% of
+experiments. The textbook 37% (1 − 0.95⁹) would hold only if the nine
+tests were independent; sharing the control makes them correlated.
+Pre-specify which comparisons count, or test fewer versions.
+:::
+
+## Checking balance after randomization
+
+- A **balance check** compares the arms' covariates, which differ only by chance under randomization.
+- Tested one at a time at 5%, at least one of 20 covariates is significant in 63% of fair randomizations.
+- A **joint F test** asks whether all 20 differences are zero at once. It rejects only 5% of the time.
+- [**Solution**: report the joint test, not a count of stars, and check the assignment if it rejects strongly.]{.solution}
+
+<div class="m06" data-demo="balance" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Two minutes. Click "Randomize once" a few times, then "Randomize 1,000
+times".
+
+A balance table is the first table in any experimental paper: the
+treated and control means of every covariate, with a test of each
+difference. Meeting 7 named it; this slide shows why reading it star by
+star misleads. Here 1,000 customers, 500 emailed at random, and 20
+covariates that by construction do not differ. Each randomization
+produces about one significant difference (0.96 on average). Across
+1,000 randomizations, 63% show at least one covariate significant at 5%.
+Counting stars is multiple testing in a new place.
+
+The joint F test regresses assignment on all 20 covariates at once and
+asks whether they predict it. It rejects in 5% of randomizations, which
+is what a 5% test should do. That is the test to report. A rejection
+happens in 5% of clean randomizations; a strong rejection is a reason to
+check how the assignment was done.
+
+The other check after randomization is attrition, covered in meeting 7
+under selection into the sample: if units leave the study at different
+rates by arm, the arms that remain are no longer comparable. Report
+attrition by arm, follow up everyone, and bound the effect when the
+rates differ (Lee's bounds).
+:::
+
+## Pre-registration
+
+- **P-hacking** means trying analyses until one crosses the significance threshold.
+- **Pre-registration** records a study in a public [registry](https://www.socialscienceregistry.org/) before the outcome data exist.
+- A **pre-analysis plan** also fixes the outcome, the specification and the subgroups in advance.
+- In 15,992 test statistics from published randomized trials, registration alone did not reduce p-hacking. A pre-analysis plan did.
+- [**Solution**: register with a pre-analysis plan before the first look at the outcome.]{.solution}
+
+[Brodeur, Cook, Hartley and Heyes (2024), *Do Preregistration and Preanalysis Plans Reduce p-Hacking and Publication Bias?*, Journal of Political Economy Microeconomics 2, 527–561.](https://doi.org/10.1086/730455){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes.
+
+The problem first. Meeting 7 ended section 3 on specification search:
+Silberzahn's 29 teams and their 29 answers. A researcher who tries enough
+outcomes, subgroups and specifications will find one that crosses 5%.
+P-hacking is the name for doing that, knowingly or not.
+
+The fixes. Registering a study puts a timestamped entry in a public
+registry; the AEA's held about 12,900 studies when this slide was written.
+A pre-analysis plan goes further: before the outcome data exist, it
+fixes the primary outcome, the regression, the covariates, the subgroups
+and the sample size. Then every result is either the planned one or
+labelled exploratory.
+
+The evidence. Brodeur, Cook, Hartley and Heyes looked at 15,992 test
+statistics from randomized trials published in 15 leading economics
+journals. Many registrations have no plan, or one too vague to bind. They
+found no evidence that registration alone reduces p-hacking or
+publication bias, and evidence that registration with a pre-analysis plan
+does. The lesson: the plan does the work, not the registry entry.
+
+For a firm: an experimentation platform can fix the metric and the
+stopping rule before a test starts, which is a pre-analysis plan in
+practice. For the proposal: a paragraph that says what you will estimate
+and how, written in December, is a pre-analysis plan.
+:::
+
+## Survey and choice experiments
+
+- A firm wants to know what a feature is worth before building it, such as a "locally sourced" label. There are no sales to study yet.
+- In a **conjoint** experiment, people choose between profiles whose features and prices are set at random.
+- Because price varies too, the choices put a money value on each feature: a **willingness to pay**.
+- Survey choices can rank features well. Where Swiss towns voted on citizenship applicants, a paired survey matched each attribute's effect on the votes within 2 points.
+
+[Hainmueller, Hangartner and Yamamoto (2015), *Validating Vignette and Conjoint Survey Experiments against Real-World Behavior*, PNAS 112, 2395–2400.](https://doi.org/10.1073/pnas.1416587112){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. For the marketing teams, and for card 4 this afternoon.
+
+The goal first. A firm deciding whether to put a "locally sourced" label
+on a package, or whether to add a feature to a product, wants a number in
+cents before it commits to the supply chain. There is no sales history
+for a product that does not exist, so it asks people. A conjoint
+experiment shows each respondent pairs of profiles whose features and
+prices are drawn at random and asks which they would choose; each person
+answers several times. Because the features are assigned at random, the
+effect of each on the choice is identified exactly as in section 1, and
+because price is one of the features, those effects convert into a
+willingness to pay for each of the others.
+
+Does a survey choice predict a real one? Hainmueller, Hangartner and
+Yamamoto tested survey designs against real behaviour: some Swiss towns
+decided citizenship applications by popular vote, so the weight real
+voters put on each applicant attribute can be estimated. A survey that
+showed people pairs of applicant profiles came within about two
+percentage points of those vote-based effects on average; other survey
+formats did worse. So in that setting a well-designed conjoint recovered which features
+matter and by how much. The next slide is about why that cannot be taken
+for granted.
+:::
+
+## Randomization does not fix a biased outcome
+
+- The answers are **stated preferences**: the respondent pays nothing for a choice.
+- Randomizing the features gives an unbiased estimate of their effect on stated choices, not on real purchases.
+- Across 29 studies that measured both, stated values were about three times actual payments. That gap is **hypothetical bias**.
+- If the gap differs by feature, as it may for a socially approved label, even the ranking of features is wrong.
+- [**Solution**: make one choice real at its price, or check the survey against actual purchases.]{.solution}
+
+[List and Gallet (2001), *What Experimental Protocol Influence Disparities Between Actual and Hypothetical Stated Values?*, Environmental and Resource Economics 20, 241–254.](https://doi.org/10.1023/A:1012791822804){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. The point generalizes beyond surveys, so say it plainly:
+randomization protects the comparison, not the measurement.
+
+Why stated preference is the problem. In a survey nothing is at stake: a
+respondent can say they would pay 40 cents more for a local label without
+giving up 40 cents. The features were randomized, so the comparison
+between profiles is clean, and the estimate is unbiased for what it
+measures: the effect of each feature on what people say. If what people
+say differs from what they do, the experiment estimates the wrong thing
+precisely. This is meeting 7's measurement error in the outcome. Error
+unrelated to the treatment only adds noise; error that depends on the
+treatment biases the estimate, and no randomization removes it.
+
+How large the gap is. List and Gallet's review of 29 studies that
+measured both found stated values about three times the actual ones on
+average. Murphy and co-authors' review of 28 studies found a median ratio
+of 1.35 with a long right tail, so the typical gap is smaller and the
+large ones are very large (Murphy, Allen, Stevens and Weatherhead 2005,
+*A Meta-analysis of Hypothetical Bias in Stated Preference Valuation*,
+Environmental and Resource Economics 30, 313–325,
+<https://doi.org/10.1007/s10640-004-3332-z>).
+
+Why the ranking can fail too. A uniform markup would leave the ranking of
+features intact and only inflate their prices. But respondents may
+overstate some features more than others: the ones that make them look
+good, such as a local, green or fair-trade label, or the ones they think
+the researcher wants to hear (experimenter demand). Then the stated
+effect of that feature is biased relative to the others. The Swiss test
+on the previous slide found the gap small for that setting, a vote with
+real stakes for the community; it is a reason to validate, not a
+guarantee for a marketing survey.
+
+The same caution applies to any experiment whose outcome is self-reported:
+an A/B test scored by a satisfaction survey, a training program scored by
+the trainees' own reports. Randomization makes the arms comparable; it
+does not make the answers true.
+
+Solutions: an incentive-compatible design, where one of the choices is
+actually carried out at its price, so that answering carelessly or to
+look good costs something; or a check against a real purchase, in a store
+or an online test, before the number goes into a business case.
+:::
+
+## Non-compliance and the intention-to-treat effect
+
+- **Medicaid** is US public health insurance for the poor. In 2008 Oregon had room for 10,000 more adults and 90,000 applicants.
+- It chose by lottery, and many of those drawn never enrolled. **Non-compliance** means assignment and take-up differ.
+- The **intention-to-treat** (ITT) effect compares those drawn with those not drawn, enrolled or not.
+- The draw raised enrollment by 26 points and hospital admissions by about 0.5. Their ratio, 2.1 points, is the effect of enrolling for those the draw moved.
+- [**Solution**: report the ITT effect, and divide it by the rise in enrollment, as section 2 explains.]{.solution}
+
+[Finkelstein et al. (2012), *The Oregon Health Insurance Experiment: Evidence from the First Year*, Quarterly Journal of Economics 127, 1057–1106.](https://doi.org/10.1093/qje/qjs020){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes. The bridge to section 2.
+
+In 2008 Oregon reopened its Medicaid program for low-income adults with
+room for about 10,000 more people; 89,824 signed up, and 35,169 were
+drawn by lottery and allowed to apply. About 30% of those drawn completed
+the application and enrolled. Some of those not drawn found coverage
+elsewhere.
+
+So the randomized thing, being drawn, is not the treatment, being
+insured. Two honest estimates. The intention-to-treat effect compares
+outcomes by lottery result: it is the effect of being offered the
+program, and being drawn raised the probability of having insurance by
+about 25 percentage points. The effect of insurance itself, for those who
+enrolled because they were drawn, is the intention-to-treat effect
+divided by the effect of the draw on enrollment, about 0.26: a 2.1 point
+(30%) rise in hospital admissions, a 6.4 point (25%) fall in unpaid bills
+sent to collection, and a 13 point rise in reporting good health.
+
+That division is instrumental variables, with the lottery as the
+instrument. Section 2 says what it assumes. For a firm: when you can
+randomize an offer but not its take-up, such as a coupon, an invitation
+or an email, you have an encouragement design, and this is how it is
+analyzed.
+:::
+
+## Three effects from the Oregon lottery
+
+::: {style="font-size:0.62em"}
+| Effect | How it is computed | Hospital admissions |
+|:--------------------------|:----------------------------------------------------|--------------------:|
+| Average treatment effect | Each applicant's outcome with insurance minus without, averaged over all applicants | Not estimable from the lottery alone |
+| Intention-to-treat effect | Those drawn minus those not drawn, enrolled or not | About +0.5 points |
+| Effect on those the draw moved | Intention-to-treat effect divided by the 26-point rise in enrollment | +2.1 points |
+:::
+
+- The intention-to-treat effect is what offering insurance does. Most of those drawn never enrolled, which shrinks it.
+- The 2.1 points is what insurance does for applicants who enroll if drawn and not otherwise.
+- With full compliance the three effects are equal.
+
+::: {.notes}
+Two minutes. This slide separates the three numbers the previous slide
+used, because the word "effect" covers all of them.
+
+The average treatment effect is the one defined on the terms slide: the
+average, over every applicant, of the difference between the outcome
+with insurance and the outcome without. The lottery cannot deliver it.
+Applicants who would never enroll whatever the draw, and those insured
+whatever the draw, never show the lottery their other outcome.
+Extending the estimate to them needs assumptions the data cannot check.
+
+The intention-to-treat effect compares everyone drawn with everyone not
+drawn, whether or not they enrolled. Randomization alone makes it
+credible. It answers what the offer does, and it is diluted: most of
+those drawn never enrolled, and their outcomes enter the average.
+
+The effect of enrolling divides the intention-to-treat effect by the
+effect of the draw on enrollment. The denominator is the 26-point
+difference in enrollment between the drawn and the not drawn, which is
+smaller than the share of the drawn who enrolled, because some applicants
+who were not drawn found coverage anyway. The result, 2.1 points, is the
+effect for applicants who enroll if drawn and not otherwise. Section 2
+calls them compliers and the estimate the local average treatment
+effect, and states the assumptions behind the division.
+
+When the control group cannot get the treatment at all, as with a
+coupon only the drawn can redeem, the compliers are exactly the treated,
+and the division gives the average effect on the treated.
+
+Which number to report depends on the decision. A firm choosing whether
+to send an offer needs the intention-to-treat effect, because sending the
+offer is the lever it controls. A question about what the treatment
+itself does needs the effect of enrolling, with the population it
+describes named.
+:::
+
+# 2. Instrumental variables
+
+::: {.notes}
+Thirty seconds. Opened by the draft lottery, the instrument the Nobel
+citation had in mind.
+:::
+
+## The draft lottery decided who served
+
+- What did military service in the Vietnam War cost veterans in later earnings?
+- Veterans differ from non-veterans in health, schooling and family, which also affect earnings.
+- From 1970 to 1972 a lottery gave each birth date a number. Men with low numbers were eligible for the draft.
+- Comparing men by lottery number, Angrist (1990) found that white veterans earned about 15% less in the early 1980s.
+
+[Angrist (1990), *Lifetime Earnings and the Vietnam Era Draft Lottery: Evidence from Social Security Administrative Records*, American Economic Review 80, 313–336.](https://www.jstor.org/stable/2006669){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes.
+
+The back door: men who served were different from men who did not, in
+health, schooling, family background and in what the army selected on. A
+comparison of veterans with non-veterans measures all of that plus the
+effect of service.
+
+The lottery. For the draft years 1970 to 1972, every birth date of the
+year was drawn in random order, and men born on dates drawn below a
+cutoff were eligible to be drafted. The lottery number did not make
+anyone serve: many eligible men were not drafted, or enlisted anyway, or
+were exempt. It moved the probability of serving.
+
+Angrist used Social Security earnings records. Men with low lottery
+numbers served more often and earned less in the early 1980s, about ten
+years after. Dividing the earnings gap by the gap in the probability of
+serving gives the effect of service on those who served because of the
+lottery: roughly 15% lower earnings for white veterans. The next slide
+says what that division assumes.
+:::
+
+## Three assumptions behind an instrument
+
+- An **instrument** shifts the treatment. Here the lottery number shifts military service.
+- **Relevance**: low numbers raised the chance of serving. The **first stage**, a regression of service on the number, measures it.
+- **Exclusion**: the number affects earnings only through service. No statistic can confirm this.
+- **Independence**: the number was drawn at random, so it is unrelated to health, schooling and family up to chance.
+
+<div class="m06" data-demo="dag" data-design="draft" style="width:58%;margin:0 auto"></div>
+
+::: {.notes}
+Three and a half minutes. Click the button twice. The slide takes the
+draft lottery apart into the three assumptions every instrument makes.
+
+The starting graph. Who served in Vietnam depended on health, schooling
+and family background, and those also drive earnings twenty years later.
+That is the open back door, and it is why the raw gap between veterans
+and non-veterans measures nothing useful.
+
+Click once: the lottery number enters, with an arrow into service. That
+arrow is relevance. Men with low numbers were draft-eligible and served
+more often. Relevance is testable, because both the number and service are
+in the data: regress service on the number and read the coefficient and
+its strength, the first-stage F statistic of the next slides.
+
+Click again: two arrows have to be missing. The crossed dashed arrow from
+the number to earnings is the exclusion restriction: the number may
+reach earnings only by changing service. No statistic can confirm it,
+because earnings would look the same whether the arrow is there or not.
+It is argued, and it was argued about: men with low numbers stayed in
+college to defer the draft, which is a second route from the number to
+earnings. The crossed arrow from background to the number is
+independence: a lottery does not consult anyone's health or family, so
+the number is unrelated to them up to chance. Even lotteries need
+checking: Fienberg (1971, *Randomization and Social Affairs: The 1970
+Draft Lottery*, Science 171, 255–261,
+<https://doi.org/10.1126/science.171.3968.255>) showed the 1970 draw was
+poorly mixed, with birthdays late in the year drawing lower numbers.
+
+The estimator, in one line: the earnings gap by lottery number divided by
+the service gap by lottery number. The next slide runs it in a simulated
+market, where the instrument is a price and all three assumptions have to
+be argued.
+:::
+
+## A fuel price recovers the demand slope
+
+- In a simulated bike-rental market, demand and supply shift every week, so a regression of rentals on price traces neither curve.
+- Expensive fuel raises the cost of the vans that move the bikes. It shifts supply only, so it is the instrument.
+- The **instrumental-variables** (IV) estimate divides the **reduced form**, rentals regressed on fuel, by the first stage, price regressed on fuel.
+- IV centres on the true slope −2 and OLS on −1. The **first-stage F**, about 51, measures fuel's pull on price.
+
+<div class="m06" data-demo="iv" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. Start on "Supply only" with the slider at 8.
+Click "Draw one", then "Draw 1,000".
+
+The market. A bike-rental company sets its price each week. Demand has
+slope −2 (rentals per dollar), supply +1, and both shift every week with
+shocks of standard deviation 8, so a regression of rentals on price
+traces neither curve: that is meeting 7's simultaneity. The instrument is
+the price of fuel, standardized. Expensive fuel raises the cost of the vans
+that move bikes between stations, so it shifts supply in by 8 rentals per
+standard deviation, and by assumption it leaves demand alone.
+
+One sample of 100 weeks. The points are coloured by fuel: red weeks had
+expensive fuel and sit at higher prices and fewer rentals, blue weeks the
+reverse. Fuel drags the market along the demand curve, which is what an
+instrument does. Three lines: the true demand curve in red, the OLS line
+in black, the IV line in blue.
+
+A thousand samples. OLS centres on −1.0: fuel adds supply-side variation,
+which moves OLS toward the demand slope without reaching it. IV centres on
+−2.0: the median is −2.00 and the middle half of the estimates runs from
+−2.2 to −1.8. The mean first-stage F is about 51, which is strong.
+
+The reduced form is the regression of the outcome on the instrument,
+rentals on fuel; the first stage is the treatment on the instrument,
+price on fuel. Their ratio is the IV estimate, and two-stage least squares
+gives the same number. The IV estimator is consistent, not unbiased: its
+sampling distribution has fatter tails than OLS, which is why the readout
+shows the median and the middle half. The next two slides break each
+assumption in turn.
+:::
+
+## Five instruments and their exclusion restrictions
+
+::: {style="font-size:0.6em"}
+| Instrument | Treatment | Outcome | Exclusion restriction |
+|:------------|:-----------|:---------|:----------------------------|
+| Draft lottery number | Military service | Earnings | The number affects earnings only through service |
+| Distance to a college | Years of schooling | Wages | Growing up near a college affects wages only through schooling |
+| Oregon's Medicaid lottery | Health insurance | Hospital use, unpaid bills | Being drawn matters only through enrolling |
+| Rainfall in African countries | Economic growth | Civil conflict | Rain affects conflict only through economic growth |
+| An app coupon sent at random (hypothetical) | Using the app | Spending | The coupon changes spending only through app use |
+:::
+
+- Three rows are random draws: each is an experiment for the draw and an instrument for the treatment it pushes.
+- No statistic can confirm the last column. It has to be argued.
+
+[Miguel, Satyanath and Sergenti (2004), *Economic Shocks and Civil Conflict: An Instrumental Variables Approach*, Journal of Political Economy 112, 725–753.](https://doi.org/10.1086/421174){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. Read the last column aloud for two rows.
+
+Card (1993, *Using Geographic Variation in College Proximity to Estimate
+the Return to Schooling*, NBER Working Paper 4483,
+<https://doi.org/10.3386/w4483>) used distance to the nearest four-year
+college as an instrument for years of schooling among US men: growing up near a college makes
+attending cheaper. The exclusion restriction is that living near a
+college does not affect wages any other way. Families who live near
+colleges differ, so the argument needs covariates for family background,
+and reasonable people disagree about it.
+
+Miguel, Satyanath and Sergenti used rainfall as an instrument for
+economic growth in Sub-Saharan African countries, to estimate the effect
+of growth on civil conflict: a negative growth shock of five percentage
+points raised the likelihood of conflict the next year by about a half.
+The exclusion restriction is that rain affects conflict only through
+growth. The next slide shows it tested.
+
+The new bullet answers the question the room will ask: isn't a random
+lottery or a random coupon just an experiment? Yes, for the thing that is
+drawn. The draft lottery is an experiment on eligibility, Oregon's on
+being offered Medicaid, the coupon's on receiving a coupon, and each
+intention-to-treat effect needs no exclusion restriction. The instrument
+appears when the question is about a different treatment that the draw
+only pushes: serving, being insured, using the app. Nobody can randomize
+those, because people choose them. The effect of the treatment is the
+draw's effect on the outcome divided by its effect on the treatment, and
+that step needs the exclusion restriction.
+
+The last row is not a published study; it is the design most open to
+this room. A firm cannot force customers to adopt an app, but it can send
+an app coupon to a random sample. The coupon is randomized, and the
+effect of sending it is a plain experiment. The effect of using the app,
+for the customers the coupon moved, is the Oregon logic: the coupon's
+effect on spending divided by its effect on app use. The exclusion
+restriction is that the coupon changed spending only by causing app use,
+which fails if the coupon is also a discount on purchases.
+:::
+
+## No statistic confirms the exclusion restriction
+
+- If fuel also draws commuters to bikes, IV centres on −1, not −2, and the F rises to 114.
+- Exclusion can be refuted but never confirmed. Where the instrument cannot move the treatment, it must not move the outcome.
+- Below Indian dams, farm income does not depend on rain, yet rain still predicted riots there.
+- [**Solution**: argue the restriction, run that **placebo test**, and report how a small direct effect would move the estimate.]{.solution}
+
+<div class="m06" data-demo="iv" style="width:92%;margin:0 auto"></div>
+
+[Sarsons (2015), *Rainfall and Conflict: A Cautionary Tale*, Journal of Development Economics 115, 62–72.](https://doi.org/10.1016/j.jdeveco.2014.12.007){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Switch to "Also raises demand", then "Draw 1,000".
+
+The same market, except that expensive fuel now also raises demand for rented
+bikes by 4 rentals per standard deviation: commuters leave their cars.
+Fuel still moves the price, more than before, because both shifts push
+the price up. The mean first-stage F rises from about 51 to about 114.
+The IV estimates centre on −1.0, half the true slope. The regression
+output shows a stronger first stage and a tighter IV interval, and the
+number is wrong.
+
+That is what the title means. Fuel reaches rentals through the price and
+directly through demand, and the data contain only the sum. Only the
+causal graph says which, and a statistic computed from these data cannot.
+
+Sarsons' test of the rainfall instrument from the table. If rain affects
+riots only through income, then where income does not depend on rain,
+rain should not predict riots. Indian districts downstream of irrigation
+dams have farm incomes insulated from rainfall. Rain shocks predicted
+riots there just as strongly. Rain reaches conflict some other way, and
+the instrument is not excluded.
+
+Why check something that cannot be confirmed. The exclusion restriction
+has one testable implication. Where the instrument cannot move the
+treatment, the first stage is zero, so if exclusion holds the instrument
+must have no effect on the outcome there either. An effect in that
+subsample is a direct path, and it refutes the restriction. No effect
+does not prove it: the direct path might exist only where the treatment
+also moves. It is a falsification test, like the balance check: it can
+only fail, and a design that survives one it could have failed is more
+credible than one never put at risk. Sarsons' dams are exactly this
+test. Van Kippersluis and Rietveld formalize it as estimating the direct
+effect in a zero-first-stage subsample (van Kippersluis and Rietveld
+2018, *Beyond Plausibly Exogenous*, Econometrics Journal 21, 316–331,
+<https://doi.org/10.1111/ectj.12113>).
+
+The third part of the solution is a sensitivity analysis. Conley, Hansen
+and Rossi show how to report the IV estimate when the instrument is
+allowed a small direct effect on the outcome, so the reader sees how
+large a violation would overturn the conclusion (Conley, Hansen and Rossi
+2012, *Plausibly Exogenous*, Review of Economics and Statistics 94,
+260–272, <https://doi.org/10.1162/REST_a_00139>). Van Kippersluis and
+Rietveld feed the zero-first-stage estimate into that analysis.
+
+So the solution, in order: argue the restriction from the graph, listing
+every path from instrument to outcome and why each is absent; run the
+placebo test wherever a zero-first-stage group exists; and report how far
+a small direct effect would move the estimate.
+:::
+
+## Weak instruments
+
+- A **weak instrument** barely moves the treatment. On the left, fuel barely moves price when the instrument is very weak.
+- As it weakens, the IV estimates spread out and their median drifts toward the OLS estimate.
+- The usual 95% interval misses the true slope in 6% of samples when F is 42 and 21% when F is 1.6.
+- [**Solution**: report the first-stage F. Below 104.7, use larger critical values than 1.96.]{.solution}
+
+<div class="m06" data-demo="weakiv" style="width:92%;margin:0 auto"></div>
+
+[Lee, McCrary, Moreira and Porter (2022), *Valid t-Ratio Inference for IV*, American Economic Review 112, 3260–3290.](https://doi.org/10.1257/aer.20211063){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Start on "Strong" and click "Draw 1,000". Then click
+"Moderate", "Weak" and "Very weak", drawing 1,000 each time.
+
+The setting. The same bike-rental market, with one change: demand now
+shifts more than supply each week (shock standard deviations 12 and 4).
+So the weeks trace out mostly the supply curve, as in meeting 7's
+simultaneity demo when only demand shifted. Once the instrument is weak,
+OLS lands near +0.7, far from the demand slope of −2, which makes the
+drift toward OLS easy to see. At "Strong", fuel moves price enough to
+pull OLS down to about −0.1. The buttons set how far fuel shifts supply:
+8, 4, 2 and 1 rentals per standard deviation of the fuel price.
+
+Read the left panel first. It is the first stage: one sample of 100
+weeks, fuel price against rental price, with the fitted line. At
+"Strong" the line rises clearly and the first-stage F is large. At "Very
+weak" the line is nearly flat: fuel barely moves price, and the price
+variation the instrument isolates is a sliver of the total.
+
+Then the right panel, 1,000 samples at each strength:
+
+| Instrument | Mean F | Median IV | Mean OLS | Usual 95% interval misses −2 |
+|:--|--:|--:|--:|--:|
+| Strong | 42 | −1.99 | −0.07 | 6% |
+| Moderate | 11 | −1.97 | +0.46 | 8% |
+| Weak | 3.6 | −1.77 | +0.64 | 12% |
+| Very weak | 1.6 | −0.68 | +0.69 | 21% |
+
+Three things happen as the instrument weakens. The estimates spread out:
+at "Very weak", 230 of the 1,000 fall off the axis. The median drifts
+toward OLS, because the little the instrument explains is swamped by the
+same demand shocks that bias OLS. And the usual inference breaks: the
+95% interval computed the standard way misses the true slope more and
+more often, 21% instead of 5% at an F of 1.6.
+
+The mechanism. The IV estimate is the reduced form divided by the first
+stage. When the first stage is near zero, the ratio explodes in both
+directions, and the usual standard error does not reflect it.
+
+The rules. Staiger and Stock's rule of thumb treats a first-stage F below
+10 as weak (Staiger and Stock 1997, Econometrica 65, 557–586,
+<https://doi.org/10.2307/2171753>). Lee and co-authors show that for the
+usual 1.96 critical value to give a valid 5% test, F has to exceed about
+104.7; below that, their table gives larger critical values. Even the
+"Strong" setting here, at 42, is below 104.7, which is why its interval
+misses slightly more than 5%.
+
+The cautionary tale. Angrist and Krueger instrumented schooling with
+quarter of birth, with many instruments (quarter interacted with year and
+state of birth) and a weak first stage. Bound, Jaeger and Baker replaced
+the real quarter of birth with a randomly generated one, 100 times, and
+got an average estimate close to the published one with similar standard
+errors (Bound, Jaeger and Baker 1995, Journal of the American Statistical
+Association 90, 443–450, <https://doi.org/10.1080/01621459.1995.10476536>).
+Prefer one strong instrument to many weak ones.
+:::
+
+## Who the IV estimate is about
+
+- The **compliers** are the units whose treatment the instrument changes.
+- **Monotonicity** assumes nobody does the opposite of what the instrument pushes. No man served only because he drew a high number.
+- Then the IV estimate is the **local average treatment effect** (LATE), the average effect for compliers.
+- The draft's compliers served only because a low number made them eligible. A coupon's compliers adopt the app only with the coupon.
+- Report the first stage, the reduced form, the exclusion argument and the share of compliers.
+
+[Imbens and Angrist (1994), *Identification and Estimation of Local Average Treatment Effects*, Econometrica 62, 467–475.](https://doi.org/10.2307/2951620){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes. Meeting 7's external-validity slide said an
+instrument identifies the effect for the units it moves. This slide names
+them.
+
+Four kinds of unit, by how they respond to the instrument. Compliers take
+the treatment when the instrument says so and not otherwise: men who
+served because their low number made them eligible. Always-takers serve
+whatever the number, such as volunteers; never-takers never serve, such
+as men exempted on health grounds. Defiers would do the opposite of the
+instrument, and monotonicity assumes there are none. Under the
+assumptions, the IV estimate is the average effect among compliers.
+Imbens and Angrist named it the local average treatment effect; Angrist,
+Imbens and Rubin (1996, Journal of the American Statistical Association
+91, 444–455, <https://doi.org/10.1080/01621459.1996.10476902>) gave the
+complier framework its standard form.
+
+Whether that is the effect you want depends on the decision. For a policy
+of drafting, the compliers are the right population. For the return to
+schooling, the compliers of the distance instrument are students whose
+attendance depends on a nearby college, and their return may differ from
+everyone else's.
+
+For a firm the answer is usually yes. The coupon's compliers are the
+customers a coupon can move, and a coupon is the lever the firm actually
+has. The share of compliers is the first stage: if the coupon raises
+adoption by 8 points, 8% of customers are compliers, and the estimate is
+about them.
+:::
+
+# 3. Regression discontinuity
+
+::: {.notes}
+Thirty seconds. Opened by Yelp, then the graph, then the retention email
+with a score cutoff.
+:::
+
+## Yelp rounds ratings to half stars
+
+- Does a higher rating raise a restaurant's demand?
+- Better restaurants earn both better ratings and more customers.
+- Yelp rounds each restaurant's average review score to the nearest half star.
+- A 3.74 shows 3½ stars and a 3.76 shows 4. The design assumes such restaurants are alike.
+- An extra half star made a restaurant's reservations sell out 19 percentage points (49%) more often.
+
+<svg class="dag" viewBox="0 0 700 150" width="420" height="90" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="the displayed rating as a step function of the average review score, with the step at 3.75">
+  <line x1="60" y1="118" x2="660" y2="118" stroke="#55554f" stroke-width="1.5"/>
+  <text x="60" y="142" font-size="15" fill="#6b6b6b" style="text-anchor:middle">3.5</text>
+  <text x="360" y="142" font-size="15" fill="#6b6b6b" style="text-anchor:middle">3.75</text>
+  <text x="660" y="142" font-size="15" fill="#6b6b6b" style="text-anchor:middle">4.0</text>
+  <text x="360" y="22" font-size="15" fill="#6b6b6b" style="text-anchor:middle">Average of the reviews (running variable)</text>
+  <line x1="60" y1="92" x2="358" y2="92" stroke="#1b1b1b" stroke-width="3.5"/>
+  <line x1="362" y1="52" x2="660" y2="52" stroke="#b31b1b" stroke-width="3.5"/>
+  <line x1="360" y1="40" x2="360" y2="118" stroke="#1b1b1b" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="200" y="82" font-size="15" fill="#1b1b1b" font-weight="600" style="text-anchor:middle">displayed as 3½ stars</text>
+  <text x="510" y="42" font-size="15" fill="#b31b1b" font-weight="600" style="text-anchor:middle">displayed as 4 stars</text>
+  <circle cx="350" cy="92" r="5" fill="#1b1b1b"/>
+  <circle cx="370" cy="52" r="5" fill="#b31b1b"/>
+  <text x="300" y="112" font-size="13" fill="#1b1b1b" style="text-anchor:middle">3.74</text>
+  <text x="420" y="72" font-size="13" fill="#b31b1b" style="text-anchor:middle">3.76</text>
+</svg>
+
+[Anderson and Magruder (2012), *Learning from the Crowd: Regression Discontinuity Estimates of the Effects of an Online Review Database*, Economic Journal 122, 957–989.](https://doi.org/10.1111/j.1468-0297.2012.02512.x){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes.
+
+The problem. Rating and demand are both caused by quality, so comparing
+restaurants by rating mixes the effect of the rating with the effect of
+being a good restaurant. No covariate measures quality, and no restaurant
+will let you randomize its stars.
+
+Yelp's display rule creates the comparison. The site computes the average
+of a restaurant's reviews and displays it rounded to the nearest half
+star. A restaurant at 3.74 shows three and a half stars; one at 3.76 shows
+four. Two hundredths of a point apart, they should be alike in quality,
+and a customer browsing sees a different number. The underlying average
+is the running variable, 3.75 is the cutoff, and the displayed star is
+the treatment. That they are alike is the design's assumption, and the
+next slides say how to check it.
+
+Anderson and Magruder matched Yelp ratings to restaurant reservation
+availability. An extra half star, at the rounding threshold, made a
+restaurant 19 percentage points more likely to be sold out, a 49%
+increase, with larger effects when other information about the
+restaurant was scarce. They also checked that restaurants do not
+manipulate their ratings across the threshold. Luca's companion work:
+a one-star increase raised revenue by 5 to 9%, for independent
+restaurants and not for chains (Luca 2016, Harvard Business School
+Working Paper 12-016, <https://doi.org/10.2139/ssrn.1928601>).
+:::
+
+## Treatment jumps at the cutoff and nothing else does
+
+- In a **regression discontinuity** (RD), a unit is treated when its score, the **running variable**, passes a **cutoff**.
+- Here the firm emails everyone whose predicted chance of renewing is at or above a cutoff. U drives that score and renewal.
+- **Continuity** assumes average renewal, with or without the email, changes smoothly with the score at the cutoff.
+- The jump in renewal at the cutoff is then the effect for customers at the cutoff.
+
+<div class="m06" data-demo="dag" data-design="rd" style="width:58%;margin:0 auto"></div>
+
+::: {.notes}
+Three and a half minutes. Click the button twice.
+
+The retention email again, sent a third way. Click once: the firm emails
+every customer at or above a score cutoff, and nobody below. The score
+alone decides, so no arrow from U reaches the email, as in the
+experiment. But the score is not a coin: U drives it, and the score
+predicts renewal. Customers with high scores renew more whether emailed
+or not, so comparing all emailed customers with all the others gives the
+44.5 points of targeting.
+
+Click again. The assumption. Away from the cutoff, renewal changes
+smoothly with the score: a customer at 0.6 is a little more likely to
+renew than one at 0.4, through U and through anything else. At the cutoff
+only one thing changes abruptly, the email. So any jump in renewal at the
+cutoff belongs to the email. That is continuity of the average potential
+outcomes at the cutoff, and it is the design's one assumption.
+
+What it buys. Compare customers just below the cutoff with customers just
+above. They have nearly the same score, so nearly the same U on average.
+Their difference in renewal is the effect of the email, for customers at
+the cutoff. Meeting 7's matching slide wanted a comparable untreated unit
+for every treated one; here there are none except at the cutoff, and the
+cutoff is enough.
+
+The design is old. Thistlethwaite and Campbell (1960, *Regression-
+Discontinuity Analysis: An Alternative to the Ex Post Facto Experiment*,
+Journal of Educational Psychology 51, 309–317,
+<https://doi.org/10.1037/h0044319>) compared students just above and
+below the test score that earned a National Merit certificate.
+Economics rediscovered it forty years later.
+:::
+
+## Local linear fits on each side estimate the jump
+
+- The **bandwidth** is how far from the cutoff the data are used. Lines fit on each side give the jump.
+- Units near the cutoff are more alike, so a narrow bandwidth has less bias but fewer units and a larger standard error.
+- A bandwidth picked by hand lets the analyst choose the result.
+- [**Solution**: let the data choose the bandwidth, and widen the interval for the remaining bias.]{.solution}
+
+<div class="m06" data-demo="rd" style="width:92%;margin:0 auto"></div>
+
+[Calonico, Cattaneo and Titiunik (2014), *Robust Nonparametric Confidence Intervals for Regression-Discontinuity Designs*, Econometrica 82, 2295–2326.](https://doi.org/10.3982/ECTA11757){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Start on "Recorded scores" with the bandwidth at 0.50.
+Click "Draw one", then "Draw 500". Then move the bandwidth to 1.50 and
+draw 500 again, and to 0.25 and draw 500.
+
+One sample is 20,000 customers. The dots are the renewal rate in bins of
+the score, grey below the cutoff and red above; the red curve is the true
+renewal rate, which jumps by 2 points at the cutoff. The strip underneath
+is the number of customers per bin. The shaded band is the bandwidth, and
+the two blue lines are the local linear fits, renewal on the score, one
+on each side.
+
+At bandwidth 0.50 about 6,700 customers fall inside. The jump in one
+sample is a few points either side of 2, with a standard error of about
+2.1. Five hundred samples: mean 2.0, standard deviation 2.2. Unbiased, and
+the reported standard error is right.
+
+Bandwidth 1.50: the lines now fit a curved stretch of the renewal rate and
+miss its shape at the cutoff. The mean estimate is 3.3, a bias of more
+than a point, with a smaller standard deviation of 1.3. Bandwidth 0.25:
+mean 2.0, standard deviation 3.0, and the single-sample picture is
+noisier. That is the trade-off: the bandwidth sets how much of the curve
+the straight line has to approximate.
+
+Solution. Local linear fits, with the bandwidth chosen by the data to
+balance that bias against that variance; Calonico, Cattaneo and
+Titiunik's estimator does this and corrects the interval for the bias
+that remains, and it is what the rdrobust package runs in R and Stata.
+Gelman and Imbens explain why a single high-order polynomial fit to all
+the data is worse: it puts weight on observations far from the cutoff and
+gives estimates that swing with the degree (Gelman and Imbens 2019,
+Journal of Business & Economic Statistics 37, 447–456,
+<https://doi.org/10.1080/07350015.2017.1366909>).
+
+A regression discontinuity needs many observations near the cutoff. Here
+20,000 customers give a standard error of 2 points on a 2-point effect.
+That is the price of the design, and the proposal has to state it.
+:::
+
+## Manipulation of the running variable
+
+- **Manipulation** means units, or someone acting for them, move scores across the cutoff.
+- Suppose sales reps raise the scores of likely renewers just below the cutoff. The estimate rises to 11 percentage points, against a true effect of 2.
+- French labour rules tighten at 50 employees, so firms stop at 49. Firms on each side of 50 differ.
+- [**Solution**: run a **density test** for a jump in the number of units at the cutoff, and check covariates.]{.solution}
+
+<div class="m06" data-demo="rd" style="width:92%;margin:0 auto"></div>
+
+[Garicano, Lelarge and Van Reenen (2016), *Firm Size Distortions and the Productivity Distribution: Evidence from France*, American Economic Review 106, 3439–3479.](https://doi.org/10.1257/aer.20130232){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Switch to "Reps raise favourites", bandwidth at 0.50, and
+click "Draw 500".
+
+The story. The sales reps know the cutoff, and they know some customers
+personally. For customers just below the line whom they expect to renew,
+about half of those within half a point of it, they raise the recorded
+score, which puts them just above it. Two things show. The strip of
+customers per bin drops to about a third just below the cutoff and
+bulges just above: customers have moved across. And the renewal rate just
+above the cutoff is inflated, because the customers who were moved are
+the keen ones, while the rate just below falls. The mean estimate is
+about 11 points against a true effect of 2. Continuity failed: something
+besides the email, the composition of customers, jumped at the cutoff.
+
+Garicano, Lelarge and Van Reenen's France. Labour regulations add
+obligations at 50 employees. The size distribution of French firms has a
+bulge at 49 and a sharp fall at 50, which the US distribution does not
+have. Firms stop growing just short of the threshold. Any discontinuity
+design at that cutoff would compare firms that chose to stay at 49 with
+firms that chose to cross, which are different firms.
+
+Solution. McCrary's density test estimates the number of units per bin
+on each side of the cutoff and tests whether it jumps, which is the strip
+on this slide made formal (McCrary 2008, *Manipulation of the Running
+Variable in the Regression Discontinuity Design: A Density Test*, Journal
+of Econometrics 142, 698–714, <https://doi.org/10.1016/j.jeconom.2007.05.005>).
+Then run the regression discontinuity on every covariate as if it were
+the outcome: age, tenure, past spending. None should jump. If one does,
+the units on the two sides differ in something other than the treatment,
+and the design is gone.
+:::
+
+## Fuzzy discontinuity
+
+- In a **sharp design**, such as Yelp's, crossing the cutoff decides the treatment. In a **fuzzy design** it shifts the treatment only partly.
+- The fuzzy estimate divides the jump in the outcome by the jump in the treatment, as IV does.
+- Banks raise credit limits at cutoffs in the FICO score, the credit score most US lenders use. Crossing one raises the average limit, not every borrower's.
+- One study covers 743 such cutoffs and 8.5 million cards.
+- Within a year, borrowers below a score of 660 borrowed 59 cents of each extra dollar of limit. Above 740 they borrowed almost none.
+
+[Agarwal, Chomsisengphet, Mahoney and Stroebel (2018), *Do Banks Pass Through Credit Expansions to Consumers Who Want to Borrow?*, Quarterly Journal of Economics 133, 129–190.](https://doi.org/10.1093/qje/qjx027){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes.
+
+Sharp and fuzzy. Yelp's rounding and the email cutoff are sharp: the
+running variable decides the treatment completely. Often it only shifts
+it. A scholarship with a score cutoff that some winners decline; an
+eligibility threshold where some of the eligible do not apply, as in
+Oregon. Then the jump in the outcome at the cutoff is an
+intention-to-treat effect, and dividing it by the jump in the treatment
+gives the effect for compliers at the cutoff. The cutoff is an
+instrument, with the exclusion restriction that crossing it affects the
+outcome only through the treatment.
+
+Agarwal and co-authors. Banks set credit limits with rules that jump at
+FICO score cutoffs, and different banks use different cutoffs: 743 of
+them across 8.5 million cards. A consumer just above a cutoff gets a
+higher limit than one just below, for about the same creditworthiness.
+The question was how much of a higher limit people borrow: the jump in
+borrowing divided by the jump in the limit. Below a FICO score of 660, 59
+cents of every extra dollar of limit was borrowed within a year; above
+740, essentially none. That is also a result about who the estimate is
+for: borrowers at each cutoff, and the answer varies across them.
+:::
+
+## Who the RD estimate is about
+
+- The estimate is the effect for units at the cutoff. Extending it to units far from the cutoff needs assumptions the data cannot check.
+- For Yelp that is restaurants near a rounding threshold. For credit cards it is borrowers near each score cutoff.
+- Report a plot of the outcome against the running variable, the bandwidth, the density test, the covariate checks and the sample size near the cutoff.
+
+[Lee and Lemieux (2010), *Regression Discontinuity Designs in Economics*, Journal of Economic Literature 48, 281–355.](https://doi.org/10.1257/jel.48.2.281){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes.
+
+The estimate is the effect of the email for customers whose score is at
+the cutoff. Whether the email would do the same for a customer at the top
+of the distribution is not in the data. The scholarship card this
+afternoon turns on this: a cutoff design answers what the money does for
+students at the margin of getting it, and the administrators may want to
+know about everyone.
+
+The reporting list, for the proposal and the pitch: the plot of binned
+outcomes against the running variable with the fits, which is the figure
+that convinces; the bandwidth and how it was chosen; the density test;
+the covariate checks; and how many observations sit near the cutoff,
+because that is the effective sample size. Lee and Lemieux's survey is the
+standard guide, and the Remix chapter follows it.
+:::
+
+## Three designs
+
+::: {style="font-size:0.56em"}
+|  | Design | Variation used | Assumption | Tests that could reject it | The estimate is for | Done well |
+|:-|:--------|:----------|:--------------|:---------|:--------|:-------|
+| 1 | Randomized experiment | A coin | The coin alone decides; no interference; a true outcome | Joint balance test; real-outcome check | The population randomized | eBay's 210 market areas |
+| 2 | Instrumental variables | The part of treatment the instrument moves | Relevance, exclusion, independence, monotonicity | First-stage F, placebo tests | Compliers | The draft lottery |
+| 3 | Regression discontinuity | Units just above and below a cutoff | Continuity at the cutoff | Density test, covariate jumps | Units at the cutoff | Yelp's half stars |
+:::
+
+- In 21,000 test statistics from economics journals, p-hacking shows most in IV studies and least in experiments and discontinuity designs.
+- Your proposal's identification section fills in each column for its design.
+
+[Brodeur, Cook and Heyes (2020), *Methods Matter: p-Hacking and Publication Bias in Causal Analysis in Economics*, American Economic Review 110, 3634–3660.](https://doi.org/10.1257/aer.20190687){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. A reference slide for the session B cards.
+
+Read the Assumption column down. The experiment's assumptions are the
+coin itself, no interference, and a true outcome, one that measures what
+the decision needs, which is why the other two designs are described as
+imitating it. The third is the lesson of the stated-preference slide:
+randomization protects the comparison, not the measurement. The instrument needs four assumptions, three
+of them untestable; the discontinuity needs one, a smooth curve. Then the
+tests column: what the data can do is test the implications, balance, the
+first stage, the density, and they can reject an assumption but never
+confirm it.
+
+The first bullet. Brodeur, Cook and Heyes collected over 21,000 test
+statistics from 25 economics journals and looked for results bunched
+just past the 5% threshold, the trace of p-hacking. The bunching is
+strongest in instrumental-variables studies, then
+difference-in-differences (next week's design), and weakest in randomized
+trials and regression discontinuities. The designs that leave the
+researcher the fewest choices show the least evidence of choice.
+
+The population column is the session B question that matters for the
+proposal: when the team names the design, they name who the estimate is
+about, and the card asks whether that is who the decision concerns.
+:::
+
+## Can your project use one of these designs?
+
+- What experiment would answer your question if you could run it?
+- Can you assign the treatment to some units at random, even in a small pilot?
+- Did something as good as random move the treatment, with no other path to the outcome?
+- Does a score crossing a cutoff decide who is treated?
+- If none applies, next week's designs use a change in treatment over time.
+
+::: {.notes}
+One minute. Each student writes one line per question before the break.
+The session B sheet starts from these, after the cards.
+
+The first question is the ideal experiment from the LaLonde slide. The
+next three ask, in order, for an experiment, an instrument and a
+discontinuity. Most teams will answer no to all three, and that is the
+expected result. The project then needs one of next week's designs, or it
+is descriptive, and the proposal has to say which. Finding that out today
+is better than finding it out in November.
+:::
+
+::::

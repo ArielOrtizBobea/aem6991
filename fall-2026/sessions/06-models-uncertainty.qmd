@@ -843,8 +843,9 @@ moments equal to them.
 
 In the simplest case they coincide. For a purchase indicator with 7 ones in
 20 visits, all three give 0.35. They differ in richer models, and the
-difference is in how much each assumes. The next three slides take them in
-turn.
+difference is in how much each assumes. The next slides take them in turn,
+all on the same twelve houses where possible, and end with two methods that
+weight by precision: GMM and weighted least squares.
 :::
 
 ## Least squares estimation
@@ -909,35 +910,136 @@ admissible N, the sample maximum. Estimator 1 was the maximum likelihood
 estimator: biased in small samples, consistent, and with low variance.
 :::
 
+## Maximum likelihood for the regression slope
+
+<div class="m06" data-demo="criteria" data-mode="mle" style="width:86%;margin:0 auto"></div>
+
+- Each house's likelihood: the height of a normal density, centered on the line, at its observed price.
+- With normal errors, the maximum likelihood slope equals the least squares slope.
+
+::: {.notes}
+Three minutes. The same twelve houses and the same slope slider as the least
+squares slide.
+
+Assume the errors are normally distributed around the line. For a candidate
+slope, each house gets a normal density curve centered at the price the line
+predicts for it, drawn sideways in blue. The red segment is the height of
+that curve at the house's observed price: the density of the observation,
+its contribution to the likelihood. The likelihood is the product of the
+twelve heights; the right panel plots its logarithm against the slope.
+
+Move the slider away from the best fit. Houses fall into the tails of their
+curves, the red segments shrink, and the log-likelihood falls. The curves
+also widen, because the estimated error standard deviation grows with the
+residuals.
+
+At the starting slope of 3 the log-likelihood is −64.8 and the estimated
+error standard deviation σ̂ is $53.7k. Click "Best fit". The log-likelihood
+peaks at −58.7, with σ̂ = $32.3k, at a slope of 9.76, the least squares
+slope.
+With normal errors, maximizing the likelihood is the same as minimizing the
+sum of squared residuals, so least squares is the maximum likelihood
+estimator for this model. With a different error distribution the two
+would differ.
+:::
+
 ## Method of moments estimation
 
-- Chooses the parameters that equate sample moments to the moments the model implies.
-- Tanks: setting the sample mean equal to its expected value, (N + 1)/2, gives estimator 2.
-- Least squares is a moment estimator: residuals have mean zero and are uncorrelated with each regressor.
-- **GMM** uses more moment conditions than parameters and weights them by their precision.
-- It requires only the moment conditions, not the full distribution.
+<div class="m06" data-demo="criteria" data-mode="mom" style="width:86%;margin:0 auto"></div>
+
+- Moment condition: the residuals are uncorrelated with size.
+- The slope that sets the sample moment to zero is the least squares slope.
+
+::: {.notes}
+Three minutes. The same houses and slider again. The method of moments
+chooses the parameters that make a sample moment equal what the model
+implies. Here the model implies that the errors are unrelated to size, so
+the sample moment is the mean of (size − mean size) × residual, and the
+estimate sets it to zero.
+
+Move the slider to a low slope. The residuals of the large houses are
+positive (red) and those of the small houses negative (blue): the residuals
+rise with size, and the moment on the right is far from zero (271.9 at the
+starting slope of 3). At a high
+slope the pattern reverses. Click "Best fit": the moment crosses zero at
+9.8, the least squares slope. Least squares is a method of moments
+estimator.
+
+The tank estimator 2 was a method of moments estimator too: the model
+implies that the expected serial is (N + 1)/2, and setting the sample mean
+equal to it gives twice the mean minus 1. It used one implication of the
+model and was less efficient than estimator 3, which uses the full
+distribution. Weaker assumptions, lower efficiency.
+:::
+
+## GMM weights moment conditions by their precision
+
+<div class="m06" data-demo="gmm" style="width:70%;margin:0 auto"></div>
+
+- Two surveys give two moment conditions for one parameter, mean spend.
+- **GMM** minimizes a weighted sum of squared moment conditions.
+- The optimal weights are inverse variances. They minimize the standard error.
 
 [Hansen (1982), *Large Sample Properties of Generalized Method of Moments Estimators*, Econometrica 50, 1029–1054.](https://doi.org/10.2307/1912775){style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.notes}
-Two minutes. The contrast with maximum likelihood is the point of the slide.
+Three minutes.
 
-Maximum likelihood used the full distribution: every serial from 1 to N
-equally likely. The method of moments used a single implication of it: the
-expected serial is (N + 1)/2. Estimator 2 was unbiased and less efficient
-than estimator 3, which exploits the full distribution. Weaker assumptions,
-lower efficiency.
+The generalized method of moments handles more moment conditions than
+parameters. Here there is one parameter, mean monthly spend, and two
+conditions: survey A's mean should equal it, and so should survey B's. The
+two surveys give different estimates, so no single value satisfies both
+conditions exactly. GMM minimizes a weighted sum of the squared conditions,
+which here gives a weighted average of the two survey means.
 
-Least squares can be derived the same way. Its estimates solve the sample
-conditions that the residuals average zero and are uncorrelated with every
-regressor.
+Survey A (n = 50) has mean $71.89 with standard error $6.57; survey B
+(n = 400) has mean $71.31 with standard error $2.61.
 
-The generalized method of moments, GMM, handles more moment conditions than
-parameters by weighting them, with more precisely estimated conditions
-receiving more weight. Lars Peter Hansen developed it, and it was cited in
-his 2013 Nobel prize. It is used when economic theory implies moment
-conditions without implying a full distribution. Instrumental variables
-estimation, in the designs meetings, is a special case.
+Move the weight slider. At 0.5 the estimate is the simple average, $71.60,
+and its standard error, $3.53, is larger than survey B's alone, because the
+small survey adds noise. Click "Optimal weights": the weight on the small
+survey drops to 0.14, the inverse-variance weight, and the standard error
+reaches its minimum, $2.42, slightly below survey B's alone. More precise
+conditions receive more weight.
+
+One caution if asked. In this draw both surveys happen to lie above the true
+mean of $67.81, so the optimally weighted estimate, $71.39, is not closer to
+the truth than survey B alone. Optimal weighting minimizes the standard
+error, a property of the estimator across samples. It does not guarantee a
+closer estimate in every sample.
+
+Lars Peter Hansen developed GMM, and it was cited in his 2013 Nobel prize.
+Economists use it when theory implies moment conditions without implying a
+full distribution. Instrumental variables estimation, in the designs
+meetings, is a special case.
+:::
+
+## WLS weights observations by their precision
+
+<div class="m06" data-demo="wls" style="width:80%;margin:0 auto"></div>
+
+- **Weighted least squares (WLS)** minimizes Σ w~i~ e~i~², with w~i~ = 1 / Var(e~i~).
+- Both estimators are unbiased. WLS has the smaller variance when the error variance differs across observations.
+
+::: {.notes}
+Three minutes.
+
+Here the error standard deviation grows with store size: large stores' sales
+are noisier. Ordinary least squares gives every store the same weight.
+Weighted least squares gives each store a weight equal to the inverse of its
+error variance, so small, precise stores count more. The point sizes show
+the WLS weights.
+
+Click "Draw 1,000 samples". Both sampling distributions are centered on the
+true slope of 5 (means 4.99 and 5.00): both estimators are unbiased. The WLS
+distribution is narrower, with a standard deviation of 0.54 against 0.77 for
+OLS: it is the more efficient estimator, the same property as in section 2. The weighting is the same idea as GMM's: weight each piece of
+information by its precision.
+
+In practice the error variance is unknown. Feasible WLS estimates it first,
+and the common alternative keeps OLS and reports heteroskedasticity-robust
+standard errors, which correct the standard error but not the efficiency.
+Meeting 7.
 :::
 
 ## Comparing the three estimation methods

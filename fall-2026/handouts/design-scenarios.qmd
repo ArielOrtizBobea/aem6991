@@ -39,15 +39,15 @@ page-layout: full
 </style>
 
 <p class="print-note">Eight settings. Cut along the dashed lines and deal one
-per team. Cards 1–4 suit meeting 7 (experiments, instruments,
-discontinuities); cards 5–8 suit meeting 8 (difference-in-differences, fixed
+per team. Cards 1–4 suit meeting 8 (experiments, instruments,
+discontinuities); cards 5–8 suit meeting 9 (difference-in-differences, fixed
 effects, event studies). Page&nbsp;2 is the defence sheet.</p>
 
 <div class="sheetwrap">
 <div class="cards">
 
   <div class="card">
-    <span class="n">Card 1 · <span>meeting 7</span></span>
+    <span class="n">Card 1 · <span>meeting 8</span></span>
     <h3>The savings nudge</h3>
     <p>A bank wants to know whether its monthly financial-literacy email
     makes customers save more. It has 400,000 customers on the list, it
@@ -56,7 +56,7 @@ effects, event studies). Page&nbsp;2 is the defence sheet.</p>
   </div>
 
   <div class="card">
-    <span class="n">Card 2 · <span>meeting 7</span></span>
+    <span class="n">Card 2 · <span>meeting 8</span></span>
     <h3>The scholarship cutoff</h3>
     <p>A university awards a scholarship to every applicant scoring above
     1200 on an entrance test, and to nobody below. Administrators want to
@@ -65,7 +65,7 @@ effects, event studies). Page&nbsp;2 is the defence sheet.</p>
   </div>
 
   <div class="card">
-    <span class="n">Card 3 · <span>meeting 7</span></span>
+    <span class="n">Card 3 · <span>meeting 8</span></span>
     <h3>The water filters</h3>
     <p>An NGO distributed water filters to the villages that asked for
     them. Diarrhoea rates fell in those villages and not in others. The
@@ -74,7 +74,7 @@ effects, event studies). Page&nbsp;2 is the defence sheet.</p>
   </div>
 
   <div class="card">
-    <span class="n">Card 4 · <span>meeting 7</span></span>
+    <span class="n">Card 4 · <span>meeting 8</span></span>
     <h3>The local label</h3>
     <p>A food company is deciding whether to put "locally sourced" on a
     package. It wants to know what that claim is worth in cents per unit
@@ -83,7 +83,7 @@ effects, event studies). Page&nbsp;2 is the defence sheet.</p>
   </div>
 
   <div class="card">
-    <span class="n">Card 5 · <span>meeting 8</span></span>
+    <span class="n">Card 5 · <span>meeting 9</span></span>
     <h3>The self-checkout rollout</h3>
     <p>A grocery chain installed self-checkout in 340 of its 900 stores
     over eighteen months, region by region, in an order set by an old
@@ -92,7 +92,7 @@ effects, event studies). Page&nbsp;2 is the defence sheet.</p>
   </div>
 
   <div class="card">
-    <span class="n">Card 6 · <span>meeting 8</span></span>
+    <span class="n">Card 6 · <span>meeting 9</span></span>
     <h3>The border wage</h3>
     <p>One state raised its minimum wage on 1 January; the state across
     the river did not. There are fast-food restaurants within two miles
@@ -101,7 +101,7 @@ effects, event studies). Page&nbsp;2 is the defence sheet.</p>
   </div>
 
   <div class="card">
-    <span class="n">Card 7 · <span>meeting 8</span></span>
+    <span class="n">Card 7 · <span>meeting 9</span></span>
     <h3>The light rail</h3>
     <p>A city opened a light-rail line four years ago. House prices within
     half a mile of the new stations are up 22% since. The transit
@@ -110,7 +110,7 @@ effects, event studies). Page&nbsp;2 is the defence sheet.</p>
   </div>
 
   <div class="card">
-    <span class="n">Card 8 · <span>meeting 8</span></span>
+    <span class="n">Card 8 · <span>meeting 9</span></span>
     <h3>The seller fee</h3>
     <p>A platform raised its commission for seller accounts created on or
     after 1 March, leaving older accounts on the old rate. It wants to

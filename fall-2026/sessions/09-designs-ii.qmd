@@ -14,6 +14,10 @@ This page is a stub. Materials appear here before the meeting.
 
 **What you should be able to do after this meeting.** Draw your project's design as a graph. Name the single assumption carrying the estimate — the one you would have to defend to a sceptic.
 
+## Handouts
+
+[Project description brief](../handouts/project-description.qmd)
+
 ## Where to read more
 
 [Remix](https://mixtape.scunning.com/) ch. 8 and 9 on panel designs and difference-in-differences, ch. 10 if your rollout is staggered. [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) ch. 5.
@@ -34,4 +38,4 @@ Your team's output is submitted before you leave.
 
 ## Due
 
-Project pitch — one page, presented in class
+Project description — two pages on Canvas before class, and five minutes in front of the room

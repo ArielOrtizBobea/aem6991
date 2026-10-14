@@ -165,7 +165,7 @@ Half the grade is individual and half is team-based.
 | Midterm | Individual | Nov 18, in class | 15 % |
 | Participation | Individual | Throughout | 20 % |
 | *Individual subtotal* | | | *50 %* |
-| Project pitch --- one page, presented | Team | Oct 21\*, in class | 5 % |
+| Project description --- two pages, presented | Team | Oct 21\*, before class | 5 % |
 | Proposal outline | Team | Nov 11 | 15 % |
 | Final presentation | Team | Dec 2, in class | 10 % |
 | Research proposal, written | Team | Dec 11 | 20 % |
@@ -240,9 +240,9 @@ adjust team grades.
 
 ### Team deliverables (50 %)
 
-**One paper, reached in three milestones and presented once.** A one-page
-pitch, then the whole argument as a detailed outline, then the written
-proposal, which the team presents at meeting 14 before handing it in. The
+**One paper, reached in three milestones and presented once.** A two-page
+project description, then the whole argument as a detailed outline, then
+the written proposal, which the team presents at meeting 14 before handing it in. The
 argument is fixed before the sentences are, so a broken argument is caught
 at the outline where fixing it costs an afternoon rather than a week.
 
@@ -264,7 +264,8 @@ leave, and it is a piece of your proposal.
 
 {{< include _builds.qmd >}}
 
-These weekly pieces, with the pitch and the outline, are the checkpoints
+These weekly pieces, with the project description and the outline, are the
+checkpoints
 that keep each team on track for the proposal.
 
 ### What you are graded against
@@ -509,4 +510,4 @@ student-identifying data.
 
 ------------------------------------------------------------------------
 
-*Last updated: 2026-10-12. Dates marked with an asterisk in the schedule are still to be confirmed.*
+*Last updated: 2026-10-13. Dates marked with an asterisk in the schedule are still to be confirmed.*

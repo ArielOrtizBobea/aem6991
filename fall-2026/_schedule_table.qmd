@@ -38,12 +38,12 @@
   <td class="hw"></td></tr>
 <tr><td>Wed Oct 14</td>
   <td class="topic"><a href="sessions/08-designs-i.html">8 · Research designs I</a>
-    <span class="t-desc">Experiments, instrumental variables, regression discontinuity. What variation each exploits, what each assumes, and how each fails.</span></td>
+    <span class="t-desc">Experiments, instrumental variables, regression discontinuity. For each: the graph, the one assumption, the checks, and who the estimate is about.</span></td>
   <td class="hw"></td></tr>
 <tr class="g-last g03"><td>Wed Oct 21<sup class="resched">*</sup></td>
   <td class="topic"><a href="sessions/09-designs-ii.html">9 · Research designs II</a>
     <span class="t-desc">Difference-in-differences, panel data with fixed effects, event studies. The question is the same each time: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate.</span></td>
-  <td class="hw">Project pitch — one page, presented in class</td></tr>
+  <td class="hw">Project description — two pages on Canvas before class, and five minutes in front of the room</td></tr>
 
 <tr class="g-first g04"><td class="g-rail" rowspan="3"><span>Communication</span></td><td>Wed Oct 28</td>
   <td class="topic"><a href="sessions/10-writing.html">10 · Writing</a>

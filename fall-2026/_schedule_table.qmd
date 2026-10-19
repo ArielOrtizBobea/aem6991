@@ -40,15 +40,15 @@
   <td class="topic"><a href="sessions/08-designs-i.html">8 · Research designs I</a>
     <span class="t-desc">Experiments, instrumental variables, regression discontinuity. For each: the graph, the one assumption, the checks, and who the estimate is about.</span></td>
   <td class="hw"></td></tr>
-<tr class="g-last g03"><td>Wed Oct 21<sup class="resched">*</sup></td>
+<tr class="g-last g03"><td>Wed Oct 21</td>
   <td class="topic"><a href="sessions/09-designs-ii.html">9 · Research designs II</a>
     <span class="t-desc">Difference-in-differences, panel data with fixed effects, event studies. The question is the same each time: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate.</span></td>
-  <td class="hw">Project description — two pages on Canvas before class, and five minutes in front of the room</td></tr>
+  <td class="hw">Project description — up to three pages, on Canvas by Friday, October 23</td></tr>
 
 <tr class="g-first g04"><td class="g-rail" rowspan="3"><span>Communication</span></td><td>Wed Oct 28</td>
   <td class="topic"><a href="sessions/10-writing.html">10 · Writing</a>
     <span class="t-desc">Writing is taught here, as a method rather than as advice. A piece of writing is built outline first — one topic sentence per paragraph, in order, before any prose exists. The fastest way to see that is backwards.</span></td>
-  <td class="hw"></td></tr>
+  <td class="hw">Project talk — three minutes, in session B</td></tr>
 <tr><td>Wed Nov 4</td>
   <td class="topic"><a href="sessions/11-figures.html">11 · Figures</a>
     <span class="t-desc">Which figure answers which question, and why — distributions, time, space, comparison. Then what figures hide: aggregation, scale, binning, projection, area scaled by radius, chosen windows, counts where you needed a rate. Then the hard half nobody practises — an honest figure that still makes a point.</span></td>
@@ -73,7 +73,7 @@
 </div>
 <p class="sched-note">
 <span class="resched">*</span> These dates are not final:
-<strong>Oct 21</strong> &mdash; Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed &middot; <strong>Nov 18</strong> &mdash; Instructor off campus — the midterm is proctored; arrangements announced by week 10
+<strong>Nov 18</strong> &mdash; Instructor off campus — the midterm is proctored; arrangements announced by week 10
 </p>
 
 <script>

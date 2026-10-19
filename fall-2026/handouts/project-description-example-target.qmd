@@ -1,0 +1,247 @@
+---
+pagetitle: "AEM 6991 · Example project description, Target"
+toc: false
+format:
+  # As in the solar example: the web page carries the team line as its
+  # title, and the PDF carries it as the two plain lines a student would
+  # type. The PDF shows the page limit met at the size the instructions set.
+  html:
+    title: "Team Y · Boycotts and store visits at Target, 2023 and 2025"
+    subtitle: "Lena Park, Marco Silva, Nadia Haddad, Owen Brooks, Priya Natarajan"
+  typst:
+    output-file: Team-Y_project-description.pdf
+    papersize: us-letter
+    margin:
+      x: 1in
+      y: 1in
+    fontsize: 11pt
+    include-in-header:
+      - text: |
+          #set text(font: ("Calibri", "Helvetica Neue", "Arial"))
+          #show table: set text(size: 9pt)
+          #show table.cell: set par(justify: false)
+          #show table.cell: set text(hyphenate: false)
+          #show figure: set block(breakable: true)
+format-links:
+  - html
+  - format: typst
+    text: "The PDF as submitted"
+    icon: file-pdf
+editor:
+  markdown:
+    wrap: 72
+---
+
+::: {.content-visible when-format="typst"}
+**Team Y · Boycotts and store visits at Target, 2023 and 2025**\
+Lena Park, Marco Silva, Nadia Haddad, Owen Brooks, Priya Natarajan
+:::
+
+::: {.content-visible when-format="html"}
+::: {.callout-note appearance="simple"}
+**This is a hypothetical example.** The team, its members and the dates
+of its work are invented. The boycotts, Target's sales figures and store
+count, the data sources and the studies are real. It asks a question a
+company would pay to answer. The [solar farm
+example](project-description-example-solar.qmd) asks one a town would
+act on. Both follow the [instructions](project-description.qmd) section
+by section. The [PDF](Team-Y_project-description.pdf) shows this one
+within the three-page limit, with the references and the AI disclosure
+on a page of their own.
+:::
+:::
+
+## 1. Research question
+
+Did the 2023 and 2025 boycotts of Target lower visits to its stores
+most in the counties whose politics matched each boycott? This is an
+evaluation. A retailer's marketing team, deciding where to spend on
+promotions to win shoppers back after a boycott, would act on the
+answer. The 2023 boycott came from conservative shoppers angry about
+Pride merchandise, and the 2025 boycott from shoppers opposed to Target
+ending its diversity goals. We expect visits to fall a few percent more
+in Republican-leaning counties in 2023, and in Democratic-leaning
+counties in 2025. We are wrong if visits fall by the same amount
+everywhere, or if the same counties fall most in both years.
+
+## 2. Why it matters
+
+Both boycotts fell in quarters when Target's sales declined. Its
+comparable store sales fell 4.3 percent in the second quarter of 2023
+and 5.7 percent in the first quarter of 2025 (Target Corporation 2023,
+2025). In 2023 the company said it could not separate the effect of the
+reaction from other causes (Associated Press 2023b). If the losses
+concentrate in counties whose politics match the boycott, a marketing
+team can aim its promotions at those stores. If they do not, it spends
+nationally. A retailer weighing a public stance could also estimate in
+advance which stores it puts at risk, and for how long.
+
+Two studies come closest to ours. Hou and Poliquin (2023) used phone
+location data to count visits to the stores of several large retailers
+whose chief executives backed expanding background checks for gun
+purchases. Visits fell about 3 percent over four weeks, about 5 percent
+in the most conservative counties and not at all in the most liberal
+ones, and the drop faded within 10 weeks. Liaukonytė, Tuchman and Zhu
+(2023) studied the boycott of Goya after its chief executive praised
+President Trump. A counter-movement of supporters outweighed it. Sales
+rose about 22 percent, and the rise was gone within three weeks. The
+increase was largest in heavily Republican counties, with no strong
+offsetting fall in heavily Democratic ones. Each study follows stances
+on one side of politics. We study one retailer boycotted from opposite
+sides two years apart, which lets us test whether the same stores move
+in opposite directions.
+
+## 3. Approach
+
+Each observation is one Target store in one week. The outcome is the
+logarithm of the store's weekly visits, from Advan's Weekly Patterns
+Plus data in Dewey. The sample covers all of Target's nearly 2,000
+stores in the United States, from January 2022 to December 2025, which
+spans both boycotts. These are the stores a marketing team would choose
+among.
+
+The treatment is the boycott. Every store was exposed to it, so we
+split stores by the politics of their county, measured by the
+Republican share of the 2020 presidential vote. We compare stores in
+the third of counties with the highest share against stores in the
+third with the lowest. We date the 2023 boycott from the week of May
+22, when Target pulled some Pride merchandise after confrontations in
+its stores. The collection had drawn misleading videos for weeks before
+that (Associated Press 2023a), so we leave out the weeks from its launch
+in early May to May 22. We date the 2025 boycott from the week of
+January 20, when Target announced it would end its diversity goals, and
+we mark the 40-day boycott that began on March 5 (Hopkins and Gray News
+staff 2025).
+
+The comparison group for stores in the Republican third is the same
+chain's stores in the Democratic third, and the reverse. Their visits
+stand in for the counterfactual, what each group's visits would have
+done without the boycott. Both groups share Target's prices, products
+and national advertising, so anything the chain did to every store
+drops out. The counties differ in income, density and much else, so we
+compare each store's change in visits over time rather than its level.
+The design is difference-in-differences, run as an event study for each
+boycott. It compares the change in visits at stores in the Republican
+third with the change at stores in the Democratic third, week by week,
+from 20 weeks before each boycott to 20 weeks after. We make the
+comparison among counties of similar income, so that a shock hitting
+poorer counties does not show up as politics. This design measures how
+much more visits fell in one group of counties than in the other. It
+cannot measure the boycott's total effect on Target, because every store
+was exposed. The identifying assumption is that, within each income
+group and without the boycotts, visits in the two groups of counties
+would have followed parallel paths.
+
+The two boycotts also give us a check. If the boycotts drive the
+response, the gap between the two groups should change sign between
+2023 and 2025. A shock that hits the same counties in both years, such
+as prices rising faster in poorer counties, would push the gap the same
+way both times. A shift in spending that follows county politics could
+flip it too, and section 5 explains how we separate that.
+
+## 4. Data and access
+
+| Dataset | Holder | Unit and period | Variables we need | Access time | Status |
+|:--|:--|:--|:--|:--|:--|
+| Weekly Patterns Plus (Advan) | Dewey, through Cornell's subscription | Store-week, 2022–2025 | Brand, weekly visits, location | Days | File opened Oct 15 |
+| County Presidential Election Returns 2000–2024 | MIT Election Data and Science Lab, public | County, each election | Republican share of the 2020 vote | Now | File opened Oct 12 |
+| American Community Survey, 5-year estimates | U.S. Census Bureau, public | County, 2020–2024 | Median household income | Now | File opened Oct 12 |
+
+We already hold all three datasets. If the visit data cover too few
+stores in rural counties, the question narrows to stores in
+metropolitan counties.
+
+Weekly Patterns Plus counts visits to places and identifies no person,
+which normally puts it outside IRB review. We do not get to make that
+call ourselves, so we asked the IRB office on September 18. It confirmed
+on October 9 that the project needs no application. We need no
+data-use agreement, because we have no sponsor and the other two
+sources are public. A retailer would pay for this answer, so if one
+offered to sponsor the work, we would first ask whether Cornell's Dewey
+licence allows commercial use.
+
+## 5. Anticipated challenges
+
+The main threat is omitted variables: a shift in spending that follows
+county politics in the same weeks, with no boycott behind it. Our 2025
+window opens in September 2024 and spans the presidential election and
+the inauguration. If shoppers in Democratic-leaning counties cut
+spending at every store after either event, Target's gap would move the
+way the boycott predicts, and the sign check could not tell the two
+apart. That would make our 2025 estimate too large. Visits to other
+large chains in the same counties separate the two, because a boycott
+of Target lowers visits at Target and a general cut lowers them
+everywhere. We will use chains that sell different goods from Target
+and took no public stance on diversity goals. If their gap moves the
+same way as Target's, we will report by February 15 that our 2025
+estimate cannot separate the boycott from a partisan shift in spending.
+
+In 2023, Target moved its Pride merchandise to the back of some
+Southern stores (Associated Press 2023a). If that softened the reaction
+where conservative shoppers are concentrated, it pushes our 2023
+estimate toward zero. We cannot observe which stores made the change,
+so we will state it as a limitation in the outline by November 11.
+
+## 6. Team plan
+
+| Member | Role | Delivers | By | Backup |
+|:-------|:------|:-------------------------|:-------|:-----|
+| Lena Park | Coordinator | Runs the check-in. Uploads each deliverable | Every Wednesday | Owen |
+| Marco Silva | Data | Store-weeks for Target and the comparison chains, 2022–2025, cleaned and described | Nov 6 | Priya |
+| Nadia Haddad | Events | Dated timeline of both boycotts, with a source for each date | Nov 4 | Lena |
+| Owen Brooks | Design | The design section of the outline, with the check that the two groups of counties moved together before each boycott | Nov 4 | Marco |
+| Priya Natarajan | Counties | Vote share and income matched to every store | Nov 6 | Nadia |
+
+**Missed work.** A miss is a task not done by its date without warning.
+A member who warns the team before the date has not missed it, and we
+agree on a new date at the next check-in.
+
+1. **First miss.** The coordinator notes it on the check-in, with a new
+   date.
+2. **Second miss.** The coordinator and the backup meet the member that
+   week. The backup takes over the task, and the check-in records it.
+3. **No change, or a week without a reply.** We email the instructor,
+   with the check-ins attached.
+
+{{< pagebreak >}}
+
+## References
+
+Associated Press (2023a). Target pulls some LGBTQ+ merchandise from
+stores ahead of June Pride month after threats to workers. May 23.
+<https://www.wlbt.com/2023/05/23/target-makes-changes-lgbtq-merchandise-june-pride-month-after-threats-workers/>
+
+Associated Press (2023b). Target sales ebb after Pride month shopper
+backlash; company cuts profit outlook for 2023. August 16.
+<https://www.nbcnews.com/business/corporations/target-q2-2023-sales-inflation-pride-month-shopper-backlash-rcna100187>
+
+Hopkins, R., II and Gray News staff (2025). Pastor calls for Target
+boycott after company ends DEI policy. Gray News, March 6.
+<https://www.kold.com/2025/03/06/pastor-calls-target-boycott-after-company-ends-dei-policy/>
+
+Hou, Y. and C. W. Poliquin (2023). The effects of CEO activism: Partisan
+consumer behavior and its duration. *Strategic Management Journal*
+44(3): 672–703. <https://doi.org/10.1002/smj.3451>
+
+Liaukonytė, J., A. Tuchman and X. Zhu (2023). Frontiers: Spilling the
+beans on political consumerism: Do social media boycotts and buycotts
+translate to real sales impact? *Marketing Science* 42(1): 11–25.
+<https://doi.org/10.1287/mksc.2022.1386>
+
+Target Corporation (2023). Target Corporation reports second quarter
+earnings. Form 8-K, Exhibit 99, August 16.
+<https://www.sec.gov/Archives/edgar/data/27419/000002741923000032/a2023q2ex-99.htm>
+
+Target Corporation (2025). Target Corporation reports first quarter
+earnings. Form 8-K, Exhibit 99, May 21.
+<https://www.sec.gov/Archives/edgar/data/27419/000002741925000096/a2025q1ex-99.htm>
+
+## AI disclosure
+
+**Tools.** ChatGPT (chatgpt.com).\
+**Used for.** Suggesting search terms for studies of boycotts and store
+visits. Suggesting how to date the start of each boycott.\
+**Checked.** We opened both studies, Target's two earnings releases and
+the three news reports, and confirmed every number and date we quote.
+One study the tool suggested does not exist, and we dropped it. We put
+no Dewey data into the tool.

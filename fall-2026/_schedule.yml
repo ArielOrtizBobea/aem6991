@@ -122,8 +122,8 @@ parts:
 # Two of them are reverse-outlining: going from a finished text back to the
 # outline that must have produced it. You cannot build an outline until you
 # can see one.
-# Team deliverables. One paper, reached in three milestones: a two-page project
-# description, then the whole argument as a detailed outline, then the written proposal,
+# Team deliverables. One paper, reached in three milestones: a project
+# description of up to three pages, then the whole argument as a detailed outline, then the written proposal,
 # presented at meeting 14 before it is handed in. The presentation is graded
 # separately (10 %) from the written proposal (20 %).
 # Nothing is submitted as a finished paper out of nowhere — the argument is
@@ -133,9 +133,8 @@ deliverables:
   - num: 1
     name: "Project description"
     weight: "5 %"
-    due_meeting: 9
-    when: "on Canvas before class"
-    desc: "Two pages, and five minutes in front of the room. The question and who acts on the answer, why it matters, how you would answer it, the data and how you get it, what could go wrong, and who on the team does what. This is the first time the project has to survive an audience, and the two pages are what you hand in. The brief is on the [project description](https://arielortizbobea.github.io/aem6991/fall-2026/handouts/project-description.html) page."
+    due_date: 2026-10-23
+    desc: "Up to three pages, due on Canvas the Friday after meeting 9, then three minutes in front of the room at meeting 10. The question and who acts on the answer, why it matters, how you would answer it, the data and how you get it, what could go wrong, and who on the team does what. This is the first time the project has to survive an audience, and the pages are what you hand in. The brief is on the [project description](https://arielortizbobea.github.io/aem6991/fall-2026/handouts/project-description.html) page."
 
   - num: 2
     name: "Proposal outline"
@@ -310,11 +309,10 @@ meetings:
     books: "[Remix](https://mixtape.scunning.com/) ch. 8 and 9 on panel designs and difference-in-differences, ch. 10 if your rollout is staggered. [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) ch. 5."
     chapters: "Remix ch. 8--10; Mostly Harmless ch. 5"
     reading: "TBD"
-    due: "Project description — two pages on Canvas before class, and five minutes in front of the room"
+    due: "Project description — up to three pages, on Canvas by Friday, October 23"
     links:
       - text: "Project description brief"
         href: fall-2026/handouts/project-description.qmd
-    reschedule: "Instructor traveling — moves to Oct 20 or Oct 22; date to be confirmed"
 
   - num: 10
     slug: "10-writing"
@@ -324,7 +322,11 @@ meetings:
     desc: "Writing is taught here, as a method rather than as advice. A piece of writing is built outline first — one topic sentence per paragraph, in order, before any prose exists. The fastest way to see that is backwards."
     goal: "Reconstruct the outline behind somebody else's paper. Build your own problem statement the same way, topic sentence by topic sentence, and hand it to a stranger who can follow it."
     a: "The method. A paper is built outline first: one topic sentence per paragraph, in order, before any prose exists. We start backwards — take a published paper apart into the outline that must have produced it. That is also this week's exercise, and the fastest way to see that good writing has a skeleton. Then forwards: outline, sketch, full text. Every written product in this course is submitted that way, so the argument is fixed before the sentences are. Then what a problem statement has to do. Scope, unit, population. The 'so what' in the first sentence, not the fourth paragraph. Then the section everybody gets wrong — identification: your design named, its assumption stated, and what would break it. And how to state a limitation without gutting your own project. Finally the failure modes: the topic with no question, hedging, the buried claim, the review that reviews without arguing."
-    b: "Your own problem statement, written in the room. One topic sentence per paragraph, in order, and nothing else — no prose. Then swap with another team. They get your skeleton and nothing else, and they have to tell you what your argument is. Where they cannot, your argument is not there yet. Whatever survives that is the spine of your pitch next week, and of the proposal outline in November."
+    b: "The project talks open session B, after the check-in. Every team presents its project description, in an order drawn at random: three minutes, timed, then one question from the room. Then your own problem statement, written in the room. One topic sentence per paragraph, in order, and nothing else — no prose. Then swap with another team. They get your skeleton and nothing else, and they have to tell you what your argument is. Where they cannot, your argument is not there yet. Whatever survives that is the spine of your pitch next week, and of the proposal outline in November."
+    due: "Project talk — three minutes, in session B"
+    links:
+      - text: "Project description brief"
+        href: fall-2026/handouts/project-description.qmd
     builds: "Your problem statement, as an outline somebody outside your team could follow"
     books: "[Adams](https://doi.org/10.4135/9788132108498) ch. 4 on literature review and critical reading, and ch. 16 on writing up."
     chapters: "Adams ch. 4, 16"

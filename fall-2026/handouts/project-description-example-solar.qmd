@@ -1,0 +1,204 @@
+---
+pagetitle: "AEM 6991 · Example project description, solar farms"
+toc: false
+format:
+  # The web page carries the team line as its title. The PDF carries it as
+  # the two plain lines a student would type, because Typst's title block
+  # would take a fifth of page 1.
+  html:
+    title: "Team X · Solar farms and nearby home values in upstate New York"
+    subtitle: "Ana Torres, Ben Mwangi, Carla Novak, Dev Raman, Eva Lindqvist"
+  # The PDF is the point of this page: it shows the page limit met at the
+  # size the instructions set. Calibri comes from Word's font folder
+  # through TYPST_FONT_PATHS, as for the syllabus; without it the list
+  # falls back to Helvetica Neue.
+  typst:
+    output-file: Team-X_project-description.pdf
+    papersize: us-letter
+    margin:
+      x: 1in
+      y: 1in
+    fontsize: 11pt
+    include-in-header:
+      - text: |
+          #set text(font: ("Calibri", "Helvetica Neue", "Arial"))
+          #show table: set text(size: 9pt)
+          #show table.cell: set par(justify: false)
+          #show table.cell: set text(hyphenate: false)
+          #show figure: set block(breakable: true)
+format-links:
+  - html
+  - format: typst
+    text: "The PDF as submitted"
+    icon: file-pdf
+editor:
+  markdown:
+    wrap: 72
+---
+
+::: {.content-visible when-format="typst"}
+**Team X · Solar farms and nearby home values in upstate New York**\
+Ana Torres, Ben Mwangi, Carla Novak, Dev Raman, Eva Lindqvist
+:::
+
+::: {.content-visible when-format="html"}
+::: {.callout-note appearance="simple"}
+**This is a hypothetical example.** The team, its members and the dates
+of its work are invented. The data sources, the two studies and their
+findings, the count of farms and the rule on who approves solar farms
+are real. It asks a question a town would act on. The [Target
+example](project-description-example-target.qmd) asks one a company
+would pay for. Both follow the [instructions](project-description.qmd)
+section by section. The [PDF](Team-X_project-description.pdf) shows
+this one within the three-page limit, with the references and the AI
+disclosure on a page of their own.
+:::
+:::
+
+## 1. Research question
+
+Does a new solar farm lower the sale prices of homes within one
+kilometer of it in upstate New York? This is an evaluation. A town
+planning board reviewing a solar farm would act on the answer. New
+York leaves farms under 25 megawatts to local approval, so towns
+approve most of the state's solar farms (New York State Department of
+Public Service, n.d.). We expect prices within one kilometer to fall by
+1 to 3 percent after the farm begins operating, relative to homes 2 to
+5 kilometers from the same farm. We are wrong if prices near and far
+move together after the farm opens.
+
+## 2. Why it matters
+
+The planning board decides how far the panels must sit from homes and
+whether the developer must screen them with trees. If nearby homes lose
+value, the board can set the setback at the distance where the loss
+fades, and require screening inside it. If they lose nothing, a longer
+setback takes land from the project and costs the town the farm's tax
+payments for no gain.
+
+Two studies come closest to ours. Elmallah et al. (2023) studied more
+than 1,500 projects in six states. Homes within half a mile sold for
+about 1.5 percent less than homes two to four miles away, and the effect
+was not measurable beyond one mile. Gaur and Lang (2023) found that
+homes within 0.6 miles in Massachusetts and Rhode Island lost 1.5 to 3.6
+percent of their value after a farm was built, mostly where the farm
+replaced farmland or forest in rural areas. We add evidence from upstate
+New York, where towns approve the farms. In 20 towns we also test
+whether prices moved when the farm was approved, before it was built.
+
+## 3. Approach
+
+Each observation is one sale of a single-family home. The outcome is
+the logarithm of the sale price, from the ATTOM sales records in Dewey.
+The sample covers sales from 2012 to 2025 within 5 kilometers of the
+431 farms of 1 to 25 megawatts that began operating in upstate New York
+between 2016 and 2023. Upstate here means outside New York City, Long
+Island, Westchester and Rockland. These are the farms that town
+planning boards decide on.
+
+The treatment is a solar farm beginning operation within 1 kilometer of
+the home before it sells. Prices may already move when the board
+approves a farm, so we leave out sales in the two years before each farm
+opens. The comparison group is the sales of homes 2 to 5 kilometers from
+the same farm in the same years. Their prices stand in for the
+counterfactual, what prices within 1 kilometer would have done without
+the farm. We leave out homes between 1 and 2 kilometers, which may be
+partly affected. The design is difference-in-differences. It compares
+the change in prices near each farm, from before it opened to after,
+with the change farther away. Farms open in different years, so we date
+each sale by the years before or after its own farm opened and estimate
+the effect year by year, which is an event study. The identifying
+assumption is that, without the farm, prices within 1 kilometer would
+have followed the same trend as prices 2 to 5 kilometers away.
+
+In the 20 towns with the most farms, we also collect the date the
+planning board approved each farm from the board's minutes. We use
+those dates to test whether prices moved at approval.
+
+## 4. Data and access
+
+| Dataset | Holder | Unit and period | Variables we need | Access time | Status |
+|:--|:--|:--|:--|:--|:--|
+| Real Estate Transaction Data (ATTOM) | Dewey, through Cornell's subscription | Sale, 2012–2025 | Price, date, location, size, year built, property type | Days | File opened Oct 16 |
+| U.S. Large-Scale Solar Photovoltaic Database, version 4.0 | U.S. Geological Survey and Berkeley Lab, public | Farm, operating through 2025 | Outline, capacity, first year of operation | Now | File opened Oct 12 |
+| Planning board minutes | Town clerks, public | Board meeting | Date each farm was approved | Weeks | Holder contacted Oct 15, for 3 of 20 towns |
+
+We expect to hold all three by November 30. If the approval dates have
+not arrived by then, we drop the approval test, and the question
+narrows to the effect of a farm once it operates.
+
+Property records can identify owners, so we cannot rule out IRB review
+ourselves. We asked the IRB office to decide on September 18. On
+October 7 it asked which fields we keep, and we answered that we drop
+owner names when we load the file. We expect its determination by
+mid-November. If it asks for an application, that is our slowest
+approval, and it has to start by November 18. We need no data-use
+agreement, because we have no sponsor and every source is public or
+covered by Cornell's Dewey subscription.
+
+## 5. Anticipated challenges
+
+The main threat is selection into treatment, through where each farm
+sits. Developers choose cheap, flat land near power lines, often
+farmland at the edge of a village. Prices within 1 kilometer of that
+land may already have been growing more slowly than prices 2 to 5
+kilometers away, closer to the village. The near ring would then lag
+the far ring for reasons unrelated to the farm, which pushes our
+estimate toward a larger loss. We cannot measure the developer's choice
+of parcel, but the event study shows whether near and far prices
+drifted apart before the farm opened. If they did, we will report by
+February 15, the date we set for first estimates, that the design
+cannot separate the farm from the place.
+
+The approval dates are the row of our resource map most likely to stop
+us. Three of the 20 town clerks have answered, and older minutes may
+exist only on paper. Eva writes to the other 17 by October 30. If fewer
+than 15 towns have sent dates by November 30, we drop the approval
+test, as in our plan B, and record the change in our decision log.
+
+## 6. Team plan
+
+| Member | Role | Delivers | By | Backup |
+|:-------|:------|:-------------------------|:-------|:-----|
+| Ana Torres | Coordinator | Runs the check-in. Uploads each deliverable | Every Wednesday | Dev |
+| Ben Mwangi | Data | ATTOM sales near the 431 farms, cleaned and described | Nov 6 | Carla |
+| Carla Novak | Mapping | Distance from every home to the nearest farm | Nov 13 | Ben |
+| Dev Raman | Design | The design section of the outline, with the check that near and far prices moved together before each farm opened | Nov 4 | Ana |
+| Eva Lindqvist | Records | Approval dates from the 20 towns. The IRB determination | Nov 30 | Ana |
+
+**Missed work.** A miss is a task not done by its date without warning.
+A member who warns us before the date has not missed it, and we set a
+new date at the next check-in.
+
+1. **First miss.** We raise it at the next check-in and write down a new
+   date.
+2. **Second miss.** Ana talks to the member within three days. The
+   backup takes the task or we split it, and the check-in records it.
+3. **No change, or a week without a reply.** We bring it to the
+   instructor, with the check-ins as the record.
+
+{{< pagebreak >}}
+
+## References
+
+Elmallah, S., B. Hoen, K. S. Fujita, D. Robson and E. Brunner (2023).
+Shedding light on large-scale solar impacts: An analysis of property
+values and proximity to photovoltaics across six U.S. states. *Energy
+Policy* 175: 113425.
+<https://doi.org/10.1016/j.enpol.2023.113425>
+
+Gaur, V. and C. Lang (2023). House of the rising sun: The effect of
+utility-scale solar arrays on housing prices. *Energy Economics* 122:
+106699. <https://doi.org/10.1016/j.eneco.2023.106699>
+
+New York State Department of Public Service (n.d.). ORES frequently
+asked questions. <https://dps.ny.gov/node/29636>
+
+## AI disclosure
+
+**Tools.** Claude (claude.ai).\
+**Used for.** Suggesting search terms for studies of solar farms and
+home prices. Checking our data table for missing columns.\
+**Checked.** We opened both studies and confirmed every number we
+quote. We counted the farms in the solar database ourselves. We put no
+Dewey data into the tool.

@@ -1,6 +1,6 @@
 <!-- Written by _quizzes/draw.py. Do not edit by hand: change the bank and redraw. -->
 
-These 10 questions are drawn from this meeting's slides. The quiz at Meeting 9 asks different questions on the same ideas. Click an option to check it. A wrong pick lets you try again, and the right one shows the slide to go back to.
+These 10 questions practice the ideas of this lecture. Click an option to check it. A wrong pick lets you try again, and the right one links to the slide that covers it. The quiz on this lecture asks different questions on the same ideas.
 
 ```{=html}
 <style>

@@ -376,6 +376,20 @@ $group-colors: (
   color: #6b6b6b;
   font-variant-numeric: tabular-nums;
 }
+// A meeting held on Zoom carries a small label under its date, set like the
+// "next class" label. The generator writes it as <em>, because pandoc keeps
+// element names but drops classes in this table.
+.grouped-schedule td:nth-child(2):not(.topic) em,
+.grouped-schedule tr:not(.g-first):not(.part-row) td:first-child em {
+  display: block;
+  margin-top: 0.15rem;
+  font-style: normal;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $carnelian;
+}
 // Topic cell: a short title on its own line, then an understated grey
 // description. The title reads as text; the accent appears on hover.
 .grouped-schedule .topic a {

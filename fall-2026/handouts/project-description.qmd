@@ -9,7 +9,7 @@ editor:
 ---
 
 ::: {.callout-important appearance="simple"}
-**Due on Canvas by 11:59 pm on Friday, October 23.** Each team then
+**Due on [Canvas](https://canvas.cornell.edu/courses/92942/assignments/1030305) by 11:59 pm on Friday, October 23.** Each team then
 gives a three-minute talk about it in session B of meeting 10, on
 Wednesday, October 28.
 :::
@@ -24,7 +24,7 @@ the one-page pitch announced in meetings 1 and 3.
 | **What** | A description of your project, up to three pages, and a three-minute talk about it |
 | **Who** | One submission per team |
 | **Weight** | 5 % of the course grade. Every member receives the same grade |
-| **Due** | On Canvas by 11:59 pm on Friday, October 23 |
+| **Due** | On [Canvas](https://canvas.cornell.edu/courses/92942/assignments/1030305) by 11:59 pm on Friday, October 23. Canvas asks for your NetID |
 | **Length** | Up to three pages for the six sections. The references and the AI disclosure go on a separate page that does not count |
 | **File** | One PDF, named `Team-A_project-description.pdf` with your team's letter |
 | **Talk** | Three minutes in session B of meeting 10, on October 28, followed by one question from the room |

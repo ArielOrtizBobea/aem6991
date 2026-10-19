@@ -1,0 +1,133 @@
+<!-- Written by _quizzes/draw.py. Do not edit by hand: change the bank and redraw. -->
+
+These 10 questions are drawn from this meeting's slides. The quiz at Meeting 9 asks different questions on the same ideas. Each answer names the slide to go back to.
+
+**1.** Each quarter, mystery shoppers visit 40 of a wireless carrier's 600 stores, drawn at random. Service across the stores has not changed in two years, yet the quarterly average score has ranged from 7.6 to 8.2 out of 10. What explains the movement?
+
+a. Each quarter's average comes from a different sample of stores
+b. Bias in the sample mean makes the average drift around the true score
+c. The true average score shifts a little from quarter to quarter
+d. Skewed scores keep the average from settling on a single value
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+**a**. Slide: [Estimates vary across samples](06-models-uncertainty-slides.html#/estimates-vary-across-samples).
+:::
+
+**2.** A market research firm has two unbiased estimators of average weekly streaming hours per household. With 100 households, the diary-only estimator has a standard error of 0.6 hours, and the one that adds set-top box data has 0.3. Both standard errors fall with the square root of n. How many households would the diary-only estimator need to reach 0.3?
+
+a. 200 households
+b. 1,600 households
+c. 50 households
+d. 400 households
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+**d**. Slide: [Estimator 3 is more efficient than estimator 2](06-models-uncertainty-slides.html#/estimator-3-is-more-efficient-than-estimator-2).
+:::
+
+**3.** A bank estimates each branch's default rate as a weighted average of the branch's observed default rate and the national rate. The weight on the national rate is 20/(n + 20), where n is the branch's number of loans. What happens to this estimator as n grows very large?
+
+a. It converges to the national rate, so it is inconsistent
+b. It converges to the branch's true rate, so it is consistent
+c. Its variance falls but its bias stays, so it is inconsistent
+d. It cannot converge to the branch's rate, since it is biased
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+**b**. Slide: [All three estimators are consistent](06-models-uncertainty-slides.html#/all-three-estimators-are-consistent).
+:::
+
+**4.** A consulting firm surveys its staff about padding billable hours. Each person privately flips a coin: heads, answer yes; tails, answer truthfully. The firm doubles the share answering yes and subtracts 100%. Across many surveys this estimator averages the true share. This year 48% said yes, giving an estimate of −4%. What should the firm conclude?
+
+a. The estimator is biased this year, since a share cannot be negative
+b. The estimator is inconsistent, since a consistent one stays within 0 to 100%
+c. The coin flips were unfair, since fair flips cannot give a negative share
+d. The method is sound, since chance alone can push the estimate below zero
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+**d**. Slide: [Estimator 3 is more efficient than estimator 2](06-models-uncertainty-slides.html#/estimator-3-is-more-efficient-than-estimator-2).
+:::
+
+**5.** A hotel chain forecasts nightly room demand from 60 predictors and two years of daily data. An analyst prefers least squares to ridge regression, which shrinks coefficients toward zero, because least squares is unbiased. What is wrong with the argument?
+
+a. Bias affects the coefficient estimates but not the forecasts
+b. Forecast error also includes variance, which ridge reduces
+c. Least squares is biased, since 60 predictors overfit the data
+d. Ridge is also unbiased once its penalty is chosen well
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+**b**. Slide: [The bias–variance trade-off](06-models-uncertainty-slides.html#/the-biasvariance-trade-off).
+:::
+
+**6.** A hospital system budgets next year's total cost of care for about 8,000 uninsured patients. Cost per patient is right-skewed: most costs are small and a few are very large. Which statistic of cost per patient should the budget build on?
+
+a. Either one, since both estimate the center of the costs
+b. The median, since it is more efficient for skewed costs
+c. The mean, since the total is patients times the mean cost
+d. The median, since a few large costs bias the sample mean
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+**c**. Slide: [The median can be more efficient than the mean](06-models-uncertainty-slides.html#/the-median-can-be-more-efficient-than-the-mean).
+:::
+
+**7.** A manufacturer ranks its plants each year by mean workers' compensation cost per injury. Plants have 10 to 80 injuries a year, mostly minor, but one severe injury can triple a plant's mean, and the ranking reshuffles every year. Which change would make the yearly ranking least sensitive to single cases?
+
+a. Rank plants by median cost per injury that year
+b. Rank plants by mean cost per injury over two years
+c. Rank only plants with at least 30 injuries that year
+d. Rank plants by mean cost, shown with its standard error
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+**a**. Slide: [Heavy tails slow the convergence of the mean](06-models-uncertainty-slides.html#/heavy-tails-slow-the-convergence-of-the-mean).
+:::
+
+**8.** A fitness-studio franchisor wants to tell prospective owners the profit a new studio can expect in its first year. It has opened 900 studios, and 600 are still open. Studios that lose money usually close within two years. Which figure should it report?
+
+a. Mean first-year profit of the 600 open studios, a full census of the network
+b. Median first-year profit of the 600 open studios, which extremes barely move
+c. Mean first-year profit of all 900 studios, including the 300 that closed
+d. Mean first-year profit of 1,800 open studios in its brand and two sister brands
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+**c**. Slide: [A biased sample converges to the wrong value](06-models-uncertainty-slides.html#/a-biased-sample-converges-to-the-wrong-value).
+:::
+
+**9.** A beverage distributor regresses log(cases ordered + 1) for each bar account and week on a promotion indicator by OLS. Many accounts order nothing in a given week. An analyst reruns it counting bottles instead of cases, at 24 bottles per case. What happens to the promotion coefficient?
+
+a. It becomes undefined, since weeks with no orders have no logarithm
+b. It stays the same, since a change of units shifts only the intercept
+c. It is multiplied by 24, since each case becomes 24 bottles
+d. It changes, since adding 1 means a different quantity in each unit
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+**d**. Slide: [The type of outcome determines the model](06-models-uncertainty-slides.html#/the-type-of-outcome-determines-the-model).
+:::
+
+**10.** A utility mails home energy reports to 400 of 800 households chosen at random and compares their electricity use the next month with the other 400. An analyst wants the differences in mean use that would arise if the reports had no effect. How should she simulate them?
+
+a. Reassign the report labels at random, keeping each home's usage fixed
+b. Resample the 800 homes with replacement, keeping each home's label fixed
+c. Shuffle usage within the report group, keeping the 400 labels fixed
+d. Repeat the mailing to a new random 400 homes, recording usage each time
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+**a**. Slide: [A permutation test simulates the null hypothesis](06-models-uncertainty-slides.html#/a-permutation-test-simulates-the-null-hypothesis).
+:::

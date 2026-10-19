@@ -56,6 +56,10 @@ Your team's output is submitted before you leave.
 
 Rate your teammates
 
+## Practice questions
+
+{{< include practice/_m06.qmd >}}
+
 ::::
 
 :::: {.content-visible when-format="revealjs"}

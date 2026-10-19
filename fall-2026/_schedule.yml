@@ -56,6 +56,9 @@
 #             `text` and `href`. They sit under the meeting, indented to
 #             align with the meeting titles.
 #   note      free text, used for recess rows
+#   zoom      set when the meeting is held on Zoom. Every schedule table marks
+#             the date "Zoom", and the meeting page shows this text in a
+#             callout. A hand-built meeting page needs the callout added by hand.
 #   reschedule  set when instructor travel puts this date in question. Marks
 #             the date with an asterisk everywhere and prints the footnote.
 
@@ -126,12 +129,15 @@ parts:
 # description of up to three pages, then the whole argument as a detailed outline, then the written proposal,
 # presented at meeting 14 before it is handed in. The presentation is graded
 # separately (10 %) from the written proposal (20 %).
+# A deliverable with an `href:` has its own brief, and the sidebar lists it
+# under Assignments; one without stays off the sidebar until its page exists.
 # Nothing is submitted as a finished paper out of nowhere — the argument is
 # fixed before the sentences are. The syllabus table is generated from this
 # block, so the dates cannot drift from the meeting schedule.
 deliverables:
   - num: 1
     name: "Project description"
+    href: fall-2026/handouts/project-description.qmd
     weight: "5 %"
     due_date: 2026-10-23
     desc: "Up to three pages, due on Canvas the Friday after meeting 9, then three minutes in front of the room at meeting 10. The question and who acts on the answer, why it matters, how you would answer it, the data and how you get it, what could go wrong, and who on the team does what. This is the first time the project has to survive an audience, and the pages are what you hand in. The brief is on the [project description](https://arielortizbobea.github.io/aem6991/fall-2026/handouts/project-description.html) page."
@@ -310,6 +316,7 @@ meetings:
     chapters: "Remix ch. 8--10; Mostly Harmless ch. 5"
     reading: "TBD"
     due: "Project description — up to three pages, on Canvas by Friday, October 23"
+    zoom: "This meeting is held on Zoom, at the usual time. The link is on Canvas."
     links:
       - text: "Project description brief"
         href: fall-2026/handouts/project-description.qmd

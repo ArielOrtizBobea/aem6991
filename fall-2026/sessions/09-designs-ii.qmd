@@ -8,6 +8,10 @@ pagetitle: "AEM 6991 · 9 Research designs II"
 This page is a stub. Materials appear here before the meeting.
 :::
 
+::: {.callout-important appearance="simple"}
+**On Zoom.** This meeting is held on Zoom, at the usual time. The link is on Canvas.
+:::
+
 **What you should be able to do after this meeting.** Draw your project's design as a graph. Name the single assumption carrying the estimate — the one you would have to defend to a sceptic.
 
 ## Handouts

@@ -40,7 +40,7 @@
   <td class="topic"><a href="sessions/08-designs-i.html">8 · Research designs I</a>
     <span class="t-desc">Experiments, instrumental variables, regression discontinuity. For each: the graph, the one assumption, the checks, and who the estimate is about.</span></td>
   <td class="hw"></td></tr>
-<tr class="g-last g03"><td>Wed Oct 21</td>
+<tr class="g-last g03"><td>Wed Oct 21 · Zoom</td>
   <td class="topic"><a href="sessions/09-designs-ii.html">9 · Research designs II</a>
     <span class="t-desc">Difference-in-differences, panel data with fixed effects, event studies. The question is the same each time: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate.</span></td>
   <td class="hw">Project description — up to three pages, on Canvas by Friday, October 23</td></tr>

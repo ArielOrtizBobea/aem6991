@@ -28,7 +28,7 @@ website:
         # >>> BEGIN GENERATED MEETINGS — edit fall-2026/_schedule.yml, then
         - section: "Assignments"
           contents:
-            - text: "Project description"
+            - text: " 1 Project description"
               href: fall-2026/handouts/project-description.qmd
         - section: "Part 1 — Getting started"
           contents:

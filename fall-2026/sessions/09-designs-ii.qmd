@@ -44,7 +44,7 @@ format:
 
 ## Session A · 2:00–3:15
 
-One design, extended step by step, and a second design that shares its name. Panel data follow the same units over several periods, so a confounder that does not change can be removed by comparing each unit with itself. Two groups and two periods first, opened by John Snow's comparison of two London water companies before and after one of them moved its intake in 1852: cholera deaths fell by 57 per 10,000 residents in the districts it partly supplied, relative to districts it did not reach. A simulated coffee chain that launches a mobile-ordering app in one region shows what each subtraction removes and what parallel trends assumes, and two studies show it failing: trainees whose earnings dipped just before job training, and Philadelphia's beverage tax pushing sales into the stores outside the city. Many units and many periods next, opened by women on corporate boards, where the association with firm value changed sign once each firm was compared with itself: what two-way fixed effects remove, the confounders that change over time and survive them, measurement error that they amplify, a common shortcut that is not a fixed effect, and the event-study plot, whose pre-trend tests can pass when parallel trends fails. Then staggered adoption: when units adopt on different dates, the regression uses units already treated as controls and can report the wrong sign. Then few treated units: standard errors with one treated state, and synthetic control for California's 1988 tobacco program. Last, the finance event study, opened by stock prices on the day of earnings announcements: the market model, abnormal returns, and other news in the window. The session closes with all six designs of meetings 8 and 9 in one table.
+Designs that use change over time, each drawn before it is described. Fixed effects first, opened by women on corporate boards, where the association with firm value changed sign once each firm was compared with itself: what the fixed effects remove, the confounders that change over time and survive them, measurement error that they amplify, and a common shortcut that is not a fixed effect. Then difference-in-differences and event studies as one design built in four steps. Two groups and two periods, opened by John Snow's comparison of two London water companies before and after one of them moved its intake in 1852: cholera deaths fell by 57 per 10,000 residents in the districts it partly supplied, relative to districts it did not reach. A simulated coffee chain that launches a mobile-ordering app shows what each subtraction removes and what parallel trends assumes, and two studies show it failing: trainees whose earnings dipped just before job training, and Philadelphia's beverage tax pushing sales into the stores outside the city. More periods turn the comparison into an event study, whose pre-trend tests can pass when parallel trends fails. Adoption on different dates changes which units serve as controls, and two-way fixed effects can then report the wrong sign. Treatment that comes in doses needs a stronger assumption to compare one dose with another. Then few treated units: standard errors with one treated state, and synthetic control for California's 1988 tobacco program. Last, the finance event study, opened by stock prices on the day of earnings announcements: the market model, abnormal returns, and other news in the window. The session closes with all six designs of meetings 8 and 9 in one table.
 
 ## Session B · 3:30–4:30
 
@@ -52,7 +52,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Seven published studies, each posed as the question and the setting its authors faced: calorie labels at Starbucks, Europe's privacy law, bank deregulation and inequality, heat and crop yields, managers who move between firms, the sudden deaths of company directors, and the cost of terrorism in the Basque Country. For each, the room proposes a design and names the assumption it needs before the slide shows what the authors did. Then teams are drawn at random to put up their own project's design, draw the graph, state the assumption carrying the estimate, and defend it while the room tries to break it. Every team presents at some point, without notice. The design that survives goes in your identification section, and the attack that landed goes in your limitations paragraph.
+Seven published studies that cover the designs of meetings 8 and 9, each posed as the question and the setting its authors faced: working from home at a Chinese travel agency, family heirs as chief executives, close shareholder votes on governance, calorie labels at Starbucks, bank deregulation and inequality, the cost of terrorism in the Basque Country, and the sudden deaths of company directors. For each, the room proposes a design and names the assumption it needs before the slide shows what the authors did. Then teams are drawn at random to put up their own project's design, draw the graph, state the assumption carrying the estimate, and defend it while the room tries to break it. Every team presents at some point, without notice. The design that survives goes in your identification section, and the attack that landed goes in your limitations paragraph.
 
 Your team's output is submitted before you leave.
 
@@ -66,22 +66,23 @@ Project description — up to three pages, on Canvas by Friday, October 23
 
 ## Outline
 
-1. **Two groups and two periods.** Compare the treated units' change with the untreated units' change, as John Snow did for London's water.
-2. **Many units and many periods.** **Panel data** follow the same units over many periods, so each unit can be compared with itself.
-3. **Staggered adoption.** When units adopt on different dates, the usual regression uses units already treated as controls.
-4. **Few treated units.** With one treated state the usual standard errors are too small, and a weighted mix of other states can serve as its control.
-5. **Event studies in finance.** A separate design with the same name, built on share prices around a dated announcement.
-6. **Matching a panel design to a question.** Seven published studies, each posed in the setting its authors faced.
+1. **Fixed effects.** Compare each unit with itself over time, which removes every trait that does not change.
+2. **Difference-in-differences and event studies.** Add a comparison group, then follow the effect period by period, across adoption dates and doses.
+3. **Few treated units.** With one treated state the usual standard errors are too small, and a weighted mix of other states can serve as its control.
+4. **Event studies in finance.** A separate design with the same name, built on share prices around a dated announcement.
+5. **Matching a design to a question.** Seven published studies that use the designs of meetings 8 and 9, each posed in the setting its authors faced.
 
 ::: {.notes}
-One minute. Sections 1 to 4 are one design, extended step by step:
-two groups and two periods, then many units and periods with fixed
-effects and the event-study plot, then what goes wrong when units adopt
-on different dates, then what to do when only one or a few units are
-treated. Section 5 is the finance event study, a different design that
+One minute. Section 1 compares each unit with itself, the panel tool
+every later design uses. Section 2 is one design built in four steps, as
+in the practitioner's guide by Baker, Callaway, Cunningham, Goodman-Bacon
+and Sant'Anna: two groups and two periods, then many periods as an event
+study, then adoption on different dates, then different amounts of
+treatment. Section 3 is what to do when only one or a few units are
+treated. Section 4 is the finance event study, a different design that
 shares the name and that the finance teams will use. The running example
-in every animation is a coffee chain that launches a mobile-ordering app,
-with weekly sales per store as the outcome.
+in every animation is a coffee chain that launches a mobile-ordering
+app, with weekly sales per store as the outcome.
 
 Where this sits. Meeting 7's bias table had a Solution column that named
 the designs: randomize, compare at the cutoff, use an instrument, hold
@@ -97,405 +98,12 @@ ones that change over time, and each section adds an assumption about
 them.
 :::
 
-# 1. Two groups and two periods
+# 1. Fixed effects
 
 ::: {.notes}
-Thirty seconds. Opened by Snow, then the graph, then the app, then the
-ways the comparison fails.
-:::
-
-## Snow studied cholera and London's water
-
-::: {.columns}
-::: {.column width="54%"}
-::: {style="font-size:0.74em"}
-- Cholera struck London in 1849 and again in 1854. Most doctors blamed foul air.
-- John Snow, a London physician, argued that sewage in drinking water spread it.
-- In 1849 two companies piped water to south London from the Thames in central London.
-- In 1852 the Lambeth company moved its intake upstream, above the sewage. Southwark and Vauxhall did not.
-- In many streets both companies' pipes ran side by side, so neighbours drank different water.
-:::
-:::
-::: {.column width="46%"}
-![](figures/snow-1855-map2.jpg){width=100% fig-alt="Snow's 1855 map of south London water supply: blue for the Southwark and Vauxhall company, red for the Lambeth company, purple where the pipes of both are intermingled"}
-
-::: {style="font-size:0.5em; color:#6b6b6b; line-height:1.3"}
-On Snow's map blue is Southwark and Vauxhall, red is Lambeth and purple is both.
-:::
-:::
-:::
-
-[Snow (1855), *On the Mode of Communication of Cholera*, 2nd ed., John Churchill, London, pp. 60–90 and Map 2.](https://archive.org/details/b28985266){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-Two and a half minutes.
-
-The question Snow wanted answered: is cholera carried by water fouled
-with sewage? The medical consensus was the miasma view, that it came
-from bad air, so a water company's intake did not matter.
-
-The setting, from his book. In 1849 the Southwark and Vauxhall company
-drew water from the Thames at Battersea Fields, and the Lambeth company
-opposite Hungerford Market, near today's Charing Cross. Both were in
-central London, on the tidal river that received the city's sewage, and
-Snow says the two waters were nearly equally impure in 1849. In 1852
-Lambeth moved its works upstream to Thames Ditton, above Teddington
-Lock, "quite free from the sewage of London" (p. 68). Southwark and
-Vauxhall had not finished moving by 1854.
-
-Why the design works. After competition began in the 1830s, both
-companies laid pipes down the same streets. Snow (p. 75) says each
-company supplied rich and poor, large houses and small, with no
-difference in the condition or occupation of their customers, and that
-about 300,000 people were divided into two groups "without their
-choice". Snow got the address of every cholera death and went from house
-to house to find the water company; residents rarely knew, so he used a
-salt test, since the two waters differed sharply in salt content.
-
-The map, from the same book, shows the supply areas. Blue is Southwark
-and Vauxhall only, red is Lambeth only, purple is where both companies'
-pipes were intermingled. The next slide uses the blue and the purple
-areas.
-
-The Metropolis Water Act 1852 made it unlawful after 31 August 1855 for
-London companies to take Thames water below Teddington Lock (Chelsea had
-until 1856). Some textbooks say Lambeth was required by law to move; its
-works moved in 1852, three years before that deadline. Whether its
-decision predated the Act is not established in the sources checked.
-:::
-
-## Cholera deaths before and after Lambeth moved
-
-::: {style="font-size:0.66em"}
-| Cholera deaths per 10,000 residents | 1849 | 1854 | Change |
-|:-----------------------------------|-----:|-----:|-------:|
-| 12 sub-districts supplied only by Southwark and Vauxhall | 134.9 | 146.6 | +11.7 |
-| 16 sub-districts supplied by both companies | 130.1 | 84.9 | −45.2 |
-| **Difference-in-differences** | | | **−57** |
-:::
-
-- The Southwark-only districts show what changed with no new water.
-- **Difference-in-differences** (DiD) subtracts that change from the mixed districts' change.
-- Lambeth's move cut deaths in the mixed districts by 57 per 10,000 residents.
-- With a single earlier year, nobody can check that both groups were on the same path.
-
-[Deaths: Snow (1855), Table XII. Population: Table VIII, 1851 census. Rates as computed in Coleman (2019), *Causality in the Time of Cholera*, SSRN.](https://doi.org/10.2139/ssrn.3262234){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-Two and a half minutes.
-
-Read the table as two subtractions. The first column of changes: in the
-12 sub-districts that only Southwark and Vauxhall supplied, deaths rose
-from 134.9 to 146.6 per 10,000 residents. Nothing about their water
-changed, so +11.7 is what the 1854 epidemic did differently from the 1849
-one: a different season, a different strain, anything common to south
-London. In the 16 sub-districts where both companies laid pipes, deaths
-fell from 130.1 to 84.9. Part of that fall would have happened anyway,
-and the first row says how much: none of it, the comparison group got
-worse. The difference-in-differences is −45.2 − 11.7 = −56.9 per
-10,000 from the rounded cells, −57.0 from the unrounded rates.
-
-Two cautions, both for questions. Snow never computed this number. His
-Table XII gives counts of deaths by sub-district in 1849 and 1854, and the
-rates use the 1851 census populations from his Table VIII. Coleman, and
-Huntington-Klein's The Effect (Table 18.1), give exactly these four
-numbers, and the causaldata R package carries them. Both editions of the
-Mixtape print different Snow tables, with −78 and −97, built from
-mismatched denominators or from four Lambeth-only districts that had no
-piped water at all in 1849; do not use those.
-
-Second, the treated group is a mix. In the 16 sub-districts about half
-or more of the houses took Lambeth water (Coleman's imputation is 58%),
-so −57 is the effect of the area's change in supply, diluted toward zero
-for a household that actually switched. Snow's own house-level
-comparison, his Table IX, is starker: in the first seven weeks of the
-1854 epidemic, 315 deaths per 10,000 houses supplied by Southwark and
-Vauxhall against 37 per 10,000 Lambeth houses, in the same streets.
-
-The 1849 rates, 134.9 and 130.1, show similar levels, and Snow made the
-same point in words. Difference-in-differences needs similar changes,
-not similar levels, and one earlier year cannot show them. That is the
-fourth bullet, and the next slides return to it.
-:::
-
-## Two subtractions remove two kinds of confounder
-
-- In month 7 a coffee chain launches a mobile-ordering app in its larger, busier region.
-- A **confounder** affects both which stores get the app and their sales.
-- Comparing each store with its own past removes every trait of the store that does not change.
-- Subtracting the other region's change removes shocks common to all stores, such as the season.
-- **Parallel trends** assumes both regions' sales would have changed by the same amount without the app.
-
-<div class="m06" data-demo="pdag" data-design="did" style="width:58%;margin:0 auto"></div>
-
-::: {.notes}
-Three minutes. Click the button three times.
-
-The running example for the rest of the lecture. A coffee chain launches
-a mobile-ordering app in month 7, in one region only. The outcome is
-weekly sales per store. The region that got the app is the larger,
-busier one, so comparing its stores with the others after the launch
-mixes the app with the region.
-
-Starting graph: store type (the region, the neighbourhood, the
-footfall) drives both which stores got the app and how much they sell.
-The month also matters: sales follow the season, and the app arrived in
-month 7, so a before-after comparison mixes the app with the season.
-
-Click once, "Compare each store with its own past". The arrows from
-store type are crossed. Store type does not change between month 6 and
-month 7, so a store's change in sales contains none of it. This is
-the Change column of Snow's table: the mixed districts' poverty and
-elevation were the same in 1849 and 1854.
-
-Click again, "Subtract the control group's change". The month's arrows
-are crossed. The stores without the app went through the same season,
-so their change measures the season, and subtracting it leaves the app.
-This is Snow's +11.7.
-
-Click again, "Name the assumption". The one arrow that must be missing
-runs from a trend that differs by group into sales. If the app region was
-on a different path anyway, growing faster, recovering from a bad year,
-receiving a new office park, its change would differ from the other
-region's for reasons other than the app. Parallel trends says it would
-not. It is a statement about the treated region's sales without the app,
-which nobody observes, so no statistic can confirm it. The pre-period can
-refute it, which is the slide after next.
-:::
-
-## Difference-in-differences recovers the app's effect
-
-- The app adds $4,000 a week in each of 40 stores. 40 stores elsewhere never get it.
-- App-region stores sell $12,000 more to begin with. All sales rise $3,000 after month 6.
-- Regions compared after launch differ by $16,000. The app region's own change is $7,000.
-- DiD averages $4,000 across 1,000 samples. Its **standard error** (SE), about $500, matches the **standard deviation** (SD) of the estimates.
-
-<div class="m06" data-demo="did" style="width:92%;margin:0 auto"></div>
-
-::: {.notes}
-Three minutes. Start on "Parallel trends". Click "Draw one", then
-"Draw 1,000".
-
-The data-generating process. 40 stores in the app region start at a
-level drawn around $52,000 a week, 40 elsewhere around $40,000. Every
-store follows the same seasonal path, which adds exactly $3,000 from the
-first six months to the last six. Store-month noise has an SD of $4,000.
-From month 7 the app adds $4,000 a week in every app-region store.
-
-One sample: the red line is the app region, grey the other region, and
-the dashed red line is the counterfactual, the app region's pre-launch
-level plus the other region's change. The readout gives the two changes,
-+6.6 and +2.9 (thousands), and their difference, +3.7, SE 0.5.
-
-A thousand samples: the estimates centre on 3.99 with an SD of 0.50, and
-the reported SE averages 0.51. The standard error here comes from each
-store's own after-minus-before change, which is the same as clustering
-by store. Meeting 7's rule is to cluster at the level of assignment, here
-the region, and with one treated region that is the few-treated-units
-problem of section 4. Store clustering is right here only because the
-simulation has no region-wide shocks.
-
-The two single differences, both on the slide. After the launch, app
-stores sell about $16,000 more than the others: $12,000 is the region and
-$4,000 the app. The app region's own before-after change is about $7,000:
-$3,000 is the season and $4,000 the app. Each single comparison removes one
-confounder and keeps the other. The difference of the two removes both,
-under parallel trends.
-
-A regression gives the same number: sales on a treated-group dummy, a
-post-period dummy and their product, or with store and month fixed
-effects in place of the two dummies. The coefficient on the product is
-the difference-in-differences.
-:::
-
-## Parallel trends is a claim about a counterfactual
-
-- The dashed red line assumes parallel trends. The true **counterfactual**, sales without the app, is never observed.
-- If app-region sales already grew $500 a month faster, DiD averages $7,000 against a true $4,000.
-- The two groups' **pre-period** paths are the main evidence on the assumption.
-- [**Solution**: plot both groups before the change, and choose controls whose earlier paths match.]{.solution}
-
-<div class="m06" data-demo="did" style="width:92%;margin:0 auto"></div>
-
-::: {.notes}
-Two and a half minutes. Switch to "Treated stores were already growing
-faster" and click "Draw 1,000".
-
-The same stores, the same draws, with one change: sales in the app
-region grow by $500 a week each month, app or no app. In the left panel
-the red line climbs faster than the grey line before month 7. The
-counterfactual dashed line still adds the grey region's change to the red
-region's starting level, so it misses the extra growth, and the estimate
-absorbs it. Across 1,000 samples: mean 6.99, SD 0.50, against a true 4.
-
-Two points. The standard error is unchanged at 0.5, so the interval is
-just as tight around the wrong value. And the failure is the
-assumption's, not the estimator's: the same subtraction is right when
-the trends are parallel.
-
-What the pre-period buys. Six months before the launch the faster growth
-is visible in the left panel. That is the check: draw both groups'
-paths before the change. With one pre-period, as Snow had, there is
-nothing to plot but two levels. Section 2 turns this plot into the event
-study and shows that passing the check is weaker evidence than it
-looks.
-
-Choosing controls. If one comparison region trends differently, another
-may not: other cities, other store formats, other customer segments.
-That choice has to be made before seeing the post-period, or it becomes a
-specification search.
-:::
-
-## Job trainees' earnings fell before they enrolled {.dense}
-
-- In 1976, 3,072 men began a US federal job-training program.
-- The controls were men from the Current Population Survey, a national household survey.
-- Trainees' earnings fell from $2,970 in 1973 to $1,898 in 1975, in 1967 dollars.
-- People enrol after a bad year, the **Ashenfelter dip**. From that year, the usual recovery looks like an effect.
-
-::: {style="font-size:0.58em; width:62%; margin:0 auto"}
-| "Before" year | DiD estimate, 1978 earnings |
-|:----------------------|--------------------:|
-| 1975, the year of the dip | +$785 |
-| 1974 | +$8 |
-| 1973 | −$473 |
-| 1970 | −$1,110 |
-:::
-
-- [**Solution**: report several "before" years, and match on recent employment history.]{.solution}
-
-[Ashenfelter and Card (1985), *Using the Longitudinal Structure of Earnings to Estimate the Effect of Training Programs*, Review of Economics and Statistics 67, 648–660, Tables 1–2.](https://doi.org/10.2307/1924810){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-Two and a half minutes. Dollars are 1967 dollars. This is not LaLonde's National Supported Work
-program from meetings 7 and 8, although the comparison group is again
-men from a national survey.
-
-The setting. The Comprehensive Employment and Training Act funded job
-training for disadvantaged workers. Ashenfelter and Card took the adult
-men who started training in 1976 and a comparison group from the March
-1976 Current Population Survey, resampled to match the trainees' ages,
-with Social Security earnings for both from 1970 to 1978. The question:
-did the training raise earnings?
-
-The dip. Trainees' earnings rose to $2,970 in 1973, then fell to $2,785
-in 1974 and $1,898 in 1975, the year before they enrolled. From 1970 to
-1975 the comparison group's earnings rose by about $1,700, while the
-trainees' fell by about $200. People enter a training program after
-losing a job or hours, so their earnings were about to recover with or
-without the training. Ashenfelter (1978) first documented the dip, for
-the 1964 cohort of an earlier program, and his paper is credited with
-bringing difference-in-differences into program evaluation.
-
-The table is the parallel-trends failure in one column. The same data
-and the same estimator give +$785 when the "before" year is the dip year,
-because the recovery is credited to training, and −$1,110 when it is
-1970, because trainees were already falling behind the comparison group
-over the early 1970s. Nothing in a single estimate says which base year
-is right. The authors concluded that randomized trials were needed.
-
-The experiment that settles it, if asked: Heckman and Smith (1999,
-Economic Journal, https://doi.org/10.1111/1468-0297.00451) used the
-randomized National Job Training Partnership Act Study. For adult men,
-the 18-month before-after estimate was $3,109 against an experimental
-$657 (figures from NBER working paper 6983). They found that unemployment, more than low earnings, predicts who
-enrolls, so the fix is to compare people with the same recent employment
-history: eligible applicants, or matches on labour-force status before
-enrollment.
-
-In the course's terms: a consistent estimator, data that violate its
-assumption, because selection into treatment depends on a recent
-temporary shock to the outcome.
-:::
-
-## A tax in one city moved sales across its border {.dense}
-
-- Philadelphia's 2017 tax on sweetened drinks raised their prices 34%.
-- City stores' sales of taxed drinks fell 46%. Stores just outside sold more.
-- **Spillover** means the treatment changes outcomes in the control group.
-- The DiD compares city stores with stores over 6 miles out, where sales did not rise.
-- Counting the border gains, purchases fell 22%.
-- [**Solution**: choose controls beyond the spillover, and estimate it separately.]{.solution}
-
-[Seiler, Tuchman and Yao (2021), *The Impact of Soda Taxes: Pass-Through, Tax Avoidance, and Nutritional Effects*, Journal of Marketing Research 58, 22–49.](https://doi.org/10.1177/0022243720969401){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-Two and a half minutes. Numbers are from the June 2020 working paper,
-whose headline figures match the published abstract.
-
-The setting. Philadelphia's City Council passed a 1.5 cents per ounce
-tax on sweetened drinks, diet soda included, in June 2016, effective 1
-January 2017. On a 2-litre bottle that is $1.01, against an average
-pre-tax price of $1.56. The researchers wanted to know how much of the tax reached shelf prices, how
-much less was bought, and how much buying moved to untaxed stores.
-
-The data. Weekly store-level scanner data from 2015 to 2018 for 357
-stores in Philadelphia and 870 outside it, from 11 chains present on both
-sides of the city line.
-
-The results. Pass-through was 97%: prices rose 1.45 cents an ounce, 34%.
-Taxed volume in city stores fell 46%. Stores 0–2 miles outside the city
-gained 63,650 ounces per store per week, against a loss of about 56,000
-per city store. Counting the gains within 6 miles, the net fall was 22%,
-and 52% of the city's decline was offset by shoppers driving out.
-
-The design decision. The control group is stores more than 6 miles from
-the city limits, "to ensure the control group is not affected by the
-treatment through cross-shopping behavior". They check it: stores 6–8
-miles out show no increase. Had the 0–2 mile stores been the control, the
-estimate would add their rise to the city's fall, roughly doubling it
-(my arithmetic, not the authors': about −119,800 against −56,192 ounces
-per store per week).
-
-Last week's term for this is interference: one unit's treatment changes
-another unit's outcome. In a difference-in-differences it contaminates
-the control group, and the usual direction is to exaggerate the effect
-when the treatment pushes activity to the controls, as here, or to hide
-it when the treatment's benefits spread to them.
-
-A contrast for questions: Roberto et al. (2019, JAMA,
-https://doi.org/10.1001/jama.2019.4249) used Baltimore as the control
-and a 3-mile Pennsylvania border zone, and found a 24% offset and a 38%
-net fall. Seiler et al. reproduce most of the gap by restricting their
-data to Roberto's store formats, geography and period (28% net) and to 51
-border stores (34%).
-:::
-
-## Who the DiD estimate is about
-
-- DiD estimates the **average treatment effect on the treated** (ATT): the effect on treated units in the periods observed.
-- Snow's estimate concerns 16 London sub-districts in 1854.
-- Report the 2×2 table of means, both groups' paths, the clustering and the number treated.
-
-[Roth, Sant'Anna, Bilinski and Poe (2023), *What's Trending in Difference-in-Differences?*, Journal of Econometrics 235, 2218–2244.](https://doi.org/10.1016/j.jeconom.2023.03.008){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-One and a half minutes.
-
-The parameter. A difference-in-differences compares the treated units
-with what they would have done untreated, so it estimates the effect on
-the treated, over the periods in the data. Whether the same effect would
-hold for the untreated units is a separate claim: they were not treated,
-often for a reason. The app region was the busier region; the effect of
-an app in a quiet region is not in the data.
-
-Snow's estimate is the effect of the change in supply on 16
-sub-districts in the 1854 epidemic. It is internally valid for those
-districts and says nothing directly about another city's water.
-
-The reporting list, for the proposal: the 2×2 table of means; a plot of
-both groups before and after; how the standard errors are clustered and
-why; and how many units changed treatment. Roth and co-authors' review
-ends with a practitioner's checklist along these lines, and it is the
-best single reading for this section.
-:::
-
-# 2. Many units and many periods
-
-::: {.notes}
-Thirty seconds. The same comparison with many units and many periods.
-Opened by women on corporate boards, then two-way fixed effects, what
-they miss, and the event-study plot.
+Thirty seconds. Comparing each unit with itself. Opened by women on
+corporate boards, then the graph, the two-way fixed-effects regression,
+and what fixed effects miss.
 :::
 
 ## Women on boards and firm value {.dense}
@@ -505,7 +113,7 @@ they miss, and the event-study plot.
 - **Tobin's q** is market value over the book value of assets.
 - With industry and size controls, one more woman on a ten-seat board went with 2.2% higher q.
 - Within each firm over time, one more woman went with 1.3% lower q.
-- Both are significant only at 10%. The authors suspect firm culture drives both.
+- Both are significant only at 10%. Firm culture may be a **confounder**, affecting both board makeup and value.
 
 [Adams and Ferreira (2009), *Women in the Boardroom and Their Impact on Governance and Performance*, Journal of Financial Economics 94, 291–309.](https://doi.org/10.1016/j.jfineco.2008.10.007){style="font-size:0.55em; color:#6b6b6b"}
 
@@ -636,7 +244,7 @@ The switchers bullet is the identifying variation. About 66 stores out of
 relative to the month effects, are the whole estimate.
 
 The effect here is constant: the same $4,000 in every store and every
-month after adoption. Section 3 shows what two-way fixed effects do when
+month after adoption. Section 2 shows what two-way fixed effects do when
 the effect grows over time and stores adopt at different dates.
 :::
 
@@ -681,7 +289,8 @@ The solution has two parts. If the changing confounder can be measured,
 control for it, as long as it is not itself caused by the treatment. If
 not, the design has to supply timing the confounder cannot drive: a
 policy date set elsewhere, a lottery for the order of rollout, a sudden
-event. Section 5 and two of this afternoon's cases use timing of that kind.
+event. Sections 2 and 4 and several of this afternoon's cases use timing
+of that kind.
 A check that helps: leads of the treatment, next month's adoption in this
 month's regression, should have no effect. Under feedback or anticipation
 they often do.
@@ -788,6 +397,418 @@ the treatment, the treatment varies within groups, and it is well
 measured.
 :::
 
+## Who the fixed-effects estimate is about
+
+- The estimate comes from units whose treatment changed.
+- Adams and Ferreira's units added or lost a woman, often one director.
+- That says little about a quota that changes many seats at once.
+- Report how many units switch and how much treatment varies within them.
+
+::: {.notes}
+One and a half minutes.
+
+Imai and Kim show that the unit fixed-effects estimator of a binary
+treatment estimates the average effect among units whose treatment
+changes over time. Units that are always or never treated contribute
+nothing to it.
+
+For Adams and Ferreira, the identifying variation is boards that gained
+or lost a woman between 1996 and 2003, typically one director out of
+nine or ten. A quota that moves a board from one woman to four is far
+outside that range, so the within-firm estimate does not transfer to it
+without assumptions the data cannot check. That is why the Norway
+studies use the quota itself.
+
+The reporting list: the number of switchers; the share of the
+treatment's variance that is within units, after the fixed effects; and
+both the pooled and the fixed-effects estimates, so the reader can see
+how much the fixed effects moved the result. Gormley and Matsa make the
+same request.
+:::
+
+# 2. Difference-in-differences and event studies
+
+::: {.notes}
+Thirty seconds. Snow first, then the app, then the same design with more
+periods, more adoption dates and more than one dose.
+:::
+
+## Difference-in-differences in four steps
+
+1. **Two groups and two periods**: the 2×2 comparison.
+2. **Many periods**: the event study, one comparison for each period.
+3. **Adoption on different dates**: staggered timing, where treated units can end up as controls.
+4. **Different amounts of treatment**: continuous doses.
+
+[Baker, Callaway, Cunningham, Goodman-Bacon and Sant'Anna (2026), *Difference-in-Differences Designs: A Practitioner's Guide*, Journal of Economic Literature 64, 498–557.](https://doi.org/10.1257/jel.20251650){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+One minute. The order follows the practitioner's guide by Baker,
+Callaway, Cunningham, Goodman-Bacon and Sant'Anna, which builds every
+design from comparisons of two groups over two periods and then adds
+periods, adoption dates and doses. The Mixtape covers the first two in
+chapter 9 and staggered timing in chapter 10. Every step keeps the same
+idea: the untreated units' change stands in for the treated units'
+change without treatment. What changes is which units can play the
+untreated role, and in which periods.
+:::
+
+## Snow studied cholera and London's water
+
+::: {.columns}
+::: {.column width="54%"}
+::: {style="font-size:0.74em"}
+- Cholera struck London in 1849 and again in 1854. Most doctors blamed foul air.
+- John Snow, a London physician, argued that sewage in drinking water spread it.
+- In 1849 two companies piped water to south London from the Thames in central London.
+- In 1852 the Lambeth company moved its intake upstream, above the sewage. Southwark and Vauxhall did not.
+- In many streets both companies' pipes ran side by side, so neighbours drank different water.
+:::
+:::
+::: {.column width="46%"}
+![](figures/snow-1855-map2.jpg){width=100% fig-alt="Snow's 1855 map of south London water supply: blue for the Southwark and Vauxhall company, red for the Lambeth company, purple where the pipes of both are intermingled"}
+
+::: {style="font-size:0.5em; color:#6b6b6b; line-height:1.3"}
+On Snow's map blue is Southwark and Vauxhall, red is Lambeth and purple is both.
+:::
+:::
+:::
+
+[Snow (1855), *On the Mode of Communication of Cholera*, 2nd ed., John Churchill, London, pp. 60–90 and Map 2.](https://archive.org/details/b28985266){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes.
+
+The question Snow wanted answered: is cholera carried by water fouled
+with sewage? The medical consensus was the miasma view, that it came
+from bad air, so a water company's intake did not matter.
+
+The setting, from his book. In 1849 the Southwark and Vauxhall company
+drew water from the Thames at Battersea Fields, and the Lambeth company
+opposite Hungerford Market, near today's Charing Cross. Both were in
+central London, on the tidal river that received the city's sewage, and
+Snow says the two waters were nearly equally impure in 1849. In 1852
+Lambeth moved its works upstream to Thames Ditton, above Teddington
+Lock, "quite free from the sewage of London" (p. 68). Southwark and
+Vauxhall had not finished moving by 1854.
+
+Why the design works. After competition began in the 1830s, both
+companies laid pipes down the same streets. Snow (p. 75) says each
+company supplied rich and poor, large houses and small, with no
+difference in the condition or occupation of their customers, and that
+about 300,000 people were divided into two groups "without their
+choice". Snow got the address of every cholera death and went from house
+to house to find the water company; residents rarely knew, so he used a
+salt test, since the two waters differed sharply in salt content.
+
+The map, from the same book, shows the supply areas. Blue is Southwark
+and Vauxhall only, red is Lambeth only, purple is where both companies'
+pipes were intermingled. The next slide uses the blue and the purple
+areas.
+
+The Metropolis Water Act 1852 made it unlawful after 31 August 1855 for
+London companies to take Thames water below Teddington Lock (Chelsea had
+until 1856). Some textbooks say Lambeth was required by law to move; its
+works moved in 1852, three years before that deadline. Whether its
+decision predated the Act is not established in the sources checked.
+:::
+
+## Cholera deaths before and after Lambeth moved
+
+::: {style="font-size:0.66em"}
+| Cholera deaths per 10,000 residents | 1849 | 1854 | Change |
+|:-----------------------------------|-----:|-----:|-------:|
+| 12 sub-districts supplied only by Southwark and Vauxhall | 134.9 | 146.6 | +11.7 |
+| 16 sub-districts supplied by both companies | 130.1 | 84.9 | −45.2 |
+| **Difference-in-differences** | | | **−57** |
+:::
+
+- The Southwark-only districts show what changed with no new water.
+- **Difference-in-differences** (DiD) subtracts that change from the mixed districts' change.
+- Lambeth's move cut deaths in the mixed districts by 57 per 10,000 residents.
+- With a single earlier year, nobody can check that both groups were on the same path.
+
+[Deaths: Snow (1855), Table XII. Population: Table VIII, 1851 census. Rates as computed in Coleman (2019), *Causality in the Time of Cholera*, SSRN.](https://doi.org/10.2139/ssrn.3262234){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes.
+
+Read the table as two subtractions. The first column of changes: in the
+12 sub-districts that only Southwark and Vauxhall supplied, deaths rose
+from 134.9 to 146.6 per 10,000 residents. Nothing about their water
+changed, so +11.7 is what the 1854 epidemic did differently from the 1849
+one: a different season, a different strain, anything common to south
+London. In the 16 sub-districts where both companies laid pipes, deaths
+fell from 130.1 to 84.9. Part of that fall would have happened anyway,
+and the first row says how much: none of it, the comparison group got
+worse. The difference-in-differences is −45.2 − 11.7 = −56.9 per
+10,000 from the rounded cells, −57.0 from the unrounded rates.
+
+Two cautions, both for questions. Snow never computed this number. His
+Table XII gives counts of deaths by sub-district in 1849 and 1854, and the
+rates use the 1851 census populations from his Table VIII. Coleman, and
+Huntington-Klein's The Effect (Table 18.1), give exactly these four
+numbers, and the causaldata R package carries them. Both editions of the
+Mixtape print different Snow tables, with −78 and −97, built from
+mismatched denominators or from four Lambeth-only districts that had no
+piped water at all in 1849; do not use those.
+
+Second, the treated group is a mix. In the 16 sub-districts about half
+or more of the houses took Lambeth water (Coleman's imputation is 58%),
+so −57 is the effect of the area's change in supply, diluted toward zero
+for a household that actually switched. Snow's own house-level
+comparison, his Table IX, is starker: in the first seven weeks of the
+1854 epidemic, 315 deaths per 10,000 houses supplied by Southwark and
+Vauxhall against 37 per 10,000 Lambeth houses, in the same streets.
+
+The 1849 rates, 134.9 and 130.1, show similar levels, and Snow made the
+same point in words. Difference-in-differences needs similar changes,
+not similar levels, and one earlier year cannot show them. That is the
+fourth bullet, and the next slides return to it.
+:::
+
+## Two subtractions remove two kinds of confounder
+
+- In month 7 a coffee chain launches a mobile-ordering app in its larger, busier region.
+- Comparing each store with its own past removes every trait of the store that does not change.
+- Subtracting the other region's change removes shocks common to all stores, such as the season.
+- **Parallel trends** assumes both regions' sales would have changed by the same amount without the app.
+
+<div class="m06" data-demo="pdag" data-design="did" style="width:58%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. Click the button three times.
+
+The running example for the rest of the lecture. A coffee chain launches
+a mobile-ordering app in month 7, in one region only. The outcome is
+weekly sales per store. The region that got the app is the larger,
+busier one, so comparing its stores with the others after the launch
+mixes the app with the region.
+
+Starting graph: store type (the region, the neighbourhood, the
+footfall) drives both which stores got the app and how much they sell.
+The month also matters: sales follow the season, and the app arrived in
+month 7, so a before-after comparison mixes the app with the season.
+
+Click once, "Compare each store with its own past". The arrows from
+store type are crossed. Store type does not change between month 6 and
+month 7, so a store's change in sales contains none of it. This is
+the Change column of Snow's table: the mixed districts' poverty and
+elevation were the same in 1849 and 1854.
+
+Click again, "Subtract the control group's change". The month's arrows
+are crossed. The stores without the app went through the same season,
+so their change measures the season, and subtracting it leaves the app.
+This is Snow's +11.7.
+
+Click again, "Name the assumption". The one arrow that must be missing
+runs from a trend that differs by group into sales. If the app region was
+on a different path anyway, growing faster, recovering from a bad year,
+receiving a new office park, its change would differ from the other
+region's for reasons other than the app. Parallel trends says it would
+not. It is a statement about the treated region's sales without the app,
+which nobody observes, so no statistic can confirm it. The pre-period can
+refute it, which is the slide after next.
+:::
+
+## Difference-in-differences recovers the app's effect
+
+- The app adds $4,000 a week in each of 40 stores. 40 stores elsewhere never get it.
+- App-region stores sell $12,000 more to begin with. All sales rise $3,000 after month 6.
+- Regions compared after launch differ by $16,000. The app region's own change is $7,000.
+- DiD averages $4,000 across 1,000 samples. Its **standard error** (SE), about $500, matches the **standard deviation** (SD) of the estimates.
+
+<div class="m06" data-demo="did" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. Start on "Parallel trends". Click "Draw one", then
+"Draw 1,000".
+
+The data-generating process. 40 stores in the app region start at a
+level drawn around $52,000 a week, 40 elsewhere around $40,000. Every
+store follows the same seasonal path, which adds exactly $3,000 from the
+first six months to the last six. Store-month noise has an SD of $4,000.
+From month 7 the app adds $4,000 a week in every app-region store.
+
+One sample: the red line is the app region, grey the other region, and
+the dashed red line is the counterfactual, the app region's pre-launch
+level plus the other region's change. The readout gives the two changes,
++6.6 and +2.9 (thousands), and their difference, +3.7, SE 0.5.
+
+A thousand samples: the estimates centre on 3.99 with an SD of 0.50, and
+the reported SE averages 0.51. The standard error here comes from each
+store's own after-minus-before change, which is the same as clustering
+by store. Meeting 7's rule is to cluster at the level of assignment, here
+the region, and with one treated region that is the few-treated-units
+problem of section 3. Store clustering is right here only because the
+simulation has no region-wide shocks.
+
+The two single differences, both on the slide. After the launch, app
+stores sell about $16,000 more than the others: $12,000 is the region and
+$4,000 the app. The app region's own before-after change is about $7,000:
+$3,000 is the season and $4,000 the app. Each single comparison removes one
+confounder and keeps the other. The difference of the two removes both,
+under parallel trends.
+
+A regression gives the same number: sales on a treated-group dummy, a
+post-period dummy and their product, or with store and month fixed
+effects in place of the two dummies. The coefficient on the product is
+the difference-in-differences.
+:::
+
+## Parallel trends is a claim about a counterfactual
+
+- The dashed red line assumes parallel trends. The true **counterfactual**, sales without the app, is never observed.
+- If app-region sales already grew $500 a month faster, DiD averages $7,000 against a true $4,000.
+- The two groups' **pre-period** paths are the main evidence on the assumption.
+- [**Solution**: plot both groups before the change, and choose controls whose earlier paths match.]{.solution}
+
+<div class="m06" data-demo="did" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Two and a half minutes. Switch to "Treated stores were already growing
+faster" and click "Draw 1,000".
+
+The same stores, the same draws, with one change: sales in the app
+region grow by $500 a week each month, app or no app. In the left panel
+the red line climbs faster than the grey line before month 7. The
+counterfactual dashed line still adds the grey region's change to the red
+region's starting level, so it misses the extra growth, and the estimate
+absorbs it. Across 1,000 samples: mean 6.99, SD 0.50, against a true 4.
+
+Two points. The standard error is unchanged at 0.5, so the interval is
+just as tight around the wrong value. And the failure is the
+assumption's, not the estimator's: the same subtraction is right when
+the trends are parallel.
+
+What the pre-period buys. Six months before the launch the faster growth
+is visible in the left panel. That is the check: draw both groups'
+paths before the change. With one pre-period, as Snow had, there is
+nothing to plot but two levels. The event study later in this section
+turns this plot into a test, and shows that passing the test is weaker
+evidence than it looks.
+
+Choosing controls. If one comparison region trends differently, another
+may not: other cities, other store formats, other customer segments.
+That choice has to be made before seeing the post-period, or it becomes a
+specification search.
+:::
+
+## Job trainees' earnings fell before they enrolled {.dense}
+
+- In 1976, 3,072 men began a US federal job-training program.
+- The controls were men from the Current Population Survey, a national household survey.
+- Trainees' earnings fell from $2,970 in 1973 to $1,898 in 1975, in 1967 dollars.
+- People enrol after a bad year, the **Ashenfelter dip**. From that year, the usual recovery looks like an effect.
+
+::: {style="font-size:0.58em; width:62%; margin:0 auto"}
+| "Before" year | DiD estimate, 1978 earnings |
+|:----------------------|--------------------:|
+| 1975, the year of the dip | +$785 |
+| 1974 | +$8 |
+| 1973 | −$473 |
+| 1970 | −$1,110 |
+:::
+
+- [**Solution**: report several "before" years, and match on recent employment history.]{.solution}
+
+[Ashenfelter and Card (1985), *Using the Longitudinal Structure of Earnings to Estimate the Effect of Training Programs*, Review of Economics and Statistics 67, 648–660, Tables 1–2.](https://doi.org/10.2307/1924810){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes. Dollars are 1967 dollars. This is not LaLonde's National Supported Work
+program from meetings 7 and 8, although the comparison group is again
+men from a national survey.
+
+The setting. The Comprehensive Employment and Training Act funded job
+training for disadvantaged workers. Ashenfelter and Card took the adult
+men who started training in 1976 and a comparison group from the March
+1976 Current Population Survey, resampled to match the trainees' ages,
+with Social Security earnings for both from 1970 to 1978. The question:
+did the training raise earnings?
+
+The dip. Trainees' earnings rose to $2,970 in 1973, then fell to $2,785
+in 1974 and $1,898 in 1975, the year before they enrolled. From 1970 to
+1975 the comparison group's earnings rose by about $1,700, while the
+trainees' fell by about $200. People enter a training program after
+losing a job or hours, so their earnings were about to recover with or
+without the training. Ashenfelter (1978) first documented the dip, for
+the 1964 cohort of an earlier program, and his paper is credited with
+bringing difference-in-differences into program evaluation.
+
+The table is the parallel-trends failure in one column. The same data
+and the same estimator give +$785 when the "before" year is the dip year,
+because the recovery is credited to training, and −$1,110 when it is
+1970, because trainees were already falling behind the comparison group
+over the early 1970s. Nothing in a single estimate says which base year
+is right. The authors concluded that randomized trials were needed.
+
+The experiment that settles it, if asked: Heckman and Smith (1999,
+Economic Journal, https://doi.org/10.1111/1468-0297.00451) used the
+randomized National Job Training Partnership Act Study. For adult men,
+the 18-month before-after estimate was $3,109 against an experimental
+$657 (figures from NBER working paper 6983). They found that unemployment, more than low earnings, predicts who
+enrolls, so the fix is to compare people with the same recent employment
+history: eligible applicants, or matches on labour-force status before
+enrollment.
+
+In the course's terms: a consistent estimator, data that violate its
+assumption, because selection into treatment depends on a recent
+temporary shock to the outcome.
+:::
+
+## A tax in one city moved sales across its border {.dense}
+
+- Philadelphia's 2017 tax on sweetened drinks raised their prices 34%.
+- City stores' sales of taxed drinks fell 46%. Stores just outside sold more.
+- **Spillover** means the treatment changes outcomes in the control group.
+- The DiD compares city stores with stores over 6 miles out, where sales did not rise.
+- Counting the border gains, purchases fell 22%.
+- [**Solution**: choose controls beyond the spillover, and estimate it separately.]{.solution}
+
+[Seiler, Tuchman and Yao (2021), *The Impact of Soda Taxes: Pass-Through, Tax Avoidance, and Nutritional Effects*, Journal of Marketing Research 58, 22–49.](https://doi.org/10.1177/0022243720969401){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes. Numbers are from the June 2020 working paper,
+whose headline figures match the published abstract.
+
+The setting. Philadelphia's City Council passed a 1.5 cents per ounce
+tax on sweetened drinks, diet soda included, in June 2016, effective 1
+January 2017. On a 2-litre bottle that is $1.01, against an average
+pre-tax price of $1.56. The researchers wanted to know how much of the tax reached shelf prices, how
+much less was bought, and how much buying moved to untaxed stores.
+
+The data. Weekly store-level scanner data from 2015 to 2018 for 357
+stores in Philadelphia and 870 outside it, from 11 chains present on both
+sides of the city line.
+
+The results. Pass-through was 97%: prices rose 1.45 cents an ounce, 34%.
+Taxed volume in city stores fell 46%. Stores 0–2 miles outside the city
+gained 63,650 ounces per store per week, against a loss of about 56,000
+per city store. Counting the gains within 6 miles, the net fall was 22%,
+and 52% of the city's decline was offset by shoppers driving out.
+
+The design decision. The control group is stores more than 6 miles from
+the city limits, "to ensure the control group is not affected by the
+treatment through cross-shopping behavior". They check it: stores 6–8
+miles out show no increase. Had the 0–2 mile stores been the control, the
+estimate would add their rise to the city's fall, roughly doubling it
+(my arithmetic, not the authors': about −119,800 against −56,192 ounces
+per store per week).
+
+Last week's term for this is interference: one unit's treatment changes
+another unit's outcome. In a difference-in-differences it contaminates
+the control group, and the usual direction is to exaggerate the effect
+when the treatment pushes activity to the controls, as here, or to hide
+it when the treatment's benefits spread to them.
+
+A contrast for questions: Roberto et al. (2019, JAMA,
+https://doi.org/10.1001/jama.2019.4249) used Baltimore as the control
+and a 3-mile Pennsylvania border zone, and found a 24% offset and a 38%
+net fall. Seiler et al. reproduce most of the gap by restricting their
+data to Roberto's store formats, geography and period (28% net) and to 51
+border stores (34%).
+:::
+
 ## An event study estimates the effect month by month
 
 - App-region stores are compared with the others by month, with store and month fixed effects.
@@ -811,12 +832,12 @@ time; the leads are a placebo test, because the treatment cannot have an
 effect before it happens. Restricting all leads to zero and all lags to
 one common value gives back the difference-in-differences regression.
 
-The design: the two-region rollout from section 1, 40 stores in the app
+The design: the two-region rollout from the DiD demo, 40 stores in the app
 region and 40 elsewhere, observed from six months before the launch to
 six months after. The regression has store fixed effects, month fixed
 effects and an indicator for each month relative to the launch in the
 app region, leaving out month −1. Standard errors are clustered by store,
-which, as in section 1, assumes no region-wide shocks.
+which, as in the DiD demo, assumes no region-wide shocks.
 
 Effect constant: the leads scatter around zero, the lags around $4,000,
 and the joint test that all five leads are zero has p = 0.98. Effect
@@ -837,6 +858,41 @@ and units do not respond in advance, they should be zero. Anticipation,
 units reacting before the treatment because they know it is coming, is a
 reason they might not be, and a reason to choose the reference period
 before any announcement.
+:::
+
+## Choosing a DiD or an event study
+
+::: {style="font-size:0.72em"}
+|  | Difference-in-differences | Event study |
+|:-------------|:------------------------|:------------------------|
+| Reports | One average effect after treatment | One effect for each period, against a reference period |
+| Needs | Two periods, or periods pooled before and after | Several periods before and after |
+| Shows pre-trends | No | Yes, in the leads |
+| Shows whether the effect builds or fades | No | Yes, in the lags |
+:::
+
+- With two periods the two are the same comparison.
+- With more periods report both: the event study as the figure and the DiD as the summary.
+
+::: {.notes}
+One and a half minutes.
+
+They are one design. An event study is a set of differences-in-
+differences, each comparing one period with the same reference period.
+The DiD averages the periods after treatment against the periods before.
+With Snow's two years there is only one comparison, and the two coincide.
+
+When to lead with which. The DiD when there are two periods, or when the
+decision needs one number, such as a cost-benefit calculation. The event
+study whenever there are several periods, because it shows the pre-trends
+in the leads and whether the effect builds, fades or arrives late in the
+lags, and referees expect the figure. The practitioner's guide treats
+the event study as the multi-period version of the 2×2 and discusses
+averaging its estimates into a single summary.
+
+With adoption on different dates the event study lines units up by time
+since adoption rather than by calendar month. That is where the next
+step goes.
 :::
 
 ## A pre-trend test can pass when parallel trends fails
@@ -893,53 +949,48 @@ Stata does this, and Roth's pretrends package computes the power of the
 pre-test.
 :::
 
-## Who the fixed-effects estimate is about
+## Staggered adoption changes who serves as control
 
-- The estimate comes from units whose treatment changed.
-- Adams and Ferreira's units added or lost a woman, often one director.
-- That says little about a quota that changes many seats at once.
-- In an event study each lag is the ATT that many periods after treatment.
-- Report how many units switch, how much treatment varies within them, and every lead and lag.
+- In **staggered adoption** units adopt on different dates, here months 4 and 12.
+- TWFE compares every pair of groups over every pair of periods.
+- After month 12 it uses early stores, which have the app, as controls for late stores.
 
-::: {.notes}
-One and a half minutes.
-
-Imai and Kim show that the unit fixed-effects estimator of a binary
-treatment estimates the average effect among units whose treatment
-changes over time. Units that are always or never treated contribute
-nothing to it.
-
-For Adams and Ferreira, the identifying variation is boards that gained
-or lost a woman between 1996 and 2003, typically one director out of
-nine or ten. A quota that moves a board from one woman to four is far
-outside that range, so the within-firm estimate does not transfer to it
-without assumptions the data cannot check. That is why the Norway
-studies use the quota itself.
-
-The reporting list: the number of switchers; the share of the
-treatment's variance that is within units, after the fixed effects; and
-both the pooled and the fixed-effects estimates, so the reader can see
-how much the fixed effects moved the result. Gormley and Matsa make the
-same request. For an event study, every lead and lag with its interval
-and the reference period.
-:::
-
-# 3. Staggered adoption
+![](figures/m09-staggered-roles.svg){.nostretch width=78% fig-alt="A grid of three groups of stores by month 1 to 16. Early stores have the app from month 4, late stores from month 12, and the third group never adopts. Below the grid: in months 1 to 3 no store is treated; in months 4 to 11 early stores are treated and late and never-adopting stores are clean controls; in months 12 to 16 early and late stores are treated, never-adopting stores are the only clean control, and early stores, already treated, serve as controls for late stores."}
 
 ::: {.notes}
-Thirty seconds. Section 2's regression when units adopt on different
-dates and the effect changes over time. First the intuition with two
-groups of stores, then the demo with three.
+Two minutes. Read the grid left to right, as time goes by.
+
+Months 1 to 3: no store has the app, and nothing can be compared.
+
+Months 4 to 11: early stores have the app. Late stores and the stores
+that never adopt have not, and either group is a clean control for the
+early stores: its change is what the early stores' sales would have done
+without the app, under parallel trends.
+
+Months 12 to 16: late stores adopt. The stores that never adopt are
+still a clean control. But a two-way fixed-effects regression does not
+choose its controls. Goodman-Bacon (2021) shows that its estimate is a
+weighted average of every comparison of two groups over two periods in
+the data, and one of those compares the late stores' change with the
+early stores' change over the same months. The early stores already have
+the app, so their change includes their own app's effect.
+
+The weights depend on group sizes and on when in the panel each group
+adopts: groups treated in the middle of the panel get the most. With
+several adoption dates and no never-treated group, every comparison
+after the first adoption uses some treated units as controls.
+
+Whether that matters depends on the effect. The next slide shows the
+case where it does.
 :::
 
-## Early adopters become controls for late adopters
+## Already-treated controls can flip the sign
 
-- In **staggered adoption** units adopt on different dates.
 - The app's effect grows by $1,000 a week each month after adoption.
-- TWFE also uses early stores as controls for late stores.
-- Early stores' sales are still rising, so that comparison turns negative.
+- Early stores against late stores before month 12 is a clean comparison.
+- Late stores against early stores subtracts the early stores' growing effect.
 
-![](figures/m09-staggered-comparisons.svg){.nostretch width=88% fig-alt="Two panels of weekly sales by month. Left: early stores adopt in month 4 and their sales climb while late stores stay flat; the comparison over months 1 to 11 estimates +3.5 against a true +3.5. Right: late stores adopt in month 12 and are compared with early stores, whose sales are still climbing from their own app; the comparison over months 4 to 16 estimates -4.5 against a true +2.0."}
+![](figures/m09-staggered-comparisons.svg){.nostretch width=80% fig-alt="Two panels of weekly sales by month. Left: early stores adopt in month 4 and their sales climb while late stores stay flat; the comparison over months 1 to 11 estimates +3.5 against a true +3.5. Right: late stores adopt in month 12 and are compared with early stores, whose sales are still climbing from their own app; the comparison over months 4 to 16 estimates -4.5 against a true +2.0."}
 
 ::: {.notes}
 Two and a half minutes. Left panel first, then the right.
@@ -950,10 +1001,8 @@ the app every store's sales would be flat, so parallel trends holds
 exactly. The app's effect is zero in the adoption month and grows by
 $1,000 a week each month after, as customers learn to use it.
 
-Goodman-Bacon (2021) shows that the two-way fixed-effects estimate with
-staggered timing is a weighted average of every two-group, two-period
-comparison in the data. With two adoption dates there are two that
-matter.
+These are the two comparisons from the grid that involve early and late
+stores, drawn as sales paths.
 
 Left panel: early stores against late stores, months 1 to 11, while the
 late stores have no app. The late stores' change is zero, the early
@@ -1076,37 +1125,99 @@ study without binning the end periods, and report at least one estimator
 built for staggered timing.
 :::
 
-## Who the staggered estimate is about
+## Treatment that comes in doses
 
-- Callaway–Sant'Anna estimates an ATT for each adoption group in each period, then averages them.
-- Distant lags come only from the earliest adopters.
-- Once every unit is treated no untreated comparison is left.
-- Report the adoption dates, the comparison group and the estimator.
+- In April 1990 the federal minimum wage rose from $3.35 to $3.80 an hour.
+- The **dose** was the share of a state's teens paid $3.35–$3.79 in 1989: 0 in Alaska, 54% in West Virginia.
+- Teen wages rose more where the dose was larger. Teen employment did not change significantly.
+- Comparing doses needs **strong parallel trends**: no state got its dose because of what it would gain.
+- [**Solution**: compare each dose with untreated units, and defend strong parallel trends before reading a slope.]{.solution}
+
+[Card (1992), *Using Regional Variation in Wages to Measure the Effects of the Federal Minimum Wage*, Industrial and Labor Relations Review 46, 22–37.](https://doi.org/10.1177/001979399204600103){style="font-size:0.55em; color:#6b6b6b"} · [Callaway, Goodman-Bacon and Sant'Anna (forthcoming), *Difference-in-Differences with a Continuous Treatment*, American Economic Review.](https://doi.org/10.1257/aer.20240137){style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.notes}
-One minute.
+Two minutes. The idea only; the estimators are in the paper.
 
-The parameter. Callaway and Sant'Anna estimate a separate effect for
-each adoption group in each period after it adopts, then average them
-with weights the researcher chooses: by group, by calendar period, or by
-time since adoption for an event-study plot.
+The setting. The federal minimum wage rose from $3.35 to $3.80 on 1
+April 1990. Every state was exposed, but by 1989 sixteen states and DC
+already had their own minimum above $3.35, and wages differ across
+states, so the new minimum bound much harder in some places than in
+others. Card measured the bite as the share of teenage workers, ages 16
+to 19, earning between $3.35 and $3.79 in 1989: 24% nationally, from 0
+in Alaska to 54% in West Virginia. Data: the Current Population Survey's
+outgoing rotation groups, April to December of 1989 and 1990, for the 50
+states and DC. Numbers from the NBER working paper (w4058).
 
-Each lag is an effect on the treated at that horizon, and with
-staggered adoption the units behind each lag differ: in a panel that ends
-in 2020, the effect ten years after adoption comes only from units that
-adopted by 2010. A lag that rises may be a growing effect or a change in
-which units are averaged.
+The results. Regressing the change in the mean log teen wage on the
+fraction affected gives 0.15 (standard error 0.03): a state with 10
+more points of its teenagers affected saw about 1.5% more wage growth.
+The same regression for the teen employment rate gives 0.02 (0.03), and
+about zero with controls for the state labour market.
 
-The demo's last setting showed the end of the data: once every store has
-the app there is no untreated store left to compare with, so the
-effect in those months is not estimated at all.
+Two questions a dose design can answer. First: what did the dose do to
+the units that got it? Compare each dose group's change with the
+untreated group's change. That needs only the usual parallel trends, one
+for each dose. Second: how does the effect change with the dose, the
+slope? Comparing a high-dose state with a low-dose state mixes the
+effect of more dose with any difference in how those states respond.
+Callaway, Goodman-Bacon and Sant'Anna call that term a version of
+selection on gains. Strong parallel trends rules it out: a low-dose
+state would have responded to a high dose as the high-dose states did.
+Pre-trend tests cannot tell the two assumptions apart. Card's 0.15 is a
+slope, so reading it as "more bite, more wage growth" leans on the
+stronger assumption.
 
-The reporting list: a plot of when each unit is treated; which units
-serve as controls, never treated or not yet treated; every lead and lag
-with its interval, not binned at the ends; and the estimator.
+The regression most papers run puts the dose in a two-way fixed-effects
+regression. It averages slopes with weights that do not match the
+distribution of doses, and it carries the selection term unless strong
+parallel trends holds. In their application, Medicare's 1983 switch to
+fixed payments per admission, with each hospital's Medicare share as the
+dose, the average effect on capital intensity is clear, while the
+average slope is about zero and its sign changes across doses.
 :::
 
-# 4. Few treated units
+## Who the DiD estimate is about
+
+- DiD estimates the **average treatment effect on the treated** (ATT): the effect on treated units in the periods observed.
+- Snow's estimate concerns 16 London sub-districts in 1854.
+- In an event study each lag is the ATT that many periods after treatment.
+- With staggered adoption distant lags come only from the earliest adopters.
+- Report the 2×2 means, the pre-period paths, every lead and lag, and the estimator.
+
+[Roth, Sant'Anna, Bilinski and Poe (2023), *What's Trending in Difference-in-Differences?*, Journal of Econometrics 235, 2218–2244.](https://doi.org/10.1016/j.jeconom.2023.03.008){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+One and a half minutes.
+
+The parameter. A difference-in-differences compares the treated units
+with what they would have done untreated, so it estimates the effect on
+the treated, over the periods in the data. Whether the same effect would
+hold for the untreated units is a separate claim: they were not treated,
+often for a reason. The app region was the busier region; the effect of
+an app in a quiet region is not in the data.
+
+Snow's estimate is the effect of the change in supply on 16
+sub-districts in the 1854 epidemic. It is internally valid for those
+districts and says nothing directly about another city's water.
+
+The event study. Each lag is an effect on the treated at that horizon,
+and with staggered adoption the units behind each lag differ: in a panel
+that ends in 2020, the effect ten years after adoption comes only from
+units that adopted by 2010. A lag that rises may be a growing effect or
+a change in which units are averaged. Callaway and Sant'Anna estimate a
+separate effect for each adoption group in each period, then average
+them by group, by calendar period or by time since adoption.
+
+The reporting list, for the proposal: the 2×2 table of means; a plot of
+both groups before and after; every lead and lag with its interval, not
+binned at the ends, and the reference period; when each unit is treated
+and which units serve as controls; how the standard errors are clustered
+and why; and the estimator. Roth and co-authors' review
+ends with a practitioner's checklist along these lines, and it is the
+best single reading for this section.
+:::
+
+# 3. Few treated units
 
 ::: {.notes}
 Thirty seconds. One or a few treated units: first the standard errors,
@@ -1160,7 +1271,7 @@ With 41 controls the smallest p-value is about 1/42. Both this and
 Conley–Taber assume the control states' shocks are distributed like
 Georgia's; states with small survey samples are noisier (Ferman and Pinto
 2019, Review of Economics and Statistics,
-https://doi.org/10.1162/rest_a_00759). The Philadelphia tax in section 1
+https://doi.org/10.1162/rest_a_00759). The Philadelphia tax in section 2
 is a one-treated-city design too.
 :::
 
@@ -1260,7 +1371,7 @@ anticipation, and a treated unit inside the donors' range. When the
 pre-period fit is poor, Abadie advises against the method.
 :::
 
-# 5. Event studies in finance
+# 4. Event studies in finance
 
 ::: {.notes}
 Thirty seconds. A different design with the same name as section 2's
@@ -1479,31 +1590,34 @@ the firm names and dates so others can check.
 ## What each design assumes
 
 ::: {style="font-size:0.5em"}
-|  | Section | Variation used | Assumption | Tests that could reject it | The estimate is for | Example |
-|:-|:--------|:----------|:--------------|:---------|:--------|:-------|
-| 1 | Two groups and two periods | The treated units' change against the untreated units' change | Parallel trends; no anticipation; no spillover onto the controls | Pre-period paths; placebo dates and groups | The treated units (ATT) | Snow's water companies |
-| 2 | Many units and many periods | Changes within each unit over time | Strict exogeneity: no confounder that changes over time, no feedback | Leads of the treatment; past outcomes predicting treatment | Units whose treatment changed; the ATT by period | Board seats within each firm |
-| 3 | Staggered adoption | Each adoption group against units not yet or never treated | Parallel trends for every adoption group | Leads by adoption group; the Goodman-Bacon weights | Each adoption group, period by period | Board reforms in 41 countries |
-| 4 | Few treated units | One treated unit against a weighted mix of untreated units | The mix that tracked the past would track the future | Pre-period fit; placebo in space | The one treated unit | California's tobacco program |
-| 5 | Event studies in finance | Returns around a dated announcement | No other news in the window | Pre-event returns; a news search | The announcing firms | Earnings announcements |
+|  | Design | Variation used | Assumption | Tests that could reject it | The estimate is for |
+|:-|:--------|:----------|:--------------|:---------|:--------|
+| 1 | Fixed effects | Changes within each unit over time | Strict exogeneity: no confounder that changes over time, no feedback | Leads of the treatment; past outcomes predicting treatment | Units whose treatment changed |
+| 2 | Difference-in-differences | The treated units' change against the untreated units' change | Parallel trends; no anticipation; no spillover onto the controls | Pre-period paths; placebo dates and groups | The treated units (ATT) |
+| 2 | Event study | The same comparison, period by period | Parallel trends in every period | Leads near zero | The ATT by period since treatment |
+| 2 | Staggered adoption | Each adoption group against units not yet or never treated | Parallel trends for every adoption group | Leads by adoption group; the Goodman-Bacon weights | Each adoption group, period by period |
+| 2 | Continuous doses | Units with more of the treatment against units with less or none | Parallel trends for each dose; strong parallel trends to compare doses | Pre-period paths by dose | Units at each dose |
+| 3 | Synthetic control | One treated unit against a weighted mix of untreated units | The mix that tracked the past would track the future | Pre-period fit; placebo in space | The one treated unit |
+| 4 | Finance event study | Returns around a dated announcement | No other news in the window | Pre-event returns; a news search | The announcing firms |
 :::
 
 ::: {.notes}
-Two minutes. A reference slide for the session B cases.
+Two minutes. A reference slide for the session B cases. Rows are
+numbered by section; the four rows of section 2 are its four steps.
 
-Read the Assumption column down. Rows 1 to 4 rest on the same kind of
-claim about the units' paths over time: that the treated and untreated
-units would have moved together, that nothing that changes within a unit
-drives both its treatment and its outcome, that a weighted mix of
-untreated units stands in for the treated one. Row 5 rests on nothing
+Read the Assumption column down. Rows 1 to 3 rest on the same kind of
+claim about the units' paths over time: that nothing that changes within
+a unit drives both its treatment and its outcome, that the treated and
+untreated units would have moved together, that a weighted mix of
+untreated units stands in for the treated one. Row 4 rests on nothing
 else happening on the day. None can be confirmed by a statistic. The
-tests column lists what can refute them: pre-period paths and leads that
-are not flat, a placebo date or group with an effect, a poor pre-period
-fit, returns that move before the news.
+tests column lists what can refute them: leads that are not flat, a
+placebo date or group with an effect, a poor pre-period fit, returns
+that move before the news.
 
-The estimate column ties back to the section ends: the treated units,
-the units whose treatment changed, each adoption group, one state, the
-announcing firms. Each is narrower than "the effect".
+The estimate column ties back to the section ends: the units whose
+treatment changed, the treated units, each adoption group, one state,
+the announcing firms. Each is narrower than "the effect".
 :::
 
 ## Six designs
@@ -1589,15 +1703,182 @@ and the online second edition of The Effect (https://theeffectbook.net).
 The 2021 print Mixtape numbers its chapters differently.
 :::
 
-# 6. Matching a panel design to a question
+# 5. Matching a design to a question
 
 ::: {.notes}
 Thirty seconds. Seven research questions, each from a published study
 and told as the setting its authors faced. For each, the room proposes a
 design and names the assumption before the click shows what the authors
-did. The order is two difference-in-differences, one staggered rollout,
-two fixed-effects designs, a finance event study, and a synthetic
-control. Budget about five minutes each.
+did. The cases run down the rows of the six-designs table, across both
+design meetings: an experiment, an instrument, a discontinuity, a
+difference-in-differences, a staggered rollout, a synthetic control and
+a finance event study. Budget about five minutes each.
+:::
+
+## Does working from home make staff more productive? {.case}
+
+- In 2010 Ctrip, a Chinese travel agency, considered home working for its Shanghai call center.
+- Staff who choose home differ from those who stay, in commutes, children and motivation.
+- Ctrip logs every call. 503 of about 1,000 staff in two departments volunteered.
+- **Which design could identify the effect, and what would it assume?**
+
+::: {.fragment}
+- **What the authors did**: eligible volunteers born on even-numbered days worked from home four days a week for nine months.
+- Calls rose 13%, mostly from more minutes per shift. Quits fell from 35% to 17%.
+
+[Bloom, Liang, Roberts and Ying (2015), *Does Working from Home Work? Evidence from a Chinese Experiment*, Quarterly Journal of Economics 130, 165–218.](https://doi.org/10.1093/qje/qju032){style="font-size:0.55em; color:#6b6b6b"}
+:::
+
+::: {.notes}
+Five minutes. The answer to draw out: a randomized experiment among the
+volunteers. Comparing staff who chose home with staff who stayed mixes
+home working with whatever made people choose it. The firm controls who
+may go home, so it can flip a coin among those willing. The assumption:
+the coin alone decided who went home, and the home workers' move did not
+change the office workers' outcomes.
+
+The setting. Ctrip, listed on NASDAQ, ran the experiment in the airfare
+and hotel booking departments of its Shanghai call center from 6
+December 2010, for nine months announced in advance. 503 of 994
+employees volunteered, and 249 were eligible: at least six months'
+tenure, broadband at home and a room of their own. The chairman drew a
+ball from an urn at a public ceremony, and even birthdates went home:
+131 treatment, 118 control. The home group worked four shifts at home
+and the fifth in the office; the control group worked all five in the
+office, with the same schedule, equipment, call queue and pay system.
+Balance: 1 of 18 characteristics differed at 5% (having children), and
+the joint test gave p = 0.47, meeting 8's balance check.
+
+The results (published version, Table II and pp. 188–192). Log weekly
+calls rose 0.12, about 13%: minutes on the phone up 9.2% and calls per
+minute up 3.3%. About three quarters of the extra minutes came from
+shorter breaks and punctuality, a quarter from fewer sick days. Quality,
+measured by sales conversion and recorded-call scores, did not change.
+Attrition over the nine months: 17% at home against 35% in the office.
+
+What to press on. The Hawthorne effect: home workers knew they were
+watched. The authors answer that the gap widened after the experiment
+ended, when the firm had rolled the option out. A demoralized control
+group: the controls did no worse than another Ctrip call center or the
+eligible non-volunteers. Compliance was 80 to 90%, so the estimate is
+intention to treat. Quits differ by arm, so meeting 7's Lee bounds
+apply; the upper bound is about 50% above the estimate.
+
+Who the estimate is about: eligible volunteers in a call-center job with
+about half of pay tied to performance. After the experiment everyone
+could choose again, over half of the experimental employees switched,
+and the performance gain rose to about 22 log points, because those who
+did badly at home went back to the office. That is selection on gains,
+and it is why the volunteers' effect does not transfer to a mandate.
+
+Disclosure: James Liang, a co-author, co-founded Ctrip and was its
+chairman during the experiment.
+:::
+
+## Does handing a firm to a family heir hurt it? {.case}
+
+- When a Danish firm's chief executive officer (CEO) steps down, the successor may be a relative or an outsider.
+- Families may keep the job in the family when they expect the firm to do well.
+- Registers link each departing CEO to their children, with each child's sex and birth order.
+- **Which design could identify the effect, and what would it assume?**
+
+::: {.fragment}
+- **What the authors did**: used a firstborn son as an instrument for a family successor, in 4,692 successions.
+- A firstborn son raised family succession from 29% to 39%. A family CEO cut operating return on assets by about 9 points, against 1.4 by OLS.
+
+[Bennedsen, Nielsen, Pérez-González and Wolfenzon (2007), *Inside the Family Firm: The Role of Families in Succession Decisions and Performance*, Quarterly Journal of Economics 122, 647–691.](https://doi.org/10.1162/qjec.122.2.647){style="font-size:0.55em; color:#6b6b6b"}
+:::
+
+::: {.notes}
+Five minutes. The answer to draw out: an instrument, something that
+moves the choice of a family heir and reaches firm performance by no
+other route. Comparing firms that chose a relative with firms that chose
+an outsider mixes the choice with what the family knew about the firm's
+prospects. The authors' instrument is whether the departing CEO's first
+child is a son. In these cohorts sons were more likely to take over, and
+a child's sex is close to a coin.
+
+The data. 5,334 CEO successions in Danish limited liability firms,
+mostly private, 1994 to 2002, from the annual reports every such firm
+files, linked to the civil registration system's family trees. A family
+succession is one where the departing and incoming CEO are related by
+blood or marriage: 1,776, a third of the total, half of them to
+children. The instrument sample is the 4,692 successions where the
+departing CEO had at least one child. The outcome is the change in
+industry-adjusted operating return on assets around the succession.
+
+The results (Tables IV to VI). OLS: family successions are followed by a
+fall of 1.4 percentage points, about a fifth of the mean. First stage:
+a firstborn son raises the probability of a family succession by 9.6
+points, from 29.4% to 39.0%, with an F statistic of 48, strong by meeting
+8's rule. IV: −12.6 points without controls and −9.3 with controls,
+standard error 4.3, so the interval is wide. The abstract summarizes the
+paper's estimates as "at least four percentage points". The IV is larger
+than OLS: the authors read it as families keeping the firm in the family
+when its prospects look good, which hides part of the cost in OLS.
+
+What to press on: the exclusion restriction. Could a firstborn's sex
+affect the firm another way? Son preference could change family size;
+the number of children, divorce and the number of spouses do not differ
+by the firstborn's sex, and firm size, profitability and age before the
+succession are balanced. Over 80% of first births came before 1980,
+before parents could learn the sex in advance. Who the estimate is
+about: meeting 8's compliers, the families whose choice of a relative
+turned on having a son first. The cost is larger in fast-growing
+industries and in those with skilled, well-paid workforces.
+:::
+
+## Does better governance raise firm value? {.case}
+
+- Shareholders vote on governance proposals, such as removing a **poison pill**, a defence against takeovers.
+- Firms where such proposals pass differ from firms where they fail.
+- Riskmetrics records 3,984 proposals at large US firms, 1997–2007, with each vote share.
+- **Which design could identify the effect, and what would it assume?**
+
+::: {.fragment}
+- **What the authors did**: compared vote-day abnormal returns for proposals just above and just below the threshold, usually 50%.
+- Passing raised the share price 1.3% that day. Scaled by how often firms adopt passed proposals, adoption is worth about 2.8%.
+
+[Cuñat, Gine and Guadalupe (2012), *The Vote Is Cast: The Effect of Corporate Governance on Shareholder Value*, Journal of Finance 67, 1943–1977.](https://doi.org/10.1111/j.1540-6261.2012.01776.x){style="font-size:0.55em; color:#6b6b6b"}
+:::
+
+::: {.notes}
+Five minutes. The answer to draw out: a regression discontinuity at the
+vote threshold. A proposal that wins 51% and one that wins 49% come from
+firms that are alike in everything but the outcome of the vote, so a
+jump in the stock price at the threshold measures what the market thinks
+passing is worth. The assumption: nothing else changes at the threshold,
+and nobody can push a close vote to one side of it.
+
+The data. 3,984 governance proposals classed by Riskmetrics at S&P 1500
+and other widely held firms, 1997 to 2007, at 948 firms. The running
+variable is the vote share minus the threshold, which is 50% in all but
+ten cases. Proposals to remove antitakeover provisions are the largest
+group, 1,558; near the threshold, 42% of them asked to declassify the
+board, so that all directors stand for election each year, and 25% to
+remove a poison pill.
+
+The checks, in meeting 8's terms. The density of vote shares is smooth
+at the threshold (McCrary test), so there is no sign of sorting. Returns
+before the meeting, Tobin's q, investment, ownership and a governance
+index are balanced at the threshold.
+
+The results (Table IV). The abnormal return on the day of the vote, from
+a four-factor model, is 1.31 percentage points higher when the proposal
+passes, standard error 0.49, and similar using only proposals within 5,
+2 or 1 points of the threshold. Over the following week, 2.4%.
+
+The fuzzy part. Most proposals are non-binding: passed proposals are
+implemented about 31% of the time and failed ones about 3%. So 1.3% is
+an intention-to-treat effect of passing. Scaling by the jump in the
+chance of adoption, the authors value adopting one provision at about
+2.8% of market value, roughly $600 million for the average firm. That is
+meeting 8's instrument logic inside a discontinuity.
+
+Who the estimate is about: firms whose shareholders were split almost
+evenly, which may differ from firms where a proposal sails through. The
+case also combines two designs: a discontinuity for identification and
+section 4's finance event study for the outcome.
 :::
 
 ## Does posting calories change what customers buy? {.case}
@@ -1639,7 +1920,7 @@ have switched their coffee.
 
 What to press on. One treated city: every New York store shares the
 same city-level shocks, which is the Conley–Taber problem from section
-1; the authors' defence is the sharp date and the event-study plot with
+3; the authors' defence is the sharp date and the event-study plot with
 no pre-trend. Other things changed in New York in April 2008: other
 chains posted at the same time, and the news covered it, so the estimate
 is for the policy episode, not for one menu board. A muffin skipped at
@@ -1649,57 +1930,6 @@ not.
 
 The magnitude in their own terms: about 30 calories a day, which by the
 medical literature lowers long-run body weight by no more than 1%.
-:::
-
-## Did Europe's privacy law reduce website traffic? {.case}
-
-- From 25 May 2018 the EU's **General Data Protection Regulation** (GDPR) required consent for tracking.
-- Adobe Analytics records weekly pageviews by user country for 1,084 websites in 2017 and 2018, and revenue for 353.
-- Many firms applied the new rules to all their users, worldwide.
-- **Which design could identify the effect, and what would it assume?**
-
-::: {.fragment}
-- **What the authors did**: compared each site's EU traffic in 2018 with the same weeks of 2017.
-- Recorded pageviews and revenue fell about 12%. Users who refuse consent go unrecorded.
-
-[Goldberg, Johnson and Shriver (2024), *Regulating Privacy Online: An Economic Evaluation of the GDPR*, American Economic Journal: Economic Policy 16, 325–358.](https://doi.org/10.1257/pol.20210309){style="font-size:0.55em; color:#6b6b6b"}
-:::
-
-::: {.notes}
-Five minutes. The answer most teams will give: EU users against
-non-EU users on the same websites, before and after 25 May. The third
-setting bullet is there to break it. Firms often rolled out consent
-banners and data changes to every user, so non-EU traffic was treated
-too: a contaminated control group, the soda-tax problem.
-
-What the authors did instead. The comparison group is the same
-websites' EU users one year earlier. The regression compares 2018 with
-2017, before and after the 25 May date, with site fixed effects and
-calendar-week fixed effects, so the summer slowdown in Europe is
-subtracted. The assumption: without the GDPR, each site's EU traffic
-after late May 2018 would have followed the same seasonal path, relative
-to its spring level, as in 2017. Their plot shows 2017 and 2018 moving
-together before May, and seven of eight placebo dates before May show
-nothing; the one significant placebo has the opposite sign.
-
-Numbers, from the October 2022 working paper whose abstract matches the
-published one: recorded pageviews −11.7% and recorded revenue −13.3%.
-With North American users as the control the estimates are smaller,
-−8.1% and −5.6%, which the authors read as spillover onto North
-American traffic. Inference with Conley–Taber permutation methods keeps
-both significant at 10%, which is the one-treated-date problem again.
-
-The measurement point, the reason "recorded" is on the slide. When a user
-refuses consent, Adobe records nothing about the visit. A fall in
-recorded traffic is partly a fall in real traffic and partly a fall in
-consent. The authors bound the non-consent share at 4% to 13% of visits,
-and can pin down a real loss through email and display advertising of at
-least 0.5% of weekly pageviews, a lower bound. Pageviews per recorded visit rose, which
-fits the heavier users consenting. Randomization protects the comparison,
-not the measurement, and the same holds for a difference-in-differences.
-
-Context: Goldberg was an Adobe employee during the research. Enforcement
-was light in 2018; no website was fined until December 2020.
 :::
 
 ## Did bank deregulation reduce income inequality? {.case}
@@ -1725,7 +1955,7 @@ The answer to draw out: staggered difference-in-differences, states
 that deregulated against states that had not yet, with state and year
 fixed effects. The assumption: without deregulation, inequality in the
 deregulating states would have moved like that in the others. The
-attack the room should reach after section 3: every state eventually
+attack the room should reach after section 2: every state eventually
 deregulates, about a dozen did so before the data start, and no state is
 untreated after 1999, so many comparisons use already-deregulated states
 as controls.
@@ -1756,156 +1986,6 @@ reply by the original authors was found.
 
 The lesson is for the method, not the authors: in 2010 this was standard
 practice, and the newer estimators did not exist.
-:::
-
-## Does extreme heat lower crop yields? {.case}
-
-- Hot US counties also differ from cool ones in soils, irrigation and crops.
-- The US Department of Agriculture records county yields every year, 1950–2005.
-- Weather data give the hours each county's cropland spent at each temperature.
-- **Which design could identify the effect, and what would it assume?**
-
-::: {.fragment}
-- **What the authors did**: county fixed effects compared each county with itself in hot and cool years.
-- Corn yields rose up to 29°C, then fell steeply. Yields of the three crops are projected to fall 30–46% by 2070–2099.
-
-[Schlenker and Roberts (2009), *Nonlinear Temperature Effects Indicate Severe Damages to U.S. Crop Yields under Climate Change*, PNAS 106, 15594–15598.](https://doi.org/10.1073/pnas.0906865106){style="font-size:0.55em; color:#6b6b6b"}
-:::
-
-::: {.notes}
-Five minutes. The answer to draw out: county fixed effects. Hot
-counties and cool counties differ in everything that grows crops, so the
-cross-section confounds climate with soil and irrigation. Year-to-year
-weather within a county is close to random. The assumption: after county
-effects and state-specific quadratic trends, a county's temperature in a
-given year is unrelated to other causes of its yield that year.
-
-The setting. The United States grows 41% of the world's corn and 38% of
-its soybeans. The earlier approach, the Ricardian or hedonic approach of
-Mendelsohn, Nordhaus and Shaw (1994), compared farmland values across
-almost 3,000 counties; the authors' objection is that climate, soils,
-distance to cities and irrigation are all spatially correlated. The data:
-county yields from 1950 to 2005, counties east of the 100th meridian for
-corn and soybeans, and daily temperature on a 2.5-mile grid restricted to
-cropland, summed into the time each crop spent in each 1°C band.
-
-The results. Yields rise with temperature up to 29°C for corn, 30°C for
-soybeans and 32°C for cotton, and fall much more steeply above. Replacing
-a growing-season day at 29°C with one at 40°C lowers corn yield by about
-7%. Holding current growing areas fixed, average yields fall 30–46% by
-2070–2099 under the slowest warming scenario and 63–82% under the
-fastest.
-
-The attack to make: weather is not climate. A farmer cannot adapt to one
-hot July but can adapt to a hotter climate, with new varieties, planting
-dates or irrigation, so the year-to-year response may overstate long-run
-damage. The authors answer that the cross-section, which builds in
-adaptation, gives the same curve, and that the response did not change
-between 1950–1977 and 1978–2005.
-
-For questions, a cautionary exchange on the same data. Deschênes and
-Greenstone (2007) used county and state-by-year fixed effects on
-farm profits; Fisher, Hanemann, Roberts and Schlenker (2012) showed that
-with those fixed effects almost no temperature variation was left, a
-residual SD of 0.35°F, so measurement errors dominated, and found coding
-errors; the original authors acknowledged them in print. Fixed effects
-remove confounders and signal together.
-:::
-
-## Do individual managers change what firms do? {.case}
-
-- Firms led by different executives invest, borrow and acquire differently.
-- A firm's own traits may drive both its policies and its choice of manager.
-- Databases name the top executives of large US firms from 1969 to 1999.
-- **Which design could identify the effect, and what would it assume?**
-
-::: {.fragment}
-- **What the authors did**: followed about 500 executives who moved among 600 firms, with firm, year and manager fixed effects.
-- Manager fixed effects explained 11 more percentage points of the variance in acquisitions. A 2023 study with managers reassigned at random found fits about as strong.
-
-[Bertrand and Schoar (2003), *Managing with Style: The Effect of Managers on Firm Policies*, Quarterly Journal of Economics 118, 1169–1208.](https://doi.org/10.1162/003355303322552775){style="font-size:0.55em; color:#6b6b6b"}
-:::
-
-::: {.notes}
-Five minutes. The puzzle to draw out: a manager who spends a whole career
-at one firm cannot be separated from that firm, because the manager
-fixed effect and the firm fixed effect are the same intercept. Only
-managers who move identify a manager effect: does a firm's policy change
-when the manager arrives, in the same direction as at the manager's
-previous firm? The assumption: when a manager moves is unrelated to
-changes the firm would have made anyway.
-
-The data: the Forbes 800 files of CEOs of the largest US firms from
-1969 to 1999 and ExecuComp's five highest-paid executives from 1992,
-restricted to firms where an executive is also observed at another firm
-for at least three years in each. About 600 firms and slightly over 500
-managers.
-
-The results. Adding manager fixed effects to firm and year fixed effects
-raises the explained share of variation (the adjusted R squared) by more
-than four percentage points on average, and by about 11 points for
-acquisitions and diversification. Managers who acquire more invest less;
-MBA holders are more aggressive. A timing check: the new firm's policies
-do not move in the three years before the manager arrives.
-
-The attack. Moves are not random, and the authors say so: there is no
-random allocation of executives to firms, and they do not claim a causal
-effect. A board that wants to diversify hires a known acquirer. Fee,
-Hadlock and Pierce (2013, Review of Financial Studies,
-https://doi.org/10.1093/rfs/hhs131) used departures caused by death or
-illness and found no unusual policy changes after them. Jarosiewicz and
-Ross (2023, Strategic Management Journal,
-https://doi.org/10.1002/smj.3439) found that placebo data reassigning
-managers at random gave results generally as strong as the real data,
-which suggests the F-tests on serially correlated accounting data reject
-too easily. This is the fixed-effects version of meeting 7's false
-precision.
-:::
-
-## What is an independent director worth? {.case}
-
-- **Independent directors** have no job at the firm. Boards add them after poor results, which confounds comparisons.
-- News and filings record 772 deaths of directors of US listed firms, 1994–2007.
-- Some died suddenly, of heart attacks, strokes or accidents.
-- **Which design could identify the effect, and what would it assume?**
-
-::: {.fragment}
-- **What the authors did**: measured abnormal returns over days −1 to +2 around 108 sudden deaths of independent directors.
-- Share prices fell 0.85% on average, almost $35 million for the average firm, and more for audit committee members.
-
-[Nguyen and Nielsen (2010), *The Value of Independent Directors: Evidence from Sudden Deaths*, Journal of Financial Economics 98, 550–567.](https://doi.org/10.1016/j.jfineco.2010.07.004){style="font-size:0.55em; color:#6b6b6b"}
-:::
-
-::: {.notes}
-Five minutes. The answer to draw out: a finance event study around an
-event nobody chose the timing of. An independent director's sudden death
-removes them from the board on a date unrelated to the firm's prospects,
-so the stock's abnormal return measures what investors thought the
-director was worth. The assumption: nothing else moved the stock in the
-window, and the death was unexpected.
-
-The data. 229 sudden deaths among 772 director deaths found in news
-archives and filings; 279 directorships after dropping 17 with earnings,
-merger or other news in the window; 108 of them independent directors.
-Day −1 is in the window because some deaths follow a hospitalization,
-and news lags the death by about 1.7 trading days. The market model is
-estimated over days −300 to −46.
-
-The results. The CAR over days −1 to +2 is −0.85% for independent
-directors, with an average market value of $4 billion, almost $35
-million. Larger falls for audit committee members (−2.0%) and when the
-death removed the board's independent majority; smaller for directors
-appointed by the current CEO.
-
-What to press on. The main estimate is marginal: 43 of 108 returns are
-positive, and the 5% star on a Patell Z of −1.69 implies a one-sided
-test (two-sided p about 0.09, my calculation). Days −5 and −4, with no news,
-show abnormal returns of the same size. The raw difference between
-independent and inside directors' deaths is not significant; it appears
-only with controls. A death at 80 surprises less than at 55, which is why
-the authors cut by age. This is the McWilliams and Siegel checklist
-applied by the authors themselves: short window, news search, events
-dropped.
 :::
 
 ## What did terrorism cost the Basque Country? {.case}
@@ -1954,11 +2034,58 @@ region. The good-news stock result disappears under a constant-mean
 return model.
 :::
 
+## What is an independent director worth? {.case}
+
+- **Independent directors** have no job at the firm. Boards add them after poor results, which confounds comparisons.
+- News and filings record 772 deaths of directors of US listed firms, 1994–2007.
+- Some died suddenly, of heart attacks, strokes or accidents.
+- **Which design could identify the effect, and what would it assume?**
+
+::: {.fragment}
+- **What the authors did**: measured abnormal returns over days −1 to +2 around 108 sudden deaths of independent directors.
+- Share prices fell 0.85% on average, almost $35 million for the average firm, and more for audit committee members.
+
+[Nguyen and Nielsen (2010), *The Value of Independent Directors: Evidence from Sudden Deaths*, Journal of Financial Economics 98, 550–567.](https://doi.org/10.1016/j.jfineco.2010.07.004){style="font-size:0.55em; color:#6b6b6b"}
+:::
+
+::: {.notes}
+Five minutes. The answer to draw out: a finance event study around an
+event nobody chose the timing of. An independent director's sudden death
+removes them from the board on a date unrelated to the firm's prospects,
+so the stock's abnormal return measures what investors thought the
+director was worth. The assumption: nothing else moved the stock in the
+window, and the death was unexpected.
+
+The data. 229 sudden deaths among 772 director deaths found in news
+archives and filings; 279 directorships after dropping 17 with earnings,
+merger or other news in the window; 108 of them independent directors.
+Day −1 is in the window because some deaths follow a hospitalization,
+and news lags the death by about 1.7 trading days. The market model is
+estimated over days −300 to −46.
+
+The results. The CAR over days −1 to +2 is −0.85% for independent
+directors, with an average market value of $4 billion, almost $35
+million. Larger falls for audit committee members (−2.0%) and when the
+death removed the board's independent majority; smaller for directors
+appointed by the current CEO.
+
+What to press on. The main estimate is marginal: 43 of 108 returns are
+positive, and the 5% star on a Patell Z of −1.69 implies a one-sided
+test (two-sided p about 0.09, my calculation). Days −5 and −4, with no news,
+show abnormal returns of the same size. The raw difference between
+independent and inside directors' deaths is not significant; it appears
+only with controls. A death at 80 surprises less than at 55, which is why
+the authors cut by age. This is the McWilliams and Siegel checklist
+applied by the authors themselves: short window, news search, events
+dropped.
+:::
+
 ## Which design is open to your project?
 
+- Could you decide at random who gets the treatment?
+- Does something unrelated to the outcome push some units into treatment?
+- Does a score with a cutoff decide who is treated?
 - Did a change reach some units and not others, on a date you can name?
-- Do you observe treated and untreated units before and after it?
-- Did the two groups move together before the change?
 - Did units start on different dates, or is only one unit treated?
 - Is your event a dated announcement by a firm whose shares trade?
 - If none applies, what do you defend in place of an identifying assumption?
@@ -1966,11 +2093,15 @@ return model.
 ::: {.notes}
 One minute. The session B defence starts from these.
 
-The first two questions ask whether a panel design exists at all: a
-change, a date, and data on both sides of it for treated and untreated
-units. The third is parallel trends, and the team should already have the
-plot or know where the data for it come from. The fourth sends the team
-to synthetic control or a staggered-timing estimator. The fifth is the
+The questions run down the six-designs table. The first three are
+meeting 8's: an experiment, if the team or a partner can assign the
+treatment; an instrument, if something the team can defend as unrelated
+to the outcome moves treatment; a discontinuity, if a rule with a cutoff
+decides it. The fourth asks whether a difference-in-differences exists
+at all: a change, a date, and data on both sides of it for treated and
+untreated units, and the team should already have the pre-period plot
+or know where the data for it come from. The fifth sends the team to a
+staggered-timing estimator or synthetic control. The sixth is the
 finance event study. The last is for the descriptive projects: they have
 no identifying assumption, and they still need to say what would make
 their description wrong, such as the sample, the measure or the period.

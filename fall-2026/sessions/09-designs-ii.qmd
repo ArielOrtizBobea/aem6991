@@ -64,77 +64,10 @@ Project description — up to three pages, on Canvas by Friday, October 23
 
 :::: {.content-visible when-format="revealjs"}
 
-## Motivation
-
-- Experiments, instruments and cutoffs need a treatment assignment you can see.
-- Many projects study a change that reached only some units.
-- **Panel data** follow the same units over several periods.
-- Comparing a unit with itself removes every trait that never changes.
-
-[Angrist and Pischke (2009), *Mostly Harmless Econometrics*, ch. 5, Princeton University Press.](https://www.mostlyharmlesseconometrics.com/){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-One and a half minutes.
-
-Where this sits. Meeting 7's bias table, which closed its first section,
-had a Solution column that named the designs: randomize, compare at the cutoff, use an instrument, hold
-the confounder fixed. Last week paid off the first three. Each of them
-needs an assignment the researcher can see and argue is as good as
-random: a coin, an instrument that pushes the treatment, a score with a
-cutoff. Most projects in this room have none of those. What they have is
-a change: a policy, a product launch, a regulation, a merger, an
-announcement, that reached some units and not others, at a date they can
-name.
-
-Today's designs use that change. The one idea under all three: with the
-same units observed before and after, anything about a unit that does
-not change over time, its location, its management culture, its
-customers' tastes, can be removed by comparing the unit with itself. The
-confounders that survive are the ones that change over time, and each
-design adds an assumption about them.
-
-Chapter 5 of Mostly Harmless is called "Parallel Worlds" and covers
-fixed effects and difference-in-differences together, which is the order
-of today's first two sections. Last week's p-hacking evidence (Brodeur,
-Cook and Heyes 2020) found difference-in-differences second only to
-instrumental variables in the bunching of results just past 5%, so these
-designs leave the researcher real choices, and the slides name them.
-:::
-
-## Terms used in every design
-
-- The **treatment** is the cause we study, such as a new app.
-- The **units** are who may receive it, such as stores.
-- Each unit has two **potential outcomes**, with and without the treatment. We observe only one.
-- The **average treatment effect on the treated** (ATT) is the mean effect among treated units.
-- A **confounder** affects both who is treated and the outcome.
-- In a **causal graph**, an arrow runs from a cause to its effect.
-- **Ordinary least squares** (OLS) is the usual regression estimator.
-- The **standard error** (SE) estimates an estimate's **standard deviation** (SD) across samples.
-
-::: {.notes}
-One minute. Meeting 8's vocabulary, restated so the deck stands on its
-own, with one addition.
-
-The addition is the average treatment effect on the treated. Last week's
-designs estimated the effect for the population randomized, for
-compliers, or for units at the cutoff. Today's designs compare treated
-units with what those same units would have done without the treatment,
-so the parameter is the effect on the treated. It differs from the
-average treatment effect whenever the units that got the treatment
-differ from the ones that did not in how much they gain, which is the
-usual reason they got it.
-
-The standard error and the standard deviation return in the
-difference-in-differences animation: the SE is what one sample reports,
-the SD is the spread of the estimates across 1,000 simulated samples.
-When the two agree, the standard error is right.
-:::
-
 ## Outline
 
 1. **Difference-in-differences.** Compare the change in treated units with the change in untreated units. John Snow compared cholera deaths in London districts before and after one water company moved its intake.
-2. **Panel data with fixed effects.** Compare each unit with itself over many periods. With industry controls, firms with more women on their boards looked more valuable until each firm was compared with itself.
+2. **Panel data with fixed effects.** **Panel data** follow the same units over many periods. With industry controls, firms with more women on their boards looked more valuable until each firm was compared with itself.
 3. **Event studies.** Trace an effect period by period around a dated event. Share prices of 30 large US firms moved on the day each announced its earnings.
 4. **Matching a panel design to a question.** Seven published studies each pose a question in the setting their authors faced.
 
@@ -270,6 +203,7 @@ fourth bullet, and the next slides return to it.
 ## Two subtractions remove two kinds of confounder
 
 - In month 7 a coffee chain launches a mobile-ordering app in its larger, busier region.
+- A **confounder** affects both which stores get the app and their sales.
 - Comparing each store with its own past removes every trait of the store that does not change.
 - Subtracting the other region's change removes shocks common to all stores, such as the season.
 - **Parallel trends** assumes both regions' sales would have changed by the same amount without the app.
@@ -316,7 +250,7 @@ refute it, which is the slide after next.
 - The app adds $4,000 a week in each of 40 stores. 40 stores elsewhere never get it.
 - App-region stores sell $12,000 more to begin with. All sales rise $3,000 after month 6.
 - Regions compared after launch differ by $16,000. The app region's own change is $7,000.
-- DiD averages $4,000 across 1,000 samples. Its SE, about $500, matches the SD of the estimates.
+- DiD averages $4,000 across 1,000 samples. Its **standard error** (SE), about $500, matches the **standard deviation** (SD) of the estimates.
 
 <div class="m06" data-demo="did" style="width:92%;margin:0 auto"></div>
 
@@ -658,7 +592,7 @@ pre-period fit is poor, Abadie advises against the method.
 
 ## Who the DiD estimate is about
 
-- DiD estimates the ATT: the effect on treated units in the periods observed.
+- DiD estimates the **average treatment effect on the treated** (ATT): the effect on treated units in the periods observed.
 - Snow's estimate concerns 16 London sub-districts in 1854.
 - Synthetic control estimates the effect on one unit, such as California.
 - Report the 2×2 table of means, both groups' paths, the clustering and the number treated.
@@ -801,7 +735,7 @@ adoption dates, the same regression is what most papers run.
 
 - In this simulation 100 stores choose when to adopt the app. Larger stores adopt earlier and sell more.
 - Every store's sales also rise $250 a week each month. The app adds $4,000 a week.
-- Across 500 samples **pooled OLS**, with no fixed effects, averages $11,300. Store fixed effects give $7,000. TWFE gives $4,000.
+- Across 500 samples **pooled ordinary least squares** (OLS), with no fixed effects, averages $11,300. Store fixed effects give $7,000. TWFE gives $4,000.
 - 66 of the 100 stores adopt during the panel. The other 34 only help estimate the month effects.
 
 <div class="m06" data-demo="fe" style="width:92%;margin:0 auto"></div>

@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
+
+  <title>AEM 6991 – AEM 6991 · 8 Research designs I</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-638d68159db5c4da088d5ac853e4cd78.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <p class="ttl-number">AEM 6991</p>
+  <p class="ttl-course">MPS Capstone Project I</p>
+  <p class="ttl-prof">Prof. Ariel Ortiz-Bobea</p>
+  <h1 class="title">8 · Research designs I</h1>
+  <p class="subtitle">Wednesday, October 14, 2026</p>
+  <img class="ttl-seal" src="../images/cornell_seal.svg" alt="Cornell University">
+</section>
+<section id="motivation" class="slide level2">
+<h2>Motivation</h2>
+<ul>
+<li>A <strong>research design</strong> is the plan for which units you compare, such as customers or regions, and where the variation in their treatment comes from.</li>
+<li>Comparing veterans’ earnings with non-veterans’ earnings is a poor design. The two groups differed before anyone served.</li>
+<li>The <strong>identification strategy</strong> is the argument that the variation a design uses is as good as random.</li>
+</ul>
+<p><a href="https://doi.org/10.1016/S1573-4463(99)03004-7" style="font-size:0.55em; color:#6b6b6b">Angrist and Krueger (1999), <em>Empirical Strategies in Labor Economics</em>, Handbook of Labor Economics 3, 1277–1366.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>Meeting 2 promised that every design ahead closes a back door, and that they would draw each one before hearing its name. Meeting 7 ended on a table whose Solution column said: randomize, compare at the cutoff, use an instrument, hold the confounder fixed. Today pays off the first three. Next week pays off the fourth with the designs that use time.</p>
+<p>The definition. A research design is the plan: which units are compared with which, and where the variation in their treatment comes from. That is the general meaning, and it allows poor designs. A comparison of veterans with non-veterans is a design, and the two groups differed in health, schooling and family before anyone served. A credible design isolates variation that is as good as random: all of it, when a coin decides; the part an instrument moves; the margin at a cutoff, where units just above and just below are alike. Economists call that argument the identification strategy, which Angrist and Krueger (1999) define as the way a researcher uses observational data to approximate a real experiment.</p>
+<p>Where else the idea is treated formally. Rubin’s version is the assignment mechanism: the design is everything decided before the outcomes are seen, and <em>design trumps analysis</em> (Rubin 2008, Annals of Applied Statistics 2, 808–840, <a href="https://doi.org/10.1214/08-AOAS187" class="uri">https://doi.org/10.1214/08-AOAS187</a>). Angrist and Pischke (2010, Journal of Economic Perspectives 24, 3–30, <a href="https://doi.org/10.1257/jep.24.2.3" class="uri">https://doi.org/10.1257/jep.24.2.3</a>) call the shift toward this way of working the credibility revolution. Outside economics, Shadish, Cook and Campbell’s <em>Experimental and Quasi-Experimental Designs for Generalized Causal Inference</em> (2002) is the standard treatment, organized around threats to validity.</p>
+<p>The 2021 Nobel prize went to Card <em>for his empirical contributions to labour economics</em>, and to Angrist and Imbens <em>for their methodological contributions to the analysis of causal relationships</em> (<a href="https://www.nobelprize.org/prizes/economic-sciences/2021/summary/" class="uri">https://www.nobelprize.org/prizes/economic-sciences/2021/summary/</a>). The designs on today’s slides are what the citation means.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="terms-used-in-every-design" class="slide level2">
+<h2>Terms used in every design</h2>
+<ul>
+<li>The <strong>treatment</strong> is the cause we study, such as an email or military service. The <strong>units</strong> are who may receive it.</li>
+<li>Each unit has two <strong>potential outcomes</strong>, one with the treatment and one without. We observe only one of them.</li>
+<li>The <strong>average treatment effect</strong> is the average difference between the two potential outcomes.</li>
+<li>A <strong>confounder</strong> affects both who is treated and the outcome.</li>
+<li>A <strong>covariate</strong> is a characteristic measured before treatment, such as age or past earnings.</li>
+<li>In a <strong>causal graph</strong>, an arrow runs from a cause to its effect.</li>
+</ul>
+<aside class="notes">
+<p>One minute. Meeting 2’s vocabulary, restated so the deck stands on its own. Say each line once; they return on every slide.</p>
+<p>The potential outcomes are the heart of it: the comparison any design makes is a stand-in for the outcome each treated unit would have had without the treatment, which nobody observes. A confounder is what makes the naive stand-in wrong. The graphs today always draw the unobserved confounder as U, the treatment as X and the outcome as Y.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-estimator-and-the-design-do-different-jobs" class="slide level2">
+<h2>The estimator and the design do different jobs</h2>
+<ul>
+<li>An <strong>estimator</strong> turns data into an estimate, such as a difference in means or ordinary least squares (OLS).</li>
+<li>The design picks the comparison group. The estimator works with the group it is given.</li>
+<li>In the 1970s the National Supported Work program offered disadvantaged workers a job, decided at random. Those not chosen formed the control group.</li>
+<li>LaLonde (1986) swapped the random controls for men from two national surveys. Would standard estimators still find the experiment’s answer?</li>
+</ul>
+<p><a href="https://www.jstor.org/stable/1806062" style="font-size:0.55em; color:#6b6b6b">LaLonde (1986), <em>Evaluating the Econometric Evaluations of Training Programs with Experimental Data</em>, American Economic Review 76, 604–620.</a></p>
+<aside class="notes">
+<p>Two minutes. The slide the room needs before any design is named, because the instinct from meeting 6 is that the fix for a bad number is a better model.</p>
+<p>The definitions. An estimator is the arithmetic: a difference in means, a regression, a logit. A research design is the choice of comparison: which units stand in for the treated units’ missing outcomes, and so which variation in the treatment the arithmetic gets to use. Identification comes from the design; precision comes from the estimator.</p>
+<p>The case, told in full because meeting 7 covered it and not everyone was there. The National Supported Work Demonstration, in the 1970s, guaranteed ex-offenders, ex-addicts, high school dropouts and long-term welfare recipients a job for 9 to 18 months, working in crews with a counselor. Applicants were assigned to the program or to a control group by lot. Because assignment was random, comparing the 297 trainees with the 425 controls gives the program’s effect.</p>
+<p>LaLonde then did what a researcher without an experiment would do. He set the randomized controls aside and compared the trainees with men from two national surveys, the Panel Study of Income Dynamics and the Current Population Survey, using the estimators of the day with the covariates those surveys offer. If the estimators worked, they would land near the experiment’s answer. The next slide is the result.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="no-estimator-rescued-the-survey-comparisons" class="slide level2">
+<h2>No estimator rescued the survey comparisons</h2>
+<div style="font-size:0.64em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Comparison group for the 297 trainees</th>
+<th style="text-align: left;">Difference in means</th>
+<th style="text-align: left;">OLS with every observed covariate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">425 men assigned at random to the control group</td>
+<td style="text-align: left;">+$886</td>
+<td style="text-align: left;">not needed</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2,493 men from the Panel Study of Income Dynamics, a national household survey</td>
+<td style="text-align: left;">−$15,578</td>
+<td style="text-align: left;">−$1,228</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">15,992 men from the Current Population Survey, a national labour survey</td>
+<td style="text-align: left;">−$8,870</td>
+<td style="text-align: left;">−$805</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>The randomized comparison is the benchmark. It needs no covariates.</li>
+<li>Across all of LaLonde’s specifications, the survey comparisons ranged from −$15,578 to +$1,714, against the experiment’s +$886.</li>
+<li>Each design today tries to reproduce the randomized comparison in the first row.</li>
+</ul>
+<p><a href="https://www.jstor.org/stable/1806062" style="font-size:0.55em; color:#6b6b6b">LaLonde (1986), Table 5: male participants, effects on 1978 earnings in 1982 dollars.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The first row is the experiment: +$886 (standard error $476, 1982 dollars), from a plain difference in means. The lottery balanced everything, so covariates add nothing to the bias.</p>
+<p>The survey rows. The survey men were not comparable: in 1975 the trainees earned $3,066 on average, against $19,056 for the Panel Study men and $13,650 for the Current Population Survey men (LaLonde Table 3, 1982 dollars), four to six times more. So the simple difference is hugely negative. Adding every covariate the surveys offered, including earnings before the program, moves −$15,578 to −$1,228 and −$8,870 to −$805: much closer, and still below zero. Across all the estimators and comparison groups in his Table 5, his estimates for men ran from −$15,578 to +$1,714. Some land near $886 and most do not, and nothing in the output says which to believe. That is the lesson: the estimators were fine; the comparison group was the problem, and no estimator fixed it.</p>
+<p>The last bullet is the thread through the lecture. It is the second of the four questions Angrist and Pischke ask of every empirical project in chapter 1 of <em>Mostly Harmless Econometrics</em>: what experiment would ideally answer the question? eBay could run its ideal experiment. Nobody can randomize military service or Yelp ratings, so the draft lottery and the rounding rule stand in for the coin.</p>
+<p>Follow-up literature, if asked. Dehejia and Wahba (1999, <a href="https://doi.org/10.1080/01621459.1999.10473858" class="uri">https://doi.org/10.1080/01621459.1999.10473858</a>) came close to the benchmark with propensity-score matching on a subsample; Smith and Todd (2005, <a href="https://doi.org/10.1016/j.jeconom.2004.04.011" class="uri">https://doi.org/10.1016/j.jeconom.2004.04.011</a>) showed those estimates were sensitive to the sample and the variables used.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
+<ol type="1">
+<li><strong>Randomized experiments.</strong> A coin assigns the treatment. eBay switched off its Google ads in 68 of 210 US market areas, picked by a randomized draw.</li>
+<li><strong>Instrumental variables.</strong> Something as good as random pushes some units into the treatment and affects the outcome only through it. The Vietnam-era draft lottery pushed some men into the army.</li>
+<li><strong>Regression discontinuity.</strong> Units just above and just below a cutoff are alike but treated differently. Yelp shows an average rating of 3.74 as 3½ stars and 3.76 as 4.</li>
+<li><strong>Matching a design to a question.</strong> Seven published studies each pose a question in the setting their authors faced.</li>
+</ol>
+<aside class="notes">
+<p>One minute. Say the three in a sentence each; the slide gives the room the picture before the vocabulary. Each section opens with its real study, then the graph, then the animation, then the decisions and the failures. Section 1 is the longest because the experiment is the design the other two imitate. Every design here is a way to get a comparison group as good as the first row of the LaLonde table when nobody ran the lottery.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section>
+<section id="randomized-experiments" class="title-slide slide level1 center">
+<h1>1. Randomized experiments</h1>
+<aside class="notes">
+<p>Thirty seconds. The section opens with eBay, then draws the graph, then the decisions that make an experiment work.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ebay-switched-off-its-search-ads-in-some-regions" class="slide level2">
+<h2>eBay switched off its search ads in some regions</h2>
+<ul>
+<li>eBay paid Google for ads on searches that do not name eBay, such as “used gibson les paul”.</li>
+<li>Shoppers already headed to eBay also clicked its ads, so a regression implied the ads returned above 4,100%.</li>
+<li>eBay could not randomize searchers, but Google let it switch ads off by market area.</li>
+<li>For 60 days it switched them off in 68 of 210 areas, picked by a randomized draw.</li>
+<li>The same return formula then gave −63%: each ad dollar brought back about 37 cents.</li>
+</ul>
+<div class="m06" data-demo="geo" style="width:72%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.3982/ECTA12423" style="font-size:0.55em; color:#6b6b6b">Blake, Nosko and Tadelis (2015), <em>Consumer Heterogeneity and Paid Search Effectiveness: A Large-Scale Field Experiment</em>, Econometrica 83, 155–174.</a></p>
+<aside class="notes">
+<p>Three minutes. The study from meeting 6, told as a design.</p>
+<p>The setting. Search engines auction the ad slots above their results. eBay bid on over 100 million keywords. The ones here are non-brand keywords: searches that do not contain the word eBay. (A separate test showed that ads on searches for “eBay” itself did nothing, because people clicked the free link below the ad; eBay stopped buying those.)</p>
+<p>The regression every marketing team runs: revenue on ad spending, across areas and days. Clicks and purchases move together because the people who click an eBay ad are mostly people already shopping on eBay. The paper computes a return on investment, defined as extra revenue divided by ad spending, minus one. With the regression’s estimate of the effect of spending, it is 4,173% without controls and 1,632% with day and area controls.</p>
+<p>The design. Google offered a geographic bid feature that let eBay switch ads off by Nielsen designated market area, the 210 regions US television advertising is sold in. eBay assigned buyers to areas by their shipping zip code. The paper calls user-level randomization the ideal experiment, which the ad platform did not allow at the time. The 68 areas came from a randomized draw: 133 candidates were chosen at random, random groups of 68 were drawn, draws whose past sales trends looked too different were discarded, and a coin flip decided which group lost its ads. That is a form of re-randomization, the balance slide’s idea applied before the fact.</p>
+<p>The result. With the ads off, revenue in the 68 areas barely moved: paid search added about 0.66% to sales. Plugged into the same return formula, with the same public figures for revenue ($2.9 billion) and spending ($51 million a year), the return is −63%, 95% interval −124% to −3%. So the 4,100% and the −63% are the same quantity, estimated two ways. −63% means each dollar of ads brought back about 37 cents of revenue. It is a 60-day return and leaves out the long-run value of new customers, which the authors argue is small.</p>
+<p>Who was moved. The ads raised purchases by new users and by people who had bought only once or twice the year before. Frequent buyers were not moved, and they received most of the ad spending. The implication is to aim the ads at people who do not know eBay, not to buy ads in general. A small, unknown firm may gain much more from search ads.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-coin-alone-decides-who-is-treated" class="slide level2">
+<h2>A coin alone decides who is treated</h2>
+<ul>
+<li>A firm picks which customers to email to raise renewals. Something unobserved, U, such as loyalty, drives both who is emailed and who renews.</li>
+<li><strong>Randomization</strong> lets a coin alone decide who is emailed, whatever U is.</li>
+<li>The email is then independent of both potential outcomes, by construction.</li>
+<li>The difference in means estimates the average treatment effect, with no assumption about U.</li>
+</ul>
+<div class="m06" data-demo="dag" data-design="experiment" style="width:58%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Introduce the running example first: a subscription firm can send a retention email, and the outcome is whether the customer renews. It returns on the next two slides and in section 3. Then click the button twice.</p>
+<p>The starting graph: something unobserved, U, such as how much the customer likes the product, drives both who gets the email (the firm targets keen customers) and who renews. That is meeting 7’s selection into treatment, and last week the fix was a control variable, which needs U to be measured.</p>
+<p>Click once. A coin takes over the assignment. The arrow from U into the email is gone, because the coin does not consult U. There is no back door left to close, which is why no control is needed. Click again. U still drives renewal, and that is fine: it is now balanced between the emailed and the not emailed in expectation, so the difference in renewal rates has nothing in it but the email.</p>
+<p>In potential-outcomes terms: the email is independent of the two potential outcomes. The difference in means is an unbiased estimator of the average treatment effect, averaged over the population that was randomized. That last clause is meeting 7’s external validity: eBay learned about eBay’s market areas in those 60 days.</p>
+<p>Covariates in an experiment add nothing to the bias and add precision if they predict the outcome, provided they were measured before treatment and chosen in advance.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="randomizing-the-email-recovers-its-effect" class="slide level2">
+<h2>Randomizing the email recovers its effect</h2>
+<ul>
+<li>In this simulation the email adds 2 points to each customer’s chance of renewing.</li>
+<li><strong>Targeting</strong> emails the 600 of 2,000 most likely to renew. Across 1,000 samples its estimates centre on 44.5 points.</li>
+<li><strong>Randomization</strong> draws the 600 by lot. The estimates average 1.9, close to the true 2.0.</li>
+<li>The <strong>standard error</strong> (SE) estimates, from one sample, how much the estimate varies across samples. Here it is 2.4 points, as the 1,000 draws confirm.</li>
+</ul>
+<div class="m06" data-demo="randomize" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Start on “Randomized”. Click “Draw one sample”, then “Draw 1,000 samples”. Then switch to “Targeted” and draw 1,000 again.</p>
+<p>The population: 10,000 customers, each with a probability of renewing, and an email that adds 2 points to everyone’s probability. The firm has a renewal score for every customer, its model’s predicted probability of renewing. Each sample draws 2,000 customers. Targeting sends the email to the 600 with the highest scores, which is what a marketing team does by default. Randomization draws the 600 by lot.</p>
+<p>One sample: the two bars, and a difference of a few points either side of 2, with a standard error of about 2.4 points. The single sample does not settle it. A thousand samples: the estimates average 1.9, within simulation error of 2.0, with a standard deviation of 2.4, which matches the standard error each sample reports. The estimator is unbiased and its standard error is right, as in meeting 6.</p>
+<p>Switch to targeting. The estimates centre on 44.5 points, of which 2.0 is the email and 42.5 is selection: the emailed customers would have renewed more often anyway. The spread is smaller, 1.9, because the emailed group is more alike. A tighter interval around the wrong number.</p>
+<p>The point of the pair: the estimator is the same difference in means in both settings, with the same standard error formula. Only the design changed. Randomization does not make the estimate more precise. It puts the centre of the sampling distribution on the parameter.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-unit-of-randomization" class="slide level2">
+<h2>The unit of randomization</h2>
+<ul>
+<li>The <strong>unit of randomization</strong> is what the coin assigns, such as a customer, a store or a region.</li>
+<li>The email test assigned customers. eBay’s ad test assigned market areas.</li>
+<li><strong>Interference</strong> means one unit’s treatment changes another unit’s outcome.</li>
+<li>The control group then no longer shows what would happen without the treatment.</li>
+<li>Interference is likely when treated and control units compete for the same goods or customers.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The first design decision, and the one most often made by default. A website test assigns visitors or customers. eBay assigned market areas, because Google let it switch ads off by region and not by searcher.</p>
+<p>The difference in means assumes that a unit’s outcome depends on its own treatment only, which the literature calls the stable unit treatment value assumption. Interference breaks it. It is common wherever treated and control units share a market: buyers bidding on the same items, riders and drivers on one platform, stores competing for the same shoppers. A pricing test on half the riders in a city changes which drivers the other half see.</p>
+<p>The next slide is a case. The remedy is to choose a unit large enough that the competition stays inside it. When even a city cannot be split, a switchback assigns periods: a ride-hailing platform turns a new pricing rule on for two hours and off for two hours in one city, and compares the hours (Bojinov, Simchi-Levi and Zhao 2023, <em>Design and Analysis of Switchback Experiments</em>, Management Science 69, 3759–3777, <a href="https://doi.org/10.1287/mnsc.2022.4583" class="uri">https://doi.org/10.1287/mnsc.2022.4583</a>). The price is meeting 7’s: with regions assigned, the effective sample size is the number of regions, the standard error must be clustered, and power depends mainly on the number of units, not the number of people inside them.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-reminder-email-moved-sales-between-bidders" class="slide level2">
+<h2>A reminder email moved sales between bidders</h2>
+<ul>
+<li>In 2013 eBay emailed a random half of 4.9 million bidders a reminder six hours before their auctions ended.</li>
+<li>It wanted to know whether the reminder raises auction sales.</li>
+<li>Emailed bidders spent 0.74% more, which looked like a success.</li>
+<li>But both groups bid in the same auctions. Each auction an emailed bidder won, a control bidder lost.</li>
+<li>Auctions with a larger share of emailed bidders sold no more than auctions with a smaller share.</li>
+<li><span class="solution"><strong>Solution</strong>: randomize whole auctions or markets, so treated and control units do not compete.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1145/2600057.2602837" style="font-size:0.55em; color:#6b6b6b">Blake and Coey (2014), <em>Why Marketplace Experimentation Is Harder Than It Seems: The Role of Test-Control Interference</em>, EC ’14, 567–582.</a></p>
+<aside class="notes">
+<p>Two and a half minutes. The paper is by two economists at eBay Research Labs.</p>
+<p>The experiment. eBay’s “Bid Item Ending Soon” campaign ran for four weeks in July and August 2013. The 4.9 million US users who bid in auctions were split at random into equal halves. About six hours before an auction ended, test users who had bid in it got an email saying it was ending soon and encouraging them to win. Control users got nothing. The outcome was auction revenue, meaning the selling price.</p>
+<p>The naive analysis, the one any marketing team would run: test users generated about 0.74% more revenue than control users, a significant difference. With emails nearly free to send, that looks like a large return.</p>
+<p>The problem. Test and control users bid against each other. If the email pushes a test user to raise a bid and win, a control user loses that auction. The sale would have happened anyway; the email moved it from one bidder to the other. The test-minus-control gap counts the moved sale twice: once as a gain for the test group and once as a loss for the control group.</p>
+<p>The authors’ fix. The share of test bidders in an auction is random, because users were randomized. So compare auctions with many test bidders with auctions with few, holding the number of bidders fixed. Revenue does not rise with the number of emailed bidders: the campaign’s effect was not significantly different from zero, and the naive estimate was too large by a factor of about two. Control users also earned less when they bid against test users, which is the interference made visible.</p>
+<p>The solution line: randomize at the level of the auction or the market, so that everyone competing for the same goods gets the same treatment.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="more-arms-mean-less-power-for-each-comparison" class="slide level2">
+<h2>More arms mean less power for each comparison</h2>
+<ul>
+<li>An <strong>arm</strong> is one group in a test, such as one checkout page. The control is an arm too.</li>
+<li><strong>Power</strong> is the chance a test detects a real effect. The <strong>minimum detectable effect</strong> (MDE) is the smallest true effect detected 80% of the time.</li>
+<li>Each arm splits the sample. With 10,000 visitors buying at 5%, the MDE is 1.3 points with two arms, 2.0 with five and 2.9 with ten.</li>
+<li>Each arm also adds a comparison. With nine new arms and no real effect, at least one looks significant in about 28% of experiments.</li>
+<li><span class="solution"><strong>Solution</strong>: before adding an arm, check that each comparison’s MDE stays below the smallest lift worth acting on.</span></li>
+</ul>
+<aside class="notes">
+<p>One and a half minutes. Meeting 7’s section 4 covered power in full: the definitions, the checkout test’s MDE of 1.3 points, why underpowered studies exaggerate significant effects, and clusters and strata. This slide adds only what an experiment’s design decision needs: what happens when you test several versions at once.</p>
+<p>The setting. A store has 10,000 visitors for a test of checkout pages, and the old page converts 5% of them. Two arms give 5,000 visitors each, a standard error of the difference of about 0.46 points, and an MDE of 2.8 × 0.46 = 1.3 points (80% power at the 5% level). Five arms give 2,000 visitors each and an MDE of 2.0 points; ten arms give 1,000 each and an MDE of 2.9 points, more than half the base rate. A real 1-point lift would be detected 59% of the time with two arms, 28% with five and 16% with ten. (These are the numbers for a new page converting 6%, with the standard error √[(p₀(1 − p₀) + p₁(1 − p₁))/n] and n visitors per arm.)</p>
+<p>The second cost is multiple testing, also from meeting 7. Nine new pages compared with one shared control, with no true effect anywhere: in a simulation, at least one comparison is significant at 5% in about 28% of experiments. The textbook 37% (1 − 0.95⁹) would hold only if the nine tests were independent; sharing the control makes them correlated. Pre-specify which comparisons count, or test fewer versions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="checking-balance-after-randomization" class="slide level2">
+<h2>Checking balance after randomization</h2>
+<ul>
+<li>A <strong>balance check</strong> compares the arms’ covariates, which differ only by chance under randomization.</li>
+<li>Tested one at a time at 5%, at least one of 20 covariates is significant in 63% of fair randomizations.</li>
+<li>A <strong>joint F test</strong> asks whether all 20 differences are zero at once. It rejects only 5% of the time.</li>
+<li><span class="solution"><strong>Solution</strong>: report the joint test, not a count of stars, and check the assignment if it rejects strongly.</span></li>
+</ul>
+<div class="m06" data-demo="balance" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Two minutes. Click “Randomize once” a few times, then “Randomize 1,000 times”.</p>
+<p>A balance table is the first table in any experimental paper: the treated and control means of every covariate, with a test of each difference. Meeting 7 named it; this slide shows why reading it star by star misleads. Here 1,000 customers, 500 emailed at random, and 20 covariates that by construction do not differ. Each randomization produces about one significant difference (0.96 on average). Across 1,000 randomizations, 63% show at least one covariate significant at 5%. Counting stars is multiple testing in a new place.</p>
+<p>The joint F test regresses assignment on all 20 covariates at once and asks whether they predict it. It rejects in 5% of randomizations, which is what a 5% test should do. That is the test to report. A rejection happens in 5% of clean randomizations; a strong rejection is a reason to check how the assignment was done.</p>
+<p>The other check after randomization is attrition, covered in meeting 7 under selection into the sample: if units leave the study at different rates by arm, the arms that remain are no longer comparable. Report attrition by arm, follow up everyone, and bound the effect when the rates differ (Lee’s bounds).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="pre-registration" class="slide level2">
+<h2>Pre-registration</h2>
+<ul>
+<li><strong>P-hacking</strong> means trying analyses until one crosses the significance threshold.</li>
+<li><strong>Pre-registration</strong> records a study in a public <a href="https://www.socialscienceregistry.org/">registry</a> before the outcome data exist.</li>
+<li>A <strong>pre-analysis plan</strong> also fixes the outcome, the specification and the subgroups in advance.</li>
+<li>In 15,992 test statistics from published randomized trials, registration alone did not reduce p-hacking. A pre-analysis plan did.</li>
+<li><span class="solution"><strong>Solution</strong>: register with a pre-analysis plan before the first look at the outcome.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1086/730455" style="font-size:0.55em; color:#6b6b6b">Brodeur, Cook, Hartley and Heyes (2024), <em>Do Preregistration and Preanalysis Plans Reduce p-Hacking and Publication Bias?</em>, Journal of Political Economy Microeconomics 2, 527–561.</a></p>
+<aside class="notes">
+<p>Two and a half minutes.</p>
+<p>The problem first. Meeting 7 ended section 3 on specification search: Silberzahn’s 29 teams and their 29 answers. A researcher who tries enough outcomes, subgroups and specifications will find one that crosses 5%. P-hacking is the name for doing that, knowingly or not.</p>
+<p>The fixes. Registering a study puts a timestamped entry in a public registry; the AEA’s held about 12,900 studies when this slide was written. A pre-analysis plan goes further: before the outcome data exist, it fixes the primary outcome, the regression, the covariates, the subgroups and the sample size. Then every result is either the planned one or labelled exploratory.</p>
+<p>The evidence. Brodeur, Cook, Hartley and Heyes looked at 15,992 test statistics from randomized trials published in 15 leading economics journals. Many registrations have no plan, or one too vague to bind. They found no evidence that registration alone reduces p-hacking or publication bias, and evidence that registration with a pre-analysis plan does. The lesson: the plan does the work, not the registry entry.</p>
+<p>For a firm: an experimentation platform can fix the metric and the stopping rule before a test starts, which is a pre-analysis plan in practice. For the proposal: a paragraph that says what you will estimate and how, written in December, is a pre-analysis plan.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="survey-and-choice-experiments" class="slide level2">
+<h2>Survey and choice experiments</h2>
+<ul>
+<li>A firm wants to know what a feature is worth before building it, such as a “locally sourced” label. There are no sales to study yet.</li>
+<li>In a <strong>conjoint</strong> experiment, people choose between profiles whose features and prices are set at random.</li>
+<li>Because price varies too, the choices put a money value on each feature: a <strong>willingness to pay</strong>.</li>
+<li>Survey choices can rank features well. Where Swiss towns voted on citizenship applicants, a paired survey matched each attribute’s effect on the votes within 2 points.</li>
+</ul>
+<p><a href="https://doi.org/10.1073/pnas.1416587112" style="font-size:0.55em; color:#6b6b6b">Hainmueller, Hangartner and Yamamoto (2015), <em>Validating Vignette and Conjoint Survey Experiments against Real-World Behavior</em>, PNAS 112, 2395–2400.</a></p>
+<aside class="notes">
+<p>Two minutes. For the marketing teams, and for card 4 this afternoon.</p>
+<p>The goal first. A firm deciding whether to put a “locally sourced” label on a package, or whether to add a feature to a product, wants a number in cents before it commits to the supply chain. There is no sales history for a product that does not exist, so it asks people. A conjoint experiment shows each respondent pairs of profiles whose features and prices are drawn at random and asks which they would choose; each person answers several times. Because the features are assigned at random, the effect of each on the choice is identified exactly as in section 1, and because price is one of the features, those effects convert into a willingness to pay for each of the others.</p>
+<p>Does a survey choice predict a real one? Hainmueller, Hangartner and Yamamoto tested survey designs against real behaviour: some Swiss towns decided citizenship applications by popular vote, so the weight real voters put on each applicant attribute can be estimated. A survey that showed people pairs of applicant profiles came within about two percentage points of those vote-based effects on average; other survey formats did worse. So in that setting a well-designed conjoint recovered which features matter and by how much. The next slide is about why that cannot be taken for granted.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="randomization-does-not-fix-a-biased-outcome" class="slide level2">
+<h2>Randomization does not fix a biased outcome</h2>
+<ul>
+<li>The answers are <strong>stated preferences</strong>: the respondent pays nothing for a choice.</li>
+<li>Randomizing the features gives an unbiased estimate of their effect on stated choices, not on real purchases.</li>
+<li>Across 29 studies that measured both, stated values were about three times actual payments. That gap is <strong>hypothetical bias</strong>.</li>
+<li>If the gap differs by feature, as it may for a socially approved label, even the ranking of features is wrong.</li>
+<li><span class="solution"><strong>Solution</strong>: make one choice real at its price, or check the survey against actual purchases.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1023/A:1012791822804" style="font-size:0.55em; color:#6b6b6b">List and Gallet (2001), <em>What Experimental Protocol Influence Disparities Between Actual and Hypothetical Stated Values?</em>, Environmental and Resource Economics 20, 241–254.</a></p>
+<aside class="notes">
+<p>Two minutes. The point generalizes beyond surveys, so say it plainly: randomization protects the comparison, not the measurement.</p>
+<p>Why stated preference is the problem. In a survey nothing is at stake: a respondent can say they would pay 40 cents more for a local label without giving up 40 cents. The features were randomized, so the comparison between profiles is clean, and the estimate is unbiased for what it measures: the effect of each feature on what people say. If what people say differs from what they do, the experiment estimates the wrong thing precisely. This is meeting 7’s measurement error in the outcome. Error unrelated to the treatment only adds noise; error that depends on the treatment biases the estimate, and no randomization removes it.</p>
+<p>How large the gap is. List and Gallet’s review of 29 studies that measured both found stated values about three times the actual ones on average. Murphy and co-authors’ review of 28 studies found a median ratio of 1.35 with a long right tail, so the typical gap is smaller and the large ones are very large (Murphy, Allen, Stevens and Weatherhead 2005, <em>A Meta-analysis of Hypothetical Bias in Stated Preference Valuation</em>, Environmental and Resource Economics 30, 313–325, <a href="https://doi.org/10.1007/s10640-004-3332-z" class="uri">https://doi.org/10.1007/s10640-004-3332-z</a>).</p>
+<p>Why the ranking can fail too. A uniform markup would leave the ranking of features intact and only inflate their prices. But respondents may overstate some features more than others: the ones that make them look good, such as a local, green or fair-trade label, or the ones they think the researcher wants to hear (experimenter demand). Then the stated effect of that feature is biased relative to the others. The Swiss test on the previous slide found the gap small for that setting, a vote with real stakes for the community; it is a reason to validate, not a guarantee for a marketing survey.</p>
+<p>The same caution applies to any experiment whose outcome is self-reported: an A/B test scored by a satisfaction survey, a training program scored by the trainees’ own reports. Randomization makes the arms comparable; it does not make the answers true.</p>
+<p>Solutions: an incentive-compatible design, where one of the choices is actually carried out at its price, so that answering carelessly or to look good costs something; or a check against a real purchase, in a store or an online test, before the number goes into a business case.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="non-compliance-and-the-intention-to-treat-effect" class="slide level2">
+<h2>Non-compliance and the intention-to-treat effect</h2>
+<ul>
+<li><strong>Medicaid</strong> is US public health insurance for the poor. In 2008 Oregon had room for 10,000 more adults and 90,000 applicants.</li>
+<li>It chose by lottery, and many of those drawn never enrolled. <strong>Non-compliance</strong> means assignment and take-up differ.</li>
+<li>The <strong>intention-to-treat</strong> (ITT) effect compares those drawn with those not drawn, enrolled or not.</li>
+<li>The draw raised enrollment by 26 points and hospital admissions by about 0.5. Their ratio, 2.1 points, is the effect of enrolling for those the draw moved.</li>
+<li><span class="solution"><strong>Solution</strong>: report the ITT effect, and divide it by the rise in enrollment, as section 2 explains.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1093/qje/qjs020" style="font-size:0.55em; color:#6b6b6b">Finkelstein et al.&nbsp;(2012), <em>The Oregon Health Insurance Experiment: Evidence from the First Year</em>, Quarterly Journal of Economics 127, 1057–1106.</a></p>
+<aside class="notes">
+<p>Two and a half minutes. The bridge to section 2.</p>
+<p>In 2008 Oregon reopened its Medicaid program for low-income adults with room for about 10,000 more people; 89,824 signed up, and 35,169 were drawn by lottery and allowed to apply. About 30% of those drawn completed the application and enrolled. Some of those not drawn found coverage elsewhere.</p>
+<p>So the randomized thing, being drawn, is not the treatment, being insured. Two honest estimates. The intention-to-treat effect compares outcomes by lottery result: it is the effect of being offered the program, and being drawn raised the probability of having insurance by about 25 percentage points. The effect of insurance itself, for those who enrolled because they were drawn, is the intention-to-treat effect divided by the effect of the draw on enrollment, about 0.26: a 2.1 point (30%) rise in hospital admissions, a 6.4 point (25%) fall in unpaid bills sent to collection, and a 13 point rise in reporting good health.</p>
+<p>That division is instrumental variables, with the lottery as the instrument. Section 2 says what it assumes. For a firm: when you can randomize an offer but not its take-up, such as a coupon, an invitation or an email, you have an encouragement design, and this is how it is analyzed.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-effects-from-the-oregon-lottery" class="slide level2">
+<h2>Three effects from the Oregon lottery</h2>
+<div style="font-size:0.62em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 52%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Effect</th>
+<th style="text-align: left;">How it is computed</th>
+<th style="text-align: right;">Hospital admissions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Average treatment effect</td>
+<td style="text-align: left;">Each applicant’s outcome with insurance minus without, averaged over all applicants</td>
+<td style="text-align: right;">Not estimable from the lottery alone</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Intention-to-treat effect</td>
+<td style="text-align: left;">Those drawn minus those not drawn, enrolled or not</td>
+<td style="text-align: right;">About +0.5 points</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Effect on those the draw moved</td>
+<td style="text-align: left;">Intention-to-treat effect divided by the 26-point rise in enrollment</td>
+<td style="text-align: right;">+2.1 points</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>The intention-to-treat effect is what offering insurance does. Most of those drawn never enrolled, which shrinks it.</li>
+<li>The 2.1 points is what insurance does for applicants who enroll if drawn and not otherwise.</li>
+<li>With full compliance the three effects are equal.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes. This slide separates the three numbers the previous slide used, because the word “effect” covers all of them.</p>
+<p>The average treatment effect is the one defined on the terms slide: the average, over every applicant, of the difference between the outcome with insurance and the outcome without. The lottery cannot deliver it. Applicants who would never enroll whatever the draw, and those insured whatever the draw, never show the lottery their other outcome. Extending the estimate to them needs assumptions the data cannot check.</p>
+<p>The intention-to-treat effect compares everyone drawn with everyone not drawn, whether or not they enrolled. Randomization alone makes it credible. It answers what the offer does, and it is diluted: most of those drawn never enrolled, and their outcomes enter the average.</p>
+<p>The effect of enrolling divides the intention-to-treat effect by the effect of the draw on enrollment. The denominator is the 26-point difference in enrollment between the drawn and the not drawn, which is smaller than the share of the drawn who enrolled, because some applicants who were not drawn found coverage anyway. The result, 2.1 points, is the effect for applicants who enroll if drawn and not otherwise. Section 2 calls them compliers and the estimate the local average treatment effect, and states the assumptions behind the division.</p>
+<p>When the control group cannot get the treatment at all, as with a coupon only the drawn can redeem, the compliers are exactly the treated, and the division gives the average effect on the treated.</p>
+<p>Which number to report depends on the decision. A firm choosing whether to send an offer needs the intention-to-treat effect, because sending the offer is the lever it controls. A question about what the treatment itself does needs the effect of enrolling, with the population it describes named.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="instrumental-variables" class="title-slide slide level1 center">
+<h1>2. Instrumental variables</h1>
+<aside class="notes">
+<p>Thirty seconds. Opened by the draft lottery, the instrument the Nobel citation had in mind.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-draft-lottery-decided-who-served" class="slide level2">
+<h2>The draft lottery decided who served</h2>
+<ul>
+<li>What did military service in the Vietnam War cost veterans in later earnings?</li>
+<li>Veterans differ from non-veterans in health, schooling and family, which also affect earnings.</li>
+<li>From 1970 to 1972 a lottery gave each birth date a number. Men with low numbers were eligible for the draft.</li>
+<li>Comparing men by lottery number, Angrist (1990) found that white veterans earned about 15% less in the early 1980s.</li>
+</ul>
+<p><a href="https://www.jstor.org/stable/2006669" style="font-size:0.55em; color:#6b6b6b">Angrist (1990), <em>Lifetime Earnings and the Vietnam Era Draft Lottery: Evidence from Social Security Administrative Records</em>, American Economic Review 80, 313–336.</a></p>
+<aside class="notes">
+<p>Two and a half minutes.</p>
+<p>The back door: men who served were different from men who did not, in health, schooling, family background and in what the army selected on. A comparison of veterans with non-veterans measures all of that plus the effect of service.</p>
+<p>The lottery. For the draft years 1970 to 1972, every birth date of the year was drawn in random order, and men born on dates drawn below a cutoff were eligible to be drafted. The lottery number did not make anyone serve: many eligible men were not drafted, or enlisted anyway, or were exempt. It moved the probability of serving.</p>
+<p>Angrist used Social Security earnings records. Men with low lottery numbers served more often and earned less in the early 1980s, about ten years after. Dividing the earnings gap by the gap in the probability of serving gives the effect of service on those who served because of the lottery: roughly 15% lower earnings for white veterans. The next slide says what that division assumes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-assumptions-behind-an-instrument" class="slide level2">
+<h2>Three assumptions behind an instrument</h2>
+<ul>
+<li>An <strong>instrument</strong> shifts the treatment. Here the lottery number shifts military service.</li>
+<li><strong>Relevance</strong>: low numbers raised the chance of serving. The <strong>first stage</strong>, a regression of service on the number, measures it.</li>
+<li><strong>Exclusion</strong>: the number affects earnings only through service. No statistic can confirm this.</li>
+<li><strong>Independence</strong>: the number was drawn at random, so it is unrelated to health, schooling and family up to chance.</li>
+</ul>
+<div class="m06" data-demo="dag" data-design="draft" style="width:58%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three and a half minutes. Click the button twice. The slide takes the draft lottery apart into the three assumptions every instrument makes.</p>
+<p>The starting graph. Who served in Vietnam depended on health, schooling and family background, and those also drive earnings twenty years later. That is the open back door, and it is why the raw gap between veterans and non-veterans measures nothing useful.</p>
+<p>Click once: the lottery number enters, with an arrow into service. That arrow is relevance. Men with low numbers were draft-eligible and served more often. Relevance is testable, because both the number and service are in the data: regress service on the number and read the coefficient and its strength, the first-stage F statistic of the next slides.</p>
+<p>Click again: two arrows have to be missing. The crossed dashed arrow from the number to earnings is the exclusion restriction: the number may reach earnings only by changing service. No statistic can confirm it, because earnings would look the same whether the arrow is there or not. It is argued, and it was argued about: men with low numbers stayed in college to defer the draft, which is a second route from the number to earnings. The crossed arrow from background to the number is independence: a lottery does not consult anyone’s health or family, so the number is unrelated to them up to chance. Even lotteries need checking: Fienberg (1971, <em>Randomization and Social Affairs: The 1970 Draft Lottery</em>, Science 171, 255–261, <a href="https://doi.org/10.1126/science.171.3968.255" class="uri">https://doi.org/10.1126/science.171.3968.255</a>) showed the 1970 draw was poorly mixed, with birthdays late in the year drawing lower numbers.</p>
+<p>The estimator, in one line: the earnings gap by lottery number divided by the service gap by lottery number. The next slide runs it in a simulated market, where the instrument is a price and all three assumptions have to be argued.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-fuel-price-recovers-the-demand-slope" class="slide level2">
+<h2>A fuel price recovers the demand slope</h2>
+<ul>
+<li>In a simulated bike-rental market, demand and supply shift every week, so a regression of rentals on price traces neither curve.</li>
+<li>Expensive fuel raises the cost of the vans that move the bikes. It shifts supply only, so it is the instrument.</li>
+<li>The <strong>instrumental-variables</strong> (IV) estimate divides the <strong>reduced form</strong>, rentals regressed on fuel, by the first stage, price regressed on fuel.</li>
+<li>IV centres on the true slope −2 and OLS on −1. The <strong>first-stage F</strong>, about 51, measures fuel’s pull on price.</li>
+</ul>
+<div class="m06" data-demo="iv" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Start on “Supply only” with the slider at 8. Click “Draw one”, then “Draw 1,000”.</p>
+<p>The market. A bike-rental company sets its price each week. Demand has slope −2 (rentals per dollar), supply +1, and both shift every week with shocks of standard deviation 8, so a regression of rentals on price traces neither curve: that is meeting 7’s simultaneity. The instrument is the price of fuel, standardized. Expensive fuel raises the cost of the vans that move bikes between stations, so it shifts supply in by 8 rentals per standard deviation, and by assumption it leaves demand alone.</p>
+<p>One sample of 100 weeks. The points are coloured by fuel: red weeks had expensive fuel and sit at higher prices and fewer rentals, blue weeks the reverse. Fuel drags the market along the demand curve, which is what an instrument does. Three lines: the true demand curve in red, the OLS line in black, the IV line in blue.</p>
+<p>A thousand samples. OLS centres on −1.0: fuel adds supply-side variation, which moves OLS toward the demand slope without reaching it. IV centres on −2.0: the median is −2.00 and the middle half of the estimates runs from −2.2 to −1.8. The mean first-stage F is about 51, which is strong.</p>
+<p>The reduced form is the regression of the outcome on the instrument, rentals on fuel; the first stage is the treatment on the instrument, price on fuel. Their ratio is the IV estimate, and two-stage least squares gives the same number. The IV estimator is consistent, not unbiased: its sampling distribution has fatter tails than OLS, which is why the readout shows the median and the middle half. The next two slides break each assumption in turn.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="five-instruments-and-their-exclusion-restrictions" class="slide level2">
+<h2>Five instruments and their exclusion restrictions</h2>
+<div style="font-size:0.6em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 18%">
+<col style="width: 15%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Instrument</th>
+<th style="text-align: left;">Treatment</th>
+<th style="text-align: left;">Outcome</th>
+<th style="text-align: left;">Exclusion restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Draft lottery number</td>
+<td style="text-align: left;">Military service</td>
+<td style="text-align: left;">Earnings</td>
+<td style="text-align: left;">The number affects earnings only through service</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Distance to a college</td>
+<td style="text-align: left;">Years of schooling</td>
+<td style="text-align: left;">Wages</td>
+<td style="text-align: left;">Growing up near a college affects wages only through schooling</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Oregon’s Medicaid lottery</td>
+<td style="text-align: left;">Health insurance</td>
+<td style="text-align: left;">Hospital use, unpaid bills</td>
+<td style="text-align: left;">Being drawn matters only through enrolling</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Rainfall in African countries</td>
+<td style="text-align: left;">Economic growth</td>
+<td style="text-align: left;">Civil conflict</td>
+<td style="text-align: left;">Rain affects conflict only through economic growth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">An app coupon sent at random (hypothetical)</td>
+<td style="text-align: left;">Using the app</td>
+<td style="text-align: left;">Spending</td>
+<td style="text-align: left;">The coupon changes spending only through app use</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Three rows are random draws: each is an experiment for the draw and an instrument for the treatment it pushes.</li>
+<li>No statistic can confirm the last column. It has to be argued.</li>
+</ul>
+<p><a href="https://doi.org/10.1086/421174" style="font-size:0.55em; color:#6b6b6b">Miguel, Satyanath and Sergenti (2004), <em>Economic Shocks and Civil Conflict: An Instrumental Variables Approach</em>, Journal of Political Economy 112, 725–753.</a></p>
+<aside class="notes">
+<p>Two minutes. Read the last column aloud for two rows.</p>
+<p>Card (1993, <em>Using Geographic Variation in College Proximity to Estimate the Return to Schooling</em>, NBER Working Paper 4483, <a href="https://doi.org/10.3386/w4483" class="uri">https://doi.org/10.3386/w4483</a>) used distance to the nearest four-year college as an instrument for years of schooling among US men: growing up near a college makes attending cheaper. The exclusion restriction is that living near a college does not affect wages any other way. Families who live near colleges differ, so the argument needs covariates for family background, and reasonable people disagree about it.</p>
+<p>Miguel, Satyanath and Sergenti used rainfall as an instrument for economic growth in Sub-Saharan African countries, to estimate the effect of growth on civil conflict: a negative growth shock of five percentage points raised the likelihood of conflict the next year by about a half. The exclusion restriction is that rain affects conflict only through growth. The next slide shows it tested.</p>
+<p>The new bullet answers the question the room will ask: isn’t a random lottery or a random coupon just an experiment? Yes, for the thing that is drawn. The draft lottery is an experiment on eligibility, Oregon’s on being offered Medicaid, the coupon’s on receiving a coupon, and each intention-to-treat effect needs no exclusion restriction. The instrument appears when the question is about a different treatment that the draw only pushes: serving, being insured, using the app. Nobody can randomize those, because people choose them. The effect of the treatment is the draw’s effect on the outcome divided by its effect on the treatment, and that step needs the exclusion restriction.</p>
+<p>The last row is not a published study; it is the design most open to this room. A firm cannot force customers to adopt an app, but it can send an app coupon to a random sample. The coupon is randomized, and the effect of sending it is a plain experiment. The effect of using the app, for the customers the coupon moved, is the Oregon logic: the coupon’s effect on spending divided by its effect on app use. The exclusion restriction is that the coupon changed spending only by causing app use, which fails if the coupon is also a discount on purchases.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="no-statistic-confirms-the-exclusion-restriction" class="slide level2">
+<h2>No statistic confirms the exclusion restriction</h2>
+<ul>
+<li>If fuel also draws commuters to bikes, IV centres on −1, not −2, and the F rises to 114.</li>
+<li>Exclusion can be refuted but never confirmed. Where the instrument cannot move the treatment, it must not move the outcome.</li>
+<li>Below Indian dams, farm income does not depend on rain, yet rain still predicted riots there.</li>
+<li><span class="solution"><strong>Solution</strong>: argue the restriction, run that <strong>placebo test</strong>, and report how a small direct effect would move the estimate.</span></li>
+</ul>
+<div class="m06" data-demo="iv" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1016/j.jdeveco.2014.12.007" style="font-size:0.55em; color:#6b6b6b">Sarsons (2015), <em>Rainfall and Conflict: A Cautionary Tale</em>, Journal of Development Economics 115, 62–72.</a></p>
+<aside class="notes">
+<p>Three minutes. Switch to “Also raises demand”, then “Draw 1,000”.</p>
+<p>The same market, except that expensive fuel now also raises demand for rented bikes by 4 rentals per standard deviation: commuters leave their cars. Fuel still moves the price, more than before, because both shifts push the price up. The mean first-stage F rises from about 51 to about 114. The IV estimates centre on −1.0, half the true slope. The regression output shows a stronger first stage and a tighter IV interval, and the number is wrong.</p>
+<p>That is what the title means. Fuel reaches rentals through the price and directly through demand, and the data contain only the sum. Only the causal graph says which, and a statistic computed from these data cannot.</p>
+<p>Sarsons’ test of the rainfall instrument from the table. If rain affects riots only through income, then where income does not depend on rain, rain should not predict riots. Indian districts downstream of irrigation dams have farm incomes insulated from rainfall. Rain shocks predicted riots there just as strongly. Rain reaches conflict some other way, and the instrument is not excluded.</p>
+<p>Why check something that cannot be confirmed. The exclusion restriction has one testable implication. Where the instrument cannot move the treatment, the first stage is zero, so if exclusion holds the instrument must have no effect on the outcome there either. An effect in that subsample is a direct path, and it refutes the restriction. No effect does not prove it: the direct path might exist only where the treatment also moves. It is a falsification test, like the balance check: it can only fail, and a design that survives one it could have failed is more credible than one never put at risk. Sarsons’ dams are exactly this test. Van Kippersluis and Rietveld formalize it as estimating the direct effect in a zero-first-stage subsample (van Kippersluis and Rietveld 2018, <em>Beyond Plausibly Exogenous</em>, Econometrics Journal 21, 316–331, <a href="https://doi.org/10.1111/ectj.12113" class="uri">https://doi.org/10.1111/ectj.12113</a>).</p>
+<p>The third part of the solution is a sensitivity analysis. Conley, Hansen and Rossi show how to report the IV estimate when the instrument is allowed a small direct effect on the outcome, so the reader sees how large a violation would overturn the conclusion (Conley, Hansen and Rossi 2012, <em>Plausibly Exogenous</em>, Review of Economics and Statistics 94, 260–272, <a href="https://doi.org/10.1162/REST_a_00139" class="uri">https://doi.org/10.1162/REST_a_00139</a>). Van Kippersluis and Rietveld feed the zero-first-stage estimate into that analysis.</p>
+<p>So the solution, in order: argue the restriction from the graph, listing every path from instrument to outcome and why each is absent; run the placebo test wherever a zero-first-stage group exists; and report how far a small direct effect would move the estimate.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="weak-instruments" class="slide level2">
+<h2>Weak instruments</h2>
+<ul>
+<li>A <strong>weak instrument</strong> barely moves the treatment. On the left, fuel barely moves price when the instrument is very weak.</li>
+<li>As it weakens, the IV estimates spread out and their median drifts toward the OLS estimate.</li>
+<li>The usual 95% interval misses the true slope in 6% of samples when F is 42 and 21% when F is 1.6.</li>
+<li><span class="solution"><strong>Solution</strong>: report the first-stage F. Below 104.7, use larger critical values than 1.96.</span></li>
+</ul>
+<div class="m06" data-demo="weakiv" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1257/aer.20211063" style="font-size:0.55em; color:#6b6b6b">Lee, McCrary, Moreira and Porter (2022), <em>Valid t-Ratio Inference for IV</em>, American Economic Review 112, 3260–3290.</a></p>
+<aside class="notes">
+<p>Three minutes. Start on “Strong” and click “Draw 1,000”. Then click “Moderate”, “Weak” and “Very weak”, drawing 1,000 each time.</p>
+<p>The setting. The same bike-rental market, with one change: demand now shifts more than supply each week (shock standard deviations 12 and 4). So the weeks trace out mostly the supply curve, as in meeting 7’s simultaneity demo when only demand shifted. Once the instrument is weak, OLS lands near +0.7, far from the demand slope of −2, which makes the drift toward OLS easy to see. At “Strong”, fuel moves price enough to pull OLS down to about −0.1. The buttons set how far fuel shifts supply: 8, 4, 2 and 1 rentals per standard deviation of the fuel price.</p>
+<p>Read the left panel first. It is the first stage: one sample of 100 weeks, fuel price against rental price, with the fitted line. At “Strong” the line rises clearly and the first-stage F is large. At “Very weak” the line is nearly flat: fuel barely moves price, and the price variation the instrument isolates is a sliver of the total.</p>
+<p>Then the right panel, 1,000 samples at each strength:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Instrument</th>
+<th style="text-align: right;">Mean F</th>
+<th style="text-align: right;">Median IV</th>
+<th style="text-align: right;">Mean OLS</th>
+<th style="text-align: right;">Usual 95% interval misses −2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Strong</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">−1.99</td>
+<td style="text-align: right;">−0.07</td>
+<td style="text-align: right;">6%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Moderate</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">−1.97</td>
+<td style="text-align: right;">+0.46</td>
+<td style="text-align: right;">8%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Weak</td>
+<td style="text-align: right;">3.6</td>
+<td style="text-align: right;">−1.77</td>
+<td style="text-align: right;">+0.64</td>
+<td style="text-align: right;">12%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Very weak</td>
+<td style="text-align: right;">1.6</td>
+<td style="text-align: right;">−0.68</td>
+<td style="text-align: right;">+0.69</td>
+<td style="text-align: right;">21%</td>
+</tr>
+</tbody>
+</table>
+<p>Three things happen as the instrument weakens. The estimates spread out: at “Very weak”, 230 of the 1,000 fall off the axis. The median drifts toward OLS, because the little the instrument explains is swamped by the same demand shocks that bias OLS. And the usual inference breaks: the 95% interval computed the standard way misses the true slope more and more often, 21% instead of 5% at an F of 1.6.</p>
+<p>The mechanism. The IV estimate is the reduced form divided by the first stage. When the first stage is near zero, the ratio explodes in both directions, and the usual standard error does not reflect it.</p>
+<p>The rules. Staiger and Stock’s rule of thumb treats a first-stage F below 10 as weak (Staiger and Stock 1997, Econometrica 65, 557–586, <a href="https://doi.org/10.2307/2171753" class="uri">https://doi.org/10.2307/2171753</a>). Lee and co-authors show that for the usual 1.96 critical value to give a valid 5% test, F has to exceed about 104.7; below that, their table gives larger critical values. Even the “Strong” setting here, at 42, is below 104.7, which is why its interval misses slightly more than 5%.</p>
+<p>The cautionary tale. Angrist and Krueger instrumented schooling with quarter of birth, with many instruments (quarter interacted with year and state of birth) and a weak first stage. Bound, Jaeger and Baker replaced the real quarter of birth with a randomly generated one, 100 times, and got an average estimate close to the published one with similar standard errors (Bound, Jaeger and Baker 1995, Journal of the American Statistical Association 90, 443–450, <a href="https://doi.org/10.1080/01621459.1995.10476536" class="uri">https://doi.org/10.1080/01621459.1995.10476536</a>). Prefer one strong instrument to many weak ones.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="who-the-iv-estimate-is-about" class="slide level2">
+<h2>Who the IV estimate is about</h2>
+<ul>
+<li>The <strong>compliers</strong> are the units whose treatment the instrument changes.</li>
+<li><strong>Monotonicity</strong> assumes nobody does the opposite of what the instrument pushes. No man served only because he drew a high number.</li>
+<li>Then the IV estimate is the <strong>local average treatment effect</strong> (LATE), the average effect for compliers.</li>
+<li>The draft’s compliers served only because a low number made them eligible. A coupon’s compliers adopt the app only with the coupon.</li>
+<li>Report the first stage, the reduced form, the exclusion argument and the share of compliers.</li>
+</ul>
+<p><a href="https://doi.org/10.2307/2951620" style="font-size:0.55em; color:#6b6b6b">Imbens and Angrist (1994), <em>Identification and Estimation of Local Average Treatment Effects</em>, Econometrica 62, 467–475.</a></p>
+<aside class="notes">
+<p>Two and a half minutes. Meeting 7’s external-validity slide said an instrument identifies the effect for the units it moves. This slide names them.</p>
+<p>Four kinds of unit, by how they respond to the instrument. Compliers take the treatment when the instrument says so and not otherwise: men who served because their low number made them eligible. Always-takers serve whatever the number, such as volunteers; never-takers never serve, such as men exempted on health grounds. Defiers would do the opposite of the instrument, and monotonicity assumes there are none. Under the assumptions, the IV estimate is the average effect among compliers. Imbens and Angrist named it the local average treatment effect; Angrist, Imbens and Rubin (1996, Journal of the American Statistical Association 91, 444–455, <a href="https://doi.org/10.1080/01621459.1996.10476902" class="uri">https://doi.org/10.1080/01621459.1996.10476902</a>) gave the complier framework its standard form.</p>
+<p>Whether that is the effect you want depends on the decision. For a policy of drafting, the compliers are the right population. For the return to schooling, the compliers of the distance instrument are students whose attendance depends on a nearby college, and their return may differ from everyone else’s.</p>
+<p>For a firm the answer is usually yes. The coupon’s compliers are the customers a coupon can move, and a coupon is the lever the firm actually has. The share of compliers is the first stage: if the coupon raises adoption by 8 points, 8% of customers are compliers, and the estimate is about them.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="regression-discontinuity" class="title-slide slide level1 center">
+<h1>3. Regression discontinuity</h1>
+<aside class="notes">
+<p>Thirty seconds. Opened by Yelp, then the graph, then the retention email with a score cutoff.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="yelp-rounds-ratings-to-half-stars" class="slide level2">
+<h2>Yelp rounds ratings to half stars</h2>
+<ul>
+<li>Does a higher rating raise a restaurant’s demand?</li>
+<li>Better restaurants earn both better ratings and more customers.</li>
+<li>Yelp rounds each restaurant’s average review score to the nearest half star.</li>
+<li>A 3.74 shows 3½ stars and a 3.76 shows 4. The design assumes such restaurants are alike.</li>
+<li>An extra half star made a restaurant’s reservations sell out 19 percentage points (49%) more often.</li>
+</ul>
+<svg class="dag" viewbox="0 0 700 150" width="420" height="90" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="the displayed rating as a step function of the average review score, with the step at 3.75">
+<line x1="60" y1="118" x2="660" y2="118" stroke="#55554f" stroke-width="1.5"></line> <text x="60" y="142" font-size="15" fill="#6b6b6b" style="text-anchor:middle">3.5</text> <text x="360" y="142" font-size="15" fill="#6b6b6b" style="text-anchor:middle">3.75</text> <text x="660" y="142" font-size="15" fill="#6b6b6b" style="text-anchor:middle">4.0</text> <text x="360" y="22" font-size="15" fill="#6b6b6b" style="text-anchor:middle">Average of the reviews (running variable)</text> <line x1="60" y1="92" x2="358" y2="92" stroke="#1b1b1b" stroke-width="3.5"></line> <line x1="362" y1="52" x2="660" y2="52" stroke="#b31b1b" stroke-width="3.5"></line> <line x1="360" y1="40" x2="360" y2="118" stroke="#1b1b1b" stroke-width="1.5" stroke-dasharray="6 4"></line> <text x="200" y="82" font-size="15" fill="#1b1b1b" font-weight="600" style="text-anchor:middle">displayed as 3½ stars</text> <text x="510" y="42" font-size="15" fill="#b31b1b" font-weight="600" style="text-anchor:middle">displayed as 4 stars</text> <circle cx="350" cy="92" r="5" fill="#1b1b1b"></circle> <circle cx="370" cy="52" r="5" fill="#b31b1b"></circle> <text x="300" y="112" font-size="13" fill="#1b1b1b" style="text-anchor:middle">3.74</text> <text x="420" y="72" font-size="13" fill="#b31b1b" style="text-anchor:middle">3.76</text>
+</svg>
+<p><a href="https://doi.org/10.1111/j.1468-0297.2012.02512.x" style="font-size:0.55em; color:#6b6b6b">Anderson and Magruder (2012), <em>Learning from the Crowd: Regression Discontinuity Estimates of the Effects of an Online Review Database</em>, Economic Journal 122, 957–989.</a></p>
+<aside class="notes">
+<p>Two and a half minutes.</p>
+<p>The problem. Rating and demand are both caused by quality, so comparing restaurants by rating mixes the effect of the rating with the effect of being a good restaurant. No covariate measures quality, and no restaurant will let you randomize its stars.</p>
+<p>Yelp’s display rule creates the comparison. The site computes the average of a restaurant’s reviews and displays it rounded to the nearest half star. A restaurant at 3.74 shows three and a half stars; one at 3.76 shows four. Two hundredths of a point apart, they should be alike in quality, and a customer browsing sees a different number. The underlying average is the running variable, 3.75 is the cutoff, and the displayed star is the treatment. That they are alike is the design’s assumption, and the next slides say how to check it.</p>
+<p>Anderson and Magruder matched Yelp ratings to restaurant reservation availability. An extra half star, at the rounding threshold, made a restaurant 19 percentage points more likely to be sold out, a 49% increase, with larger effects when other information about the restaurant was scarce. They also checked that restaurants do not manipulate their ratings across the threshold. Luca’s companion work: a one-star increase raised revenue by 5 to 9%, for independent restaurants and not for chains (Luca 2016, Harvard Business School Working Paper 12-016, <a href="https://doi.org/10.2139/ssrn.1928601" class="uri">https://doi.org/10.2139/ssrn.1928601</a>).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="treatment-jumps-at-the-cutoff-and-nothing-else-does" class="slide level2">
+<h2>Treatment jumps at the cutoff and nothing else does</h2>
+<ul>
+<li>In a <strong>regression discontinuity</strong> (RD), a unit is treated when its score, the <strong>running variable</strong>, passes a <strong>cutoff</strong>.</li>
+<li>Here the firm emails everyone whose predicted chance of renewing is at or above a cutoff. U drives that score and renewal.</li>
+<li><strong>Continuity</strong> assumes average renewal, with or without the email, changes smoothly with the score at the cutoff.</li>
+<li>The jump in renewal at the cutoff is then the effect for customers at the cutoff.</li>
+</ul>
+<div class="m06" data-demo="dag" data-design="rd" style="width:58%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three and a half minutes. Click the button twice.</p>
+<p>The retention email again, sent a third way. Click once: the firm emails every customer at or above a score cutoff, and nobody below. The score alone decides, so no arrow from U reaches the email, as in the experiment. But the score is not a coin: U drives it, and the score predicts renewal. Customers with high scores renew more whether emailed or not, so comparing all emailed customers with all the others gives the 44.5 points of targeting.</p>
+<p>Click again. The assumption. Away from the cutoff, renewal changes smoothly with the score: a customer at 0.6 is a little more likely to renew than one at 0.4, through U and through anything else. At the cutoff only one thing changes abruptly, the email. So any jump in renewal at the cutoff belongs to the email. That is continuity of the average potential outcomes at the cutoff, and it is the design’s one assumption.</p>
+<p>What it buys. Compare customers just below the cutoff with customers just above. They have nearly the same score, so nearly the same U on average. Their difference in renewal is the effect of the email, for customers at the cutoff. Meeting 7’s matching slide wanted a comparable untreated unit for every treated one; here there are none except at the cutoff, and the cutoff is enough.</p>
+<p>The design is old. Thistlethwaite and Campbell (1960, <em>Regression- Discontinuity Analysis: An Alternative to the Ex Post Facto Experiment</em>, Journal of Educational Psychology 51, 309–317, <a href="https://doi.org/10.1037/h0044319" class="uri">https://doi.org/10.1037/h0044319</a>) compared students just above and below the test score that earned a National Merit certificate. Economics rediscovered it forty years later.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="local-linear-fits-on-each-side-estimate-the-jump" class="slide level2">
+<h2>Local linear fits on each side estimate the jump</h2>
+<ul>
+<li>The <strong>bandwidth</strong> is how far from the cutoff the data are used. Lines fit on each side give the jump.</li>
+<li>Units near the cutoff are more alike, so a narrow bandwidth has less bias but fewer units and a larger standard error.</li>
+<li>A bandwidth picked by hand lets the analyst choose the result.</li>
+<li><span class="solution"><strong>Solution</strong>: let the data choose the bandwidth, and widen the interval for the remaining bias.</span></li>
+</ul>
+<div class="m06" data-demo="rd" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.3982/ECTA11757" style="font-size:0.55em; color:#6b6b6b">Calonico, Cattaneo and Titiunik (2014), <em>Robust Nonparametric Confidence Intervals for Regression-Discontinuity Designs</em>, Econometrica 82, 2295–2326.</a></p>
+<aside class="notes">
+<p>Three minutes. Start on “Recorded scores” with the bandwidth at 0.50. Click “Draw one”, then “Draw 500”. Then move the bandwidth to 1.50 and draw 500 again, and to 0.25 and draw 500.</p>
+<p>One sample is 20,000 customers. The dots are the renewal rate in bins of the score, grey below the cutoff and red above; the red curve is the true renewal rate, which jumps by 2 points at the cutoff. The strip underneath is the number of customers per bin. The shaded band is the bandwidth, and the two blue lines are the local linear fits, renewal on the score, one on each side.</p>
+<p>At bandwidth 0.50 about 6,700 customers fall inside. The jump in one sample is a few points either side of 2, with a standard error of about 2.1. Five hundred samples: mean 2.0, standard deviation 2.2. Unbiased, and the reported standard error is right.</p>
+<p>Bandwidth 1.50: the lines now fit a curved stretch of the renewal rate and miss its shape at the cutoff. The mean estimate is 3.3, a bias of more than a point, with a smaller standard deviation of 1.3. Bandwidth 0.25: mean 2.0, standard deviation 3.0, and the single-sample picture is noisier. That is the trade-off: the bandwidth sets how much of the curve the straight line has to approximate.</p>
+<p>Solution. Local linear fits, with the bandwidth chosen by the data to balance that bias against that variance; Calonico, Cattaneo and Titiunik’s estimator does this and corrects the interval for the bias that remains, and it is what the rdrobust package runs in R and Stata. Gelman and Imbens explain why a single high-order polynomial fit to all the data is worse: it puts weight on observations far from the cutoff and gives estimates that swing with the degree (Gelman and Imbens 2019, Journal of Business &amp; Economic Statistics 37, 447–456, <a href="https://doi.org/10.1080/07350015.2017.1366909" class="uri">https://doi.org/10.1080/07350015.2017.1366909</a>).</p>
+<p>A regression discontinuity needs many observations near the cutoff. Here 20,000 customers give a standard error of 2 points on a 2-point effect. That is the price of the design, and the proposal has to state it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="manipulation-of-the-running-variable" class="slide level2">
+<h2>Manipulation of the running variable</h2>
+<ul>
+<li><strong>Manipulation</strong> means units, or someone acting for them, move scores across the cutoff.</li>
+<li>Suppose sales reps raise the scores of likely renewers just below the cutoff. The estimate rises to 11 percentage points, against a true effect of 2.</li>
+<li>French labour rules tighten at 50 employees, so firms stop at 49. Firms on each side of 50 differ.</li>
+<li><span class="solution"><strong>Solution</strong>: run a <strong>density test</strong> for a jump in the number of units at the cutoff, and check covariates.</span></li>
+</ul>
+<div class="m06" data-demo="rd" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1257/aer.20130232" style="font-size:0.55em; color:#6b6b6b">Garicano, Lelarge and Van Reenen (2016), <em>Firm Size Distortions and the Productivity Distribution: Evidence from France</em>, American Economic Review 106, 3439–3479.</a></p>
+<aside class="notes">
+<p>Three minutes. Switch to “Reps raise favourites”, bandwidth at 0.50, and click “Draw 500”.</p>
+<p>The story. The sales reps know the cutoff, and they know some customers personally. For customers just below the line whom they expect to renew, about half of those within half a point of it, they raise the recorded score, which puts them just above it. Two things show. The strip of customers per bin drops to about a third just below the cutoff and bulges just above: customers have moved across. And the renewal rate just above the cutoff is inflated, because the customers who were moved are the keen ones, while the rate just below falls. The mean estimate is about 11 points against a true effect of 2. Continuity failed: something besides the email, the composition of customers, jumped at the cutoff.</p>
+<p>Garicano, Lelarge and Van Reenen’s France. Labour regulations add obligations at 50 employees. The size distribution of French firms has a bulge at 49 and a sharp fall at 50, which the US distribution does not have. Firms stop growing just short of the threshold. Any discontinuity design at that cutoff would compare firms that chose to stay at 49 with firms that chose to cross, which are different firms.</p>
+<p>Solution. McCrary’s density test estimates the number of units per bin on each side of the cutoff and tests whether it jumps, which is the strip on this slide made formal (McCrary 2008, <em>Manipulation of the Running Variable in the Regression Discontinuity Design: A Density Test</em>, Journal of Econometrics 142, 698–714, <a href="https://doi.org/10.1016/j.jeconom.2007.05.005" class="uri">https://doi.org/10.1016/j.jeconom.2007.05.005</a>). Then run the regression discontinuity on every covariate as if it were the outcome: age, tenure, past spending. None should jump. If one does, the units on the two sides differ in something other than the treatment, and the design is gone.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="fuzzy-discontinuity" class="slide level2">
+<h2>Fuzzy discontinuity</h2>
+<ul>
+<li>In a <strong>sharp design</strong>, such as Yelp’s, crossing the cutoff decides the treatment. In a <strong>fuzzy design</strong> it shifts the treatment only partly.</li>
+<li>The fuzzy estimate divides the jump in the outcome by the jump in the treatment, as IV does.</li>
+<li>Banks raise credit limits at cutoffs in the FICO score, the credit score most US lenders use. Crossing one raises the average limit, not every borrower’s.</li>
+<li>One study covers 743 such cutoffs and 8.5 million cards.</li>
+<li>Within a year, borrowers below a score of 660 borrowed 59 cents of each extra dollar of limit. Above 740 they borrowed almost none.</li>
+</ul>
+<p><a href="https://doi.org/10.1093/qje/qjx027" style="font-size:0.55em; color:#6b6b6b">Agarwal, Chomsisengphet, Mahoney and Stroebel (2018), <em>Do Banks Pass Through Credit Expansions to Consumers Who Want to Borrow?</em>, Quarterly Journal of Economics 133, 129–190.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>Sharp and fuzzy. Yelp’s rounding and the email cutoff are sharp: the running variable decides the treatment completely. Often it only shifts it. A scholarship with a score cutoff that some winners decline; an eligibility threshold where some of the eligible do not apply, as in Oregon. Then the jump in the outcome at the cutoff is an intention-to-treat effect, and dividing it by the jump in the treatment gives the effect for compliers at the cutoff. The cutoff is an instrument, with the exclusion restriction that crossing it affects the outcome only through the treatment.</p>
+<p>Agarwal and co-authors. Banks set credit limits with rules that jump at FICO score cutoffs, and different banks use different cutoffs: 743 of them across 8.5 million cards. A consumer just above a cutoff gets a higher limit than one just below, for about the same creditworthiness. The question was how much of a higher limit people borrow: the jump in borrowing divided by the jump in the limit. Below a FICO score of 660, 59 cents of every extra dollar of limit was borrowed within a year; above 740, essentially none. That is also a result about who the estimate is for: borrowers at each cutoff, and the answer varies across them.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="who-the-rd-estimate-is-about" class="slide level2">
+<h2>Who the RD estimate is about</h2>
+<ul>
+<li>The estimate is the effect for units at the cutoff. Extending it to units far from the cutoff needs assumptions the data cannot check.</li>
+<li>For Yelp that is restaurants near a rounding threshold. For credit cards it is borrowers near each score cutoff.</li>
+<li>Report a plot of the outcome against the running variable, the bandwidth, the density test, the covariate checks and the sample size near the cutoff.</li>
+</ul>
+<p><a href="https://doi.org/10.1257/jel.48.2.281" style="font-size:0.55em; color:#6b6b6b">Lee and Lemieux (2010), <em>Regression Discontinuity Designs in Economics</em>, Journal of Economic Literature 48, 281–355.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The estimate is the effect of the email for customers whose score is at the cutoff. Whether the email would do the same for a customer at the top of the distribution is not in the data. The scholarship card this afternoon turns on this: a cutoff design answers what the money does for students at the margin of getting it, and the administrators may want to know about everyone.</p>
+<p>The reporting list, for the proposal and the pitch: the plot of binned outcomes against the running variable with the fits, which is the figure that convinces; the bandwidth and how it was chosen; the density test; the covariate checks; and how many observations sit near the cutoff, because that is the effective sample size. Lee and Lemieux’s survey is the standard guide, and the Remix chapter follows it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-designs" class="slide level2">
+<h2>Three designs</h2>
+<div style="font-size:0.56em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 3%">
+<col style="width: 14%">
+<col style="width: 17%">
+<col style="width: 23%">
+<col style="width: 15%">
+<col style="width: 14%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Design</th>
+<th style="text-align: left;">Variation used</th>
+<th style="text-align: left;">Assumption</th>
+<th style="text-align: left;">Tests that could reject it</th>
+<th style="text-align: left;">The estimate is for</th>
+<th style="text-align: left;">Done well</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Randomized experiment</td>
+<td style="text-align: left;">A coin</td>
+<td style="text-align: left;">The coin alone decides; no interference; a true outcome</td>
+<td style="text-align: left;">Joint balance test; real-outcome check</td>
+<td style="text-align: left;">The population randomized</td>
+<td style="text-align: left;">eBay’s 210 market areas</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Instrumental variables</td>
+<td style="text-align: left;">The part of treatment the instrument moves</td>
+<td style="text-align: left;">Relevance, exclusion, independence, monotonicity</td>
+<td style="text-align: left;">First-stage F, placebo tests</td>
+<td style="text-align: left;">Compliers</td>
+<td style="text-align: left;">The draft lottery</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Regression discontinuity</td>
+<td style="text-align: left;">Units just above and below a cutoff</td>
+<td style="text-align: left;">Continuity at the cutoff</td>
+<td style="text-align: left;">Density test, covariate jumps</td>
+<td style="text-align: left;">Units at the cutoff</td>
+<td style="text-align: left;">Yelp’s half stars</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>In 21,000 test statistics from economics journals, p-hacking shows most in IV studies and least in experiments and discontinuity designs.</li>
+<li>Your proposal’s identification section fills in each column for its design.</li>
+</ul>
+<p><a href="https://doi.org/10.1257/aer.20190687" style="font-size:0.55em; color:#6b6b6b">Brodeur, Cook and Heyes (2020), <em>Methods Matter: p-Hacking and Publication Bias in Causal Analysis in Economics</em>, American Economic Review 110, 3634–3660.</a></p>
+<aside class="notes">
+<p>Two minutes. A reference slide for the session B cards.</p>
+<p>Read the Assumption column down. The experiment’s assumptions are the coin itself, no interference, and a true outcome, one that measures what the decision needs, which is why the other two designs are described as imitating it. The third is the lesson of the stated-preference slide: randomization protects the comparison, not the measurement. The instrument needs four assumptions, three of them untestable; the discontinuity needs one, a smooth curve. Then the tests column: what the data can do is test the implications, balance, the first stage, the density, and they can reject an assumption but never confirm it.</p>
+<p>The first bullet. Brodeur, Cook and Heyes collected over 21,000 test statistics from 25 economics journals and looked for results bunched just past the 5% threshold, the trace of p-hacking. The bunching is strongest in instrumental-variables studies, then difference-in-differences (next week’s design), and weakest in randomized trials and regression discontinuities. The designs that leave the researcher the fewest choices show the least evidence of choice.</p>
+<p>The population column is the session B question that matters for the proposal: when the team names the design, they name who the estimate is about, and the card asks whether that is who the decision concerns.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="matching-a-design-to-a-question" class="title-slide slide level1 center">
+<h1>4. Matching a design to a question</h1>
+<aside class="notes">
+<p>Thirty seconds. Seven research questions, each from a published study and told as the setting its authors faced. For each, the room proposes a design and names the assumption before the click shows what the authors did. The order is two experiments, two instruments, two discontinuities, and one that needs next week’s design. Budget about five minutes each.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="does-treating-children-for-worms-keep-them-in-school" class="slide level2 case">
+<h2>Does treating children for worms keep them in school?</h2>
+<ul>
+<li>In 1998 a nonprofit in western Kenya planned free deworming for 75 primary schools. It could not afford to treat them all at once.</li>
+<li>Worms spread through soil contaminated by infected children.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: assigned schools, by alphabetical rotation within zones, to three groups of 25 starting in 1998, 1999 and 2001.</li>
+<li>School participation rose 7.5 points in treated schools. Assigning children within schools would have missed the gains of untreated classmates.</li>
+</ul>
+<p><a href="https://doi.org/10.1111/j.1468-0262.2004.00481.x" style="font-size:0.55em; color:#6b6b6b">Miguel and Kremer (2004), <em>Worms: Identifying Impacts on Education and Health in the Presence of Treatment Externalities</em>, Econometrica 72, 159–217.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. The answer to draw out: randomize schools, because of spillovers. If children were randomized within a school, the untreated children would catch fewer worms from their treated classmates, so the control group would be partly treated and the comparison would understate the effect. The paper says individual randomization would “doubly” underestimate: it misses the spillover and shrinks the difference. The phase-in answers the NGO’s budget constraint and the ethics question: every school is treated eventually, and the not-yet-treated are the comparison. This is the unit-of-randomization slide from section 1, with a real cost.</p>
+<p>Details for questions. The NGO was ICS Africa, working with the Busia District health office; over 30,000 pupils. Assignment was stratified by zone, then schools were listed alphabetically and every third went to a group. That is close to random but is not a lottery, and the epidemiologists who re-analyzed the data call it quasi-randomized. The headline 7.5 points is the total effect in treated schools, including spillovers within the school; the simple treated-minus-comparison difference is 5.1 points, and spillovers raised participation across the area, comparison schools included, by about 2 points. Absenteeism fell by a quarter. Test scores did not move. The treatment came with worm-prevention lessons, so it is a bundle.</p>
+<p>The replication dispute. In 2015 Aiken, Davey, Hargreaves and Hayes re-ran the analysis with the original data, code and methods (International Journal of Epidemiology 44, <a href="https://doi.org/10.1093/ije/dyv127" class="uri">https://doi.org/10.1093/ije/dyv127</a>). After correcting coding errors, chiefly in the spillover to schools 3 to 6 km away, they found little evidence of spillovers to nearby schools, and the combined effect fell to 3.9 points and lost significance. A companion paper by Davey, Aiken, Hayes and Hargreaves re-analyzed the data with epidemiological methods (<a href="https://doi.org/10.1093/ije/dyv128" class="uri">https://doi.org/10.1093/ije/dyv128</a>). Hicks, Kremer and Miguel replied that the main effects survive (<a href="https://doi.org/10.1093/ije/dyv129" class="uri">https://doi.org/10.1093/ije/dyv129</a>). A good example of why data and code are published.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-much-does-the-look-of-a-loan-offer-matter-next-to-its-price" class="slide level2 case">
+<h2>How much does the look of a loan offer matter next to its price?</h2>
+<ul>
+<li>In 2003 a South African lender mailed loan offers to 53,194 former clients, to learn what brought them back.</li>
+<li>Each letter carried an interest rate, a deadline, and design features such as a photo.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: the rate, the deadline and eight design features were each randomized, independently, on every letter.</li>
+<li>A woman’s photo instead of a man’s raised demand about as much as a 25% rate cut.</li>
+</ul>
+<p><a href="https://doi.org/10.1162/qjec.2010.125.1.263" style="font-size:0.55em; color:#6b6b6b">Bertrand, Karlan, Mullainathan, Shafir and Zinman (2010), <em>What’s Advertising Content Worth? Evidence from a Consumer Credit Marketing Field Experiment</em>, Quarterly Journal of Economics 125, 263–305.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. The answer to draw out: randomize each feature independently on each letter, a factorial design. Every feature then has its own randomized comparison, and the randomized interest rate gives a price to measure each feature against. The unit is the client, because each client gets one letter and clients do not interact.</p>
+<p>What to press on. Thirteen content dummies, coding the eight features, mean about one significant result by chance at 5%, which the authors say themselves: meeting 7’s multiple-testing problem. They also say they had power to detect only large effects, equivalent to a 25% to 38% rate cut. The photo comparison is a woman’s photo against a man’s photo; any photo against no photo had no significant effect. In the working paper, the effect was significant for male clients and not for female clients. Longer deadlines raised take-up strongly. Mean take-up was 8.5%.</p>
+<p>The lender made small, short-term, high-interest loans to working poor clients; offered monthly rates ran from 3.25% to 11.75%. For a firm, this is the A/B test done properly: many arms, one randomization each, and a price arm to put every effect in money.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="does-a-third-child-reduce-how-much-mothers-work" class="slide level2 case">
+<h2>Does a third child reduce how much mothers work?</h2>
+<ul>
+<li>In US census data, mothers of three children work less than mothers of two.</li>
+<li>Women who want large families may also prefer to work less, which confounds the comparison.</li>
+<li>The 1980 and 1990 censuses record each mother’s children and her work.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: the instrument was whether the first two children had the same sex. It raised the chance of a third by 6 points.</li>
+<li>By IV, a third child cut compliers’ work by 5.7 weeks a year. OLS gave 9.0 weeks.</li>
+</ul>
+<p><a href="https://doi.org/10.3386/w5778" style="font-size:0.55em; color:#6b6b6b">Angrist and Evans (1998), <em>Children and Their Parents’ Labor Supply: Evidence from Exogenous Variation in Family Size</em>, American Economic Review 88, 450–477.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. The answer to draw out: something as good as random that moves family size and touches work only through it. Many parents want one boy and one girl, and the sex of a child is close to a coin flip, so parents of two boys or two girls are more likely to try again. 37.2% of mothers with a boy and a girl had a third child, against 43.2% with two of the same sex (1980). Numbers above are for all women in the 1980 census; the 1990 census gives similar results. OLS overstates the effect, as the selection story predicts. Husbands’ work did not respond.</p>
+<p>The assumptions to argue. Exclusion: same-sex siblings can share clothes and rooms, which lowers the cost of children and could change work directly (Rosenzweig and Wolpin 2000, Journal of Economic Literature 38, 827–874, <a href="https://doi.org/10.1257/jel.38.4.827" class="uri">https://doi.org/10.1257/jel.38.4.827</a>). Monotonicity: no parent may do the opposite of what the instrument pushes. Parents who want two sons would stop after two boys and try again after a boy and a girl, which makes them defiers. Son preference among US parents is the reason to think some exist (Dahl and Moretti 2008, Review of Economic Studies 75, 1085–1120, <a href="https://doi.org/10.1111/j.1467-937X.2008.00514.x" class="uri">https://doi.org/10.1111/j.1467-937X.2008.00514.x</a>; Huber 2015, LABOUR 29, 1–14, <a href="https://doi.org/10.1111/labr.12045" class="uri">https://doi.org/10.1111/labr.12045</a>, who tests the instrument and finds no violation). The compliers are parents who had a third child only because the first two matched.</p>
+<p>The authors also used twins at the second birth as an instrument, with a first stage of 60 points. Twin births turn out to be related to the mother’s health (Bhalotra and Clarke 2019, Review of Economics and Statistics 101, 853–864, <a href="https://doi.org/10.1162/rest_a_00789" class="uri">https://doi.org/10.1162/rest_a_00789</a>), so nature’s coin is not always fair. The journal article has no DOI; the link goes to the NBER working paper.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-sensitive-are-fish-buyers-to-price" class="slide level2 case">
+<h2>How sensitive are fish buyers to price?</h2>
+<ul>
+<li>At New York’s Fulton Fish Market, dealers sell fresh whiting to shops and restaurants at unposted prices.</li>
+<li>Supply and demand both shift from day to day, so price and quantity alone do not trace out demand.</li>
+<li>One dealer’s records cover 111 trading days in 1991 and 1992.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: stormy weather at sea cut the catch and raised the price. Weather at sea was the instrument.</li>
+<li>By IV, a 10% price rise cut quantity by about 10%. OLS gave about 5%.</li>
+</ul>
+<p><a href="https://doi.org/10.1111/1467-937X.00141" style="font-size:0.55em; color:#6b6b6b">Angrist, Graddy and Imbens (2000), <em>The Interpretation of Instrumental Variables Estimators in Simultaneous Equations Models with an Application to the Demand for Fish</em>, Review of Economic Studies 67, 499–527.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. This is the bike-rental demo from section 2 with real data: something that shifts supply and not demand. Students who remember the fuel price will reach for weather. Stormy days were defined by wave height above 4.5 feet and wind above 18 knots off Long Island, averaged over the three days before the market. 32 of the 111 days were stormy.</p>
+<p>The numbers. The IV price elasticity is about −1.1 with the stormy instrument, the OLS about −0.5, from the working-paper version of the article and Imbens’s 2014 restatement on the same data (Statistical Science 29, 323–358, <a href="https://doi.org/10.1214/14-STS480" class="uri">https://doi.org/10.1214/14-STS480</a>). The journal tables may differ slightly, so the slide rounds.</p>
+<p>The assumptions to argue, which the authors list themselves. Weather at sea may go with weather on shore, which could change how many people buy fish. Buyers who know a storm is coming might change when they shop. The data are one dealer’s, so storms must hit all dealers alike. The estimate is local: storms move prices in the middle of the range, so it says little about demand at very low or very high prices. The paper’s own contribution is what IV estimates when demand is neither a straight line nor the same every day, stated in potential outcomes: a weighted average of slopes, the LATE idea for supply and demand.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="does-drinking-raise-death-rates-among-young-adults" class="slide level2 case">
+<h2>Does drinking raise death rates among young adults?</h2>
+<ul>
+<li>Young adults who drink more die more often, but risk-takers also drink more.</li>
+<li>In the United States, buying alcohol becomes legal on the 21st birthday.</li>
+<li>US death records give the exact dates of birth and death for every death from 1997 to 2004.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: compared people just before and just after their 21st birthday. Days spent drinking rose about 21% at 21.</li>
+<li>Deaths jumped about 9%, mostly from motor vehicle accidents, suicides and alcohol-related causes.</li>
+</ul>
+<p><a href="https://doi.org/10.1257/app.1.1.164" style="font-size:0.55em; color:#6b6b6b">Carpenter and Dobkin (2009), <em>The Effect of Alcohol Consumption on Mortality: Regression Discontinuity Evidence from the Minimum Drinking Age</em>, American Economic Journal: Applied Economics 1, 164–182.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. The answer to draw out: a discontinuity in age at 21. The running variable is age in days; nobody can choose their birthday, so the manipulation worry from the density slide does not arise, though the paper itself runs no density test. Drinking comes from a national health survey with exact birth and interview dates.</p>
+<p>The assumption to argue is continuity: nothing else that affects deaths may change at 21. Students may name other things that switch on at 21 in the United States, which is the right attack. The authors show education, employment and insurance do not jump. They also add dummies for the birthday itself, because deaths spike on the day of the party.</p>
+<p>The numbers. Deaths rose about 9% (0.087 in the preferred specification, 0.074 to 0.096 across the four), about 10 per 100,000 person-years. Deaths mentioning alcohol rose 35%, suicides 16%, motor vehicle deaths 15%; homicides did not change. Dividing the jump in deaths by the jump in drinking days gives an elasticity of 0.43, which is a fuzzy discontinuity: it assumes the whole jump in deaths runs through drinking days, an exclusion restriction. The drinking jump is only marginally significant (t about 1.9). The estimate is local to 21 and says nothing direct about a drinking age of 18.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="do-decades-of-polluted-air-shorten-lives" class="slide level2 case">
+<h2>Do decades of polluted air shorten lives?</h2>
+<ul>
+<li>From the 1950s, China gave free heating coal only north of the Huai River.</li>
+<li>The river lies near where January averages 0°C. Coal boilers heat homes to the north.</li>
+<li>Death records by cause cover 145 sites from 1991 to 2000.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: fit one cubic curve in latitude with a jump at the river. Particle pollution was 55% higher to the north.</li>
+<li>Life expectancy was 5.5 years lower to the north. A 2017 study with local linear fits found 3.1 years.</li>
+</ul>
+<p><a href="https://doi.org/10.1073/pnas.1300018110" style="font-size:0.55em; color:#6b6b6b">Chen, Ebenstein, Greenstone and Li (2013), <em>Evidence on the Impact of Sustained Exposure to Air Pollution on Life Expectancy from China’s Huai River Policy</em>, PNAS 110, 12936–12941.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. The answer to draw out: a discontinuity in geography, with latitude relative to the river as the running variable. People were not assigned to a side by their health, and the policy was set on a climate line decades earlier. Pollution here is total suspended particulates, dust and soot, measured in 90 cities.</p>
+<p>The assumptions to argue. Continuity: places just north and south of the river differ only in heating. Attacks: the line is a climate boundary, so winters are colder to the north, which could matter for health directly; people may migrate across the line. The authors find no jump in deaths from causes unrelated to the heart and lungs, a placebo outcome.</p>
+<p>The method lesson ties to the local-linear slide. The 2013 estimate fit one cubic polynomial in latitude across the whole country. Gelman and Zelizer criticized that fit (Research and Politics 2, 2015, <a href="https://doi.org/10.1177/2053168015569830" class="uri">https://doi.org/10.1177/2053168015569830</a>), and Gelman and Imbens made the general case against high-order polynomials in discontinuity designs (Journal of Business and Economic Statistics 37, 447–456, 2019, <a href="https://doi.org/10.1080/07350015.2017.1366909" class="uri">https://doi.org/10.1080/07350015.2017.1366909</a>). The 2017 follow-up by Ebenstein, Fan, Greenstone, He and Zhou used newer data, a different pollutant (PM10) and local linear fits: PM10 46% higher and life expectancy 3.1 years lower north of the river (PNAS 114, 10384–10389, <a href="https://doi.org/10.1073/pnas.1616784114" class="uri">https://doi.org/10.1073/pnas.1616784114</a>). The finding survived with a smaller magnitude.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="did-mobile-phones-raise-fishermens-profits" class="slide level2 case">
+<h2>Did mobile phones raise fishermen’s profits?</h2>
+<ul>
+<li>Fishermen in Kerala, India, could reach one beach market a day and saw no other prices. Some days they dumped unsold fish.</li>
+<li>Mobile service reached three coastal regions in 1997, 1998 and 2000. A survey tracked 15 markets weekly.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the author did</strong>: compared each region’s change after service arrived with the change in the other regions, next week’s difference-in-differences.</li>
+<li>Price gaps between markets shrank sharply, waste fell from 5–8% of the catch to zero, and profits rose 8%.</li>
+</ul>
+<p><a href="https://doi.org/10.1162/qjec.122.3.879" style="font-size:0.55em; color:#6b6b6b">Jensen (2007), <em>The Digital Provide: Information (Technology), Market Performance, and Welfare in the South Indian Fisheries Sector</em>, Quarterly Journal of Economics 122, 879–924.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. The case none of today’s three designs fits well. Nobody randomized the towers, no instrument moves phone use without touching fishing, and there is no score with a cutoff. What there is: the same change arriving in different places at different times. The comparison is each region before and after, against each of the other regions. Some of those were already connected, such as region I as the control for region II, which is the staggered-timing problem next week takes up.</p>
+<p>The assumption to argue: without phones, the regions would have moved alike. Providers rolled out service city by city in order of population, which is not random but is unrelated to the fish catch on its face. Next week covers this assumption, parallel trends, and how staggered timing can mislead.</p>
+<p>Numbers. The coefficient of variation of prices across markets fell from 60–70% to 15% or less; by 2001 over 60% of boats used phones; retail sardine prices fell just under 4%. Boats without phones also gained, through better-behaved prices. Later field work argues the result rests partly on Kerala’s coastline and credit relationships (Srinivasan and Burrell 2013, <a href="https://doi.org/10.1145/2516604.2516618" class="uri">https://doi.org/10.1145/2516604.2516618</a>).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="can-your-project-use-one-of-these-designs" class="slide level2">
+<h2>Can your project use one of these designs?</h2>
+<ul>
+<li>What experiment would answer your question if you could run it?</li>
+<li>Can you assign the treatment to some units at random, even in a small pilot?</li>
+<li>Did something as good as random move the treatment, with no other path to the outcome?</li>
+<li>Does a score crossing a cutoff decide who is treated?</li>
+<li>If none applies, next week’s designs use a change in treatment over time.</li>
+</ul>
+<aside class="notes">
+<p>One minute. Each student writes one line per question before the break. The session B sheet starts from these, after the cards.</p>
+<p>The first question is the ideal experiment from the LaLonde slide. The next three ask, in order, for an experiment, an instrument and a discontinuity. Most teams will answer no to all three, and that is the expected result. The project then needs one of next week’s designs, or it is descriptive, and the proposal has to say which. Finding that out today is better than finding it out in November.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>AEM 6991</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <style>
+    /* Meeting 8: bullets on slides that carry a figure or an animation are set
+       at 80% so the figure, its controls and the source line fit. */
+    .reveal .slides section.slide.level2:has(> .m06) > ul,
+    .reveal .slides section.slide.level2:has(> .m06) > ol { font-size: 0.74em; }
+    /* Height caps per demo; the figure scales down and stays centered. */
+    .reveal .m06[data-demo="randomize"] .m06-svg { max-height: 262px; }
+    .reveal .m06[data-demo="balance"] .m06-svg { max-height: 236px; }
+    .reveal .m06[data-demo="iv"] .m06-svg { max-height: 198px; }
+    .reveal .m06[data-demo="weakiv"] .m06-svg { max-height: 238px; }
+    .reveal section.case ul { font-size: 0.94em; }
+    .reveal .m06[data-demo="rd"] .m06-svg { max-height: 232px; }
+    .reveal .m06[data-demo="arms"] .m06-svg { max-height: 222px; }
+    .reveal .m06[data-demo="geo"] .m06-svg { max-height: 175px; }
+    .reveal .m06[data-demo="dag"] .m06-svg { max-height: 258px; }
+    .reveal .m06[data-demo="dag"] .m06-controls { justify-content: center; }
+    .reveal .m06[data-demo="iv"] .m06-slider, .reveal .m06[data-demo="rd"] .m06-slider { width: 150px; }
+    /* The solution line on each failure slide. */
+    .reveal .slides section .solution { color: #b31b1b; }
+    /* Source lines are 0.55em links inside a full-size paragraph. Size the paragraph instead. */
+    .reveal .slides section p:has(> a[style*="font-size:0.55em"]) { font-size: 0.55em; line-height: 1.3; margin: 0.5em 0 0; }
+    .reveal .slides section p:has(> a[style*="font-size:0.55em"]) > a { font-size: 1em !important; }
+    </style>
+    <script src="sim/m06-core.js"></script>
+    <script src="sim/m08-demos.js"></script>
+    <script>window.M06 && M06.init();</script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/arielortizbobea\.github\.io\/aem6991\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

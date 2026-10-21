@@ -42,7 +42,7 @@
   <td class="hw"></td></tr>
 <tr class="g-last g03"><td>Wed Oct 21<em>Zoom</em></td>
   <td class="topic"><a href="sessions/09-designs-ii.html">9 · Research designs II</a>
-    <span class="t-desc">Difference-in-differences, panel data with fixed effects, event studies. The question is the same each time: which identifying variation survives the fixed effects, and what assumption is left carrying the estimate.</span></td>
+    <span class="t-desc">Difference-in-differences, panel data with fixed effects, and event studies of both kinds, with synthetic control and staggered adoption. For each: the graph, the assumption that carries the estimate, how it fails, and who the estimate is about.</span></td>
   <td class="hw">Project description — up to three pages, on Canvas by Friday, October 23</td></tr>
 
 <tr class="g-first g04"><td class="g-rail" rowspan="3"><span>Communication</span></td><td>Wed Oct 28</td>

@@ -1,0 +1,28 @@
+<style>
+/* Meeting 9: bullets on slides that carry a figure or an animation are set
+   at 74% so the figure, its controls, the readout and the source line fit. */
+.reveal .slides section.slide.level2:has(> .m06) > ul,
+.reveal .slides section.slide.level2:has(> .m06) > ol { font-size: 0.74em; }
+/* Height caps per demo; the figure scales down and stays centered. The
+   960-wide demos are drawn about 262 tall, so at 92% width a cap near 262
+   leaves them at full size. Demos with two rows of controls get less. */
+.reveal .m06[data-demo="pdag"] .m06-svg { max-height: 300px; }
+.reveal .m06[data-demo="pdag"] .m06-controls { justify-content: center; }
+.reveal .m06[data-demo="did"] .m06-svg { max-height: 240px; }
+.reveal .m06[data-demo="fe"] .m06-svg { max-height: 236px; }
+.reveal .m06[data-demo="car"] .m06-svg { max-height: 236px; }
+.reveal .m06[data-demo="event"] .m06-svg { max-height: 236px; }
+.reveal .m06[data-demo="staggered"] .m06-svg { max-height: 240px; }
+.reveal .m06[data-demo="synth"] .m06-svg { max-height: 240px; }
+.reveal section.case ul { font-size: 0.94em; }
+/* Text slides that carry a table or many bullets, marked {.dense}. */
+.reveal .slides section.dense > ul, .reveal .slides section.dense > ol { font-size: 0.86em; }
+/* The solution line on each failure slide. */
+.reveal .slides section .solution { color: #b31b1b; }
+/* Source lines are 0.55em links inside a full-size paragraph. Size the paragraph instead. */
+.reveal .slides section p:has(> a[style*="font-size:0.55em"]) { font-size: 0.55em; line-height: 1.3; margin: 0.5em 0 0; }
+.reveal .slides section p:has(> a[style*="font-size:0.55em"]) > a { font-size: 1em !important; }
+</style>
+<script src="sim/m06-core.js"></script>
+<script src="sim/m09-demos.js"></script>
+<script>window.M06 && M06.init();</script>

@@ -44,7 +44,7 @@ format:
 
 ## Session A · 2:00–3:15
 
-Three designs that use change over time, each drawn before it is described. Panel data follow the same units over several periods, so a confounder that does not change can be removed by comparing each unit with itself. Difference-in-differences first, opened by John Snow's comparison of two London water companies before and after one of them moved its intake in 1852: cholera deaths fell by 57 per 10,000 residents in the districts it partly supplied, relative to districts it did not reach. A simulated coffee chain that launches a mobile-ordering app in one region shows what each subtraction removes, and what parallel trends assumes. Then the ways it fails: trainees whose earnings dipped just before job training, Philadelphia's beverage tax pushing sales into the stores outside the city, standard errors with one treated state, and synthetic control for California's 1988 tobacco program. Fixed effects next, opened by women on corporate boards, where the association with firm value changed sign once each firm was compared with itself: what the fixed effects remove, the confounders that change over time and survive them, measurement error that they amplify, and a common shortcut that is not a fixed effect. Then event studies of both kinds. The finance event study, opened by stock prices on the day of earnings announcements: the market model, abnormal returns, and other news in the window. The panel event study: leads and lags, pre-trend tests that pass when parallel trends fails, and staggered adoption, where two-way fixed effects can report the wrong sign. The session closes with all six designs of meetings 8 and 9 in one table.
+One design, extended step by step, and a second design that shares its name. Panel data follow the same units over several periods, so a confounder that does not change can be removed by comparing each unit with itself. Two groups and two periods first, opened by John Snow's comparison of two London water companies before and after one of them moved its intake in 1852: cholera deaths fell by 57 per 10,000 residents in the districts it partly supplied, relative to districts it did not reach. A simulated coffee chain that launches a mobile-ordering app in one region shows what each subtraction removes and what parallel trends assumes, and two studies show it failing: trainees whose earnings dipped just before job training, and Philadelphia's beverage tax pushing sales into the stores outside the city. Many units and many periods next, opened by women on corporate boards, where the association with firm value changed sign once each firm was compared with itself: what two-way fixed effects remove, the confounders that change over time and survive them, measurement error that they amplify, a common shortcut that is not a fixed effect, and the event-study plot, whose pre-trend tests can pass when parallel trends fails. Then staggered adoption: when units adopt on different dates, the regression uses units already treated as controls and can report the wrong sign. Then few treated units: standard errors with one treated state, and synthetic control for California's 1988 tobacco program. Last, the finance event study, opened by stock prices on the day of earnings announcements: the market model, abnormal returns, and other news in the window. The session closes with all six designs of meetings 8 and 9 in one table.
 
 ## Session B · 3:30–4:30
 
@@ -66,24 +66,42 @@ Project description — up to three pages, on Canvas by Friday, October 23
 
 ## Outline
 
-1. **Difference-in-differences.** Compare the change in treated units with the change in untreated units. John Snow compared cholera deaths in London districts before and after one water company moved its intake.
-2. **Panel data with fixed effects.** **Panel data** follow the same units over many periods. With industry controls, firms with more women on their boards looked more valuable until each firm was compared with itself.
-3. **Event studies.** Trace an effect period by period around a dated event. Share prices of 30 large US firms moved on the day each announced its earnings.
-4. **Matching a panel design to a question.** Seven published studies each pose a question in the setting their authors faced.
+1. **Two groups and two periods.** Compare the treated units' change with the untreated units' change, as John Snow did for London's water.
+2. **Many units and many periods.** **Panel data** follow the same units over many periods, so each unit can be compared with itself.
+3. **Staggered adoption.** When units adopt on different dates, the usual regression uses units already treated as controls.
+4. **Few treated units.** With one treated state the usual standard errors are too small, and a weighted mix of other states can serve as its control.
+5. **Event studies in finance.** A separate design with the same name, built on share prices around a dated announcement.
+6. **Matching a panel design to a question.** Seven published studies, each posed in the setting its authors faced.
 
 ::: {.notes}
-One minute. Say the three in a sentence each. Each section opens with
-its real study, then the graph, then the animation, then the decisions
-and the failures, and closes with who the estimate is about, as last
-week. The running example in every animation is a coffee chain that
-launches a mobile-ordering app, with weekly sales per store as the
-outcome, so the same numbers carry across the three designs.
+One minute. Sections 1 to 4 are one design, extended step by step:
+two groups and two periods, then many units and periods with fixed
+effects and the event-study plot, then what goes wrong when units adopt
+on different dates, then what to do when only one or a few units are
+treated. Section 5 is the finance event study, a different design that
+shares the name and that the finance teams will use. The running example
+in every animation is a coffee chain that launches a mobile-ordering app,
+with weekly sales per store as the outcome.
+
+Where this sits. Meeting 7's bias table had a Solution column that named
+the designs: randomize, compare at the cutoff, use an instrument, hold
+the confounder fixed. Last week paid off the first three, and each needed
+an assignment the researcher can see: a coin, an instrument, a score
+with a cutoff. Most projects in this room have a change instead: a
+policy, a product launch, a regulation, a merger, an announcement, that
+reached some units and not others at a date they can name. Today's
+designs use that change. With the same units observed before and after,
+anything about a unit that does not change over time can be removed by
+comparing the unit with itself. The confounders that survive are the
+ones that change over time, and each section adds an assumption about
+them.
 :::
 
-# 1. Difference-in-differences
+# 1. Two groups and two periods
 
 ::: {.notes}
-Thirty seconds. Opened by Snow, then the graph, then the app.
+Thirty seconds. Opened by Snow, then the graph, then the app, then the
+ways the comparison fails.
 :::
 
 ## Snow studied cholera and London's water
@@ -274,7 +292,7 @@ the reported SE averages 0.51. The standard error here comes from each
 store's own after-minus-before change, which is the same as clustering
 by store. Meeting 7's rule is to cluster at the level of assignment, here
 the region, and with one treated region that is the few-treated-units
-problem three slides on. Store clustering is right here only because the
+problem of section 4. Store clustering is right here only because the
 simulation has no region-wide shocks.
 
 The two single differences, both on the slide. After the launch, app
@@ -318,7 +336,7 @@ the trends are parallel.
 What the pre-period buys. Six months before the launch the faster growth
 is visible in the left panel. That is the check: draw both groups'
 paths before the change. With one pre-period, as Snow had, there is
-nothing to plot but two levels. Section 3 turns this plot into the event
+nothing to plot but two levels. Section 2 turns this plot into the event
 study and shows that passing the check is weaker evidence than it
 looks.
 
@@ -443,158 +461,10 @@ data to Roberto's store formats, geography and period (28% net) and to 51
 border stores (34%).
 :::
 
-## Few treated units break clustered standard errors {.dense}
-
-- **Clustered standard errors** let a state's errors correlate over time. They need many treated states.
-- From 1993 Georgia's HOPE scholarship paid tuition. The controls are 41 states without merit aid.
-- It raised college enrollment by an estimated 7.8 percentage points.
-- Clustered by state, the 95% confidence interval is 5.8 to 9.7.
-- The **Conley–Taber** interval, built from the control states' shocks, is −1 to 21.
-- In simulations with one treated state, clustered 5% tests rejected a true zero effect 84% of the time.
-- [**Solution**: run a **permutation test**, treating each control as if treated, or use Conley–Taber.]{.solution}
-
-[Conley and Taber (2011), *Inference with "Difference in Differences" with a Small Number of Policy Changes*, Review of Economics and Statistics 93, 113–125.](https://doi.org/10.1162/REST_a_00049){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-Two minutes. Meeting 7 covered serial correlation and clustering by
-state with the Bertrand, Duflo and Mullainathan placebo laws. This slide
-adds only what happens when few units are treated.
-
-The setting. Georgia's HOPE scholarship, from 1993, pays full tuition at
-in-state public colleges for students with a 3.0 high-school grade point
-average. Following Dynarski (2004), the outcome is college enrollment of
-18- and 19-year-olds in the October Current Population Survey, 1989 to
-2000, with 41 control states, after dropping the other states that
-adopted merit aid in those years.
-
-Why clustering fails here. With one treated state, the estimate is
-Georgia's change minus the average change elsewhere, and its error is
-dominated by Georgia's own state-by-year shocks, which do not shrink as
-the sample grows. The clustered standard error estimates that variance
-from Georgia's residuals, which the regression forces toward zero. So
-the interval of 5.8 to 9.7 points is far too narrow. Conley and Taber use
-the 41 control states to learn the distribution of state-level shocks
-and build the interval from it: −1 to 21 points, which includes zero.
-
-The simulation numbers, from their Table 3: with 100 states, 10 periods
-and a true null, the state-clustered test rejects at a nominal 5% in 84%
-of samples with one treated state, 36% with two, 16% with five and 10%
-with ten. MacKinnon and Webb (2017, Journal of Applied Econometrics,
-https://doi.org/10.1002/jae.2508) find 75% in placebo laws on Current
-Population Survey data with one treated state, and that the wild cluster
-bootstrap is reliable only with about seven or more treated clusters.
-
-The permutation test is meeting 6's: pretend each control state was
-treated, re-estimate, and read the p-value from the treated state's rank.
-With 41 controls the smallest p-value is about 1/42. Both this and
-Conley–Taber assume the control states' shocks are distributed like
-Georgia's; states with small survey samples are noisier (Ferman and Pinto
-2019, Review of Economics and Statistics,
-https://doi.org/10.1162/rest_a_00759). The Philadelphia tax on the
-previous slide is a one-treated-city design too.
-:::
-
-## California's tobacco program had no matching state {.dense}
-
-- In 1988 California voters raised the cigarette tax 25 cents a pack and funded anti-smoking campaigns.
-- California's sales began falling in the late 1970s, while other states' still rose.
-- **Synthetic control** weights untreated units to track the treated unit's past.
-- Synthetic California is 33% Utah, 23% Nevada, 20% Montana, 16% Colorado and 7% Connecticut.
-- By 2000 California sold about 26 fewer packs per person than synthetic California.
-
-[Abadie, Diamond and Hainmueller (2010), *Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program*, Journal of the American Statistical Association 105, 493–505.](https://doi.org/10.1198/jasa.2009.ap08746){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-Two and a half minutes.
-
-The setting. Proposition 99, passed in November 1988 and in force from
-January 1989, raised California's cigarette tax by 25 cents a pack,
-earmarked the revenue for health and anti-smoking education, funded
-anti-smoking media campaigns, and spurred local smoke-free ordinances.
-The question: how much did cigarette consumption in California fall
-because of the program? The outcome is per-capita cigarette sales in
-packs, from state tax revenue, 1970 to 2000.
-
-Why difference-in-differences fails here. California's consumption
-peaked and began to fall in the late 1970s while the rest of the country
-was still rising; by 1988 the rest of the United States was 27% higher.
-The trends were not parallel before the law, so a comparison with the
-average state credits California's existing decline to the program.
-
-The design. Synthetic California is a weighted average of the 38 states
-that had no large tobacco program or tax rise of their own over 1989 to
-2000, with weights that are non-negative and sum to one, chosen to
-reproduce California's sales in the 19 years before the law and its
-cigarette prices, income, age structure and beer consumption. Five
-states get positive weight, Utah 0.334, Nevada 0.234, Montana 0.199,
-Colorado 0.164, Connecticut 0.069, and the other 33 get zero. The
-pre-period fit is close: mean squared error about 3, in packs squared.
-
-The result: about 26 fewer packs per person by 2000, and almost 20 a
-year on average over 1989 to 2000, about 25%. The estimate concerns the
-whole program, not the tax alone.
-
-If asked about newer estimators: synthetic difference-in-differences
-(Arkhangelsky et al. 2021, AER, https://doi.org/10.1257/aer.20190159) on
-the same data gives −15.6 packs averaged over the post-period, against
-−19.6 for synthetic control and −27.3 for plain difference-in-differences.
-The estimator matters when trends are not parallel.
-
-A question for the room: is Utah, with the largest weight and unusually
-low smoking, a sensible stand-in for California? The method chose Utah
-because its sales path matched California's. Whether its smoking culture
-matters is the open question.
-:::
-
-## Synthetic control weights a donor pool
-
-- The chain launches its app in one city. 20 cities without it form the **donor pool**.
-- Before launch the **root mean squared prediction error** (RMSPE) is $6,100 for the donor average and $540 for the synthetic control.
-- After launch the synthetic control's gap averages $3,900, against a true $4,000.
-- A **placebo in space** treats each donor as launched. The launch city ranks 1 of 21 on post/pre RMSPE.
-
-<div class="m06" data-demo="synth" style="width:92%;margin:0 auto"></div>
-
-::: {.notes}
-Two and a half minutes. Click "Average of the donors", then "Synthetic
-control", then "Placebo in space". The demo has no random draws.
-
-The data-generating process. Weekly sales per store, by month, in 21
-cities over 36 months, built from three common factors with different loadings in each
-city, a shock common to all, and noise. The launch city's loadings lie
-inside the donors' range, so a weighted mix can match it. The app adds
-$4,000 a week from month 25.
-
-Average of the donors: the launch city sits above it and on a different
-path, with a pre-launch RMSPE of 6.1 and a mean gap of 11.1 after the
-launch. The donor average
-is the plain comparison, and it fails for the reason California's did.
-
-Synthetic control: non-negative weights summing to one, chosen to
-minimize the pre-launch gap. Six cities get weight, the largest 0.30.
-The pre-launch RMSPE falls to 0.54, and the post-launch gap averages 3.9.
-
-Placebo in space: run the same method on each donor as if it had
-launched, and draw each placebo gap in grey. The test statistic is the
-ratio of post- to pre-launch RMSPE, so a placebo that fit badly before
-the launch does not count as a large effect. The launch city's ratio is
-7.3, the donors' run from 0.7 to 2.1, so it ranks first of 21 and the
-permutation p-value is 1/21 = 0.048. California ranked first of 39
-states, p = 1/39 = 0.026. With 17 units, as in the German reunification
-study, the smallest possible p-value is 1/17, above 5%.
-
-What the method needs (Abadie 2021, Journal of Economic Literature,
-https://doi.org/10.1257/jel.20191450): one or a few treated aggregate
-units, a long pre-period, donors untouched by the intervention, no
-anticipation, and a treated unit inside the donors' range. When the
-pre-period fit is poor, Abadie advises against the method.
-:::
-
 ## Who the DiD estimate is about
 
 - DiD estimates the **average treatment effect on the treated** (ATT): the effect on treated units in the periods observed.
 - Snow's estimate concerns 16 London sub-districts in 1854.
-- Synthetic control estimates the effect on one unit, such as California.
 - Report the 2×2 table of means, both groups' paths, the clustering and the number treated.
 
 [Roth, Sant'Anna, Bilinski and Poe (2023), *What's Trending in Difference-in-Differences?*, Journal of Econometrics 235, 2218–2244.](https://doi.org/10.1016/j.jeconom.2023.03.008){style="font-size:0.55em; color:#6b6b6b"}
@@ -610,9 +480,8 @@ often for a reason. The app region was the busier region; the effect of
 an app in a quiet region is not in the data.
 
 Snow's estimate is the effect of the change in supply on 16
-sub-districts in the 1854 epidemic. California's is the effect of one
-state's whole program over twelve years. Each is internally valid for
-its unit and says nothing directly about another state's tax.
+sub-districts in the 1854 epidemic. It is internally valid for those
+districts and says nothing directly about another city's water.
 
 The reporting list, for the proposal: the 2×2 table of means; a plot of
 both groups before and after; how the standard errors are clustered and
@@ -621,11 +490,12 @@ ends with a practitioner's checklist along these lines, and it is the
 best single reading for this section.
 :::
 
-# 2. Panel data with fixed effects
+# 2. Many units and many periods
 
 ::: {.notes}
-Thirty seconds. Opened by women on corporate boards, then the graph,
-then the same coffee chain with stores that choose when to adopt.
+Thirty seconds. The same comparison with many units and many periods.
+Opened by women on corporate boards, then two-way fixed effects, what
+they miss, and the event-study plot.
 :::
 
 ## Women on boards and firm value {.dense}
@@ -811,7 +681,7 @@ The solution has two parts. If the changing confounder can be measured,
 control for it, as long as it is not itself caused by the treatment. If
 not, the design has to supply timing the confounder cannot drive: a
 policy date set elsewhere, a lottery for the order of rollout, a sudden
-event. That is the event-study section and two of this afternoon's cases.
+event. Section 5 and two of this afternoon's cases use timing of that kind.
 A check that helps: leads of the treatment, next month's adoption in this
 month's regression, should have no effect. Under feedback or anticipation
 they often do.
@@ -918,12 +788,118 @@ the treatment, the treatment varies within groups, and it is well
 measured.
 :::
 
+## An event study estimates the effect month by month
+
+- App-region stores are compared with the others by month, with store and month fixed effects.
+- **Leads** and **lags** mark each month before and after the launch.
+- Month −1 is the **reference period**, set to zero. Leads near zero support parallel trends.
+- If the effect grows as customers learn the app, the lags climb from $1,000 to $7,000.
+- A single DiD coefficient reports their average, $4,000, and hides the path.
+
+<div class="m06" data-demo="event" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Three minutes. Start on "Effect constant", click "Draw one", then
+switch to "Effect grows" and click "Draw one" and "Draw 1,000".
+
+An event study, in applied economics today, is this regression: unit and
+time fixed effects plus an indicator for each period before and after
+treatment, the leads and the lags, with one period before treatment left
+out as the reference (Miller 2023, Journal of Economic Perspectives,
+https://doi.org/10.1257/jep.37.2.203). The lags trace the effect over
+time; the leads are a placebo test, because the treatment cannot have an
+effect before it happens. Restricting all leads to zero and all lags to
+one common value gives back the difference-in-differences regression.
+
+The design: the two-region rollout from section 1, 40 stores in the app
+region and 40 elsewhere, observed from six months before the launch to
+six months after. The regression has store fixed effects, month fixed
+effects and an indicator for each month relative to the launch in the
+app region, leaving out month −1. Standard errors are clustered by store,
+which, as in section 1, assumes no region-wide shocks.
+
+Effect constant: the leads scatter around zero, the lags around $4,000,
+and the joint test that all five leads are zero has p = 0.98. Effect
+grows: the effect is $1,000 in the launch month, rising by $1,000 a month
+to $7,000. The lags trace it. A single difference-in-differences
+coefficient would average the post-launch months and report $4,000 in
+both settings, and the manager deciding whether to keep the app for a
+year needs the path.
+
+What the plot shows that the table does not. The leads are the pre-trend
+check made formal. The lags show whether the effect builds, fades or
+appears with a delay. This is the figure referees expect in any panel
+design, and the one the solar example in the project description brief
+uses.
+
+The leads are a test of a testable implication: if parallel trends hold,
+and units do not respond in advance, they should be zero. Anticipation,
+units reacting before the treatment because they know it is coming, is a
+reason they might not be, and a reason to choose the reference period
+before any announcement.
+:::
+
+## A pre-trend test can pass when parallel trends fails
+
+- Suppose app-region sales already rose $500 a month faster, app or no app.
+- A **pre-trend test** that all leads are zero rejects in only 41% of samples.
+- Samples that pass estimate $6,300. Roth shows the same risk in 12 published studies.
+- [**Solution**: report how large a violation of parallel trends would overturn the result.]{.solution}
+
+<div class="m06" data-demo="event" style="width:92%;margin:0 auto"></div>
+
+[Roth (2022), *Pretest with Caution*, American Economic Review: Insights 4, 305–322.](https://doi.org/10.1257/aeri.20210236){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three minutes. Switch to "Treated stores already trending up", click
+"Draw one", then "Draw 1,000".
+
+The change: sales in the app region rise by $500 a week each month,
+before and after the launch, on top of a constant $4,000 effect. The
+first sample passes the pre-trend test (p = 0.44) and estimates $6,000.
+Across 1,000 samples, the joint test of the leads rejects at 5% in only
+41%. Among the 594 samples that pass, the average post-launch estimate is
+$6,300; over all samples it is $6,000; the truth is $4,000. Passing the
+test did not protect the estimate, and conditioning on passing made the
+bias slightly larger.
+
+Why. Every lead and lag is measured against month −1. A low draw in
+month −1 raises the leads and the lags together, so they are positively
+correlated. The samples in which the leads happen to
+look flat are disproportionately those in which noise pushed the
+pre-period up toward zero, and the same noise pushes the post-period up
+too.
+
+Roth's evidence. He took the 12 event studies published in the AER and
+the two AEJ applied journals from 2014 to 2018 that had replication data
+and a usable event-study plot, and imposed linear violations of parallel
+trends that the usual pre-test would detect only half the time. Those
+violations produced large biases; in the most extreme case, the bias was
+larger than the estimated effect and a nominal 95% interval covered the
+truth only 24% of the time. Conditioning on passing the pre-test made the
+bias larger in most specifications. Only one of the 12 papers reported a
+joint test of the leads.
+
+The solution. Rambachan and Roth (2023, Review of Economic Studies,
+https://doi.org/10.1093/restud/rdad018) replace "parallel trends holds"
+with a bound: each period-to-period change in the post-period violation
+is no larger than M̄ times the largest such change in the pre-period.
+They report a confidence interval valid under each M̄ and the breakdown
+value, the M̄ at which the interval first includes zero. In Benzarti and
+Carloni's (2019) data on France's July 2009 cut in the value-added tax on
+sit-down restaurants, the 2009 effect on profits survives up to M̄ of
+about 2; the average over all four post-years does not survive M̄ = 1. Their HonestDiD package for R and
+Stata does this, and Roth's pretrends package computes the power of the
+pre-test.
+:::
+
 ## Who the fixed-effects estimate is about
 
 - The estimate comes from units whose treatment changed.
 - Adams and Ferreira's units added or lost a woman, often one director.
 - That says little about a quota that changes many seats at once.
-- Report how many units switch and how much treatment varies within them.
+- In an event study each lag is the ATT that many periods after treatment.
+- Report how many units switch, how much treatment varies within them, and every lead and lag.
 
 ::: {.notes}
 One and a half minutes.
@@ -944,15 +920,352 @@ The reporting list: the number of switchers; the share of the
 treatment's variance that is within units, after the fixed effects; and
 both the pooled and the fixed-effects estimates, so the reader can see
 how much the fixed effects moved the result. Gormley and Matsa make the
-same request.
+same request. For an event study, every lead and lag with its interval
+and the reference period.
 :::
 
-# 3. Event studies
+# 3. Staggered adoption
 
 ::: {.notes}
-Thirty seconds. Two designs share the name. The finance one first,
-opened by earnings announcements, then the panel version, which is
-difference-in-differences with time on it.
+Thirty seconds. Section 2's regression when units adopt on different
+dates and the effect changes over time. First the intuition with two
+groups of stores, then the demo with three.
+:::
+
+## Early adopters become controls for late adopters
+
+- In **staggered adoption** units adopt on different dates.
+- The app's effect grows by $1,000 a week each month after adoption.
+- TWFE also uses early stores as controls for late stores.
+- Early stores' sales are still rising, so that comparison turns negative.
+
+![](figures/m09-staggered-comparisons.svg){.nostretch width=88% fig-alt="Two panels of weekly sales by month. Left: early stores adopt in month 4 and their sales climb while late stores stay flat; the comparison over months 1 to 11 estimates +3.5 against a true +3.5. Right: late stores adopt in month 12 and are compared with early stores, whose sales are still climbing from their own app; the comparison over months 4 to 16 estimates -4.5 against a true +2.0."}
+
+::: {.notes}
+Two and a half minutes. Left panel first, then the right.
+
+The setting: the coffee chain again, now with two groups of stores.
+Early stores adopt the app in month 4, late stores in month 12. Without
+the app every store's sales would be flat, so parallel trends holds
+exactly. The app's effect is zero in the adoption month and grows by
+$1,000 a week each month after, as customers learn to use it.
+
+Goodman-Bacon (2021) shows that the two-way fixed-effects estimate with
+staggered timing is a weighted average of every two-group, two-period
+comparison in the data. With two adoption dates there are two that
+matter.
+
+Left panel: early stores against late stores, months 1 to 11, while the
+late stores have no app. The late stores' change is zero, the early
+stores' change is their average effect over months 4 to 11, and the
+difference is +3.5, the true effect. This is a clean comparison: the
+control group is untreated.
+
+Right panel: late stores against early stores, months 4 to 16. Now the
+early stores are the control group, and they already have the app.
+Their sales rise from 46 to 58 over the window because their own effect
+keeps growing. The subtraction treats that rise as the trend the late
+stores would have followed, so it removes 6.5 from the late stores'
+change of 2.0: estimate −4.5 against a true +2.0. Papers on staggered
+designs call these forbidden comparisons.
+
+Why the growth matters. If the effect were a constant $4,000, the early
+stores' sales would jump once in month 4 and stay flat, their change over
+the right panel's window would be zero, and the right panel would also
+give the right answer. The problem needs effects that change over time,
+which is the usual case: customers learn an app, a law's effects build,
+a program's graduates accumulate.
+
+The next slide's demo has three groups and shows the weights.
+:::
+
+## Growing effects bias staggered TWFE estimates
+
+- Now three groups of 30 stores adopt in months 4, 8 and 12.
+- TWFE also uses stores that already have the app as controls, with 60% of its weight.
+- If effects grow with time, TWFE averages −$1,100, though no store's true effect is negative.
+- [**Solution**: use **Callaway–Sant'Anna**, which compares only with not-yet- or never-treated units.]{.solution}
+
+<div class="m06" data-demo="staggered" style="width:92%;margin:0 auto"></div>
+
+[Goodman-Bacon (2021), *Difference-in-Differences with Variation in Treatment Timing*, Journal of Econometrics 225, 254–277.](https://doi.org/10.1016/j.jeconom.2021.03.014){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Three and a half minutes. Start on "Effect constant" and "All adopt",
+click "Draw 500". Then switch to "Effect grows with time" and click
+"Draw 500". Then switch to "Some never adopt" and draw again.
+
+The design: three groups of 30 stores adopt the app in months 4, 8 and
+12 of a 16-month panel, and every store eventually adopts.
+
+Effect constant: two-way fixed effects average 4.00 and Callaway–Sant'Anna
+3.95, both on target. When the effect is the same everywhere
+and always, the regression is fine.
+
+Effect grows: the effect is $1,000 for each month since adoption,
+starting at zero in the adoption month. Two-way fixed effects average
+−1.10, the wrong sign. The comparison that uses only stores not yet
+treated averages 2.79 against its truth of 2.83. That truth averages the
+store-months before month 12, because once every store has the app there
+is no untreated store left to compare with. Over every treated
+store-month the average effect is 4.59, so the two-way estimate has the
+wrong sign against either target.
+
+Why, from Goodman-Bacon's decomposition. The two-way estimate is a
+weighted average of every two-group, two-period comparison in the data.
+Some are clean: early adopters against stores that have not yet adopted.
+Others use stores that already have the app as the control group for
+later adopters. When the effect grows, the already-treated stores' sales
+are rising because of their own app, so the later adopters look worse by
+comparison, and those comparisons are negative. Here they get 60% of the
+weight: 8 against 4 at −2.5, 12 against 4 at −4.5, 12 against 8 at −2.5.
+The weighted sum is exactly −1.10.
+
+With some never-adopters, the weight on bad comparisons falls to 30% and
+two-way fixed effects average 1.30 against a truth of 4.59, still badly
+off.
+
+The solution, in software: Callaway and Sant'Anna (2021,
+https://doi.org/10.1016/j.jeconom.2020.12.001) estimate an effect for each
+adoption cohort in each period, using never-treated or not-yet-treated
+units as controls, and then average them; R package did, Stata csdid.
+Sun and Abraham (2021, https://doi.org/10.1016/j.jeconom.2020.09.006) do
+the same for event-study plots, and show that leads of a two-way event
+study can show a pre-trend that is only effect heterogeneity. Borusyak,
+Jaravel and Spiess (2024) impute each treated unit's untreated outcome;
+the stacked design builds a clean comparison for each adoption date. The
+Remix chapter 10 works through all of them except the stacked design.
+:::
+
+## Staggered designs are common in finance research
+
+- In 2000–2019, 407 of 744 DiD papers in top finance and accounting journals were staggered.
+- Baker, Larcker and Wang re-estimated two published results with newer estimators.
+- A 2017 study found board reforms in 41 countries raised Tobin's q by 0.11. Newer estimators give an insignificant 0.06.
+- [**Solution**: plot adoption dates, decompose the TWFE estimate, and use a staggered-timing estimator.]{.solution}
+
+[Baker, Larcker and Wang (2022), *How Much Should We Trust Staggered Difference-in-Differences Estimates?*, Journal of Financial Economics 144, 370–395.](https://doi.org/10.1016/j.jfineco.2022.01.004){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+One and a half minutes. For the finance teams.
+
+The count. Baker, Larcker and Wang read every difference-in-differences
+paper published from 2000 to 2019 in the top five finance journals and the
+top five accounting journals: 744 papers, of which 407 (55%) used
+staggered adoption, 97% of those since 2010. The treatments are typically
+state or country laws adopted in different years: takeover laws, board
+reforms, banking rules.
+
+The re-examination on the slide. Fauver, Hung, Li and Taboada (2017,
+Journal of Financial Economics, https://doi.org/10.1016/j.jfineco.2017.04.010)
+studied 41 country-level board reforms, 1990 to 2012, such as
+requirements for independent directors or audit committees, and found
+that firm value rose: 0.110 in Tobin's q without covariates, significant
+at 5%. With the Callaway–Sant'Anna estimator the effect is 0.062 with a
+standard error of 0.135. The stacked estimate for the first reform stays
+significant, which the re-analysis attributes partly to a pre-trend. The
+original authors replied that their conclusions hold with three
+never-reforming countries added (SSRN, https://doi.org/10.2139/ssrn.3885472).
+
+The second study they re-examined is one of this afternoon's cases, so it
+is not named here.
+
+The solution list is theirs: plot when each unit is treated, run the
+Goodman-Bacon decomposition to see where the weight sits, show an event
+study without binning the end periods, and report at least one estimator
+built for staggered timing.
+:::
+
+## Who the staggered estimate is about
+
+- Callaway–Sant'Anna estimates an ATT for each adoption group in each period, then averages them.
+- Distant lags come only from the earliest adopters.
+- Once every unit is treated no untreated comparison is left.
+- Report the adoption dates, the comparison group and the estimator.
+
+::: {.notes}
+One minute.
+
+The parameter. Callaway and Sant'Anna estimate a separate effect for
+each adoption group in each period after it adopts, then average them
+with weights the researcher chooses: by group, by calendar period, or by
+time since adoption for an event-study plot.
+
+Each lag is an effect on the treated at that horizon, and with
+staggered adoption the units behind each lag differ: in a panel that ends
+in 2020, the effect ten years after adoption comes only from units that
+adopted by 2010. A lag that rises may be a growing effect or a change in
+which units are averaged.
+
+The demo's last setting showed the end of the data: once every store has
+the app there is no untreated store left to compare with, so the
+effect in those months is not estimated at all.
+
+The reporting list: a plot of when each unit is treated; which units
+serve as controls, never treated or not yet treated; every lead and lag
+with its interval, not binned at the ends; and the estimator.
+:::
+
+# 4. Few treated units
+
+::: {.notes}
+Thirty seconds. One or a few treated units: first the standard errors,
+then synthetic control for the comparison itself.
+:::
+
+## Few treated units break clustered standard errors {.dense}
+
+- **Clustered standard errors** let a state's errors correlate over time. They need many treated states.
+- From 1993 Georgia's HOPE scholarship paid tuition. The controls are 41 states without merit aid.
+- It raised college enrollment by an estimated 7.8 percentage points.
+- Clustered by state, the 95% confidence interval is 5.8 to 9.7.
+- The **Conley–Taber** interval, built from the control states' shocks, is −1 to 21.
+- In simulations with one treated state, clustered 5% tests rejected a true zero effect 84% of the time.
+- [**Solution**: run a **permutation test**, treating each control as if treated, or use Conley–Taber.]{.solution}
+
+[Conley and Taber (2011), *Inference with "Difference in Differences" with a Small Number of Policy Changes*, Review of Economics and Statistics 93, 113–125.](https://doi.org/10.1162/REST_a_00049){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. Meeting 7 covered serial correlation and clustering by
+state with the Bertrand, Duflo and Mullainathan placebo laws. This slide
+adds only what happens when few units are treated.
+
+The setting. Georgia's HOPE scholarship, from 1993, pays full tuition at
+in-state public colleges for students with a 3.0 high-school grade point
+average. Following Dynarski (2004), the outcome is college enrollment of
+18- and 19-year-olds in the October Current Population Survey, 1989 to
+2000, with 41 control states, after dropping the other states that
+adopted merit aid in those years.
+
+Why clustering fails here. With one treated state, the estimate is
+Georgia's change minus the average change elsewhere, and its error is
+dominated by Georgia's own state-by-year shocks, which do not shrink as
+the sample grows. The clustered standard error estimates that variance
+from Georgia's residuals, which the regression forces toward zero. So
+the interval of 5.8 to 9.7 points is far too narrow. Conley and Taber use
+the 41 control states to learn the distribution of state-level shocks
+and build the interval from it: −1 to 21 points, which includes zero.
+
+The simulation numbers, from their Table 3: with 100 states, 10 periods
+and a true null, the state-clustered test rejects at a nominal 5% in 84%
+of samples with one treated state, 36% with two, 16% with five and 10%
+with ten. MacKinnon and Webb (2017, Journal of Applied Econometrics,
+https://doi.org/10.1002/jae.2508) find 75% in placebo laws on Current
+Population Survey data with one treated state, and that the wild cluster
+bootstrap is reliable only with about seven or more treated clusters.
+
+The permutation test is meeting 6's: pretend each control state was
+treated, re-estimate, and read the p-value from the treated state's rank.
+With 41 controls the smallest p-value is about 1/42. Both this and
+Conley–Taber assume the control states' shocks are distributed like
+Georgia's; states with small survey samples are noisier (Ferman and Pinto
+2019, Review of Economics and Statistics,
+https://doi.org/10.1162/rest_a_00759). The Philadelphia tax in section 1
+is a one-treated-city design too.
+:::
+
+## California's tobacco program had no matching state {.dense}
+
+- In 1988 California voters raised the cigarette tax 25 cents a pack and funded anti-smoking campaigns.
+- California's sales began falling in the late 1970s, while other states' still rose.
+- **Synthetic control** weights untreated units to track the treated unit's past.
+- Synthetic California is 33% Utah, 23% Nevada, 20% Montana, 16% Colorado and 7% Connecticut.
+- By 2000 California sold about 26 fewer packs per person than synthetic California.
+
+[Abadie, Diamond and Hainmueller (2010), *Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program*, Journal of the American Statistical Association 105, 493–505.](https://doi.org/10.1198/jasa.2009.ap08746){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two and a half minutes.
+
+The setting. Proposition 99, passed in November 1988 and in force from
+January 1989, raised California's cigarette tax by 25 cents a pack,
+earmarked the revenue for health and anti-smoking education, funded
+anti-smoking media campaigns, and spurred local smoke-free ordinances.
+The question: how much did cigarette consumption in California fall
+because of the program? The outcome is per-capita cigarette sales in
+packs, from state tax revenue, 1970 to 2000.
+
+Why difference-in-differences fails here. California's consumption
+peaked and began to fall in the late 1970s while the rest of the country
+was still rising; by 1988 the rest of the United States was 27% higher.
+The trends were not parallel before the law, so a comparison with the
+average state credits California's existing decline to the program.
+
+The design. Synthetic California is a weighted average of the 38 states
+that had no large tobacco program or tax rise of their own over 1989 to
+2000, with weights that are non-negative and sum to one, chosen to
+reproduce California's sales in the 19 years before the law and its
+cigarette prices, income, age structure and beer consumption. Five
+states get positive weight, Utah 0.334, Nevada 0.234, Montana 0.199,
+Colorado 0.164, Connecticut 0.069, and the other 33 get zero. The
+pre-period fit is close: mean squared error about 3, in packs squared.
+
+The result: about 26 fewer packs per person by 2000, and almost 20 a
+year on average over 1989 to 2000, about 25%. The estimate concerns the
+whole program, not the tax alone.
+
+If asked about newer estimators: synthetic difference-in-differences
+(Arkhangelsky et al. 2021, AER, https://doi.org/10.1257/aer.20190159) on
+the same data gives −15.6 packs averaged over the post-period, against
+−19.6 for synthetic control and −27.3 for plain difference-in-differences.
+The estimator matters when trends are not parallel.
+
+A question for the room: is Utah, with the largest weight and unusually
+low smoking, a sensible stand-in for California? The method chose Utah
+because its sales path matched California's. Whether its smoking culture
+matters is the open question.
+:::
+
+## Synthetic control weights a donor pool
+
+- The chain launches its app in one city. 20 cities without it form the **donor pool**.
+- Before launch the **root mean squared prediction error** (RMSPE) is $6,100 for the donor average and $540 for the synthetic control.
+- After launch the synthetic control's gap averages $3,900, against a true $4,000.
+- A **placebo in space** treats each donor as launched. The launch city ranks 1 of 21 on post/pre RMSPE.
+
+<div class="m06" data-demo="synth" style="width:92%;margin:0 auto"></div>
+
+::: {.notes}
+Two and a half minutes. Click "Average of the donors", then "Synthetic
+control", then "Placebo in space". The demo has no random draws.
+
+The data-generating process. Weekly sales per store, by month, in 21
+cities over 36 months, built from three common factors with different loadings in each
+city, a shock common to all, and noise. The launch city's loadings lie
+inside the donors' range, so a weighted mix can match it. The app adds
+$4,000 a week from month 25.
+
+Average of the donors: the launch city sits above it and on a different
+path, with a pre-launch RMSPE of 6.1 and a mean gap of 11.1 after the
+launch. The donor average
+is the plain comparison, and it fails for the reason California's did.
+
+Synthetic control: non-negative weights summing to one, chosen to
+minimize the pre-launch gap. Six cities get weight, the largest 0.30.
+The pre-launch RMSPE falls to 0.54, and the post-launch gap averages 3.9.
+
+Placebo in space: run the same method on each donor as if it had
+launched, and draw each placebo gap in grey. The test statistic is the
+ratio of post- to pre-launch RMSPE, so a placebo that fit badly before
+the launch does not count as a large effect. The launch city's ratio is
+7.3, the donors' run from 0.7 to 2.1, so it ranks first of 21 and the
+permutation p-value is 1/21 = 0.048. California ranked first of 39
+states, p = 1/39 = 0.026. With 17 units, as in the German reunification
+study, the smallest possible p-value is 1/17, above 5%.
+
+What the method needs (Abadie 2021, Journal of Economic Literature,
+https://doi.org/10.1257/jel.20191450): one or a few treated aggregate
+units, a long pre-period, donors untouched by the intervention, no
+anticipation, and a treated unit inside the donors' range. When the
+pre-period fit is poor, Abadie advises against the method.
+:::
+
+# 5. Event studies in finance
+
+::: {.notes}
+Thirty seconds. A different design with the same name as section 2's
+event study, the one the finance teams will use. Opened by earnings
+announcements.
 :::
 
 ## Earnings news moved stock prices within a day {.dense}
@@ -1110,7 +1423,7 @@ names and dates so others can check.
 | Estimates | Abnormal returns by day | The effect in each period since treatment |
 :::
 
-- The panel version uses **leads** and **lags**: indicators for each period before and after treatment.
+- The finance version needs no untreated firms. The market return stands in for calendar time.
 - The Effect covers the finance design in ch. 17 and the panel design in ch. 18.
 
 [Miller (2023), *An Introductory Guide to Event Study Models*, Journal of Economic Perspectives 37, 203–230.](https://doi.org/10.1257/jep.37.2.203){style="font-size:0.55em; color:#6b6b6b"}
@@ -1124,15 +1437,9 @@ firm, a model of normal returns as the counterfactual, and abnormal
 returns around the date. It needs no untreated firms, because the market
 return stands in for everything that happens in calendar time.
 
-In applied economics today, an event study usually means a panel
-regression with unit and time fixed effects and a set of indicators for
-each period before and after treatment: the leads and the lags. Miller,
-at Cornell, writes it as the outcome on those indicators plus the fixed
-effects, with one period before treatment left out as the reference. The
-lags trace the effect over time; the leads are a placebo test, because
-the treatment cannot have an effect before it happens. Restricting all
-leads to zero and all lags to one common value gives back the
-difference-in-differences regression.
+In applied economics today, an event study usually means section 2's
+panel regression with leads and lags. Miller, at Cornell, wrote the
+introductory guide to that version.
 
 Which one fits a project. A dated announcement by a firm with traded
 shares: the finance design. A policy or product that reached some units
@@ -1145,262 +1452,58 @@ economists. Huntington-Klein's chapter 17 covers the finance kind and
 chapter 18 the panel kind.
 :::
 
-## An event study estimates the effect month by month
+## Who the finance event-study estimate is about
 
-- App-region stores are compared with the others by month, with store and month fixed effects.
-- Month −1 is the **reference period**, with its coefficient set to zero. Leads near zero support parallel trends.
-- If the effect grows as customers learn the app, the lags climb from $1,000 to $7,000.
-- A single DiD coefficient reports their average, $4,000, and hides the path.
-
-<div class="m06" data-demo="event" style="width:92%;margin:0 auto"></div>
-
-::: {.notes}
-Three minutes. Start on "Effect constant", click "Draw one", then
-switch to "Effect grows" and click "Draw one" and "Draw 1,000".
-
-The design: the two-region rollout from section 1, 40 stores in the app
-region and 40 elsewhere, observed from six months before the launch to
-six months after. The regression has store fixed effects, month fixed
-effects and an indicator for each month relative to the launch in the
-app region, leaving out month −1. Standard errors are clustered by store,
-which, as in section 1, assumes no region-wide shocks.
-
-Effect constant: the leads scatter around zero, the lags around $4,000,
-and the joint test that all five leads are zero has p = 0.98. Effect
-grows: the effect is $1,000 in the launch month, rising by $1,000 a month
-to $7,000. The lags trace it. A single difference-in-differences
-coefficient would average the post-launch months and report $4,000 in
-both settings, and the manager deciding whether to keep the app for a
-year needs the path.
-
-What the plot shows that the table does not. The leads are the pre-trend
-check made formal. The lags show whether the effect builds, fades or
-appears with a delay. This is the figure referees expect in any panel
-design, and the one the solar example in the project description brief
-uses.
-
-The leads are a test of a testable implication: if parallel trends hold,
-and units do not respond in advance, they should be zero. Anticipation,
-units reacting before the treatment because they know it is coming, is a
-reason they might not be, and a reason to choose the reference period
-before any announcement.
-:::
-
-## A pre-trend test can pass when parallel trends fails
-
-- Suppose app-region sales already rose $500 a month faster, app or no app.
-- A **pre-trend test** that all leads are zero rejects in only 41% of samples.
-- Samples that pass estimate $6,300. Roth shows the same risk in 12 published studies.
-- [**Solution**: report how large a violation of parallel trends would overturn the result.]{.solution}
-
-<div class="m06" data-demo="event" style="width:92%;margin:0 auto"></div>
-
-[Roth (2022), *Pretest with Caution*, American Economic Review: Insights 4, 305–322.](https://doi.org/10.1257/aeri.20210236){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-Three minutes. Switch to "Treated stores already trending up", click
-"Draw one", then "Draw 1,000".
-
-The change: sales in the app region rise by $500 a week each month,
-before and after the launch, on top of a constant $4,000 effect. The
-first sample passes the pre-trend test (p = 0.44) and estimates $6,000.
-Across 1,000 samples, the joint test of the leads rejects at 5% in only
-41%. Among the 594 samples that pass, the average post-launch estimate is
-$6,300; over all samples it is $6,000; the truth is $4,000. Passing the
-test did not protect the estimate, and conditioning on passing made the
-bias slightly larger.
-
-Why. Every lead and lag is measured against month −1. A low draw in
-month −1 raises the leads and the lags together, so they are positively
-correlated. The samples in which the leads happen to
-look flat are disproportionately those in which noise pushed the
-pre-period up toward zero, and the same noise pushes the post-period up
-too.
-
-Roth's evidence. He took the 12 event studies published in the AER and
-the two AEJ applied journals from 2014 to 2018 that had replication data
-and a usable event-study plot, and imposed linear violations of parallel
-trends that the usual pre-test would detect only half the time. Those
-violations produced large biases; in the most extreme case, the bias was
-larger than the estimated effect and a nominal 95% interval covered the
-truth only 24% of the time. Conditioning on passing the pre-test made the
-bias larger in most specifications. Only one of the 12 papers reported a
-joint test of the leads.
-
-The solution. Rambachan and Roth (2023, Review of Economic Studies,
-https://doi.org/10.1093/restud/rdad018) replace "parallel trends holds"
-with a bound: each period-to-period change in the post-period violation
-is no larger than M̄ times the largest such change in the pre-period.
-They report a confidence interval valid under each M̄ and the breakdown
-value, the M̄ at which the interval first includes zero. In Benzarti and
-Carloni's (2019) data on France's July 2009 cut in the value-added tax on
-sit-down restaurants, the 2009 effect on profits survives up to M̄ of
-about 2; the average over all four post-years does not survive M̄ = 1. Their HonestDiD package for R and
-Stata does this, and Roth's pretrends package computes the power of the
-pre-test.
-:::
-
-## Growing effects bias staggered TWFE estimates
-
-- In **staggered adoption** units start on different dates, here months 4, 8 and 12.
-- TWFE also uses stores that already have the app as controls, with 60% of its weight.
-- If effects grow with time, TWFE averages −$1,100, though no store's true effect is negative.
-- [**Solution**: use **Callaway–Sant'Anna**, which compares only with not-yet- or never-treated units.]{.solution}
-
-<div class="m06" data-demo="staggered" style="width:92%;margin:0 auto"></div>
-
-[Goodman-Bacon (2021), *Difference-in-Differences with Variation in Treatment Timing*, Journal of Econometrics 225, 254–277.](https://doi.org/10.1016/j.jeconom.2021.03.014){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-Three and a half minutes. Start on "Effect constant" and "All adopt",
-click "Draw 500". Then switch to "Effect grows with time" and click
-"Draw 500". Then switch to "Some never adopt" and draw again.
-
-The design: three groups of 30 stores adopt the app in months 4, 8 and
-12 of a 16-month panel, and every store eventually adopts.
-
-Effect constant: two-way fixed effects average 4.00 and Callaway–Sant'Anna
-3.95, both on target. When the effect is the same everywhere
-and always, the regression is fine.
-
-Effect grows: the effect is $1,000 for each month since adoption,
-starting at zero in the adoption month. Two-way fixed effects average
-−1.10, the wrong sign. The comparison that uses only stores not yet
-treated averages 2.79 against its truth of 2.83. That truth averages the
-store-months before month 12, because once every store has the app there
-is no untreated store left to compare with. Over every treated
-store-month the average effect is 4.59, so the two-way estimate has the
-wrong sign against either target.
-
-Why, from Goodman-Bacon's decomposition. The two-way estimate is a
-weighted average of every two-group, two-period comparison in the data.
-Some are clean: early adopters against stores that have not yet adopted.
-Others use stores that already have the app as the control group for
-later adopters. When the effect grows, the already-treated stores' sales
-are rising because of their own app, so the later adopters look worse by
-comparison, and those comparisons are negative. Here they get 60% of the
-weight: 8 against 4 at −2.5, 12 against 4 at −4.5, 12 against 8 at −2.5.
-The weighted sum is exactly −1.10.
-
-With some never-adopters, the weight on bad comparisons falls to 30% and
-two-way fixed effects average 1.30 against a truth of 4.59, still badly
-off.
-
-The solution, in software: Callaway and Sant'Anna (2021,
-https://doi.org/10.1016/j.jeconom.2020.12.001) estimate an effect for each
-adoption cohort in each period, using never-treated or not-yet-treated
-units as controls, and then average them; R package did, Stata csdid.
-Sun and Abraham (2021, https://doi.org/10.1016/j.jeconom.2020.09.006) do
-the same for event-study plots, and show that leads of a two-way event
-study can show a pre-trend that is only effect heterogeneity. Borusyak,
-Jaravel and Spiess (2024) impute each treated unit's untreated outcome;
-the stacked design builds a clean comparison for each adoption date. The
-Remix chapter 10 works through all of them except the stacked design.
-:::
-
-## Staggered designs are common in finance research
-
-- In 2000–2019, 407 of 744 DiD papers in top finance and accounting journals were staggered.
-- Baker, Larcker and Wang re-estimated two published results with newer estimators.
-- A 2017 study found board reforms in 41 countries raised Tobin's q by 0.11. Newer estimators give an insignificant 0.06.
-- [**Solution**: plot adoption dates, decompose the TWFE estimate, and use a staggered-timing estimator.]{.solution}
-
-[Baker, Larcker and Wang (2022), *How Much Should We Trust Staggered Difference-in-Differences Estimates?*, Journal of Financial Economics 144, 370–395.](https://doi.org/10.1016/j.jfineco.2022.01.004){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-One and a half minutes. For the finance teams.
-
-The count. Baker, Larcker and Wang read every difference-in-differences
-paper published from 2000 to 2019 in the top five finance journals and the
-top five accounting journals: 744 papers, of which 407 (55%) used
-staggered adoption, 97% of those since 2010. The treatments are typically
-state or country laws adopted in different years: takeover laws, board
-reforms, banking rules.
-
-The re-examination on the slide. Fauver, Hung, Li and Taboada (2017,
-Journal of Financial Economics, https://doi.org/10.1016/j.jfineco.2017.04.010)
-studied 41 country-level board reforms, 1990 to 2012, such as
-requirements for independent directors or audit committees, and found
-that firm value rose: 0.110 in Tobin's q without covariates, significant
-at 5%. With the Callaway–Sant'Anna estimator the effect is 0.062 with a
-standard error of 0.135. The stacked estimate for the first reform stays
-significant, which the re-analysis attributes partly to a pre-trend. The
-original authors replied that their conclusions hold with three
-never-reforming countries added (SSRN, https://doi.org/10.2139/ssrn.3885472).
-
-The second study they re-examined is one of this afternoon's cases, so it
-is not named here.
-
-The solution list is theirs: plot when each unit is treated, run the
-Goodman-Bacon decomposition to see where the weight sits, show an event
-study without binning the end periods, and report at least one estimator
-built for staggered timing.
-:::
-
-## Who the event-study estimate is about
-
-- A finance event study measures how investors revalued the announcing firms.
+- The estimate is how investors revalued the announcing firms.
 - It captures only the news that investors did not already expect.
-- With clean controls, a panel event study gives the ATT in each period since treatment.
-- With staggered adoption, distant lags come only from early adopters.
-- Report every lead and lag, the reference period and the estimator.
+- Report the estimation and event windows and the news search.
 
 ::: {.notes}
-One and a half minutes.
+One minute.
 
-The finance design. The abnormal return is the change in investors'
-valuation of the firm's future cash flows when the news arrived. It
-measures only what was news: if an announcement was expected, it was in
-the price before the window. It is a valuation by investors, not a
-realized change in profits, and it concerns the firms that made the
-announcements. Kothari and Warner's handbook chapter (2007,
+The abnormal return is the change in investors' valuation of the firm's
+future cash flows when the news arrived. It measures only what was news:
+if an announcement was expected, it was in the price before the window.
+It is a valuation by investors, not a realized change in profits, and it
+concerns the firms that made the announcements. Kothari and Warner's
+handbook chapter (2007,
 https://doi.org/10.1016/B978-0-444-53265-7.50015-9) adds the horizon
 warning: short-window tests are reliable, while abnormal returns over a
 year or more depend heavily on the model of expected returns.
 
-The panel design. Each lag is an effect on the treated at that horizon.
-With staggered adoption the units behind each lag differ: in a panel that
-ends in 2020, the effect ten years after adoption comes only from units
-that adopted by 2010. A lag that rises may be a growing effect or a
-change in which units are averaged.
-
-The reporting list: every lead and lag with its interval, not binned at
-the ends; which period is the reference and why; the estimator; and, for
-the finance design, the estimation and event windows and the news search.
+The reporting list: the estimation window and the event window, the
+model of normal returns, the news search and the events it dropped, and
+the firm names and dates so others can check.
 :::
 
-## Three designs
+## What each design assumes
 
-::: {style="font-size:0.54em"}
-|  | Design | Variation used | Assumption | Tests that could reject it | The estimate is for | Example |
+::: {style="font-size:0.5em"}
+|  | Section | Variation used | Assumption | Tests that could reject it | The estimate is for | Example |
 |:-|:--------|:----------|:--------------|:---------|:--------|:-------|
-| 1 | Difference-in-differences | The treated units' change against the untreated units' change | Parallel trends; no anticipation; no spillover onto the controls | Pre-period paths; placebo dates and groups | The treated units (ATT) | Snow's water companies |
-| 2 | Fixed effects | Changes within each unit over time | Strict exogeneity: no confounder that changes over time, no feedback | Leads of the treatment; past outcomes predicting treatment | Units whose treatment changed | Board seats within each firm |
-| 3 | Event study | Periods around a dated event | Finance: no other news in the window. Panel: parallel trends, no anticipation | Pre-event returns; leads | Announcing firms; the ATT by period | Earnings announcements |
+| 1 | Two groups and two periods | The treated units' change against the untreated units' change | Parallel trends; no anticipation; no spillover onto the controls | Pre-period paths; placebo dates and groups | The treated units (ATT) | Snow's water companies |
+| 2 | Many units and many periods | Changes within each unit over time | Strict exogeneity: no confounder that changes over time, no feedback | Leads of the treatment; past outcomes predicting treatment | Units whose treatment changed; the ATT by period | Board seats within each firm |
+| 3 | Staggered adoption | Each adoption group against units not yet or never treated | Parallel trends for every adoption group | Leads by adoption group; the Goodman-Bacon weights | Each adoption group, period by period | Board reforms in 41 countries |
+| 4 | Few treated units | One treated unit against a weighted mix of untreated units | The mix that tracked the past would track the future | Pre-period fit; placebo in space | The one treated unit | California's tobacco program |
+| 5 | Event studies in finance | Returns around a dated announcement | No other news in the window | Pre-event returns; a news search | The announcing firms | Earnings announcements |
 :::
-
-- Synthetic control matches the treated unit's past with weighted controls, for one or a few treated units.
-- With staggered adoption and changing effects, compare only with units not yet or never treated.
 
 ::: {.notes}
 Two minutes. A reference slide for the session B cases.
 
-Read the Assumption column down. All three rest on something about the
-units' paths over time: that the treated and untreated units would have
-moved together, that nothing that changes within a unit drives both its
-treatment and its outcome, that nothing else happened on the day. None
-can be confirmed by a statistic. The tests column lists what can refute
-them: pre-period paths and leads that are not flat, a placebo date or
-group with an effect, a second record that disagrees, returns that move
-before the news.
+Read the Assumption column down. Rows 1 to 4 rest on the same kind of
+claim about the units' paths over time: that the treated and untreated
+units would have moved together, that nothing that changes within a unit
+drives both its treatment and its outcome, that a weighted mix of
+untreated units stands in for the treated one. Row 5 rests on nothing
+else happening on the day. None can be confirmed by a statistic. The
+tests column lists what can refute them: pre-period paths and leads that
+are not flat, a placebo date or group with an effect, a poor pre-period
+fit, returns that move before the news.
 
 The estimate column ties back to the section ends: the treated units,
-the units whose treatment changed, the announcing firms. Each is narrower
-than "the effect".
-
-The two bullets are the two refinements: one treated unit needs
-synthetic control and permutation inference; staggered adoption with
-effects that change over time needs one of the newer estimators.
+the units whose treatment changed, each adoption group, one state, the
+announcing firms. Each is narrower than "the effect".
 :::
 
 ## Six designs
@@ -1411,9 +1514,9 @@ effects that change over time needs one of the newer estimators.
 | 1 | Randomized experiment | A coin | The coin alone decides who is treated | The population randomized |
 | 2 | Instrumental variables | The part of treatment an instrument, a variable that shifts it, moves | Exclusion: the instrument reaches the outcome only through the treatment | Compliers, the units the instrument moves into treatment |
 | 3 | Regression discontinuity | Units just above and just below a cutoff | Continuity: without treatment, outcomes change smoothly at the cutoff | Units at the cutoff |
-| 4 | Difference-in-differences | The treated units' change against the untreated units' change | Parallel trends | The treated units |
-| 5 | Fixed effects | Changes within each unit over time | Strict exogeneity | Units whose treatment changed |
-| 6 | Event study | Periods around a dated event | Finance: no other news in the window. Panel: parallel trends | Announcing firms; the treated units, period by period |
+| 4 | Difference-in-differences and fixed effects | The treated units' change against the untreated units' change, over two or many periods | Parallel trends | The treated units |
+| 5 | Synthetic control | One treated unit against a weighted mix of untreated units | The mix that tracked the past would track the future | The one treated unit |
+| 6 | Finance event study | Returns around a dated announcement | No other news in the window | The announcing firms |
 :::
 
 - Your proposal names one row and defends its assumption against a sceptic.
@@ -1422,12 +1525,15 @@ effects that change over time needs one of the newer estimators.
 Two minutes. The slide to keep.
 
 Rows 1 to 3 are last week's: the eBay ad experiment, the draft lottery,
-Yelp's half stars. Rows 4 to 6 are today's. Read the assumption column as
-a ladder of how much the design asks the reader to believe. The coin is set by the procedure, and meeting 8's joint
-balance test checks it. The exclusion restriction and parallel
-trends are claims about unobserved counterfactuals, argued and never
-confirmed. Continuity and the no-other-news assumption sit in between:
-narrow, local, and checkable at their edges.
+Yelp's half stars. Rows 4 to 6 are today's. Row 4 covers sections 1 to 3,
+with a staggered-timing estimator when units adopt on different dates.
+Read the assumption column as a ladder of how much the design asks the
+reader to believe. The coin is set by the procedure, and meeting 8's
+joint balance test checks it. The exclusion restriction, parallel trends
+and the synthetic control's stand-in are claims about unobserved
+counterfactuals, argued and never confirmed. Continuity and the
+no-other-news assumption sit in between: narrow, local, and checkable at
+their edges.
 
 Read the last column as the question a decision maker should ask: is
 this the population my decision is about? Compliers, units at a cutoff
@@ -1483,7 +1589,7 @@ and the online second edition of The Effect (https://theeffectbook.net).
 The 2021 print Mixtape numbers its chapters differently.
 :::
 
-# 4. Matching a panel design to a question
+# 6. Matching a panel design to a question
 
 ::: {.notes}
 Thirty seconds. Seven research questions, each from a published study

@@ -1,0 +1,163 @@
+<!-- Written by _quizzes/draw.py. Do not edit by hand: change the bank and redraw. -->
+
+These 10 questions practice the ideas of this lecture. Click an option to check it. A wrong pick lets you try again, and the right one links to the slide that covers it. The quiz on this lecture asks different questions on the same ideas.
+
+```{=html}
+<style>
+.pq-set { margin-top: 0.5rem; }
+.pq { margin: 1.4rem 0 1.8rem; }
+.pq-stem { margin-bottom: 0.6rem; }
+.pq-opt { display: block; width: 100%; text-align: left; margin: 0.35rem 0; padding: 0.5rem 0.75rem;
+  font: inherit; color: inherit; background: transparent; border: 1px solid #cfcfc9; border-radius: 4px; cursor: pointer; }
+.pq-opt:hover:not(:disabled) { border-color: #8a8a84; }
+.pq-opt:disabled { cursor: default; }
+.pq-l { font-weight: 600; margin-right: 0.35rem; }
+.pq-opt.pq-right { background: #e7f4e8; border-color: #2e7d32; }
+.pq-opt.pq-wrong { background: #fbe9e9; border-color: #c62828; opacity: 0.85; }
+.pq-fb { min-height: 1.4em; margin: 0.4rem 0 0; font-size: 0.93em; }
+.pq-fb.pq-ok { color: #2e7d32; }
+.pq-fb.pq-no { color: #c62828; }
+.pq-score { font-weight: 600; margin-top: 1rem; }
+</style>
+<div class="pq-set">
+<div class="pq" data-key="3">
+<p class="pq-stem"><strong>1.</strong> A credit union reminds a random half of its retired members to save. Their balances end a precisely estimated 3% above the other half&#x27;s. It now plans to remind its young members. Which failure threatens using the 3% estimate for that decision?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Bias, since reminded members would have saved more anyway</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> False precision, since the standard error is too small</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Low power, since a 3% rise is too small to detect</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> External validity, since young members may respond differently</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="07-model-failures-slides.html#/motivation">Motivation</a>.</template>
+</div>
+<div class="pq" data-key="0">
+<p class="pq-stem"><strong>2.</strong> A hospital gives a discharge checklist to a random half of 2,000 patients and regresses each patient&#x27;s length of stay on the checklist. Clerks record stays with random errors unrelated to the checklist. What would 4,000 patients do to the estimator?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Shrink its standard error, and it stays unbiased</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Remove the bias that the recording errors put in it</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Nothing, since only cleaner records lower its standard error</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Shrink its standard error, but a bias toward zero remains</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="07-model-failures-slides.html#/direction-and-solution-for-each-source-of-bias">Direction and solution for each source of bias</a>.</template>
+</div>
+<div class="pq" data-key="0">
+<p class="pq-stem"><strong>3.</strong> A rental firm has six years of rents for 300 buildings. In year 4, some owners chose to add a fitness room, mostly in desirable, higher-rent neighborhoods. Neighborhood quality did not change. How should the firm estimate the room&#x27;s effect on rent?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Regress rent on a room indicator with building and year fixed effects</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Compare rents of buildings with and without a room, matched on size</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Compare rents of buildings with and without a room in year 6</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Regress rent on a room indicator, clustering standard errors by building</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="07-model-failures-slides.html#/omitted-variables">Omitted variables</a>.</template>
+</div>
+<div class="pq" data-key="0">
+<p class="pq-stem"><strong>4.</strong> A toy maker assigns shelf spots by lottery and scores each spot&#x27;s visibility in an audit. A quarter of the score&#x27;s variance is random error. It regresses each store&#x27;s units sold on the score, and the slope converges to 3. What is a point&#x27;s true effect?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> About 4 units</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> About 12 units</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> About 2.25 units</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> About 3 units</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="07-model-failures-slides.html#/classical-measurement-error">Classical measurement error</a>.</template>
+</div>
+<div class="pq" data-key="0">
+<p class="pq-stem"><strong>5.</strong> A state agency picks which manufacturers get export coaching. It regresses export growth on coaching across all of them, applicants or not, controlling for size, sector and past exports. Which way of picking makes that regression free of selection bias?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> A lottery whose odds depend only on size and sector</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> A lottery among the firms that applied for coaching</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Staff pick firms of each size and sector they judge most ready</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> A lottery whose odds depend on size, sector and owner ambition</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="07-model-failures-slides.html#/what-control-variables-assume">What control variables assume</a>.</template>
+</div>
+<div class="pq" data-key="3">
+<p class="pq-stem"><strong>6.</strong> Truck fleets choose whether to install fuel-saving software. The vendor regresses each fleet&#x27;s fuel cost on installing it, and the coefficient implies 15% lower costs. It says only that it controlled for everything. What should a reviewer ask for?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Interactions among all the controls, to make the model more flexible</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> A test that each control is significant in the fuel-cost regression</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> A larger sample of fleets, so the standard error shrinks</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> A causal graph of the back doors the controls are meant to close</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="07-model-failures-slides.html#/what-to-report-about-your-controls">What to report about your controls</a>.</template>
+</div>
+<div class="pq" data-key="1">
+<p class="pq-stem"><strong>7.</strong> An insurer randomly picks regions for a discount and regresses each town&#x27;s claim rate on the discount. Towns in a region share weather. The estimate is −2.0, with standard errors of 0.5 by default and 1.5 clustered by region. What should it conclude?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Shared regional shocks bias the estimator of the effect</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> The estimate stays −2.0 and is not significant at 5%</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> The estimate triples to −6.0 and is still significant at 5%</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> The estimate stays −2.0 and is still significant at 5%</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="07-model-failures-slides.html#/a-failed-assumption-biases-the-standard-error">A failed assumption biases the standard error</a>.</template>
+</div>
+<div class="pq" data-key="2">
+<p class="pq-stem"><strong>8.</strong> A paint maker randomly assigns drying times to batches and regresses reject rate on drying time. The scatter around the fitted line is small at typical times and large at extreme ones. How does the default standard error compare with the correct one?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Too large, since noisy batches inflate the average squared residual</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> About right, since the estimator is still unbiased</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Too small, since the noisiest batches weigh most in the estimate</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Too small, since the steady batches at typical times weigh most</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="07-model-failures-slides.html#/heteroskedasticity">Heteroskedasticity</a>.</template>
+</div>
+<div class="pq" data-key="2">
+<p class="pq-stem"><strong>9.</strong> A mobile carrier gives a new data plan to a random half of 600 customers and regresses each customer&#x27;s monthly data use over 2 years on the plan. A customer&#x27;s use runs high or low for several months at a time. Which standard error should it report?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Robust to heteroskedasticity, since use varies more in some months</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Default, since the plan was assigned at random</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Clustered by customer, since each customer&#x27;s months are correlated</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Clustered by month, since all customers share each month&#x27;s holidays</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="07-model-failures-slides.html#/serial-correlation">Serial correlation</a>.</template>
+</div>
+<div class="pq" data-key="3">
+<p class="pq-stem"><strong>10.</strong> A car-rental firm plans a test in which a random half of customers get a prepay discount. The estimator of the effect on the no-show rate will have a standard error of 1.5 percentage points. Does a two-sided 5% test have 80% power for a 3-point drop?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Yes, 3 points is above the 2.9-point cutoff for significance</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> No, a 3-point drop would be significant only 5% of the time</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Yes, any drop larger than the 1.5-point standard error is detected</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> No, it has 80% power only for drops of 4.2 points or more</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="07-model-failures-slides.html#/power-and-the-minimum-detectable-effect">Power and the minimum detectable effect</a>.</template>
+</div>
+<p class="pq-score" aria-live="polite"></p>
+</div>
+<script>
+(function () {
+  var qs = document.querySelectorAll('.pq'), first = 0, done = 0;
+  var score = document.querySelector('.pq-score');
+  function tally() { if (score) score.textContent = done ? ('Right on the first try: ' + first + ' of ' + done + ' answered (' + qs.length + ' questions).') : ''; }
+  qs.forEach(function (q) {
+    var keys = q.dataset.key.split(',');
+    var fb = q.querySelector('.pq-fb'), src = q.querySelector('.pq-src');
+    var tries = 0;
+    q.querySelectorAll('.pq-opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        tries += 1;
+        if (keys.indexOf(b.dataset.i) >= 0) {
+          b.classList.add('pq-right');
+          q.querySelectorAll('.pq-opt').forEach(function (x) { x.disabled = true; });
+          fb.className = 'pq-fb pq-ok';
+          fb.innerHTML = 'Correct. ' + (src ? src.innerHTML : '');
+          done += 1; if (tries === 1) first += 1; tally();
+        } else {
+          b.classList.add('pq-wrong'); b.disabled = true;
+          fb.className = 'pq-fb pq-no';
+          fb.textContent = 'Not this one. Try again.';
+        }
+      });
+    });
+  });
+})();
+</script>
+```

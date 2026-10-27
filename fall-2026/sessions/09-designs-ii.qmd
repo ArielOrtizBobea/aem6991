@@ -404,6 +404,10 @@ measured.
 - That says little about a quota that changes many seats at once.
 - Report how many units switch and how much treatment varies within them.
 
+[Adams and Ferreira (2009), *Women in the Boardroom and Their Impact on Governance and Performance*, Journal of Financial Economics 94, 291–309.](https://doi.org/10.1016/j.jfineco.2008.10.007){style="font-size:0.55em; color:#6b6b6b"}
+
+[Imai and Kim (2019), *When Should We Use Unit Fixed Effects Regression Models for Causal Inference with Longitudinal Data?*, American Journal of Political Science 63, 467–490.](https://doi.org/10.1111/ajps.12417){style="font-size:0.55em; color:#6b6b6b"}
+
 ::: {.notes}
 One and a half minutes.
 
@@ -1039,6 +1043,8 @@ The next slide's demo has three groups and shows the weights.
 
 [Goodman-Bacon (2021), *Difference-in-Differences with Variation in Treatment Timing*, Journal of Econometrics 225, 254–277.](https://doi.org/10.1016/j.jeconom.2021.03.014){style="font-size:0.55em; color:#6b6b6b"}
 
+[Callaway and Sant'Anna (2021), *Difference-in-Differences with Multiple Time Periods*, Journal of Econometrics 225, 200–230.](https://doi.org/10.1016/j.jeconom.2020.12.001){style="font-size:0.55em; color:#6b6b6b"}
+
 ::: {.notes}
 Three and a half minutes. Start on "Effect constant" and "All adopt",
 click "Draw 500". Then switch to "Effect grows with time" and click
@@ -1090,10 +1096,12 @@ Remix chapter 10 works through all of them except the stacked design.
 
 - In 2000–2019, 407 of 744 DiD papers in top finance and accounting journals were staggered.
 - Baker, Larcker and Wang re-estimated two published results with newer estimators.
-- A 2017 study found board reforms in 41 countries raised Tobin's q by 0.11. Newer estimators give an insignificant 0.06.
+- Fauver and co-authors found board reforms in 41 countries raised Tobin's q by 0.11. Newer estimators give an insignificant 0.06.
 - [**Solution**: plot adoption dates, decompose the TWFE estimate, and use a staggered-timing estimator.]{.solution}
 
 [Baker, Larcker and Wang (2022), *How Much Should We Trust Staggered Difference-in-Differences Estimates?*, Journal of Financial Economics 144, 370–395.](https://doi.org/10.1016/j.jfineco.2022.01.004){style="font-size:0.55em; color:#6b6b6b"}
+
+[Fauver, Hung, Li and Taboada (2017), *Board Reforms and Firm Value: Worldwide Evidence*, Journal of Financial Economics 125, 120–142.](https://doi.org/10.1016/j.jfineco.2017.04.010){style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.notes}
 One and a half minutes. For the finance teams.
@@ -1183,6 +1191,8 @@ average slope is about zero and its sign changes across doses.
 - In an event study each lag is the ATT that many periods after treatment.
 - With staggered adoption distant lags come only from the earliest adopters.
 - Report the 2×2 means, the pre-period paths, every lead and lag, and the estimator.
+
+[Snow (1855), *On the Mode of Communication of Cholera*, 2nd ed., John Churchill, London.](https://archive.org/details/b28985266){style="font-size:0.55em; color:#6b6b6b"}
 
 [Roth, Sant'Anna, Bilinski and Poe (2023), *What's Trending in Difference-in-Differences?*, Journal of Econometrics 235, 2218–2244.](https://doi.org/10.1016/j.jeconom.2023.03.008){style="font-size:0.55em; color:#6b6b6b"}
 
@@ -1535,7 +1545,7 @@ names and dates so others can check.
 :::
 
 - The finance version needs no untreated firms. The market return stands in for calendar time.
-- The Effect covers the finance design in ch. 17 and the panel design in ch. 18.
+- [The Effect](https://theeffectbook.net) covers the finance design in ch. 17 and the panel design in ch. 18.
 
 [Miller (2023), *An Introductory Guide to Event Study Models*, Journal of Economic Perspectives 37, 203–230.](https://doi.org/10.1257/jep.37.2.203){style="font-size:0.55em; color:#6b6b6b"}
 
@@ -1601,6 +1611,8 @@ the firm names and dates so others can check.
 | 4 | Finance event study | Returns around a dated announcement | No other news in the window | Pre-event returns; a news search | The announcing firms |
 :::
 
+[Goodman-Bacon (2021), *Difference-in-Differences with Variation in Treatment Timing*, Journal of Econometrics 225, 254–277.](https://doi.org/10.1016/j.jeconom.2021.03.014){style="font-size:0.55em; color:#6b6b6b"}
+
 ::: {.notes}
 Two minutes. A reference slide for the session B cases. Rows are
 numbered by section; the four rows of section 2 are its four steps.
@@ -1663,16 +1675,16 @@ table's terms, and defend the assumption in its row.
 ::: {style="font-size:0.52em"}
 | Design | What it does | Where to read |
 |:-------------|:----------------------------------|:-----------|
-| Triple differences | Subtracts a second DiD, for a group in the same places that the policy does not target | Remix 10.2 |
-| DiD with covariates | Assumes parallel trends only among units with similar covariates, and reweights | Remix 10.3–10.6 |
-| Synthetic difference-in-differences | Combines synthetic-control weights with two-way fixed effects | Remix 11.5 |
-| Partial identification | Reports the range of effects the data allow under weaker assumptions | The Effect ch. 21 |
+| Triple differences | Subtracts a second DiD, for a group in the same places that the policy does not target | [Remix](https://mixtape.scunning.com/) 10.2 |
+| DiD with covariates | Assumes parallel trends only among units with similar covariates, and reweights | [Remix](https://mixtape.scunning.com/) 10.3–10.6 |
+| Synthetic difference-in-differences | Combines synthetic-control weights with two-way fixed effects | [Remix](https://mixtape.scunning.com/) 11.5 |
+| Partial identification | Reports the range of effects the data allow under weaker assumptions | [The Effect](https://theeffectbook.net) ch. 21 |
 | Bunching | Measures the excess number of people at a kink or notch in a tax or price schedule | [Kleven (2016)](https://doi.org/10.1146/annurev-economics-080315-015234) |
-| Shift-share instruments | Combines regions' industry shares with national industry shocks | Remix 7.7 |
-| Regression kink | Uses a change in the slope of a benefit formula at a threshold | The Effect 20.3.1 |
-| Double machine learning, causal forests | Use machine learning for the controls, or for how effects vary | The Effect 22.2.4, 22.3.1 |
-| Structural estimation | Fits an economic model and simulates policies never observed | The Effect 22.4 |
-| Dynamic panels | Instruments a lagged outcome when it sits alongside fixed effects | Mostly Harmless 5.3 |
+| Shift-share instruments | Combines regions' industry shares with national industry shocks | [Remix](https://mixtape.scunning.com/) 7.7 |
+| Regression kink | Uses a change in the slope of a benefit formula at a threshold | [The Effect](https://theeffectbook.net) 20.3.1 |
+| Double machine learning, causal forests | Use machine learning for the controls, or for how effects vary | [The Effect](https://theeffectbook.net) 22.2.4, 22.3.1 |
+| Structural estimation | Fits an economic model and simulates policies never observed | [The Effect](https://theeffectbook.net) 22.4 |
+| Dynamic panels | Instruments a lagged outcome when it sits alongside fixed effects | [Mostly Harmless](https://www.mostlyharmlesseconometrics.com/) 5.3 |
 :::
 
 ::: {.notes}
@@ -1941,7 +1953,7 @@ medical literature lowers long-run body weight by no more than 1%.
 
 ::: {.fragment}
 - **What the authors did**: regressed state inequality on the staggered dates with state and year fixed effects. The **Gini coefficient**, from 0 to 1, fell about 2%.
-- A 2022 re-analysis used only not-yet-deregulated states as controls and found no effect.
+- Baker, Larcker and Wang (2022) used only not-yet-deregulated states as controls and found no effect.
 
 [Beck, Levine and Levkov (2010), *Big Bad Banks? The Winners and Losers from Bank Deregulation in the United States*, Journal of Finance 65, 1637–1667.](https://doi.org/10.1111/j.1540-6261.2010.01589.x){style="font-size:0.55em; color:#6b6b6b"} · [Baker, Larcker and Wang (2022), Journal of Financial Economics 144, 370–395.](https://doi.org/10.1016/j.jfineco.2022.01.004){style="font-size:0.55em; color:#6b6b6b"}
 :::

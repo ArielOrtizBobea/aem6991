@@ -48,6 +48,10 @@ Ten minutes of team check-in, then the results-critique cards again — the same
 
 Your team's output is submitted before you leave.
 
+## Practice questions
+
+{{< include practice/_m07.qmd >}}
+
 ::::
 
 :::: {.content-visible when-format="revealjs"}

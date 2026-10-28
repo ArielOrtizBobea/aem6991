@@ -14,3 +14,4 @@
 **/tokens*.csv
 **/*_secret*
 .env
+/_grading/

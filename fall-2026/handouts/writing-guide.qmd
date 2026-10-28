@@ -1,0 +1,565 @@
+---
+title: "Writing guide"
+pagetitle: "AEM 6991 · Writing guide"
+toc: true
+toc-depth: 2
+editor:
+  markdown:
+    wrap: 72
+---
+
+::: {.callout-note appearance="simple"}
+This guide goes with [meeting 10](../sessions/10-writing.qmd). Use it
+for the proposal outline, due November 11, and for the written
+proposal, due December 11. The checklist at the end is the one to run
+before you submit.
+:::
+
+The proposal is graded against the syllabus's [required
+headings](../syllabus.qmd#what-you-are-graded-against), and two
+questions move a grade more than anything else: is the claim in the
+first sentence, and could it come out the other way? This guide is
+about the rest: who reads your document, in what order, and what keeps
+them reading. It has seven principles, the standard order of six kinds
+of document, the style rules, and a checklist.
+
+## 1. Know who reads which part
+
+Every document has three kinds of reader, in a mix that depends on the
+setting.
+
+| | In research | In an organization |
+|:--|:--|:--|
+| **Skimmers** read the title and the summary, then stop | Someone searching for papers; a student | The executive who needs the big picture |
+| **Engaged readers** read the introduction and the main results | Someone writing a literature review; a researcher deciding whether the paper matters to them | The manager who acts on the recommendation |
+| **Deep readers** read the methods and the appendix | A peer who follows the work; a critic; a referee | The analyst who checks the numbers |
+
+**Write each part for the reader who reaches it.** The title and the
+abstract serve skimmers: no jargon, and no acronyms in the title. The
+introduction serves engaged readers: use the field's terms and define
+each one at first use. The methods and the appendix serve deep readers
+and carry the full technical detail. Some details are never read, and
+they are there for the few who need them.
+
+**Your proposal's readers.** The instructor grades it. The grading
+standard asks that somebody outside your team could act on it, so
+write the first page for that person: the manager, client or data
+provider who would use the answer.
+
+**Evidence.** On a National Institutes of Health review panel, about 20
+people score each application and three read it closely; the institute
+tells applicants to write the summary parts for a reader of *Scientific
+American* ([NIAID](https://www.niaid.nih.gov/grants-contracts/know-your-audience)).
+People who know something overestimate how much others know, the
+*curse of knowledge* ([Camerer, Loewenstein and Weber
+1989](https://doi.org/10.1086/261651)).
+
+**The journal sets the framing.** The same research is framed for the
+reader of the outlet. Bloom and coauthors' experiment at a Chinese
+travel agency appeared in the *Quarterly Journal of Economics* as an
+incentive problem, whether employees shirk at home ([Bloom, Liang,
+Roberts and Ying 2015](https://doi.org/10.1093/qje/qju032)). A later
+experiment at the same firm appeared in *Nature* as a management
+practice that about 100 million employees in Europe and North America
+have adopted ([Bloom, Han and Liang 2024](https://doi.org/10.1038/s41586-024-07500-2)).
+
+## 2. Nest the versions for those readers
+
+The title, the abstract, the introduction and the full paper are four
+versions of one message, nested like Russian dolls. Each one carries
+the whole message at its own length and its reader's technical level.
+The repetition is intended, and each version rewords the one before
+([Doumont 2002](https://doi.org/10.1109/TPC.2002.805164)).
+
+**Keep the feature that identifies the paper.** A title that fits a
+dozen papers tells a skimmer nothing. *Climate change and global
+agricultural productivity* is a topic. *Anthropogenic climate change
+has slowed global agricultural productivity growth* is a finding, and
+it fits one paper ([Ortiz-Bobea et al.
+2021](https://doi.org/10.1038/s41558-021-01000-1)).
+
+**One study, three titles.** The same 2021 study appeared as:
+
+- *The Historical Impact of Anthropogenic Climate Change on Global
+  Agricultural Productivity*, a working paper for economists
+  ([arXiv 2020](https://arxiv.org/abs/2007.10415));
+- *Anthropogenic climate change has slowed global agricultural
+  productivity growth*, in a journal read by scientists in many fields;
+- *Climate change has cost 7 years of ag productivity growth*, in the
+  university's news story for the public ([Cornell Chronicle
+  2021](https://news.cornell.edu/stories/2021/04/climate-change-has-cost-7-years-ag-productivity-growth)).
+
+**Lengths.** A title runs about ten words. Economics journals cap
+abstracts at 100 words (the [*American Economic
+Review*](https://www.aeaweb.org/journals/aer/submissions) and the
+[*Journal of Finance*](https://afajof.org/submission-guidelines/)) or
+150 (*[Econometrica](https://www.econometricsociety.org/publications/econometrica/information-authors)*),
+about five sentences: the question, the data and design, the finding
+with its size, and what it means. Readers stop early: US internists
+reported reading only the abstract for 63% of the articles they read
+([Saint et al. 2000](https://doi.org/10.1046/j.1525-1497.2000.00202.x)).
+
+**In your proposal** the versions are the title, the first page and
+the full document. Organizations build the same layers on purpose: the
+US Government Accountability Office publishes every report as Fast
+Facts, a two-page Highlights and the full report.
+
+::: {.callout-tip appearance="simple" collapse="true"}
+## Practice: your project's four versions
+
+Write a title that states your question (about ten words), one sentence
+that states the question and how you will answer it, a 100-word
+abstract, and the first paragraph of your introduction. Show the title
+alone to someone outside your team and ask what the project is. If
+they cannot say, the title is missing its tail.
+:::
+
+## 3. Use the structure readers expect
+
+Experienced readers know where each part of a document sits. Twelve
+researchers given shuffled paragraphs from articles in their field put
+82.6% back in the right section ([Dillon
+1991](https://doi.org/10.1016/S0020-7373(05)80168-3)). Follow the
+standard order, so the reader finds each part where they look for it.
+
+### An empirical economics paper
+
+1. **Title.** States the finding.
+2. **Abstract.** The question, the data and design, the finding with
+   its size.
+3. **Introduction.** The funnel to the question, the finding and its
+   size, the two or three closest papers and what is new.
+4. **Setting and data.** Where and when, and what one row describes.
+5. **Empirical strategy.** The design and its identifying assumption:
+   what must hold for the estimate to measure the effect.
+6. **Results.** Each table introduced by its point.
+7. **Threats to validity.** What could break the design, and the
+   checks.
+8. **Conclusion.** The message again, shorter.
+
+Sources: [Dudenhefer
+2014](https://econ.duke.edu/sites/econ.duke.edu/files/file-attachments/Dudenhefer,%20Paul%20-%20Guide%20to%20Writing%20in%20Economics.pdf);
+[Head, *The Introduction
+Formula*](https://blogs.ubc.ca/khead/research/research-advice/formula).
+
+### A paper with a theory section
+
+Some applied papers open with a model, which says what the data must
+deliver. The theoretical framework comes right after the introduction,
+and its main prediction maps one to one onto the empirical framework
+([Bellemare 2018](https://marcfbellemare.com/wordpress/12797)).
+
+1. **Title, abstract and introduction.** As above, with the model's
+   prediction in the abstract.
+2. **Theoretical framework.** A model that yields the testable
+   prediction.
+3. **Empirical framework.** The regression for each part of the
+   prediction.
+4. **Data.** And descriptive statistics.
+5. **Results.** Each estimate read back through the model.
+6. **Conclusion.**
+
+Example: [Ortiz-Bobea (2020)](https://doi.org/10.1093/ajae/aaz047)
+values farmland as farming income plus the option to convert it to
+other uses. The model predicts that farmland prices and cash rents give
+the same climate effect only where conversion is unlikely, and the
+empirical sections estimate the effect from each and compare them. In
+your proposal, the conceptual model heading plays this role.
+
+### The research proposal for this course
+
+Your proposal is a plan: about five pages that someone could pick up
+and execute in January. Page one answers three questions that any
+funder asks: *What are we going to learn that we do not know now? Why
+is it worth knowing? How will we know that the conclusions are valid?*
+Przeworski and Salomon wrote them for applicants to fellowships of the
+Social Science Research Council, a US funder of social science
+([Przeworski and
+Salomon](https://law.uga.edu/sites/default/files/OnTheArtOfWritingProposals_SocialScienceResearchCouncilCompetiotions.pdf)).
+Preliminary evidence is optional; use it only to show that the data
+exist and can answer the question. The sections follow the course's
+required headings, from the syllabus, in this order:
+
+1. Research problem
+2. Practical justification
+3. What is already known
+4. Conceptual model
+5. Methodological approach
+6. Study sample
+7. Data and access
+8. Internal validity
+9. External validity
+10. Limitations and self-critique
+11. Work plan
+12. Research ethics
+13. References
+
+In the outline, each heading becomes topic sentences in order, with
+the evidence listed under each.
+
+### A policy or business memo
+
+1. **Subject line.** States the bottom line.
+2. **Bottom line.** The conclusion and the decision asked for, in the
+   first sentence.
+3. **Background.** Only what this reader needs.
+4. **Evidence.** Most important first.
+5. **Options and risks.**
+6. **Next steps.**
+
+US Navy officers read memos written bottom line first, with short
+paragraphs, headings and plain sentences, 17–23% faster than memos in
+a bureaucratic style, and understood them better ([Suchan and Colucci
+1989](https://doi.org/10.1177/0893318989002004002)).
+
+### An executive summary
+
+1. **The issue.** What the reader faces.
+2. **The answers.** What the work found, as numbers.
+3. **What it means for this reader.** The decision it informs.
+4. **Background.** Only what the answers need.
+5. **The approach.** In a line or two.
+
+The Canadian Health Services Research Foundation asked for 1:3:25: one
+page of main messages, a three-page executive summary and at most 25
+pages of report.
+
+### A research talk
+
+1. **Motivation.** Why anybody should care, in the first thirty seconds.
+2. **The question.**
+3. **What this work does.**
+4. **A preview of the findings.**
+5. **Data.**
+6. **Design.**
+7. **Results.**
+8. **The bottom line, as a number.**
+
+Meeting 12 covers talks in full.
+
+### The funnel
+
+The first paragraph of an introduction or a proposal is a funnel. It
+moves from the field to your question in a few sentences: why it
+matters, what is known, what is missing, and the question. In the 2021
+paper, the first paragraph runs from why agricultural productivity
+matters to the sentence *the impacts of this ACC on the agricultural
+sector have not yet been quantified*, and paragraph 3 opens with the
+question. In your proposal, the top of the funnel is the decision your
+reader faces.
+
+::: {.callout-tip appearance="simple" collapse="true"}
+## Practice: a five-line memo
+
+Turn your project description into a memo of five lines to the person
+who would act on the answer: the subject line, the bottom line, the
+one fact of background they need, the evidence you will produce, and
+the decision it will inform.
+:::
+
+## 4. Write one idea per paragraph
+
+A **topic sentence** states the paragraph's point, and the other
+sentences support it. Body paragraphs open with their point, so a
+reader who reads only first sentences gets the argument. The opening
+funnel of an introduction is the one paragraph that ends with its
+point.
+
+**Check a draft with a reverse outline.** Meeting 5 wrote the outline
+before the prose. The reverse outline runs the same tool on a draft:
+
+1. Read each paragraph and write one sentence that states what it
+   argues.
+2. If a paragraph needs two sentences, it holds two ideas. Split it.
+3. If the sentence you wrote matches a later sentence in the paragraph,
+   the point is buried. Move that sentence to the front.
+4. Read your sentences in order. If they make the argument, the draft
+   works. If one is hard to write, that paragraph has no point yet.
+
+**Example.** Ray and coauthors close a study of ten crops with a
+paragraph whose first sentence is its point: *Our findings here
+illustrate that climate change has potentially already affected global
+production of the ten largest crops and the production of consumable
+food calories in specific countries and globally.* The next three
+sentences give the approach, the size and the use ([Ray et al.
+2019](https://doi.org/10.1371/journal.pone.0217148)).
+
+::: {.callout-tip appearance="simple" collapse="true"}
+## Practice: reverse-outline your project description
+
+Write one sentence for each paragraph of your October 23 project
+description. Read the sentences in order and mark the paragraphs whose
+sentence was hard to write. Those are the paragraphs to rewrite first
+for the outline.
+:::
+
+## 5. Keep the reader on your path
+
+You decide what the reader reads and in what order. What the reader
+thinks along the way is up to the reader. Writing is a walk with your
+reader along a path you lay, and readers leave it. In laboratory
+studies, readers' minds wandered 20 to 30% of the time, and more
+wandering went with lower comprehension ([D'Mello and Mills
+2021](https://doi.org/10.1111/lnc3.12412); [Bonifacci et al.
+2023](https://doi.org/10.3758/s13423-022-02141-w)). Skeptical readers
+argue back as they read.
+
+An **off-ramp** is a point where a doubt pulls the reader off your
+path. An **on-ramp** is a "you are here" sign: one sentence at the start
+of a section that tells a reader who drifted where the section fits in
+the whole argument.
+
+| | Off the path | Solution |
+|:-|:--|:--|
+| 1 | **A criticism of the design** | Answer it briefly in the sentence after the claim that raises it, and point to the full check |
+| 2 | **A variation** the reader wonders about | Say which cases the design covers |
+| 3 | **A limitation** on where the result applies | State it yourself, once, in the limitations section |
+| 4 | **A reader who drifted** | Open each section with a "you are here" sentence: how it fits in the overall argument |
+
+**Example.** A proposal for the solar project says developers often
+build on cheap farmland at the edge of a village. A skeptical reader
+asks at once whether prices there were already growing more slowly.
+The next sentence answers it, briefly: *Section 4 checks whether
+prices there were already growing more slowly.* One short sentence is
+enough. Name the doubt and point to where the paper handles it, as
+robustness checks usually do, and leave the full answer for its own
+section. Outside advertising, raising an objection and refuting it persuades
+slightly more than leaving it out, and raising it without refuting it
+persuades less ([O'Keefe
+1999](https://doi.org/10.1080/23808985.1999.11678963)). In news stories
+about cancer research, readers trusted the scientists more when the
+story reported limitations, and most when the scientists stated them
+([Jensen 2008](https://doi.org/10.1111/j.1468-2958.2008.00324.x)).
+
+**Where readers drift.** The data section, with its sources, filters
+and merges, loses the most readers. Open it by restating the question,
+saying what kind of data the question needs and why, and only then say
+where the data come from and what you do to them. For the solar project:
+*to learn whether a new solar farm lowers the prices of nearby homes, we
+need the sale prices of homes near and far from each farm, before and
+after it opens; county averages would mix the two groups, so we need
+each sale with its address and date.* Then the source and the
+filters. After their minds wander, readers usually go back a
+line or two ([Varao-Sousa, Solman and Kingstone
+2017](https://doi.org/10.1037/cep0000123)), so put the summary where
+they will land: at the start of each section and in the first sentence
+of each paragraph. The same holds in talks, most of all long ones: at each new part,
+say where it fits in the argument.
+
+**Proofread.** A spelling error is an off-ramp of a cruder kind. On
+Kickstarter, projects with spelling errors reached their funding goal
+less often ([Mollick
+2014](https://doi.org/10.1016/j.jbusvent.2013.06.005)). Have someone
+outside the team read the final draft.
+
+::: {.callout-tip appearance="simple" collapse="true"}
+## Practice: read your draft as a skeptic
+
+Next to each claim in your draft, write the question a skeptical
+reader would ask: a criticism, a variation or a limitation. Then check
+whether the next sentence answers it. If it does not, either answer it
+there or move it to the limitations section.
+:::
+
+## 6. Write plain, neutral sentences
+
+Academic and professional prose gets a true claim to the reader with
+the least effort. Each rule below has a before and an after; the
+examples are hypothetical unless a source is given.
+
+1. **Active voice**, with *we* for the team. *Sale records were
+   obtained from ATTOM* becomes *We obtained sale records from ATTOM*.
+   Use the passive only when the actor does not matter.
+2. **Present tense** for what a paper or table shows, past for what
+   happened in its sample, future for your plans.
+   *Gaur and Lang (2023) found that solar farms lower home values*
+   becomes *Gaur and Lang (2023) find that homes in Massachusetts and
+   Rhode Island within 0.6 miles of a solar farm lost 1.5 to 3.6
+   percent of their value*
+   ([Gaur and Lang 2023](https://doi.org/10.1016/j.eneco.2023.106699)).
+   The present tense goes on the paper's verb, never on the finding
+   about its sample.
+3. **Verbs** in place of nominalizations, nouns made from verbs. *We
+   conduct an analysis of sale prices* becomes *We analyze sale
+   prices*.
+4. **One term** for one thing. *Solar farm, array, facility and
+   project* in one paragraph read as four things. McCloskey cites a
+   paper that used eight terms for one idea in two pages ([McCloskey
+   1985](https://doi.org/10.1111/j.1465-7295.1985.tb01761.x), rule 19).
+5. **Name the study** and its setting. *The literature finds that solar
+   farms lower home values* becomes *Elmallah et al. (2023) find that,
+   across more than 1,500 solar projects in six states, homes within
+   half a mile sold for about 1.5 percent less than homes two to four
+   miles away* ([Elmallah et al.
+   2023](https://doi.org/10.1016/j.enpol.2023.113425)).
+6. **Hedge once**, on the interpretation, where the doubt lies. State
+   what the data show plainly. *Visits may have fallen somewhat more,
+   which possibly suggests the boycott may have mattered* becomes
+   *Visits fell 2.1 percent more in the most Republican third of
+   counties. The gap may reflect the boycott, or a local shock in the
+   same weeks.* (The 2.1 percent is invented.)
+7. **The number in place of the adjective.** *Target's sales collapsed
+   dramatically* becomes *comparable store sales fell 4.3 percent in
+   the second quarter of 2023* ([Target
+   2023](https://www.sec.gov/Archives/edgar/data/27419/000002741923000032/a2023q2ex-99.htm)).
+   Give the number, its unit, the comparison and the period.
+8. **No hype words**, the adjectives and adverbs that praise the work:
+   novel, first, groundbreaking, critical, very, clearly. Say once what
+   is new, compared with the closest published study. You need not
+   write "the first study to": an introduction that shows the gap makes
+   that plain, and some journals remove such claims before acceptance
+   ([*Nature Human Behaviour*
+   2021](https://doi.org/10.1038/s41562-021-01068-x)).
+9. **Short words and no throat-clearing.** Cut *it should be noted
+   that* and *it is important to mention*. Follow every *this* with its
+   noun.
+
+**When to cite.** Cite any claim a reader could dispute: a number,
+another study's finding, a method you borrow. Common knowledge needs no
+citation. Mark a hypothesis or an opinion as yours (*we expect*, *we
+argue*) and cite the evidence behind it, if any. Point your own results
+to the table or figure that shows them. The test is whether a
+reasonable reader could ask "says who?".
+
+**Why hype words fail.** In the abstracts of grants funded by NIH, the
+share with at least one hype word rose from 72% in 1985 to 97% in
+2020, so the words no longer tell a reviewer which work is new ([Millar,
+Batalo and Budgell 2022](https://doi.org/10.1001/jamanetworkopen.2022.28676)).
+Promotional words did go with higher odds of funding in one study of
+11,535 applications, but the data are observational, and a reviewer
+cannot check *novel* without a comparison ([Qiu et al.
+2024](https://doi.org/10.1001/jamanetworkopen.2024.48696)).
+
+::: {.callout-tip appearance="simple" collapse="true"}
+## Practice: five sentences to rewrite
+
+Each sentence breaks at least one rule above. Rewrite it, then open the
+suggested answer below.
+
+1. A novel and comprehensive analysis of boycott effects was conducted
+   by our team.
+2. Store visits may have possibly declined somewhat following the 2023
+   boycott.
+3. The literature shows that boycotts hurt retailers.
+4. Solar arrays, PV facilities and solar projects all affect nearby
+   homes, and these installations are growing.
+5. It should be noted that this is very important for planning boards.
+
+**Suggested answers.** (1) We estimate how much store visits fell after
+each boycott. (2) Store visits fell 2.1 percent in the 20 weeks after
+the 2023 boycott, against the same weeks a year earlier (the number is
+invented; give yours). (3) Name the study, its setting and its number,
+for example the Target earnings release on comparable store sales. (4)
+Pick one term, *solar farm*, and use it every time; give the growth as
+a number with its source. (5) Say who decides what: town planning
+boards set how far solar farms must sit from homes.
+:::
+
+## 7. Write in three passes
+
+A paper is written from the big picture down to the sentence, the way
+meeting 5 asked you to plan code. There are three passes, and each
+starts only when the one before it is finished.
+
+1. **Sections.** List the headings the document needs, in order. For
+   the proposal they are the thirteen required headings. For a paper,
+   start from the schematic in section 3.
+2. **Outline.** Under each heading, write one bullet per paragraph.
+   Each bullet holds the topic sentence, written out in full, and the
+   evidence the paragraph will point to: the citation, the number, the
+   table or figure. The outline is exhaustive, so every paragraph of the
+   draft has its bullet. If you cannot write the bullet, the paragraph
+   has no point yet. The proposal outline due November 11 is this pass.
+3. **Prose.** Turn each bullet into a paragraph. Open with the bullet's
+   point, answer each doubt in the sentence that follows it, open each
+   section with a "you are here" sentence, and use precise terms and
+   numbers throughout. Do not bury the point at the end of the
+   paragraph.
+
+**The outline sets the length.** Plan about 150 words a paragraph. The
+number of bullets then gives the length of the draft. If the count runs
+past the page limit, cut bullets, which means cutting points, before
+you write any prose. Trimming words from finished paragraphs costs more
+time and saves less space.
+
+**An example.** The main text of the 2021 paper on climate change and
+farm productivity, in the version first submitted ([Ortiz-Bobea et al.
+2020](https://arxiv.org/abs/2007.10415)), has sixteen paragraphs. The
+journal prints no headings in the main text, but the outline behind it
+had seven sections. The slides for meeting 10 rebuild that outline
+bullet by bullet. Here is its length.
+
+| Section | Paragraphs | At 150 words each | Words written |
+|:--------|-----:|-----:|-----:|
+| Introduction | 3 | 450 | 357 |
+| Framework and model | 2 | 300 | 322 |
+| Data | 1 | 150 | 113 |
+| How productivity responds to weather | 3 | 450 | 448 |
+| Impact of climate change since 1961 | 3 | 450 | 315 |
+| Checks | 3 | 450 | 437 |
+| Caveats and conclusion | 1 | 150 | 272 |
+| **Total** | **16** | **2,400** | **2,264** |
+
+Twelve of the sixteen paragraphs state their point in the first
+sentence. The other four show the usual exceptions: the opening funnel
+ends on its point, a paragraph that sets up an equation states its
+point after it, a paragraph that opens with a question answers it in
+sentence 4, and the last paragraph carries three points that an outline
+would have given three bullets.
+
+::: {.callout-tip appearance="simple" collapse="true"}
+## Practice: outline your proposal
+
+Write the proposal's thirteen headings. Under each, write one bullet
+per paragraph: the topic sentence in full, then the evidence it will
+point to. Count the bullets, multiply by 150, and compare the total
+with the page limit. Cut bullets until it fits, then read the topic
+sentences alone, in order. They should give the argument.
+:::
+
+## Checklist before you submit
+
+Run it on the outline on November 11, and again on the proposal.
+
+- [ ] The title states your question, or your finding, in about ten
+      words, with no acronyms.
+- [ ] Page one answers the three questions: what we will learn, why it
+      is worth knowing, and how we will know the answer is right.
+- [ ] The first paragraph is a short funnel that ends on your question.
+- [ ] The sections follow the thirteen required headings, in order.
+- [ ] The outline has a bullet for every paragraph, with its topic
+      sentence and its evidence.
+- [ ] Every paragraph opens with its point, except the opening funnel.
+      The reverse outline reads as the argument.
+- [ ] Each objection a skeptical reader would raise is answered next to
+      the claim that raises it, or stated once in the limitations
+      section.
+- [ ] Each section opens with a "you are here" sentence on how it fits
+      the argument.
+- [ ] Every technical term is defined at first use, and each thing has
+      one name throughout.
+- [ ] Every claim about size is a number with its unit, its comparison
+      and its period.
+- [ ] Every study is named with its setting, and nothing is attributed
+      to "the literature".
+- [ ] Every claim a reader could dispute has a source, and every
+      hypothesis or opinion is marked as yours.
+- [ ] No hype words. What is new is stated once, against the closest
+      published study.
+- [ ] Someone outside the team has read it for spelling and for sense.
+
+## Further reading
+
+- Mensh and Kording (2017), [*Ten simple rules for structuring
+  papers*](https://doi.org/10.1371/journal.pcbi.1005619). Short and
+  free.
+- Przeworski and Salomon (1988, rev. 1995), [*On the Art of Writing
+  Proposals*](https://law.uga.edu/sites/default/files/OnTheArtOfWritingProposals_SocialScienceResearchCouncilCompetiotions.pdf).
+  What a proposal's reader looks for.
+- Gopen and Swan (1990), [*The Science of Scientific
+  Writing*](https://www.jstor.org/stable/29774235), American Scientist
+  78(6). Readers look for information where they expect to find it.
+- McCloskey (1985), [*Economical
+  Writing*](https://doi.org/10.1111/j.1465-7295.1985.tb01761.x),
+  Economic Inquiry 23(2). A style guide written by an economist for
+  economists.

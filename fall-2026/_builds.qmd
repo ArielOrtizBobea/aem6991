@@ -9,7 +9,7 @@
 | **7** &nbsp;Model failures | The one threat your design must survive — its direction, and whether controls can close it |
 | **8** &nbsp;Research designs I | Whether an experiment, instrument or discontinuity is open to you |
 | **9** &nbsp;Research designs II | Your design defended in public, plus the attack that landed — the identification section and the limitation |
-| **10** &nbsp;Writing | Your problem statement, as an outline somebody outside your team could follow |
+| **10** &nbsp;Writing | Your project told in three minutes, and the first question a room asks about it |
 | **11** &nbsp;Figures | Your project's key figure, drawn twice — as you expect it to look, and as it looks if you are wrong |
 | **12** &nbsp;Speaking | Your final-presentation deck, rehearsed and attacked — plus the gap between the claim you made and the claim the room heard |
 | **14** &nbsp;Final presentations | Your plan, pitched — and what your team owes AEM 6992 over the break |

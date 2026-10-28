@@ -47,7 +47,7 @@
 
 <tr class="g-first g04"><td class="g-rail" rowspan="3"><span>Communication</span></td><td>Wed Oct 28</td>
   <td class="topic"><a href="sessions/10-writing.html">10 · Writing</a>
-    <span class="t-desc">Writing is taught here, as a method rather than as advice. A piece of writing is built outline first — one topic sentence per paragraph, in order, before any prose exists. The fastest way to see that is backwards.</span></td>
+    <span class="t-desc">Who reads which part of a document, and how to write for each: skimmers, engaged readers and deep readers. The title, abstract, introduction and full paper nest like Russian dolls. Then the structure readers expect, one idea per paragraph, keeping a skeptical reader on your path, and plain, neutral sentences.</span></td>
   <td class="hw">Project talk — three minutes, in session B</td></tr>
 <tr><td>Wed Nov 4</td>
   <td class="topic"><a href="sessions/11-figures.html">11 · Figures</a>

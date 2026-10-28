@@ -184,6 +184,11 @@ and it is announced in advance together with the meetings it covers. Its
 questions come from those lectures. Expect one in most weeks through
 meeting 12. The exact number is not fixed.
 
+**Quizzes are taken without AI.** Using a chatbot, a browser AI plugin
+or any other AI tool to answer a quiz question is unauthorized
+assistance under the Code of Academic Integrity, and it earns an F in
+the course.
+
 Most are scenario questions. *Here is a situation --- which design
 fits, and what would have to be true?* *Here is a design --- what would
 break it?* *Here is a step an AI just did for you --- how would you
@@ -430,9 +435,9 @@ rather than late.
 
 ### AI policy
 
-Generative AI tools are **permitted by default** for all coursework.
-Students are expected to use them, and to use them well. Three rules
-apply to every deliverable:
+Generative AI tools are **permitted by default** for all coursework
+except the in-class quizzes. Students are expected to use them, and to
+use them well. Three rules apply to every deliverable:
 
 1.  **Disclose what you used.** Every submitted deliverable carries a
     short disclosure block: which tools, on which parts of the work.
@@ -472,8 +477,12 @@ teaching is verification, not abstinence.
 ### Academic integrity
 
 Every student is expected to abide by the [Cornell University Code of
-Academic Integrity](https://theuniversityfaculty.cornell.edu/academic-integrity/).
-Work submitted for credit is your own.
+Academic Integrity](https://deanoffaculty.cornell.edu/faculty-and-academic-affairs/academic-integrity/upcoming-code-of-academic-integrity/),
+which took effect on August 24, 2026. Work submitted for credit is your
+own.
+
+**A confirmed violation earns an F in the course.** I report every case
+under the Code's procedures.
 
 AI assistance is permitted under the policy above. **Failure to disclose
 AI use is a violation.** So is submitting a fabricated citation as a

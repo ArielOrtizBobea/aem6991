@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" width="960" height="340" font-family="&quot;Source Sans 3&quot;, &quot;Source Sans Pro&quot;, Helvetica, Arial, sans-serif" font-size="19">
+<rect width="960" height="340" fill="#ffffff"/>
+<text x="238" y="26" text-anchor="end" fill="#6b6b6b">Month</text>
+<text x="271.7" y="26" text-anchor="middle" fill="#6b6b6b">1</text>
+<text x="315.1" y="26" text-anchor="middle" fill="#6b6b6b">2</text>
+<text x="358.4" y="26" text-anchor="middle" fill="#6b6b6b">3</text>
+<text x="401.8" y="26" text-anchor="middle" fill="#6b6b6b">4</text>
+<text x="445.2" y="26" text-anchor="middle" fill="#6b6b6b">5</text>
+<text x="488.6" y="26" text-anchor="middle" fill="#6b6b6b">6</text>
+<text x="531.9" y="26" text-anchor="middle" fill="#6b6b6b">7</text>
+<text x="575.3" y="26" text-anchor="middle" fill="#6b6b6b">8</text>
+<text x="618.7" y="26" text-anchor="middle" fill="#6b6b6b">9</text>
+<text x="662.1" y="26" text-anchor="middle" fill="#6b6b6b">10</text>
+<text x="705.4" y="26" text-anchor="middle" fill="#6b6b6b">11</text>
+<text x="748.8" y="26" text-anchor="middle" fill="#6b6b6b">12</text>
+<text x="792.2" y="26" text-anchor="middle" fill="#6b6b6b">13</text>
+<text x="835.6" y="26" text-anchor="middle" fill="#6b6b6b">14</text>
+<text x="878.9" y="26" text-anchor="middle" fill="#6b6b6b">15</text>
+<text x="922.3" y="26" text-anchor="middle" fill="#6b6b6b">16</text>
+<text x="238" y="66.0" text-anchor="end" font-weight="600" fill="#1b1b1b">Early stores</text>
+<rect x="251.5" y="40" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="294.9" y="40" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="338.2" y="40" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="381.6" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="425.0" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="468.4" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="511.8" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="555.1" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="598.5" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="641.9" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="685.2" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="728.6" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="772.0" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="815.4" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="858.8" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="902.1" y="40" width="40.4" height="38" fill="#b31b1b"/>
+<text x="238" y="110.0" text-anchor="end" font-weight="600" fill="#1b1b1b">Late stores</text>
+<rect x="251.5" y="84" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="294.9" y="84" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="338.2" y="84" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="381.6" y="84" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="425.0" y="84" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="468.4" y="84" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="511.8" y="84" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="555.1" y="84" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="598.5" y="84" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="641.9" y="84" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="685.2" y="84" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="728.6" y="84" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="772.0" y="84" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="815.4" y="84" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="858.8" y="84" width="40.4" height="38" fill="#b31b1b"/>
+<rect x="902.1" y="84" width="40.4" height="38" fill="#b31b1b"/>
+<text x="238" y="154.0" text-anchor="end" font-weight="600" fill="#1b1b1b">Never adopt</text>
+<rect x="251.5" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="294.9" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="338.2" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="381.6" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="425.0" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="468.4" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="511.8" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="555.1" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="598.5" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="641.9" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="685.2" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="728.6" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="772.0" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="815.4" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="858.8" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<rect x="902.1" y="128" width="40.4" height="38" fill="#e4e4de"/>
+<line x1="380.1" x2="380.1" y1="36" y2="294" stroke="#55554f" stroke-width="2" stroke-dasharray="5 4"/>
+<line x1="727.1" x2="727.1" y1="36" y2="294" stroke="#55554f" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="238" y="204" text-anchor="end" fill="#6b6b6b">Treated</text>
+<text x="315.1" y="204" text-anchor="middle" fill="#1b1b1b">none</text>
+<text x="553.6" y="204" text-anchor="middle" fill="#1b1b1b">Early</text>
+<text x="835.6" y="204" text-anchor="middle" fill="#1b1b1b">Early and late</text>
+<text x="238" y="240" text-anchor="end" fill="#6b6b6b">Clean controls</text>
+<text x="553.6" y="240" text-anchor="middle" fill="#1b1b1b">Late and never</text>
+<text x="835.6" y="240" text-anchor="middle" fill="#1b1b1b">Never</text>
+<text x="238" y="276" text-anchor="end" fill="#6b6b6b">Already-treated controls</text>
+<text x="835.6" y="276" text-anchor="middle" fill="#b31b1b" font-weight="600">Early, for late stores</text>
+<rect x="250" y="315" width="22" height="16" fill="#b31b1b"/>
+<text x="280" y="330" fill="#6b6b6b">has the app</text>
+<rect x="420" y="315" width="22" height="16" fill="#e4e4de"/>
+<text x="450" y="330" fill="#6b6b6b">no app</text>
+</svg>

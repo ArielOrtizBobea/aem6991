@@ -1,0 +1,2577 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
+
+  <title>AEM 6991 – AEM 6991 · 10 Writing</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-638d68159db5c4da088d5ac853e4cd78.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <p class="ttl-number">AEM 6991</p>
+  <p class="ttl-course">MPS Capstone Project I</p>
+  <p class="ttl-prof">Prof. Ariel Ortiz-Bobea</p>
+  <h1 class="title">10 · Writing</h1>
+  <p class="subtitle">Wednesday, October 28, 2026</p>
+  <img class="ttl-seal" src="../images/cornell_seal.svg" alt="Cornell University">
+</section>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
+<div style="font-size:0.84em">
+<ol type="1">
+<li><strong>Your readers.</strong> Skimmers, engaged readers and deep readers.</li>
+<li><strong>Nested versions.</strong> The title, abstract, introduction and full paper, each for its reader.</li>
+<li><strong>The structure readers expect.</strong> The standard order of a paper, a memo and a proposal.</li>
+<li><strong>One idea per paragraph.</strong> Topic sentences, checked with a reverse outline.</li>
+<li><strong>Keeping the reader on your path.</strong> Answering doubts where they arise, and bringing back readers who drift.</li>
+<li><strong>Plain and neutral sentences.</strong> Active verbs, numbers in place of adjectives, one term for one thing.</li>
+<li><strong>The mechanics of writing a paper.</strong> The sections, then one bullet per paragraph, then the prose.</li>
+</ol>
+</div>
+<p><span class="src">Handout: the writing guide, on this meeting’s page.</span></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>You have just written a project description. The next document is the proposal, and its readers are technically capable but have not lived inside your project. Today is about those readers, from the title down to the sentence.</p>
+<p>Meeting 5 taught the outline: one topic sentence per paragraph, written before the prose. It also listed three ways a draft claims more than the result: past to present, sample to population, association to cause. Those still hold.</p>
+<p>The writing guide on this meeting’s page carries what the slides leave out: the genre schematics, the style rules with more examples, and a checklist to run before November 11.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section>
+<section id="your-readers" class="title-slide slide level1 center">
+<h1>1. Your readers</h1>
+<aside class="notes">
+<p>Thirty seconds. Who reads which part, and at what level of detail.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="most-panelists-read-only-part-of-a-grant-application" class="slide level2">
+<h2>Most panelists read only part of a grant application</h2>
+<ul>
+<li>The National Institutes of Health (NIH) funds US medical research through review panels.</li>
+<li>About 20 panelists score each application.</li>
+<li>At least three assigned reviewers read it closely.</li>
+<li>The rest most likely skim the abstract, the one-page Specific Aims and the significance section.</li>
+<li>One NIH institute tells applicants to write those parts for a reader of <em>Scientific American</em>, a popular science magazine.</li>
+</ul>
+<p><a href="https://www.niaid.nih.gov/grants-contracts/know-your-audience" style="font-size:0.55em; color:#6b6b6b">National Institute of Allergy and Infectious Diseases (NIAID), <em>Know Your Audience</em>, NIH grant guidance.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>NIH is the largest public funder of medical research in the world, and its review panels are where most US research proposals are judged. The institute’s advice describes the panel as it is: around 20 people score each application, three of them were assigned to read it, and everyone else forms a view from the parts they had time for.</p>
+<p>The people who vote are mostly not the people who read closely. A proposal has to work for both. The parts the skimmers read are written for an intelligent reader outside the field, which is why NIAID names a popular science magazine as the level.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="one-topic-written-at-three-levels" class="slide level2">
+<h2>One topic written at three levels</h2>
+<div class="columns">
+<div class="column m10-shot" style="width:32%;">
+<p><img data-src="figures/m10-level-sciam.jpg" alt="A Scientific American article of August 18, 2021, headlined Wake-Up Call: Climate Change Threatens Rice Farming, with a photograph of a flooded rice field."></p>
+<p>For the public: a popular science magazine</p>
+</div><div class="column m10-shot" style="width:32%;">
+<p><img data-src="figures/m10-level-preprint.png" alt="A methods page of the 2021 preprint with two equations for the cumulative impact of climate change on productivity."></p>
+<p>For economists: the methods of the 2021 preprint</p>
+</div><div class="column m10-shot" style="width:32%;">
+<p><img data-src="figures/m10-level-proof.png" alt="A page of an econometrics paper filled with display equations from a proof."></p>
+<p>For econometricians: a proof in a methods paper</p>
+</div></div>
+<p><a href="https://www.scientificamerican.com/article/wake-up-call-climate-change-threatens-rice-farming/" style="font-size:0.55em; color:#6b6b6b">Schonhardt and E&amp;E News (2021), <em>Wake-Up Call: Climate Change Threatens Rice Farming</em>, Scientific American, August 18.</a> <a href="https://arxiv.org/abs/2007.10415" style="font-size:0.55em; color:#6b6b6b">Ortiz-Bobea, Ault, Carrillo, Chambers and Lobell (2020), <em>The Historical Impact of Anthropogenic Climate Change on Global Agricultural Productivity</em>, arXiv 2007.10415, page 11.</a> <a href="https://doi.org/10.3982/QE1319" style="font-size:0.55em; color:#6b6b6b">Keane and Neal (2020), <em>Climate change and U.S. agriculture: Accounting for multidimensional slope heterogeneity in panel data</em>, Quantitative Economics 11, 1391–1429, page 1423 (CC BY-NC 4.0).</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>All three are about climate and farming. The magazine story opens on rice and half the world’s diet; further down it cites the 2021 study and quotes me, with one number and no equation. The preprint’s methods page assumes the reader knows a regression and a counterfactual. Keane and Neal’s appendix proves the properties of a new panel estimator, and it is written for the few people who will check the proof.</p>
+<p>None of these is the right level in general. Each is right for its reader.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="readers-range-from-skimmers-to-deep-readers" class="slide level2">
+<h2>Readers range from skimmers to deep readers</h2>
+<div style="font-size:0.7em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">In research</th>
+<th style="text-align: left;">In an organization</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Skimmers</strong> read the title and the summary, then stop</td>
+<td style="text-align: left;">Someone searching for papers; a student</td>
+<td style="text-align: left;">The executive who needs the big picture</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Engaged readers</strong> read the introduction and the main results</td>
+<td style="text-align: left;">Someone writing a literature review; a researcher deciding whether the paper matters to them</td>
+<td style="text-align: left;">The manager who acts on the recommendation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Deep readers</strong> read the methods and the appendix</td>
+<td style="text-align: left;">A peer who follows the work; a critic; a referee</td>
+<td style="text-align: left;">The analyst who checks the numbers</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>The mix of readers depends on the setting.</li>
+<li>Some details are never read, and they are written for the few who need them.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>Every document has all three kinds of reader, in different proportions. In research, most people who meet a paper see its title in a search or a reference list. Fewer read the introduction to decide whether it matters to them. A handful read every line: the referee, a critic, the researcher who builds on it.</p>
+<p>In an organization the summary is for the executive, who needs the big picture and will not read further. The detail is for the people who check the work. Some of it is never read, and that is by design: it is there so the few who need it can find it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="each-part-of-a-paper-has-its-own-reader" class="slide level2">
+<h2>Each part of a paper has its own reader</h2>
+<ul>
+<li>The title reaches skimmers. It has no jargon and no acronyms.</li>
+<li>The abstract reaches skimmers and engaged readers. Each technical term is spelled out.</li>
+<li>The introduction reaches engaged readers. It uses the field’s terms and defines each one.</li>
+<li>The methods and appendix reach deep readers. They carry the full technical detail.</li>
+<li>The technical level rises as the reader goes deeper.</li>
+</ul>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>The common advice to “write for a general audience” is half right. The title and the abstract are written for the broadest reader. The deeper sections match the deeper reader, who would be slowed down by explanations of what they already know.</p>
+<p>Two pieces of evidence behind writing the top layers plainly. George Heilmeier, who ran the Defense Advanced Research Projects Agency (DARPA) in the 1970s, asked of every proposal: “What are you trying to do? Articulate your objectives using absolutely no jargon.” And in an economics experiment, Camerer, Loewenstein and Weber (1989, https://doi.org/10.1086/261651) found that people who know something overestimate how much others know, which they called the curse of knowledge. You are the informed party in your own project.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="one-paper-titled-for-three-audiences" class="slide level2">
+<h2>One paper titled for three audiences</h2>
+<div style="font-size:0.64em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Audience</th>
+<th style="text-align: left;">Where it appeared</th>
+<th style="text-align: left;">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">The public</td>
+<td style="text-align: left;">Cornell Chronicle, 2021</td>
+<td style="text-align: left;">“<em>Climate change has cost 7 years of ag productivity growth</em>”</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Scientists in many fields</td>
+<td style="text-align: left;"><em>Nature Climate Change</em>, 2021</td>
+<td style="text-align: left;">“<em>Anthropogenic climate change has slowed global agricultural productivity growth</em>”</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Economists in the field</td>
+<td style="text-align: left;">arXiv working paper, 2020</td>
+<td style="text-align: left;">“<em>The Historical Impact of Anthropogenic Climate Change on Global Agricultural Productivity</em>”</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="font-size:0.84em">
+<ul>
+<li>The public title drops the word anthropogenic and states the loss in years of growth.</li>
+<li>The journal title states the finding.</li>
+<li>The working-paper title names the topic for readers who know the field.</li>
+</ul>
+</div>
+<p><a href="https://news.cornell.edu/stories/2021/04/climate-change-has-cost-7-years-ag-productivity-growth" style="font-size:0.55em; color:#6b6b6b">Friedlander (2021), Cornell Chronicle.</a> <a href="https://doi.org/10.1038/s41558-021-01000-1" style="font-size:0.55em; color:#6b6b6b">Ortiz-Bobea, Ault, Carrillo, Chambers and Lobell (2021), Nature Climate Change 11, 306–312.</a> <a href="https://arxiv.org/abs/2007.10415" style="font-size:0.55em; color:#6b6b6b">Ortiz-Bobea et al.&nbsp;(2020), arXiv 2007.10415.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>One study, three titles, each written for a different reader. The university’s news office turned “21% since 1961” into years of lost growth, a unit anyone can picture; the paper’s own abstract makes the same translation. The journal title is for scientists outside economics and states the result. The working paper went to economists, who read “historical impact” and know what kind of paper it is.</p>
+<p>Your proposal has one title, but the same question applies: who sees it first, and what do they need from nine words?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-journal-sets-the-reader-and-the-framing" class="slide level2">
+<h2>The journal sets the reader and the framing</h2>
+<ul>
+<li>Bloom and coauthors ran two randomized experiments at Ctrip, a Chinese travel agency now called Trip.com.</li>
+</ul>
+<div class="columns" style="font-size:0.72em">
+<div class="column" style="width:50%;">
+<p><strong>For economists</strong>: <em>Quarterly Journal of Economics</em>, 2015</p>
+<ul>
+<li>“<em>Does Working from Home Work? Evidence from a Chinese Experiment</em>”</li>
+<li>Call-center employees worked from home or in the office.</li>
+<li>The abstract opens on an incentive problem: employees may shirk at home.</li>
+<li>It splits the gain in performance into its sources.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>For scientists in many fields</strong>: <em>Nature</em>, 2024</p>
+<ul>
+<li>“<em>Hybrid working from home improves retention without damaging performance</em>”</li>
+<li>Employees with university degrees worked a hybrid schedule.</li>
+<li>The abstract opens: “<em>Working from home has become standard for employees with a university degree.</em>”</li>
+<li>It ends on a practice firms can adopt.</li>
+</ul>
+</div></div>
+<p><a href="https://doi.org/10.1093/qje/qju032" style="font-size:0.55em; color:#6b6b6b">Bloom, Liang, Roberts and Ying (2015), <em>Does Working from Home Work? Evidence from a Chinese Experiment</em>, Quarterly Journal of Economics 130(1), 165–218.</a> <a href="https://doi.org/10.1038/s41586-024-07500-2" style="font-size:0.55em; color:#6b6b6b">Bloom, Han and Liang (2024), <em>Hybrid working from home improves retention without damaging performance</em>, Nature 630, 920–925 (CC BY 4.0).</a></p>
+<aside class="notes">
+<p>Two and a half minutes.</p>
+<p>Same lead author, same firm, two journals. The economics paper is framed around a question economists care about, incentives: does an employee out of sight shirk? It decomposes the performance gain into more minutes worked and more calls per minute. The Nature paper is framed around a practice that about 100 million employees in Europe and North America have adopted, and it closes on the sentence a manager would quote: “These results indicate that a hybrid schedule with two days a week working from home does not damage performance.”</p>
+<p>Choose the journal, or the reader, first. The framing of the contribution follows from it: which question the work answers, and which literature it speaks to. Your proposal’s reader is fixed, so the framing should be too.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="nested-versions" class="title-slide slide level1 center">
+<h1>2. Nested versions</h1>
+<aside class="notes">
+<p>Thirty seconds. Several kinds of reader means several versions of the same paper, nested one inside the next.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="internists-reported-reading-only-the-abstract-of-most-articles" class="slide level2">
+<h2>Internists reported reading only the abstract of most articles</h2>
+<ul>
+<li>In 1998, 264 of 399 US internists (doctors of internal medicine) returned a mailed survey on their journal reading.</li>
+<li>They reported reading only the abstract for 63% of the articles they read.</li>
+<li>For those articles, the abstract was the paper.</li>
+</ul>
+<p><a href="https://doi.org/10.1046/j.1525-1497.2000.00202.x" style="font-size:0.55em; color:#6b6b6b">Saint, Christakis, Saha, Elmore, Welsh, Baker and Koepsell (2000), <em>Journal reading habits of internists</em>, Journal of General Internal Medicine 15(12), 881–884.</a></p>
+<aside class="notes">
+<p>One minute.</p>
+<p>These are practising doctors, who read journals to decide how to treat patients. For nearly two articles in three, what they took away came from the abstract alone. Self-reports, and from 1998, but the direction is not in doubt: most readers of most papers stop early.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-is-each-of-these" class="slide level2">
+<h2>What is each of these?</h2>
+<div style="width:44%; margin:0 auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 450 545" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" role="img" aria-label="Three rows of nesting dolls in four sizes labelled title, abstract, introduction and full paper. The cat and the dog are recognizable at every size. The brown doll's title and abstract have no tail and could be a bear; from the introduction on it has a tail and is a monkey."><text x="45" y="22" text-anchor="middle" font-size="17" font-weight="600" fill="#6b6b6b">Title</text><text x="135" y="22" text-anchor="middle" font-size="17" font-weight="600" fill="#6b6b6b">Abstract</text><text x="245" y="22" text-anchor="middle" font-size="17" font-weight="600" fill="#6b6b6b">Introduction</text><text x="380" y="22" text-anchor="middle" font-size="17" font-weight="600" fill="#6b6b6b">Full paper</text><g transform="translate(22.0,121.8) scale(0.46)"><path d="M22,34 L26,4 L44,24 Z" fill="#7d7d78" stroke="#55554f" stroke-width="2"></path><path d="M78,34 L74,4 L56,24 Z" fill="#7d7d78" stroke="#55554f" stroke-width="2"></path><ellipse cx="50" cy="118" rx="44" ry="50" fill="#7d7d78" stroke="#55554f" stroke-width="2"></ellipse><circle cx="50" cy="52" r="34" fill="#7d7d78" stroke="#55554f" stroke-width="2"></circle><circle cx="50" cy="55" r="24" fill="#f6e7d8"></circle><circle cx="41" cy="54" r="4" fill="#1b1b1b"></circle><circle cx="59" cy="54" r="4" fill="#1b1b1b"></circle></g><g class="fragment" data-fragment-index="1"><g transform="translate(104.0,94.6) scale(0.62)"><path d="M22,34 L26,4 L44,24 Z" fill="#7d7d78" stroke="#55554f" stroke-width="2"></path><path d="M78,34 L74,4 L56,24 Z" fill="#7d7d78" stroke="#55554f" stroke-width="2"></path><ellipse cx="50" cy="118" rx="44" ry="50" fill="#7d7d78" stroke="#55554f" stroke-width="2"></ellipse><circle cx="50" cy="52" r="34" fill="#7d7d78" stroke="#55554f" stroke-width="2"></circle><path d="M30,98 Q50,104 70,98" stroke="#55554f" stroke-width="4" fill="none"></path><circle cx="50" cy="55" r="24" fill="#f6e7d8"></circle><circle cx="41" cy="54" r="3.2" fill="#1b1b1b"></circle><circle cx="59" cy="54" r="3.2" fill="#1b1b1b"></circle><path d="M46,61 L54,61 L50,65 Z" fill="#c76b6b"></path></g></g><g class="fragment" data-fragment-index="2"><g transform="translate(205.0,64.0) scale(0.8)"><path d="M22,34 L26,4 L44,24 Z" fill="#7d7d78" stroke="#55554f" stroke-width="2"></path><path d="M78,34 L74,4 L56,24 Z" fill="#7d7d78" stroke="#55554f" stroke-width="2"></path><path d="M28,28 L29,12 L39,23 Z" fill="#e8a3a3"></path><path d="M72,28 L71,12 L61,23 Z" fill="#e8a3a3"></path><ellipse cx="50" cy="118" rx="44" ry="50" fill="#7d7d78" stroke="#55554f" stroke-width="2"></ellipse><circle cx="50" cy="52" r="34" fill="#7d7d78" stroke="#55554f" stroke-width="2"></circle><path d="M30,98 Q50,104 70,98" stroke="#55554f" stroke-width="4" fill="none"></path><path d="M24,118 Q50,126 76,118 M26,136 Q50,144 74,136" stroke="#55554f" stroke-width="4" fill="none"></path><circle cx="50" cy="55" r="24" fill="#f6e7d8"></circle><circle cx="41" cy="54" r="3.2" fill="#1b1b1b"></circle><circle cx="59" cy="54" r="3.2" fill="#1b1b1b"></circle><path d="M46,61 L54,61 L50,65 Z" fill="#c76b6b"></path><path d="M50,65 L50,68 M45,69 Q50,72 55,69" stroke="#1b1b1b" stroke-width="1.3" fill="none"></path><line x1="40" y1="63" x2="24" y2="59" stroke="#1b1b1b" stroke-width="1"></line><line x1="40" y1="66" x2="24" y2="67" stroke="#1b1b1b" stroke-width="1"></line><line x1="60" y1="63" x2="76" y2="59" stroke="#1b1b1b" stroke-width="1"></line><line x1="60" y1="66" x2="76" y2="67" stroke="#1b1b1b" stroke-width="1"></line></g></g><g class="fragment" data-fragment-index="3"><g transform="translate(330.0,30.0) scale(1.0)"><path d="M22,34 L26,4 L44,24 Z" fill="#7d7d78" stroke="#55554f" stroke-width="2"></path><path d="M78,34 L74,4 L56,24 Z" fill="#7d7d78" stroke="#55554f" stroke-width="2"></path><path d="M28,28 L29,12 L39,23 Z" fill="#e8a3a3"></path><path d="M72,28 L71,12 L61,23 Z" fill="#e8a3a3"></path><ellipse cx="50" cy="118" rx="44" ry="50" fill="#7d7d78" stroke="#55554f" stroke-width="2"></ellipse><circle cx="50" cy="52" r="34" fill="#7d7d78" stroke="#55554f" stroke-width="2"></circle><path d="M30,98 Q50,104 70,98" stroke="#55554f" stroke-width="4" fill="none"></path><path d="M24,118 Q50,126 76,118 M26,136 Q50,144 74,136" stroke="#55554f" stroke-width="4" fill="none"></path><path d="M26,152 Q50,160 74,152" stroke="#55554f" stroke-width="4" fill="none"></path><ellipse cx="50" cy="130" rx="14" ry="18" fill="#efefe9" opacity="0.85"></ellipse><circle cx="50" cy="55" r="24" fill="#f6e7d8"></circle><circle cx="41" cy="54" r="3.2" fill="#1b1b1b"></circle><circle cx="59" cy="54" r="3.2" fill="#1b1b1b"></circle><path d="M46,61 L54,61 L50,65 Z" fill="#c76b6b"></path><path d="M50,65 L50,68 M45,69 Q50,72 55,69" stroke="#1b1b1b" stroke-width="1.3" fill="none"></path><line x1="40" y1="63" x2="24" y2="59" stroke="#1b1b1b" stroke-width="1"></line><line x1="40" y1="66" x2="24" y2="67" stroke="#1b1b1b" stroke-width="1"></line><line x1="60" y1="63" x2="76" y2="59" stroke="#1b1b1b" stroke-width="1"></line><line x1="60" y1="66" x2="76" y2="67" stroke="#1b1b1b" stroke-width="1"></line><line x1="40" y1="69" x2="25" y2="74" stroke="#1b1b1b" stroke-width="1"></line><line x1="60" y1="69" x2="75" y2="74" stroke="#1b1b1b" stroke-width="1"></line><ellipse cx="41" cy="54" rx="1.1" ry="2.6" fill="#c9b458"></ellipse><ellipse cx="59" cy="54" rx="1.1" ry="2.6" fill="#c9b458"></ellipse></g></g><g transform="translate(22.0,291.8) scale(0.46)"><ellipse cx="17" cy="56" rx="11" ry="25" transform="rotate(18 17 56)" fill="#6b4523"></ellipse><ellipse cx="83" cy="56" rx="11" ry="25" transform="rotate(-18 83 56)" fill="#6b4523"></ellipse><ellipse cx="50" cy="118" rx="44" ry="50" fill="#9a6a3a" stroke="#6b4523" stroke-width="2"></ellipse><circle cx="50" cy="52" r="34" fill="#9a6a3a" stroke="#6b4523" stroke-width="2"></circle><circle cx="50" cy="55" r="24" fill="#f6e7d8"></circle><circle cx="41" cy="54" r="4" fill="#1b1b1b"></circle><circle cx="59" cy="54" r="4" fill="#1b1b1b"></circle></g><g class="fragment" data-fragment-index="1"><g transform="translate(104.0,264.6) scale(0.62)"><ellipse cx="17" cy="56" rx="11" ry="25" transform="rotate(18 17 56)" fill="#6b4523"></ellipse><ellipse cx="83" cy="56" rx="11" ry="25" transform="rotate(-18 83 56)" fill="#6b4523"></ellipse><ellipse cx="50" cy="118" rx="44" ry="50" fill="#9a6a3a" stroke="#6b4523" stroke-width="2"></ellipse><circle cx="50" cy="52" r="34" fill="#9a6a3a" stroke="#6b4523" stroke-width="2"></circle><path d="M24,86 Q50,96 76,86" stroke="#2f6db3" stroke-width="6" fill="none"></path><circle cx="50" cy="55" r="24" fill="#f6e7d8"></circle><ellipse cx="50" cy="66" rx="13" ry="9" fill="#fbf3ea"></ellipse><circle cx="41" cy="54" r="3.2" fill="#1b1b1b"></circle><circle cx="59" cy="54" r="3.2" fill="#1b1b1b"></circle><ellipse cx="50" cy="63" rx="5" ry="3.6" fill="#1b1b1b"></ellipse></g></g><g class="fragment" data-fragment-index="2"><g transform="translate(205.0,234.0) scale(0.8)"><ellipse cx="17" cy="56" rx="11" ry="25" transform="rotate(18 17 56)" fill="#6b4523"></ellipse><ellipse cx="83" cy="56" rx="11" ry="25" transform="rotate(-18 83 56)" fill="#6b4523"></ellipse><ellipse cx="50" cy="118" rx="44" ry="50" fill="#9a6a3a" stroke="#6b4523" stroke-width="2"></ellipse><circle cx="50" cy="52" r="34" fill="#9a6a3a" stroke="#6b4523" stroke-width="2"></circle><path d="M24,86 Q50,96 76,86" stroke="#2f6db3" stroke-width="6" fill="none"></path><circle cx="50" cy="96" r="5" fill="#f6c84c" stroke="#b08a1e" stroke-width="1"></circle><circle cx="50" cy="55" r="24" fill="#f6e7d8"></circle><ellipse cx="50" cy="66" rx="13" ry="9" fill="#fbf3ea"></ellipse><circle cx="41" cy="54" r="3.2" fill="#1b1b1b"></circle><circle cx="59" cy="54" r="3.2" fill="#1b1b1b"></circle><ellipse cx="50" cy="63" rx="5" ry="3.6" fill="#1b1b1b"></ellipse><path d="M50,67 L50,71 M44,71 Q50,75 56,71" stroke="#1b1b1b" stroke-width="1.5" fill="none"></path></g></g><g class="fragment" data-fragment-index="3"><g transform="translate(330.0,200.0) scale(1.0)"><ellipse cx="17" cy="56" rx="11" ry="25" transform="rotate(18 17 56)" fill="#6b4523"></ellipse><ellipse cx="83" cy="56" rx="11" ry="25" transform="rotate(-18 83 56)" fill="#6b4523"></ellipse><ellipse cx="50" cy="118" rx="44" ry="50" fill="#9a6a3a" stroke="#6b4523" stroke-width="2"></ellipse><circle cx="50" cy="52" r="34" fill="#9a6a3a" stroke="#6b4523" stroke-width="2"></circle><path d="M24,86 Q50,96 76,86" stroke="#2f6db3" stroke-width="6" fill="none"></path><circle cx="50" cy="96" r="5" fill="#f6c84c" stroke="#b08a1e" stroke-width="1"></circle><ellipse cx="34" cy="130" rx="9" ry="7" fill="#6b4523"></ellipse><ellipse cx="66" cy="116" rx="7" ry="5" fill="#6b4523"></ellipse><ellipse cx="50" cy="132" rx="16" ry="20" fill="#fbf3ea" opacity="0.85"></ellipse><circle cx="50" cy="55" r="24" fill="#f6e7d8"></circle><ellipse cx="50" cy="66" rx="13" ry="9" fill="#fbf3ea"></ellipse><circle cx="41" cy="54" r="3.2" fill="#1b1b1b"></circle><circle cx="59" cy="54" r="3.2" fill="#1b1b1b"></circle><ellipse cx="50" cy="63" rx="5" ry="3.6" fill="#1b1b1b"></ellipse><path d="M50,67 L50,71 M44,71 Q50,75 56,71" stroke="#1b1b1b" stroke-width="1.5" fill="none"></path><path d="M47,72 Q50,82 53,72 Z" fill="#d96b7a"></path><circle cx="42.2" cy="53" r="1" fill="#fff"></circle><circle cx="60.2" cy="53" r="1" fill="#fff"></circle></g></g><g transform="translate(22.0,461.8) scale(0.46)"><circle cx="15" cy="42" r="12" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></circle><circle cx="85" cy="42" r="12" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></circle><ellipse cx="50" cy="118" rx="44" ry="50" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></ellipse><circle cx="50" cy="52" r="34" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></circle><circle cx="50" cy="55" r="24" fill="#e2c49e"></circle><circle cx="41" cy="54" r="4" fill="#1b1b1b"></circle><circle cx="59" cy="54" r="4" fill="#1b1b1b"></circle></g><g class="fragment" data-fragment-index="1"><g transform="translate(104.0,434.6) scale(0.62)"><circle cx="15" cy="42" r="12" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></circle><circle cx="85" cy="42" r="12" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></circle><ellipse cx="50" cy="118" rx="44" ry="50" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></ellipse><circle cx="50" cy="52" r="34" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></circle><circle cx="50" cy="55" r="24" fill="#e2c49e"></circle><ellipse cx="50" cy="66" rx="14" ry="10" fill="#f1dfc4"></ellipse><circle cx="41" cy="54" r="3.2" fill="#1b1b1b"></circle><circle cx="59" cy="54" r="3.2" fill="#1b1b1b"></circle><circle cx="47" cy="63" r="1.5" fill="#1b1b1b"></circle><circle cx="53" cy="63" r="1.5" fill="#1b1b1b"></circle></g></g><g class="fragment" data-fragment-index="2"><g transform="translate(205.0,404.0) scale(0.8)"><path d="M86,146 C106,150 113,122 101,109 C93,101 84,110 92,115" stroke="#3b2519" stroke-width="5" fill="none" stroke-linecap="round"></path><circle cx="15" cy="42" r="12" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></circle><circle cx="85" cy="42" r="12" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></circle><circle cx="15" cy="42" r="6" fill="#e2c49e"></circle><circle cx="85" cy="42" r="6" fill="#e2c49e"></circle><ellipse cx="50" cy="118" rx="44" ry="50" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></ellipse><circle cx="50" cy="52" r="34" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></circle><ellipse cx="50" cy="132" rx="18" ry="22" fill="#e2c49e"></ellipse><circle cx="50" cy="55" r="24" fill="#e2c49e"></circle><ellipse cx="50" cy="66" rx="14" ry="10" fill="#f1dfc4"></ellipse><circle cx="41" cy="54" r="3.2" fill="#1b1b1b"></circle><circle cx="59" cy="54" r="3.2" fill="#1b1b1b"></circle><circle cx="47" cy="63" r="1.5" fill="#1b1b1b"></circle><circle cx="53" cy="63" r="1.5" fill="#1b1b1b"></circle><path d="M42,68 Q50,75 58,68" stroke="#1b1b1b" stroke-width="1.6" fill="none" stroke-linecap="round"></path></g></g><g class="fragment" data-fragment-index="3"><g transform="translate(330.0,370.0) scale(1.0)"><path d="M86,146 C106,150 113,122 101,109 C93,101 84,110 92,115" stroke="#3b2519" stroke-width="5" fill="none" stroke-linecap="round"></path><circle cx="15" cy="42" r="12" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></circle><circle cx="85" cy="42" r="12" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></circle><circle cx="15" cy="42" r="6" fill="#e2c49e"></circle><circle cx="85" cy="42" r="6" fill="#e2c49e"></circle><ellipse cx="50" cy="118" rx="44" ry="50" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></ellipse><circle cx="50" cy="52" r="34" fill="#5a3a28" stroke="#3b2519" stroke-width="2"></circle><ellipse cx="50" cy="132" rx="18" ry="22" fill="#e2c49e"></ellipse><path d="M36,126 Q50,146 66,120 Q53,134 36,126 Z" fill="#f2cc3d" stroke="#b08a1e" stroke-width="1"></path><circle cx="36" cy="126" r="5.5" fill="#e2c49e" stroke="#3b2519" stroke-width="1"></circle><circle cx="66" cy="120" r="5.5" fill="#e2c49e" stroke="#3b2519" stroke-width="1"></circle><circle cx="50" cy="55" r="24" fill="#e2c49e"></circle><ellipse cx="50" cy="66" rx="14" ry="10" fill="#f1dfc4"></ellipse><circle cx="41" cy="54" r="3.2" fill="#1b1b1b"></circle><circle cx="59" cy="54" r="3.2" fill="#1b1b1b"></circle><circle cx="47" cy="63" r="1.5" fill="#1b1b1b"></circle><circle cx="53" cy="63" r="1.5" fill="#1b1b1b"></circle><path d="M42,68 Q50,75 58,68" stroke="#1b1b1b" stroke-width="1.6" fill="none" stroke-linecap="round"></path><path d="M43,20 Q46,10 50,18 Q54,9 57,20" stroke="#3b2519" stroke-width="2.5" fill="none" stroke-linecap="round"></path><circle cx="42.2" cy="53" r="1" fill="#fff"></circle><circle cx="60.2" cy="53" r="1" fill="#fff"></circle></g></g></svg>
+</div>
+<aside class="notes">
+<p>Three minutes. The slide opens on the three title dolls. Each click adds a column: the abstracts, then the introductions, then the full papers.</p>
+<p>Ask what each title doll is before the first click. The cat is a cat from the title on: the pointed ears survive at every size, and each larger doll only adds detail. The dog is the same, with its floppy ears.</p>
+<p>The third is the one to dwell on. Round ears and a brown body: a bear, or a monkey? Ask again when the abstracts appear, since the brown doll still has no tail. The introductions answer it with the tail.</p>
+<p>The dolls are Russian nesting dolls, matryoshkas. Each smaller doll is the paper at a shorter length. A reader who stops at the title should still name the right animal.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-title-should-fit-only-your-paper" class="slide level2">
+<h2>A title should fit only your paper</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><img data-src="figures/m10-dolls-tail.svg" alt="Two rows of monkey dolls. In the first, the title and abstract dolls have no tail. In the second, every doll has the tail."></p>
+</div><div class="column" style="width:48%;">
+<div style="font-size:0.78em">
+<ul>
+<li>Without the tail, the two small dolls fit a bear as well as a monkey.</li>
+<li>A topic title fits many papers:</li>
+</ul>
+<div class="m10-hyp">
+<p>Climate change and global agricultural productivity</p>
+</div>
+<ul>
+<li>The published title fits one: “<em>Anthropogenic climate change has slowed global agricultural productivity growth</em>”</li>
+<li>Each version keeps the feature that identifies the paper.</li>
+</ul>
+</div>
+</div></div>
+<p><a href="https://doi.org/10.1109/TPC.2002.805164" style="font-size:0.55em; color:#6b6b6b">Doumont (2002), <em>The three laws of professional communication</em>, IEEE Transactions on Professional Communication 45(4), 291–296.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The tail is the detail that separates the monkey from a bear. Leave it out of the title and the abstract and a skimmer leaves with the wrong animal. In a paper the tail is usually the finding, the setting or the design: whatever separates your paper from its neighbours.</p>
+<p>Jean-luc Doumont, who trains scientists and engineers to communicate, calls this effective redundancy: each version retells the whole message, at another level of detail, in other words. Repeat only what the evidence supports, since repeated statements are rated more true whether or not they are (Dechêne, Stahl, Hansen and Wänke 2010, https://doi.org/10.1177/1088868309352251).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-shortest-version-reaches-the-most-readers" class="slide level2">
+<h2>The shortest version reaches the most readers</h2>
+<svg viewbox="0 0 920 330" width="88%" style="display:block;margin:0 auto" role="img" aria-label="Left, an inverted pyramid of readers: the title band is widest, then the abstract, the introduction and the full paper. Right, bars of length for the 2021 paper: 9 words, 117 words, 362 words, and about 4,200 words before the methods.">
+<g font-size="22" font-weight="600" fill="#6b6b6b" text-anchor="middle" font-family="inherit"> <text x="240" y="26">Readers</text><text x="700" y="26">Length of the 2021 paper</text> </g> <g fill="#b31b1b"> <polygon points="40,44 440,44 410,104 70,104" opacity="1"></polygon> <polygon points="70,110 410,110 380,170 100,170" opacity="0.8"></polygon> <polygon points="100,176 380,176 350,236 130,236" opacity="0.62"></polygon> <polygon points="130,242 350,242 320,302 160,302" opacity="0.46"></polygon> </g> <g font-size="22" fill="#ffffff" text-anchor="middle" font-weight="600" font-family="inherit"> <text x="240" y="81">Title</text><text x="240" y="147">Abstract</text> <text x="240" y="213">Introduction</text><text x="240" y="279">Full paper</text> </g> <g fill="#8a8a84"> <rect x="520" y="60" width="8" height="28"></rect> <rect x="520" y="126" width="40" height="28"></rect> <rect x="520" y="192" width="90" height="28"></rect> <rect x="520" y="258" width="380" height="28"></rect> </g> <g font-size="20" fill="#1b1b1b" font-family="inherit"> <text x="538" y="81">9 words</text><text x="570" y="147">117 words</text> <text x="620" y="213">362 words</text> </g> <text x="532" y="279" font-size="20" fill="#ffffff" font-family="inherit">About 4,200 words, then the methods</text>
+</svg>
+<ul>
+<li>Economics journals cap abstracts at 100 words (<em>American Economic Review</em>, <em>Journal of Finance</em>) or 150 (<em>Econometrica</em>).</li>
+<li>The US Government Accountability Office (GAO) publishes each report as Fast Facts, a two-page Highlights and the full report.</li>
+</ul>
+<p><a href="https://www.aeaweb.org/journals/aer/submissions" style="font-size:0.55em; color:#6b6b6b">AER submission guidelines;</a> <a href="https://afajof.org/submission-guidelines/" style="font-size:0.55em; color:#6b6b6b">Journal of Finance submission guidelines;</a> <a href="https://www.econometricsociety.org/publications/econometrica/information-authors" style="font-size:0.55em; color:#6b6b6b">Econometrica information for authors;</a> <a href="https://www.gao.gov/products/GAO-24-107146" style="font-size:0.55em; color:#6b6b6b">GAO, for example GAO-24-107146.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>The pyramid of readers is upside down: many see the title, fewer read the abstract, fewer the introduction, and a few read the whole paper. The lengths on the right are the 2021 paper’s own; the band widths are drawn for illustration. The version with the most readers has the fewest words, and those words carry the message.</p>
+<p>Nature Climate Change allowed 150 words for the abstract. Economics journals allow 100 to 150, so an abstract is about five sentences. Agencies build the dolls in on purpose: GAO’s Fast Facts are for members of Congress, the full report for analysts. The Canadian Health Services Research Foundation asked for 1:3:25, one page of main messages, a three-page summary and at most 25 pages of report.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-title-of-the-2021-paper" class="slide level2">
+<h2>The title of the 2021 paper</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/m10-dolls-cat-1.svg" class="quarto-figure quarto-figure-center" style="width:44.0%" alt="The cat dolls from title to full paper, with the title doll in focus."></p>
+</figure>
+</div>
+<div class="m10-quote" style="font-size:1.15em">
+<p>“<em>Anthropogenic climate change has slowed global agricultural productivity growth</em>”</p>
+</div>
+<ul>
+<li>Nine words, no acronyms. It states the finding.</li>
+</ul>
+<p><a href="https://doi.org/10.1038/s41558-021-01000-1" style="font-size:0.55em; color:#6b6b6b">Ortiz-Bobea, Ault, Carrillo, Chambers and Lobell (2021), Nature Climate Change 11, 306–312.</a></p>
+<aside class="notes">
+<p>One minute.</p>
+<p>The smallest doll. A skimmer who reads only this knows the cause, the outcome and the direction. The one technical word, anthropogenic, means caused by people; the public headline dropped it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-abstract-of-the-2021-paper" class="slide level2">
+<h2>The abstract of the 2021 paper</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/m10-dolls-cat-2.svg" class="quarto-figure quarto-figure-center" style="width:32.0%" alt="The cat dolls, with the abstract doll in focus."></p>
+</figure>
+</div>
+<div class="m10-quote" style="font-size:0.66em">
+<p>“<em>Agricultural research has fostered productivity growth, but the historical influence of anthropogenic climate change (ACC) on that growth has not been quantified. We develop a robust econometric model of weather effects on global agricultural total factor productivity (TFP) and combine this model with counterfactual climate scenarios to evaluate impacts of past climate trends on TFP. Our baseline model indicates that ACC has reduced global agricultural TFP by about 21% since 1961, a slowdown that is equivalent to losing the last 7 years of productivity growth. The effect is substantially more severe (a reduction of ~26–34%) in warmer regions such as Africa and Latin America and the Caribbean. We also find that global agriculture has grown more vulnerable to ongoing climate change.</em>”</p>
+</div>
+<ul>
+<li>117 words in five sentences: the gap, the design, the finding with its size, where it is larger, and what is new.</li>
+</ul>
+<p><a href="https://doi.org/10.1038/s41558-021-01000-1" style="font-size:0.55em; color:#6b6b6b">Ortiz-Bobea et al.&nbsp;(2021), Nature Climate Change 11, 306–312, abstract.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>The abstract is the title with its evidence. Sentence 1 is the funnel in one sentence. Sentence 2 is the design. Sentence 3 gives the finding with its size and a unit a skimmer can picture: seven years of growth. Each acronym is spelled out before it is used.</p>
+<p>Total factor productivity (TFP) is output per unit of all inputs combined: land, labour, capital and materials.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-introduction-of-the-2021-paper" class="slide level2">
+<h2>The introduction of the 2021 paper</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/m10-dolls-cat-3.svg" class="quarto-figure quarto-figure-center" style="width:40.0%" alt="The cat dolls, with the introduction doll in focus."></p>
+</figure>
+</div>
+<div class="m10-quote" style="font-size:0.72em">
+<ol type="1">
+<li>“<em>Enhancing agricultural productivity is vital to lifting global living standards and advancing sustainable food production in the face of escalating challenges to agriculture and the environment.</em>”</li>
+<li>“<em>Research to date on the historical impact of ACC focuses overwhelmingly on yields of major cereal crops or on total gross domestic product.</em>”</li>
+<li>“<em>We quantify the impact of ACC on global agricultural productivity since 1961.</em>”</li>
+</ol>
+</div>
+<ul>
+<li>The first sentence of each of its three paragraphs, 362 words in all.</li>
+<li>Paragraph 3 opens with the question.</li>
+</ul>
+<p><a href="https://doi.org/10.1038/s41558-021-01000-1" style="font-size:0.55em; color:#6b6b6b">Ortiz-Bobea et al.&nbsp;(2021), Nature Climate Change 11, 306–312, introduction.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>Read only the first sentences and you have the introduction’s argument: why productivity matters, what earlier work measured, and what this paper does. That is the topic-sentence structure from meeting 5, and it comes back in part 4 today.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-full-2021-paper" class="slide level2">
+<h2>The full 2021 paper</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/m10-dolls-cat-4.svg" class="nostretch quarto-figure quarto-figure-center" style="width:30.0%" alt="The cat dolls, with the full paper doll in focus."></p>
+</figure>
+</div>
+<div class="columns">
+<div class="column m10-shot short" style="width:40%;">
+<p><img data-src="figures/m10-ncc-page-308.png" alt="Page 308 of the paper, with the figure of the response of productivity growth to temperature and precipitation."></p>
+<p>A results page</p>
+</div><div class="column m10-shot short" style="width:40%;">
+<p><img data-src="figures/m10-ncc-methods.png" alt="The first page of the paper's methods section, in small type in two columns."></p>
+<p>The methods</p>
+</div></div>
+<p><a href="https://doi.org/10.1038/s41558-021-01000-1" style="font-size:0.55em; color:#6b6b6b">Ortiz-Bobea et al.&nbsp;(2021), Nature Climate Change 11, 306–312, page 308 and the methods.</a></p>
+<aside class="notes">
+<p>One minute.</p>
+<p>The largest doll: about 4,200 words of main text, four figures, then the methods, the extended data and the supplementary information. Deep readers live here: the referee, the economist who wants to replicate it, the critic. The response function, the data sources and the robustness checks are all here, and almost nobody else reads them.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="the-structure-readers-expect" class="title-slide slide level1 center">
+<h1>3. The structure readers expect</h1>
+<aside class="notes">
+<p>Thirty seconds. Each genre has a standard order. Readers know it and look for each part where it usually sits.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="researchers-put-shuffled-paragraphs-back-in-the-right-section" class="slide level2">
+<h2>Researchers put shuffled paragraphs back in the right section</h2>
+<ul>
+<li>Dillon took two articles from a journal in the participants’ own field and removed every second paragraph.</li>
+<li>Twelve human factors researchers sorted the rest, shuffled, into introduction, method, results and discussion.</li>
+<li>They put 82.6% in the right section.</li>
+<li>A common error confused the introduction with the discussion.</li>
+</ul>
+<p><a href="https://doi.org/10.1016/S0020-7373(05)80168-3" style="font-size:0.55em; color:#6b6b6b">Dillon (1991), <em>Readers’ models of text structures: the case of academic articles</em>, International Journal of Man-Machine Studies 35(6), 913–925.</a></p>
+<aside class="notes">
+<p>One minute.</p>
+<p>Experienced readers carry the template in their heads. They knew where a paragraph belonged from its content alone, without headings or neighbours. A reader who knows where to look skims fast, and a document that puts things somewhere else costs that reader time. The confusion between introduction and discussion makes sense: both talk about the literature and what the result means.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-an-empirical-economics-paper-is-organized" class="slide level2">
+<h2>How an empirical economics paper is organized</h2>
+<div style="font-size:0.6em">
+<ol class="m10-steps">
+<li class="v">
+<b>Title</b><span>States the finding</span>
+</li>
+<li class="v">
+<b>Abstract</b><span>The question, the data and design, the finding with its size</span>
+</li>
+<li class="v">
+<b>Introduction</b><span>The funnel to the question, the finding and its size, the closest papers</span>
+</li>
+<li>
+<b>Setting and data</b><span>Where and when, and what one row describes</span>
+</li>
+<li>
+<b>Empirical strategy</b><span>The design and its <strong>identifying assumption</strong>: what must hold for the estimate to measure the effect</span>
+</li>
+<li>
+<b>Results</b><span>Each table introduced by its point</span>
+</li>
+<li>
+<b>Threats to validity</b><span>What could break the design, and the checks</span>
+</li>
+<li>
+<b>Conclusion</b><span>The message again, shorter</span>
+</li>
+</ol>
+</div>
+<ul>
+<li>The red boxes are the versions most readers stop at.</li>
+</ul>
+<p><a href="https://econ.duke.edu/sites/econ.duke.edu/files/file-attachments/Dudenhefer,%20Paul%20-%20Guide%20to%20Writing%20in%20Economics.pdf" style="font-size:0.55em; color:#6b6b6b">Dudenhefer (2014), <em>A Guide to Writing in Economics</em>, Duke University.</a> <a href="https://blogs.ubc.ca/khead/research/research-advice/formula" style="font-size:0.55em; color:#6b6b6b">Head, <em>The Introduction Formula</em>.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>The standard order for an applied paper. The first three boxes carry the whole message; the rest carry the evidence. Head’s formula puts the question by paragraph two or three of the introduction, then the antecedents, then the contribution.</p>
+<p>Cochrane’s writing tips drop the funnel and open with the contribution in the first paragraph. Both put the answer in the introduction, well before the conclusion.</p>
+<p>The writing guide has this schematic and four others: the proposal, the memo, the executive summary and the research talk.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-an-applied-theory-paper-is-organized" class="slide level2">
+<h2>How an applied theory paper is organized</h2>
+<div class="columns">
+<div class="column" style="width:44%;">
+<div style="font-size:0.56em">
+<ol class="m10-steps">
+<li class="v">
+<b>Title</b><span>States the finding</span>
+</li>
+<li class="v">
+<b>Abstract</b><span>The question, the model’s prediction, the finding</span>
+</li>
+<li class="v">
+<b>Introduction</b><span>The funnel to the question, the finding, the closest papers</span>
+</li>
+<li>
+<b>Theoretical framework</b><span>A model that yields the testable prediction</span>
+</li>
+<li>
+<b>Empirical framework</b><span>The regression for each part of the prediction</span>
+</li>
+<li>
+<b>Data</b><span>And descriptive statistics</span>
+</li>
+<li>
+<b>Results</b><span>Each estimate read back through the model</span>
+</li>
+<li>
+<b>Conclusion</b><span>The message again, shorter</span>
+</li>
+</ol>
+</div>
+</div><div class="column" style="width:56%;">
+<div style="font-size:0.68em">
+<ul>
+<li>The model comes before the evidence and says what to estimate.</li>
+<li>Bellemare’s rule: the model’s prediction maps one to one onto the empirical framework.</li>
+<li>Ortiz-Bobea (2020) studied how climate affects US farmland. The usual estimate regresses farmland prices on climate across counties.</li>
+<li>The model values farmland as farming income plus the option to convert it to other uses.</li>
+<li>It predicts that farmland prices and cash rents give the same climate effect only where conversion is unlikely.</li>
+<li>The empirical sections estimate the effect from prices, then from rents, and compare them.</li>
+</ul>
+</div>
+</div></div>
+<p><a href="https://marcfbellemare.com/wordpress/12797" style="font-size:0.55em; color:#6b6b6b">Bellemare (2018), <em>Between the Introduction and the Conclusion: The “Middle Bits” Formula for Applied Papers</em>, blog post; expanded in <em>Doing Economics</em> (MIT Press, 2022).</a> <a href="https://doi.org/10.1093/ajae/aaz047" style="font-size:0.55em; color:#6b6b6b">Ortiz-Bobea (2020), <em>The Role of Nonfarm Influences in Ricardian Estimates of Climate Change Impacts on US Agriculture</em>, American Journal of Agricultural Economics 102(3), 934–959.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>Some papers open with a model. The model is short, and its job is to say which quantities the data must deliver. Bellemare, an agricultural economist who writes about how applied papers are built, puts the theoretical framework right after the introduction and asks that its main prediction map one to one onto the empirical framework. If the model predicts something the regressions never test, cut it.</p>
+<p>My 2020 paper is an example. The Ricardian approach regresses farmland prices on climate across counties and reads the climate coefficients as the value of climate to farming. The conceptual framework prices farmland as the value of farming it plus a premium for converting it to other uses, such as housing, and lists the predictions that follow. Estimates from farmland prices and from cash rents should agree where conversion is unlikely, and diverge where it looms. The price-to-rent ratio flags the counties where nonfarm influences are large. The empirical sections test exactly these: estimates from prices, then from cash rents, then a discussion that reconciles the two.</p>
+<p>A second example is Gammans, Mérel and Ortiz-Bobea (2025, American Journal of Agricultural Economics, https://doi.org/10.1111/ajae.12491), on planting soybeans right after the winter wheat harvest. Its conceptual framework splits the effect of climate on crop revenue into an adaptation term and two yield terms, and each later section estimates one piece.</p>
+<p>Your proposal has a heading for this: the conceptual model. It plays the same role, at a smaller scale: it says what you will estimate and why.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-funnel-runs-from-the-literature-to-your-question" class="slide level2">
+<h2>The funnel runs from the literature to your question</h2>
+<div class="m10-funnel">
+  <div class="band b1">Why it matters</div>
+  <div class="q"><span>“<i>Enhancing agricultural productivity is vital to lifting global living standards …</i>”</span></div>
+  <div class="band b2">What is known</div>
+  <div class="q"><span>“<i>… there are signs that it is slowing in certain regions.</i>” “<i>… human activities … have caused global temperatures to rise by more than 1 °C …</i>”</span></div>
+  <div class="band b3">What is missing</div>
+  <div class="q"><span>“<i>However, the impacts of this ACC on the agricultural sector have not yet been quantified …</i>”</span></div>
+  <div class="m10-test"><b>Test</b>: a reader who stops here can already state your question.</div>
+  <div class="band b4">The question</div>
+  <div class="q"><span>“<i>We quantify the impact of ACC on global agricultural productivity since 1961.</i>”</span></div>
+</div>
+<ul>
+<li>The first paragraph narrows from the field to what is missing. Paragraph 3 opens with the question.</li>
+<li>In your proposal, the funnel starts at the decision your reader faces.</li>
+</ul>
+<p><a href="https://doi.org/10.1038/s41558-021-01000-1" style="font-size:0.55em; color:#6b6b6b">Ortiz-Bobea et al.&nbsp;(2021), Nature Climate Change 11, 306–312, introduction, paragraphs 1 and 3.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The funnel is the opening that moves from the field to your question. Each band is narrower than the one above it, and the last one is the question. Here the first paragraph does the first three bands in five sentences; paragraph 2 says why earlier work on crop yields and GDP does not answer it; paragraph 3 opens with the question.</p>
+<p>The test in the dashed box: a reader who stops after what is missing should already be able to say your question. Try it on the room before showing the last band. If they can, the funnel works and the question lands as confirmation.</p>
+<p>A funnel is short. A reader should reach the question within a few sentences. For your proposal, the top of the funnel is the decision your reader faces, as meeting 1 said, and a gap in the literature comes in only where it matters to that decision.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-a-memo-is-organized" class="slide level2">
+<h2>How a memo is organized</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<div style="font-size:0.6em">
+<ol class="m10-steps">
+<li class="v">
+<b>Subject line</b><span>States the bottom line</span>
+</li>
+<li class="v">
+<b>Bottom line</b><span>The conclusion and the decision asked for</span>
+</li>
+<li>
+<b>Background</b><span>Only what this reader needs</span>
+</li>
+<li>
+<b>Evidence</b><span>Most important first</span>
+</li>
+<li>
+<b>Options and risks</b><span></span>
+</li>
+<li>
+<b>Next steps</b><span></span>
+</li>
+</ol>
+</div>
+</div><div class="column" style="width:48%;">
+<div style="font-size:0.72em">
+<ul>
+<li><strong>Bottom line up front</strong> (BLUF): the first sentence gives the conclusion.</li>
+<li>Suchan and Colucci gave 262 US Navy officers documents in a high-impact style or a bureaucratic style.</li>
+<li>High-impact meant the bottom line first, short paragraphs, headings and plain sentences.</li>
+<li>The high-impact documents took 17–23% less time to read and were understood better.</li>
+</ul>
+</div>
+</div></div>
+<p><a href="https://doi.org/10.1177/0893318989002004002" style="font-size:0.55em; color:#6b6b6b">Suchan and Colucci (1989), <em>An analysis of communication efficiency between high-impact and bureaucratic written communication</em>, Management Communication Quarterly 2(4), 454–484.</a> <a href="https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/memos/parts_of_a_memo.html" style="font-size:0.55em; color:#6b6b6b">Purdue OWL, <em>Parts of a Memo</em>.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>The memo is the genre most of you will write most often after this program. Its reader is the executive who skims, and the bottom line goes first. The study bundles several features into one style, so it shows that the package works, without saying which part of it does.</p>
+<p>The syllabus grades every written piece on one question first: “<em>Is the claim in the first sentence?</em>”</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-a-research-proposal-is-organized" class="slide level2">
+<h2>How a research proposal is organized</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div style="font-size:0.7em">
+<ul>
+<li>Your proposal is a plan: about five pages that someone could pick up and execute in January.</li>
+<li>The thirteen headings are the course’s, from the syllabus.</li>
+<li>Page one answers three questions any funder asks: “<em>What are we going to learn … that we do not know now? Why is it worth knowing? How will we know that the conclusions are valid?</em>”</li>
+<li>Przeworski and Salomon wrote these for applicants to fellowships of the Social Science Research Council (SSRC), a US funder of social science.</li>
+<li>Preliminary evidence is optional. Use it only to show that the data exist and can answer the question.</li>
+</ul>
+</div>
+</div><div class="column" style="width:45%;">
+<div style="font-size:0.58em">
+<ol class="m10-steps">
+<li>
+<b>Research problem</b>
+</li>
+<li>
+<b>Practical justification</b>
+</li>
+<li>
+<b>What is already known</b>
+</li>
+<li>
+<b>Conceptual model</b>
+</li>
+<li>
+<b>Methodological approach</b>
+</li>
+<li>
+<b>Study sample</b>
+</li>
+<li>
+<b>Data and access</b>
+</li>
+<li>
+<b>Internal validity</b>
+</li>
+<li>
+<b>External validity</b>
+</li>
+<li>
+<b>Limitations and self-critique</b>
+</li>
+<li>
+<b>Work plan</b>
+</li>
+<li>
+<b>Research ethics</b>
+</li>
+<li>
+<b>References</b>
+</li>
+</ol>
+</div>
+</div></div>
+<p><a href="../../fall-2026/syllabus.html#what-you-are-graded-against" style="font-size:0.55em; color:#6b6b6b">The syllabus, <em>What you are graded against</em> and the deliverables table.</a> <a href="https://law.uga.edu/sites/default/files/OnTheArtOfWritingProposals_SocialScienceResearchCouncilCompetiotions.pdf" style="font-size:0.55em; color:#6b6b6b">Przeworski and Salomon (1988, rev. 1995), <em>On the Art of Writing Proposals: Some Candid Suggestions for Applicants to Social Science Research Council Competitions</em>.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The thirteen headings are the syllabus’s, in its order, and they are what the outline and the proposal are graded against. They are shared across the AEM 6991 sections. The three questions sit above them, on the first page.</p>
+<p>The three questions come from a different setting. Przeworski and Salomon wrote them for graduate students and junior scholars applying for SSRC fellowships to fund dissertation and field research. Funders in general ask the same things: the National Science Foundation scores proposals on intellectual merit and broader impacts, which are the first two questions in other words. We adopt the questions; the headings are our own.</p>
+<p>Your proposal is a plan for work you have not done yet, so it does not need results. A first look at the data helps only where it shows feasibility: the data exist, you can get them, and they vary in the way your design needs.</p>
+<p>Each question maps to something you have already done. What we will learn is your question, from meeting 3. Why it is worth knowing is the decision it informs (meeting 3) and what is new against your anchor papers (meeting 5). How we will know the conclusions are valid is your design and its threats, from meetings 7 to 9.</p>
+<p>Today’s talks in session B are graded against the project-description brief, so do not rework your slides at the break.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="page-one-of-the-target-boycott-proposal" class="slide level2">
+<h2>Page one of the “Target boycott” proposal</h2>
+<div style="font-size:0.8em">
+<ul>
+<li>In 2023 conservative shoppers boycotted Target over its Pride merchandise. In 2025 shoppers boycotted it after it ended its diversity goals.</li>
+</ul>
+</div>
+<div class="m10-hyp m10-two" style="font-size:0.6em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">What we will learn</td>
+<td style="text-align: left;">How much more store visits fell in counties whose politics matched each boycott</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Why it is worth knowing</td>
+<td style="text-align: left;">A retailer’s marketing team decides where to spend to win shoppers back</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">How we will know</td>
+<td style="text-align: left;">Compare stores in the most and least Republican thirds of counties, week by week, 20 weeks either side of each boycott</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="font-size:0.8em">
+<ul>
+<li>This is <strong>difference-in-differences</strong>: the change in one group against the change in another. It assumes both groups would have followed parallel paths without the boycotts.</li>
+<li>The gap should flip sign between 2023 and 2025.</li>
+</ul>
+</div>
+<p><a href="../../fall-2026/handouts/project-description-example-target.html" style="font-size:0.55em; color:#6b6b6b">Written for this slide from the “Target boycott” project description.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The three answers fit in three lines, and a reviewer who reads only this page knows what the team will learn, who cares, and why the answer can be trusted.</p>
+<p>Two details from the project description that page one leaves for later. The comparison is made within groups of counties of similar income, so a shock to poorer counties does not show up as politics. And every store was exposed to both boycotts, so the design measures a relative gap between groups of counties, which is smaller than the boycott’s total effect on Target. The flip in sign is the check: a shock that hits the same counties both times would push the gap the same way twice.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="one-idea-per-paragraph" class="title-slide slide level1 center">
+<h1>4. One idea per paragraph</h1>
+<aside class="notes">
+<p>Thirty seconds. The unit below the section is the paragraph, and each one carries one point.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="each-paragraph-makes-one-point" class="slide level2">
+<h2>Each paragraph makes one point</h2>
+<ul>
+<li>A <strong>topic sentence</strong> states the paragraph’s point. The other sentences support it.</li>
+<li>Body paragraphs open with their point. The opening funnel of an introduction ends with it.</li>
+<li>A <strong>reverse outline</strong> checks a draft: write one sentence summing up each paragraph.</li>
+<li>A paragraph that needs two sentences holds two ideas. Split it.</li>
+<li>A summary that matches a later sentence means the point is buried. Move that sentence up.</li>
+</ul>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>Meeting 5 wrote the outline before the prose: one topic sentence per paragraph, in order. The reverse outline runs the same tool on a draft. Read each paragraph and write the one sentence it argues. Then read the summaries in order. If they make the argument, the draft works. If a summary is hard to write, the paragraph has no point yet.</p>
+<p>A skimmer who reads only first sentences should get the argument, as you did with the 2021 introduction a few slides back.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="this-paragraph-states-its-point-first" class="slide level2">
+<h2>This paragraph states its point first</h2>
+<ul>
+<li>Ray and coauthors (2019) estimated how recent climate change has affected the yields of the ten largest crops worldwide. This is their closing paragraph.</li>
+</ul>
+<div class="m10-quote" style="font-size:0.72em">
+<p>“<em><span class="m10-phrase">Our findings here illustrate that climate change has potentially already affected global production of the ten largest crops and the production of consumable food calories in specific countries and globally.</span> The approach used here complements the long-range projections, avoids many of the challenges faced by process-based models, and analyzes a broader set of crops. Although recent climate change has likely reduced overall consumable food calories in these ten crops by ~1% (or ~0.5% across all food calories), there is much variability among crops and regions. These findings can be used to target interventions for adaptation to climate change through better management, crop breeding, and switching crops as climate continues to evolve.</em>”</p>
+</div>
+<p><a href="https://doi.org/10.1371/journal.pone.0217148" style="font-size:0.55em; color:#6b6b6b">Ray, West, Clark, Gerber, Prishchepov and Chatterjee (2019), <em>Climate change has likely already affected global food production</em>, PLOS ONE 14(5), e0217148 (CC BY 4.0).</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>The highlighted sentence is the point. The second sentence says how the approach differs, the third gives the size, and the fourth says what the finding is for. A reader who stops after the first sentence has it.</p>
+<p>A one-sentence summary: recent climate change has probably already cut food calories from the ten largest crops by about 1 percent worldwide, with large differences across crops and regions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-is-this-paragraphs-point-in-one-sentence" class="slide level2">
+<h2>What is this paragraph’s point in one sentence?</h2>
+<ul>
+<li>Elmallah and coauthors (2023) compared sale prices of homes near and far from large solar farms in six US states. This is the first paragraph of their introduction.</li>
+</ul>
+<div class="m10-quote" style="font-size:0.66em">
+<p>“<em>Large-scale photovoltaic projects (LSPVP), defined here as ground-mounted photovoltaic generation facilities with at least 1 MW of DC generation capacity, are an increasingly prevalent source of renewable energy. LSPVPs accounted for over 60% of all new solar capacity in the United States in 2021, and, as the largest resource by capacity in interconnection queues, are projected to continue growing (Bolinger et al., 2021). However, the local economic impacts of LSPVPs are poorly understood (Mai et al., 2014), despite surveys showing that local public support for large-scale solar is strongly related to perceived economic impacts, including the impact on property values (Carlisle et al., 2014). Concerns surrounding the property value impacts of solar power are reflected in solar industry and environmental advocacy communication that challenge the conception that solar power reduces property values (Center for Energy Education, n.d.; Solar Energy Industries Association, 2019), and in attempts by neighbors of solar plants to claim solar panels as a private nuisance (Westgate, 2017).</em>”</p>
+</div>
+<p><a href="https://doi.org/10.1016/j.enpol.2023.113425" style="font-size:0.55em; color:#6b6b6b">Elmallah, Hoen, Fujita, Robson and Brunner (2023), <em>Shedding light on large-scale solar impacts: An analysis of property values and proximity to photovoltaics across six U.S. states</em>, Energy Policy 175, 113425 (CC BY 4.0).</a></p>
+<aside class="notes">
+<p>Four minutes, including a three-minute silent write.</p>
+<p>Each student writes one sentence that states what this paragraph argues. Three minutes. Then take two or three from the room before the next slide.</p>
+<p>The paper is the closest published study to the solar project, and the team cited it in its project description.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="one-sentence-for-that-paragraph" class="slide level2">
+<h2>One sentence for that paragraph</h2>
+<ul>
+<li>One summary: large solar farms are spreading fast, but their effect on nearby home values, which shapes local support, is poorly understood.</li>
+<li>The point arrives in sentence 3, after <em>However</em>.</li>
+<li>This paragraph opens the introduction, so it is a funnel and ends on its point.</li>
+<li>Ray and coauthors’ paragraph closes a paper, so it opens on its point.</li>
+</ul>
+<p><a href="https://doi.org/10.1016/j.enpol.2023.113425" style="font-size:0.55em; color:#6b6b6b">Elmallah et al.&nbsp;(2023), Energy Policy 175, 113425, introduction, paragraph 1.</a></p>
+<aside class="notes">
+<p>One minute.</p>
+<p>Most summaries from the room will pick up sentence 3. Sentences 1 and 2 set up why solar farms matter, and sentence 4 adds evidence that people worry about property values. That is the funnel from part 3, in one paragraph.</p>
+<p>When you reverse-outline your proposal, the first paragraph may summarize to its last sentence. Every other paragraph should summarize to its first.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-reverse-outline-of-a-whole-introduction" class="slide level2">
+<h2>A reverse outline of a whole introduction</h2>
+<div class="m10-ro">
+  <div class="ro-page"></div>
+  <div class="ro-side">
+    <ol class="ro-outline"></ol>
+    <div class="ro-info"></div>
+    <div class="ro-legend"></div>
+  </div>
+</div>
+<p><a href="https://doi.org/10.1016/j.enpol.2023.113425" style="font-size:0.55em; color:#6b6b6b">Elmallah, Hoen, Fujita, Robson and Brunner (2023), Energy Policy 175, 113425, section 1 (CC BY 4.0). The roles and summaries are ours.</a></p>
+<aside class="notes">
+<p>Three minutes.</p>
+<p>The whole introduction of the paper the room just summarized, as it appears in the article. First sentences are underlined. Hovering a sentence shows what it does; hovering a row on the right highlights that paragraph, scrolls to it, and marks the sentence that carries its point. Hovering a role in the legend highlights every sentence with that role.</p>
+<p>Walk the five rows. Paragraph 1 is the funnel, so its point comes in sentence 3. Paragraph 2 states the purpose first, then the questions, the data and the design. Paragraph 3 opens with a signpost, “several important contributions”, and its own point comes in sentence 2. Paragraph 4 opens on its point. Paragraph 5 is a roadmap of the sections, which needs no topic sentence.</p>
+<p>Then the last row. The reverse outline shows something a reader of the introduction never gets: the finding. The abstract says homes within half a mile sold for about 1.5 percent less; the introduction stops at the design. Compare the schematic of an empirical paper earlier, where the introduction gives the finding and its size.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="keeping-the-reader-on-your-path" class="title-slide slide level1 center">
+<h1>5. Keeping the reader on your path</h1>
+<aside class="notes">
+<p>Thirty seconds. You choose what the reader reads and in what order. You cannot choose what they think along the way.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="you-choose-the-readers-path" class="slide level2">
+<h2>You choose the reader’s path</h2>
+<svg viewbox="0 0 900 230" width="60%" style="display:block;margin:0 auto 0.3em" role="img" aria-label="A path through a paper, from the title through the introduction, data and results to the conclusion. Three dashed side trails branch off it, each ending in a question mark.">
+<g stroke="#8a8a84" stroke-width="3" stroke-dasharray="7 7" fill="none"> <path d="M155,128 L120,40"></path><path d="M350,137 L390,212"></path><path d="M550,137 L515,40"></path> </g> <g fill="#fff" stroke="#8a8a84" stroke-width="3"> <circle cx="120" cy="40" r="18"></circle><circle cx="390" cy="205" r="18"></circle><circle cx="515" cy="40" r="18"></circle> </g> <g font-size="24" font-weight="700" fill="#8a8a84" text-anchor="middle" font-family="inherit"> <text x="120" y="48">?</text><text x="390" y="213">?</text><text x="515" y="48">?</text> </g> <polyline points="60,150 250,105 450,165 650,110 840,150" fill="none" stroke="#b31b1b" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"></polyline> <g fill="#fff" stroke="#7e1313" stroke-width="3"> <circle cx="60" cy="150" r="9"></circle><circle cx="250" cy="105" r="9"></circle><circle cx="450" cy="165" r="9"></circle><circle cx="650" cy="110" r="9"></circle><circle cx="840" cy="150" r="9"></circle> </g> <g font-size="20" fill="#1b1b1b" text-anchor="middle" font-family="inherit"> <text x="60" y="185">Title</text><text x="250" y="80">Introduction</text><text x="450" y="200">Data</text><text x="650" y="85">Results</text><text x="840" y="185">Conclusion</text> </g>
+</svg>
+<div style="font-size:0.9em">
+<ul>
+<li>You decide what the reader reads and in what order. The reader’s thoughts along the way are theirs.</li>
+<li>In laboratory studies, adults read texts and were asked at random moments where their mind was.</li>
+<li>Minds wandered 20 to 30% of the time. More wandering went with lower comprehension.</li>
+</ul>
+</div>
+<p><a href="https://doi.org/10.1111/lnc3.12412" style="font-size:0.55em; color:#6b6b6b">D’Mello and Mills (2021), <em>Mind wandering during reading: An interdisciplinary and integrative review</em>, Language and Linguistics Compass 15(4), e12412.</a> <a href="https://doi.org/10.3758/s13423-022-02141-w" style="font-size:0.55em; color:#6b6b6b">Bonifacci, Viroli, Vassura, Colombini and Desideri (2023), <em>The relationship between mind wandering and reading comprehension: A meta-analysis</em>, Psychonomic Bulletin &amp; Review 30(1), 40–59 (CC BY 4.0).</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>Writing is a walk with your reader. You lay the path: what comes first, what comes next, where it ends. You cannot control where the reader looks along the way. A reader may wander off on a side trail, wondering about a criticism, a variation or a limitation, and some never come back.</p>
+<p>The evidence on drifting is strong. D’Mello and Mills review the laboratory work, where readers are probed at random moments; minds wandered 20 to 30% of the time. Bonifacci and coauthors pool 25 studies and find a correlation of about −0.21 between mind wandering and comprehension. Harder texts draw more of it.</p>
+<p>Umberto Eco described reading a story as a walk in the woods: the reader chooses at each fork, and the text makes some routes more reasonable than others (Six Walks in the Fictional Woods, 1994).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="where-would-a-skeptical-reader-stop-following" class="slide level2">
+<h2>Where would a skeptical reader stop following?</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<div class="m10-hyp" style="font-size:0.8em">
+<p>We ask whether a new solar farm lowers the sale prices of <span class="m10-phrase">homes within one kilometer</span><sup>2</sup> of it <span class="m10-phrase">in upstate New York</span><sup>3</sup>. Our sample covers the 431 farms that began operating between 2016 and 2023. <span class="m10-phrase">Developers often build on cheap farmland at the edge of a village.</span><sup>1</sup> We compare prices near each farm with prices 2 to 5 kilometers away, before and after it opens.</p>
+</div>
+</div><div class="column" style="width:44%;">
+<div class="m10-bubble fragment">
+<p><strong>1. A criticism.</strong> Were prices at the village edge already growing more slowly?</p>
+</div>
+<div class="m10-bubble fragment">
+<p><strong>2. A variation.</strong> Does a farm screened by trees lower prices as much?</p>
+</div>
+<div class="m10-bubble fragment">
+<p><strong>3. A limitation.</strong> Would this hold outside upstate New York?</p>
+</div>
+</div></div>
+<p><a href="../../fall-2026/handouts/project-description-example-solar.html" style="font-size:0.55em; color:#6b6b6b">Written for this slide from the solar project description.</a></p>
+<aside class="notes">
+<p>Two and a half minutes. The bubbles appear one at a time.</p>
+<p>Before showing them, ask the room where they would stop and wonder. Then the three: a criticism of the design, a variation the reader wants to know about, and a limit on where the result applies.</p>
+<p>A skeptical reader does not wait for the limitations section. People resisting a persuasive message mostly argue back in their heads, and in studies of how people resist persuasion, counterarguing was both the most common strategy and the one that worked best (Jacks and Cameron 2003, https://doi.org/10.1207/S15324834BASP2502_5). Each bubble is a counterargument forming. Once it forms, the reader is reading for the flaw.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="answer-the-doubt-in-the-next-sentence" class="slide level2">
+<h2>Answer the doubt in the next sentence</h2>
+<ul>
+<li>An <strong>off-ramp</strong> is a point where a doubt pulls the reader off your path.</li>
+</ul>
+<div class="m10-hyp" style="font-size:0.68em">
+<p>We ask whether a new solar farm lowers the sale prices of homes within one kilometer of it in upstate New York. Our sample covers the 431 farms that began operating between 2016 and 2023. Developers often build on cheap farmland at the edge of a village. <span class="m10-added">Section 4 checks whether prices there were already growing more slowly.</span> We compare prices near each farm with prices 2 to 5 kilometers away, before and after it opens.</p>
+</div>
+<div style="font-size:0.76em">
+<ul>
+<li>One short sentence is enough. Name the doubt and point to where the paper handles it.</li>
+<li>O’Keefe pooled 107 comparisons of messages that did or did not raise an opposing argument. Raising it and refuting it persuaded slightly more than ignoring it. Raising it without refuting it persuaded less.</li>
+<li><span class="solution"><strong>Solution</strong>: answer each doubt briefly, right after the claim that raises it, and leave the full check for its own section.</span></li>
+</ul>
+</div>
+<p><a href="https://doi.org/10.1080/23808985.1999.11678963" style="font-size:0.55em; color:#6b6b6b">O’Keefe (1999), <em>How to handle opposing arguments in persuasive messages: A meta-analytic review of the effects of one-sided and two-sided messages</em>, Annals of the International Communication Association 22(1), 209–249.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The green sentence closes the off-ramp that bubble 1 opened. It is short on purpose. It names the doubt and says where the paper deals with it, so the reader stays on the path, and it spends no time on how the check works. The full answer lives in section 4: the event study from meeting 9, which shows whether near and far prices drifted apart before each farm opened.</p>
+<p>This is how robustness checks usually enter a paper. One sentence where the doubt arises, “the estimate is similar when we drop farms on former farmland (appendix table A3)”, and the table in the appendix. A long answer in the middle of the argument is its own off-ramp.</p>
+<p>O’Keefe’s effects are small, and they hold outside advertising. Raising an objection and leaving it standing is worse than not raising it. Bubble 2 is answered by saying which farms the design covers; bubble 3 belongs in the limitations section, stated once.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="on-ramps-bring-drifting-readers-back" class="slide level2">
+<h2>On-ramps bring drifting readers back</h2>
+<div style="font-size:0.84em">
+<ul>
+<li>An <strong>on-ramp</strong> is a “you are here” sign: one sentence that tells a reader who drifted where this section fits in the whole argument.</li>
+</ul>
+</div>
+<svg viewbox="0 62 900 150" width="42%" style="display:block;margin:0 auto 0.1em" role="img" aria-label="The path through a paper from the title to the conclusion, with a red pin at the data section labelled you are here.">
+<polyline points="60,150 250,105 450,165 650,110 840,150" fill="none" stroke="#e2b4b4" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"></polyline> <g fill="#fff" stroke="#b9a9a9" stroke-width="3"> <circle cx="60" cy="150" r="8"></circle><circle cx="250" cy="105" r="8"></circle><circle cx="650" cy="110" r="8"></circle><circle cx="840" cy="150" r="8"></circle> </g> <circle cx="450" cy="165" r="14" fill="#b31b1b" stroke="#fff" stroke-width="4"></circle> <g font-size="22" fill="#6b6b6b" text-anchor="middle" font-family="inherit"> <text x="60" y="185">Title</text><text x="250" y="82">Introduction</text><text x="450" y="205">Data</text><text x="650" y="87">Results</text><text x="840" y="185">Conclusion</text> </g> <text x="474" y="150" font-size="24" font-weight="700" fill="#b31b1b" font-family="inherit">You are here</text>
+</svg>
+<div class="m10-hyp m10-two" style="font-size:0.54em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Without an on-ramp</td>
+<td style="text-align: left;">Sale records come from ATTOM through Dewey, Cornell’s data platform. We keep arm’s-length sales of single-family homes and drop sales below $10,000. Each address is geocoded and matched to the nearest farm.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">With an on-ramp</td>
+<td style="text-align: left;"><span class="m10-added">To learn whether a new solar farm lowers the prices of nearby homes, we need the sale prices of homes near and far from each farm, before and after it opens. County averages would mix the two groups, so we need each sale with its address and date.</span> We obtain these records from ATTOM through Dewey, Cornell’s data platform.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="font-size:0.7em">
+<ul>
+<li>After their minds wandered, readers went back and reread nearly half the time, usually a line or two.</li>
+<li>Talks need on-ramps too, most of all long ones: at each new part, say where it fits.</li>
+<li><span class="solution"><strong>Solution</strong>: open each section with one sentence that tells the reader how it fits in the overall argument.</span></li>
+</ul>
+</div>
+<p><a href="https://doi.org/10.1037/cep0000123" style="font-size:0.55em; color:#6b6b6b">Varao-Sousa, Solman and Kingstone (2017), <em>Re-reading after mind wandering</em>, Canadian Journal of Experimental Psychology 71(3), 203–211.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The data section is where most readers drift: sources, filters, merges. The first version is accurate and dry. It says where the data come from and what the team does to them, and a reader who drifted during the design section has no way back in.</p>
+<p>The green sentences are the on-ramp, a “you are here” sign on the map of the paper. They remind the reader of the question, say what kind of data it needs, and justify that choice: individual sales with addresses and dates, because county averages would mix homes near and far. Only then comes how the team gets them. A deep reader loses a few seconds; a reader who drifted rejoins with the argument in hand.</p>
+<p>Readers try to rejoin near where they left, so the rejoining point should be close: the start of each section, the first sentence of each paragraph. In talks the same tool is spoken. Titsworth and Kiewra (2004, https://doi.org/10.1016/j.cedpsych.2003.12.001) had college students hear a lecture in which the speaker named the topic and category of each point; those students scored 15–45% higher on the tests. How to open a talk is meeting 12.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="four-ways-off-the-path-and-their-solutions" class="slide level2">
+<h2>Four ways off the path and their solutions</h2>
+<div class="m10-recap" style="font-size:0.74em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 28%">
+<col style="width: 65%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Off the path</th>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">A criticism of the design</td>
+<td style="text-align: left;">Answer it briefly in the next sentence, and point to the full check</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">A variation the reader wonders about</td>
+<td style="text-align: left;">Say which cases the design covers</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">A limitation on where the result applies</td>
+<td style="text-align: left;">State it yourself, once, in the limitations section</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">A reader who drifted</td>
+<td style="text-align: left;">Open each section with a “you are here” sentence: how it fits in the overall argument</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<p>One minute.</p>
+<p>Rows 1 to 3 are the bubbles; row 4 is the on-ramp. One study behind row 3: in news stories about cancer research, 601 readers trusted the scientists more when the story reported limitations, and most when the scientists stated them themselves (Jensen 2008, https://doi.org/10.1111/j.1468-2958.2008.00324.x). A limitation stated once, in its place, costs less than a hedge spread over every sentence.</p>
+<p>Spelling errors are an off-ramp of a cruder kind; the writing guide’s checklist covers proofreading.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="plain-and-neutral-sentences" class="title-slide slide level1 center">
+<h1>6. Plain and neutral sentences</h1>
+<aside class="notes">
+<p>Thirty seconds. Sentences a reader can check: active verbs, numbers in place of adjectives, and one term for one thing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hype-words-spread-in-funded-grant-abstracts" class="slide level2">
+<h2>Hype words spread in funded grant abstracts</h2>
+<ul>
+<li>A <strong>hype word</strong> is an adjective or adverb that praises the work.</li>
+</ul>
+<div class="m10-hyp m10-two" style="font-size:0.58em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">With hype words</td>
+<td style="text-align: left;">We provide <span class="m10-phrase">novel</span> evidence on a <span class="m10-phrase">critical</span> question: the <span class="m10-phrase">key</span> role of solar farms in <span class="m10-phrase">dramatically</span> shaping local home values.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">With the comparison</td>
+<td style="text-align: left;">We estimate how much a new solar farm changes the sale prices of homes within one kilometer, in New York, where earlier studies have not looked.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="font-size:0.74em">
+<ul>
+<li>Millar, Batalo and Budgell counted hype words in NIH-funded grant abstracts. The share with at least one rose from 72% in 1985 to 97% in 2020.</li>
+<li>Some journals forbid claims to be first. Since 2017 <em>Nature Human Behaviour</em> has made authors remove them before acceptance.</li>
+<li><span class="solution"><strong>Solution</strong>: replace each hype word with the comparison that shows it, and let the gap show that the work is new.</span></li>
+</ul>
+</div>
+<p><a href="https://doi.org/10.1001/jamanetworkopen.2022.28676" style="font-size:0.55em; color:#6b6b6b">Millar, Batalo and Budgell (2022), <em>Trends in the use of promotional language (hype) in abstracts of successful National Institutes of Health grant applications, 1985–2020</em>, JAMA Network Open 5(8), e2228676.</a> <a href="https://doi.org/10.1038/s41562-021-01068-x" style="font-size:0.55em; color:#6b6b6b">Nature Human Behaviour (2021), <em>Not the first, not the best</em>, editorial, 5, 175.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The first sentence in the box uses the three most common hype words Millar and coauthors found, plus an adverb. None of them can be checked. The second makes the same claim with the comparison: what is measured, where, and how it differs from earlier work. A reviewer can check every part of it.</p>
+<p>All the hype words they counted were adjectives. When nearly every funded abstract calls its work novel and critical, the words stop separating one application from another, and a careful reviewer starts discounting them.</p>
+<p>Some journals go further and remove the claim altogether. Nature Human Behaviour has required since 2017 that authors drop priority and novelty claims before acceptance, and since 2019 that they drop self-praising descriptions of their work; its reasons are that such claims are hard to verify and distract from the evidence. You do not need to write “this is the first study to”. If the introduction shows what is known and what is missing, the reader sees that you are filling the gap.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hype-words-went-with-higher-odds-of-funding" class="slide level2">
+<h2>Hype words went with higher odds of funding</h2>
+<ul>
+<li>Qiu and coauthors studied 11,535 grant applications: 2,439 to NIH from Northwestern faculty (2007–2019) and 9,096 to the Novo Nordisk Foundation, a Danish medical research funder (2015–2022).</li>
+<li>They call them promotional words. Each extra percentage point went with about 1.5 times the odds of funding.</li>
+<li>The data are observational. Work that is new may draw both the words and the funding.</li>
+<li>A reviewer cannot check novel without a comparison.</li>
+<li><span class="solution"><strong>Solution</strong>: say once what is new, compared with the closest published study.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1001/jamanetworkopen.2024.48696" style="font-size:0.55em; color:#6b6b6b">Qiu, Peng, Fosse, Woodruff and Uzzi (2024), <em>Use of promotional language in grant applications and grant success</em>, JAMA Network Open 7(12), e2448696.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>This is the evidence on the other side, and you should know it. The typical application used about 1% promotional words, so one extra percentage point roughly doubles the share. The authors cannot tell whether the words persuade or whether newer work is described with more of them.</p>
+<p>The fix keeps what the words were trying to do. Say once what is new, and show it with the comparison: the closest study, and what yours adds. Novelty is meeting 3’s test, and the closest study is meeting 5’s anchor paper.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="give-the-number-in-place-of-the-adjective" class="slide level2">
+<h2>Give the number in place of the adjective</h2>
+<div class="m10-two" style="font-size:0.78em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Invented for this slide</td>
+<td style="text-align: left;">Target’s sales collapsed dramatically after the boycott.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">The “Target boycott” project description, verbatim</td>
+<td style="text-align: left;">“<em>comparable store sales fell 4.3 percent in the second quarter of 2023</em>”</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><p>The first sentence is made up to show the problem. The second is how the project description reports the figure, taken from Target’s earnings release.</p></li>
+<li><p><strong>Comparable store sales</strong> are in-store sales at stores open at least 13 months, against the same quarter a year earlier.</p></li>
+<li><p>The number, its unit, the comparison and the period let the reader judge the size.</p></li>
+</ul>
+<p><a href="https://www.sec.gov/Archives/edgar/data/27419/000002741923000032/a2023q2ex-99.htm" style="font-size:0.55em; color:#6b6b6b">Target Corporation (2023), second-quarter earnings release, Form 8-K, Exhibit 99, August 16.</a> <a href="../../fall-2026/handouts/project-description-example-target.html" style="font-size:0.55em; color:#6b6b6b">“Target boycott” project description.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>“Collapsed dramatically” asks the reader to trust the writer’s sense of scale. The second line lets the reader judge: 4.3 percent, against the same quarter a year earlier, in stores that were open both years. It also avoids a claim the first line makes without evidence, that the boycott caused the fall. Target said in 2023 that it could not separate the reaction from other causes.</p>
+<p>Meeting 5 said numbers come from your table, and meeting 6 separated percent from percentage points. Both apply here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-rules-for-verbs" class="slide level2">
+<h2>Three rules for verbs</h2>
+<ul>
+<li>Every sentence below is invented to show the rule. None corrects a published sentence.</li>
+</ul>
+<div class="m10-rules" style="font-size:0.58em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 30%">
+<col style="width: 30%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Rule</th>
+<th style="text-align: left;">Before (invented)</th>
+<th style="text-align: left;">After (invented)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><strong>Active voice</strong>: the subject does the action, with we for the team</td>
+<td style="text-align: left;">Sale records were obtained from ATTOM through Dewey, Cornell’s data platform.</td>
+<td style="text-align: left;">We obtained sale records from ATTOM through Dewey, Cornell’s data platform.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"><strong>Present tense</strong> for what a paper or table shows, past for what happened in its sample, future for your plans</td>
+<td style="text-align: left;">Gaur and Lang (2023) found that solar farms lower home values.</td>
+<td style="text-align: left;">Gaur and Lang (2023) find that homes in Massachusetts and Rhode Island within 0.6 miles of a solar farm lost 1.5 to 3.6 percent of their value.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><strong>Verbs</strong> in place of nominalizations, nouns made from verbs</td>
+<td style="text-align: left;">We conduct an analysis of sale prices.</td>
+<td style="text-align: left;">We analyze sale prices.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a href="https://doi.org/10.1016/j.eneco.2023.106699" style="font-size:0.55em; color:#6b6b6b">The numbers in row 2 are Gaur and Lang’s finding. Gaur and Lang (2023), <em>House of the rising sun: The effect of utility-scale solar arrays on housing prices</em>, Energy Economics 122, 106699.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>The passive hides who did it. In a proposal the actor is the team, and “we” is standard in economics.</p>
+<p>The tense rule follows economics usage. A paper and a table show something now, so they take the present. What happened in a sample happened then, so it takes the past. Meeting 5 listed past to present as one way a draft claims more than the result. The “before” sentence does exactly that: it states a finding about homes in two states as a fact about solar farms everywhere. The present tense goes on the paper’s verb, never on the finding about its sample.</p>
+<p>Nominalizations turn the action into a noun and add a weak verb to carry it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-rules-for-terms-and-claims" class="slide level2">
+<h2>Three rules for terms and claims</h2>
+<ul>
+<li>Every sentence below is invented to show the rule. None corrects a published sentence.</li>
+</ul>
+<div class="m10-rules" style="font-size:0.54em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 30%">
+<col style="width: 30%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Rule</th>
+<th style="text-align: left;">Before (invented)</th>
+<th style="text-align: left;">After (invented)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><strong>One term</strong> for one thing</td>
+<td style="text-align: left;">Solar farm, array, facility and project in one paragraph read as four things.</td>
+<td style="text-align: left;">Solar farm, every time.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"><strong>Name the study</strong> and its setting</td>
+<td style="text-align: left;">The literature finds that solar farms lower home values.</td>
+<td style="text-align: left;">Elmallah et al.&nbsp;(2023) find that, across more than 1,500 solar projects in six states, homes within half a mile sold for about 1.5 percent less than homes two to four miles away.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><strong>Hedge once</strong>, on the interpretation, where the doubt lies</td>
+<td style="text-align: left;">Visits may have fallen somewhat more in Republican counties, which possibly suggests the boycott may have mattered.</td>
+<td style="text-align: left;">Visits fell 2.1 percent more in the most Republican third of counties. The gap may reflect the boycott, or a local shock in the same weeks.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a href="https://doi.org/10.1111/j.1465-7295.1985.tb01761.x" style="font-size:0.55em; color:#6b6b6b">The numbers in row 2 are Elmallah et al.’s finding; the 2.1 percent in row 3 is made up. McCloskey (1985), <em>Economical Writing</em>, Economic Inquiry 23(2), 187–222, rule 19.</a> <a href="https://doi.org/10.1016/j.enpol.2023.113425" style="font-size:0.55em; color:#6b6b6b">Elmallah, Hoen, Fujita, Robson and Brunner (2023), <em>Shedding light on large-scale solar impacts</em>, Energy Policy 175, 113425.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>A reader who meets a new word assumes a new thing. In economics prose, synonyms for variety cost the reader the most. McCloskey, an economist writing a style guide for economists, makes it rule 19.</p>
+<p>“The literature” hides how many studies, where and how large. Name the study, its setting and its number, and the reader can judge how far it carries to your setting.</p>
+<p>The hedge goes on the interpretation, once. The data statement stays plain: the team measured the gap, and the doubt is about what caused it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cite-what-a-reader-could-dispute" class="slide level2">
+<h2>Cite what a reader could dispute</h2>
+<ul>
+<li>Cite any claim a reader could dispute. Mark a hypothesis or an opinion as yours, and point your own results to a table.</li>
+</ul>
+<div class="m10-rules" style="font-size:0.56em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 48%">
+<col style="width: 20%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Sentence (invented)</th>
+<th style="text-align: left;">What it is</th>
+<th style="text-align: left;">What it needs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Target’s comparable store sales fell 4.3 percent in the second quarter of 2023 (Target 2023).</td>
+<td style="text-align: left;">A number someone could check</td>
+<td style="text-align: left;">The source</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Homes within half a mile of a solar farm sold for about 1.5 percent less than homes two to four miles away (Elmallah et al.&nbsp;2023).</td>
+<td style="text-align: left;">Another study’s finding</td>
+<td style="text-align: left;">The study</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Solar panels turn sunlight into electricity.</td>
+<td style="text-align: left;">Common knowledge</td>
+<td style="text-align: left;">Nothing</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">We expect larger effects where farms replace open fields, since neighbors lose a view.</td>
+<td style="text-align: left;">Our hypothesis</td>
+<td style="text-align: left;">“We expect”, and the evidence behind it if any</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Visits fell 2.1 percent more in the most Republican third of counties (table 2).</td>
+<td style="text-align: left;">Our own result</td>
+<td style="text-align: left;">The table or figure</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a href="https://www.sec.gov/Archives/edgar/data/27419/000002741923000032/a2023q2ex-99.htm" style="font-size:0.55em; color:#6b6b6b">The numbers in rows 1 and 2 are from the cited sources; the 2.1 percent in row 5 is made up. Target Corporation (2023), second-quarter earnings release.</a> <a href="https://doi.org/10.1016/j.enpol.2023.113425" style="font-size:0.55em; color:#6b6b6b">Elmallah et al.&nbsp;(2023), Energy Policy 175, 113425.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>The test for a citation is whether a reasonable reader could ask “says who?”. A number, a finding from another study, a method you take from someone else: each needs its source, at the sentence where it appears. Common knowledge does not: nobody needs a reference for what solar panels do.</p>
+<p>Your own claims come in two kinds, and the reader must be able to tell them apart. A hypothesis or an opinion is marked as yours, “we expect”, “we argue”, so it is not read as an established finding; if it rests on evidence, cite that evidence. Your own results point to the table or figure that shows them.</p>
+<p>The common failure runs both ways. A disputable claim with no source reads as the writer’s guess. A guess written in the voice of a finding, with no “we expect”, reads as a fact the writer has not earned.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="the-mechanics-of-writing-a-paper" class="title-slide slide level1 center">
+<h1>7. The mechanics of writing a paper</h1>
+<aside class="notes">
+<p>Thirty seconds. Sections 3 to 6 described a finished text. This section is the order of work that produces one.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-paper-is-written-in-three-passes" class="slide level2">
+<h2>A paper is written in three passes</h2>
+<div style="font-size:0.7em">
+<ol class="m10-steps">
+<li>
+<b>Sections</b><span>The headings the document needs, in order</span>
+</li>
+<li>
+<b>Outline</b><span>Under each heading, one bullet per paragraph: its topic sentence, and the tables, figures and sources it will cite</span>
+</li>
+<li>
+<b>Prose</b><span>Each bullet becomes a paragraph</span>
+</li>
+</ol>
+</div>
+<ul>
+<li>Plan code the same way, from the big picture down to small steps.</li>
+<li>Every paragraph of the draft has its bullet in the outline.</li>
+<li>Your proposal outline, due November 11, is pass 2.</li>
+</ul>
+<p><span class="src">Meeting 5: “Plan first and work in small steps” and “You write the outline”.</span></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>Pass 1 is short. For the proposal the headings are given: the course’s headings from section 3. For a paper, the schematic of an empirical paper is the default.</p>
+<p>Pass 2 does most of the thinking. Each bullet is one paragraph, and it holds the topic sentence written out in full, plus the evidence the paragraph will point to: the citation, the number, the table or figure. The outline is exhaustive. If a paragraph will exist, it has a bullet; if you cannot write the bullet, the paragraph has no point yet.</p>
+<p>This is how meeting 5 asked you to plan code: decide the structure first, then fill in small pieces you can check one at a time.</p>
+<p>Pass 3 is the writing, and it comes last. The proposal outline due on November 11 is exactly pass 2, which is why it is graded on its own.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-2021-paper-rebuilt-as-an-outline" class="slide level2">
+<h2>The 2021 paper rebuilt as an outline</h2>
+<div class="m10-ol">
+  <div class="ro-page"></div>
+  <div class="ro-side">
+    <div class="ol-label">Outline written for this slide</div>
+    <ol class="ro-outline"></ol>
+    <div class="ro-info"></div>
+  </div>
+</div>
+<p><a href="https://arxiv.org/abs/2007.10415" style="font-size:0.55em; color:#6b6b6b">Ortiz-Bobea, Ault, Carrillo, Chambers and Lobell (2020), arXiv:2007.10415, main text of the version first submitted.</a> <a href="https://doi.org/10.1038/s41558-021-01000-1" style="font-size:0.55em; color:#6b6b6b">Published in <em>Nature Climate Change</em> 11, 306–312 (2021).</a></p>
+<aside class="notes">
+<p>Three minutes.</p>
+<p>The left panel is the main text of the 2021 paper as first submitted, numbered by paragraph. The right panel is an outline that could have produced it: seven sections, then one bullet per paragraph with its topic sentence, its evidence and its length. Hovering a bullet scrolls to the paragraph and marks the sentence that carries its point. Scrolling the paper marks the bullet.</p>
+<p>Nature Climate Change prints no section headings in the main text. The sections were still there in the outline, and a reader can recover them.</p>
+<p>Walk four bullets. Paragraph 1 is the funnel, so its point comes last, as in the solar paper. Paragraph 4 sets up the production function before its point. Paragraph 8 opens with a question and answers it in sentence 4. Paragraph 16 carries three points, what the counterfactual removes, measurement error and the conclusion; an outline would give it three bullets. The other twelve open on their point.</p>
+<p>Every figure in the paper appears in the outline before any prose.</p>
+<p>The published version updated some numbers in revision (seven years of growth in place of nine). The structure did not change.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-outline-sets-the-length" class="slide level2">
+<h2>The outline sets the length</h2>
+<ul>
+<li>Plan about 150 words for each paragraph.</li>
+<li>The number of bullets then gives the length of the draft.</li>
+</ul>
+<div style="font-size:0.62em">
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Section of the 2021 paper</th>
+<th style="text-align: right;">Paragraphs</th>
+<th style="text-align: right;">At 150 words each</th>
+<th style="text-align: right;">Words written</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Introduction</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">357</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Framework and model</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">322</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Data</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">113</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">How TFP responds to weather</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">448</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Impact of climate change since 1961</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">315</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Checks</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">437</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Caveats and conclusion</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">272</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>16</strong></td>
+<td style="text-align: right;"><strong>2,400</strong></td>
+<td style="text-align: right;"><strong>2,264</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a href="https://arxiv.org/abs/2007.10415" style="font-size:0.55em; color:#6b6b6b">Main text of arXiv:2007.10415, equations excluded.</a></p>
+<aside class="notes">
+<p>One minute.</p>
+<p>The rule of thumb is about 150 words a paragraph. Sixteen bullets predicted 2,400 words; the paper came in at 2,264, about 140 a paragraph.</p>
+<p>So count the bullets before you write. If the count times 150 runs past the page limit, cut bullets, which means cutting points, before writing any prose. Trimming words from finished paragraphs costs far more time and saves far less space.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="write-each-paragraph-from-its-bullet" class="slide level2">
+<h2>Write each paragraph from its bullet</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size:0.72em">
+<ol type="1">
+<li>Open with the bullet’s point, in the first sentence.</li>
+<li>Answer each doubt in the sentence that follows it.</li>
+<li>Open each section with a “you are here” sentence.</li>
+<li>Use precise terms and numbers throughout.</li>
+</ol>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="m10-bulletpara" style="font-size:0.56em">
+<p><span class="lbl">Bullet 9, written for this slide</span></p>
+<div class="m10-plan">
+<p>Weather has no detectable lasting effect on TFP growth. Evidence: lags up to 10 years (Tab. S2).</p>
+</div>
+<p><span class="lbl">Paragraph 9 as submitted</span></p>
+<div class="m10-quote">
+<p>“<em><span class="k1">We find no evidence that weather has a persistent effect on TFP growth.</span> Our baseline specification only considers contemporaneous weather effects. <span class="k2">But a weather shock could conceivably affect TFP growth in future years, for example if growth is faster following a year with bad weather.</span> This would result in cumulative weather events affecting TFP growth. <span class="k3">By introducing lags for weather in prior years, we cannot reject the hypothesis that the cumulative effect of changes in weather conditions up to 10 years in the past have no effect on TFP growth (Tab. S2).</span> But rejecting this hypothesis may be challenging with aggregate data.</em>”</p>
+</div>
+<p><span class="k1">The point</span> · <span class="k2">the doubt a reader would raise</span> · <span class="k3">the answer, with its table</span></p>
+</div>
+</div></div>
+<p><a href="https://arxiv.org/abs/2007.10415" style="font-size:0.55em; color:#6b6b6b">Ortiz-Bobea et al.&nbsp;(2020), arXiv:2007.10415, paragraph 9 of the main text.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>Pass 3. The bullet already holds the point and the evidence, so the paragraph opens on the point: sections 4 to 6 apply sentence by sentence.</p>
+<p>In paragraph 9 the first sentence is the bullet’s point. Sentence 3 raises the doubt a careful reader would have, that a bad year could be made up the next. Sentence 5 answers it with the test and points to the table. The last sentence says what the test cannot rule out.</p>
+<p>Do not bury the point at the end of the paragraph. A reader who stops after the first sentence of each paragraph should still have the argument.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="seven-steps-for-the-proposal" class="slide level2">
+<h2>Seven steps for the proposal</h2>
+<div style="font-size:0.84em">
+<ol type="1">
+<li>Name your readers, from the skimmer to the deep reader.</li>
+<li>Make the title, the first page and the full proposal each carry the message, at their reader’s level.</li>
+<li>Follow the required headings, and open with a funnel to your question.</li>
+<li>Give each paragraph one point, stated in its first sentence.</li>
+<li>Answer each doubt where it arises, and open each section with a sentence on where it fits.</li>
+<li>Write active sentences with numbers, one term for one thing, and a source for any claim a reader could dispute.</li>
+<li>Write in three passes: the sections, one bullet per paragraph, then the prose.</li>
+</ol>
+</div>
+<p><span class="src">Handout: the writing guide, on this meeting’s page.</span></p>
+<p><a href="https://doi.org/10.1371/journal.pcbi.1005619" style="font-size:0.55em; color:#6b6b6b">Mensh and Kording (2017), <em>Ten simple rules for structuring papers</em>.</a> <a href="https://law.uga.edu/sites/default/files/OnTheArtOfWritingProposals_SocialScienceResearchCouncilCompetiotions.pdf" style="font-size:0.55em; color:#6b6b6b">Przeworski and Salomon (1988, rev. 1995), <em>On the Art of Writing Proposals</em>.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>One step per section. The writing guide turns these into a checklist to run before you submit the outline on November 11. The two readings are short and free: Mensh and Kording on structure, and Przeworski and Salomon on what a proposal’s reader looks for.</p>
+<p>Run the reverse outline on your outline before you submit it: one sentence per paragraph, read in order.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section id="project-talks" class="title-slide slide level1 center">
+<h1>Project talks</h1>
+<aside class="notes">
+<p>Session B. The team check-in, then the nine project talks in a random order: three minutes each, then one question from the room.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>AEM 6991</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <style>
+    /* Meeting 10: no demos. Shared slide rules from earlier meetings, plus the
+       genre schematics, the boxes that hold hypothetical text, and the cells
+       that wait for the instructor's lines on readers. */
+    .reveal .slides section.dense > ul, .reveal .slides section.dense > ol { font-size: 0.86em; }
+    /* The solution line on each problem slide. */
+    .reveal .slides section .solution { color: #b31b1b; }
+    /* Source lines are 0.55em links inside a full-size paragraph. Size the paragraph instead. */
+    .reveal .slides section p:has(> a[style*="font-size:0.55em"]) { font-size: 0.55em; line-height: 1.3; margin: 0.5em 0 0; }
+    .reveal .slides section p:has(> a[style*="font-size:0.55em"]) > a { font-size: 1em !important; }
+    .reveal .slides section .src { font-size: 0.55em; line-height: 1.3; color: #6b6b6b; margin: 0.5em 0 0; }
+
+    /* Hypothetical text: a ruled box with a small label, never quote marks. */
+    .reveal .m10-hyp {
+      border-left: 4px solid #8a8a84;
+      background: #f6f6f2;
+      padding: 0.45em 0.8em 0.5em;
+      margin: 0.2em 0 0.6em;
+    }
+    .reveal .m10-hyp::before {
+      content: "Hypothetical";
+      display: block;
+      font-size: 0.55em;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #6b6b6b;
+      margin-bottom: 0.2em;
+    }
+    .reveal .m10-hyp p { margin: 0; }
+    /* A phrase lifted from the hypothetical paragraph. */
+    .reveal .m10-phrase { background: #f3dede; padding: 0 0.2em; border-radius: 3px; }
+
+    /* Cells waiting for the instructor's lines. */
+    .reveal .m10-tbd { color: #b31b1b; font-style: italic; opacity: 0.75; }
+
+    /* Genre schematics: ordered boxes, the section name on the left and its job on the right. */
+    .reveal .m10-steps { list-style: none; margin: 0.2em 0 0.4em; padding: 0; counter-reset: step; }
+    .reveal .m10-steps li {
+      counter-increment: step;
+      display: flex;
+      gap: 0.6em;
+      align-items: baseline;
+      border: 1.5px solid #c9c9c3;
+      border-radius: 6px;
+      padding: 0.14em 0.55em;
+      margin: 0 0 0.22em;
+      background: #fff;
+    }
+    .reveal .m10-steps li::before { content: counter(step); color: #6b6b6b; font-size: 0.8em; min-width: 1.1em; }
+    .reveal .m10-steps li b { min-width: 9.2em; }
+    .reveal .m10-steps li span { color: #343a40; }
+    .reveal .m10-steps li.v { border-color: #b31b1b; }
+    .reveal .m10-steps.two { columns: 2; column-gap: 0.8em; }
+    .reveal .m10-steps.two li { break-inside: avoid; }
+    .reveal .m10-steps.two li b { min-width: 0; }
+
+    /* Recap tables: a narrow number column, and the last column is the solution, in red. */
+    .reveal .m10-recap td:first-child, .reveal .m10-recap th:first-child { width: 1.5em; }
+    .reveal .m10-recap td:last-child, .reveal .m10-recap th:last-child { color: #b31b1b; }
+    /* Rule tables: a narrow number column. */
+    .reveal .m10-rules td:first-child, .reveal .m10-rules th:first-child { width: 1.5em; }
+    /* Two-column tables with a label on the left. */
+    .reveal .m10-two td:first-child { width: 30%; color: #343a40; }
+
+    /* Screenshots in columns, each framed and cropped to the same height. */
+    .reveal .m10-shot img { border: 1px solid #c9c9c3; max-height: 360px; width: 100%; object-fit: cover; object-position: top; margin: 0 0 0.2em; }
+    .reveal .m10-shot p { font-size: 0.5em; line-height: 1.3; color: #343a40; margin: 0; text-align: center; }
+    .reveal .m10-shot.short img { max-height: 290px; }
+
+    /* Verbatim text from a paper, set as a ruled block. */
+    .reveal .m10-quote { border-left: 4px solid #b31b1b; padding: 0.3em 0.8em; margin: 0.2em 0 0.5em; background: #fbf7f7; }
+    .reveal .m10-quote p { margin: 0 0 0.35em; }
+    /* A sentence added in revision. */
+    .reveal .m10-added { background: #e3efe0; padding: 0 0.2em; border-radius: 3px; }
+    .reveal .m10-phrase sup, .reveal .m10-added sup { color: #b31b1b; font-weight: 600; }
+
+    /* A skeptical reader's thought bubbles. */
+    .reveal .m10-bubble {
+      position: relative; background: #fff; border: 2px solid #8a8a84; border-radius: 1.2em;
+      padding: 0.35em 0.75em; margin: 0 0 0.85em 1.6em; font-size: 0.7em; line-height: 1.3;
+    }
+    .reveal .m10-bubble::before, .reveal .m10-bubble::after {
+      content: ""; position: absolute; border: 2px solid #8a8a84; border-radius: 50%; background: #fff;
+    }
+    .reveal .m10-bubble::before { left: -1.05em; bottom: 0.35em; width: 0.6em; height: 0.6em; }
+    .reveal .m10-bubble::after { left: -1.6em; bottom: -0.05em; width: 0.32em; height: 0.32em; }
+    .reveal .m10-bubble b { color: #b31b1b; }
+
+    /* The funnel: bands narrowing toward the question, the paper's sentence beside each. */
+    .reveal .m10-funnel { display: grid; grid-template-columns: 38% 1fr; column-gap: 1em; row-gap: 0.3em; font-size: 0.6em; }
+    .reveal .m10-funnel .band {
+      background: #b31b1b; color: #fff; font-weight: 600; display: flex; align-items: center;
+      justify-content: center; text-align: center; margin: 0 auto; min-height: 3.2em;
+    }
+    .reveal .m10-funnel .b1 { width: 100%; clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%); }
+    .reveal .m10-funnel .b2 { width: 80%; opacity: 0.85; clip-path: polygon(0 0, 100% 0, 87.5% 100%, 12.5% 100%); }
+    .reveal .m10-funnel .b3 { width: 60%; opacity: 0.72; clip-path: polygon(0 0, 100% 0, 83.3% 100%, 16.7% 100%); }
+    .reveal .m10-funnel .b4 { width: 40%; opacity: 0.6; clip-path: polygon(0 0, 100% 0, 81.25% 100%, 18.75% 100%); }
+    .reveal .m10-funnel .q { display: flex; align-items: center; color: #343a40; }
+    .reveal .m10-funnel .q i { font-style: italic; }
+    /* The funnel's test, between what is missing and the question. */
+    .reveal .m10-funnel .m10-test {
+      grid-column: 1 / -1; text-align: center; color: #b31b1b; background: #fbf1f1;
+      border: 1.5px dashed #b31b1b; border-radius: 6px; padding: 0.25em 0.6em; font-size: 1.15em;
+    }
+
+    /* A reverse outline of a whole introduction: the paper on the left, the outline on the right. */
+    .reveal :is(.m10-ro, .m10-ol) { display: grid; grid-template-columns: 57% 1fr; gap: 18px; height: 505px; font-size: 15px; text-align: left; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-page {
+      overflow-y: auto; position: relative; background: #fff; border: 1px solid #d8d8d2;
+      box-shadow: 0 2px 10px rgba(0,0,0,.14); padding: 16px 22px; color: #1b1b1b;
+      font-family: Georgia, "Times New Roman", serif; line-height: 1.5; text-align: justify;
+    }
+    .reveal :is(.m10-ro, .m10-ol) .ro-paper { font-weight: 700; font-size: 15px; line-height: 1.3; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-authors { font-size: 12px; color: #6b6b6b; margin: 4px 0 10px; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-sec { font-weight: 700; margin-bottom: 6px; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-p { margin: 0 0 10px; text-indent: 1.2em; font-size: 15px; line-height: 1.5; transition: opacity .2s; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-s { border-radius: 3px; transition: background .15s; cursor: default; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-s.ro-first { text-decoration: underline; text-decoration-color: #8a8a84; text-underline-offset: 3px; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-s.ro-on { background: #fff1b8; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-p.ro-dim { opacity: .22; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-p.ro-focus .ro-point { background: #f3dede; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-s.ro-role { background: color-mix(in srgb, var(--ro-col) 24%, white); }
+    .reveal :is(.m10-ro, .m10-ol) .ro-side { display: flex; flex-direction: column; gap: 8px; min-height: 0; font-size: 14px; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-outline { list-style: none; margin: 0; padding: 0; overflow-y: auto; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-row {
+      display: flex; gap: 8px; padding: 4px 8px; margin: 0 0 4px; border: 1px solid #e3e3de;
+      border-radius: 6px; line-height: 1.25; font-size: 13px; cursor: default;
+    }
+    .reveal :is(.m10-ro, .m10-ol) .ro-row:hover { border-color: #b31b1b; background: #fbf7f7; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-num { font-weight: 700; color: #b31b1b; min-width: 1em; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-sum { display: block; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-at { display: block; font-size: 11px; color: #b31b1b; margin-top: 2px; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-at.ro-first-ok { color: #3f7d3a; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-missing { border-style: dashed; color: #7e1313; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-info { min-height: 46px; border-top: 1px solid #e3e3de; padding-top: 6px; line-height: 1.3; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-chip {
+      display: inline-block; color: #fff; font-size: 11px; font-weight: 600; line-height: 1.5;
+      border-radius: 10px; padding: 0 8px; margin: 0 4px 4px 0; cursor: default;
+    }
+    .reveal :is(.m10-ro, .m10-ol) .ro-where { font-size: 12px; color: #6b6b6b; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-does { margin-top: 2px; }
+    .reveal :is(.m10-ro, .m10-ol) .ro-legend { line-height: 1.2; }
+
+    /* The 2021 paper rebuilt as an outline: same panels, with sections, evidence and lengths. */
+    .reveal .m10-ol { grid-template-columns: 55% 1fr; height: 520px; }
+    .reveal .m10-ol .ro-p { position: relative; }
+    .reveal .m10-ol .ro-p.ro-focus .ro-point,
+    .reveal .m10-ol .ro-p:hover .ro-point { background: #f3dede; }
+    .reveal .m10-ol .ol-pn {
+      position: absolute; left: -18px; top: 2px; text-indent: 0; font: 700 11px/1 "Source Sans Pro", Helvetica, sans-serif; color: #b31b1b;
+    }
+    .reveal .m10-ol .ro-page { padding-left: 26px; }
+    .reveal .m10-ol .ro-eq { display: block; text-align: center; text-indent: 0; margin: 4px 0; white-space: nowrap; font-size: 14px; }
+    .reveal .m10-ol .ol-label { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #6b6b6b; }
+    .reveal .m10-ol .ro-outline { position: relative; flex: 1; border: 1.5px dashed #b8b8b0; border-radius: 6px; padding: 6px; }
+    .reveal .m10-ol .ol-sec { font-size: 12px; font-weight: 700; color: #1b1b1b; margin: 6px 0 3px; }
+    .reveal .m10-ol .ol-sec:first-child { margin-top: 0; }
+    .reveal .m10-ol .ro-row { padding: 3px 7px; margin-bottom: 3px; font-size: 12.5px; }
+    .reveal .m10-ol .ro-row.ro-cur { border-color: #b31b1b; background: #fbf7f7; }
+    .reveal .m10-ol .ol-ev { display: block; font-size: 11px; color: #6b6b6b; margin-top: 1px; }
+    .reveal .m10-ol .ro-info { min-height: 0; font-size: 12.5px; color: #1b1b1b; }
+
+    /* A bullet and the paragraph written from it. */
+    .reveal .m10-bulletpara .lbl { display: block; font-size: 0.85em; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: #6b6b6b; margin: 0.3em 0 0.2em; }
+    .reveal .m10-bulletpara .m10-plan { border: 1.5px dashed #b8b8b0; border-radius: 6px; padding: 0.3em 0.7em; margin-bottom: 0.4em; }
+    .reveal .m10-bulletpara .m10-plan p { margin: 0; }
+    .reveal .m10-bulletpara .m10-quote p { line-height: 1.45; }
+    .reveal .m10-bulletpara .m10-quote :is(.k1, .k2, .k3) { padding: 0; }
+    .reveal .m10-bulletpara .k1 { background: #f3dede; border-radius: 3px; padding: 0 0.15em; }
+    .reveal .m10-bulletpara .k2 { background: #fff1b8; border-radius: 3px; padding: 0 0.15em; }
+    .reveal .m10-bulletpara .k3 { background: #e3efe0; border-radius: 3px; padding: 0 0.15em; }
+    </style>
+    <script src="sim/m10-reverse.js"></script>
+    <script src="sim/m10-ncc-data.js"></script>
+    <script src="sim/m10-outline.js"></script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/arielortizbobea\.github\.io\/aem6991\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

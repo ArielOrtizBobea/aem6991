@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
+
+  <title>AEM 6991 – AEM 6991 · 7 Model failures</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-638d68159db5c4da088d5ac853e4cd78.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <p class="ttl-number">AEM 6991</p>
+  <p class="ttl-course">MPS Capstone Project I</p>
+  <p class="ttl-prof">Prof. Ariel Ortiz-Bobea</p>
+  <h1 class="title">7 · Model failures</h1>
+  <p class="subtitle">Wednesday, October 7, 2026</p>
+  <img class="ttl-seal" src="../images/cornell_seal.svg" alt="Cornell University">
+</section>
+<section id="motivation" class="slide level2">
+<h2>Motivation</h2>
+<ul>
+<li>Last week’s estimators were unbiased and consistent under their assumptions.</li>
+<li>Applied data often violate those assumptions.</li>
+<li><strong>Bias</strong>: the expected value of the estimator differs from the parameter.</li>
+<li><strong>False precision</strong>: the reported standard error understates the estimator’s standard deviation.</li>
+<li><strong>Low power</strong>: the standard error is too large to detect the minimum relevant effect.</li>
+<li><strong>External validity</strong>: whether the estimate holds for the population the decision concerns.</li>
+<li>Today we discuss the sources of each failure and their solutions.</li>
+</ul>
+<aside class="notes">
+<p>Ninety seconds.</p>
+<p>Last week every simulation drew customers at random and independently, and the estimators behaved as the theory said: unbiased, consistent, with correct standard errors. Those properties are conditional on assumptions. This week the same estimators run on data that violate them. Nobody chooses a biased estimator. They choose one that is unbiased under assumptions their data do not satisfy.</p>
+<p>Four definitions carry the hour. Bias is a property of the estimator’s location: its sampling distribution is centered away from the parameter. False precision is a property of the reported uncertainty: the estimate may be centered correctly, but the standard error printed beside it understates how much it varies across samples.</p>
+<p>Low power is the third: a correct standard error that is too large for the question. External validity is the fourth: an estimate that is right for the units studied and wrong for the units the decision concerns. Its significant results overstate the effect.</p>
+<p>The session B cards rest on telling these apart.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
+<ol type="1">
+<li>Bias</li>
+<li>Control variables and their limits</li>
+<li>False precision</li>
+<li>Statistical power</li>
+<li>External validity</li>
+</ol>
+<aside class="notes">
+<p>Thirty seconds. One section per failure, in the order of the motivation slide, with control variables after bias because they are the solution most projects reach for. Section 1 takes the sources of bias, each with its solution and the question of whether more data would fix it. Section 2 covers control variables and the evidence on how far they go. Section 3 takes the sources of false precision, each with the standard error that corrects it. Section 4 covers the opposite problem, a correct standard error too large to answer the question, and how a design gets the power it needs. Section 5 asks whether the estimate holds for the population the decision concerns.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section>
+<section id="bias" class="title-slide slide level1 center">
+<h1>1. Bias</h1>
+<aside class="notes">
+<p>Thirty seconds. The section opens with one animation, in the format of last week’s confidence interval slide, then takes the sources one at a time.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-failed-assumption-biases-the-estimator" class="slide level2">
+<h2>A failed assumption biases the estimator</h2>
+<ul>
+<li>OLS is consistent when the error is uncorrelated with the regressor: <strong>exogeneity</strong>.</li>
+<li>Each source of bias in this section violates exogeneity.</li>
+<li>The same estimator then centers every 95% interval away from θ.</li>
+</ul>
+<div class="m06" data-demo="coverage" data-kinds="0,1" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Click “Draw 20”, then Reset and “Draw 100”. “Draw 1,000” settles the shares near their expected values.</p>
+<p>One estimator, such as OLS, on two data-generating processes, with the same sampling draws: each row lines up across the two panels. Left: its assumptions hold, so it is centered on θ and its standard error is correct. Right: exogeneity fails, for example because a confounder is omitted, so the same estimator is centered 1.5 standard deviations away from θ. Its standard error is still correct.</p>
+<p>After Reset and “Draw 100”: 2 and 31 of the 100 intervals miss θ. In expectation the shares are 5% and 32%. Then “Draw 1,000” on top: 43 and 360 of the 1,100 intervals miss θ (4% and 33%). With 1,100 intervals the share has a standard error of about 0.7 points, so 4% against 5% is chance.</p>
+<p>The stated 95% is false, and nothing in the regression table shows it: the estimator prints a correct standard error around the wrong center. The estimator was a good choice. The assumption behind it failed.</p>
+<p>The five sources that follow are five ways exogeneity fails: the treatment is chosen on the outcome’s prospects, the sample is chosen on the outcome, a confounder is left in the error, the regressor is measured with error, or the outcome feeds back into the regressor. Error in the outcome alone leaves exogeneity intact, which is why it causes no bias. Section 3 opens with the same animation for the assumptions behind the standard error.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="five-sources-of-bias" class="slide level2">
+<h2>Five sources of bias</h2>
+<ol type="1">
+<li>Selection into treatment</li>
+<li>Selection into the sample</li>
+<li>Omitted variables</li>
+<li>Measurement error</li>
+<li>Simultaneity and reverse causality</li>
+</ol>
+<aside class="notes">
+<p>One minute. For each source: which way it pushes the estimate, whether a larger sample would help, and the solution. The answer to the second question is no every time, apart from error in the outcome. The table at the end of the section collects the answers under the same numbers.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="selection-into-treatment" class="slide level2">
+<h2>Selection into treatment</h2>
+<ul>
+<li><strong>Selection bias</strong>: treated and untreated outcomes would differ even without treatment.</li>
+<li>A retention email to 3,000 of 10,000 customers raises renewal probability by 2 points.</li>
+<li>The firm targets the email by <strong>renewal score</strong>, a predicted probability of renewing.</li>
+<li><span class="solution"><strong>Solution</strong>: randomize who gets the email, or compare customers near the score cutoff.</span></li>
+</ul>
+<div class="m06 m07-compact" data-demo="selection" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. The slider starts at 0: emails sent at random.</p>
+<p>At 0, emailed customers renew at 57.9% and the others at 55.5%. The difference, 2.4 points, is close to the true effect of 2.0; the remaining 0.4 is chance in who was picked.</p>
+<p>Click “Sweep”. As the email goes more and more to customers the score rates as likely to renew, the difference grows. At full targeting it is 87.3% against 42.9%: 44.5 points, of which 2.0 is the email and 42.5 is selection.</p>
+<p>The decomposition uses the potential outcomes from meeting 2. The observed difference equals the average effect on the emailed, E[Y₁ − Y₀ | emailed], plus the selection bias, E[Y₀ | emailed] − E[Y₀ | not emailed]: the gap in renewal rates had nobody received the email.</p>
+<p>Direction: when the treatment goes to units that would have done better anyway, the comparison overstates the effect. A firm that sends its turnaround team to its worst stores has the opposite problem.</p>
+<p>A million customers would not change the 42.5 points. Selection bias does not shrink with n.</p>
+<p>Sorting is the same structure with the choice made by the unit: customers choose the loyalty app, workers choose training, firms choose to adopt a technology.</p>
+<p>Solution. Random assignment removes the selection bias, because it makes the two groups alike in expectation. If the email depended on the score and otherwise on chance, comparing customers with the same score also removes it: that is matching on the score, in section 2. If the firm emailed everyone above a score cutoff, as at full targeting, customers with the same score all share one treatment and no match exists. Customers just above and just below the cutoff are comparable, and that comparison is a regression discontinuity, one of the designs ahead.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="selection-into-the-sample" class="slide level2">
+<h2>Selection into the sample</h2>
+<ul>
+<li><strong>Selection into the sample</strong>: being in the data depends on the outcome.</li>
+<li>Selection into treatment is confounding; this conditions on a collider.</li>
+<li>It biases the comparison even when the treatment was randomized.</li>
+<li>Examples:
+<ul>
+<li>Wages are observed only for women who work.</li>
+<li>Trainees who found no job stop answering the follow-up survey.</li>
+</ul></li>
+<li><span class="solution"><strong>Solution</strong>: follow up everyone, bound the effect, or model the selection.</span></li>
+</ul>
+<p><a href="https://doi.org/10.2307/1912352" style="font-size:0.55em; color:#6b6b6b">Heckman (1979), <em>Sample Selection Bias as a Specification Error</em>, Econometrica 47, 153–161.</a></p>
+<p><a href="https://doi.org/10.1111/j.1467-937X.2009.00536.x" style="font-size:0.55em; color:#6b6b6b">Lee (2009), <em>Training, Wages, and Sample Selection: Estimating Sharp Bounds on Treatment Effects</em>, Review of Economic Studies 76, 1071–1102.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>Selection into the sample is the cousin of source 1. Selection into treatment decides who gets the treatment; selection into the sample decides who ends up in the data. In both, the choice depends on the outcome, so the comparison among the units we see is not the comparison we want. The practical difference: random assignment removes selection into treatment, while attrition after random assignment brings selection back among the units that remain in the data. The bias can go either way, as the attrition example below shows. Selection into the sample is meeting 2’s collider: selecting on the outcome. Last week’s Literary Digest poll had it through nonresponse.</p>
+<p>In a causal graph the two are different structures. Selection into treatment is confounding: something that drives the outcome also drove who was treated, a back door. Selection into the sample conditions on a collider: being in the data depends on the outcome, so looking only at the units observed opens a path that was closed. That is why randomization fixes the first and not the second. The names clash across fields: economists call the first selection bias (Angrist and Pischke), while epidemiologists reserve the term for the second (<a href="https://doi.org/10.1097/01.ede.0000135174.63482.43">Hernán, Hernández-Díaz and Robins 2004</a>).</p>
+<p>The classic example is Heckman’s and Gronau’s: what determines women’s wages, such as the return to education. Wages are observed only for women who work, and a woman works when her wage offer exceeds her reservation wage. Among working women, those with little education are there because their wage offer was unusually high, so the return to education is understated among the women observed (<a href="https://doi.org/10.1086/260267">Gronau 1974</a>; <a href="https://doi.org/10.2307/1913937">Heckman 1974</a>).</p>
+<p>The second example is attrition. If trainees who found no job stop answering and the controls keep answering, the trainees observed earn more than all trainees, and the effect is overstated. If the program instead keeps its jobless participants answering while jobless controls drop out, the control mean is inflated more and the effect is understated. Either way, a randomized experiment is no longer balanced among those observed.</p>
+<p>Survivorship is the same structure. A comparison of practices among surviving firms leaves out the firms the practice may have killed.</p>
+<p>Solution. Follow up everyone, preferably from administrative records that do not depend on a response. Report the attrition rate by group. When the rates differ in a randomized experiment, Lee’s bounds trim the excess share from the group with less attrition, once from the top of its outcome distribution and once from the bottom. They bound the effect for the units who would have answered in either group, and they assume the treatment changes whether a unit answers in one direction only. Heckman (1979) models the selection directly, in two steps: a probit for whether the unit is observed (whether she works), then the outcome regression with a correction term, the inverse Mills ratio. It assumes jointly normal errors, and a credible version needs a variable that affects whether a unit is observed and not its outcome: for wages, young children at home or non-labor income. Applied work now often prefers bounds or better follow-up, because that variable is hard to defend; the model remains the standard reference. The same machinery, a selection equation with errors correlated with the outcome’s, also models selection into treatment.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="omitted-variables" class="slide level2">
+<h2>Omitted variables</h2>
+<ul>
+<li>True model: <span class="math inline">Y = \beta X + \gamma Z + u</span>, and <span class="math inline">b</span> is the slope of <span class="math inline">Y</span> on <span class="math inline">X</span> alone.</li>
+<li><strong>Omitted variable bias</strong>: <span class="math inline">E[b] - \beta = \gamma\delta</span>, with <span class="math inline">\delta</span> the slope of <span class="math inline">Z</span> on <span class="math inline">X</span>.</li>
+</ul>
+<div style="font-size:0.85em; width:70%; margin:0 auto">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Bias of <span class="math inline">b</span></th>
+<th style="text-align: center;"><span class="math inline">\gamma &gt; 0</span></th>
+<th style="text-align: center;"><span class="math inline">\gamma &lt; 0</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\delta &gt; 0</span></td>
+<td style="text-align: center;">upward</td>
+<td style="text-align: center;">downward</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\delta &lt; 0</span></td>
+<td style="text-align: center;">downward</td>
+<td style="text-align: center;">upward</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Example: job training and earnings, omitting ability: able workers seek training.</li>
+<li><span class="solution"><strong>Solution</strong>: control for <span class="math inline">Z</span>, or use a design that holds <span class="math inline">Z</span> fixed.</span></li>
+</ul>
+<aside class="notes">
+<p>Three minutes.</p>
+<p>The formula is the regression version of meeting 2’s confounder. Regressing Y on X alone gives a slope of β + γ·Cov(X, Z)/Var(X). The bias is the product of two quantities: the omitted variable’s effect on the outcome, and its association with the treatment. If either is zero there is no bias.</p>
+<p>The sign can usually be worked out before estimating anything, because it needs only the two signs.</p>
+<p>The example is ability bias, the classic case in the returns to schooling (<a href="https://doi.org/10.2307/1913285">Griliches 1977</a>). Ability is not in the data. More able workers seek training (δ &gt; 0), and ability raises earnings with or without training (γ &gt; 0), so the regression credits training with part of what ability earns: the return is overstated. The same logic, the other way, applies to a public program that enrolls people with low earnings potential: δ &lt; 0 and γ &gt; 0, so the return is understated, and can be negative when the true effect is positive. Section 2 returns to that case with LaLonde.</p>
+<p>A related but different problem: workers may also seek training because their own return to it is high. That is selection on gains, the Roy model (<a href="https://doi.org/10.1093/oxfordjournals.oep.a041827">Roy 1951</a>). Even with ability held fixed, the comparison then measures the effect for those who chose training, which exceeds the effect for a typical worker. Section 5 treats it as a question of external validity.</p>
+<p>γ and δ are population quantities, so a larger sample leaves the bias unchanged.</p>
+<p>Solution. If Z is measured, control for it; section 2 shows when that works. If it is not, a design that holds it fixed: unit fixed effects for a Z that does not change over time, or a comparison in which Z is balanced by construction.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="classical-measurement-error" class="slide level2">
+<h2>Classical measurement error</h2>
+<ul>
+<li><strong>Classical measurement error</strong>: noise uncorrelated with the true values of <span class="math inline">X</span> and <span class="math inline">Y</span>.</li>
+<li>In <span class="math inline">X</span>: the slope converges to <span class="math inline">\lambda\beta</span>, with <strong>reliability ratio</strong> <span class="math inline">\lambda = \text{Var}(X^*)/\text{Var}(X)</span>.</li>
+<li>In <span class="math inline">Y</span>: the slope estimator stays unbiased and its standard error rises.</li>
+<li><span class="solution"><strong>Solution</strong>: measure <span class="math inline">X</span> with less error, or instrument it with a second measurement.</span></li>
+</ul>
+<div class="m06" data-demo="attenuation" style="width:88%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. 200 simulated households. Monthly spend rises by $0.80 per $1,000 of income.</p>
+<p>At zero error the estimate is 0.80, with a standard error of 0.055. Move the slider to 15: income is now measured with an error whose standard deviation, $15k, equals that of true income. The points spread horizontally and the fitted line flattens. λ = 15²/(15² + 15²) = 0.5, so the slope should fall to about 0.40; in this sample it is 0.39. Click “Sweep” to see the full range.</p>
+<p>The reliability ratio is the share of the variance of measured income that is true variation: 1 with no error, 0 if the measure is pure noise. It is a property of the measurement, unrelated to behavior; the slope here is in levels ($ of monthly spend per $1,000 of income), so it is not an elasticity. The name comes from psychometrics: with classical errors, λ is the correlation between two independent measurements of the same variable, which is how it is estimated in practice from repeated or matched measurements.</p>
+<p>Why: part of the variation in measured income is noise, and the noise does not move spend. The regression averages the true slope with a slope of zero, weighted by their shares of the variance. That gives β·λ, where λ = Var(true X)/Var(measured X).</p>
+<p>Switch to “Error in spend (Y)” and repeat. At an error SD of 15 the slope is 0.77 and its standard error 0.098, against 0.055 with no error. In expectation the slope stays at 0.80; in this one sample it moves slightly as the draws shift.</p>
+<p>Examples: self-reported spend, survey income, recalled hours worked.</p>
+<p>For error in Y, the slope estimator stays unbiased only if the noise is unrelated to X.</p>
+<p>Solution. Better measurement: administrative records, receipts, devices. When two noisy measurements of X exist, one can instrument the other. This removes the attenuation if the error in the instrumented measure is classical, the two errors are unrelated to each other, and neither is related to the error in Y. Put the measurement with the more nearly classical error on the right-hand side and use the other as the instrument. Survey earnings, whose error is mean-reverting, belong in the instrument role.</p>
+<p>Two cautions. Adding controls usually makes attenuation worse, because the controls absorb part of the true variation in X and leave the noise. With several regressors, error in one of them can bias the others in either direction.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="non-classical-measurement-error" class="slide level2">
+<h2>Non-classical measurement error</h2>
+<ul>
+<li><strong>Non-classical measurement error</strong>: the error is correlated with the true value.</li>
+<li><strong>Mean reversion</strong>: reports are too low at the top and too high at the bottom.</li>
+<li>Mean reversion biases the slope away from zero in X and toward zero in Y.</li>
+<li><span class="solution"><strong>Solution</strong>: validate against administrative records, or use them directly.</span></li>
+</ul>
+<div class="m06 m07-compact" data-demo="nonclassical" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1086/298256" style="font-size:0.55em; color:#6b6b6b">Bound and Krueger (1991), <em>The Extent of Measurement Error in Longitudinal Earnings Data: Do Two Wrongs Make a Right?</em>, Journal of Labor Economics 9, 1–24.</a></p>
+<aside class="notes">
+<p>Three minutes. The same 200 households as the classical error slide. Move the κ slider with “Error in income (X)”, then switch to “Error in spend (Y)” and move it again.</p>
+<p>Bound and Krueger matched survey earnings to Social Security records. The error was negatively correlated with true earnings: high earners reported too little and low earners too much. The demo builds that pattern. Each report keeps a share 1 − κ of the household’s true deviation from the mean, plus a little noise.</p>
+<p>Error in income: at κ = 0.3 the estimated slope is 1.12, against a true 0.80, and the estimator converges to 1.11. Reported incomes are squeezed toward the mean while spend keeps its full spread, so the same change in spend is attributed to a smaller change in income. The slope is biased away from zero, the opposite of classical error in X.</p>
+<p>Error in spend: at κ = 0.3 the slope is 0.57 and converges to (1 − κ) × 0.80 = 0.56. Reported spend is squeezed and income is not, so the slope is biased toward zero. Classical error in Y caused no bias at all.</p>
+<p>So the direction depends on where the error sits and how it relates to the truth. Other patterns from their projects: rounding (hours reported as 40), top-coding (incomes above a cap recorded at the cap), and under-reporting of program benefits such as food stamps, which <a href="https://doi.org/10.1257/jep.29.4.199">Meyer, Mok and Sullivan (2015)</a> document in household surveys.</p>
+<p>The worst case for a project is error correlated with the treatment. If a program’s participants know what it targets, they may over-report the targeted behavior. The estimate is then biased in the program’s favor, and a program with no effect can appear to work.</p>
+<p>Solution. Better measurement: administrative records, or a validation subsample where both measures are observed.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="simultaneity-and-reverse-causality" class="slide level2">
+<h2>Simultaneity and reverse causality</h2>
+<ul>
+<li><strong>Simultaneity</strong>: X affects Y and Y affects X.</li>
+<li><strong>Reverse causality</strong>: Y affects X, as when cities hire police after crime rises.</li>
+<li>Regressing quantity on price recovers the demand slope only if supply alone shifts.</li>
+<li><span class="solution"><strong>Solution</strong>: use an instrument that shifts supply only, such as an input cost.</span></li>
+</ul>
+<div class="m06 m07-compact" data-demo="simultaneity" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.2307/1883501" style="font-size:0.55em; color:#6b6b6b">Working (1927), <em>What Do Statistical “Demand Curves” Show?</em>, Quarterly Journal of Economics 41, 212–235.</a></p>
+<aside class="notes">
+<p>Three minutes. Start in “Both shift” and click “Draw 100 weeks”.</p>
+<p>Demand has slope −2 (quantity per dollar), supply +1. Each week both curves shift by a random amount, and each week’s price and quantity is where that week’s supply meets demand. The faint lines are the current week’s curves.</p>
+<p>The regression of quantity on price gives −0.27 in these 100 weeks; the demand slope is −2. Switch to “Supply shifts” and draw 100 weeks: the points lie on the demand curve and the slope is −2.00. Switch to “Demand shifts”: the points lie on the supply curve and the slope is +1.00.</p>
+<p>The data alone cannot tell which curve they trace. That requires knowing which curve moved. Working made this point in 1927.</p>
+<p>Reverse causality is the same problem. More police, more crime: cities hire police when crime rises, so a regression of crime on police across cities has a positive slope. A firm raised its price in the quarter demand was strongest. Card 7 this afternoon: the advertising budget was set from the sales forecast.</p>
+<p>A larger sample shrinks the standard error, and the estimate converges to −0.5, not to −2. That limit weights the supply slope by the variance of the demand shocks and the demand slope by the variance of the supply shocks: (1 × 64 − 2 × 64)/(64 + 64) = −0.5.</p>
+<p>Solution. A variable that shifts one curve and not the other, an instrument, which comes with the designs in meetings 8 and 9.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="direction-and-solution-for-each-source-of-bias" class="slide level2">
+<h2>Direction and solution for each source of bias</h2>
+<div style="font-size:0.62em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 21%">
+<col style="width: 26%">
+<col style="width: 17%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Direction</th>
+<th style="text-align: left;">More data fixes it?</th>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Selection into treatment</td>
+<td style="text-align: left;">Overstates if the treated would have done better anyway</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Randomize, or compare units near the assignment cutoff</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Selection into the sample</td>
+<td style="text-align: left;">Either direction</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Follow up everyone, bound the effect, or model the selection</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Omitted variables</td>
+<td style="text-align: left;">Sign of γ times sign of δ</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Control for Z, or use a design that holds Z fixed</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Classical measurement error in X</td>
+<td style="text-align: left;">Toward zero</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Reduce the error, or instrument with a second measurement</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Classical measurement error in Y</td>
+<td style="text-align: left;">No bias. Larger standard error</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Use a larger sample</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Non-classical measurement error</td>
+<td style="text-align: left;">Either direction</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Validate against administrative records</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Simultaneity or reverse causality</td>
+<td style="text-align: left;">Either direction</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Use an instrument that shifts one side only</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>A larger sample reduces the variance and leaves the bias unchanged.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes. A reference slide for the session B cards.</p>
+<p>Read down the “More data fixes it?” column. The only case where more data helps is the one with no bias. More data shrinks the standard error around whatever the estimator converges to, so a biased estimate with a million rows is a precise estimate of the wrong value. Last week’s Literary Digest poll is the example.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="control-variables-and-their-limits" class="title-slide slide level1 center">
+<h1>2. Control variables and their limits</h1>
+<aside class="notes">
+<p>Thirty seconds. The solution most projects reach for: what controls assume, which variables to control for, controls in an experiment, what matching adds, and whether controls recover the true effect when graded against an experiment.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-control-variables-assume" class="slide level2">
+<h2>What control variables assume</h2>
+<ul>
+<li>Controls address omitted variables and selection into treatment.</li>
+<li><strong>Selection on observables</strong>: given the controls, treatment is independent of the potential outcomes.</li>
+<li>Untreated units must also exist at every treated unit’s control values.</li>
+<li>If both hold, comparing units with equal controls removes both biases.</li>
+<li>Two ways to compare: regression with controls, and matching.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes. The bridge from section 1.</p>
+<p>Two of the five sources of bias, omitted variables and selection into treatment, have the same structure: something that drives the outcome also drove who got the treatment. If that something is measured, compare units that share its value. Heavy shoppers with heavy shoppers, from meeting 2. Customers with the same renewal score, from the email slide.</p>
+<p>The assumption has several names. Economists say selection on observables or conditional independence; the Remix reading calls it unconfoundedness. It says that, among units with the same values of the controls, who got the treatment is as good as random. It cannot be tested with the data. It is a claim about how the treatment was assigned, and the graph from meeting 2 is how you argue it.</p>
+<p>The third bullet is common support, which the matching slide draws. The email at full targeting satisfies selection on observables, because the score decides who is emailed, and fails common support. The email slide’s solution was therefore a regression discontinuity. A regression makes the comparison through its functional form, so where common support fails it extrapolates. Matching makes the comparison only where both kinds of unit exist.</p>
+<p>The section asks four questions. Which variables belong among the controls (next slide). What controls add when the treatment was randomized. What matching adds over a regression. Whether controls recover the true effect in practice, graded against an experiment (LaLonde, two slides).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="good-and-bad-controls" class="slide level2">
+<h2>Good and bad controls</h2>
+<ul>
+<li>Controlling for a <strong>confounder</strong> closes a back door.</li>
+<li>Controlling for a <strong>mediator</strong> removes part of the effect.</li>
+<li>Controlling for a <strong>collider</strong> opens a path that was closed.</li>
+</ul>
+<div class="m06" data-demo="controls" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1177/00491241221099552" style="font-size:0.55em; color:#6b6b6b">Cinelli, Forney and Pearl (2024), <em>A Crash Course in Good and Bad Controls</em>, Sociological Methods &amp; Research 53, 1071–1104.</a></p>
+<aside class="notes">
+<p>Four minutes. Click “Draw 1,000 samples”, then the four toggles in turn.</p>
+<p>The story: a chain’s ad spend by store (X) and its sales (Y). Market size (Z) raises both. Part of the effect runs through store visits (M). The head office rates each store manager (C) on both ad spend and sales. The true total effect of ad spend on sales is 1.0.</p>
+<p>Means of the four estimators over 1,000 samples of 200 stores:</p>
+<ol type="1">
+<li>No controls: 1.49. Omitted variable bias, γδ = 1 × 0.49.</li>
+<li>Controlling for market size: 1.00. The back door is closed.</li>
+<li>Adding store visits: 0.50. That is the direct effect only; the half that runs through visits has been controlled away.</li>
+<li>Adding the rating instead: −0.11. The sign flips. Among managers with the same rating, high spend has to come with low sales, so the regression manufactures a negative association.</li>
+</ol>
+<p>The toggles box the variables each regression conditions on.</p>
+<p>Every row has a small standard error. The output of all four regressions looks equally valid, and only the graph says which one estimates the effect.</p>
+<p>Angrist and Pischke call 3 and 4 bad controls: variables that are themselves outcomes of the treatment. The working rule is to control only for variables determined before the treatment.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="controls-in-a-randomized-experiment" class="slide level2">
+<h2>Controls in a randomized experiment</h2>
+<ul>
+<li>Randomization alone removes bias, so controls are optional.</li>
+<li>Baseline controls that predict the outcome lower the standard error.</li>
+<li>Pre-specify the controls, and include the randomization strata.</li>
+<li>Never control for a variable the treatment can change.</li>
+<li><strong>Balance check</strong>: compare the groups on baseline characteristics.</li>
+</ul>
+<p><a href="https://doi.org/10.1214/12-AOAS583" style="font-size:0.55em; color:#6b6b6b">Lin (2013), <em>Agnostic Notes on Regression Adjustments to Experimental Data: Reexamining Freedman’s Critique</em>, Annals of Applied Statistics 7, 295–318.</a></p>
+<aside class="notes">
+<p>Two minutes. When to use controls, in one line each: in observational data, controls are the identification strategy and must close the back doors; in an experiment, randomization has already closed them, and controls only sharpen the estimate.</p>
+<p>Randomization balances every variable determined before treatment, observed or not, in expectation. The difference in means is unbiased with no controls at all.</p>
+<p>Controls still pay in an experiment when they predict the outcome. The baseline value of the outcome is usually the best one: it removes the part of the outcome that was there before treatment, which lowers the residual variance, the standard error and the minimum detectable effect (section 4). <a href="https://doi.org/10.1016/j.jdeveco.2012.01.002">McKenzie (2012)</a> shows that controlling for the baseline outcome (ANCOVA) is more powerful than differencing it out when outcomes are not very persistent.</p>
+<p>Three rules. Use only variables measured before treatment. Pre-specify them, or the choice of controls becomes a specification search (section 4). Always include the strata the randomization used. Never control for a variable the treatment can change: in a training experiment, controlling for employment compares the employed treated with the employed controls, and the bad-control problem from the previous slide returns.</p>
+<p>Regression adjustment in a small experiment can be slightly biased and, with heterogeneous effects, can even lose precision (<a href="https://doi.org/10.1016/j.aam.2006.12.003">Freedman 2008</a>). Lin shows that interacting the treatment with demeaned covariates and using robust standard errors fixes this in samples of moderate size.</p>
+<p>As a check. A balance table compares treated and control units on baseline characteristics, to catch a failed randomization or differential attrition. About 1 in 20 variables will differ at the 5% level by chance, so use a joint test rather than counting stars. And the estimate should barely move when the controls go in; in an experiment a large movement signals a problem with the randomization or the sample, not a confounder.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="matching-needs-comparable-untreated-units" class="slide level2">
+<h2>Matching needs comparable untreated units</h2>
+<ul>
+<li>Example: larger stores adopted self-checkout, and store size raises sales.</li>
+<li><strong>Matching</strong>: compare each adopter with non-adopters of similar size.</li>
+<li><strong>Common support</strong>: the range of sizes where both kinds of store exist.</li>
+<li>Ten adopters exceed 23,000 sq ft, so no non-adopter matches them.</li>
+</ul>
+<div class="m06" data-demo="overlap" style="width:88%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Two and a half minutes.</p>
+<p>The question: a chain wants to know whether self-checkout raised sales. The 40 stores that adopted it are larger on average than the 120 that did not, and larger stores sell more, so store size is a confounder. Comparing adopters with non-adopters overstates the effect. Matching compares each adopter with non-adopters of about the same size, which closes the same back door as a regression that controls for size.</p>
+<p>The figure is a simulated chain, one dot per store. Ten of the 40 adopters are at least 23,000 sq ft, and the largest non-adopter is under 23,000, so no comparable untreated store exists for them.</p>
+<p>A regression on store size would still report an estimate. It fills the gap by extrapolating its functional form, without any warning. Matching makes the gap visible. The options are to drop those stores, which changes the parameter to the effect for small and medium stores, or to find a different design.</p>
+<p>With many covariates, units are matched on the propensity score, the probability of treatment given the covariates (<a href="https://doi.org/10.1093/biomet/70.1.41">Rosenbaum and Rubin 1983</a>).</p>
+<p>Matching closes only the back doors that run through measured covariates. An unmeasured confounder biases it exactly as it biases regression.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="can-controls-recover-an-experimental-estimate" class="slide level2">
+<h2>Can controls recover an experimental estimate?</h2>
+<ul>
+<li>An experiment gives the true effect, so it can grade other methods.</li>
+<li>National Supported Work randomly assigned disadvantaged workers to a job program.</li>
+<li>LaLonde kept its trainees and replaced its control group with survey respondents.</li>
+</ul>
+<div class="m06" data-demo="lalondeDesign" style="width:88%;margin:0 auto">
+
+</div>
+<p><a href="https://www.jstor.org/stable/1806062" style="font-size:0.55em; color:#6b6b6b">LaLonde (1986), <em>Evaluating the Econometric Evaluations of Training Programs with Experimental Data</em>, American Economic Review 76, 604–620.</a></p>
+<aside class="notes">
+<p>Two minutes. The point of these two slides: the only way to know whether controls work is to grade them against a case where the true effect is known. A randomized experiment provides that case.</p>
+<p>The National Supported Work Demonstration, in the 1970s, guaranteed ex-offenders, ex-addicts, high school dropouts and long-term welfare mothers a job for 9 to 18 months. They worked in crews of three to five and met often with a counselor. Applicants were assigned to the program or to a control group at random. For the 297 treated and 425 control men, the experiment estimates that the program raised 1978 earnings by $886 (standard error $476, in 1982 dollars). Because assignment was random, that is the benchmark.</p>
+<p>LaLonde kept the 297 trainees and threw away the 425 randomized controls. In their place he used men from two national surveys, the PSID and the CPS, which is what a researcher without an experiment would have, and applied the econometric methods of the day with the controls available in survey data. If the methods worked, they would land near $886.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="controls-did-not-recover-the-experimental-estimate" class="slide level2">
+<h2>Controls did not recover the experimental estimate</h2>
+<ul>
+<li>The experiment: +$886 on men’s 1978 earnings.</li>
+<li>Without controls: −$15,578 (PSID) and −$8,870 (CPS).</li>
+<li>With all observed controls: −$1,228 and −$805.</li>
+<li>Without an experiment, nothing in your output shows whether your controls were enough.</li>
+</ul>
+<div class="m06 m07-compact" data-demo="lalonde" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://www.jstor.org/stable/1806062" style="font-size:0.55em; color:#6b6b6b">LaLonde (1986), Table 5: male participants, effects on 1978 earnings in 1982 dollars, 95% intervals.</a></p>
+<aside class="notes">
+<p>Three minutes.</p>
+<p>The figure shows six of his estimates for men, from Table 5 of the paper. The simple differences are −$15,578 and −$8,870. Regression adjustment moves them to −$8,067 and −$4,416. With every observed control, including earnings before the program, they are −$1,228 and −$805: closer, and still the wrong sign. The difference-in-differences estimates, not shown, are $425 and $1,714; controlling for age moves them to −$749 and $195. Across all six comparison groups and the estimators in Table 5, his estimates for men ran from −$15,578 to +$1,714. None reproduces the experiment reliably, and the answer depends on which comparison group and which specification was chosen. For women, the non-experimental estimates were mostly too large. In his words, many of the econometric procedures “<em>do not replicate the experimentally determined results</em>”.</p>
+<p>The direction for men follows the omitted variable rule from section 1. Participants had much lower earnings potential than the average survey respondent: in 1975 the treated men earned $3,066 on average, against $19,056 for the PSID men and $13,650 for the CPS men (LaLonde Table 3, 1982 dollars). So δ &lt; 0, and earnings potential raises earnings (γ &gt; 0), so the estimates are biased downward.</p>
+<p>The last bullet is the lesson for their projects. LaLonde could tell the controls had failed only because the experiment gave him the true answer. A project with observational data and controls is in the position of his survey comparisons, with no experiment to check against. The regression output looks equally valid whether the controls were enough or not, so the case for them has to be argued: the causal graph, the confounders that cannot be measured, and how far the estimate moves as controls go in. The next slide says what to report.</p>
+<p>The follow-up literature matters for their projects. <a href="https://doi.org/10.1080/01621459.1999.10473858">Dehejia and Wahba (1999)</a> used propensity-score matching on a subsample of LaLonde’s data and came close to its experimental benchmark of $1,794. <a href="https://doi.org/10.1016/j.jeconom.2004.04.011">Smith and Todd (2005)</a> showed those estimates were sensitive to which variables entered the score and which sample was used. Controls and matching can work. Whether they work is a claim about the selection process, and it has to be argued.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-to-report-about-your-controls" class="slide level2">
+<h2>What to report about your controls</h2>
+<ul>
+<li>Draw the causal graph your controls assume.</li>
+<li>Name the confounders you cannot measure.</li>
+<li>Report the coefficient with and without controls.</li>
+<li>A large movement warns that unmeasured confounders may also matter.</li>
+</ul>
+<p><a href="https://doi.org/10.1080/07350015.2016.1227711" style="font-size:0.55em; color:#6b6b6b">Oster (2019), <em>Unobservable Selection and Coefficient Stability: Theory and Evidence</em>, Journal of Business &amp; Economic Statistics 37, 187–204.</a></p>
+<aside class="notes">
+<p>Ninety seconds.</p>
+<p>“I added controls” states a graph. The reader is entitled to see it, so write it down.</p>
+<p>The coefficient movement is the cheapest piece of evidence available. <a href="https://doi.org/10.1086/426036">Altonji, Elder and Taber (2005)</a> and Oster formalize the intuition: if adding the observed controls moved the coefficient a lot, the unobserved ones probably would too. A coefficient that is stable as controls go in, while R² rises, is more credible.</p>
+<p>Report it as a table with the specification in columns: no controls, then each block of controls added.</p>
+<p>LaLonde’s PSID estimate moved from −$15,578 to −$1,228 as controls went in. A movement that large was the warning, and the experiment showed the remaining estimate was still wrong.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="false-precision" class="title-slide slide level1 center">
+<h1>3. False precision</h1>
+<aside class="notes">
+<p>Thirty seconds. The same animation that opened section 1, now for the second failure.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-failed-assumption-biases-the-standard-error" class="slide level2">
+<h2>A failed assumption biases the standard error</h2>
+<ul>
+<li>The default standard error assumes independent observations with constant variance.</li>
+<li>Each source in this section violates an assumption behind the standard error or p-value.</li>
+<li>The estimator stays centered on θ, and every 95% interval narrows.</li>
+</ul>
+<div class="m06" data-demo="coverage" data-kinds="0,2" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Two minutes. Click “Draw 100”, then “Draw 1,000”.</p>
+<p>Left: the same estimator with its assumptions holding, as in section 1. Right: independence fails, as when shoppers in the same store share its shocks. The estimator is still centered on θ, and the default standard error is half the true one.</p>
+<p>After Reset and “Draw 100”: 2 and 30 of the 100 intervals miss θ, against 5% and 33% in expectation. After “Draw 1,000” on top: 43 and 348 of 1,100 (4% and 32%).</p>
+<p>The symptom is the one section 1 showed: the stated 95% is false. The failed assumption is different. Exogeneity holds, so every estimate is centered on θ, and the regression table prints an unbiased estimate beside a standard error that is too small. Sources 1 to 4 violate independence or constant variance. Sources 5 and 6 violate the assumption behind every p-value, that one test was run.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="six-sources-of-false-precision" class="slide level2">
+<h2>Six sources of false precision</h2>
+<ol type="1">
+<li>Heteroskedasticity</li>
+<li>Serial correlation</li>
+<li>Clustered observations</li>
+<li>Spatial correlation</li>
+<li>Multiple testing</li>
+<li>Specification search</li>
+</ol>
+<div style="color:#6b6b6b; margin-top:0.8em">
+<p>Sources 1 to 4 make the default standard error wrong. Sources 5 and 6 make the reported p-value wrong.</p>
+</div>
+<aside class="notes">
+<p>One minute.</p>
+<p>Sources 1 to 4 are about the observations. The default standard error assumes independent observations with a constant error variance. When the error variance differs, or the observations are correlated over time, within groups or across space, the estimate stays the same and its reported standard error is usually too small.</p>
+<p>Sources 5 and 6 are about the analyst. Each test is computed correctly, but the one reported was chosen from many.</p>
+<p>The next four slides share one layout: a placebo with no true effect, run 1,000 times. Each compares where the estimates actually fall with the 95% interval the default standard error reports. Each starts in a setting where the default standard error is right, with a constant error variance or independent observations, and then switches to one where it is wrong. The spread of the estimates roughly doubles or more, while the default standard error moves little.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="heteroskedasticity" class="slide level2">
+<h2>Heteroskedasticity</h2>
+<ul>
+<li><strong>Heteroskedasticity</strong>: the error variance differs across observations.</li>
+<li>In 400 simulated firms, marketing spend has no effect on revenue.</li>
+<li>The default standard error can be too small or too large.</li>
+<li><span class="solution"><strong>Solution</strong>: use heteroskedasticity-robust standard errors.</span></li>
+</ul>
+<div class="m06 m07-compact" data-demo="hetero" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.2307/1912934" style="font-size:0.55em; color:#6b6b6b">White (1980), <em>A Heteroskedasticity-Consistent Covariance Matrix Estimator and a Direct Test for Heteroskedasticity</em>, Econometrica 48, 817–838.</a></p>
+<aside class="notes">
+<p>Three minutes. Explain the layout once; the next three slides reuse it.</p>
+<p>Left: one sample of 400 simulated firms. Marketing spend has no effect on the change in revenue, so the true slope is zero (the red line). The dashed line is this sample’s fitted slope.</p>
+<p>Right: the estimated slope from each of many repeated samples, with the true value in red. Three brackets sit above it. Black: where 95% of the estimates actually fall. Grey: the 95% interval the default standard error reports, 0 ± 1.96 times its average. Blue: the same interval from the heteroskedasticity-robust standard error. A standard error is right when its bracket matches the black one. This is meeting 6’s definition: the standard error is the standard deviation of the estimates across samples.</p>
+<p>The toggle starts on “Constant variance”. Click “Run 1,000”. The three brackets coincide: the estimates have an SD of 0.09, and both standard errors average 0.09. Each test finds a significant effect in 6% and 7% of samples, close to the 5% it should.</p>
+<p>Switch to “Rising variance”. Click “Run one”: firms that spend more are larger and their revenue varies more, so the scatter fans out. Click “Run 1,000”. The estimates now have an SD of 0.21. The default standard error averages 0.11, so its bracket is half as wide as the spread of the estimates; the robust one averages 0.20. Rejection rate at 5%: default 31%, robust 7%.</p>
+<p>Switch to “Falling variance”. Click “Run one”: above the median spend, revenue gets steadier as spend rises, so the scatter narrows to the right. Click “Run 1,000”. The estimates have an SD of 0.07. The default standard error averages 0.10, so now its bracket is wider than the spread of the estimates; the robust one averages 0.07. Rejection rate at 5%: default 1%, robust 6%. The default test is too conservative: it rarely finds an effect that is not there, and it also misses real ones.</p>
+<p>Why the default fails in both directions: it applies one average error variance to every firm. The firms with extreme spend pin down the slope. When they are the noisiest, the slope varies more than the formula says and the default is too small. When they are the steadiest, it varies less and the default is too large. Whether the variance rises or falls matters less than where it is high relative to the average spend.</p>
+<p>White’s standard error uses each observation’s own squared residual. The HC1 version shown here, Stata’s “robust”, is slightly too small in finite samples (7%); the HC3 version, the default in R’s sandwich package, gives about 6%.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="serial-correlation" class="slide level2">
+<h2>Serial correlation</h2>
+<ul>
+<li><strong>Serial correlation</strong>: a unit’s errors are correlated over time.</li>
+<li>In 50 simulated states over 21 years, a placebo law with no effect starts in 25.</li>
+<li>Placebo laws in CPS state panels were significant up to 45% of the time.</li>
+<li><span class="solution"><strong>Solution</strong>: cluster by state, which allows any correlation within a state over time.</span></li>
+</ul>
+<div class="m06 m07-compact" data-demo="panel" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1162/003355304772839588" style="font-size:0.55em; color:#6b6b6b">Bertrand, Duflo and Mullainathan (2004), <em>How Much Should We Trust Differences-in-Differences Estimates?</em>, Quarterly Journal of Economics 119, 249–275.</a></p>
+<aside class="notes">
+<p>Three minutes. Same layout.</p>
+<p>Left: eight of the 50 simulated states. In four of them a placebo law starts in a random year and stays on, shown in red. The regression is the outcome on the law with state and year fixed effects, a difference-in-differences. The law does nothing.</p>
+<p>The toggle starts on “Independent years”: each year’s outcome is a fresh draw. Click “Run 1,000”. The estimates have an SD of 0.19; the default and clustered standard errors both average 0.19. Rejection rate at 5%: 5% and 6%.</p>
+<p>Switch to “Correlated years”. Click “Run one”: each state’s outcome now drifts, with an autocorrelation of 0.8, so good years come in runs. Click “Run 1,000”. The estimates have an SD of 0.36. The default standard error averages 0.16, slightly smaller than before; the clustered one averages 0.34. Rejection rate at 5%: default 38%, clustered 5%.</p>
+<p>The point to make out loud: the spread of the estimates nearly doubled, from 0.19 to 0.36, while the default standard error fell slightly, from 0.19 to 0.16. The formula treats every state-year as a new, independent observation, so it reports no loss of precision. It falls a little because the state fixed effects absorb part of each state’s persistent drift, which shrinks the residuals. A run of good years after the law looks like an effect, and 21 correlated years carry much less information than 21 independent ones.</p>
+<p>This is the Bertrand, Duflo and Mullainathan design. They generated placebo laws at random in state panels of women’s wages from the CPS, 1979 to 1999. With standard errors that ignore the correlation within a state over time, up to 45% of the placebo laws had a significant effect at the 5% level (67.5% in the individual-level data with no correction at all). Clustering by state brought the rejection rate down to 6.3%.</p>
+<p>The fix in a panel is to cluster by unit, here by state, which allows any correlation within a state over time. A single time series has no unit to cluster on: <a href="https://doi.org/10.2307/1913610">Newey and West (1987)</a> standard errors allow correlation up to a chosen lag. With very persistent series and short samples they still reject too often.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="clustered-observations" class="slide level2">
+<h2>Clustered observations</h2>
+<ul>
+<li><strong>Clustered observations</strong>: units in the same group share common shocks.</li>
+<li>In 20 simulated stores of 50 shoppers, a treatment with no effect goes to 10 stores.</li>
+<li><span class="solution"><strong>Solution</strong>: cluster the standard errors by store, the unit of treatment assignment.</span></li>
+</ul>
+<div class="m06 m07-compact" data-demo="cluster" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.2307/2109724" style="font-size:0.55em; color:#6b6b6b">Moulton (1990), <em>An Illustration of a Pitfall in Estimating the Effects of Aggregate Variables on Micro Units</em>, Review of Economics and Statistics 72, 334–338.</a></p>
+<aside class="notes">
+<p>Two and a half minutes. Same layout.</p>
+<p>Left: one experiment, 1,000 shoppers in 20 columns, treated stores in red. The black ticks are store means. The treatment does nothing.</p>
+<p>The toggle starts on “Independent shoppers”: no store shock, the same total spread. Click “Run 1,000”. The estimated differences have an SD of $0.98; the default standard error averages $1.00 and the clustered one $0.98. Rejection rate at 5%: 4% and 5%.</p>
+<p>Switch to “Correlated within stores”. Click “Run one”: the store means now vary by more than the noise of 50 shoppers explains, because each store has its own shock: its location, staff, weather. Click “Run 1,000”. The estimates have an SD of $2.49. The default standard error still averages $1.00; the clustered one averages $2.41. Rejection rate at 5%: default 45%, clustered 5%.</p>
+<p>Why: with a store shock of SD $5 and shopper noise of SD $15, the intraclass correlation is 0.1. The variance of the difference in means is 1 + (m − 1)ρ = 1 + 49 × 0.1 = 5.9 times what the default formula assumes, so the default standard error is about 2.4 times too small. The 1,000 shoppers carry about as much information as 170 independent ones.</p>
+<p>The clustered standard error here is computed from the 20 store means, and the test uses the t distribution with 18 degrees of freedom (critical value 2.10).</p>
+<p>Moulton showed the same problem for individual outcomes regressed on variables that vary only by group, such as a state’s policy.</p>
+<p>More shoppers per store help little. The effective sample size, Gm/(1 + (m − 1)ρ), is 170 at m = 50 and can never exceed G/ρ = 200, however many shoppers each store has. More stores raise it in proportion.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="spatial-correlation" class="slide level2">
+<h2>Spatial correlation</h2>
+<ul>
+<li><strong>Spatial correlation</strong>: the errors of nearby units are correlated.</li>
+<li>In 1,600 simulated counties, a program with no effect covers some of them.</li>
+<li>Neighboring counties share weather, soils and markets.</li>
+<li><span class="solution"><strong>Solution</strong>: use Conley standard errors, which allow correlation within a chosen distance.</span></li>
+</ul>
+<div class="m06 m07-compact" data-demo="spatial" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1016/S0304-4076(98)00084-0" style="font-size:0.55em; color:#6b6b6b">Conley (1999), <em>GMM Estimation with Cross Sectional Dependence</em>, Journal of Econometrics 92, 1–45.</a></p>
+<aside class="notes">
+<p>Two and a half minutes. Same layout. Each “Run 1,000” takes a second to compute.</p>
+<p>Left: a 40 by 40 grid of simulated counties. The program in red, yield in blue. The two maps are unrelated: the program does nothing.</p>
+<p>The toggle starts on “Independent counties”: both maps look like static. Click “Run 1,000”. The estimates have an SD of 0.055; the default standard error averages 0.056 and Conley’s 0.054. Rejection rate at 5%: 5% and 6%.</p>
+<p>Switch to “Correlated counties”. Click “Run one”: the program now covers contiguous regions, and yield is similar in neighboring counties because they share weather and soils. Click “Run 1,000”. The estimates have an SD of 0.135. The default standard error still averages 0.056; Conley’s averages 0.126. Rejection rate at 5%: default 42%, Conley 7%.</p>
+<p>The same point as serial correlation, in space instead of time. The default standard error is identical in the two settings. A region of program counties that happens to sit on a region of good yields looks like an effect, and the real number of independent pieces of information is closer to the number of regions than to 1,600.</p>
+<p>Conley’s standard error allows correlation between any two counties within a chosen distance, here 5 counties, with equal weight. The distance is the analyst’s choice and should cover the range over which the errors are correlated. The correction works best when the study area is large relative to that range; here it still rejects 7% of the time.</p>
+<p>Examples: weather and crop yields, house prices, local labor markets. A cruder alternative is to cluster by a larger geographic unit, such as the state.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="multiple-testing" class="slide level2">
+<h2>Multiple testing</h2>
+<ul>
+<li><strong>Multiple testing</strong>: testing many hypotheses on the same data.</li>
+<li>A coupon with no effect is tested in 20 subgroups: P(any p &lt; 0.05) = 1 − 0.95²⁰ = 64%.</li>
+<li><span class="solution"><strong>Solution</strong>: pre-specify the hypotheses, or test each of k at level 0.05/k (Bonferroni).</span></li>
+</ul>
+<div class="m06" data-demo="subgroups" style="width:82%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Click “Run one study” three or four times, then “Run 1,000 studies”.</p>
+<p>Each study is one coupon test, cut by four regions and five age groups. The coupon does nothing in any subgroup. Red intervals exclude zero.</p>
+<p>After 1,000 studies, 65% contain at least one significant subgroup, close to the 64% from the formula. The formula treats the 20 tests as independent, which these are.</p>
+<p>Switch to “Bonferroni”: each interval is now a 99.75% interval, and the share of studies with any significant subgroup falls to 5%. The cost is power: a real effect in one subgroup is also harder to detect.</p>
+<p>Alternatives: state the subgroups in advance and test only those, or control the false discovery rate (<a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">Benjamini and Hochberg 1995</a>) instead of the chance of any false positive.</p>
+<p>The pattern to recognize in a deck: twenty subgroups, one significant, one slide.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="specification-search" class="slide level2">
+<h2>Specification search</h2>
+<ul>
+<li><strong>Specification search</strong>: choosing the reported specification after seeing the estimates.</li>
+<li>29 teams, one dataset: do referees give dark-skinned players more red cards?</li>
+<li>Estimated odds ratios ranged from 0.89 to 2.93.</li>
+<li>20 of the 29 teams found a significant effect.</li>
+<li><span class="solution"><strong>Solution</strong>: set the specification in a <strong>pre-analysis plan</strong> before seeing the outcome data.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1177/2515245917747646" style="font-size:0.55em; color:#6b6b6b">Silberzahn et al.&nbsp;(2018), <em>Many Analysts, One Data Set</em>, Advances in Methods and Practices in Psychological Science 1, 337–356.</a></p>
+<p><a href="https://doi.org/10.1177/0956797611417632" style="font-size:0.55em; color:#6b6b6b">Simmons, Nelson and Simonsohn (2011), <em>False-Positive Psychology</em>, Psychological Science 22, 1359–1366.</a></p>
+<aside class="notes">
+<p>Two and a half minutes.</p>
+<p>Silberzahn and co-authors gave 29 teams of analysts the same data on soccer players and referees and the same question. The teams chose their own models, controls and samples. Each choice was defensible. The estimates ranged from no effect to nearly three times the odds.</p>
+<p>Simmons, Nelson and Simonsohn simulated four common choices: which of two outcomes to report, whether to add observations after a first look, whether to add a control, and whether to drop a condition. Combined, they raised the false-positive rate at a nominal 5% to 61%.</p>
+<p>A p-value assumes one test was run. When the reported specification is the best of many tries, it is a statement about that search.</p>
+<p>Remedies: a pre-analysis plan, registered before the outcome data are seen (the AEA RCT Registry for experiments); reporting every specification tried, for example as a specification curve; and a robustness appendix that the main text refers to.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="solution-for-each-source-of-false-precision" class="slide level2">
+<h2>Solution for each source of false precision</h2>
+<div style="font-size:0.68em">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Heteroskedasticity</td>
+<td style="text-align: left;">Use heteroskedasticity-robust standard errors</td>
+<td style="text-align: left;"><a href="https://doi.org/10.2307/1912934">White (1980)</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Serial correlation</td>
+<td style="text-align: left;">Cluster by unit in a panel. Use Newey–West in a single time series</td>
+<td style="text-align: left;"><a href="https://doi.org/10.2307/1913610">Newey and West (1987)</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Clustered observations</td>
+<td style="text-align: left;">Cluster at the level at which the treatment was assigned</td>
+<td style="text-align: left;"><a href="https://doi.org/10.1093/qje/qjac038">Abadie et al.&nbsp;(2023)</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Spatial correlation</td>
+<td style="text-align: left;">Use Conley standard errors</td>
+<td style="text-align: left;"><a href="https://doi.org/10.1016/S0304-4076(98)00084-0">Conley (1999)</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Multiple testing</td>
+<td style="text-align: left;">Apply Bonferroni, or control the false discovery rate</td>
+<td style="text-align: left;"><a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">Benjamini and Hochberg (1995)</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">Specification search</td>
+<td style="text-align: left;">Write a pre-analysis plan. Report every specification</td>
+<td style="text-align: left;"><a href="https://doi.org/10.1177/0956797611417632">Simmons et al.&nbsp;(2011)</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Solutions 1 to 4 change only the standard error.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes. A reference slide for the session B cards and for their proposals.</p>
+<p>In software. Stata: <code>vce(robust)</code>, <code>vce(cluster store)</code>, <code>newey</code>. R <code>fixest</code>: <code>vcov = "hetero"</code>, <code>vcov = ~store</code>, and Newey–West and Conley options. Python <code>statsmodels</code>: <code>cov_type="HC1"</code>, <code>"cluster"</code> and <code>"HAC"</code>.</p>
+<p>The rule from Abadie and co-authors: cluster at the level at which the treatment was assigned or the sample was drawn. If the price changed by store, cluster by store. Clustering by state also covers serial correlation within a state.</p>
+<p>With few clusters, the clustered standard error is itself too small. <a href="https://doi.org/10.3368/jhr.50.2.317">Cameron and Miller (2015)</a> review the fixes, among them the wild cluster bootstrap.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="statistical-power" class="title-slide slide level1 center">
+<h1>4. Statistical power</h1>
+<aside class="notes">
+<p>Thirty seconds. The third failure from the motivation slide. The standard error is correct and too large for the question.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="power-and-the-minimum-detectable-effect" class="slide level2">
+<h2>Power and the minimum detectable effect</h2>
+<ul>
+<li><strong>Power</strong>: the probability of rejecting the null hypothesis when the true effect has a given size.</li>
+<li><strong>Minimum detectable effect</strong> (MDE): the effect detected with 80% power at the 5% level, about 2.8 standard errors.</li>
+<li>Last week’s checkout test, 5,000 visitors per page, had an MDE of 1.3 points.</li>
+<li>The median power across 159 literatures in economics is 18% or less.</li>
+<li><span class="solution"><strong>Solution</strong>: compute the MDE before collecting the data.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1111/ecoj.12461" style="font-size:0.55em; color:#6b6b6b">Ioannidis, Stanley and Doucouliagos (2017), <em>The Power of Bias in Economics Research</em>, Economic Journal 127, F236–F265.</a></p>
+<p><a href="https://doi.org/10.1016/S1573-4471(07)04061-2" style="font-size:0.55em; color:#6b6b6b">Duflo, Glennerster and Kremer (2007), <em>Using Randomization in Development Economics Research: A Toolkit</em>, Handbook of Development Economics 4, 3895–3962.</a></p>
+<aside class="notes">
+<p>Two and a half minutes.</p>
+<p>Power depends on three things: the size of the true effect, the standard error, and the significance level. At the 5% level, an effect of 1.96 standard errors is detected half the time. To detect it 80% of the time it must be 1.96 + 0.84 = 2.8 standard errors. That threshold is the minimum detectable effect.</p>
+<p>Last week’s checkout test had 5,000 visitors per page and purchase rates of 5.0% and 6.0%. Its standard error is about 0.46 points, so its minimum detectable effect is about 1.3 points. If 1 point is the smallest lift that would justify the redesign, this test detects it about 59% of the time. Compute power before the test, at the smallest effect that matters. Power computed at the observed difference only restates the p-value, and a significant difference from a test this size tends to overstate the effect, as the next slide shows.</p>
+<p>The sample size for a two-group comparison follows from the same arithmetic: n per group = 2σ²(1.96 + 0.84)² / MDE², with σ² the outcome variance; for a binary outcome use p̄(1 − p̄) at the average of the two rates. Detecting 1 point on a 5% base rate takes about 8,150 customers per group, which is what Stata’s <code>power twoproportions 0.05 0.06</code> returns. With clustered data, multiply by the design effect from section 3; power then depends mainly on the number of clusters, which the next slide shows.</p>
+<p>Ioannidis, Stanley and Doucouliagos collected 64,076 estimates from 159 literatures in economics. The median power was 18% or less.</p>
+<p>For the proposal: state the minimum detectable effect your sample allows, and compare it with the minimum relevant effect from meeting 6. Software: Stata <code>power twoproportions</code>, R’s <code>pwr</code> package, or a simulation of your own design, which also handles clustering.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="underpowered-studies-exaggerate-significant-effects" class="slide level2">
+<h2>Underpowered studies exaggerate significant effects</h2>
+<ul>
+<li>In 1,000 simulated coupon tests on a 5% purchase rate, the true effect is 1 point.</li>
+<li>The significant estimates, in blue, are the ones most likely to be published.</li>
+<li>Nearly 80% of reported effects in economics are exaggerated (<a href="https://doi.org/10.1111/ecoj.12461">Ioannidis et al.&nbsp;2017</a>).</li>
+<li><span class="solution"><strong>Solution</strong>: plan for 80% power, and report estimates whether or not significant.</span></li>
+</ul>
+<div class="m06 m07-compact" data-demo="power" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1177/1745691614551642" style="font-size:0.55em; color:#6b6b6b">Gelman and Carlin (2014), <em>Beyond Power Calculations: Assessing Type S (Sign) and Type M (Magnitude) Errors</em>, Perspectives on Psychological Science 9, 641–651.</a></p>
+<aside class="notes">
+<p>Three minutes. Move the slider.</p>
+<p>Each bar counts estimates from 1,000 simulated coupon tests with a true effect of 1 point. Blue estimates are significant at 5%. The dashed blue line is the mean absolute value of the significant estimates.</p>
+<p>At 1,000 customers per arm: standard error 1.02 points, minimum detectable effect 2.9 points, power 17%. The significant estimates average 2.6 points in absolute value, 2.6 times the true effect. In expectation about 1% of them have the wrong sign; in these 1,000 draws it is 2.4%. A study this size can only reach significance by overstating the effect.</p>
+<p>Move to 8,000 per arm: power 81%, and the significant estimates average 1.1. Move down to 500: power 12%, exaggeration 3.5 times, and about 4% with the wrong sign in expectation (6.6% in these draws).</p>
+<p>Gelman and Carlin call these Type M (magnitude) and Type S (sign) errors. Ioannidis, Stanley and Doucouliagos estimate that nearly 80% of reported effects in economics are exaggerated, typically by a factor of two, and a third by a factor of four or more.</p>
+<p>The solution has two parts, one for each half of the mechanism. The exaggeration comes from a filter: an underpowered test reaches significance only when its estimate lands far above the truth, and only the significant results get reported. Planning for 80% power shrinks the exaggeration itself (1.1 times at 8,000 per arm). Reporting the estimate whether or not it is significant removes the filter: the readout’s “mean of all 1,000 estimates” is 1.0 at every sample size, centered on the true effect. The overstatement is entirely in the selection of the significant ones.</p>
+<p>The lesson for a proposal: if the minimum detectable effect is larger than the effect you expect, the significant result you hope for will overstate it. Either enlarge the sample, or commit to reporting the estimate and its interval whatever their significance.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="clusters-and-strata-in-a-power-calculation" class="slide level2">
+<h2>Clusters and strata in a power calculation</h2>
+<ul>
+<li><strong>Intraclass correlation</strong>: the share of the outcome’s variance between clusters.</li>
+<li>With clustered data, power depends mostly on the number of clusters.</li>
+<li><strong>Stratification</strong>: randomizing within groups of similar stores.</li>
+<li><span class="solution"><strong>Solution</strong>: randomize more clusters, and stratify on the baseline outcome.</span></li>
+</ul>
+<div class="m06 m07-compact" data-demo="mde" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1257/app.1.4.200" style="font-size:0.55em; color:#6b6b6b">Bruhn and McKenzie (2009), <em>In Pursuit of Balance: Randomization in Practice in Development Field Experiments</em>, American Economic Journal: Applied Economics 1, 200–232.</a></p>
+<aside class="notes">
+<p>Three minutes. Move both sliders.</p>
+<p>The curves are the minimum detectable effect, in standard deviations of the outcome, for an experiment that randomizes stores, half treated, at the 5% level with 80% power. The formula, from Duflo, Glennerster and Kremer: MDE = 2.8 × √(4/G) × √[ρ(1 − R²) + (1 − ρ)/m] standard deviations, with G stores, m shoppers per store, intraclass correlation ρ, and R² the share of the between-store variance explained by the strata.</p>
+<p>The red dot is the store experiment from section 3: 20 stores of 50 shoppers, ρ = 0.1. Its MDE is 0.43 standard deviations. More shoppers per store barely help: the curve flattens toward a floor of 0.40. Doubling to 40 stores brings it to 0.30, and 80 stores to 0.22. With 1,000 independent shoppers it would be 0.18. With only 20 stores, the test in section 3 uses the t distribution on 18 degrees of freedom, which replaces 2.8 with 2.10 + 0.86 = 2.96 and raises the MDE to about 0.46.</p>
+<p>Set ρ to 0 and only the total number of shoppers matters: 40 stores of 25 give the same 0.18 as 20 stores of 50, or 1,000 independent shoppers. Raise ρ to 0.2 and the floor rises.</p>
+<p>Move “Between-store variance explained by strata” to 0.5: the 20-store MDE falls from 0.43 to 0.33, and its floor from 0.40 to 0.28. Doubling to 40 stores gives 0.30, so good strata buy most of what 20 more stores would. Stratification means grouping similar stores, for example by past sales, and randomizing within each group. It, or controlling for baseline store sales, removes the part of the between-store variance that the strata predict. Bruhn and McKenzie compare stratification and pair-matching in practice; include the strata as fixed effects in the regression. Each stratum costs a degree of freedom: ten matched pairs of stores leave 9, and a multiplier of about 3.15, so pairing pays only when the pairs predict the outcome well.</p>
+<p>If only a share c of the treated group takes up the treatment, the MDE of the treatment itself is the MDE divided by c: with 50% take-up the effect must be twice as large to be detected, or the sample four times as large. With a share P of stores treated, replace 4 with 1/[P(1 − P)].</p>
+<p>For the proposal: the number of clusters is the sample size that matters, and a baseline measure of the outcome is the least costly way to raise power.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="external-validity" class="title-slide slide level1 center">
+<h1>5. External validity</h1>
+<aside class="notes">
+<p>Thirty seconds. The fourth failure. An estimate can be unbiased, correctly reported and well powered, and still describe units other than the ones the decision concerns.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="external-validity-1" class="slide level2">
+<h2>External validity</h2>
+<ul>
+<li><strong>External validity</strong>: whether an estimate holds for the population and conditions of the decision.</li>
+<li>Examples:
+<ul>
+<li>A pilot in urban stores is used to decide for rural stores.</li>
+<li>An instrument identifies the effect only for the units it moves.</li>
+<li>Data on price cuts of up to 5% inform a 20% cut.</li>
+<li>Self-selected enrollees gain more than the average worker would.</li>
+</ul></li>
+<li>Opower’s first 10 sites overpredicted savings in the next 101.</li>
+<li><span class="solution"><strong>Solution</strong>: name the target population, and check the sample covers it.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1093/qje/qjv015" style="font-size:0.55em; color:#6b6b6b">Allcott (2015), <em>Site Selection Bias in Program Evaluation</em>, Quarterly Journal of Economics 130, 1117–1165.</a></p>
+<aside class="notes">
+<p>Two minutes.</p>
+<p>Sections 1 to 4 ask whether the estimate is right for the units studied: internal validity. External validity asks whether it transfers to the units, places and conditions of the decision.</p>
+<p>The three examples are three ways it fails. Population: the effect varies with characteristics that differ between the units studied and the units the decision concerns, such as urban and rural shoppers. Parameter: an instrument identifies a local average treatment effect, the effect for the units whose treatment it changes (<a href="https://doi.org/10.2307/2951620">Imbens and Angrist 1994</a>), and an experiment on volunteers identifies the effect for volunteers, as in LaLonde’s training program in section 2. Extrapolation: beyond the range of the data, the estimate is only the functional form, as on the matching slide. Selection on gains: when units choose the treatment because their own effect is large (the Roy model from section 1), even a correct comparison measures the effect for those who chose, which exceeds the effect for units that would be enrolled by a policy.</p>
+<p>Allcott studied Opower’s home energy reports: 111 randomized experiments with 8.6 million households across the United States. Predictions based on the first ten sites substantially overstated the savings in the next 101. Utilities in more environmentalist areas adopted the program first, and their customers responded more; utilities also targeted high-usage households first. Many replications in a selected set of sites did not fix it.</p>
+<p>Solution. State the target population and the parameter in the proposal. Compare the sample with the target on observable characteristics, and reweight when the effect varies with them. Report how the effect varies across groups. When the decision concerns new sites, evaluate in sites that resemble them, or choose the sites at random.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="which-failure-threatens-your-project" class="slide level2">
+<h2>Which failure threatens your project?</h2>
+<ul>
+<li>Which bias is most likely in your estimate, and in which direction?</li>
+<li>Would more data fix it, and which variable would close it?</li>
+<li>Which standard error does your design need?</li>
+<li>What is the minimum detectable effect of your design?</li>
+<li>Who is your estimate about, and who does the decision affect?</li>
+</ul>
+<aside class="notes">
+<p>One minute. Each student writes one line per question before the break. The team sheet in session B starts from these. The fourth question is the power calculation their proposal will need; the fifth is the population it must name.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>AEM 6991</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <style>
+    /* Meeting 7: bullets on slides that carry a figure or an animation are set
+       at 80% so the figure, its controls and the source line fit. */
+    .reveal .slides section.slide.level2:has(> .m06) > ul,
+    .reveal .slides section.slide.level2:has(> .m06) > ol { font-size: 0.8em; }
+    /* A compact demo keeps a full-width control bar and caps the figure's
+       height; the figure scales down and stays centered. */
+    .reveal .m06.m07-compact .m06-svg { max-height: 272px; }
+    .reveal .m06[data-demo="mde"] .m06-slider { width: 170px; }
+    .reveal .m06[data-demo="controls"] .m06-svg { max-height: 296px; }
+    .reveal .m06[data-demo="coverage"] .m06-svg { max-height: 330px; }
+    .reveal .m06[data-demo="nonclassical"] .m06-svg { max-height: 262px; }
+    .reveal .m06[data-demo="lalonde"] .m06-svg { max-height: 296px; }
+    /* The solution line on each failure slide. */
+    .reveal .slides section .solution { color: #b31b1b; }
+    .reveal .m06[data-demo="attenuation"] .m06-svg { max-height: 292px; }
+    /* Source lines are 0.55em links inside a full-size paragraph, which gave a
+       two-line source the line spacing of body text. Size the paragraph instead. */
+    .reveal .slides section p:has(> a[style*="font-size:0.55em"]) { font-size: 0.55em; line-height: 1.3; margin: 0.5em 0 0; }
+    .reveal .slides section p:has(> a[style*="font-size:0.55em"]) > a { font-size: 1em !important; }
+    </style>
+    <script src="sim/m06-core.js"></script>
+    <script src="sim/m07-demos.js"></script>
+    <script>window.M06 && M06.init();</script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/arielortizbobea\.github\.io\/aem6991\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

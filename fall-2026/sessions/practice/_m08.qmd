@@ -1,0 +1,163 @@
+<!-- Written by _quizzes/draw.py. Do not edit by hand: change the bank and redraw. -->
+
+These 10 questions practice the ideas of this lecture. Click an option to check it. A wrong pick lets you try again, and the right one links to the slide that covers it. The quiz on this lecture asks different questions on the same ideas.
+
+```{=html}
+<style>
+.pq-set { margin-top: 0.5rem; }
+.pq { margin: 1.4rem 0 1.8rem; }
+.pq-stem { margin-bottom: 0.6rem; }
+.pq-opt { display: block; width: 100%; text-align: left; margin: 0.35rem 0; padding: 0.5rem 0.75rem;
+  font: inherit; color: inherit; background: transparent; border: 1px solid #cfcfc9; border-radius: 4px; cursor: pointer; }
+.pq-opt:hover:not(:disabled) { border-color: #8a8a84; }
+.pq-opt:disabled { cursor: default; }
+.pq-l { font-weight: 600; margin-right: 0.35rem; }
+.pq-opt.pq-right { background: #e7f4e8; border-color: #2e7d32; }
+.pq-opt.pq-wrong { background: #fbe9e9; border-color: #c62828; opacity: 0.85; }
+.pq-fb { min-height: 1.4em; margin: 0.4rem 0 0; font-size: 0.93em; }
+.pq-fb.pq-ok { color: #2e7d32; }
+.pq-fb.pq-no { color: #c62828; }
+.pq-score { font-weight: 600; margin-top: 1rem; }
+</style>
+<div class="pq-set">
+<div class="pq" data-key="0">
+<p class="pq-stem"><strong>1.</strong> A course platform tutors its most engaged students. It regresses each student&#x27;s completion on tutoring, with no controls. The estimate is 15 percentage points, with standard error 1. Is the estimate within a point or two of tutoring&#x27;s true effect?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> No, since the standard error measures only sampling variation</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Yes, since the estimate is fifteen standard errors from zero</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> No, since a larger sample would remove the estimate&#x27;s bias</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Yes, since a standard error of 1 point rules out a large error</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="08-designs-i-slides.html#/randomizing-the-email-recovers-its-effect">Randomizing the email recovers its effect</a>.</template>
+</div>
+<div class="pq" data-key="2">
+<p class="pq-stem"><strong>2.</strong> A city offers tax help to a random 40% of its firms, and half use it. It regresses each firm&#x27;s on-time filing on the offer. The estimate is 4 percentage points. How would it change if more offered firms used the help and gained as much as current users?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> It stays at 4 points, since it counts only the firms that use the help</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> It falls, since new users will be less organized than current ones</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> It rises, since fewer offered firms skip the help and dilute the estimate</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> It stays at 4 points, since the offer is still assigned at random</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="08-designs-i-slides.html#/non-compliance-and-the-intention-to-treat-effect">Non-compliance and the intention-to-treat effect</a>.</template>
+</div>
+<div class="pq" data-key="3">
+<p class="pq-stem"><strong>3.</strong> A home-care agency gives a scheduling app to 60 of its 150 nurses, drawn by lot, and 70% of them use it. No other nurse can get it. It divides the gap in patients seen per day between drawn and other nurses by 0.7. For whom is that the app&#x27;s effect?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> All nurses at the agency, since access was assigned at random</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> All nurses given it, since the gap compares the two groups</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> No nurse in particular, since some of those given it ignored it</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> The nurses who used it, since no other nurse could get it</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="08-designs-i-slides.html#/three-effects-from-the-oregon-lottery">Three effects from the Oregon lottery</a>.</template>
+</div>
+<div class="pq" data-key="3">
+<p class="pq-stem"><strong>4.</strong> A cruise line routes calls to two centers by callers&#x27; last phone digit, and only one sells a drinks package. It regresses each caller&#x27;s rebooking on buying the package, instrumented by the center. Which assumption does a first-stage F of 150 support?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> All three, since a strong first stage shows the center is a valid instrument</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Independence, since a strong first stage shows the center is unrelated to callers&#x27; traits</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Exclusion, since a strong first stage shows the center affects rebooking only through buying</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Relevance, since a strong first stage shows the center changes who buys the package</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="08-designs-i-slides.html#/three-assumptions-behind-an-instrument">Three assumptions behind an instrument</a>.</template>
+</div>
+<div class="pq" data-key="3">
+<p class="pq-stem"><strong>5.</strong> A cable firm trains installers in random weeks. In training weeks the share of customers visited falls 20 points and the share who cancel rises 1 point. If a visit helps all equally, how much would a 40-point fall in visits raise cancellations?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> 1 point, since the effect per visit has not changed</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> 2.5 points, since the 1-point rise is divided by the 40-point cut</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> 5 points, since losing a visit raises a customer&#x27;s risk by 5 points</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> 2 points, since doubling the cut in visits doubles the rise</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="08-designs-i-slides.html#/a-fuel-price-recovers-the-demand-slope">A fuel price recovers the demand slope</a>.</template>
+</div>
+<div class="pq" data-key="3">
+<p class="pq-stem"><strong>6.</strong> Supply and demand set an ocean route&#x27;s spot rate. Holiday orders are the only demand shifter, and new ships shift supply. An analyst regresses weekly containers shipped on the rate and holiday orders. Where does the rate&#x27;s OLS coefficient centre?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Nowhere useful, since only an instrument separates the two curves</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Less negative than the demand slope, since both curves still shift</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> On the supply slope, since carriers set the rate each week</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> On the demand slope, since only supply shifts still move the rate</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="08-designs-i-slides.html#/a-fuel-price-recovers-the-demand-slope">A fuel price recovers the demand slope</a>.</template>
+</div>
+<div class="pq" data-key="2">
+<p class="pq-stem"><strong>7.</strong> A dealer offers a random third of its farm customers a discount on drip irrigation. It regresses each farmer&#x27;s yield on buying drip, instrumented by the offer. Some farmers would buy drip at full price. Is the IV estimate about them?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Yes, since those farmers are among the ones who use drip</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Yes, since the offer went to a random third of the farmers</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> No, since the offer does not change whether those farmers buy drip</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> No, since farmers who pay full price gain nothing from drip</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="08-designs-i-slides.html#/who-the-iv-estimate-is-about">Who the IV estimate is about</a>.</template>
+</div>
+<div class="pq" data-key="0">
+<p class="pq-stem"><strong>8.</strong> A utility puts homes that used over 12,000 kWh last year on a higher rate. Near the cutoff, it regresses each home&#x27;s use this year on an indicator for the higher rate. The estimate is a 6% drop. Would putting every home on the higher rate cut use by 6%?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> No, since the 6% describes only homes near 12,000 kWh</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> No, since homes above 12,000 kWh used more last year to begin with</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Yes, since homes near 12,000 kWh are as good as randomly assigned</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> No, since the 6% must first be divided by the take-up rate</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="08-designs-i-slides.html#/who-the-rd-estimate-is-about">Who the RD estimate is about</a>.</template>
+</div>
+<div class="pq" data-key="3">
+<p class="pq-stem"><strong>9.</strong> An insurer sends every claim of $10,000 or more to a senior adjuster. Near the cutoff, an analyst regresses each claim&#x27;s days to settle on that assignment. Both sides have similar claim counts and claimant ages. Do these checks confirm continuity?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Yes, two clean checks confirm continuity at the cutoff</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Yes, provided the first-stage F statistic is also large</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> No, days to settle must also be similar on both sides</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> No, such checks can reject continuity but never confirm it</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="08-designs-i-slides.html#/three-designs">Three designs</a>.</template>
+</div>
+<div class="pq" data-key="2">
+<p class="pq-stem"><strong>10.</strong> An appliance maker will pay for a quality consultant at 100 of its 300 parts suppliers in a one-year trial, and it decides which suppliers take part. It wants the consultant&#x27;s average effect on its suppliers&#x27; defect rates. Which design should it use?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> A comparison of volunteer suppliers with the rest, controlling for their size</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Instrumental variables, with supplier size as the instrument for a consultant</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> An experiment, drawing at random which 100 of the 300 suppliers get a consultant</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> A before-and-after comparison of defects at the suppliers that get a consultant</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="08-designs-i-slides.html#/can-your-project-use-one-of-these-designs">Can your project use one of these designs?</a>.</template>
+</div>
+<p class="pq-score" aria-live="polite"></p>
+</div>
+<script>
+(function () {
+  var qs = document.querySelectorAll('.pq'), first = 0, done = 0;
+  var score = document.querySelector('.pq-score');
+  function tally() { if (score) score.textContent = done ? ('Right on the first try: ' + first + ' of ' + done + ' answered (' + qs.length + ' questions).') : ''; }
+  qs.forEach(function (q) {
+    var keys = q.dataset.key.split(',');
+    var fb = q.querySelector('.pq-fb'), src = q.querySelector('.pq-src');
+    var tries = 0;
+    q.querySelectorAll('.pq-opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        tries += 1;
+        if (keys.indexOf(b.dataset.i) >= 0) {
+          b.classList.add('pq-right');
+          q.querySelectorAll('.pq-opt').forEach(function (x) { x.disabled = true; });
+          fb.className = 'pq-fb pq-ok';
+          fb.innerHTML = 'Correct. ' + (src ? src.innerHTML : '');
+          done += 1; if (tries === 1) first += 1; tally();
+        } else {
+          b.classList.add('pq-wrong'); b.disabled = true;
+          fb.className = 'pq-fb pq-no';
+          fb.textContent = 'Not this one. Try again.';
+        }
+      });
+    });
+  });
+})();
+</script>
+```

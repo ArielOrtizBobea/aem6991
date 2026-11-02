@@ -52,6 +52,10 @@ Each team draws a setting nobody in the room owns. A bank with an email list. A 
 
 Your team's output is submitted before you leave.
 
+## Practice questions
+
+{{< include practice/_m08.qmd >}}
+
 ::::
 
 :::: {.content-visible when-format="revealjs"}

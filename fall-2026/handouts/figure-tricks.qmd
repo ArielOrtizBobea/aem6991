@@ -1,6 +1,6 @@
 ---
-title: "Figures under scrutiny — critique cards"
-pagetitle: "AEM 6991 · Figures under scrutiny"
+title: "Figure critique cards"
+pagetitle: "AEM 6991 · Figure critique cards"
 sidebar: false
 toc: false
 page-layout: full
@@ -8,180 +8,158 @@ page-layout: full
 
 ```{=html}
 <style>
-.print-note { font-size: 0.85rem; color: #6b6b6b; margin: 0 0 1rem; }
-.sheetwrap { max-width: 8in; margin: 0 auto; }
-.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.15in; }
-.card { border: 1px dashed #9a9a94; border-radius: 3px; padding: 0.15in 0.16in;
-        break-inside: avoid; display: flex; flex-direction: column; }
-.card .n { font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: #b31b1b; font-weight: 700; }
-.card h3 { font-size: 0.88rem; font-weight: 700; margin: 0.1rem 0 0.25rem; line-height: 1.2; border: none; }
-.card svg { display: block; margin: 0 auto 0.25rem; }
-.card .claim { font-size: 0.74rem; line-height: 1.4; margin: 0 0 0.25rem; font-style: italic;
-               border-left: 3px solid #e3e3de; padding-left: 0.45rem; }
-.card .ask { margin-top: auto; padding-top: 0.28rem; border-top: 1px solid #e3e3de; font-size: 0.71rem; }
-.card .ask b { color: #b31b1b; }
-.pagebreak { break-before: page; }
-.defence { border: 1px solid #55554f; border-radius: 4px; padding: 0.28in; margin-top: 0.3in; break-inside: avoid; }
-.defence h3 { margin: 0 0 0.5rem; font-size: 1rem; border: none; }
-.defence .lbl { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: #6b6b6b; font-weight: 700; margin-bottom: 0.1rem; }
-.defence .row { border-bottom: 1px solid #cfcfc9; min-height: 0.42in; margin-bottom: 0.18in; }
-.defence .big { min-height: 1.7in; border: 1px solid #cfcfc9; border-radius: 3px; margin-bottom: 0.18in; }
-.defence .vocab { font-size: 0.71rem; color: #333; line-height: 1.6; background: #fafaf7;
-                  border: 1px solid #e3e3de; border-radius: 3px; padding: 0.12in 0.14in; margin-bottom: 0.2in; }
-.defence .vocab b { color: #b31b1b; }
+.fc-note { font-size: 0.85rem; color: #6b6b6b; margin: 0 0 1rem; }
+.fc-wrap { max-width: 8in; margin: 0 auto; }
+.fc-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.16in; }
+.fc-card { border: 1px dashed #9a9a94; border-radius: 3px; padding: 0.12in 0.14in;
+           break-inside: avoid; display: flex; flex-direction: column; }
+.fc-card .fc-n { font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: #b31b1b; font-weight: 700; }
+.fc-card img { display: block; width: 100%; max-height: 1.95in; object-fit: contain; margin: 0.04in 0 0.05in; }
+.fc-card .fc-memo { font-size: 0.74rem; line-height: 1.4; margin: 0 0 0.2rem; font-style: italic;
+                    border-left: 3px solid #e3e3de; padding-left: 0.45rem; }
+.fc-card .fc-memo b { font-style: normal; font-weight: 600; color: #55554f; }
+.fc-card .fc-src { font-size: 0.62rem; color: #6b6b6b; margin: 0 0 0.15rem; }
+.fc-card .fc-ask { margin-top: auto; padding-top: 0.22rem; border-top: 1px solid #e3e3de; font-size: 0.7rem; margin-bottom: 0; }
+.fc-card .fc-ask b { color: #b31b1b; }
+.fc-break { break-before: page; }
+.fc-crit { border: 1px solid #55554f; border-radius: 4px; padding: 0.26in; break-inside: avoid; }
+.fc-crit h3 { margin: 0 0 0.45rem; font-size: 1rem; border: none; }
+.fc-crit .fc-lbl { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: #6b6b6b; font-weight: 700; margin: 0 0 0.1rem; }
+.fc-crit .fc-line { border-bottom: 1px solid #cfcfc9; min-height: 0.42in; margin-bottom: 0.16in; }
+.fc-crit .fc-box { min-height: 2.1in; border: 1px solid #cfcfc9; border-radius: 3px; margin-bottom: 0.1in; }
+.fc-crit .fc-how { font-size: 0.72rem; color: #333; line-height: 1.5; margin: 0 0 0.16in; }
+.fc-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.08in 0.18in; font-size: 0.66rem; line-height: 1.45;
+            background: #fafaf7; border: 1px solid #e3e3de; border-radius: 3px; padding: 0.1in 0.14in; margin: 0 0 0.2in; }
+.fc-steps b { color: #b31b1b; }
+.fc-steps ol { margin: 0.02in 0 0; padding-left: 1.1rem; }
 @media print {
-  .print-note, #quarto-header, #quarto-sidebar, .nav-page, footer, #quarto-margin-sidebar { display: none !important; }
+  .fc-note, #quarto-header, #quarto-sidebar, .nav-page, footer, #quarto-margin-sidebar, #title-block-header { display: none !important; }
   @page { size: letter portrait; margin: 0.4in; }
   body { background: #fff; }
-  .sheetwrap { max-width: none; }
+  .fc-wrap { max-width: none; }
 }
 </style>
 
-<p class="print-note">Six figures, each lying in a different way — and each
-one is a real technique you will meet in a board paper. Cut along the dashed
-lines, deal one per team. Page&nbsp;2 is the critique sheet.</p>
+<p class="fc-note">Nine figures, each with something wrong in it. Three use
+real public data; six use invented data, labelled as such. Print, cut along
+the dashed lines and deal one card per team. The last page is the critique
+sheet. The questions come from the <a href="figure-guide.qmd">figure
+guide</a>.</p>
 
-<div class="sheetwrap">
-<div class="cards">
+<div class="fc-wrap">
+<div class="fc-cards">
 
-  <div class="card">
-    <span class="n">Card 1</span>
-    <h3>Our satisfaction is soaring</h3>
-    <svg width="200" height="96" viewBox="0 0 200 96">
-      <line x1="34" y1="6" x2="34" y2="80" stroke="#999" stroke-width="1"/>
-      <line x1="34" y1="80" x2="192" y2="80" stroke="#999" stroke-width="1"/>
-      <rect x="52"  y="62" width="30" height="18" fill="#c9c9c2"/>
-      <rect x="100" y="38" width="30" height="42" fill="#c9c9c2"/>
-      <rect x="148" y="10" width="30" height="70" fill="#b31b1b"/>
-      <text x="30" y="82" font-size="7" text-anchor="end" fill="#666">94%</text>
-      <text x="30" y="14" font-size="7" text-anchor="end" fill="#666">97%</text>
-      <text x="67"  y="90" font-size="7" text-anchor="middle" fill="#666">2024</text>
-      <text x="115" y="90" font-size="7" text-anchor="middle" fill="#666">2025</text>
-      <text x="163" y="90" font-size="7" text-anchor="middle" fill="#666">2026</text>
-    </svg>
-    <p class="claim">"Satisfaction is up sharply. The programme is working."</p>
-    <p class="ask"><b>What is the trick?</b> Redraw it honestly.</p>
+  <div class="fc-card">
+    <span class="fc-n">Card 1</span>
+    <img src="../sessions/figures/m11-card-1.png" alt="Monthly US exports and imports of goods and services from 2023 to 2026, two lines, imports above exports, titled The trade deficit is back to normal.">
+    <p class="fc-memo"><b>The memo says:</b> The two lines have moved together since 2023. The deficit is back where it was.</p>
+    <p class="fc-src">Data: FRED, series BOPTEXP and BOPTIMP.</p>
+    <p class="fc-ask"><b>What is wrong, and at which step?</b> What is the figure entitled to claim?</p>
   </div>
 
-  <div class="card">
-    <span class="n">Card 2</span>
-    <h3>Ad spend drives sales</h3>
-    <svg width="200" height="96" viewBox="0 0 200 96">
-      <line x1="26" y1="6" x2="26" y2="80" stroke="#999" stroke-width="1"/>
-      <line x1="174" y1="6" x2="174" y2="80" stroke="#999" stroke-width="1"/>
-      <line x1="26" y1="80" x2="174" y2="80" stroke="#999" stroke-width="1"/>
-      <polyline points="26,70 63,62 100,55 137,44 174,34" fill="none" stroke="#b31b1b" stroke-width="2"/>
-      <polyline points="26,66 63,54 100,52 137,36 174,30" fill="none" stroke="#5b7fa6" stroke-width="2" stroke-dasharray="3 2"/>
-      <text x="22" y="12" font-size="6.5" text-anchor="end" fill="#b31b1b">$4.0M</text>
-      <text x="22" y="84" font-size="6.5" text-anchor="end" fill="#b31b1b">$3.8M</text>
-      <text x="178" y="12" font-size="6.5" fill="#5b7fa6">$90k</text>
-      <text x="178" y="84" font-size="6.5" fill="#5b7fa6">$10k</text>
-      <text x="100" y="93" font-size="6.5" text-anchor="middle" fill="#666">sales — · ad spend ---</text>
-    </svg>
-    <p class="claim">"Sales track ad spend almost perfectly."</p>
-    <p class="ask"><b>What is the trick?</b> Redraw it honestly.</p>
+  <div class="fc-card">
+    <span class="fc-n">Card 2</span>
+    <img src="../sessions/figures/m11-card-2.png" alt="A map of an online retailer's customer complaints by state in 2025, darkest in California, Texas and Florida.">
+    <p class="fc-memo"><b>The memo says:</b> Most of our complaints come from three states. Send the service team there.</p>
+    <p class="fc-src">Invented complaints for an online retailer. State populations: FRED, 2025.</p>
+    <p class="fc-ask"><b>What is wrong, and at which step?</b> What would you divide by?</p>
   </div>
 
-  <div class="card">
-    <span class="n">Card 3</span>
-    <h3>Costs are finally falling</h3>
-    <svg width="200" height="96" viewBox="0 0 200 96">
-      <line x1="20" y1="6" x2="20" y2="80" stroke="#999" stroke-width="1"/>
-      <line x1="20" y1="80" x2="192" y2="80" stroke="#999" stroke-width="1"/>
-      <polyline points="20,72 44,66 68,58 92,44 116,26 140,16 152,20 164,26 176,30 188,34"
-                fill="none" stroke="#c9c9c2" stroke-width="2"/>
-      <polyline points="140,16 152,20 164,26 176,30 188,34" fill="none" stroke="#b31b1b" stroke-width="2.5"/>
-      <rect x="136" y="8" width="56" height="34" fill="none" stroke="#b31b1b" stroke-dasharray="3 2"/>
-      <text x="164" y="52" font-size="6.5" text-anchor="middle" fill="#b31b1b">what was shown</text>
-      <text x="80" y="93" font-size="6.5" text-anchor="middle" fill="#666">the full series, 2019–2026</text>
-    </svg>
-    <p class="claim">"Unit costs have fallen four quarters running."</p>
-    <p class="ask"><b>What is the trick?</b> Redraw it honestly.</p>
+  <div class="fc-card">
+    <span class="fc-n">Card 3</span>
+    <img src="../sessions/figures/m11-card-3.png" alt="Stacked bars of the grocery chain's sales by department from 2021 to 2025: produce, dairy, bakery and prepared foods, the total rising each year, titled Every department grew.">
+    <p class="fc-memo"><b>The memo says:</b> Sales rose every year, and every department contributed.</p>
+    <p class="fc-src">Invented data for the grocery chain.</p>
+    <p class="fc-ask"><b>What is wrong, and at which step?</b> Can you check the claim from this figure?</p>
   </div>
 
-  <div class="card">
-    <span class="n">Card 4</span>
-    <h3>Overall, we improved</h3>
-    <svg width="200" height="96" viewBox="0 0 200 96">
-      <line x1="24" y1="6" x2="24" y2="78" stroke="#999" stroke-width="1"/>
-      <line x1="24" y1="78" x2="192" y2="78" stroke="#999" stroke-width="1"/>
-      <polyline points="40,54 176,32" fill="none" stroke="#b31b1b" stroke-width="2.5"/>
-      <polyline points="40,44 176,52" fill="none" stroke="#8e8e89" stroke-width="1.5"/>
-      <polyline points="40,60 176,68" fill="none" stroke="#8e8e89" stroke-width="1.5"/>
-      <polyline points="40,26 176,34" fill="none" stroke="#8e8e89" stroke-width="1.5"/>
-      <text x="180" y="30" font-size="6.5" fill="#b31b1b">all</text>
-      <text x="180" y="36" font-size="6" fill="#8e8e89">A</text>
-      <text x="180" y="54" font-size="6" fill="#8e8e89">B</text>
-      <text x="180" y="70" font-size="6" fill="#8e8e89">C</text>
-      <text x="100" y="92" font-size="6.5" text-anchor="middle" fill="#666">total (red) vs each region (grey)</text>
-    </svg>
-    <p class="claim">"Company-wide performance improved."</p>
-    <p class="ask"><b>What is going on?</b> This one has a name.</p>
+  <div class="fc-card">
+    <span class="fc-n">Card 4</span>
+    <img src="../sessions/figures/m11-card-4.png" alt="A line joining sales growth in ten departments listed alphabetically from bakery to produce, zigzagging up and down, titled Growth swings sharply from department to department.">
+    <p class="fc-memo"><b>The memo says:</b> Growth is volatile across the store. We need to smooth it.</p>
+    <p class="fc-src">Invented data for the grocery chain.</p>
+    <p class="fc-ask"><b>What is wrong, and at which step?</b> What does the line suggest that the data cannot?</p>
   </div>
 
-  <div class="card">
-    <span class="n">Card 5</span>
-    <h3>We doubled our reach</h3>
-    <svg width="200" height="96" viewBox="0 0 200 96">
-      <circle cx="62" cy="48" r="15" fill="#c9c9c2"/>
-      <circle cx="140" cy="48" r="30" fill="#b31b1b"/>
-      <text x="62"  y="88" font-size="7" text-anchor="middle" fill="#666">1.0M — last year</text>
-      <text x="140" y="88" font-size="7" text-anchor="middle" fill="#666">2.0M — this year</text>
-    </svg>
-    <p class="claim">"Reach doubled year on year."</p>
-    <p class="ask"><b>What is the trick?</b> By how much does the picture overstate it?</p>
+  <div class="fc-card">
+    <span class="fc-n">Card 5</span>
+    <img src="../sessions/figures/m11-card-5.png" alt="Monthly sales and ad spending from 2022 to 2025 on two y-axes, a black line and a red dashed line that track each other, titled Our ad spending drives sales.">
+    <p class="fc-memo"><b>The memo says:</b> Sales track ad spending closely. A bigger ad budget will raise sales.</p>
+    <p class="fc-src">Invented data for the grocery chain.</p>
+    <p class="fc-ask"><b>What is wrong, and at which step?</b> Two things, in fact.</p>
   </div>
 
-  <div class="card">
-    <span class="n">Card 6</span>
-    <h3>Where our problem is</h3>
-    <svg width="200" height="96" viewBox="0 0 200 96">
-      <line x1="34" y1="6" x2="34" y2="76" stroke="#999" stroke-width="1"/>
-      <line x1="34" y1="76" x2="192" y2="76" stroke="#999" stroke-width="1"/>
-      <rect x="46"  y="14" width="26" height="62" fill="#b31b1b"/>
-      <rect x="82"  y="26" width="26" height="50" fill="#c9c9c2"/>
-      <rect x="118" y="56" width="26" height="20" fill="#c9c9c2"/>
-      <rect x="154" y="64" width="26" height="12" fill="#c9c9c2"/>
-      <text x="59"  y="86" font-size="6.5" text-anchor="middle" fill="#666">CA</text>
-      <text x="95"  y="86" font-size="6.5" text-anchor="middle" fill="#666">TX</text>
-      <text x="131" y="86" font-size="6.5" text-anchor="middle" fill="#666">OR</text>
-      <text x="167" y="86" font-size="6.5" text-anchor="middle" fill="#666">VT</text>
-      <text x="30" y="16" font-size="6.5" text-anchor="end" fill="#666">complaints</text>
-    </svg>
-    <p class="claim">"California is our worst state by far. Send the team there."</p>
-    <p class="ask"><b>What is missing?</b> What would you divide by?</p>
+  <div class="fc-card">
+    <span class="fc-n">Card 6</span>
+    <img src="../sessions/figures/m11-card-6.png" alt="Two panels. Left: the average basket per visit across all stores rising from 47.90 dollars in 2023 to 54.70 dollars in 2025. Right: the basket in neighborhood stores and in superstores, each falling slightly over the same years. Titled Customers are spending more per visit.">
+    <p class="fc-memo"><b>The memo says:</b> Customers spend more per visit every year. Our pricing strategy is working.</p>
+    <p class="fc-src">Invented data for the grocery chain.</p>
+    <p class="fc-ask"><b>What is going on?</b> How can both panels be right?</p>
   </div>
 
 </div>
 
-<div class="pagebreak"></div>
+<div class="fc-cards fc-break">
 
-<div class="defence">
-  <h3>Critique sheet — team <span style="color:#b31b1b">______</span> &nbsp;·&nbsp; card <span style="color:#b31b1b">____</span></h3>
+  <div class="fc-card">
+    <span class="fc-n">Card 7</span>
+    <img src="../sessions/figures/m11-card-7.png" alt="Stacked bars of product returns at five stores over 14 days, falling from left to right, titled Returns are falling every day.">
+    <p class="fc-memo"><b>The memo says:</b> Returns have fallen every day for two weeks.</p>
+    <p class="fc-src">Invented data for the grocery chain.</p>
+    <p class="fc-ask"><b>What is wrong, and at which step?</b> Read the axis labels.</p>
+  </div>
 
-  <p class="lbl">How this runs</p>
-  <p class="vocab" style="font-style:normal">Every team works its card at the
-  same time. Then <b>one team is drawn at random</b> to present at the front
-  while everyone else attacks — and we draw again. You will not know whether
-  you are up. <b>Points for an attack that lands</b>, and you have to name
-  the trick, not just dislike the picture.</p>
+  <div class="fc-card">
+    <span class="fc-n">Card 8</span>
+    <img src="../sessions/figures/m11-card-8.png" alt="Global average temperature from 1880 to 2025 as a nearly flat red line near 57 to 59 degrees Fahrenheit, on an axis from minus 10 to 110 degrees, titled Global temperature has barely changed since 1880.">
+    <p class="fc-memo"><b>The memo says:</b> Global temperature has hardly moved in 140 years.</p>
+    <p class="fc-src">Data: NASA GISTEMP v4 anomalies, added to the 1951–1980 mean of 57.2&nbsp;°F.</p>
+    <p class="fc-ask"><b>What is wrong, and at which step?</b> What axis would match the quantity?</p>
+  </div>
 
-  <p class="vocab">Name it: <b>truncated axis</b> · <b>two axes manufacturing a correlation</b> ·
-  <b>cherry-picked window</b> · <b>aggregation hiding the subgroups</b> ·
-  <b>area scaled by radius</b> · <b>counts where you needed a rate</b> ·
-  <b>uneven bins</b> · <b>uneven time spacing</b></p>
+  <div class="fc-card">
+    <span class="fc-n">Card 9</span>
+    <img src="../sessions/figures/m11-card-9.png" alt="Four unemployment series from 2000 to 2026 on a grey panel with heavy gridlines, labelled by series codes, in red, green, dark green and orange, with axis titles DATE and value and the title Unemployment.">
+    <p class="fc-memo"><b>The appendix says:</b> Figure 4: Unemployment.</p>
+    <p class="fc-src">Data: FRED, unemployment rates by education.</p>
+    <p class="fc-ask"><b>What is wrong, and at which step?</b> List everything a reader would need fixed.</p>
+  </div>
 
-  <p class="lbl">The trick, named</p>
-  <div class="row"></div>
+</div>
 
-  <p class="lbl">What the figure is entitled to say</p>
-  <div class="row"></div>
+<div class="fc-break"></div>
 
-  <p class="lbl">Redraw it honestly — and it still has to make a point</p>
-  <div class="big"></div>
+<div class="fc-crit">
+  <h3>Critique sheet · team <span style="color:#b31b1b">______</span> · card <span style="color:#b31b1b">____</span></h3>
 
-  <p class="lbl">Is our own project's key figure at risk of this? How would we know?</p>
-  <div class="row"></div>
+  <p class="fc-how">Every team works its card at the same time, using the
+  questions below. Then teams present in an order drawn at random, and the
+  room adds what the team missed. A fault the room names, with its step,
+  scores; disliking the picture does not.</p>
+
+  <div class="fc-steps">
+    <div><b>1. Choose the comparison</b>
+      <ol><li>What is the message?</li><li>Compared with what?</li><li>Which quantity?</li><li>Which form?</li></ol></div>
+    <div><b>2. Encode it for the eye</b>
+      <ol><li>Is the comparison on a common scale?</li><li>Does the channel match the data?</li><li>Are compared items together?</li><li>Do the points hide each other?</li></ol></div>
+    <div><b>3. Keep it faithful</b>
+      <ol><li>Does the scale match the quantity?</li><li>Do the window and sample favor the message?</li><li>Is the uncertainty shown?</li><li>Is the title supported?</li></ol></div>
+    <div><b>4. Finish it for the reader</b>
+      <ol><li>Does the title state the finding?</li><li>Does every mark carry information?</li><li>Does the caption stand alone?</li><li>Does it fit the page or slide?</li></ol></div>
+  </div>
+
+  <p class="fc-lbl">1 · What does the figure claim?</p>
+  <div class="fc-line"></div>
+
+  <p class="fc-lbl">2 · What is wrong, and at which step? (for example, 3.1)</p>
+  <div class="fc-line"></div>
+  <div class="fc-line"></div>
+
+  <p class="fc-lbl">3 · What is the figure entitled to claim?</p>
+  <div class="fc-line"></div>
+
+  <p class="fc-lbl">4 · Sketch the redraw. It still has to make a point.</p>
+  <div class="fc-box"></div>
 </div>
 </div>
 ```

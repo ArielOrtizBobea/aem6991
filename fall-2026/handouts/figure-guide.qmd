@@ -1,0 +1,115 @@
+---
+title: "Figure guide"
+pagetitle: "AEM 6991 · Figure guide"
+toc: true
+toc-depth: 2
+editor:
+  markdown:
+    wrap: 72
+---
+
+::: {.callout-note appearance="simple"}
+This guide goes with [meeting 11](../sessions/11-figures.qmd). Use it
+in session B to critique figures, and run it on every figure in your
+proposal, due December 11, and on every figure in your final
+presentation.
+:::
+
+A figure made for a reader shows one comparison. It is built in four
+steps, and each step asks four questions. A figure that fails a
+question in step 1 or step 4 leaves the reader without the message. A
+figure that fails a question in step 2 is read imprecisely, and one
+that fails in step 3 is read with a bias: the reader comes away
+believing something the numbers do not say.
+
+Figures you make to explore your own data do not need any of this.
+Make many, quickly, and look at every one before you fit a model
+(meeting 5). This guide is for the few you show.
+
+## 1. Choose the comparison
+
+| | Question | What goes wrong | What to do |
+|:-|:-----|:---------|:---------|
+| 1.1 | What is the message, in one sentence? | Everything is shown and nothing is compared | Write the message before drawing, then draw only its comparison |
+| 1.2 | Compared with what? | A change shown with no comparison group or no period before it | Add the comparison group and the period before the change |
+| 1.3 | Which quantity shows it? | Nominal dollars, levels, two series or counts when the message needs real dollars, growth, the gap or a rate | Deflate money by a price index; index to a base year; plot the gap; divide by the population |
+| 1.4 | Which form shows it? | A bar of means hides the distribution; a figure holds numbers a reader needs to look up | Show the data points or the distribution; put exact values in a table |
+
+To find a chart form for a comparison, look the comparison up in the
+Financial Times [Visual
+Vocabulary](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary):
+deviation, correlation, ranking, distribution, change over time,
+magnitude, part-to-whole, spatial or flow.
+
+## 2. Encode it for the eye
+
+Readers judge positions on a common scale more accurately than
+lengths, angles, areas or colors ([Cleveland and McGill
+1984](https://doi.org/10.1080/01621459.1984.10478080); [Heer and Bostock
+2010](https://doi.org/10.1145/1753326.1753357)).
+
+| | Question | What goes wrong | What to do |
+|:-|:-----|:---------|:---------|
+| 2.1 | Is the key comparison on a common scale? | A pie, a stacked bar or bubbles make close values hard to rank | Put the values on one axis as dots or bars, sorted |
+| 2.2 | Does the channel match the data? | A rainbow color scale for ordered values; lines joining categories that have no order | Use one hue, light to dark, for ordered values; use lines only for time or another ordered axis |
+| 2.3 | Are the compared items next to each other? | Many series tangled in one panel; compared groups on separate panels with different scales | Draw small multiples on shared axes; put compared groups side by side on one scale |
+| 2.4 | Do the points hide each other? | Thousands of points overplotted into a blot | Make the points transparent and add the mean of y within bins of x (a binned scatter) |
+
+## 3. Keep it faithful
+
+| | Question | What goes wrong | What to do |
+|:-|:-----|:---------|:---------|
+| 3.1 | Does the scale match the quantity? | A bar axis that skips zero; a log scale the reader takes for linear; an inverted axis; circles scaled by radius; 3D | Start bars at zero; use a linear scale for a general reader; scale circles by area; draw in 2D |
+| 3.2 | Do the window and the sample favor the message? | Two y-axes whose ranges set where the lines cross; a time window that starts where the story looks best; a total that hides opposite subgroups; a sample that loses its failures over time | Put compared series on one scale; show the full period or say why the window starts where it does; show the subgroups; say who left the sample |
+| 3.3 | Is the uncertainty shown? | Point estimates with no intervals; error bars that do not say what they are | Draw 95% confidence intervals and say so in the caption; do not read overlapping intervals as no difference |
+| 3.4 | Does the title claim only what the figure shows? | A causal title on a correlation | Title the association; leave causal claims to a design (meetings 8 and 9) |
+
+## 4. Finish it for the reader
+
+Show the data, reduce the clutter, and integrate the text and the
+graph ([Schwabish 2014](https://doi.org/10.1257/jep.28.1.209)).
+
+| | Question | What goes wrong | What to do |
+|:-|:-----|:---------|:---------|
+| 4.1 | Does the title state the finding? | A label title ("Sales by region, 2020–2025") | Write the finding as the title; put the variables in a subtitle or the axis titles |
+| 4.2 | Does every mark carry information? | Heavy gridlines, borders, shading, markers, a legend of codes, variable names as axis titles | Delete what carries no data; label lines where they end; write units in the axis titles; color one thing and leave the rest grey |
+| 4.3 | Does the caption let the figure stand alone? | "Figure 3: Effects" | Give the source, the unit, the sample, the estimator and what the error bars are |
+| 4.4 | Does it fit the page or the slide? | A paper's four-panel figure on a slide; red against green | Redraw for the slide with one panel and large type; use a palette color-blind readers can tell apart, such as Okabe–Ito ([Wong 2011](https://doi.org/10.1038/nmeth.1618)) |
+
+Across a document, the same group keeps the same color in every
+figure.
+
+## Checklist before you submit
+
+- [ ] Each figure's message fits in one sentence, and that sentence is
+  its title.
+- [ ] Each figure that shows a change also shows a comparison group or
+  the period before.
+- [ ] Money over time is in real dollars, with the base year stated.
+- [ ] No bar chart has an axis that skips zero.
+- [ ] No two series share a figure on two different y-axes.
+- [ ] Every estimate has its interval, and the caption says which
+  interval.
+- [ ] No title claims a cause the design cannot support.
+- [ ] Every axis title has its unit, and no axis title is a variable
+  name.
+- [ ] Every caption gives the source, the sample and the unit.
+- [ ] Every slide figure has one panel and type the back row can read.
+
+## Further reading
+
+- Schwabish (2014), "[An economist's guide to visualizing
+  data](https://doi.org/10.1257/jep.28.1.209)", *Journal of Economic
+  Perspectives*. Short, free, and written for economists, with eight
+  published figures redrawn.
+- Wilke (2019), [*Fundamentals of Data
+  Visualization*](https://clauswilke.com/dataviz/), free online.
+  Organized by what you want to show.
+- Healy (2018), [*Data Visualization: A Practical
+  Introduction*](https://socviz.co), free online, with R code.
+- Zelazny (2001), *Say It With Charts*, 4th edition, McGraw-Hill. How
+  to choose a chart from its message.
+- Franconeri, Padilla, Shah, Zacks and Hullman (2021), "[The science of
+  visual data communication: what
+  works](https://doi.org/10.1177/15291006211051956)", *Psychological
+  Science in the Public Interest*. The experiments behind these rules.

@@ -5,15 +5,21 @@
 /* The solution line on each problem slide. */
 .reveal .slides section .solution { color: #b31b1b; }
 /* Source lines are 0.55em links inside a full-size paragraph. Size the paragraph instead. */
-.reveal .slides section p:has(> a[style*="font-size:0.55em"]) { font-size: 0.55em; line-height: 1.3; margin: 0.4em 0 0; }
+.reveal .slides section p:has(> a[style*="font-size:0.55em"]) { font-size: 0.55em; line-height: 1.3; margin: 0.4em 0 0; color: #6b6b6b; }
 .reveal .slides section p:has(> a[style*="font-size:0.55em"]) > a { font-size: 1em !important; }
 .reveal .slides section .src { font-size: 0.55em; line-height: 1.3; color: #6b6b6b; margin: 0.4em 0 0; }
+
+/* The question a slide answers, under its title. */
+.reveal .m11-q { font-size: 0.5em; font-weight: 600; color: #6b6b6b; margin: -0.35em 0 0.35em; }
+
+/* A plain table of examples: wide enough for short rows. */
+.reveal .m11-recap-plain table { width: 100%; }
 
 /* Before-and-after pairs: two figures side by side, each with a small label. */
 .reveal .m11-pair { display: flex; gap: 0.6em; margin: 0.1em 0 0.2em; }
 .reveal .m11-pair > div { flex: 1 1 0; min-width: 0; }
 .reveal .m11-pair > div { text-align: center; }
-.reveal .m11-pair img { width: auto; max-width: 100%; max-height: 272px; margin: 0; }
+.reveal .m11-pair img { width: auto; max-width: 100%; max-height: 258px; margin: 0; }
 .reveal .m11-pair .m11-tag { text-align: left; }
 .reveal .m11-tag {
   display: block; font-size: 0.42em; font-weight: 600; letter-spacing: 0.12em;
@@ -22,6 +28,11 @@
 .reveal .m11-pair .after .m11-tag { color: #b31b1b; }
 .reveal .m11-under { font-size: 0.7em; }
 .reveal .m11-under ul { margin-top: 0.1em; }
+/* A Solution held for the click sits in its own list, flush with the bullets above it. */
+.reveal .m11-under ul { margin-bottom: 0; }
+.reveal .m11-under + .m11-under ul { margin-top: 0; }
+.reveal section > ul:has(+ .fragment) { margin-bottom: 0; }
+.reveal section > ul + .fragment > ul { margin-top: 0; }
 .reveal .m11-under > .fragment p { margin: 0.2em 0; }
 .reveal .m11-big img { max-height: 345px; }
 

@@ -139,13 +139,13 @@ guide</a>.</p>
   scores; disliking the picture does not.</p>
 
   <div class="fc-steps">
-    <div><b>1. Decide what to compare</b>
-      <ol><li>What is the message?</li><li>Compared with what?</li><li>Which quantity?</li><li>Which form?</li></ol></div>
+    <div><b>1. Decide what to contrast</b>
+      <ol><li>What is the message?</li><li>Contrasted with what?</li><li>Which quantity?</li><li>Which form?</li></ol></div>
     <div><b>2. Encode it for the eye</b>
       <ol><li>Are the compared values on a common scale?</li><li>Does the channel match the data?</li><li>Are compared items together?</li><li>Do the points hide each other?</li></ol></div>
     <div><b>3. Keep it faithful</b>
       <ol><li>Does the scale match the quantity?</li><li>Do the window and sample favor the message?</li><li>Is the uncertainty shown?</li><li>Is the title supported?</li></ol></div>
-    <div><b>4. Finish it for the reader</b>
+    <div><b>4. Make it stand alone</b>
       <ol><li>Does the title state the finding?</li><li>Does every mark carry information?</li><li>Does the caption stand alone?</li><li>Does it fit the page or slide?</li></ol></div>
   </div>
 

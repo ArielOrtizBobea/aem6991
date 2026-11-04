@@ -51,7 +51,7 @@
   <td class="hw">Project talk — three minutes, in session B</td></tr>
 <tr><td>Wed Nov 4</td>
   <td class="topic"><a href="sessions/11-figures.html">11 · Visualization</a>
-    <span class="t-desc">Visualizations made to explore data and visualizations made for a reader. How to build a chart for a reader in four steps: decide what to compare, encode it for the eye, keep it faithful to the numbers, and finish it so it stands alone. Then diagrams that show how an idea works, and how a talk builds them one piece at a time.</span></td>
+    <span class="t-desc">Visualizations made to explore data and visualizations made for a reader. How to build a chart for a reader in four steps: decide what to contrast, encode it for the eye, keep it faithful to the numbers, and make it stand alone. Then diagrams that show how an idea works, and how a talk builds them one piece at a time.</span></td>
   <td class="hw"></td></tr>
 <tr class="g-last g04"><td>Wed Nov 11</td>
   <td class="topic"><a href="sessions/12-speaking.html">12 · Speaking</a>

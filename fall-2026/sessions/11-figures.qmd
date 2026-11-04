@@ -25,7 +25,7 @@ format:
 [**Open the slides**](11-figures-slides.html)
 :::
 
-**What you should be able to do after this meeting.** Tell a visualization made to explore data from one made for a reader. Build a chart for a reader in four steps: decide what to compare, encode it so the eye reads it precisely, keep it faithful to the numbers, and finish it so it stands alone. Draw a diagram of an idea, and reveal it in a talk one piece at a time. Name what is wrong with a published figure, at which step, and sketch the fix.
+**What you should be able to do after this meeting.** Tell a visualization made to explore data from one made for a reader. Build a chart for a reader in four steps: decide what to contrast, encode it so the eye reads it precisely, keep it faithful to the numbers, and make it stand alone. Draw a diagram of an idea, and reveal it in a talk one piece at a time. Name what is wrong with a published figure, at which step, and sketch the fix.
 
 ## Handouts
 
@@ -37,7 +37,7 @@ format:
 
 ## Session A · 2:00–3:15
 
-Visualizations have two jobs. Exploratory ones are for the author: many, quick and rough, made to understand the data and catch errors (meeting 5). Explanatory ones are for a reader or a room: few and finished, each making one point. This meeting is about the second kind. A chart for a reader makes one point by showing numbers side by side, and the point stands out by contrast with something else. It is built in four steps. First, decide what to compare: the message in one sentence, the benchmark it needs, the quantity (nominal or real, levels or an index, counts or a rate) and the form. Second, encode it for the eye: readers judge positions on a common scale more accurately than lengths, angles, areas or colors, so ordered values need an ordered color scale and many series read best as small multiples. Third, keep it faithful: bars start at zero, two periods belong on one scale, estimates carry their intervals, and a causal title needs a causal design. Fourth, finish it for the reader: the title states the finding, every mark carries information, the caption lets the figure stand alone, and a slide gets its own version. Each step is shown with a figure drawn badly and redrawn, many of them published, and with the experiments that measured how readers read them. Then diagrams, which show how the parts of an idea connect: a causal graph, a research design, a data pipeline. Every arrow in a diagram is a claim, so each meaning gets its own arrow style. And a talk builds a complex diagram one piece at a time, with one sentence for each piece, so the room follows the argument instead of reading ahead. The meeting closes with two published charts that work, and with what a proposal can draw before it has results: the data, the design and a labelled mock of the result.
+Visualizations have two jobs. Exploratory ones are for the author: many, quick and rough, made to understand the data and catch errors (meeting 5). Explanatory ones are for a reader or a room: few and finished, each making one point. This meeting is about the second kind. A chart for a reader makes one point by showing numbers side by side, and the point stands out by contrast with something else. It is built in four steps. First, decide what to contrast: the message in one sentence, the benchmark it needs, the quantity (nominal or real, levels or an index, counts or a rate) and the form. Second, encode it for the eye: readers judge positions on a common scale more accurately than lengths, angles, areas or colors, so ordered values need an ordered color scale and many series read best as small multiples. Third, keep it faithful: bars start at zero, two periods belong on one scale, estimates carry their intervals, and a causal title needs a causal design. Fourth, make it stand alone: the title states the finding, every mark carries information, the caption lets the figure stand alone, and a slide gets its own version. Each step is shown with a figure drawn badly and redrawn, many of them published, and with the experiments that measured how readers read them. Then diagrams, which show how the parts of an idea connect: a causal graph, a research design, a data pipeline. Every arrow in a diagram is a claim, so each meaning gets its own arrow style. And a talk builds a complex diagram one piece at a time, with one sentence for each piece, so the room follows the argument instead of reading ahead. The meeting closes with two published charts that work, and with what a proposal can draw before it has results: the data, the design and a labelled mock of the result.
 
 ## Session B · 3:30–4:30
 
@@ -83,10 +83,10 @@ Everything after the outline is about the second kind.
 ::: {style="font-size:0.84em"}
 A chart for a reader makes one point by showing numbers side by side. The point stands out by contrast with something else. Building the chart takes four steps.
 
-1. **Decide what to compare.** The message, the benchmark, the quantity and the form.
+1. **Decide what to contrast.** The message, the benchmark, the quantity and the form.
 2. **Encode it for the eye.** Put the contrast where the eye reads it precisely.
 3. **Keep it faithful.** The scale, the window, the uncertainty and the title match the numbers.
-4. **Finish it for the reader.** The title, the marks, the caption and the medium.
+4. **Make it stand alone.** The title, the marks, the caption and the medium.
 5. **Diagrams and builds.** Draw how an idea works, and reveal it one piece at a time.
 6. **Good charts and your proposal.** Two that work, and what to draw before results.
 :::
@@ -104,7 +104,7 @@ finding can also be that there is no contrast, such as two lines that move
 together. That still takes the second line.
 
 The four steps are also the order you work in. Each section opens with
-its four questions and closes with a table of problems and solutions.
+its four questions.
 The fifth section moves from data to ideas: a talk often has to explain
 a mechanism or a design before it can show a result.
 The figure guide on this meeting's page has the same questions on one
@@ -128,16 +128,16 @@ home sales, World Bank data, and published charts redrawn from their
 numbers.
 :::
 
-# 1. Decide what to compare
+# 1. Decide what to contrast
 
 ::: {.notes}
-Thirteen minutes for the section.
+Twelve minutes for the section.
 :::
 
-## Four questions about what to compare
+## Four questions about what to contrast
 
 1. What is the message, in one sentence?
-2. Compared with what?
+2. Contrasted with what?
 3. Which quantity shows it?
 4. Which form shows it?
 
@@ -148,11 +148,18 @@ One minute.
 
 Zelazny was McKinsey's director of visual communications, and the rule
 is the order of these four questions: the message decides what to
-compare, and that decides the chart. A chart chosen first
+contrast, and that decides the chart. A chart chosen first
 leaves the reader to find the message.
+
+To choose a form, the figure guide links the Financial Times *Visual
+Vocabulary*, a poster of chart types grouped by what they compare.
 :::
 
 ## One figure makes one point
+
+::: {.m11-q}
+Question 1: What is the message, in one sentence?
+:::
 
 ::: {.m11-under}
 - The analyst's message is that sales in the West pulled away after 2023.
@@ -163,19 +170,24 @@ leaves the reader to find the message.
 [As drawn]{.m11-tag}
 ![](figures/m11-regions-tangled.png){fig-alt="Twenty tangled colored lines of monthly sales from 2020 to 2025, with a twenty-entry legend."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [Redrawn]{.m11-tag}
 ![](figures/m11-regions-west.png){fig-alt="Two lines: the West in red rising steeply after 2023, and the average of the other 19 regions in grey, flatter."}
 :::
 :::
 
 ::: {.m11-under}
-- **No message.** Twenty lines show everything and compare nothing.
-- [**Solution**: write the message first, then draw only the numbers it compares.]{.solution}
+- **No message.** Twenty lines show everything and contrast nothing.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
+- [**Solution**: write the message first, then draw only the relevant numbers.]{.solution}
 :::
 
 ::: {.notes}
-Two minutes.
+Two minutes. On every problem slide from here on, ask how the room would
+fix it before you click. The click brings the redraw and the solution
+together.
 
 Ask the room what the first figure says. Most will say "sales go up and
 down". The analyst's message was that the West pulled away from the
@@ -189,6 +201,10 @@ pattern", the right figure would be different again.
 
 ## A change needs a comparison group
 
+::: {.m11-q}
+Question 2: Contrasted with what?
+:::
+
 ::: {.m11-under}
 - The chain reports sales in its loyalty-program regions after the launch.
 :::
@@ -198,14 +214,18 @@ pattern", the right figure would be different again.
 [As drawn]{.m11-tag}
 ![](figures/m11-loyalty-alone.png){fig-alt="One blue line of average monthly sales in the launch regions, rising steadily from January 2024."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [Redrawn]{.m11-tag}
 ![](figures/m11-loyalty-did.png){fig-alt="Launch regions in red and other regions in grey from 2023, with the launch in January 2024 marked; both rise after 2024 and the red line ends slightly higher."}
 :::
 :::
 
 ::: {.m11-under}
-- **No benchmark.** The other regions' sales rose too.
+- **No benchmark.** Sales rose, but the reader cannot tell compared with what.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
+- To emphasize change or growth, first decide what to contrast it with.
 - [**Solution**: add a comparison group and the period before the change.]{.solution}
 :::
 
@@ -228,6 +248,10 @@ Tufte's question for any quantitative display is "compared to what?"
 
 ## Money over time needs constant dollars
 
+::: {.m11-q}
+Question 3: Which quantity shows it?
+:::
+
 ::: {.m11-under}
 - The federal minimum wage rose from $0.75 an hour in 1950 to $7.25 in 2009.
 :::
@@ -237,14 +261,18 @@ Tufte's question for any quantitative display is "compared to what?"
 [As drawn]{.m11-tag}
 ![](figures/m11-minwage-nominal.png){fig-alt="A blue staircase rising from 75 cents in 1950 to 7.25 dollars after 2009."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [Redrawn]{.m11-tag}
 ![](figures/m11-minwage-real.png){fig-alt="The same wage in 2026 dollars in red, peaking at 15.73 dollars in 1968 and falling to 7.25; the nominal staircase in light grey below."}
 :::
 :::
 
 ::: {.m11-under}
-- **Nominal dollars** are dollars of each year. **Real dollars** are dollars of one base year.
+- **Nominal dollars** are dollars of each year, so the rise mixes pay with prices.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
+- **Real dollars** are dollars of one base year.
 - The redraw deflates by the consumer price index (CPI) to 2026 dollars.
 - [**Solution**: deflate money by a price index and name the base year.]{.solution}
 :::
@@ -260,32 +288,52 @@ the consumer price index for all urban consumers, it peaked in February
 1968 at $15.73 and has lost more than half its value since. Same data,
 opposite message.
 
-The choice of quantity decides what the reader compares. Nominal dollars
+The choice of quantity decides what the reader contrasts. Nominal dollars
 compare the number printed on the paycheck. Real dollars compare what it
 buys.
 :::
 
-## Four choices of quantity
+## Three other choices of quantity
 
-1. Nominal dollars or real dollars.
-2. Levels or an index to a base year.
-3. Two series or the gap between them.
-4. Counts or a rate per person.
+::: {.m11-q}
+Question 3: Which quantity shows it?
+:::
+
+::: {.m11-recap-plain style="font-size:0.74em"}
+| The choice | Use the second when the message is about | Example |
+|:---|:---|:-------|
+| Levels or an index | Growth | A small chain and a large chain, both set to 100 in 2020 |
+| Two series or the gap | The difference | A firm's revenue and costs, drawn as profit |
+| Counts or a rate | Risk or intensity | Car crashes by state, divided by miles driven |
+:::
+
+::: {.m11-under}
+- An **index** sets each series to 100 in one base year.
+- A **rate** divides a count by the number of people or the amount of exposure.
+:::
 
 ::: {.notes}
-One and a half minutes.
+One and a half minutes. Constant dollars was the first choice of
+quantity. These are three more, and each starts from the same data.
 
-Each pair answers a different question. Levels compare sizes; an index
-set to 100 in a base year compares growth. Two series show each one; the
-gap shows their difference, which is often the message (exports and
-imports against the trade balance). Counts compare totals; a rate per
-person compares risk or intensity, and a map of counts is usually a map
-of population.
+Levels show size, so the large chain always looks bigger. An index starts
+both chains at 100, so the reader sees which one grew faster.
 
-No figures here on purpose: session B has cases of each.
+Revenue and costs drawn as two lines make the reader subtract by eye.
+Profit draws the difference directly.
+
+Crash counts mostly show which states have the most traffic. Dividing by
+miles driven shows which roads are riskier, and a map of counts is usually
+a map of population.
+
+Session B has cases of the gap and the rate.
 :::
 
 ## An average needs the data behind it
+
+::: {.m11-q}
+Question 4: Which form shows it?
+:::
 
 ::: {.m11-under}
 - The chain compares the average basket in its two store formats.
@@ -296,14 +344,18 @@ No figures here on purpose: session B has cases of each.
 [As drawn]{.m11-tag}
 ![](figures/m11-basket-bars.png){fig-alt="Two grey bars of almost equal height, about 43 dollars each, for neighborhood stores and superstores."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [Redrawn]{.m11-tag}
 ![](figures/m11-basket-dots.png){fig-alt="Every customer visit as a dot. Neighborhood stores form one cloud around 43 dollars. Superstores form two clouds, near 20 and near 67 dollars, with the mean between them where few customers are."}
 :::
 :::
 
 ::: {.m11-under}
-- **A bar of means hides the distribution.** Superstore customers come in two groups.
+- **A bar of means hides the distribution.**
+:::
+
+::: {.m11-under .fragment fragment-index=1}
+- Superstore customers come in two groups.
 - [**Solution**: show the data points, or the distribution, with the mean marked.]{.solution}
 :::
 
@@ -324,55 +376,46 @@ physiology journals from early 2014: 85.6% used bar graphs and 13.4%
 showed the individual data points.
 :::
 
-## Solutions for what to compare
-
-::: {.m11-recap style="font-size:0.74em"}
-| | Question | Problem | Solution |
-|:-|:--------|:--------|:--------------------|
-| 1 | What is the message? | Everything shown, nothing compared | Write the message first, then draw only the numbers it compares |
-| 2 | Compared with what? | No benchmark | Add a comparison group and the period before |
-| 3 | Which quantity? | Nominal, levels, two series or counts | Choose real dollars, an index, the gap or a rate when the message needs it |
-| 4 | Which form? | A bar of means | Show the data points or the distribution |
-:::
-
-::: {.notes}
-One minute.
-
-To choose a form, the figure guide links the Financial Times *Visual
-Vocabulary*, a poster of chart types grouped by what they compare.
-:::
-
 # 2. Encode it for the eye
 
 ::: {.notes}
-Fourteen minutes for the section.
+Thirteen minutes for the section.
 :::
 
-## Two kinds of reading error
+## Readers can misread a chart in two ways
 
-![](figures/m11-reading-error.png){width=100% fig-alt="Two strips of reader estimates of a value of 50. On the left the estimates scatter widely around 50. On the right they cluster tightly around 63, away from the true value."}
+::: {.m11-under}
+- **Encoding** translates numbers into positions, lengths, angles, areas or colors.
+- Each of those is a **channel**: a visual property that stands for a number. A longer bar is a larger value.
+- A reader has to translate the marks back into numbers, and that can go wrong in two ways.
+:::
 
-- **Encoding** turns numbers into positions, lengths, angles, areas or colors.
-- An **imprecise** reading scatters around the true value. Step 2 fixes it.
-- A **biased** reading moves away from it in one direction. Step 3 fixes it.
+![](figures/m11-reading-error.png){.nostretch width=100% fig-alt="An illustration with invented readers. Each dot is one reader's estimate of a value of 50. On the left the estimates scatter widely around 50. On the right they cluster tightly around 63, away from the true value."}
+
+::: {.m11-under}
+- An **imprecise** reading scatters around the truth, as with a pie of close shares. Step 2 fixes it.
+- A **biased** reading misses in one direction, as with a bar axis that skips zero. Step 3 fixes it.
+:::
 
 ::: {.notes}
-One and a half minutes.
+One and a half minutes. Start from the person looking at your chart. You
+translated numbers into marks, and that person has to translate the marks
+back into numbers. Everything in the next two sections is about whether that works.
 
-These are the same two words as for estimators in meetings 6 and 7. An
-imprecise reading is noisy: readers' estimates of a value scatter
-around the truth, so small differences get lost. A biased reading is
-systematic: readers' estimates move away from the truth in the same
-direction, so the figure tells them something false.
+The picture is an illustration with invented readers. Imagine 60 people
+each reading the same value, 50, off a chart. Each dot is one person's
+answer.
 
-This is the rule that separates the next two sections. Choosing a pie
-over dots makes readings imprecise. Cutting a bar axis makes them
-biased.
+On the left the answers are noisy. They center on the truth, but small
+differences get lost. On the right the answers agree with each other and
+all miss in the same direction, so the chart tells people something false.
+
+These are the same two words as for estimators in meetings 6 and 7. This
+is also the rule that separates the next two sections. Choosing a pie over
+dots makes readings imprecise. Cutting a bar axis makes them biased.
 :::
 
 ## Four questions about encoding
-
-- A **channel** is the visual property that carries a number.
 
 1. Are the compared values on a common scale?
 2. Does the channel match the data?
@@ -380,13 +423,24 @@ biased.
 4. Do the points hide each other?
 
 ::: {.notes}
-Half a minute. A channel is the visual property that carries the
-number: position, length, angle, area, color.
+Half a minute. Channel was defined on the last slide: the visual
+property that stands for the number. Question 2 asks whether the
+channel suits the kind of data: an ordered scale for ordered values, a
+line only along an ordered axis.
+
+Question 4 has no slide today, so say it in a sentence. When thousands of
+points overlap, the plot hides how many lie where. A binned scatter plots
+the mean of y within equal-count bins of x. The figure guide has it, with
+the reference.
 :::
 
 ## Readers judge position most accurately
 
-![](figures/m11-channels.png){width=100% fig-alt="The values 40 and 60 drawn five ways: as two dots on a common scale, two bars not aligned, two pie wedges, two circles and two shades of red. An arrow runs from more accurately read to less accurately read."}
+::: {.m11-q}
+Question 1: Are the compared values on a common scale?
+:::
+
+![](figures/m11-channels.png){width=100% fig-alt="The values 40 and 60 drawn five ways in five equal cells: two dots on a common scale, two bars with different baselines, two pie wedges of 40 and 60 percent, two circles with areas in that ratio, and two squares of lighter and darker red. An arrow runs from more accurately read to less accurately read."}
 
 ::: {style="font-size:0.66em"}
 - Cleveland and McGill asked people what percent one marked value was of another.
@@ -421,6 +475,10 @@ geography. The next slides apply the ranking.
 
 ## Values compare best along one axis
 
+::: {.m11-q}
+Question 1: Are the compared values on a common scale?
+:::
+
 ::: {.m11-under}
 - Seven invented grocery chains split one region's sales.
 :::
@@ -430,7 +488,7 @@ geography. The next slides apply the ranking.
 [As drawn]{.m11-tag}
 ![](figures/m11-shares-pie.png){fig-alt="A pie chart of seven similar slices in seven colors with a legend."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [Redrawn]{.m11-tag}
 ![](figures/m11-shares-dots.png){fig-alt="A sorted dot plot of the seven chains' shares, from Basket Bros at 19 percent to FoodWay at 9 percent."}
 :::
@@ -438,6 +496,9 @@ geography. The next slides apply the ranking.
 
 ::: {.m11-under}
 - **Angle and area** make close shares hard to rank.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
 - [**Solution**: put the values on one common axis, sorted.]{.solution}
 :::
 
@@ -455,6 +516,10 @@ sizes. With seven similar shares it hides the differences.
 
 ## Ordered values need an ordered color scale
 
+::: {.m11-q}
+Question 2: Does the channel match the data?
+:::
+
 ::: {.m11-under}
 - A map shows [unemployment rates](https://cran.r-project.org/package=maps) for every county in the lower 48 states.
 :::
@@ -464,7 +529,7 @@ sizes. With seven similar shares it hides the differences.
 [As drawn]{.m11-tag}
 ![](figures/m11-unemp-rainbow.png){fig-alt="A county map of the United States colored with a rainbow scale from dark blue through cyan, green and yellow to dark red, with sharp color bands."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [Redrawn]{.m11-tag}
 ![](figures/m11-unemp-sequential.png){fig-alt="The same map in shades of one blue, light for low unemployment and dark for high."}
 :::
@@ -472,6 +537,9 @@ sizes. With seven similar shares it hides the differences.
 
 ::: {.m11-under}
 - **A rainbow scale** has no order, and its hue changes draw false borders.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
 - Borkin and coauthors tested artery images used to diagnose heart disease.
 - Viewers found 39% of problem areas in rainbow images and 91% in two-color ones.
 - [**Solution**: use a scale that runs light to dark for ordered values.]{.solution}
@@ -500,6 +568,10 @@ https://doi.org/10.1364/JOSAA.29.000313).
 
 ## Many series read best as small multiples
 
+::: {.m11-q}
+Question 3: Are the compared items next to each other?
+:::
+
 ::: {.m11-under}
 - The chart shows [median home prices](https://ggplot2.tidyverse.org/reference/txhousing.html) in ten Texas cities from 2000 to 2014.
 :::
@@ -509,7 +581,7 @@ https://doi.org/10.1364/JOSAA.29.000313).
 [As drawn]{.m11-tag}
 ![](figures/m11-tx-tangled.png){fig-alt="Six colored lines of median sale prices in one panel, with a legend."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [Redrawn]{.m11-tag}
 ![](figures/m11-tx-multiples.png){fig-alt="Six small panels, one per city, each showing that city's prices in red with the other five cities in light grey behind."}
 :::
@@ -517,6 +589,9 @@ https://doi.org/10.1364/JOSAA.29.000313).
 
 ::: {.m11-under}
 - **Many series in one panel** make each line hard to follow.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
 - **Small multiples** give each series its own small panel on shared axes.
 - Javed and coauthors found them faster for comparisons across a long period.
 - [**Solution**: draw small multiples when each series has its own story.]{.solution}
@@ -541,30 +616,10 @@ Schwabish (2014) makes the same redraw for a published chart of
 disability awards by cause, 1975 to 2010.
 :::
 
-## Solutions for encoding
-
-::: {.m11-recap style="font-size:0.74em"}
-| | Question | Problem | Solution |
-|:-|:--------|:--------|:--------------------|
-| 1 | Common scale? | Angle and area | Put the values on one axis, sorted |
-| 2 | Channel matches the data? | A rainbow scale for ordered values | Use one hue, light to dark |
-| 3 | Compared items together? | Many series in one panel | Draw small multiples on shared axes |
-| 4 | Points hide each other? | Thousands of points merge into a blot | Make points transparent and add the mean of y within bins of x |
-:::
-
-::: {.notes}
-One minute.
-
-Question 4 has no slide today, so say it in a sentence. When thousands
-of points overlap, the plot hides how many lie where. A binned scatter
-plots the mean of y within equal-count bins of x. The figure guide has
-it, with the reference.
-:::
-
 # 3. Keep it faithful
 
 ::: {.notes}
-Eighteen minutes for the section.
+Seventeen minutes for the section.
 :::
 
 ## Four questions about faithfulness
@@ -580,6 +635,10 @@ away believing something the numbers do not say.
 :::
 
 ## Truncated axes make a change look more serious
+
+::: {.m11-q}
+Question 1: Does the scale match the quantity?
+:::
 
 - Correll, Bertini and Franconeri ran three online experiments.
 - Readers rated how serious a change looked, on a scale from 1 to 5.
@@ -606,6 +665,10 @@ separate experiment with crowd workers.
 
 ## Bars start at zero
 
+::: {.m11-q}
+Question 1: Does the scale match the quantity?
+:::
+
 ::: {.m11-under}
 - In July 2012 Fox Business showed the top income tax rate if the 2001 tax cuts expired.
 :::
@@ -615,7 +678,7 @@ separate experiment with crowd workers.
 [As drawn: axis from 34%]{.m11-tag}
 ![](figures/m11-fox-truncated.png){fig-alt="Two bars on an axis starting at 34 percent: 35 percent now, short and grey, and 39.6 percent on January 1, 2013, red and more than five times taller."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [Redrawn from zero]{.m11-tag}
 ![](figures/m11-fox-zero.png){fig-alt="The same two bars on an axis from zero: 35 and 39.6 percent, similar heights."}
 :::
@@ -624,6 +687,9 @@ separate experiment with crowd workers.
 ::: {.m11-under}
 - **A truncated bar** drew a 4.6-point rise as a bar 5.6 times taller.
 - In 2015 the Obama White House drew graduation rates as books with no axis.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
 - [**Solution**: start bars at zero, or show the values as dots.]{.solution}
 :::
 
@@ -652,16 +718,40 @@ growth rate has no natural zero to show.
 
 ## Readers misread COVID-19 deaths on a log scale
 
-- In April 2020, 2,074 Americans saw a chart of cumulative US COVID-19 deaths.
-- Half saw it on a linear scale, half on a log scale, at random.
-- The log group read the trend less accurately and forecast worse.
-- The log group also wanted businesses reopened sooner.
+::: {.m11-q}
+Question 1: Does the scale match the quantity?
+:::
+
+::: {.m11-under}
+- In April 2020, 2,074 Americans saw this chart, half on each scale, at random.
+:::
+
+::: {.m11-pair}
+::: {.before}
+[Log scale]{.m11-tag}
+![](figures/m11-covid-log.png){fig-alt="Cumulative US COVID-19 deaths from March to April 2020 on a log scale, rising steeply in March and bending toward flat in April, with gridlines at 1, 10, 100, 1,000, 10,000 and 100,000."}
+:::
+::: {.after .fragment fragment-index=1}
+[Linear scale]{.m11-tag}
+![](figures/m11-covid-linear.png){fig-alt="The same deaths on a linear scale from 0 to 75,000, near zero through March and then rising steeply through April to about 67,000."}
+:::
+:::
+
+::: {.m11-under}
+- The log group read the trend less accurately, forecast worse, and wanted businesses reopened sooner.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
 - [**Solution**: use a linear scale for a general reader.]{.solution}
+:::
 
 [Romano, Sotis, Dominioni and Guidi (2020), "The scale of COVID-19 graphs affects understanding, attitudes, and policy preferences", *Health Economics* 29(11).](https://doi.org/10.1002/hec.4143){style="font-size:0.55em; color:#6b6b6b"}
+[Redrawn from the Johns Hopkins University daily counts, CC BY 4.0.](https://github.com/CSSEGISandData/COVID-19){style="font-size:0.55em; color:#6b6b6b"}
 
 ::: {.notes}
-Two minutes.
+Two minutes. Ask the room which chart looks more alarming before the
+click. Both draw the same Johns Hopkins counts, March 1 to April 30,
+2020: about 67,000 deaths by the end of April.
 
 A log scale shows equal percentage changes as equal distances, so it is
 the right scale for growth rates. Most readers do not know that. In this
@@ -678,6 +768,10 @@ is ten times the last.
 
 ## Two periods belong on one scale
 
+::: {.m11-q}
+Question 2: Do the window and the sample favor the message?
+:::
+
 ::: {.m11-under}
 - A chart shared in February 2014 overlaid the 1929 Dow on 2012–14 to warn of a crash.
 :::
@@ -687,15 +781,18 @@ is ten times the last.
 [The overlay's method]{.m11-tag}
 ![](figures/m11-overlay-two-axes.png){fig-alt="Two lines on two y-axes: the S&P index in 1927 to 1929 in black, peaking and crashing, and 2012 to 2014 in red on its own right-hand axis, tracking the black line closely until month 26."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [One scale, the full period]{.m11-tag}
 ![](figures/m11-overlay-one-scale.png){fig-alt="Both periods indexed to 100 in their first month on one axis. The 1927 to 1929 line rises to 234 before crashing; the 2012 to 2015 line rises to about 160 and does not crash."}
 :::
 :::
 
 ::: {.m11-under}
-- Both panels redraw it with the S&P composite stock index from 1927 and from 2012.
+- This redraw uses the S&P composite stock index from 1927 and from 2012.
 - **Two y-axes** let the author set where the lines meet. **A chosen window** lines them up.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
 - [**Solution**: put compared periods on one scale, over the full period.]{.solution}
 :::
 
@@ -724,6 +821,10 @@ the mechanism is enough.
 
 ## Estimates need their intervals
 
+::: {.m11-q}
+Question 3: Is the uncertainty shown?
+:::
+
 ::: {.m11-under}
 - The chain estimates the loyalty program's effect in each of its 8 launch regions.
 :::
@@ -733,16 +834,20 @@ the mechanism is enough.
 [As drawn]{.m11-tag}
 ![](figures/m11-effects-points.png){fig-alt="Eight dots, one per region, all but one to the right of zero, sorted from Bay at 3.1 percent to River at minus 0.4 percent."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [Redrawn]{.m11-tag}
 ![](figures/m11-effects-ci.png){fig-alt="The same eight dots with grey horizontal bars for 95 percent confidence intervals; four of the eight cross zero."}
 :::
 :::
 
 ::: {.m11-under}
+- **Uncertainty left out**: the reader cannot tell which effects differ from zero.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
 - A **95% confidence interval** (CI) covers the true effect in 95% of samples.
 - An **error bar** shows a standard error or a confidence interval.
-- **Uncertainty left out**: four of the eight intervals include zero.
+- Four of the eight intervals include zero.
 - [**Solution**: draw each interval, and say in the caption which interval it is.]{.solution}
 :::
 
@@ -767,17 +872,40 @@ confusing readers.
 
 ## A causal title needs a causal design
 
-- In 2012 a cardiologist plotted chocolate eaten per person against Nobel laureates per 10 million people.
-- Across about two dozen countries the correlation was 0.79.
-- The piece's title paired chocolate with cognitive function.
-- Several news outlets reported the correlation as cause and effect.
-- **A causal title on a correlation** claims more than the figure shows.
-- [**Solution**: title the association, and leave causal claims to a design.]{.solution}
+::: {.m11-q}
+Question 4: Does the title claim only what the figure shows?
+:::
 
-[Messerli (2012), "Chocolate consumption, cognitive function, and Nobel laureates", *New England Journal of Medicine* 367(16).](https://doi.org/10.1056/NEJMon1211064){style="font-size:0.55em; color:#6b6b6b"}
+::: {.m11-under}
+- In 2012 a cardiologist plotted chocolate against Nobel laureates for 23 countries.
+:::
+
+::: {.m11-pair}
+::: {.before}
+[The title the news gave it]{.m11-tag}
+![](figures/m11-chocolate-causal.png){fig-alt="A scatter of 23 invented points with a fitted line rising from left to right, titled Eating chocolate makes a country smarter, with a subtitle saying the points are invented in the pattern of Messerli 2012."}
+:::
+::: {.after .fragment fragment-index=1}
+[The title the figure supports]{.m11-tag}
+![](figures/m11-chocolate-assoc.png){fig-alt="The same scatter, titled Countries that eat more chocolate have more Nobel laureates."}
+:::
+:::
+
+::: {.m11-under}
+- The correlation was 0.79, and several news outlets reported it as cause and effect.
+- **A causal title on a correlation** claims more than the figure shows.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
+- [**Solution**: title the association, and leave causal claims to a design.]{.solution}
+:::
+
+[Messerli (2012), "Chocolate consumption, cognitive function, and Nobel laureates", *New England Journal of Medicine* 367(16).](https://doi.org/10.1056/NEJMon1211064){style="font-size:0.55em; color:#6b6b6b"} The paper's figure is behind a paywall; the points here are invented in its pattern.
 
 ::: {.notes}
-Two minutes.
+Two minutes. The points are invented, and the chart says so, because
+the paper's figure cannot be reproduced here. The pattern is the paper's:
+23 countries, r about 0.8, a few chocolate-loving countries at the top.
 
 Franz Messerli published this as an "Occasional Notes" piece, not a
 peer-reviewed study. Chocolate consumption came from industry data and
@@ -793,33 +921,13 @@ states what the figure shows. A title such as "Chocolate makes
 countries smarter" needs a design from meetings 8 and 9.
 :::
 
-## Solutions for faithfulness
-
-::: {.m11-recap style="font-size:0.74em"}
-| | Question | Problem | Solution |
-|:-|:--------|:--------|:--------------------|
-| 1 | Scale matches the quantity? | A truncated bar or a log scale | Start bars at zero; use a linear scale for a general reader |
-| 2 | Window and sample favor the message? | Two y-axes and a chosen window | One scale over the full period |
-| 3 | Uncertainty shown? | Estimates without intervals | Draw the interval and name it |
-| 4 | Title supported? | A causal title on a correlation | Title the association |
-:::
+# 4. Make it stand alone
 
 ::: {.notes}
-One minute.
-
-Two cases from the critique cards also belong here: a total that rises
-while every region falls (meeting 2's Berkeley admissions case is the
-same reversal), and a sample that loses its failures over time, such as
-fund returns averaged over surviving funds only.
+Twelve minutes for the section.
 :::
 
-# 4. Finish it for the reader
-
-::: {.notes}
-Thirteen minutes for the section.
-:::
-
-## Four questions about finishing
+## Four questions about standing alone
 
 1. Does the title state the finding?
 2. Does every mark carry information?
@@ -837,6 +945,10 @@ figures in it. It is free and short, and it is the reading for today.
 :::
 
 ## Readers remember the message in the title
+
+::: {.m11-q}
+Question 1: Does the title state the finding?
+:::
 
 - Kong, Liu and Karahalios showed 104 Americans charts on refugees and the defense budget.
 - Each chart's two series supported opposite sides. The title took one side.
@@ -870,12 +982,16 @@ chocolate slide).
 
 ## The title states the finding
 
+::: {.m11-q}
+Question 1: Does the title state the finding?
+:::
+
 ::: {.m11-pair}
 ::: {.before}
 [Label title]{.m11-tag}
 ![](figures/m11-title-label.png){fig-alt="A line rising from 18 to 27 percent between 2019 and 2025, titled Private-label share of sales, 2019 to 2025."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [Finding title]{.m11-tag}
 ![](figures/m11-title-claim.png){fig-alt="The same line, titled Private-label products rose to 27 percent of sales."}
 :::
@@ -883,21 +999,31 @@ chocolate slide).
 
 ::: {.m11-under}
 - **A label title** names the variables and leaves the finding to the reader.
+- Academic papers mostly use label titles, like the left panel, and state the finding in the text.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
+- For a general audience, in a talk, the finding goes in the figure title, or in the slide title.
 - [**Solution**: write the finding as the title, and put the variables in the subtitle.]{.solution}
 :::
 
 ::: {.notes}
 One and a half minutes.
 
-Meeting 10 made the same point for papers: a title that states the
-result reaches the readers who read nothing else. In a talk, meeting 12
-asks for the same of slide titles.
-
-In a journal the figure title is often replaced by a caption, and the
-caption's first sentence does this job.
+Journals mostly print label titles, or a caption that starts with one,
+and the finding sits in the text. That convention is fine for a reader
+who will read the text. A room will not, and neither will a manager who
+looks only at the figure. For them, write the finding on the figure,
+and in a talk the slide title can carry it, as meeting 12 asks of every
+slide. Meeting 10 made the same point for paper titles: a title that
+states the result reaches the readers who read nothing else.
 :::
 
 ## Every mark should carry information
+
+::: {.m11-q}
+Question 2: Does every mark carry information?
+:::
 
 ::: {.m11-under}
 - The message is that Austin's home sales recovered fastest after 2011.
@@ -908,7 +1034,7 @@ caption's first sentence does this job.
 [As drawn]{.m11-tag}
 ![](figures/m11-clutter-before.png){fig-alt="Five colored lines with point markers on a grey panel with heavy gridlines and a black border. The legend lists codes AUS, DAL, FTW, HOU and SA. The axes are labelled yr and sales_n."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [Redrawn]{.m11-tag}
 ![](figures/m11-clutter-after.png){fig-alt="The same five lines in grey with the city names at their ends, Austin in red, light gridlines, and the axis labelled homes sold per year in thousands."}
 :::
@@ -916,6 +1042,9 @@ caption's first sentence does this job.
 
 ::: {.m11-under}
 - **Clutter** is every mark that carries no data: heavy gridlines, a border, markers and codes.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
 - [**Solution**: delete what carries no data, label lines directly, and highlight one.]{.solution}
 :::
 
@@ -939,6 +1068,10 @@ abbreviations defined fifteen pages before the figure.
 
 ## The caption lets the figure stand alone
 
+::: {.m11-q}
+Question 3: Does the caption let the figure stand alone?
+:::
+
 ::: {.columns}
 ::: {.column width="55%"}
 ![](figures/m11-effects-ci.png){width=100% fig-alt="The eight regional effect estimates with their 95 percent confidence intervals."}
@@ -948,13 +1081,13 @@ abbreviations defined fifteen pages before the figure.
 Figure 3: Effects.
 :::
 
-::: {.m11-caption .fragment}
+::: {.m11-caption .fragment fragment-index=1}
 Figure 3: The loyalty program's estimated effect on monthly sales, in percent, in each of the 8 regions that launched it in January 2024. Each dot compares the change in that region's sales with the change in the 12 regions that did not launch, from 2023 to January 2024–June 2025. Bars are 95% confidence intervals. Source: the chain's store sales.
 :::
 :::
 :::
 
-::: {.m11-under}
+::: {.m11-under .fragment fragment-index=1}
 - [**Solution**: give the source, the unit, the sample, the comparison and the interval.]{.solution}
 :::
 
@@ -971,12 +1104,16 @@ The first caption is what most drafts have.
 
 ## A slide needs its own version of the figure
 
+::: {.m11-q}
+Question 4: Does it fit the page or the slide?
+:::
+
 ::: {.m11-pair}
 ::: {.before}
 [The paper's figure]{.m11-tag}
 ![](figures/m11-medium-paper.png){fig-alt="A four-panel figure in very small type: sales, customers, basket and gross margin by quarter for launch and other regions, with a legend at the bottom."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [The slide's figure]{.m11-tag}
 ![](figures/m11-medium-slide.png){fig-alt="One panel, sales per region by quarter, in large type, with launch regions in red and other regions in grey labelled at their ends and the launch marked."}
 :::
@@ -984,6 +1121,9 @@ The first caption is what most drafts have.
 
 ::: {.m11-under}
 - **A paper's figure on a slide** has type too small and panels too many for the room.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
 - [**Solution**: redraw for the slide with one panel, large type and direct labels.]{.solution}
 :::
 
@@ -995,21 +1135,6 @@ sees a slide for a minute, from ten meters away. Keep the one panel the
 slide's claim needs, double the type, label the lines directly, and
 mark the event. The other panels go to a backup slide. Meeting 12 takes
 this further.
-:::
-
-## Solutions for finishing
-
-::: {.m11-recap style="font-size:0.74em"}
-| | Question | Problem | Solution |
-|:-|:--------|:--------|:--------------------|
-| 1 | Title states the finding? | A label title | Write the finding as the title |
-| 2 | Every mark informative? | Clutter and a coded legend | Delete what carries no data; label lines directly |
-| 3 | Caption stands alone? | "Figure 3: Effects" | Give source, unit, sample, comparison and interval |
-| 4 | Fits the medium? | A paper's figure on a slide | Redraw it for the slide |
-:::
-
-::: {.notes}
-One minute.
 
 One more check across figures: the same group keeps the same color in
 every figure of a document. If the launch regions are red in figure 2,
@@ -1019,7 +1144,7 @@ they are red in figure 5.
 # 5. Diagrams and builds
 
 ::: {.notes}
-Twelve minutes for the section.
+Eleven minutes for the section.
 :::
 
 ## A diagram shows how the parts of an idea connect
@@ -1090,7 +1215,7 @@ Half a minute.
 [As drawn]{.m11-tag}
 ![](figures/m11-diagram-arrows-before.png){fig-alt="Six boxes in a loop joined by identical black arrows: pilot in 2023, launch in 2024, visits, sales, scanner data, estimate."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [Redrawn]{.m11-tag}
 ![](figures/m11-diagram-arrows-after.png){fig-alt="The same six boxes. A grey arrow labelled comes before, two red arrows labelled causes, and two dashed blue arrows labelled is measured by and enters."}
 :::
@@ -1099,6 +1224,9 @@ Half a minute.
 ::: {.m11-under}
 - **Identical arrows** hide that these links mean four different things.
 - A causal arrow claims an effect, and a missing arrow claims there is none.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
 - [**Solution**: give each meaning its own style and label, and defend every causal arrow.]{.solution}
 :::
 
@@ -1125,6 +1253,9 @@ each one, because that is where a sharp question will land.
 
 ::: {.m11-under}
 - The room reads ahead while the speaker explains the first arrow.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
 - Mayer and Chandler taught students how lightning forms with a narrated animation.
 - Students who saw it in 16 short segments scored higher on new problems, a **transfer test**.
 - [**Solution**: reveal one piece for each sentence of the argument, and cut any piece no sentence uses.]{.solution}
@@ -1262,21 +1393,6 @@ United Nations statistics. These three frames are a redraw: the axes,
 are worth watching before you give your own.
 :::
 
-## Solutions for diagrams
-
-::: {.m11-recap style="font-size:0.74em"}
-| | Question | Problem | Solution |
-|:-|:--------|:--------|:--------------------|
-| 1 | Parts the claim needs? | Every part of the project drawn | Cut any part no sentence uses |
-| 2 | One meaning per arrow style? | Identical arrows with different meanings | Give each meaning its own style and label |
-| 3 | Every arrow defended? | An arrow or a gap nobody can justify | Defend each causal arrow and each missing one |
-| 4 | Builds in order? | The whole diagram at once | Reveal one piece for each sentence |
-:::
-
-::: {.notes}
-One minute.
-:::
-
 # 6. Good charts and your proposal
 
 ::: {.notes}
@@ -1339,7 +1455,7 @@ reproducing it on a public site.
 [The data you have]{.m11-tag}
 ![](figures/m11-proposal-data.png){fig-alt="Average monthly sales per region in 2023, before the launch: launch regions in red and other regions in grey, moving together around 10 million dollars."}
 :::
-::: {.after .fragment}
+::: {.after .fragment fragment-index=1}
 [A mock of the result]{.m11-tag}
 ![](figures/m11-proposal-mock.png){fig-alt="Two panels marked MOCK, invented numbers. Each plots the estimated effect by month from the launch with intervals. In the first, labelled if the program works, the effect rises to about 1.5 percent after the launch. In the second, labelled if it does not, the effect stays near zero."}
 :::
@@ -1347,6 +1463,9 @@ reproducing it on a public site.
 
 ::: {.m11-under}
 - The conceptual model takes a causal graph, and the method takes a design diagram.
+:::
+
+::: {.m11-under .fragment fragment-index=1}
 - A **mock result** draws the figure you expect to make, with invented numbers, for each outcome.
 - [**Solution**: draw the data you have, and print "mock" on every invented figure.]{.solution}
 :::
@@ -1376,10 +1495,10 @@ without their label.
 
 ::: {.m11-steps}
 ::: {.m11-step}
-**1. Decide what to compare**
+**1. Decide what to contrast**
 
 1. What is the message?
-2. Compared with what?
+2. Contrasted with what?
 3. Which quantity?
 4. Which form?
 :::
@@ -1400,7 +1519,7 @@ without their label.
 4. Is the title supported?
 :::
 ::: {.m11-step}
-**4. Finish it for the reader**
+**4. Make it stand alone**
 
 1. Does the title state the finding?
 2. Does every mark carry information?

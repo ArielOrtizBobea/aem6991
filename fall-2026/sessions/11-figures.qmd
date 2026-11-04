@@ -37,7 +37,7 @@ format:
 
 ## Session A · 2:00–3:15
 
-Visualizations have two jobs. Exploratory ones are for the author: many, quick and rough, made to understand the data and catch errors (meeting 5). Explanatory ones are for a reader or a room: few and finished, each making one point. This meeting is about the second kind. A chart for a reader makes one point by showing numbers side by side, and the point stands out by contrast with something else. It is built in four steps. First, decide what to contrast: the message in one sentence, the benchmark it needs, the quantity (nominal or real, levels or an index, counts or a rate) and the form. Second, encode it for the eye: readers judge positions on a common scale more accurately than lengths, angles, areas or colors, so ordered values need an ordered color scale and many series read best as small multiples. Third, keep it faithful: bars start at zero, two periods belong on one scale, estimates carry their intervals, and a causal title needs a causal design. Fourth, make it stand alone: the title states the finding, every mark carries information, the caption lets the figure stand alone, and a slide gets its own version. Each step is shown with a figure drawn badly and redrawn, many of them published, and with the experiments that measured how readers read them. Then diagrams, which show how the parts of an idea connect: a causal graph, a research design, a data pipeline. Every arrow in a diagram is a claim, so each meaning gets its own arrow style. And a talk builds a complex diagram one piece at a time, with one sentence for each piece, so the room follows the argument instead of reading ahead. The meeting closes with two published charts that work, and with what a proposal can draw before it has results: the data, the design and a labelled mock of the result.
+Visualizations have two jobs. Exploratory ones are for the author: many, quick and rough, made to understand the data and catch errors (meeting 5). Explanatory ones are for a reader or a room: few and finished, each making one point. This meeting is about the second kind. A chart for a reader makes one point by showing numbers side by side, and the point stands out by contrast with something else. It is built in four steps. First, decide what to contrast: the message in one sentence, the benchmark it needs, the quantity (nominal or real, levels or an index, counts or a rate) and the form. Second, encode it for the eye: readers judge positions on a common scale more accurately than lengths, angles, areas or colors, so ordered values need an ordered color scale and many series read best as small multiples. Third, keep it faithful: bars start at zero, two periods belong on one scale, estimates carry their intervals, and a causal title needs a causal design. Fourth, make it stand alone: the title states the finding, every mark carries information, the caption lets the figure stand alone, and a slide gets its own version. Each step is shown with a figure drawn badly and redrawn, many of them published, and with the experiments that measured how readers read them. Then diagrams, which show how the parts of an idea connect: a causal graph, a research design, a data pipeline. Every arrow in a diagram is a claim, so each meaning gets its own arrow style. And a talk builds a complex diagram one piece at a time, with one sentence for each piece, so the room follows the argument instead of reading ahead. The meeting closes with two published charts that work, and with what a proposal can draw before it has results: the design and the data it already has.
 
 ## Session B · 3:30–4:30
 
@@ -950,22 +950,39 @@ figures in it. It is free and short, and it is the reading for today.
 Question 1: Does the title state the finding?
 :::
 
-- Kong, Liu and Karahalios showed 104 Americans charts on refugees and the defense budget.
-- Each chart's two series supported opposite sides. The title took one side.
-- 77 of the 101 messages people recalled matched the title.
-- About 80% rated the chart neutral, whatever its title said.
-- Borkin and coauthors tracked viewers' eyes on 393 published charts.
-- Viewers restated the title in 46% of their descriptions.
+::: {.m11-under}
+- Kong, Liu and Karahalios showed 104 Americans this chart, each with one of its two titles.
+:::
 
-[Kong, Liu and Karahalios (2018), "Frames and slants in titles of visualizations on controversial topics", Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI).](https://doi.org/10.1145/3173574.3174012){style="font-size:0.55em; color:#6b6b6b"}
-[Borkin et al. (2016), "Beyond memorability", *IEEE Transactions on Visualization and Computer Graphics* 22(1).](https://doi.org/10.1109/TVCG.2015.2467732){style="font-size:0.55em; color:#6b6b6b"}
+::: {.m11-pair}
+::: {.before}
+[Title for one side]{.m11-tag}
+![](figures/m11-refugees-a.png){fig-alt="Two bar charts of Syrian refugees accepted by ten non-neighboring countries, as a count and as a share of host population, with the U.S. in red. Germany leads both; the U.S. is third in count at 16 thousand and last in share at 0.005 percent. Titled U.S. has accepted a lower percentage of Syrian refugees than the U.K., Spain, Finland, and Australia."}
+:::
+::: {.before .fragment fragment-index=1}
+[Title for the other side]{.m11-tag}
+![](figures/m11-refugees-b.png){fig-alt="The same two bar charts, titled U.S. has accepted more Syrian refugees than the U.K., Italy, Russia, and Finland combined."}
+:::
+:::
+
+::: {.m11-under}
+- 77 of 101 recalled messages matched the title, and about 80% called the chart neutral either way.
+- Borkin and coauthors tracked eyes on 393 charts; viewers restated the title in 46% of descriptions.
+:::
+
+[Kong, Liu and Karahalios (2018), "Frames and slants in titles of visualizations on controversial topics", Proceedings of CHI.](https://doi.org/10.1145/3173574.3174012){style="font-size:0.55em; color:#6b6b6b"}
+[Borkin et al. (2016), "Beyond memorability", *IEEE Transactions on Visualization and Computer Graphics* 22(1).](https://doi.org/10.1109/TVCG.2015.2467732){style="font-size:0.55em; color:#6b6b6b"} Chart redrawn from the study's Figure 1a, data from UNHCR, April 2017.
 
 ::: {.notes}
 Two minutes.
 
 Each participant saw two charts, one on Syrian refugee admissions and
 one on the US defense budget. Each chart had two series that supported
-opposite policy positions, and a title slanted toward one. Asked later
+opposite policy positions, and a title slanted toward one. The refugee
+chart is redrawn here from the numbers on the study's own figure, which
+the authors adapted from a chart in *The Atlantic*. Both titles are the
+study's, word for word. Read them aloud, one before the click and one
+after: the chart does not change. Asked later
 what the chart said, most repeated the title's side. Most also judged
 the chart neutral, and their own attitudes did not change. A follow-up
 (2019) found the same when the title contradicted the chart.
@@ -1450,24 +1467,26 @@ reproducing it on a public site.
 
 ## A proposal has no estimates to plot
 
-::: {.m11-pair .m11-big}
-::: {.before}
-[The data you have]{.m11-tag}
-![](figures/m11-proposal-data.png){fig-alt="Average monthly sales per region in 2023, before the launch: launch regions in red and other regions in grey, moving together around 10 million dollars."}
+::: {.m11-under}
+- The conceptual model takes a causal graph, and the method takes a design diagram.
+- The data section can still show two things you already have.
 :::
-::: {.after .fragment fragment-index=1}
-[A mock of the result]{.m11-tag}
-![](figures/m11-proposal-mock.png){fig-alt="Two panels marked MOCK, invented numbers. Each plots the estimated effect by month from the launch with intervals. In the first, labelled if the program works, the effect rises to about 1.5 percent after the launch. In the second, labelled if it does not, the effect stays near zero."}
+
+::: {.m11-pair}
+::: {.before}
+[The sample]{.m11-tag}
+![](figures/m11-proposal-sample.png){fig-alt="A grid of 20 regions by month from January 2023 to June 2025. Eight regions turn red from January 2024, marked Launch; the other twelve stay grey throughout."}
+:::
+::: {.before}
+[The outcome before the launch]{.m11-tag}
+![](figures/m11-proposal-data.png){fig-alt="Average monthly sales per region in 2023, before the launch: launch regions in red and other regions in grey, moving together around 10 million dollars."}
 :::
 :::
 
 ::: {.m11-under}
-- The conceptual model takes a causal graph, and the method takes a design diagram.
-:::
-
-::: {.m11-under .fragment fragment-index=1}
-- A **mock result** draws the figure you expect to make, with invented numbers, for each outcome.
-- [**Solution**: draw the data you have, and print "mock" on every invented figure.]{.solution}
+- **The sample**: which units, which periods, and when the treatment arrives.
+- **The outcome before the treatment**: the comparison a difference-in-differences design rests on.
+- [**Solution**: draw the data you have, and leave the estimates to the final presentation.]{.solution}
 :::
 
 ::: {.notes}
@@ -1475,20 +1494,21 @@ Two minutes.
 
 The proposal due December 11 has headings for the conceptual model, the
 methodological approach, and data and access. Section 5 covers the first
-two. For the third, plot what you can already get. Here the launch and
-other regions moved together in 2023, which is the first thing a reader
-of a difference-in-differences proposal wants to see (meeting 9).
+two. For the third, plot what you can already get.
 
-The mock draws the figure you plan to make, before you have it. The
-syllabus asks whether your project could come out the other way, and this
-answers in a picture. Draw it once for each outcome. If the two panels
-would look the same, the design cannot tell them apart, and you want to
-learn that in November.
+The sample figure says what the data are: one row per region, one cell
+per month, red once the program is running. A reader sees the design
+at a glance, and so do you. It is meeting 9's grid with your own units.
 
-This mock is an event study, which estimates the effect period by period
-(meeting 9). Write "mock" inside the image, so a cropped copy still says
-it. Meeting 4's cases show what invented numbers cost when they travel
-without their label.
+The second figure plots the outcome before the treatment. Here the
+launch and other regions moved together in 2023, which is the first
+thing a reader of a difference-in-differences proposal wants to see
+(meeting 9). If they did not move together, you want to learn that in
+November.
+
+Do not draw results you do not have. A proposal with invented numbers
+in it reads as a result, however it is labelled, and meeting 4's cases
+show where made-up numbers end up.
 :::
 
 ## Four steps for every chart
@@ -1611,7 +1631,171 @@ start at 60 because readers compare positions.
 [Handouts: the critique cards and the figure guide, on this meeting's page.]{.src}
 
 ::: {.notes}
-Leave this slide up while teams work.
+Leave this slide up while teams work. The nine cards follow, one per
+slide, for the presentations: show the team's card, and click for the
+main fault once the room has had its say.
+:::
+
+## Card 1
+
+::: {.m11-q}
+Data: FRED, series BOPTEXP and BOPTIMP.
+:::
+
+![](figures/m11-card-1.png){.m11-card fig-alt="Monthly US exports and imports of goods and services from 2023 to 2026, two lines, imports above exports, titled The trade deficit is back to normal."}
+
+::: {.m11-under}
+- **The memo says:** *The two lines have moved together since 2023. The deficit is back where it was.*
+- **What is wrong, and at which step?** What is the figure entitled to claim?
+:::
+
+
+::: {.notes}
+The handout's card 1. The full key is in the planning notes.
+:::
+
+## Card 2
+
+::: {.m11-q}
+Invented complaints for an online retailer. State populations: FRED, 2025.
+:::
+
+![](figures/m11-card-2.png){.m11-card fig-alt="A map of an online retailer's customer complaints by state in 2025, darkest in California, Texas and Florida."}
+
+::: {.m11-under}
+- **The memo says:** *Most of our complaints come from three states. Send the service team there.*
+- **What is wrong, and at which step?** What would you divide by?
+:::
+
+
+::: {.notes}
+The handout's card 2. The full key is in the planning notes.
+:::
+
+## Card 3
+
+::: {.m11-q}
+A real chart, public domain. Source.
+:::
+
+![](figures/m11-real-eia-rigs.png){.m11-card fig-alt="A published stacked area chart of the US Lower 48 rig count from January 2021 to October 2025: crude oil in light blue at the bottom and natural gas in dark blue on top, with a peak of 750 rigs marked in December 2022."}
+
+::: {.m11-under}
+- **As published:** *U.S. Energy Information Administration, November 2025, on why rig counts remain low.*
+- **What can a reader not read, and at which step?** Did natural gas rigs rise or fall after 2024?
+:::
+
+
+::: {.notes}
+The handout's card 3. The full key is in the planning notes.
+:::
+
+## Card 4
+
+::: {.m11-q}
+A real chart, public domain. Source.
+:::
+
+![](figures/m11-real-usda-zones.jpg){.m11-card fig-alt="The published 2023 USDA Plant Hardiness Zone Map of the United States, colored in bands from purple and blue through green, yellow and orange to red, with a legend of 26 half-zones."}
+
+::: {.m11-under}
+- **As published:** *USDA and Oregon State University, 2023. Each color is a 5 °F band of the average coldest night of the year.*
+- **What is wrong, and at which step?** Who is the reader, and does the scale suit that reader?
+:::
+
+
+::: {.notes}
+The handout's card 4. The full key is in the planning notes.
+:::
+
+## Card 5
+
+::: {.m11-q}
+Invented data for the grocery chain.
+:::
+
+![](figures/m11-card-5.png){.m11-card fig-alt="Monthly sales and ad spending from 2022 to 2025 on two y-axes, a black line and a red dashed line that track each other, titled Our ad spending drives sales."}
+
+::: {.m11-under}
+- **The memo says:** *Sales track ad spending closely. A bigger ad budget will raise sales.*
+- **What is wrong, and at which step?** Two things, in fact.
+:::
+
+
+::: {.notes}
+The handout's card 5. The full key is in the planning notes.
+:::
+
+## Card 6
+
+::: {.m11-q}
+Invented data for the grocery chain.
+:::
+
+![](figures/m11-card-6.png){.m11-card fig-alt="Two panels. Left: the average basket per visit across all stores rising from 47.90 dollars in 2023 to 54.70 dollars in 2025. Right: the basket in neighborhood stores and in superstores, each falling slightly over the same years. Titled Customers are spending more per visit."}
+
+::: {.m11-under}
+- **The memo says:** *Customers spend more per visit every year. Our pricing strategy is working.*
+- **What is going on?** How can both panels be right?
+:::
+
+
+::: {.notes}
+The handout's card 6. The full key is in the planning notes.
+:::
+
+## Card 7
+
+::: {.m11-q}
+A real chart, public domain. Copy and discussion.
+:::
+
+![](figures/m11-real-cea-cubic.jpg){.m11-card fig-alt="A published chart titled United States Daily COVID-19 Deaths: Actual Data, IHME/UW Model Projections, and Cubic Fit, dated May 5, 2020. Black actual deaths peak near 2,500 a day. Dashed projections extend to August, and a red dashed cubic fit falls to zero in mid-May."}
+
+::: {.m11-under}
+- **As published:** *White House Council of Economic Advisers, May 5, 2020.*
+- **What is wrong, and at which step?** What is the cubic fit entitled to claim?
+:::
+
+
+::: {.notes}
+The handout's card 7. The full key is in the planning notes.
+:::
+
+## Card 8
+
+::: {.m11-q}
+Data: NASA GISTEMP v4 anomalies, added to the 1951–1980 mean of 57.2 °F.
+:::
+
+![](figures/m11-card-8.png){.m11-card fig-alt="Global average temperature from 1880 to 2025 as a nearly flat red line near 57 to 59 degrees Fahrenheit, on an axis from minus 10 to 110 degrees, titled Global temperature has barely changed since 1880."}
+
+::: {.m11-under}
+- **The memo says:** *Global temperature has hardly moved in 140 years.*
+- **What is wrong, and at which step?** What axis would match the quantity?
+:::
+
+
+::: {.notes}
+The handout's card 8. The full key is in the planning notes.
+:::
+
+## Card 9
+
+::: {.m11-q}
+Data: FRED, unemployment rates by education.
+:::
+
+![](figures/m11-card-9.png){.m11-card fig-alt="Four unemployment series from 2000 to 2026 on a grey panel with heavy gridlines, labelled by series codes, in red, green, dark green and orange, with axis titles DATE and value and the title Unemployment."}
+
+::: {.m11-under}
+- **The appendix says:** *Figure 4: Unemployment.*
+- **What is wrong, and at which step?** List everything a reader would need fixed.
+:::
+
+
+::: {.notes}
+The handout's card 9. The full key is in the planning notes.
 :::
 
 ::::

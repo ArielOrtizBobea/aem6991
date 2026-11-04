@@ -105,15 +105,17 @@ limits.
 
 ## Before you have results
 
-A proposal has no estimates to plot. It can still draw three things.
+A proposal has no estimates to plot. It can still draw three things,
+all from what you already have.
 
 - **The conceptual model**, as a causal graph.
-- **The data you have**: the sample, the outcome over time, and the
-  comparison group before the treatment.
-- **A mock result**, the figure you expect to make, with invented
-  numbers, drawn once for each way the result could come out. If the
-  drawings would look the same, the design cannot tell the outcomes
-  apart. Write "mock" inside the image, so a cropped copy still says it.
+- **The design**, as a diagram: which units get the treatment and when.
+- **The data**: the sample as a grid of units by period, and the
+  outcome before the treatment for the treated and the comparison
+  group.
+
+Do not draw results you do not have. Invented numbers in a proposal read
+as a result, however they are labelled.
 
 ## Checklist before you submit
 
@@ -133,7 +135,7 @@ A proposal has no estimates to plot. It can still draw three things.
 - [ ] Every slide figure has one panel and type the back row can read.
 - [ ] Every arrow in a diagram has one meaning, and you can defend it.
 - [ ] Every complex figure in a talk builds in the order of the argument.
-- [ ] Every mock figure says inside the image that its numbers are invented.
+- [ ] No figure in the proposal shows numbers you do not have.
 
 ## Further reading
 

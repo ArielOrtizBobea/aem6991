@@ -58,7 +58,7 @@ website:
           contents:
             - text: "10 Writing"
               href: fall-2026/sessions/10-writing.qmd
-            - text: "11 Figures"
+            - text: "11 Visualization"
               href: fall-2026/sessions/11-figures.qmd
             - text: "12 Speaking"
               href: fall-2026/sessions/12-speaking.qmd

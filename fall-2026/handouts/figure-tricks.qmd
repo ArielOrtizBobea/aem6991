@@ -14,7 +14,7 @@ page-layout: full
 .fc-card { border: 1px dashed #9a9a94; border-radius: 3px; padding: 0.12in 0.14in;
            break-inside: avoid; display: flex; flex-direction: column; }
 .fc-card .fc-n { font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: #b31b1b; font-weight: 700; }
-.fc-card img { display: block; width: 100%; max-height: 1.95in; object-fit: contain; margin: 0.04in 0 0.05in; }
+.fc-card img { display: block; width: 100%; max-height: 1.85in; object-fit: contain; margin: 0.04in 0 0.05in; }
 .fc-card .fc-memo { font-size: 0.74rem; line-height: 1.4; margin: 0 0 0.2rem; font-style: italic;
                     border-left: 3px solid #e3e3de; padding-left: 0.45rem; }
 .fc-card .fc-memo b { font-style: normal; font-weight: 600; color: #55554f; }
@@ -40,8 +40,9 @@ page-layout: full
 }
 </style>
 
-<p class="fc-note">Nine figures, each with something wrong in it. Three use
-real public data; six use invented data, labelled as such. Print, cut along
+<p class="fc-note">Nine figures, each with something wrong in it. Three are
+published charts, as printed. Three use real public data. Three use invented
+data, labelled as such. Print, cut along
 the dashed lines and deal one card per team. The last page is the critique
 sheet. The questions come from the <a href="figure-guide.qmd">figure
 guide</a>.</p>
@@ -67,18 +68,18 @@ guide</a>.</p>
 
   <div class="fc-card">
     <span class="fc-n">Card 3</span>
-    <img src="../sessions/figures/m11-card-3.png" alt="Stacked bars of the grocery chain's sales by department from 2021 to 2025: produce, dairy, bakery and prepared foods, the total rising each year, titled Every department grew.">
-    <p class="fc-memo"><b>The memo says:</b> Sales rose every year, and every department contributed.</p>
-    <p class="fc-src">Invented data for the grocery chain.</p>
-    <p class="fc-ask"><b>What is wrong, and at which step?</b> Can you check the claim from this figure?</p>
+    <img src="../sessions/figures/m11-real-eia-rigs.png" alt="A published stacked area chart of the US Lower 48 rig count from January 2021 to October 2025: crude oil in light blue at the bottom and natural gas in dark blue on top, with a peak of 750 rigs marked in December 2022.">
+    <p class="fc-memo"><b>As published:</b> U.S. Energy Information Administration, November 2025, on why rig counts remain low.</p>
+    <p class="fc-src">A real chart, public domain. <a href="https://www.eia.gov/todayinenergy/detail.php?id=66645">Source</a>.</p>
+    <p class="fc-ask"><b>What can a reader not read, and at which step?</b> Did natural gas rigs rise or fall after 2024?</p>
   </div>
 
   <div class="fc-card">
     <span class="fc-n">Card 4</span>
-    <img src="../sessions/figures/m11-card-4.png" alt="A line joining sales growth in ten departments listed alphabetically from bakery to produce, zigzagging up and down, titled Growth swings sharply from department to department.">
-    <p class="fc-memo"><b>The memo says:</b> Growth is volatile across the store. We need to smooth it.</p>
-    <p class="fc-src">Invented data for the grocery chain.</p>
-    <p class="fc-ask"><b>What is wrong, and at which step?</b> What does the line suggest that the data cannot?</p>
+    <img src="../sessions/figures/m11-real-usda-zones.jpg" alt="The published 2023 USDA Plant Hardiness Zone Map of the United States, colored in bands from purple and blue through green, yellow and orange to red, with a legend of 26 half-zones.">
+    <p class="fc-memo"><b>As published:</b> USDA and Oregon State University, 2023. Each color is a 5&nbsp;°F band of the average coldest night of the year.</p>
+    <p class="fc-src">A real chart, public domain. <a href="https://planthardiness.ars.usda.gov/">Source</a>.</p>
+    <p class="fc-ask"><b>What is wrong, and at which step?</b> Who is the reader, and does the scale suit that reader?</p>
   </div>
 
   <div class="fc-card">
@@ -103,10 +104,10 @@ guide</a>.</p>
 
   <div class="fc-card">
     <span class="fc-n">Card 7</span>
-    <img src="../sessions/figures/m11-card-7.png" alt="Stacked bars of product returns at five stores over 14 days, falling from left to right, titled Returns are falling every day.">
-    <p class="fc-memo"><b>The memo says:</b> Returns have fallen every day for two weeks.</p>
-    <p class="fc-src">Invented data for the grocery chain.</p>
-    <p class="fc-ask"><b>What is wrong, and at which step?</b> Read the axis labels.</p>
+    <img src="../sessions/figures/m11-real-cea-cubic.jpg" alt="A published chart titled United States Daily COVID-19 Deaths: Actual Data, IHME/UW Model Projections, and Cubic Fit, dated May 5, 2020. Black actual deaths peak near 2,500 a day. Dashed projections extend to August, and a red dashed cubic fit falls to zero in mid-May.">
+    <p class="fc-memo"><b>As published:</b> White House Council of Economic Advisers, May 5, 2020.</p>
+    <p class="fc-src">A real chart, public domain. <a href="https://ffund.github.io/intro-ml-tss21/notes/3-cubic-model">Copy and discussion</a>.</p>
+    <p class="fc-ask"><b>What is wrong, and at which step?</b> What is the cubic fit entitled to claim?</p>
   </div>
 
   <div class="fc-card">
@@ -138,10 +139,10 @@ guide</a>.</p>
   scores; disliking the picture does not.</p>
 
   <div class="fc-steps">
-    <div><b>1. Choose the comparison</b>
+    <div><b>1. Decide what to compare</b>
       <ol><li>What is the message?</li><li>Compared with what?</li><li>Which quantity?</li><li>Which form?</li></ol></div>
     <div><b>2. Encode it for the eye</b>
-      <ol><li>Is the comparison on a common scale?</li><li>Does the channel match the data?</li><li>Are compared items together?</li><li>Do the points hide each other?</li></ol></div>
+      <ol><li>Are the compared values on a common scale?</li><li>Does the channel match the data?</li><li>Are compared items together?</li><li>Do the points hide each other?</li></ol></div>
     <div><b>3. Keep it faithful</b>
       <ol><li>Does the scale match the quantity?</li><li>Do the window and sample favor the message?</li><li>Is the uncertainty shown?</li><li>Is the title supported?</li></ol></div>
     <div><b>4. Finish it for the reader</b>

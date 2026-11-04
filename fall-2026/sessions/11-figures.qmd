@@ -1,7 +1,7 @@
 ---
-title: "11 · Figures"
+title: "11 · Visualization"
 subtitle: "Wednesday, November 4, 2026"
-pagetitle: "AEM 6991 · 11 Figures"
+pagetitle: "AEM 6991 · 11 Visualization"
 format:
   html:
     toc: true
@@ -25,7 +25,7 @@ format:
 [**Open the slides**](11-figures-slides.html)
 :::
 
-**What you should be able to do after this meeting.** Tell a figure made to explore data from a figure made for a reader. Build a figure for a reader in four steps: choose the comparison, encode it so the eye reads it precisely, keep it faithful to the numbers, and finish it so it stands alone. Name what is wrong with a published figure, at which step, and sketch the fix.
+**What you should be able to do after this meeting.** Tell a visualization made to explore data from one made for a reader. Build a chart for a reader in four steps: decide what to compare, encode it so the eye reads it precisely, keep it faithful to the numbers, and finish it so it stands alone. Draw a diagram of an idea, and reveal it in a talk one piece at a time. Name what is wrong with a published figure, at which step, and sketch the fix.
 
 ## Handouts
 
@@ -33,11 +33,11 @@ format:
 
 ## Where to read more
 
-[Schwabish (2014)](https://doi.org/10.1257/jep.28.1.209), "An Economist's Guide to Visualizing Data", is short, free and written for economists. Wilke's [*Fundamentals of Data Visualization*](https://clauswilke.com/dataviz/) and Healy's [*Data Visualization*](https://socviz.co) are free online. Zelazny, *Say It With Charts*, for choosing a chart from its message.
+[Schwabish (2014)](https://doi.org/10.1257/jep.28.1.209), "An Economist's Guide to Visualizing Data", is short, free and written for economists. Wilke's [*Fundamentals of Data Visualization*](https://clauswilke.com/dataviz/) and Healy's [*Data Visualization*](https://socviz.co) are free online. Zelazny, *Say It With Charts*, for choosing a chart from its message. [Case and Deaton (2015)](https://doi.org/10.1073/pnas.1518393112), Figure 1, is a research figure worth studying. [Larkin and Simon (1987)](https://doi.org/10.1111/j.1551-6708.1987.tb00863.x), "Why a Diagram is (Sometimes) Worth Ten Thousand Words", on what a diagram does for a reader.
 
 ## Session A · 2:00–3:15
 
-Figures have two jobs. Exploratory figures are for the author: many, quick and rough, made to understand the data and catch errors (meeting 5). Explanatory figures are for a reader: few and finished, each making one point. This meeting is about the second kind, built in four steps. First, choose the comparison: the message in one sentence, the benchmark it needs, the quantity (nominal or real, levels or an index, counts or a rate) and the form. Second, encode it for the eye: readers judge positions on a common scale more accurately than lengths, angles, areas or colors, so ordered values need an ordered color scale, many series read best as small multiples, and thousands of points need a binned scatter. Third, keep it faithful: bars start at zero, two periods belong on one scale, estimates carry their intervals, and a causal title needs a causal design. Fourth, finish it for the reader: the title states the finding, every mark carries information, the caption lets the figure stand alone, and a slide gets its own version. Each step is shown with a figure drawn badly and redrawn, many of them published, and with the experiments that measured how readers read them.
+Visualizations have two jobs. Exploratory ones are for the author: many, quick and rough, made to understand the data and catch errors (meeting 5). Explanatory ones are for a reader or a room: few and finished, each making one point. This meeting is about the second kind. A chart for a reader makes one point by showing numbers side by side, and the point stands out by contrast with something else. It is built in four steps. First, decide what to compare: the message in one sentence, the benchmark it needs, the quantity (nominal or real, levels or an index, counts or a rate) and the form. Second, encode it for the eye: readers judge positions on a common scale more accurately than lengths, angles, areas or colors, so ordered values need an ordered color scale and many series read best as small multiples. Third, keep it faithful: bars start at zero, two periods belong on one scale, estimates carry their intervals, and a causal title needs a causal design. Fourth, finish it for the reader: the title states the finding, every mark carries information, the caption lets the figure stand alone, and a slide gets its own version. Each step is shown with a figure drawn badly and redrawn, many of them published, and with the experiments that measured how readers read them. Then diagrams, which show how the parts of an idea connect: a causal graph, a research design, a data pipeline. Every arrow in a diagram is a claim, so each meaning gets its own arrow style. And a talk builds a complex diagram one piece at a time, with one sentence for each piece, so the room follows the argument instead of reading ahead. The meeting closes with two published charts that work, and with what a proposal can draw before it has results: the data, the design and a labelled mock of the result.
 
 ## Session B · 3:30–4:30
 
@@ -45,18 +45,18 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-Each team gets one published or constructed figure with something wrong in it. Using the figure guide, the team says what the figure claims, what is wrong and at which step, what the figure is entitled to claim, and sketches the redraw. Teams then present in an order drawn at random, and the room adds what they missed.
+The session opens with a worked critique of a published chart. Each team then gets one published or constructed figure with something wrong in it. Using the figure guide, the team says what the figure claims, what is wrong and at which step, what the figure is entitled to claim, and sketches the redraw. Teams then present in an order drawn at random, and the room adds what they missed.
 
 ::::
 
 :::: {.content-visible when-format="revealjs"}
 
-## Figures have two jobs
+## Visualizations have two jobs
 
-- An **exploratory figure** is made by the author, for the author.
-- Exploratory figures are many, quick and rough. They find patterns and errors.
-- An **explanatory figure** is made for a reader.
-- Explanatory figures are few and finished. Each makes one point.
+- An **exploratory visualization** is made by the author, for the author.
+- Exploratory ones are many, quick and rough. They find patterns and errors.
+- An **explanatory visualization** is made for a reader or a room.
+- Explanatory ones are few and finished. Each makes one point.
 - Meeting 5 covered exploring a new file. Today is about explaining.
 
 [Gelman and Unwin (2013), "Infovis and statistical graphics: different goals, different looks", *Journal of Computational and Graphical Statistics* 22(1).](https://doi.org/10.1080/10618600.2012.761137){style="font-size:0.55em; color:#6b6b6b"}
@@ -71,55 +71,24 @@ make dozens, you never polish them, and most are thrown away.
 
 Gelman and Unwin argue the two jobs differ in their goals and should
 differ in their look. A figure made to discover something shows
-everything at once. A figure made to tell someone something shows one
-comparison and drops the rest. Knaflic's *Storytelling with Data* draws
+everything at once. A figure made to tell someone something makes one
+point and drops the rest. Knaflic's *Storytelling with Data* draws
 the same line for business readers.
 
 Everything after the outline is about the second kind.
 :::
 
-## Four datasets with the same statistics
-
-::: {style="font-size:0.66em"}
-- Anscombe built four datasets of eleven points each, in 1973.
-- All four have mean x = 9, mean y = 7.5 and correlation 0.82.
-- All four have the same fitted line, y = 3 + 0.5x.
-- Only the plots show that the four datasets differ.
-:::
-
-![](figures/m11-anscombe.png){.fragment width=100% fig-alt="Four scatter plots with the same red fitted line: a noisy linear cloud, a smooth curve, a straight line with one outlier above it, and a vertical stack of points with one point far to the right."}
-
-[Anscombe (1973), "Graphs in statistical analysis", *The American Statistician* 27(1).](https://doi.org/10.1080/00031305.1973.10478966){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-Two minutes. Show the statistics first, ask what the four datasets look
-like, then reveal the plots.
-
-Dataset 1 is a noisy linear relationship. Dataset 2 is a smooth curve, so
-the line is the wrong model. Dataset 3 is a perfect line with one
-outlier pulling the fit. Dataset 4 has no relationship at all except one
-point far to the right, which sets the whole slope.
-
-The regression output is the same for all four: same means, same
-variances (11 for x, about 4.1 for y), same correlation of 0.82, same
-fitted line. Only the plot tells them apart. That is what exploring is
-for.
-
-The Datasaurus Dozen (Matejka and Fitzmaurice 2017,
-https://doi.org/10.1145/3025453.3025912) is the modern version: twelve
-datasets with the same means, standard deviations and correlation to two
-decimals, one of them shaped like a dinosaur.
-:::
-
 ## Outline
 
 ::: {style="font-size:0.84em"}
-A figure for a reader is a comparison. It is built in four steps.
+A chart for a reader makes one point by showing numbers side by side. The point stands out by contrast with something else. Building the chart takes four steps.
 
-1. **Choose the comparison.** The message, the benchmark, the quantity and the form.
-2. **Encode it for the eye.** Put the comparison where the eye reads it precisely.
+1. **Decide what to compare.** The message, the benchmark, the quantity and the form.
+2. **Encode it for the eye.** Put the contrast where the eye reads it precisely.
 3. **Keep it faithful.** The scale, the window, the uncertainty and the title match the numbers.
 4. **Finish it for the reader.** The title, the marks, the caption and the medium.
+5. **Diagrams and builds.** Draw how an idea works, and reveal it one piece at a time.
+6. **Good charts and your proposal.** Two that work, and what to draw before results.
 :::
 
 [Handout: the figure guide, on this meeting's page.]{.src}
@@ -127,20 +96,27 @@ A figure for a reader is a comparison. It is built in four steps.
 ::: {.notes}
 Two minutes.
 
+A number alone says little. A 12% rise in sales means more next to the
+regions without the program, the year before, or the target. To highlight
+something, a chart needs contrast with something else. Step 1 decides what
+that something else is, and steps 2 and 4 make the contrast visible. The
+finding can also be that there is no contrast, such as two lines that move
+together. That still takes the second line.
+
 The four steps are also the order you work in. Each section opens with
 its four questions and closes with a table of problems and solutions.
+The fifth section moves from data to ideas: a talk often has to explain
+a mechanism or a design before it can show a result.
 The figure guide on this meeting's page has the same questions on one
 page. Session B uses it to critique figures, and your proposal figures
 should pass it.
 :::
 
-## A grocery chain in today's examples
+## A hypothetical grocery chain
 
-- The chain is invented, and its data are simulated.
 - It runs 300 stores in 20 regions.
 - It sells groceries in neighborhood stores and superstores.
 - In January 2024 it launched a loyalty program in 8 of its regions.
-- Examples from the chain are marked as invented. The rest use public data.
 
 ::: {.notes}
 One minute.
@@ -148,17 +124,17 @@ One minute.
 One invented company carries the made-up examples, so its setting is
 told once. Everything else is real: FRED (Federal Reserve Economic Data)
 series, Robert Shiller's stock index, county unemployment rates, Texas
-home sales, diamond prices, and published charts redrawn from their
+home sales, World Bank data, and published charts redrawn from their
 numbers.
 :::
 
-# 1. Choose the comparison
+# 1. Decide what to compare
 
 ::: {.notes}
-Sixteen minutes for the section.
+Thirteen minutes for the section.
 :::
 
-## Four questions about the comparison
+## Four questions about what to compare
 
 1. What is the message, in one sentence?
 2. Compared with what?
@@ -170,13 +146,13 @@ Sixteen minutes for the section.
 ::: {.notes}
 One minute.
 
-Zelazny was McKinsey's director of visual communications, and his rule
-is the order of these four questions: the message decides the
-comparison, and the comparison decides the chart. A chart chosen first
+Zelazny was McKinsey's director of visual communications, and the rule
+is the order of these four questions: the message decides what to
+compare, and that decides the chart. A chart chosen first
 leaves the reader to find the message.
 :::
 
-## One figure shows one comparison
+## One figure makes one point
 
 ::: {.m11-under}
 - The analyst's message is that sales in the West pulled away after 2023.
@@ -195,7 +171,7 @@ leaves the reader to find the message.
 
 ::: {.m11-under}
 - **No message.** Twenty lines show everything and compare nothing.
-- [**Solution**: write the message first, then draw only its comparison.]{.solution}
+- [**Solution**: write the message first, then draw only the numbers it compares.]{.solution}
 :::
 
 ::: {.notes}
@@ -284,7 +260,7 @@ the consumer price index for all urban consumers, it peaked in February
 1968 at $15.73 and has lost more than half its value since. Same data,
 opposite message.
 
-The choice of quantity is a choice of comparison. Nominal dollars
+The choice of quantity decides what the reader compares. Nominal dollars
 compare the number printed on the paycheck. Real dollars compare what it
 buys.
 :::
@@ -341,62 +317,19 @@ staffing decision built on the mean would fit nobody.
 
 With a few hundred points, show them all. With thousands, show a
 histogram or a density per group.
+
+The habit is common. Weissgerber and coauthors
+(https://doi.org/10.1371/journal.pbio.1002128) read 703 papers in top
+physiology journals from early 2014: 85.6% used bar graphs and 13.4%
+showed the individual data points.
 :::
 
-## Few physiology papers showed the data points
-
-- Weissgerber and coauthors read 703 papers in top physiology journals from early 2014.
-- 85.6% used bar graphs. 13.4% showed the individual data points.
-- Half the papers had a group of four observations or fewer.
-- Newman and Scholl showed viewers a bar for a mean.
-- Viewers judged values inside the bar likelier to be in the data.
-
-[Weissgerber et al. (2015), "Beyond bar and line graphs", *PLOS Biology* 13(4).](https://doi.org/10.1371/journal.pbio.1002128){style="font-size:0.55em; color:#6b6b6b"}
-[Newman and Scholl (2012), "Bar graphs depicting averages are perceptually misinterpreted", *Psychonomic Bulletin & Review* 19(4).](https://doi.org/10.3758/s13423-012-0247-5){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-One and a half minutes.
-
-Weissgerber and coauthors reviewed every research article in the top
-quarter of physiology journals from January to March 2014. Most showed
-continuous data as bar graphs of means. With four observations in a
-group, the reader could have seen every point, and many different
-datasets produce the same bar.
-
-Newman and Scholl showed viewers a bar for a mean and asked how likely a
-test value was to be in the data. Values inside the bar were rated more
-likely than values the same distance above the mean, as if the bar held
-the data. The effect held with error bars and from memory.
-:::
-
-## Chart families follow the comparison
-
-::: {style="font-size:0.66em"}
-- The Financial Times groups chart types by the comparison they show.
-- Find your comparison in a column heading, then choose a chart from that column.
-:::
-
-![](figures/m11-ft-visual-vocabulary.png){width=78% fig-align="center" fig-alt="The Financial Times Visual Vocabulary poster: nine columns of chart types grouped by deviation, correlation, ranking, distribution, change over time, magnitude, part-to-whole, spatial and flow."}
-
-[Financial Times, *Visual Vocabulary*, MIT License.](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-One and a half minutes. Easiest slide to drop in this section.
-
-The Financial Times graphics desk built this poster as a shared
-vocabulary. It groups chart types by the relationship they show:
-deviation, correlation, ranking, distribution, change over time,
-magnitude, part-to-whole, spatial and flow. Find your comparison in the
-column headers, then pick a chart from that column. The figure guide
-links it.
-:::
-
-## Solutions for the comparison
+## Solutions for what to compare
 
 ::: {.m11-recap style="font-size:0.74em"}
 | | Question | Problem | Solution |
 |:-|:--------|:--------|:--------------------|
-| 1 | What is the message? | Everything shown, nothing compared | Write the message first, then draw only its comparison |
+| 1 | What is the message? | Everything shown, nothing compared | Write the message first, then draw only the numbers it compares |
 | 2 | Compared with what? | No benchmark | Add a comparison group and the period before |
 | 3 | Which quantity? | Nominal, levels, two series or counts | Choose real dollars, an index, the gap or a rate when the message needs it |
 | 4 | Which form? | A bar of means | Show the data points or the distribution |
@@ -404,12 +337,15 @@ links it.
 
 ::: {.notes}
 One minute.
+
+To choose a form, the figure guide links the Financial Times *Visual
+Vocabulary*, a poster of chart types grouped by what they compare.
 :::
 
 # 2. Encode it for the eye
 
 ::: {.notes}
-Fifteen minutes for the section.
+Fourteen minutes for the section.
 :::
 
 ## Two kinds of reading error
@@ -438,7 +374,7 @@ biased.
 
 - A **channel** is the visual property that carries a number.
 
-1. Is the key comparison on a common scale?
+1. Are the compared values on a common scale?
 2. Does the channel match the data?
 3. Are the compared items next to each other?
 4. Do the points hide each other?
@@ -514,7 +450,7 @@ sends the eye back and forth. The dot plot answers it at a glance, and
 it is sorted so the ranking is the order on the page.
 
 A pie can work for two or three parts of a whole with very different
-sizes. With seven similar shares it hides the comparison.
+sizes. With seven similar shares it hides the differences.
 :::
 
 ## Ordered values need an ordered color scale
@@ -605,46 +541,6 @@ Schwabish (2014) makes the same redraw for a published chart of
 disability awards by cause, 1975 to 2010.
 :::
 
-## Thousands of points need a binned scatter
-
-::: {.m11-under}
-- The chart plots price against weight for 53,940 diamonds.
-:::
-
-::: {.m11-pair}
-::: {.before}
-[As drawn]{.m11-tag}
-![](figures/m11-diamonds-blot.png){fig-alt="A solid black mass of overlapping points rising from left to right."}
-:::
-::: {.after .fragment}
-[Redrawn]{.m11-tag}
-![](figures/m11-diamonds-binned.png){fig-alt="The same diamonds as faint transparent points, dense at small weights, with twenty red dots for the mean price in each of twenty equal-sized bins of weight, curving upward."}
-:::
-:::
-
-::: {.m11-under}
-- **Overplotting** hides how many points lie where.
-- A **binned scatter** plots the mean price within equal-count bins of weight.
-- [**Solution**: make the points transparent and add the bin means.]{.solution}
-:::
-
-[Diamond prices in R's ggplot2 package.](https://ggplot2.tidyverse.org/reference/diamonds.html){style="font-size:0.55em; color:#6b6b6b"}
-[Cattaneo, Crump, Farrell and Feng (2024), "On binscatter", *American Economic Review* 114(5).](https://doi.org/10.1257/aer.20221576){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-One and a half minutes. Easiest slide to drop in this section.
-
-The blot shows the range and nothing else. The binned scatter splits
-the diamonds into twenty groups of equal size by weight and plots each
-group's mean weight and mean price. The curve is now visible: price
-rises faster than weight.
-
-Binned scatter plots are common in applied economics. Cattaneo and
-coauthors show one trap: residualizing y and x on controls before
-binning can draw the wrong curve. Bin first, with the controls handled
-as they show.
-:::
-
 ## Solutions for encoding
 
 ::: {.m11-recap style="font-size:0.74em"}
@@ -653,17 +549,22 @@ as they show.
 | 1 | Common scale? | Angle and area | Put the values on one axis, sorted |
 | 2 | Channel matches the data? | A rainbow scale for ordered values | Use one hue, light to dark |
 | 3 | Compared items together? | Many series in one panel | Draw small multiples on shared axes |
-| 4 | Points hide each other? | Overplotting | Make points transparent and add bin means |
+| 4 | Points hide each other? | Thousands of points merge into a blot | Make points transparent and add the mean of y within bins of x |
 :::
 
 ::: {.notes}
 One minute.
+
+Question 4 has no slide today, so say it in a sentence. When thousands
+of points overlap, the plot hides how many lie where. A binned scatter
+plots the mean of y within equal-count bins of x. The figure guide has
+it, with the reference.
 :::
 
 # 3. Keep it faithful
 
 ::: {.notes}
-Twenty minutes for the section.
+Eighteen minutes for the section.
 :::
 
 ## Four questions about faithfulness
@@ -740,7 +641,8 @@ visible part is 5.6 / 1 = 5.6 times the first.
 The Obama White House tweeted a chart on December 16, 2015, showing the
 high-school graduation rate at an all-time high, drawn as columns of
 stacked books with no visible y-axis. Quartz redrew it from zero and the
-rise looked much smaller. The fault belongs to no party.
+rise looked much smaller. The fault belongs to no party. Session B opens
+on this chart.
 
 Bars need zero because readers compare their lengths. A line or a dot
 plot can start elsewhere, because readers compare positions. The test
@@ -853,40 +755,14 @@ regions' effects are distinguishable from zero. Meeting 6 defined the
 confidence interval and the standard error.
 
 Say which interval you drew. A standard-error bar is about half the
-length of a 95% interval, and readers confuse the two (next slide).
-:::
+length of a 95% interval, and readers confuse the two. Belia and
+coauthors (https://doi.org/10.1037/1082-989X.10.4.389) asked 473
+published researchers to read error bars, and many mixed them up.
 
-## Authors leave uncertainty out and readers misread it
-
-- Hullman surveyed 90 authors of data visualizations.
-- 62% of those who omit uncertainty said they feared confusing readers.
-- Only 3% of 449 news charts used to draw inferences showed uncertainty.
-- Belia and coauthors asked 473 published researchers to read error bars.
-- Many confused confidence intervals with standard-error bars.
-
-[Hullman (2020), "Why authors don't visualize uncertainty", *IEEE Transactions on Visualization and Computer Graphics* 26(1).](https://doi.org/10.1109/TVCG.2019.2934287){style="font-size:0.55em; color:#6b6b6b"}
-[Belia, Fidler, Williams and Cumming (2005), "Researchers misunderstand confidence intervals and standard error bars", *Psychological Methods* 10(4).](https://doi.org/10.1037/1082-989X.10.4.389){style="font-size:0.55em; color:#6b6b6b"}
-
-::: {.notes}
-Two minutes.
-
-Hullman surveyed 90 visualization authors and interviewed 13. The
-reasons given for leaving uncertainty out: not wanting to confuse or
-overwhelm viewers (62%), having no uncertainty information (47%), not
-knowing how to compute it (26%), and not wanting the data to look
-questionable (17%).
-
-Belia and coauthors asked 473 authors of articles in psychology,
-behavioral neuroscience and medicine to drag two means until the
-difference looked just significant at p < .05, once with 95% confidence
-intervals and once with standard-error bars. Many confused the two:
-they placed confidence intervals too far apart and standard-error bars
-too close together.
-
-A rule of thumb for two independent groups: 95% intervals that overlap
-by about half of one arm still differ at p of about .05 (Cumming and
-Finch 2005, https://doi.org/10.1037/0003-066X.60.2.170). Overlap alone
-does not mean no difference.
+Authors know they leave this out. Hullman
+(https://doi.org/10.1109/TVCG.2019.2934287) surveyed 90 authors of data
+visualizations, and 62% of those who omit uncertainty said they feared
+confusing readers.
 :::
 
 ## A causal title needs a causal design
@@ -1055,7 +931,8 @@ codes send the eye back and forth, and "sales_n" and "yr" are variable
 names from the dataset.
 
 The redraw keeps the lines, labels them where they end, puts the units
-in the axis title, and uses color for one city only. Schwabish's guide
+in the axis title, and uses color for one city only, so it stands out against the grey
+ones. Schwabish's guide
 does this to a published chart of food-stamp caseloads, with
 abbreviations defined fifteen pages before the figure.
 :::
@@ -1139,11 +1016,367 @@ every figure of a document. If the launch regions are red in figure 2,
 they are red in figure 5.
 :::
 
-## Four steps for every figure
+# 5. Diagrams and builds
+
+::: {.notes}
+Twelve minutes for the section.
+:::
+
+## A diagram shows how the parts of an idea connect
+
+::: {.m11-under}
+- A **chart** compares values. A **diagram** shows how the parts of an idea connect.
+- Three forms recur in applied work.
+:::
+
+::: {.m11-forms}
+::: {}
+[Causal graph, meeting 2]{.m11-tag}
+![](figures/m11-diagram-form-graph.png){fig-alt="A causal graph: heavy shopper points to on the app and to spend, and a red arrow runs from on the app to spend."}
+:::
+::: {}
+[Research design, meeting 9]{.m11-tag}
+![](figures/m11-diagram-form-design.png){fig-alt="A grid of three groups of stores by month. Early stores have the app from month 4, late stores from month 12, and the third group never adopts."}
+:::
+::: {}
+[Data pipeline]{.m11-tag}
+![](figures/m11-diagram-form-pipeline.png){fig-alt="Scanner sales, loyalty records and a store list feed into a store-month panel, which feeds into the estimation sample."}
+:::
+:::
+
+::: {.m11-under}
+- Larkin and Simon modeled people solving physics problems about pulleys.
+- A diagram keeps related facts in one place, so the solver searches less.
+:::
+
+[Larkin and Simon (1987), "Why a diagram is (sometimes) worth ten thousand words", *Cognitive Science* 11(1).](https://doi.org/10.1111/j.1551-6708.1987.tb00863.x){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+One and a half minutes.
+
+Everything so far compared values. A talk or a proposal also has to
+explain how something works, and that takes a different picture. You
+have seen two of these already: the causal graphs in meeting 2 and the
+staggered-adoption grid in meeting 9. The data pipeline is new. It
+tells a reader where the estimation sample came from.
+
+Larkin and Simon's paper is a computer model of problem solving, with
+no experiment on people. Two representations can hold the same facts
+and differ in the work they ask of the reader. In a list of sentences
+the reader hunts for the next fact. In a diagram the next fact is often
+next to the last one. Their warning applies today: an arbitrary diagram
+does not earn this advantage. It has to be drawn for the argument.
+:::
+
+## Four questions about diagrams
+
+1. Which parts does the claim need?
+2. Does each arrow style carry one meaning?
+3. Can you defend every arrow?
+4. Does it build in the order of the argument?
+
+::: {.notes}
+Half a minute.
+:::
+
+## Every arrow is a claim
+
+::: {.m11-under}
+- A team draws its project on the loyalty program, from the pilot to the estimate.
+:::
+
+::: {.m11-pair}
+::: {.before}
+[As drawn]{.m11-tag}
+![](figures/m11-diagram-arrows-before.png){fig-alt="Six boxes in a loop joined by identical black arrows: pilot in 2023, launch in 2024, visits, sales, scanner data, estimate."}
+:::
+::: {.after .fragment}
+[Redrawn]{.m11-tag}
+![](figures/m11-diagram-arrows-after.png){fig-alt="The same six boxes. A grey arrow labelled comes before, two red arrows labelled causes, and two dashed blue arrows labelled is measured by and enters."}
+:::
+:::
+
+::: {.m11-under}
+- **Identical arrows** hide that these links mean four different things.
+- A causal arrow claims an effect, and a missing arrow claims there is none.
+- [**Solution**: give each meaning its own style and label, and defend every causal arrow.]{.solution}
+:::
+
+::: {.notes}
+One and a half minutes.
+
+Read the first diagram aloud as a chain: the pilot leads to the launch,
+which leads to visits, then sales, scanner data and the estimate. Read
+that way it says the pilot caused the launch and sales caused the
+scanner data. Only two of the five arrows are causal.
+
+The redraw moves nothing. It gives each meaning a style and a label, so
+the two causal claims stand out and the room knows which ones to
+question.
+
+Meeting 2 made the same point about a causal graph: every control is a
+claim about the graph, and so is every missing arrow. Be ready to defend
+each one, because that is where a sharp question will land.
+:::
+
+## A whole diagram at once loses the room
+
+![](figures/m11-diagram-chain-4.png){.nostretch .m11-solo fig-alt="The finished causal diagram for the loyalty program. Red arrows run from the program to visits per customer, sales and profit, and from the program to discounts and on to profit with a minus sign. Grey arrows run from regional growth to the program and to sales."}
+
+::: {.m11-under}
+- The room reads ahead while the speaker explains the first arrow.
+- Mayer and Chandler taught students how lightning forms with a narrated animation.
+- Students who saw it in 16 short segments scored higher on new problems, a **transfer test**.
+- [**Solution**: reveal one piece for each sentence of the argument, and cut any piece no sentence uses.]{.solution}
+:::
+
+[Mayer and Chandler (2001), "When learning is just a click away", *Journal of Educational Psychology* 93(2).](https://doi.org/10.1037/0022-0663.93.2.390){style="font-size:0.55em; color:#6b6b6b"}
+[Rey et al. (2019), "A meta-analysis of the segmenting effect", *Educational Psychology Review* 31(2).](https://doi.org/10.1007/s10648-018-9456-4){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+One and a half minutes.
+
+Leave the diagram up in silence for a few seconds, then ask where people
+started reading. Six parts and seven arrows arrive at once, and each
+person starts somewhere different. By the time you have explained one
+arrow, they are working on another.
+
+Mayer and Chandler's animation ran 140 seconds. The segmented version
+cut it into 16 pieces of eight to ten seconds, each with a Continue
+button. Students who saw the segments did better on transfer and no
+better on recall of the facts. Rey and coauthors pool later studies and
+find small to medium effects.
+
+Those students clicked at their own pace, and a talk moves at the
+speaker's pace. So this is evidence for explaining in pieces. I have not
+seen a clean experiment on slide builds in a talk, and the case for them
+also rests on experience.
+
+A paper's reader sets the pace, so a paper prints the whole diagram.
+:::
+
+## A causal chain builds one link at a time
+
+::: {.r-stack .m11-build}
+![](figures/m11-diagram-chain-1.png){fig-alt="Step 1: the loyalty program points to visits per customer."}
+
+![](figures/m11-diagram-chain-2.png){.fragment fig-alt="Step 2: visits per customer point to sales, and sales point to profit."}
+
+![](figures/m11-diagram-chain-3.png){.fragment fig-alt="Step 3: the program also points to discounts, and discounts point to profit with a minus sign."}
+
+![](figures/m11-diagram-chain-4.png){.fragment fig-alt="Step 4: regional growth points to the program and to sales, in grey."}
+:::
+
+::: {.m11-under}
+- Each step adds one link and one sentence. Red arrows are the effects, as in meeting 2.
+:::
+
+::: {.notes}
+Two minutes. One click for each sentence, and say nothing about a piece
+before it appears.
+
+1. The program gives members a reason to come back, so visits per
+customer rise.
+2. More visits mean more sales, and sales add to profit.
+3. The program also hands out discounts, and discounts come out of
+profit. So the effect on profit could go either way.
+4. Suppose the chain launched first where growth looked strongest.
+Regional growth then causes both the launch and sales. That is a back
+door (meeting 2), and it is why the next slide needs a design.
+
+The last frame is the slide you just saw. The room can read it now.
+
+To make one: in PowerPoint or Keynote, draw the finished diagram and
+give each piece an Appear animation. In Quarto, put the fragment class
+on each frame. In R, save one image per frame with the same limits.
+:::
+
+## A research design builds one piece at a time
+
+::: {.r-stack .m11-build}
+![](figures/m11-diagram-design-1.png){fig-alt="Step 1: one red line, sales in the launch regions rising from before to after the launch."}
+
+![](figures/m11-diagram-design-2.png){.fragment fig-alt="Step 2: a grey line added below, sales in the other regions, also rising."}
+
+![](figures/m11-diagram-design-3.png){.fragment fig-alt="Step 3: a dashed red line added from the launch regions' starting point, parallel to the grey line, labelled launch regions without the program, assumed to change like other regions."}
+
+![](figures/m11-diagram-design-4.png){.fragment fig-alt="Step 4: an arrow marks the gap between the solid and dashed red lines after the launch, labelled estimate."}
+:::
+
+::: {.m11-under}
+- **Difference-in-differences** compares the change in launch regions with the change in other regions.
+- The axes and positions stay fixed, so only the new piece moves the eye.
+:::
+
+::: {.notes}
+Two minutes. This is a schematic with no data, so the y-axis has no
+numbers. Meeting 9 taught the design. Here the lesson is the telling.
+
+1. Sales in the launch regions rose after the launch.
+2. Sales in the other regions rose too, so part of that rise has nothing
+to do with the program.
+3. If the launch regions had changed like the other regions, they would
+have ended here. This dashed line is parallel trends from meeting 9. It
+is an assumption, and the room now sees exactly where it enters.
+4. The gap between the solid line and the dashed line is the estimate.
+
+If the axis limits change from frame to frame, the lines jump and the
+room loses its place. Fix the limits first, then add the layers.
+:::
+
+## Rosling explains the chart before it moves
+
+::: {.m11-under}
+- Hans Rosling, a professor of global health in Sweden, spoke at TED in February 2006.
+- The talk asked whether the world still splits into two groups of countries.
+:::
+
+::: {.r-stack .m11-build .m11-short}
+![](figures/m11-rosling-1.png){fig-alt="Empty axes: children per woman from 1 to 8 across, life expectancy from 30 to 90 years up. The upper left corner is labelled small families, long lives, and the lower right large families, short lives."}
+
+![](figures/m11-rosling-2.png){.fragment fig-alt="1962: one grey bubble per country, sized by population. One group sits at the upper left with the United States, and another sits at the lower right with China and India."}
+
+![](figures/m11-rosling-3.png){.fragment fig-alt="2003: red bubbles over the faint 1962 bubbles. Most countries have moved to the upper left, with China and India among them, and some countries remain at the lower right."}
+:::
+
+::: {.m11-under}
+- Rosling named the axes and the bubbles first, then started the years from 1962.
+:::
+
+[Rosling (2006), "The best stats you've ever seen", TED.](https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen){style="font-size:0.55em; color:#6b6b6b"}
+[Redrawn from World Bank data: each bubble is a country, with area proportional to population.](https://data.worldbank.org/indicator/SP.DYN.TFRT.IN){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+One and a half minutes. Easiest slide to drop in this section.
+
+The same habit works on a chart with real data. Rosling's students
+pictured a world of two groups: long lives and small families, short
+lives and large families. The talk first says what the axes are, what a
+bubble is and what its size means. Only then do the years run, and the
+room can follow every country because it already knows how to read the
+picture.
+
+The talk ran the chart through every year on animation software, using
+United Nations statistics. These three frames are a redraw: the axes,
+1962, then 2003 over a faint 1962. The first five minutes of the talk
+are worth watching before you give your own.
+:::
+
+## Solutions for diagrams
+
+::: {.m11-recap style="font-size:0.74em"}
+| | Question | Problem | Solution |
+|:-|:--------|:--------|:--------------------|
+| 1 | Parts the claim needs? | Every part of the project drawn | Cut any part no sentence uses |
+| 2 | One meaning per arrow style? | Identical arrows with different meanings | Give each meaning its own style and label |
+| 3 | Every arrow defended? | An arrow or a gap nobody can justify | Defend each causal arrow and each missing one |
+| 4 | Builds in order? | The whole diagram at once | Reveal one piece for each sentence |
+:::
+
+::: {.notes}
+One minute.
+:::
+
+# 6. Good charts and your proposal
+
+::: {.notes}
+Eight minutes for the section.
+:::
+
+## Two published charts that work
+
+::: {.m11-pair .m11-big}
+::: {.before}
+[Our World in Data]{.m11-tag}
+![](figures/m11-real-owid-health.png){fig-alt="A scatter plot for 2023 of life expectancy against health spending per person, with countries labelled on their points. Most countries rise together from about 72 to 84 years as spending reaches about 7,000 dollars. The United States sits alone at the far right, near 12,000 dollars and 79 years."}
+:::
+::: {.before}
+[U.S. Energy Information Administration]{.m11-tag}
+![](figures/m11-real-eia-permian.png){fig-alt="Two panels side by side on one time axis, January 2021 to October 2025, for the Permian region. On the left the rig count rises to about 350 in 2023 and falls to about 250. On the right crude oil production keeps rising from about 4.5 to about 6.6 million barrels per day."}
+:::
+:::
+
+::: {.m11-under}
+- Our World in Data plots price-adjusted health spending against life expectancy by country.
+- The Energy Information Administration gives Permian Basin rigs and oil output two panels.
+- Each makes one point with labels on the data. Each title could still state its finding.
+:::
+
+[Our World in Data, "Life expectancy vs. health spending", CC BY.](https://ourworldindata.org/grapher/life-expectancy-vs-health-expenditure){style="font-size:0.55em; color:#6b6b6b"}
+[U.S. Energy Information Administration, *Today in Energy*, November 17, 2025, public domain.](https://www.eia.gov/todayinenergy/detail.php?id=66645){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Two minutes. Run the steps on each chart, out loud, and let the room
+answer.
+
+Our World in Data. The message is that the United States spends far more
+than any other country and lives shorter lives than the rich countries
+it resembles. The benchmark is every other country. The quantity is
+adjusted for inflation and for differences in living costs. Readers
+judge position on two common scales, and the country names sit on the
+points. The axes skip zero, which is fine for points. The note says which
+years stand in where data are missing. The one thing to change is the
+title: state the finding.
+
+Energy Information Administration. The Permian Basin lies in west Texas
+and southeastern New Mexico. Rigs and barrels have different units. A second y-axis would let the author choose where the lines cross,
+and two panels on one time axis remove that choice. The reader still sees
+rigs falling while output rises. The article's headline carries the
+finding, and the chart title is a label. The same article also has a
+weaker chart, which one team meets in a few minutes.
+
+For a figure from a research paper, open Figure 1 of Case and Deaton
+(2015, https://doi.org/10.1073/pnas.1518393112): mortality at ages 45 to
+54 for white non-Hispanic Americans, Hispanic Americans and six other
+rich countries. I link it here because its license does not clearly allow
+reproducing it on a public site.
+:::
+
+## A proposal has no estimates to plot
+
+::: {.m11-pair .m11-big}
+::: {.before}
+[The data you have]{.m11-tag}
+![](figures/m11-proposal-data.png){fig-alt="Average monthly sales per region in 2023, before the launch: launch regions in red and other regions in grey, moving together around 10 million dollars."}
+:::
+::: {.after .fragment}
+[A mock of the result]{.m11-tag}
+![](figures/m11-proposal-mock.png){fig-alt="Two panels marked MOCK, invented numbers. Each plots the estimated effect by month from the launch with intervals. In the first, labelled if the program works, the effect rises to about 1.5 percent after the launch. In the second, labelled if it does not, the effect stays near zero."}
+:::
+:::
+
+::: {.m11-under}
+- The conceptual model takes a causal graph, and the method takes a design diagram.
+- A **mock result** draws the figure you expect to make, with invented numbers, for each outcome.
+- [**Solution**: draw the data you have, and print "mock" on every invented figure.]{.solution}
+:::
+
+::: {.notes}
+Two minutes.
+
+The proposal due December 11 has headings for the conceptual model, the
+methodological approach, and data and access. Section 5 covers the first
+two. For the third, plot what you can already get. Here the launch and
+other regions moved together in 2023, which is the first thing a reader
+of a difference-in-differences proposal wants to see (meeting 9).
+
+The mock draws the figure you plan to make, before you have it. The
+syllabus asks whether your project could come out the other way, and this
+answers in a picture. Draw it once for each outcome. If the two panels
+would look the same, the design cannot tell them apart, and you want to
+learn that in November.
+
+This mock is an event study, which estimates the effect period by period
+(meeting 9). Write "mock" inside the image, so a cropped copy still says
+it. Meeting 4's cases show what invented numbers cost when they travel
+without their label.
+:::
+
+## Four steps for every chart
 
 ::: {.m11-steps}
 ::: {.m11-step}
-**1. Choose the comparison**
+**1. Decide what to compare**
 
 1. What is the message?
 2. Compared with what?
@@ -1153,7 +1386,7 @@ they are red in figure 5.
 ::: {.m11-step}
 **2. Encode it for the eye**
 
-1. Is the comparison on a common scale?
+1. Are the compared values on a common scale?
 2. Does the channel match the data?
 3. Are compared items together?
 4. Do the points hide each other?
@@ -1176,6 +1409,10 @@ they are red in figure 5.
 :::
 :::
 
+::: {.m11-diagrams}
+**Diagrams:** cut unused parts, give each arrow style one meaning, defend every arrow, and build in the order of the argument.
+:::
+
 [Handout: the figure guide, on this meeting's page.]{.src}
 
 ::: {.notes}
@@ -1189,12 +1426,60 @@ Session B runs it on figures that fail it.
 # Critiquing figures
 
 ::: {.notes}
-Session B. Check-in first (ten minutes). Then one figure per team from
-the critique cards, fifteen minutes to fill the sheet, then teams
-present in a random order: about two minutes each, then a minute for
-the room to add what the team missed. Points for a fault the room names
-that the team did not. Close with which steps the room caught most and
-least.
+Session B. Check-in first (ten minutes). Then the worked critique (four
+minutes). Then one figure per team from the critique cards, fifteen
+minutes to fill the sheet, then teams present in a random order: about
+two minutes each, then a minute for the room to add what the team
+missed. Points for a fault the room names that the team did not. Close
+with which steps the room caught most and least.
+:::
+
+## What is wrong with this published chart?
+
+::: {.m11-pair}
+::: {.before}
+[As published: White House, December 2015]{.m11-tag}
+![](figures/m11-real-whitehouse-books.jpg){fig-alt="The White House chart, titled Under President Obama, more students are earning their high school diplomas than ever before. Seven stacks of books for 2007-08 to 2013-14 are labelled 75, 75, 78, 79, 80, 81 and 82 percent. The last stacks are about three times as tall as the first."}
+:::
+::: {.after .fragment fragment-index=4}
+[Redrawn]{.m11-tag}
+![](figures/m11-whitehouse-line.png){fig-alt="The same seven rates as a red line on an axis from 60 to 90 percent, rising gently from 75 to 82, with a dashed line marking where the cohort measure starts in 2010-11."}
+:::
+:::
+
+::: {.m11-under}
+::: {.fragment fragment-index=1}
+**The claim**: graduation rates reached a record under President Obama.
+:::
+::: {.fragment fragment-index=2}
+**What is wrong**: the books have no axis (step 3.1), and the title credits a president (step 3.4).
+:::
+::: {.fragment fragment-index=3}
+**Entitled to claim**: the reported rate rose from 75% to 82% between 2007–08 and 2013–14.
+:::
+:::
+
+[White House, December 16, 2015, public domain. Quartz, "The most misleading charts of 2015, fixed".](https://qz.com/580859/the-most-misleading-charts-of-2015-fixed){style="font-size:0.55em; color:#6b6b6b"}
+[National Center for Education Statistics, on its two graduation measures.](https://ies.ed.gov/learn/blog/what-difference-between-acgr-and-afgr){style="font-size:0.55em; color:#6b6b6b"}
+
+::: {.notes}
+Four minutes. Do this one with the room, using the four questions on the
+next slide, and click after each answer.
+
+The books: five books stand for 75% and 16 stand for 82%, per Quartz. A
+7-point rise reads as a tripling.
+
+The title: the chart cannot say why the rate rose, and it starts in
+2007–08, so it cannot show whether the rise began earlier.
+
+A fault the room will probably miss: the National Center for Education
+Statistics first reports its cohort graduation rate for 2010–11. The
+three earlier stacks must come from another measure, most likely the
+averaged freshman rate, so the series probably joins two measures. The
+chart does not say so.
+
+The redraw plots the rates as a line with the break marked. A line can
+start at 60 because readers compare positions.
 :::
 
 ## Four questions for each figure

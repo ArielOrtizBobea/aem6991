@@ -15,27 +15,29 @@ proposal, due December 11, and on every figure in your final
 presentation.
 :::
 
-A figure made for a reader shows one comparison. It is built in four
-steps, and each step asks four questions. A figure that fails a
+A chart made for a reader makes one point by showing numbers side by
+side, and the point stands out by contrast with something else. It is
+built in four steps, and each step asks four questions. A chart that fails a
 question in step 1 or step 4 leaves the reader without the message. A
-figure that fails a question in step 2 is read imprecisely, and one
+chart that fails a question in step 2 is read imprecisely, and one
 that fails in step 3 is read with a bias: the reader comes away
-believing something the numbers do not say.
+believing something the numbers do not say. A diagram shows how the
+parts of an idea connect, and section 5 has its own questions.
 
 Figures you make to explore your own data do not need any of this.
 Make many, quickly, and look at every one before you fit a model
 (meeting 5). This guide is for the few you show.
 
-## 1. Choose the comparison
+## 1. Decide what to compare
 
 | | Question | What goes wrong | What to do |
 |:-|:-----|:---------|:---------|
-| 1.1 | What is the message, in one sentence? | Everything is shown and nothing is compared | Write the message before drawing, then draw only its comparison |
+| 1.1 | What is the message, in one sentence? | Everything is shown and nothing is compared | Write the message before drawing, then draw only the numbers it compares |
 | 1.2 | Compared with what? | A change shown with no comparison group or no period before it | Add the comparison group and the period before the change |
 | 1.3 | Which quantity shows it? | Nominal dollars, levels, two series or counts when the message needs real dollars, growth, the gap or a rate | Deflate money by a price index; index to a base year; plot the gap; divide by the population |
-| 1.4 | Which form shows it? | A bar of means hides the distribution; a figure holds numbers a reader needs to look up | Show the data points or the distribution; put exact values in a table |
+| 1.4 | Which form shows it? | A bar of means hides the distribution; a figure holds numbers a reader needs to look up | Show the data points or the distribution ([Weissgerber et al. 2015](https://doi.org/10.1371/journal.pbio.1002128)); put exact values in a table |
 
-To find a chart form for a comparison, look the comparison up in the
+To find a chart form, look up what you are comparing in the
 Financial Times [Visual
 Vocabulary](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary):
 deviation, correlation, ranking, distribution, change over time,
@@ -50,10 +52,10 @@ lengths, angles, areas or colors ([Cleveland and McGill
 
 | | Question | What goes wrong | What to do |
 |:-|:-----|:---------|:---------|
-| 2.1 | Is the key comparison on a common scale? | A pie, a stacked bar or bubbles make close values hard to rank | Put the values on one axis as dots or bars, sorted |
+| 2.1 | Are the compared values on a common scale? | A pie, a stacked bar or bubbles make close values hard to rank | Put the values on one axis as dots or bars, sorted |
 | 2.2 | Does the channel match the data? | A rainbow color scale for ordered values; lines joining categories that have no order | Use one hue, light to dark, for ordered values; use lines only for time or another ordered axis |
 | 2.3 | Are the compared items next to each other? | Many series tangled in one panel; compared groups on separate panels with different scales | Draw small multiples on shared axes; put compared groups side by side on one scale |
-| 2.4 | Do the points hide each other? | Thousands of points overplotted into a blot | Make the points transparent and add the mean of y within bins of x (a binned scatter) |
+| 2.4 | Do the points hide each other? | Thousands of points overplotted into a blot | Make the points transparent and add the mean of y within bins of x, a binned scatter ([Cattaneo et al. 2024](https://doi.org/10.1257/aer.20221576)) |
 
 ## 3. Keep it faithful
 
@@ -61,7 +63,7 @@ lengths, angles, areas or colors ([Cleveland and McGill
 |:-|:-----|:---------|:---------|
 | 3.1 | Does the scale match the quantity? | A bar axis that skips zero; a log scale the reader takes for linear; an inverted axis; circles scaled by radius; 3D | Start bars at zero; use a linear scale for a general reader; scale circles by area; draw in 2D |
 | 3.2 | Do the window and the sample favor the message? | Two y-axes whose ranges set where the lines cross; a time window that starts where the story looks best; a total that hides opposite subgroups; a sample that loses its failures over time | Put compared series on one scale; show the full period or say why the window starts where it does; show the subgroups; say who left the sample |
-| 3.3 | Is the uncertainty shown? | Point estimates with no intervals; error bars that do not say what they are | Draw 95% confidence intervals and say so in the caption; do not read overlapping intervals as no difference |
+| 3.3 | Is the uncertainty shown? | Point estimates with no intervals; error bars that do not say what they are | Draw 95% confidence intervals and say so in the caption; do not read overlapping intervals as no difference ([Belia et al. 2005](https://doi.org/10.1037/1082-989X.10.4.389)) |
 | 3.4 | Does the title claim only what the figure shows? | A causal title on a correlation | Title the association; leave causal claims to a design (meetings 8 and 9) |
 
 ## 4. Finish it for the reader
@@ -79,6 +81,39 @@ graph ([Schwabish 2014](https://doi.org/10.1257/jep.28.1.209)).
 Across a document, the same group keeps the same color in every
 figure.
 
+## 5. Diagrams and builds
+
+A causal graph, a research design and a data pipeline show how the
+parts of an idea connect. In a talk, a complex diagram builds one piece
+at a time, with one sentence for each piece. A paper's reader sets the
+pace, so a paper prints the finished diagram ([Larkin and Simon
+1987](https://doi.org/10.1111/j.1551-6708.1987.tb00863.x); [Mayer and
+Chandler 2001](https://doi.org/10.1037/0022-0663.93.2.390)).
+
+| | Question | What goes wrong | What to do |
+|:-|:-----|:---------|:---------|
+| 5.1 | Which parts does the claim need? | Every part of the project is drawn | Cut any part that no sentence of the argument uses |
+| 5.2 | Does each arrow style carry one meaning? | Identical arrows mean "causes", "comes before" and "is measured by" | Give each meaning its own style and label it |
+| 5.3 | Can you defend every arrow? | A causal arrow nobody can justify; a missing arrow nobody questioned | Say why each causal arrow is there and why each missing one is absent |
+| 5.4 | Does it build in the order of the argument? | The whole diagram arrives at once, and the room reads ahead | Reveal one piece for each sentence; keep the axes and positions fixed from step to step |
+
+To build a figure in PowerPoint or Keynote, draw the finished version
+and give each piece an Appear animation. In Quarto, put the `fragment`
+class on each frame. In R, save one image per frame with the same axis
+limits.
+
+## Before you have results
+
+A proposal has no estimates to plot. It can still draw three things.
+
+- **The conceptual model**, as a causal graph.
+- **The data you have**: the sample, the outcome over time, and the
+  comparison group before the treatment.
+- **A mock result**, the figure you expect to make, with invented
+  numbers, drawn once for each way the result could come out. If the
+  drawings would look the same, the design cannot tell the outcomes
+  apart. Write "mock" inside the image, so a cropped copy still says it.
+
 ## Checklist before you submit
 
 - [ ] Each figure's message fits in one sentence, and that sentence is
@@ -95,6 +130,9 @@ figure.
   name.
 - [ ] Every caption gives the source, the sample and the unit.
 - [ ] Every slide figure has one panel and type the back row can read.
+- [ ] Every arrow in a diagram has one meaning, and you can defend it.
+- [ ] Every complex figure in a talk builds in the order of the argument.
+- [ ] Every mock figure says inside the image that its numbers are invented.
 
 ## Further reading
 
@@ -109,6 +147,16 @@ figure.
   Introduction*](https://socviz.co), free online, with R code.
 - Zelazny (2001), *Say It With Charts*, 4th edition, McGraw-Hill. How
   to choose a chart from its message.
+- Case and Deaton (2015), "[Rising morbidity and mortality in midlife
+  among white non-Hispanic Americans in the 21st
+  century](https://doi.org/10.1073/pnas.1518393112)", *PNAS*. Figure 1
+  is a research figure worth studying.
+- Larkin and Simon (1987), "[Why a diagram is (sometimes) worth ten
+  thousand words](https://doi.org/10.1111/j.1551-6708.1987.tb00863.x)",
+  *Cognitive Science*. What a diagram does for a reader.
+- Rosling (2006), "[The best stats you've ever
+  seen](https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen)",
+  TED. A chart explained before it moves.
 - Franconeri, Padilla, Shah, Zacks and Hullman (2021), "[The science of
   visual data communication: what
   works](https://doi.org/10.1177/15291006211051956)", *Psychological

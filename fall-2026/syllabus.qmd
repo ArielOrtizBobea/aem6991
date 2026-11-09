@@ -184,6 +184,10 @@ and it is announced in advance together with the meetings it covers. Its
 questions come from those lectures. Expect one in most weeks through
 meeting 12. The exact number is not fixed.
 
+**Quizzes are closed note.** While a quiz is open, the quiz is the only
+thing on your screen. Notes, slides, the course site and any other tab or
+app stay closed.
+
 **Quizzes are taken without AI.** Using a chatbot, a browser AI plugin
 or any other AI tool to answer a quiz question is unauthorized
 assistance under the Code of Academic Integrity, and it earns an F in
@@ -202,16 +206,17 @@ religious observance or documented illness is left out of the average.
 
 ### Midterm (15 %)
 
-**In class on Wednesday, November 18.** Open note, short answers. It is the
-whole meeting --- there is no session B that week. The date is fixed and
-will not move.
+**In class on Wednesday, November 18.** Closed note, short answers. No
+notes, slides, phones, laptops or AI tools. It is the whole meeting ---
+there is no session B that week. The date is fixed and will not move.
 
 You are given a situation and asked to design the study that would answer
 it. The question. The design, and the assumption carrying it. What data it
 requires. And what would undermine it.
 
 It tests whether you can apply the design vocabulary to a situation you
-have not seen. There is nothing to revise beyond having turned up all term.
+have not seen. Prepare by reviewing the research designs from the
+lectures and the assumption each one rests on.
 
 ### Participation (20 %)
 

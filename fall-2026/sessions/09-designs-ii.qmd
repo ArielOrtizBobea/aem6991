@@ -60,6 +60,10 @@ Your team's output is submitted before you leave.
 
 Project description — up to three pages, on Canvas by Friday, October 23
 
+## Practice questions
+
+{{< include practice/_m09.qmd >}}
+
 ::::
 
 :::: {.content-visible when-format="revealjs"}

@@ -1,0 +1,154 @@
+<!-- Written by _quizzes/draw.py. Do not edit by hand: change the bank and redraw. -->
+
+These 10 questions practice the ideas of this lecture. Click an option to check it. A wrong pick lets you try again, and the right one links to the slide that covers it. Four of them ask for a short written answer, as the quiz will. Write yours down before you open the model answer. The quiz on this lecture asks different questions on the same ideas.
+
+```{=html}
+<style>
+.pq-set { margin-top: 0.5rem; }
+.pq { margin: 1.4rem 0 1.8rem; }
+.pq-stem { margin-bottom: 0.6rem; }
+.pq-opt { display: block; width: 100%; text-align: left; margin: 0.35rem 0; padding: 0.5rem 0.75rem;
+  font: inherit; color: inherit; background: transparent; border: 1px solid #cfcfc9; border-radius: 4px; cursor: pointer; }
+.pq-opt:hover:not(:disabled) { border-color: #8a8a84; }
+.pq-opt:disabled { cursor: default; }
+.pq-l { font-weight: 600; margin-right: 0.35rem; }
+.pq-opt.pq-right { background: #e7f4e8; border-color: #2e7d32; }
+.pq-opt.pq-wrong { background: #fbe9e9; border-color: #c62828; opacity: 0.85; }
+.pq-fb { min-height: 1.4em; margin: 0.4rem 0 0; font-size: 0.93em; }
+.pq-fb.pq-ok { color: #2e7d32; }
+.pq-fb.pq-no { color: #c62828; }
+.pq-score { font-weight: 600; margin-top: 1rem; }
+.pq-model summary { cursor: pointer; font-weight: 600; margin: 0.35rem 0; }
+.pq-model p { margin: 0.5rem 0 0; }
+.pq-write { font-size: 0.93em; color: #555; margin: 0 0 0.4rem; }
+</style>
+<div class="pq-set">
+<div class="pq" data-key="2">
+<p class="pq-stem"><strong>1.</strong> On 1 March an airline starts a seat-upgrade offer on its Gulf Coast routes and on no other routes. The airline estimates the effect of the offer by difference-in-differences: the change in revenue per flight on the Gulf Coast routes from before 1 March to after, minus the change on the airline&#x27;s other routes over the same months. In March a rival airline stops flying the Gulf Coast routes. The rival never flew the airline&#x27;s other routes. In which direction does the rival&#x27;s exit push the estimate, relative to the true effect of the offer?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Downward, because the rival&#x27;s exit lifts revenue on the airline&#x27;s other routes too</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Not at all, because the other routes&#x27; change removes shocks over the same months</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Upward, because the rival&#x27;s exit lifts revenue only on the Gulf Coast routes</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Upward, because the Gulf Coast routes&#x27; fixed traits stay in their before-after change</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="09-designs-ii-slides.html#/two-subtractions-remove-two-kinds-of-confounder">Two subtractions remove two kinds of confounder</a>.</template>
+</div>
+<div class="pq" data-key="0">
+<p class="pq-stem"><strong>2.</strong> A clothing chain sends a turnaround team to a store after the store has an unusually poor year. To estimate the effect of a turnaround team on sales, the chain regresses each store&#x27;s change in sales from one year to the next on an indicator for getting a turnaround team between the two years, with no controls. The coefficient on the indicator is large and positive. Which change to the design best identifies the true effect of a turnaround team?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Compare with wait-listed stores that had the same poor year, which would also recover</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Extend the period after the team&#x27;s visit, which shrinks the estimate&#x27;s standard error</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Match on size and region, which makes the two groups alike in their usual sales</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Add store fixed effects, which remove each store&#x27;s own level of yearly sales</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="09-designs-ii-slides.html#/job-trainees-earnings-fell-before-they-enrolled">Job trainees&#x27; earnings fell before they enrolled</a>.</template>
+</div>
+<div class="pq" data-key="1">
+<p class="pq-stem"><strong>3.</strong> On 1 May a state starts paying hiring subsidies to firms in 10 of its counties. Firms can respond by moving jobs into the 10 subsidized counties from the counties that adjoin them. To estimate the effect of the subsidies on jobs, an analyst uses difference-in-differences: the change in monthly jobs in the 10 subsidized counties from before 1 May to after, minus the change in a group of control counties over the same months. Which counties should the analyst use as controls?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Adjoining counties, since their labor markets most resemble those of the subsidized ones</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Distant counties, after checking that counties just beyond the adjoining ones lost no jobs</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> All other counties, since more control units shrink the standard error of the estimate</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Adjoining counties, with county and month fixed effects to absorb the moved jobs</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="09-designs-ii-slides.html#/a-tax-in-one-city-moved-sales-across-its-border">A tax in one city moved sales across its border</a>.</template>
+</div>
+<div class="pq" data-key="3">
+<p class="pq-stem"><strong>4.</strong> A pet-food brand chooses one state for a promotion, and stores in other states are the control group. The brand runs an event study of each store&#x27;s monthly sales, with store and month fixed effects. The leads mark each month before the promotion in the promotion state, and the lags mark each month after the promotion. The estimated effect is positive, and its 95% confidence interval excludes zero if parallel trends holds. The lead coefficients change by up to $20 from one month to the next. The confidence interval includes zero once the trends of the two groups are allowed to diverge by $10 a month. How firm is the estimated effect?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Fragile, since an interval that can include zero is not significant</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Firm, since the interval excludes zero as long as parallel trends holds</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Firm, since the interval excludes zero if trends diverge by $5 a month</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Fragile, since a divergence smaller than the leads already show overturns the result</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="09-designs-ii-slides.html#/a-pre-trend-test-can-pass-when-parallel-trends-fails">A pre-trend test can pass when parallel trends fails</a>.</template>
+</div>
+<div class="pq" data-key="1">
+<p class="pq-stem"><strong>5.</strong> Property trusts whose shares trade on a stock exchange announce 60 acquisitions. To estimate how an acquisition announcement changes a trust&#x27;s market value, an analyst runs a finance event study. The analyst fits a market model for each trust, computes the cumulative abnormal return from the day before each announcement to the day after, and averages the 60 cumulative abnormal returns. In 15 of the 60 event windows, the trust also announces a higher dividend. What should the analyst do with those 15 events?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Keep the 15 events, because averaging across firms cancels the dividend news</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Drop the 15 events, because their returns mix the acquisition with the dividend</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Widen their event windows, because more days dilute the dividend news in the estimate</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Refit their market models, because a new beta removes the dividend news from returns</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="09-designs-ii-slides.html#/other-news-in-the-window-enters-the-estimate">Other news in the window enters the estimate</a>.</template>
+</div>
+<div class="pq" data-key="2">
+<p class="pq-stem"><strong>6.</strong> A cinema chain whose shares trade on a stock exchange has 100 theaters. In June the chain ends free drink refills at 40 of the theaters and keeps free refills at the other 60. To estimate the effect of ending free refills on admissions, an analyst regresses each theater&#x27;s monthly admissions on leads and lags, with theater and month fixed effects. The leads mark each month before June at the 40 theaters, and the lags mark each month from June on. In this design, what supplies the counterfactual for the 40 theaters?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> The month fixed effects alone, because they need no theaters without the cut</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> The market model, because the chain&#x27;s shares trade and the June date is known</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> The 60 other theaters&#x27; change in admissions, because those theaters kept the free refills</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> The 40 theaters&#x27; earlier admissions, because theater fixed effects remove other changes</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="09-designs-ii-slides.html#/two-designs-are-called-event-studies">Two designs are called event studies</a>.</template>
+</div>
+<div class="pq pq-open">
+<p class="pq-stem"><strong>7.</strong> A health network has 80 clinics. Over 36 months, 50 of the clinics started nurse triage, each in a month the clinic chose, and they were mostly clinics with sicker patients. The other 30 clinics never started nurse triage. The network regresses each clinic&#x27;s average waiting time in a month on an indicator for the clinic having nurse triage in that month, with clinic fixed effects and month fixed effects. What assumption must hold for the coefficient on the indicator to be the true effect of nurse triage on waiting times?</p>
+<p class="pq-write">Write your answer in one or two sentences, then compare.</p>
+<details class="pq-model"><summary>Show a model answer</summary>
+<p>Strict exogeneity: nothing that changes within a clinic over time drives both nurse triage and waiting times, and past waiting times do not drive the month a clinic starts. Stated as parallel trends, the same assumption reads: without nurse triage, waiting times at the clinics that started would have changed as they did at the clinics that had not started. Either statement is a right answer. The clinic fixed effects remove a clinic&#x27;s fixed patient mix, so sicker patients alone do not break the assumption. Because the clinics started in different months, the coefficient also needs an effect that does not change with time since a clinic started. If the effect builds over time, an estimator made for staggered timing is needed.</p>
+<p class="pq-fb pq-ok">Slide: <a href="09-designs-ii-slides.html#/fixed-effects-remove-unchanging-confounders">Fixed effects remove unchanging confounders</a>.</p>
+</details>
+</div>
+<div class="pq pq-open">
+<p class="pq-stem"><strong>8.</strong> A county has 25 towns. In April 2024 the county extended bus service to its 8 largest towns and to none of the other 17 towns. An analyst has monthly store visits for each town, for the 36 months before April 2024 and the 12 months after. The analyst uses difference-in-differences: the change in store visits in the 8 bus towns from before April 2024 to after, minus the change in the other 17 towns over the same months. What assumption must hold for this difference-in-differences to give the true effect of the bus service on store visits?</p>
+<p class="pq-write">Write your answer in one or two sentences, then compare.</p>
+<details class="pq-model"><summary>Show a model answer</summary>
+<p>Parallel trends: without the bus service, store visits in the 8 bus towns would have changed by the same amount as store visits in the other 17 towns. The higher level of visits in the bus towns does not matter, since the design compares changes. The bus service must also not pull shoppers away from the other 17 towns. A plot of both groups over the 36 months before April 2024 is the check.</p>
+<p class="pq-fb pq-ok">Slide: <a href="09-designs-ii-slides.html#/two-subtractions-remove-two-kinds-of-confounder">Two subtractions remove two kinds of confounder</a>.</p>
+</details>
+</div>
+<div class="pq pq-open">
+<p class="pq-stem"><strong>9.</strong> A water utility has 85 districts. In June 2024 the 35 districts that share one billing system began texting payment reminders to customers. The other 50 districts never sent reminders. The utility has the number of late payments in each district in each month from 2023 to 2025. The utility wants to know how the effect of the reminders on late payments changes over the months after June 2024. Which research design fits this situation?</p>
+<p class="pq-write">Write your answer in one or two sentences, then compare.</p>
+<details class="pq-model"><summary>Show a model answer</summary>
+<p>A panel event study: district and month fixed effects, with an indicator for the reminder districts in each month before and after June 2024, measured against a reference month before June 2024. The design compares the 35 reminder districts with the other 50 districts, month by month. Parallel trends must hold in every month, with no anticipation: without the reminders, late payments in the two groups of districts would have moved together. Flat leads are the check. The lags show whether the effect arrives at once or builds. A difference-in-differences uses the same comparison and gives one average effect over the months after June 2024, so it does not show how the effect changes.</p>
+<p class="pq-fb pq-ok">Slide: <a href="09-designs-ii-slides.html#/an-event-study-estimates-the-effect-month-by-month">An event study estimates the effect month by month</a>.</p>
+</details>
+</div>
+<div class="pq pq-open">
+<p class="pq-stem"><strong>10.</strong> A cable firm serves 30 counties. In 2023 a rival entered one of the 30 counties and none of the other 29. The cable firm has its monthly subscribers in each county since 2013. From 2013 to 2022, the firm&#x27;s subscribers in the county the rival entered grew unevenly, and slower than in the average county. Over those years, subscribers in that county grew slower than in the county nearest in size and faster than in the county nearest in income. The firm wants the effect of the rival&#x27;s entry on its subscribers in that county. Which research design fits this situation?</p>
+<p class="pq-write">Write your answer in one or two sentences, then compare.</p>
+<details class="pq-model"><summary>Show a model answer</summary>
+<p>Synthetic control. The design compares the county the rival entered with a weighted mix of the other 29 counties. The weights are non-negative, sum to one, and are chosen so the mix tracks the county&#x27;s monthly subscribers from 2013 to 2022. The effect is the gap from 2023 on. The mix must be one that would have kept tracking the county without the rival. The rival&#x27;s entry must not affect the other 29 counties, and the firm must not have reacted before 2023. The checks are the fit before 2023 and a placebo in space.</p>
+<p class="pq-fb pq-ok">Slide: <a href="09-designs-ii-slides.html#/californias-tobacco-program-had-no-matching-state">California&#x27;s tobacco program had no matching state</a>.</p>
+</details>
+</div>
+<p class="pq-score" aria-live="polite"></p>
+</div>
+<script>
+(function () {
+  var qs = document.querySelectorAll('.pq:not(.pq-open)'), first = 0, done = 0;
+  var score = document.querySelector('.pq-score');
+  function tally() { if (score) score.textContent = done ? ('Right on the first try: ' + first + ' of ' + done + ' answered (' + qs.length + ' questions).') : ''; }
+  qs.forEach(function (q) {
+    var keys = (q.dataset.key || '').split(',');
+    var fb = q.querySelector('.pq-fb'), src = q.querySelector('.pq-src');
+    var tries = 0;
+    q.querySelectorAll('.pq-opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        tries += 1;
+        if (keys.indexOf(b.dataset.i) >= 0) {
+          b.classList.add('pq-right');
+          q.querySelectorAll('.pq-opt').forEach(function (x) { x.disabled = true; });
+          fb.className = 'pq-fb pq-ok';
+          fb.innerHTML = 'Correct. ' + (src ? src.innerHTML : '');
+          done += 1; if (tries === 1) first += 1; tally();
+        } else {
+          b.classList.add('pq-wrong'); b.disabled = true;
+          fb.className = 'pq-fb pq-no';
+          fb.textContent = 'Not this one. Try again.';
+        }
+      });
+    });
+  });
+})();
+</script>
+```

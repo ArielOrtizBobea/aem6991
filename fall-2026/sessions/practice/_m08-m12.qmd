@@ -1,0 +1,95 @@
+<!-- Written by _quizzes/draw.py. Do not edit by hand: change the bank and redraw. -->
+
+Here are 4 more. Two of them ask for a short written answer, as the quiz will. Write yours down before you open the model answer.
+
+```{=html}
+<style>
+.pq-set { margin-top: 0.5rem; }
+.pq { margin: 1.4rem 0 1.8rem; }
+.pq-stem { margin-bottom: 0.6rem; }
+.pq-opt { display: block; width: 100%; text-align: left; margin: 0.35rem 0; padding: 0.5rem 0.75rem;
+  font: inherit; color: inherit; background: transparent; border: 1px solid #cfcfc9; border-radius: 4px; cursor: pointer; }
+.pq-opt:hover:not(:disabled) { border-color: #8a8a84; }
+.pq-opt:disabled { cursor: default; }
+.pq-l { font-weight: 600; margin-right: 0.35rem; }
+.pq-opt.pq-right { background: #e7f4e8; border-color: #2e7d32; }
+.pq-opt.pq-wrong { background: #fbe9e9; border-color: #c62828; opacity: 0.85; }
+.pq-fb { min-height: 1.4em; margin: 0.4rem 0 0; font-size: 0.93em; }
+.pq-fb.pq-ok { color: #2e7d32; }
+.pq-fb.pq-no { color: #c62828; }
+.pq-score { font-weight: 600; margin-top: 1rem; }
+.pq-model summary { cursor: pointer; font-weight: 600; margin: 0.35rem 0; }
+.pq-model p { margin: 0.5rem 0 0; }
+.pq-write { font-size: 0.93em; color: #555; margin: 0 0 0.4rem; }
+</style>
+<div class="pq-set" id="pq-set-08-m12">
+<div class="pq" data-key="0">
+<p class="pq-stem"><strong>11.</strong> A hospital network offers a follow-up call program to every patient it discharges, and each patient chooses whether to join the program. Patients who live with family join far more often than patients who live alone. To estimate the effect of the program on readmission, the network compares the share of patients readmitted within 30 days among patients who joined and among patients who did not join. What is wrong with this design?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Joiners differed before any call, since family care cuts readmissions</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> It is not a research design, since nobody assigned the calls at random</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Its estimator is too simple, since a difference in means ignores age</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> It has no control group, since every patient was offered the calls</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="08-designs-i-slides.html#/motivation">Motivation</a>.</template>
+</div>
+<div class="pq" data-key="1">
+<p class="pq-stem"><strong>12.</strong> An agricultural extension service runs an experiment. In each village the service trains a random half of the growers in how to time fertilizer applications. Untrained growers watch their trained neighbors and copy the timing. At harvest, the yields of trained growers are 4% higher than the yields of untrained growers. Would training all growers, compared with training none, raise yields by 4%?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Yes, since growers were trained at random within each village</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> No, it would raise yields by more than 4%, since untrained growers gained by copying the timing</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Yes, since copying raises yields on trained and untrained farms alike</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> No, it would raise yields by less than 4%, since trained growers gained at untrained growers&#x27; expense</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="08-designs-i-slides.html#/does-treating-children-for-worms-keep-them-in-school">Does treating children for worms keep them in school?</a>.</template>
+</div>
+<div class="pq pq-open">
+<p class="pq-stem"><strong>13.</strong> A county wants to know whether a reminder phone call makes property owners pay their property tax on time. This year the county phoned every owner whose tax bill was $3,000 or more, and no other owner. Owners with larger bills pay late more often, with or without a call. The county has the amount of each owner&#x27;s bill and whether the owner paid by the June deadline. The county has no payment records from earlier years. Which research design fits this situation, and what assumption must hold for that design to give the true effect of the phone call on paying on time?</p>
+<p class="pq-write">Write your answer in one or two sentences, then compare.</p>
+<details class="pq-model"><summary>Show a model answer</summary>
+<p>A regression discontinuity at a bill of $3,000. The design compares on-time payment by owners who owed just over $3,000 with owners who owed just under $3,000. Continuity must hold: without the call, on-time payment would change smoothly with the size of the bill at $3,000. No other rule starts at $3,000, and owners could not move their bills across $3,000. The estimate is the call&#x27;s effect for owners with bills near $3,000.</p>
+<p class="pq-fb pq-ok">Slide: <a href="08-designs-i-slides.html#/treatment-jumps-at-the-cutoff-and-nothing-else-does">Treatment jumps at the cutoff and nothing else does</a>.</p>
+</details>
+</div>
+<div class="pq pq-open">
+<p class="pq-stem"><strong>14.</strong> A college wants to know whether an internship raises a graduate&#x27;s starting pay. Stronger students do internships more often. The college funds 200 internship slots, and 600 students applied for a funded slot. A lottery chose the 200 applicants who got a funded slot. Of the 200 applicants who won the lottery, 80% did an internship. Of the 400 applicants who lost the lottery, 30% did an internship. The college has every applicant&#x27;s starting pay. Which research design fits this situation, and what assumption must hold for that design to give the true effect of an internship on starting pay?</p>
+<p class="pq-write">Write your answer in one or two sentences, then compare.</p>
+<details class="pq-model"><summary>Show a model answer</summary>
+<p>Instrumental variables, with winning the lottery as the instrument for doing an internship. The design compares the starting pay of lottery winners with the starting pay of lottery losers, and divides that gap by the 50-point gap in the share who did an internship. Exclusion must hold: winning the lottery affects starting pay only through doing an internship. Relevance holds, since winning raises the share who do an internship, and the lottery gives independence. The estimate is for compliers, the students who do an internship only if they win.</p>
+<p class="pq-fb pq-ok">Slide: <a href="08-designs-i-slides.html#/three-assumptions-behind-an-instrument">Three assumptions behind an instrument</a>.</p>
+</details>
+</div>
+<p class="pq-score" aria-live="polite"></p>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('pq-set-08-m12');
+  var qs = root.querySelectorAll('.pq:not(.pq-open)'), first = 0, done = 0;
+  var score = root.querySelector('.pq-score');
+  function tally() { if (score) score.textContent = done ? ('Right on the first try: ' + first + ' of ' + done + ' answered (' + qs.length + ' questions).') : ''; }
+  qs.forEach(function (q) {
+    var keys = (q.dataset.key || '').split(',');
+    var fb = q.querySelector('.pq-fb'), src = q.querySelector('.pq-src');
+    var tries = 0;
+    q.querySelectorAll('.pq-opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        tries += 1;
+        if (keys.indexOf(b.dataset.i) >= 0) {
+          b.classList.add('pq-right');
+          q.querySelectorAll('.pq-opt').forEach(function (x) { x.disabled = true; });
+          fb.className = 'pq-fb pq-ok';
+          fb.innerHTML = 'Correct. ' + (src ? src.innerHTML : '');
+          done += 1; if (tries === 1) first += 1; tally();
+        } else {
+          b.classList.add('pq-wrong'); b.disabled = true;
+          fb.className = 'pq-fb pq-no';
+          fb.textContent = 'Not this one. Try again.';
+        }
+      });
+    });
+  });
+})();
+</script>
+```

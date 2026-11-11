@@ -55,7 +55,7 @@
   <td class="hw"></td></tr>
 <tr class="g-last g04"><td>Wed Nov 11</td>
   <td class="topic"><a href="sessions/12-speaking.html">12 · Speaking</a>
-    <span class="t-desc">A talk is an outline with pictures. One claim per slide, and the claim is the slide title, not a label. Then the genre you actually face: pitching a research plan to people who will never read the paper, and who want to know what it costs and what they would do differently.</span></td>
+    <span class="t-desc">A reader can skim, re-read and stop. A listener hears the talk once, at the speaker's pace. Who is listening, the message in one sentence, ten minutes for a research proposal, slides with one point each, delivery, and answering questions.</span></td>
   <td class="hw">Proposal outline · Rate your teammates</td></tr>
 
 <tr class="g-first g05"><td class="g-rail" rowspan="4"><span>Delivery</span></td><td>Wed Nov 18<sup class="resched">*</sup></td>

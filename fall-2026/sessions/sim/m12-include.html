@@ -1,0 +1,77 @@
+<style>
+/* Meeting 12: no demos. Shared slide rules from earlier meetings, plus the
+   side-by-side texts, the mock slides and the video frames. */
+.reveal .slides section.dense > ul, .reveal .slides section.dense > ol { font-size: 0.86em; }
+/* The solution line on each problem slide. */
+.reveal .slides section .solution { color: #b31b1b; }
+/* Source lines are 0.55em links inside a full-size paragraph. Size the paragraph instead. */
+.reveal .slides section p:has(> a[style*="font-size:0.55em"]) { font-size: 0.55em; line-height: 1.3; margin: 0.4em 0 0; color: #6b6b6b; }
+.reveal .slides section p:has(> a[style*="font-size:0.55em"]) > a { font-size: 1em !important; }
+.reveal .slides section .src { font-size: 0.55em; line-height: 1.3; color: #6b6b6b; margin: 0.4em 0 0; }
+
+/* Even spacing between bullets. The theme draws each list as an inline block
+   with a bottom margin, so a bullet in its own block (a Solution line on a
+   click, the Next line) sat further from the bullet above it. As plain blocks
+   with no list margin, the item margins collapse to one gap everywhere. */
+.reveal .slides section ul, .reveal .slides section ol { display: block; margin-top: 0; margin-bottom: 0; }
+.reveal .slides section li { margin-top: 0.4em; margin-bottom: 0; }
+
+/* The section question a slide answers, under its title. */
+.reveal .m12-q { font-size: 0.5em; font-weight: 600; color: #6b6b6b; margin: -0.35em 0 0.35em; }
+
+/* The transition to the next slide, as a last grey bullet. */
+.reveal .m12-next { font-size: 0.7em; color: #6b6b6b; margin-top: 0; }
+.reveal .m12-next ul { margin-top: 0; margin-bottom: 0; }
+.reveal .m12-under .m12-next { font-size: 1em; }
+
+/* Text under or beside a figure. */
+.reveal .m12-under { font-size: 0.7em; }
+.reveal .m12-under ul, .reveal .m12-under ol { margin-top: 0; margin-bottom: 0; }
+
+/* A figure beside its bullets. */
+.reveal .m12-side { display: flex; gap: 0.7em; align-items: center; margin: 0.1em 0 0.2em; }
+.reveal .m12-side > div { flex: 1 1 0; min-width: 0; }
+.reveal .m12-side img { display: block; width: auto; max-width: 100%; max-height: 380px; margin: 0 auto; }
+
+/* Two texts or two mock slides side by side, each with a small label. */
+.reveal .m12-pair { display: flex; gap: 0.7em; margin: 0.15em 0 0.3em; }
+.reveal .m12-pair > div { flex: 1 1 0; min-width: 0; }
+.reveal .m12-tag { display: block; font-size: 0.48em; font-weight: 700; letter-spacing: 0.08em;
+                   text-transform: uppercase; color: #6b6b6b; margin-bottom: 0.25em; text-align: left; }
+.reveal .m12-pair .after .m12-tag { color: #b31b1b; }
+.reveal .m12-say { font-size: 0.8em; line-height: 1.4; border-left: 4px solid #c9c9c3;
+                   padding: 0.2em 0 0.2em 0.6em; margin: 0; text-align: left; }
+.reveal .m12-pair .after .m12-say { border-left-color: #b31b1b; }
+
+/* A mock slide: a small framed slide drawn inside the slide. */
+.reveal .m12-mock { border: 1.5px solid #9a9a94; border-radius: 4px; background: #fff;
+                    aspect-ratio: 16 / 10; padding: 0.5em 0.7em; text-align: left;
+                    display: flex; flex-direction: column; overflow: hidden; }
+.reveal .m12-mock .mt { font-size: 0.5em; font-weight: 700; color: #1b1b1b; margin: 0 0 0.3em;
+                        border-bottom: 1.5px solid #b31b1b; padding-bottom: 0.15em; }
+.reveal .m12-mock ul, .reveal .m12-mock ol { font-size: 0.52em; line-height: 1.4; margin: 0 0 0 1.1em; }
+.reveal .m12-mock ol li { margin-bottom: 0.35em; }
+.reveal .m12-mock.dense ul { font-size: 0.31em; line-height: 1.3; }
+.reveal .m12-mock .big { font-size: 1.1em; font-weight: 700; margin: auto; text-align: center; }
+.reveal .m12-mock img { display: block; max-height: 215px; width: auto; margin: auto; }
+
+/* The pyramid. */
+.reveal .m12-pyr { display: block; width: 100%; max-height: 330px; margin: 0.1em auto 0.2em; }
+.m12-pyr .box  { fill: #fff; stroke: #55554f; stroke-width: 2; }
+.m12-pyr .top  { fill: #fff; stroke: #b31b1b; stroke-width: 3; }
+.m12-pyr .lab  { font-size: 17px; fill: #1b1b1b; text-anchor: middle; font-family: Helvetica, Arial, sans-serif; }
+.m12-pyr .labb { font-size: 17px; fill: #b31b1b; text-anchor: middle; font-weight: 700; font-family: Helvetica, Arial, sans-serif; }
+.m12-pyr .sm   { font-size: 14.5px; fill: #55554f; text-anchor: middle; font-family: Helvetica, Arial, sans-serif; }
+.m12-pyr .edge { stroke: #55554f; stroke-width: 2; fill: none; }
+.m12-pyr .lvl  { font-size: 13px; fill: #6b6b6b; text-anchor: start; font-weight: 700; letter-spacing: 0.08em; font-family: Helvetica, Arial, sans-serif; }
+
+/* An embedded talk. */
+.reveal .m12-video { display: block; width: 720px; max-width: 100%; height: 405px; margin: 0.1em auto 0.2em; border: 0; }
+.reveal .m12-video.short { height: 380px; width: 676px; }
+
+/* The title of an embedded talk, centred under its player. */
+.reveal .m12-cap p { text-align: center; }
+
+/* The ten-minute budget and other full-width tables. */
+.reveal .m12-wide table { width: 100%; }
+</style>

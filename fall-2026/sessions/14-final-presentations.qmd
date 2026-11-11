@@ -16,7 +16,7 @@ This page is a stub. Materials appear here before the meeting.
 
 ## Session A · 2:00–3:15
 
-Final presentations. Each team reviews another team's work.
+Final presentations take the whole meeting, 2:00 to 4:30. Each of the nine teams has a 15-minute slot: 10 minutes to present, 4 minutes of questions from the room, and 1 minute to change over. Five teams present before a 10-minute break at 3:20. Present as you would in a seminar room, to an expert who is hearing your proposal for the first time and judging its importance, its soundness and its feasibility. It is recommended that every member of the team speaks. Each team reviews another team's work.
 
 ## Session B · 3:30–4:30
 
@@ -24,7 +24,7 @@ Every session B opens with a ten-minute team check-in: what you did
 since last week, what is stuck, and who is doing what next. Written
 down, and handed in with that session's work.
 
-The handoff to AEM 6992. What each team does over the break.
+Final presentations continue with the last four teams, on the same clock: 10 minutes to present, 4 minutes of questions, 1 minute to change over.
 
 Your team's output is submitted before you leave.
 

@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>AEM 6991 · 9 Research designs II – AEM 6991</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6858434a3a20092dec4b64d2a6c27ab7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../fall-2026/sessions/06-models-uncertainty.html">Part 3 — Methods</a></li><li class="breadcrumb-item"><a href="../../fall-2026/sessions/09-designs-ii.html"> 9 Research designs II</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">AEM 6991</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Assignments</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/handouts/project-description.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"> 1 Project description</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 1 — Getting started</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/01-introductions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"> 1 Introductions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 2 — Foundations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/02-causality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"> 2 Theory and causality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/03-questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"> 3 Finding the question</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/04-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"> 4 Ethical and legal obligations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/05-tools-and-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"> 5 Using AI in research</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 3 — Methods</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/06-models-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"> 6 Models and uncertainty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/07-model-failures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"> 7 Model failures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/08-designs-i.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"> 8 Research designs I</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/09-designs-ii.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"> 9 Research designs II</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 4 — Communication</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/10-writing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10 Writing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/11-figures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">11 Visualization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/12-speaking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Speaking</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 5 — Delivery</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/13-midterm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Midterm</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/sessions/14-final-presentations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Final presentations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/data-sources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Where to get data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/permissions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Permissions and ethics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/teamwork.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Working in a team</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/project-ideas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Potential project ideas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fall-2026/handouts/02-teams-slides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project teams</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#handouts" id="toc-handouts" class="nav-link active" data-scroll-target="#handouts">Handouts</a></li>
+  <li><a href="#where-to-read-more" id="toc-where-to-read-more" class="nav-link" data-scroll-target="#where-to-read-more">Where to read more</a></li>
+  <li><a href="#session-a-200315" id="toc-session-a-200315" class="nav-link" data-scroll-target="#session-a-200315">Session A · 2:00–3:15</a></li>
+  <li><a href="#session-b-330430" id="toc-session-b-330430" class="nav-link" data-scroll-target="#session-b-330430">Session B · 3:30–4:30</a></li>
+  <li><a href="#due" id="toc-due" class="nav-link" data-scroll-target="#due">Due</a></li>
+  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">Practice questions</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="09-designs-ii-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../fall-2026/sessions/06-models-uncertainty.html">Part 3 — Methods</a></li><li class="breadcrumb-item"><a href="../../fall-2026/sessions/09-designs-ii.html"> 9 Research designs II</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">9 · Research designs II</h1>
+<p class="subtitle lead">Wednesday, October 21, 2026</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><a href="09-designs-ii-slides.html"><strong>Open the slides</strong></a></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>On Zoom.</strong> This meeting is held on Zoom, at the usual time. Join from the <a href="https://canvas.cornell.edu/courses/92942/external_tools/1346">Zoom page on Canvas</a>, which asks for your NetID.</p>
+</div>
+</div>
+</div>
+<p><strong>What you should be able to do after this meeting.</strong> Draw your project’s design as a graph. Name the single assumption carrying the estimate — the one you would have to defend to a sceptic.</p>
+<section id="handouts" class="level2">
+<h2 class="anchored" data-anchor-id="handouts">Handouts</h2>
+<p><a href="../../fall-2026/handouts/project-description.html">Project description brief</a></p>
+</section>
+<section id="where-to-read-more" class="level2">
+<h2 class="anchored" data-anchor-id="where-to-read-more">Where to read more</h2>
+<p><a href="https://mixtape.scunning.com/">Remix</a> ch.&nbsp;8 on panel data and fixed effects, ch.&nbsp;9 on difference-in-differences, ch.&nbsp;10 if your rollout is staggered, and ch.&nbsp;11 on synthetic control. <a href="https://theeffectbook.net">The Effect</a> ch.&nbsp;16 to 18 cover fixed effects, event studies and difference-in-differences. <a href="https://www.mostlyharmlesseconometrics.com/">Mostly Harmless</a> ch.&nbsp;5.</p>
+</section>
+<section id="session-a-200315" class="level2">
+<h2 class="anchored" data-anchor-id="session-a-200315">Session A · 2:00–3:15</h2>
+<p>Designs that use change over time, each drawn before it is described. Fixed effects first, opened by women on corporate boards, where the association with firm value changed sign once each firm was compared with itself: what the fixed effects remove, the confounders that change over time and survive them, measurement error that they amplify, and a common shortcut that is not a fixed effect. Then difference-in-differences and event studies as one design built in four steps. Two groups and two periods, opened by John Snow’s comparison of two London water companies before and after one of them moved its intake in 1852: cholera deaths fell by 57 per 10,000 residents in the districts it partly supplied, relative to districts it did not reach. A simulated coffee chain that launches a mobile-ordering app shows what each subtraction removes and what parallel trends assumes, and two studies show it failing: trainees whose earnings dipped just before job training, and Philadelphia’s beverage tax pushing sales into the stores outside the city. More periods turn the comparison into an event study, whose pre-trend tests can pass when parallel trends fails. Adoption on different dates changes which units serve as controls, and two-way fixed effects can then report the wrong sign. Treatment that comes in doses needs a stronger assumption to compare one dose with another. Then few treated units: standard errors with one treated state, and synthetic control for California’s 1988 tobacco program. Last, the finance event study, opened by stock prices on the day of earnings announcements: the market model, abnormal returns, and other news in the window. The session closes with all six designs of meetings 8 and 9 in one table.</p>
+</section>
+<section id="session-b-330430" class="level2">
+<h2 class="anchored" data-anchor-id="session-b-330430">Session B · 3:30–4:30</h2>
+<p>Every session B opens with a ten-minute team check-in: what you did since last week, what is stuck, and who is doing what next. Written down, and handed in with that session’s work.</p>
+<p>Seven published studies that cover the designs of meetings 8 and 9, each posed as the question and the setting its authors faced: working from home at a Chinese travel agency, family heirs as chief executives, close shareholder votes on governance, calorie labels at Starbucks, bank deregulation and inequality, the cost of terrorism in the Basque Country, and the sudden deaths of company directors. For each, the room proposes a design and names the assumption it needs before the slide shows what the authors did. Then teams are drawn at random to put up their own project’s design, draw the graph, state the assumption carrying the estimate, and defend it while the room tries to break it. Every team presents at some point, without notice. The design that survives goes in your identification section, and the attack that landed goes in your limitations paragraph.</p>
+<p>Your team’s output is submitted before you leave.</p>
+</section>
+<section id="due" class="level2">
+<h2 class="anchored" data-anchor-id="due">Due</h2>
+<p>Project description — up to three pages, on Canvas by Friday, October 23</p>
+</section>
+<section id="practice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="practice-questions">Practice questions</h2>
+<!-- Written by _quizzes/draw.py. Do not edit by hand: change the bank and redraw. -->
+<p>These 10 questions practice the ideas of this lecture. Click an option to check it. A wrong pick lets you try again, and the right one links to the slide that covers it. Four of them ask for a short written answer, as the quiz will. Write yours down before you open the model answer. The quiz on this lecture asks different questions on the same ideas.</p>
+<style>
+.pq-set { margin-top: 0.5rem; }
+.pq { margin: 1.4rem 0 1.8rem; }
+.pq-stem { margin-bottom: 0.6rem; }
+.pq-opt { display: block; width: 100%; text-align: left; margin: 0.35rem 0; padding: 0.5rem 0.75rem;
+  font: inherit; color: inherit; background: transparent; border: 1px solid #cfcfc9; border-radius: 4px; cursor: pointer; }
+.pq-opt:hover:not(:disabled) { border-color: #8a8a84; }
+.pq-opt:disabled { cursor: default; }
+.pq-l { font-weight: 600; margin-right: 0.35rem; }
+.pq-opt.pq-right { background: #e7f4e8; border-color: #2e7d32; }
+.pq-opt.pq-wrong { background: #fbe9e9; border-color: #c62828; opacity: 0.85; }
+.pq-fb { min-height: 1.4em; margin: 0.4rem 0 0; font-size: 0.93em; }
+.pq-fb.pq-ok { color: #2e7d32; }
+.pq-fb.pq-no { color: #c62828; }
+.pq-score { font-weight: 600; margin-top: 1rem; }
+.pq-model summary { cursor: pointer; font-weight: 600; margin: 0.35rem 0; }
+.pq-model p { margin: 0.5rem 0 0; }
+.pq-write { font-size: 0.93em; color: #555; margin: 0 0 0.4rem; }
+</style>
+<div class="pq-set">
+<div class="pq" data-key="2">
+<p class="pq-stem"><strong>1.</strong> On 1 March an airline starts a seat-upgrade offer on its Gulf Coast routes and on no other routes. The airline estimates the effect of the offer by difference-in-differences: the change in revenue per flight on the Gulf Coast routes from before 1 March to after, minus the change on the airline's other routes over the same months. In March a rival airline stops flying the Gulf Coast routes. The rival never flew the airline's other routes. In which direction does the rival's exit push the estimate, relative to the true effect of the offer?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Downward, because the rival's exit lifts revenue on the airline's other routes too</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Not at all, because the other routes' change removes shocks over the same months</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Upward, because the rival's exit lifts revenue only on the Gulf Coast routes</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Upward, because the Gulf Coast routes' fixed traits stay in their before-after change</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="09-designs-ii-slides.html#/two-subtractions-remove-two-kinds-of-confounder">Two subtractions remove two kinds of confounder</a>.</template>
+</div>
+<div class="pq" data-key="0">
+<p class="pq-stem"><strong>2.</strong> A clothing chain sends a turnaround team to a store after the store has an unusually poor year. To estimate the effect of a turnaround team on sales, the chain regresses each store's change in sales from one year to the next on an indicator for getting a turnaround team between the two years, with no controls. The coefficient on the indicator is large and positive. Which change to the design best identifies the true effect of a turnaround team?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Compare with wait-listed stores that had the same poor year, which would also recover</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Extend the period after the team's visit, which shrinks the estimate's standard error</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Match on size and region, which makes the two groups alike in their usual sales</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Add store fixed effects, which remove each store's own level of yearly sales</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="09-designs-ii-slides.html#/job-trainees-earnings-fell-before-they-enrolled">Job trainees' earnings fell before they enrolled</a>.</template>
+</div>
+<div class="pq" data-key="1">
+<p class="pq-stem"><strong>3.</strong> On 1 May a state starts paying hiring subsidies to firms in 10 of its counties. Firms can respond by moving jobs into the 10 subsidized counties from the counties that adjoin them. To estimate the effect of the subsidies on jobs, an analyst uses difference-in-differences: the change in monthly jobs in the 10 subsidized counties from before 1 May to after, minus the change in a group of control counties over the same months. Which counties should the analyst use as controls?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Adjoining counties, since their labor markets most resemble those of the subsidized ones</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Distant counties, after checking that counties just beyond the adjoining ones lost no jobs</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> All other counties, since more control units shrink the standard error of the estimate</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Adjoining counties, with county and month fixed effects to absorb the moved jobs</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="09-designs-ii-slides.html#/a-tax-in-one-city-moved-sales-across-its-border">A tax in one city moved sales across its border</a>.</template>
+</div>
+<div class="pq" data-key="3">
+<p class="pq-stem"><strong>4.</strong> A pet-food brand chooses one state for a promotion, and stores in other states are the control group. The brand runs an event study of each store's monthly sales, with store and month fixed effects. The leads mark each month before the promotion in the promotion state, and the lags mark each month after the promotion. The estimated effect is positive, and its 95% confidence interval excludes zero if parallel trends holds. The lead coefficients change by up to $20 from one month to the next. The confidence interval includes zero once the trends of the two groups are allowed to diverge by $10 a month. How firm is the estimated effect?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Fragile, since an interval that can include zero is not significant</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Firm, since the interval excludes zero as long as parallel trends holds</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Firm, since the interval excludes zero if trends diverge by $5 a month</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Fragile, since a divergence smaller than the leads already show overturns the result</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="09-designs-ii-slides.html#/a-pre-trend-test-can-pass-when-parallel-trends-fails">A pre-trend test can pass when parallel trends fails</a>.</template>
+</div>
+<div class="pq" data-key="1">
+<p class="pq-stem"><strong>5.</strong> Property trusts whose shares trade on a stock exchange announce 60 acquisitions. To estimate how an acquisition announcement changes a trust's market value, an analyst runs a finance event study. The analyst fits a market model for each trust, computes the cumulative abnormal return from the day before each announcement to the day after, and averages the 60 cumulative abnormal returns. In 15 of the 60 event windows, the trust also announces a higher dividend. What should the analyst do with those 15 events?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> Keep the 15 events, because averaging across firms cancels the dividend news</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> Drop the 15 events, because their returns mix the acquisition with the dividend</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> Widen their event windows, because more days dilute the dividend news in the estimate</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> Refit their market models, because a new beta removes the dividend news from returns</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="09-designs-ii-slides.html#/other-news-in-the-window-enters-the-estimate">Other news in the window enters the estimate</a>.</template>
+</div>
+<div class="pq" data-key="2">
+<p class="pq-stem"><strong>6.</strong> A cinema chain whose shares trade on a stock exchange has 100 theaters. In June the chain ends free drink refills at 40 of the theaters and keeps free refills at the other 60. To estimate the effect of ending free refills on admissions, an analyst regresses each theater's monthly admissions on leads and lags, with theater and month fixed effects. The leads mark each month before June at the 40 theaters, and the lags mark each month from June on. In this design, what supplies the counterfactual for the 40 theaters?</p>
+<div class="pq-opts">
+<button type="button" class="pq-opt" data-i="0"><span class="pq-l">a.</span> The month fixed effects alone, because they need no theaters without the cut</button>
+<button type="button" class="pq-opt" data-i="1"><span class="pq-l">b.</span> The market model, because the chain's shares trade and the June date is known</button>
+<button type="button" class="pq-opt" data-i="2"><span class="pq-l">c.</span> The 60 other theaters' change in admissions, because those theaters kept the free refills</button>
+<button type="button" class="pq-opt" data-i="3"><span class="pq-l">d.</span> The 40 theaters' earlier admissions, because theater fixed effects remove other changes</button>
+</div>
+<p class="pq-fb" aria-live="polite"></p>
+<template class="pq-src">Slide: <a href="09-designs-ii-slides.html#/two-designs-are-called-event-studies">Two designs are called event studies</a>.</template>
+</div>
+<div class="pq pq-open">
+<p class="pq-stem"><strong>7.</strong> A health network has 80 clinics. Over 36 months, 50 of the clinics started nurse triage, each in a month the clinic chose, and they were mostly clinics with sicker patients. The other 30 clinics never started nurse triage. The network regresses each clinic's average waiting time in a month on an indicator for the clinic having nurse triage in that month, with clinic fixed effects and month fixed effects. What assumption must hold for the coefficient on the indicator to be the true effect of nurse triage on waiting times?</p>
+<p class="pq-write">Write your answer in one or two sentences, then compare.</p>
+<details class="pq-model"><summary>Show a model answer</summary>
+<p>Strict exogeneity: nothing that changes within a clinic over time drives both nurse triage and waiting times, and past waiting times do not drive the month a clinic starts. Stated as parallel trends, the same assumption reads: without nurse triage, waiting times at the clinics that started would have changed as they did at the clinics that had not started. Either statement is a right answer. The clinic fixed effects remove a clinic's fixed patient mix, so sicker patients alone do not break the assumption. Because the clinics started in different months, the coefficient also needs an effect that does not change with time since a clinic started. If the effect builds over time, an estimator made for staggered timing is needed.</p>
+<p class="pq-fb pq-ok">Slide: <a href="09-designs-ii-slides.html#/fixed-effects-remove-unchanging-confounders">Fixed effects remove unchanging confounders</a>.</p>
+</details>
+</div>
+<div class="pq pq-open">
+<p class="pq-stem"><strong>8.</strong> A county has 25 towns. In April 2024 the county extended bus service to its 8 largest towns and to none of the other 17 towns. An analyst has monthly store visits for each town, for the 36 months before April 2024 and the 12 months after. The analyst uses difference-in-differences: the change in store visits in the 8 bus towns from before April 2024 to after, minus the change in the other 17 towns over the same months. What assumption must hold for this difference-in-differences to give the true effect of the bus service on store visits?</p>
+<p class="pq-write">Write your answer in one or two sentences, then compare.</p>
+<details class="pq-model"><summary>Show a model answer</summary>
+<p>Parallel trends: without the bus service, store visits in the 8 bus towns would have changed by the same amount as store visits in the other 17 towns. The higher level of visits in the bus towns does not matter, since the design compares changes. The bus service must also not pull shoppers away from the other 17 towns. A plot of both groups over the 36 months before April 2024 is the check.</p>
+<p class="pq-fb pq-ok">Slide: <a href="09-designs-ii-slides.html#/two-subtractions-remove-two-kinds-of-confounder">Two subtractions remove two kinds of confounder</a>.</p>
+</details>
+</div>
+<div class="pq pq-open">
+<p class="pq-stem"><strong>9.</strong> A water utility has 85 districts. In June 2024 the 35 districts that share one billing system began texting payment reminders to customers. The other 50 districts never sent reminders. The utility has the number of late payments in each district in each month from 2023 to 2025. The utility wants to know how the effect of the reminders on late payments changes over the months after June 2024. Which research design fits this situation?</p>
+<p class="pq-write">Write your answer in one or two sentences, then compare.</p>
+<details class="pq-model"><summary>Show a model answer</summary>
+<p>A panel event study: district and month fixed effects, with an indicator for the reminder districts in each month before and after June 2024, measured against a reference month before June 2024. The design compares the 35 reminder districts with the other 50 districts, month by month. Parallel trends must hold in every month, with no anticipation: without the reminders, late payments in the two groups of districts would have moved together. Flat leads are the check. The lags show whether the effect arrives at once or builds. A difference-in-differences uses the same comparison and gives one average effect over the months after June 2024, so it does not show how the effect changes.</p>
+<p class="pq-fb pq-ok">Slide: <a href="09-designs-ii-slides.html#/an-event-study-estimates-the-effect-month-by-month">An event study estimates the effect month by month</a>.</p>
+</details>
+</div>
+<div class="pq pq-open">
+<p class="pq-stem"><strong>10.</strong> A cable firm serves 30 counties. In 2023 a rival entered one of the 30 counties and none of the other 29. The cable firm has its monthly subscribers in each county since 2013. From 2013 to 2022, the firm's subscribers in the county the rival entered grew unevenly, and slower than in the average county. Over those years, subscribers in that county grew slower than in the county nearest in size and faster than in the county nearest in income. The firm wants the effect of the rival's entry on its subscribers in that county. Which research design fits this situation?</p>
+<p class="pq-write">Write your answer in one or two sentences, then compare.</p>
+<details class="pq-model"><summary>Show a model answer</summary>
+<p>Synthetic control. The design compares the county the rival entered with a weighted mix of the other 29 counties. The weights are non-negative, sum to one, and are chosen so the mix tracks the county's monthly subscribers from 2013 to 2022. The effect is the gap from 2023 on. The mix must be one that would have kept tracking the county without the rival. The rival's entry must not affect the other 29 counties, and the firm must not have reacted before 2023. The checks are the fit before 2023 and a placebo in space.</p>
+<p class="pq-fb pq-ok">Slide: <a href="09-designs-ii-slides.html#/californias-tobacco-program-had-no-matching-state">California's tobacco program had no matching state</a>.</p>
+</details>
+</div>
+<p class="pq-score" aria-live="polite"></p>
+</div>
+<script>
+(function () {
+  var qs = document.querySelectorAll('.pq:not(.pq-open)'), first = 0, done = 0;
+  var score = document.querySelector('.pq-score');
+  function tally() { if (score) score.textContent = done ? ('Right on the first try: ' + first + ' of ' + done + ' answered (' + qs.length + ' questions).') : ''; }
+  qs.forEach(function (q) {
+    var keys = (q.dataset.key || '').split(',');
+    var fb = q.querySelector('.pq-fb'), src = q.querySelector('.pq-src');
+    var tries = 0;
+    q.querySelectorAll('.pq-opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        tries += 1;
+        if (keys.indexOf(b.dataset.i) >= 0) {
+          b.classList.add('pq-right');
+          q.querySelectorAll('.pq-opt').forEach(function (x) { x.disabled = true; });
+          fb.className = 'pq-fb pq-ok';
+          fb.innerHTML = 'Correct. ' + (src ? src.innerHTML : '');
+          done += 1; if (tries === 1) first += 1; tally();
+        } else {
+          b.classList.add('pq-wrong'); b.disabled = true;
+          fb.className = 'pq-fb pq-no';
+          fb.textContent = 'Not this one. Try again.';
+        }
+      });
+    });
+  });
+})();
+</script>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/arielortizbobea\.github\.io\/aem6991\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

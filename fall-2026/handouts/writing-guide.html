@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>AEM 6991 · Writing guide – AEM 6991</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6858434a3a20092dec4b64d2a6c27ab7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#know-who-reads-which-part" id="toc-know-who-reads-which-part" class="nav-link active" data-scroll-target="#know-who-reads-which-part">1. Know who reads which part</a></li>
+  <li><a href="#nest-the-versions-for-those-readers" id="toc-nest-the-versions-for-those-readers" class="nav-link" data-scroll-target="#nest-the-versions-for-those-readers">2. Nest the versions for those readers</a></li>
+  <li><a href="#use-the-structure-readers-expect" id="toc-use-the-structure-readers-expect" class="nav-link" data-scroll-target="#use-the-structure-readers-expect">3. Use the structure readers expect</a></li>
+  <li><a href="#write-one-idea-per-paragraph" id="toc-write-one-idea-per-paragraph" class="nav-link" data-scroll-target="#write-one-idea-per-paragraph">4. Write one idea per paragraph</a></li>
+  <li><a href="#keep-the-reader-on-your-path" id="toc-keep-the-reader-on-your-path" class="nav-link" data-scroll-target="#keep-the-reader-on-your-path">5. Keep the reader on your path</a></li>
+  <li><a href="#write-plain-neutral-sentences" id="toc-write-plain-neutral-sentences" class="nav-link" data-scroll-target="#write-plain-neutral-sentences">6. Write plain, neutral sentences</a></li>
+  <li><a href="#write-in-three-passes" id="toc-write-in-three-passes" class="nav-link" data-scroll-target="#write-in-three-passes">7. Write in three passes</a></li>
+  <li><a href="#checklist-before-you-submit" id="toc-checklist-before-you-submit" class="nav-link" data-scroll-target="#checklist-before-you-submit">Checklist before you submit</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Writing guide</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>This guide goes with <a href="../../fall-2026/sessions/10-writing.html">meeting 10</a>. Use it for the proposal outline, due November 11, and for the written proposal, due December 11. The checklist at the end is the one to run before you submit.</p>
+</div>
+</div>
+</div>
+<p>The proposal is graded against the syllabus’s <a href="../../fall-2026/syllabus.html#what-you-are-graded-against">required headings</a>, and two questions move a grade more than anything else: is the claim in the first sentence, and could it come out the other way? This guide is about the rest: who reads your document, in what order, and what keeps them reading. It has seven principles, the standard order of six kinds of document, the style rules, and a checklist.</p>
+<section id="know-who-reads-which-part" class="level2">
+<h2 class="anchored" data-anchor-id="know-who-reads-which-part">1. Know who reads which part</h2>
+<p>Every document has three kinds of reader, in a mix that depends on the setting.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">In research</th>
+<th style="text-align: left;">In an organization</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Skimmers</strong> read the title and the summary, then stop</td>
+<td style="text-align: left;">Someone searching for papers; a student</td>
+<td style="text-align: left;">The executive who needs the big picture</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Engaged readers</strong> read the introduction and the main results</td>
+<td style="text-align: left;">Someone writing a literature review; a researcher deciding whether the paper matters to them</td>
+<td style="text-align: left;">The manager who acts on the recommendation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Deep readers</strong> read the methods and the appendix</td>
+<td style="text-align: left;">A peer who follows the work; a critic; a referee</td>
+<td style="text-align: left;">The analyst who checks the numbers</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Write each part for the reader who reaches it.</strong> The title and the abstract serve skimmers: no jargon, and no acronyms in the title. The introduction serves engaged readers: use the field’s terms and define each one at first use. The methods and the appendix serve deep readers and carry the full technical detail. Some details are never read, and they are there for the few who need them.</p>
+<p><strong>Your proposal’s readers.</strong> The instructor grades it. The grading standard asks that somebody outside your team could act on it, so write the first page for that person: the manager, client or data provider who would use the answer.</p>
+<p><strong>Evidence.</strong> On a National Institutes of Health review panel, about 20 people score each application and three read it closely; the institute tells applicants to write the summary parts for a reader of <em>Scientific American</em> (<a href="https://www.niaid.nih.gov/grants-contracts/know-your-audience">NIAID</a>). People who know something overestimate how much others know, the <em>curse of knowledge</em> (<a href="https://doi.org/10.1086/261651">Camerer, Loewenstein and Weber 1989</a>).</p>
+<p><strong>The journal sets the framing.</strong> The same research is framed for the reader of the outlet. Bloom and coauthors’ experiment at a Chinese travel agency appeared in the <em>Quarterly Journal of Economics</em> as an incentive problem, whether employees shirk at home (<a href="https://doi.org/10.1093/qje/qju032">Bloom, Liang, Roberts and Ying 2015</a>). A later experiment at the same firm appeared in <em>Nature</em> as a management practice that about 100 million employees in Europe and North America have adopted (<a href="https://doi.org/10.1038/s41586-024-07500-2">Bloom, Han and Liang 2024</a>).</p>
+</section>
+<section id="nest-the-versions-for-those-readers" class="level2">
+<h2 class="anchored" data-anchor-id="nest-the-versions-for-those-readers">2. Nest the versions for those readers</h2>
+<p>The title, the abstract, the introduction and the full paper are four versions of one message, nested like Russian dolls. Each one carries the whole message at its own length and its reader’s technical level. The repetition is intended, and each version rewords the one before (<a href="https://doi.org/10.1109/TPC.2002.805164">Doumont 2002</a>).</p>
+<p><strong>Keep the feature that identifies the paper.</strong> A title that fits a dozen papers tells a skimmer nothing. <em>Climate change and global agricultural productivity</em> is a topic. <em>Anthropogenic climate change has slowed global agricultural productivity growth</em> is a finding, and it fits one paper (<a href="https://doi.org/10.1038/s41558-021-01000-1">Ortiz-Bobea et al. 2021</a>).</p>
+<p><strong>One study, three titles.</strong> The same 2021 study appeared as:</p>
+<ul>
+<li><em>The Historical Impact of Anthropogenic Climate Change on Global Agricultural Productivity</em>, a working paper for economists (<a href="https://arxiv.org/abs/2007.10415">arXiv 2020</a>);</li>
+<li><em>Anthropogenic climate change has slowed global agricultural productivity growth</em>, in a journal read by scientists in many fields;</li>
+<li><em>Climate change has cost 7 years of ag productivity growth</em>, in the university’s news story for the public (<a href="https://news.cornell.edu/stories/2021/04/climate-change-has-cost-7-years-ag-productivity-growth">Cornell Chronicle 2021</a>).</li>
+</ul>
+<p><strong>Lengths.</strong> A title runs about ten words. Economics journals cap abstracts at 100 words (the <a href="https://www.aeaweb.org/journals/aer/submissions"><em>American Economic Review</em></a> and the <a href="https://afajof.org/submission-guidelines/"><em>Journal of Finance</em></a>) or 150 (<em><a href="https://www.econometricsociety.org/publications/econometrica/information-authors">Econometrica</a></em>), about five sentences: the question, the data and design, the finding with its size, and what it means. Readers stop early: US internists reported reading only the abstract for 63% of the articles they read (<a href="https://doi.org/10.1046/j.1525-1497.2000.00202.x">Saint et al.&nbsp;2000</a>).</p>
+<p><strong>In your proposal</strong> the versions are the title, the first page and the full document. Organizations build the same layers on purpose: the US Government Accountability Office publishes every report as Fast Facts, a two-page Highlights and the full report.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Practice: your project’s four versions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Write a title that states your question (about ten words), one sentence that states the question and how you will answer it, a 100-word abstract, and the first paragraph of your introduction. Show the title alone to someone outside your team and ask what the project is. If they cannot say, the title is missing its tail.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="use-the-structure-readers-expect" class="level2">
+<h2 class="anchored" data-anchor-id="use-the-structure-readers-expect">3. Use the structure readers expect</h2>
+<p>Experienced readers know where each part of a document sits. Twelve researchers given shuffled paragraphs from articles in their field put 82.6% back in the right section (<a href="https://doi.org/10.1016/S0020-7373(05)80168-3">Dillon 1991</a>). Follow the standard order, so the reader finds each part where they look for it.</p>
+<section id="an-empirical-economics-paper" class="level3">
+<h3 class="anchored" data-anchor-id="an-empirical-economics-paper">An empirical economics paper</h3>
+<ol type="1">
+<li><strong>Title.</strong> States the finding.</li>
+<li><strong>Abstract.</strong> The question, the data and design, the finding with its size.</li>
+<li><strong>Introduction.</strong> The funnel to the question, the finding and its size, the two or three closest papers and what is new.</li>
+<li><strong>Setting and data.</strong> Where and when, and what one row describes.</li>
+<li><strong>Empirical strategy.</strong> The design and its identifying assumption: what must hold for the estimate to measure the effect.</li>
+<li><strong>Results.</strong> Each table introduced by its point.</li>
+<li><strong>Threats to validity.</strong> What could break the design, and the checks.</li>
+<li><strong>Conclusion.</strong> The message again, shorter.</li>
+</ol>
+<p>Sources: <a href="https://econ.duke.edu/sites/econ.duke.edu/files/file-attachments/Dudenhefer,%20Paul%20-%20Guide%20to%20Writing%20in%20Economics.pdf">Dudenhefer 2014</a>; <a href="https://blogs.ubc.ca/khead/research/research-advice/formula">Head, <em>The Introduction Formula</em></a>.</p>
+</section>
+<section id="a-paper-with-a-theory-section" class="level3">
+<h3 class="anchored" data-anchor-id="a-paper-with-a-theory-section">A paper with a theory section</h3>
+<p>Some applied papers open with a model, which says what the data must deliver. The theoretical framework comes right after the introduction, and its main prediction maps one to one onto the empirical framework (<a href="https://marcfbellemare.com/wordpress/12797">Bellemare 2018</a>).</p>
+<ol type="1">
+<li><strong>Title, abstract and introduction.</strong> As above, with the model’s prediction in the abstract.</li>
+<li><strong>Theoretical framework.</strong> A model that yields the testable prediction.</li>
+<li><strong>Empirical framework.</strong> The regression for each part of the prediction.</li>
+<li><strong>Data.</strong> And descriptive statistics.</li>
+<li><strong>Results.</strong> Each estimate read back through the model.</li>
+<li><strong>Conclusion.</strong></li>
+</ol>
+<p>Example: <a href="https://doi.org/10.1093/ajae/aaz047">Ortiz-Bobea (2020)</a> values farmland as farming income plus the option to convert it to other uses. The model predicts that farmland prices and cash rents give the same climate effect only where conversion is unlikely, and the empirical sections estimate the effect from each and compare them. In your proposal, the conceptual model heading plays this role.</p>
+</section>
+<section id="the-research-proposal-for-this-course" class="level3">
+<h3 class="anchored" data-anchor-id="the-research-proposal-for-this-course">The research proposal for this course</h3>
+<p>Your proposal is a plan: about five pages that someone could pick up and execute in January. Page one answers three questions that any funder asks: <em>What are we going to learn that we do not know now? Why is it worth knowing? How will we know that the conclusions are valid?</em> Przeworski and Salomon wrote them for applicants to fellowships of the Social Science Research Council, a US funder of social science (<a href="https://law.uga.edu/sites/default/files/OnTheArtOfWritingProposals_SocialScienceResearchCouncilCompetiotions.pdf">Przeworski and Salomon</a>). Preliminary evidence is optional; use it only to show that the data exist and can answer the question. The sections follow the course’s required headings, from the syllabus, in this order:</p>
+<ol type="1">
+<li>Research problem</li>
+<li>Practical justification</li>
+<li>What is already known</li>
+<li>Conceptual model</li>
+<li>Methodological approach</li>
+<li>Study sample</li>
+<li>Data and access</li>
+<li>Internal validity</li>
+<li>External validity</li>
+<li>Limitations and self-critique</li>
+<li>Work plan</li>
+<li>Research ethics</li>
+<li>References</li>
+</ol>
+<p>In the outline, each heading becomes topic sentences in order, with the evidence listed under each.</p>
+</section>
+<section id="a-policy-or-business-memo" class="level3">
+<h3 class="anchored" data-anchor-id="a-policy-or-business-memo">A policy or business memo</h3>
+<ol type="1">
+<li><strong>Subject line.</strong> States the bottom line.</li>
+<li><strong>Bottom line.</strong> The conclusion and the decision asked for, in the first sentence.</li>
+<li><strong>Background.</strong> Only what this reader needs.</li>
+<li><strong>Evidence.</strong> Most important first.</li>
+<li><strong>Options and risks.</strong></li>
+<li><strong>Next steps.</strong></li>
+</ol>
+<p>US Navy officers read memos written bottom line first, with short paragraphs, headings and plain sentences, 17–23% faster than memos in a bureaucratic style, and understood them better (<a href="https://doi.org/10.1177/0893318989002004002">Suchan and Colucci 1989</a>).</p>
+</section>
+<section id="an-executive-summary" class="level3">
+<h3 class="anchored" data-anchor-id="an-executive-summary">An executive summary</h3>
+<ol type="1">
+<li><strong>The issue.</strong> What the reader faces.</li>
+<li><strong>The answers.</strong> What the work found, as numbers.</li>
+<li><strong>What it means for this reader.</strong> The decision it informs.</li>
+<li><strong>Background.</strong> Only what the answers need.</li>
+<li><strong>The approach.</strong> In a line or two.</li>
+</ol>
+<p>The Canadian Health Services Research Foundation asked for 1:3:25: one page of main messages, a three-page executive summary and at most 25 pages of report.</p>
+</section>
+<section id="a-research-talk" class="level3">
+<h3 class="anchored" data-anchor-id="a-research-talk">A research talk</h3>
+<ol type="1">
+<li><strong>Motivation.</strong> Why anybody should care, in the first thirty seconds.</li>
+<li><strong>The question.</strong></li>
+<li><strong>What this work does.</strong></li>
+<li><strong>A preview of the findings.</strong></li>
+<li><strong>Data.</strong></li>
+<li><strong>Design.</strong></li>
+<li><strong>Results.</strong></li>
+<li><strong>The bottom line, as a number.</strong></li>
+</ol>
+<p>Meeting 12 covers talks in full.</p>
+</section>
+<section id="the-funnel" class="level3">
+<h3 class="anchored" data-anchor-id="the-funnel">The funnel</h3>
+<p>The first paragraph of an introduction or a proposal is a funnel. It moves from the field to your question in a few sentences: why it matters, what is known, what is missing, and the question. In the 2021 paper, the first paragraph runs from why agricultural productivity matters to the sentence <em>the impacts of this ACC on the agricultural sector have not yet been quantified</em>, and paragraph 3 opens with the question. In your proposal, the top of the funnel is the decision your reader faces.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Practice: a five-line memo
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Turn your project description into a memo of five lines to the person who would act on the answer: the subject line, the bottom line, the one fact of background they need, the evidence you will produce, and the decision it will inform.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="write-one-idea-per-paragraph" class="level2">
+<h2 class="anchored" data-anchor-id="write-one-idea-per-paragraph">4. Write one idea per paragraph</h2>
+<p>A <strong>topic sentence</strong> states the paragraph’s point, and the other sentences support it. Body paragraphs open with their point, so a reader who reads only first sentences gets the argument. The opening funnel of an introduction is the one paragraph that ends with its point.</p>
+<p><strong>Check a draft with a reverse outline.</strong> Meeting 5 wrote the outline before the prose. The reverse outline runs the same tool on a draft:</p>
+<ol type="1">
+<li>Read each paragraph and write one sentence that states what it argues.</li>
+<li>If a paragraph needs two sentences, it holds two ideas. Split it.</li>
+<li>If the sentence you wrote matches a later sentence in the paragraph, the point is buried. Move that sentence to the front.</li>
+<li>Read your sentences in order. If they make the argument, the draft works. If one is hard to write, that paragraph has no point yet.</li>
+</ol>
+<p><strong>Example.</strong> Ray and coauthors close a study of ten crops with a paragraph whose first sentence is its point: <em>Our findings here illustrate that climate change has potentially already affected global production of the ten largest crops and the production of consumable food calories in specific countries and globally.</em> The next three sentences give the approach, the size and the use (<a href="https://doi.org/10.1371/journal.pone.0217148">Ray et al. 2019</a>).</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Practice: reverse-outline your project description
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Write one sentence for each paragraph of your October 23 project description. Read the sentences in order and mark the paragraphs whose sentence was hard to write. Those are the paragraphs to rewrite first for the outline.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="keep-the-reader-on-your-path" class="level2">
+<h2 class="anchored" data-anchor-id="keep-the-reader-on-your-path">5. Keep the reader on your path</h2>
+<p>You decide what the reader reads and in what order. What the reader thinks along the way is up to the reader. Writing is a walk with your reader along a path you lay, and readers leave it. In laboratory studies, readers’ minds wandered 20 to 30% of the time, and more wandering went with lower comprehension (<a href="https://doi.org/10.1111/lnc3.12412">D’Mello and Mills 2021</a>; <a href="https://doi.org/10.3758/s13423-022-02141-w">Bonifacci et al. 2023</a>). Skeptical readers argue back as they read.</p>
+<p>An <strong>off-ramp</strong> is a point where a doubt pulls the reader off your path. An <strong>on-ramp</strong> is a “you are here” sign: one sentence at the start of a section that tells a reader who drifted where the section fits in the whole argument.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 37%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Off the path</th>
+<th style="text-align: left;">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><strong>A criticism of the design</strong></td>
+<td style="text-align: left;">Answer it briefly in the sentence after the claim that raises it, and point to the full check</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"><strong>A variation</strong> the reader wonders about</td>
+<td style="text-align: left;">Say which cases the design covers</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><strong>A limitation</strong> on where the result applies</td>
+<td style="text-align: left;">State it yourself, once, in the limitations section</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;"><strong>A reader who drifted</strong></td>
+<td style="text-align: left;">Open each section with a “you are here” sentence: how it fits in the overall argument</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example.</strong> A proposal for the solar project says developers often build on cheap farmland at the edge of a village. A skeptical reader asks at once whether prices there were already growing more slowly. The next sentence answers it, briefly: <em>Section 4 checks whether prices there were already growing more slowly.</em> One short sentence is enough. Name the doubt and point to where the paper handles it, as robustness checks usually do, and leave the full answer for its own section. Outside advertising, raising an objection and refuting it persuades slightly more than leaving it out, and raising it without refuting it persuades less (<a href="https://doi.org/10.1080/23808985.1999.11678963">O’Keefe 1999</a>). In news stories about cancer research, readers trusted the scientists more when the story reported limitations, and most when the scientists stated them (<a href="https://doi.org/10.1111/j.1468-2958.2008.00324.x">Jensen 2008</a>).</p>
+<p><strong>Where readers drift.</strong> The data section, with its sources, filters and merges, loses the most readers. Open it by restating the question, saying what kind of data the question needs and why, and only then say where the data come from and what you do to them. For the solar project: <em>to learn whether a new solar farm lowers the prices of nearby homes, we need the sale prices of homes near and far from each farm, before and after it opens; county averages would mix the two groups, so we need each sale with its address and date.</em> Then the source and the filters. After their minds wander, readers usually go back a line or two (<a href="https://doi.org/10.1037/cep0000123">Varao-Sousa, Solman and Kingstone 2017</a>), so put the summary where they will land: at the start of each section and in the first sentence of each paragraph. The same holds in talks, most of all long ones: at each new part, say where it fits in the argument.</p>
+<p><strong>Proofread.</strong> A spelling error is an off-ramp of a cruder kind. On Kickstarter, projects with spelling errors reached their funding goal less often (<a href="https://doi.org/10.1016/j.jbusvent.2013.06.005">Mollick 2014</a>). Have someone outside the team read the final draft.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Practice: read your draft as a skeptic
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Next to each claim in your draft, write the question a skeptical reader would ask: a criticism, a variation or a limitation. Then check whether the next sentence answers it. If it does not, either answer it there or move it to the limitations section.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="write-plain-neutral-sentences" class="level2">
+<h2 class="anchored" data-anchor-id="write-plain-neutral-sentences">6. Write plain, neutral sentences</h2>
+<p>Academic and professional prose gets a true claim to the reader with the least effort. Each rule below has a before and an after; the examples are hypothetical unless a source is given.</p>
+<ol type="1">
+<li><strong>Active voice</strong>, with <em>we</em> for the team. <em>Sale records were obtained from ATTOM</em> becomes <em>We obtained sale records from ATTOM</em>. Use the passive only when the actor does not matter.</li>
+<li><strong>Present tense</strong> for what a paper or table shows, past for what happened in its sample, future for your plans. <em>Gaur and Lang (2023) found that solar farms lower home values</em> becomes <em>Gaur and Lang (2023) find that homes in Massachusetts and Rhode Island within 0.6 miles of a solar farm lost 1.5 to 3.6 percent of their value</em> (<a href="https://doi.org/10.1016/j.eneco.2023.106699">Gaur and Lang 2023</a>). The present tense goes on the paper’s verb, never on the finding about its sample.</li>
+<li><strong>Verbs</strong> in place of nominalizations, nouns made from verbs. <em>We conduct an analysis of sale prices</em> becomes <em>We analyze sale prices</em>.</li>
+<li><strong>One term</strong> for one thing. <em>Solar farm, array, facility and project</em> in one paragraph read as four things. McCloskey cites a paper that used eight terms for one idea in two pages (<a href="https://doi.org/10.1111/j.1465-7295.1985.tb01761.x">McCloskey 1985</a>, rule 19).</li>
+<li><strong>Name the study</strong> and its setting. <em>The literature finds that solar farms lower home values</em> becomes <em>Elmallah et al.&nbsp;(2023) find that, across more than 1,500 solar projects in six states, homes within half a mile sold for about 1.5 percent less than homes two to four miles away</em> (<a href="https://doi.org/10.1016/j.enpol.2023.113425">Elmallah et al. 2023</a>).</li>
+<li><strong>Hedge once</strong>, on the interpretation, where the doubt lies. State what the data show plainly. <em>Visits may have fallen somewhat more, which possibly suggests the boycott may have mattered</em> becomes <em>Visits fell 2.1 percent more in the most Republican third of counties. The gap may reflect the boycott, or a local shock in the same weeks.</em> (The 2.1 percent is invented.)</li>
+<li><strong>The number in place of the adjective.</strong> <em>Target’s sales collapsed dramatically</em> becomes <em>comparable store sales fell 4.3 percent in the second quarter of 2023</em> (<a href="https://www.sec.gov/Archives/edgar/data/27419/000002741923000032/a2023q2ex-99.htm">Target 2023</a>). Give the number, its unit, the comparison and the period.</li>
+<li><strong>No hype words</strong>, the adjectives and adverbs that praise the work: novel, first, groundbreaking, critical, very, clearly. Say once what is new, compared with the closest published study. You need not write “the first study to”: an introduction that shows the gap makes that plain, and some journals remove such claims before acceptance (<a href="https://doi.org/10.1038/s41562-021-01068-x"><em>Nature Human Behaviour</em> 2021</a>).</li>
+<li><strong>Short words and no throat-clearing.</strong> Cut <em>it should be noted that</em> and <em>it is important to mention</em>. Follow every <em>this</em> with its noun.</li>
+</ol>
+<p><strong>When to cite.</strong> Cite any claim a reader could dispute: a number, another study’s finding, a method you borrow. Common knowledge needs no citation. Mark a hypothesis or an opinion as yours (<em>we expect</em>, <em>we argue</em>) and cite the evidence behind it, if any. Point your own results to the table or figure that shows them. The test is whether a reasonable reader could ask “says who?”.</p>
+<p><strong>Why hype words fail.</strong> In the abstracts of grants funded by NIH, the share with at least one hype word rose from 72% in 1985 to 97% in 2020, so the words no longer tell a reviewer which work is new (<a href="https://doi.org/10.1001/jamanetworkopen.2022.28676">Millar, Batalo and Budgell 2022</a>). Promotional words did go with higher odds of funding in one study of 11,535 applications, but the data are observational, and a reviewer cannot check <em>novel</em> without a comparison (<a href="https://doi.org/10.1001/jamanetworkopen.2024.48696">Qiu et al. 2024</a>).</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Practice: five sentences to rewrite
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Each sentence breaks at least one rule above. Rewrite it, then open the suggested answer below.</p>
+<ol type="1">
+<li>A novel and comprehensive analysis of boycott effects was conducted by our team.</li>
+<li>Store visits may have possibly declined somewhat following the 2023 boycott.</li>
+<li>The literature shows that boycotts hurt retailers.</li>
+<li>Solar arrays, PV facilities and solar projects all affect nearby homes, and these installations are growing.</li>
+<li>It should be noted that this is very important for planning boards.</li>
+</ol>
+<p><strong>Suggested answers.</strong> (1) We estimate how much store visits fell after each boycott. (2) Store visits fell 2.1 percent in the 20 weeks after the 2023 boycott, against the same weeks a year earlier (the number is invented; give yours). (3) Name the study, its setting and its number, for example the Target earnings release on comparable store sales. (4) Pick one term, <em>solar farm</em>, and use it every time; give the growth as a number with its source. (5) Say who decides what: town planning boards set how far solar farms must sit from homes.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="write-in-three-passes" class="level2">
+<h2 class="anchored" data-anchor-id="write-in-three-passes">7. Write in three passes</h2>
+<p>A paper is written from the big picture down to the sentence, the way meeting 5 asked you to plan code. There are three passes, and each starts only when the one before it is finished.</p>
+<ol type="1">
+<li><strong>Sections.</strong> List the headings the document needs, in order. For the proposal they are the thirteen required headings. For a paper, start from the schematic in section 3.</li>
+<li><strong>Outline.</strong> Under each heading, write one bullet per paragraph. Each bullet holds the topic sentence, written out in full, and the evidence the paragraph will point to: the citation, the number, the table or figure. The outline is exhaustive, so every paragraph of the draft has its bullet. If you cannot write the bullet, the paragraph has no point yet. The proposal outline due November 11 is this pass.</li>
+<li><strong>Prose.</strong> Turn each bullet into a paragraph. Open with the bullet’s point, answer each doubt in the sentence that follows it, open each section with a “you are here” sentence, and use precise terms and numbers throughout. Do not bury the point at the end of the paragraph.</li>
+</ol>
+<p><strong>The outline sets the length.</strong> Plan about 150 words a paragraph. The number of bullets then gives the length of the draft. If the count runs past the page limit, cut bullets, which means cutting points, before you write any prose. Trimming words from finished paragraphs costs more time and saves less space.</p>
+<p><strong>An example.</strong> The main text of the 2021 paper on climate change and farm productivity, in the version first submitted (<a href="https://arxiv.org/abs/2007.10415">Ortiz-Bobea et al. 2020</a>), has sixteen paragraphs. The journal prints no headings in the main text, but the outline behind it had seven sections. The slides for meeting 10 rebuild that outline bullet by bullet. Here is its length.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Section</th>
+<th style="text-align: right;">Paragraphs</th>
+<th style="text-align: right;">At 150 words each</th>
+<th style="text-align: right;">Words written</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Introduction</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">357</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Framework and model</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">322</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Data</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">113</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">How productivity responds to weather</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">448</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Impact of climate change since 1961</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">315</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Checks</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">437</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Caveats and conclusion</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">272</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: right;"><strong>16</strong></td>
+<td style="text-align: right;"><strong>2,400</strong></td>
+<td style="text-align: right;"><strong>2,264</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Twelve of the sixteen paragraphs state their point in the first sentence. The other four show the usual exceptions: the opening funnel ends on its point, a paragraph that sets up an equation states its point after it, a paragraph that opens with a question answers it in sentence 4, and the last paragraph carries three points that an outline would have given three bullets.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Practice: outline your proposal
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Write the proposal’s thirteen headings. Under each, write one bullet per paragraph: the topic sentence in full, then the evidence it will point to. Count the bullets, multiply by 150, and compare the total with the page limit. Cut bullets until it fits, then read the topic sentences alone, in order. They should give the argument.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="checklist-before-you-submit" class="level2">
+<h2 class="anchored" data-anchor-id="checklist-before-you-submit">Checklist before you submit</h2>
+<p>Run it on the outline on November 11, and again on the proposal.</p>
+<ul class="task-list">
+<li><label><input type="checkbox">The title states your question, or your finding, in about ten words, with no acronyms.</label></li>
+<li><label><input type="checkbox">Page one answers the three questions: what we will learn, why it is worth knowing, and how we will know the answer is right.</label></li>
+<li><label><input type="checkbox">The first paragraph is a short funnel that ends on your question.</label></li>
+<li><label><input type="checkbox">The sections follow the thirteen required headings, in order.</label></li>
+<li><label><input type="checkbox">The outline has a bullet for every paragraph, with its topic sentence and its evidence.</label></li>
+<li><label><input type="checkbox">Every paragraph opens with its point, except the opening funnel. The reverse outline reads as the argument.</label></li>
+<li><label><input type="checkbox">Each objection a skeptical reader would raise is answered next to the claim that raises it, or stated once in the limitations section.</label></li>
+<li><label><input type="checkbox">Each section opens with a “you are here” sentence on how it fits the argument.</label></li>
+<li><label><input type="checkbox">Every technical term is defined at first use, and each thing has one name throughout.</label></li>
+<li><label><input type="checkbox">Every claim about size is a number with its unit, its comparison and its period.</label></li>
+<li><label><input type="checkbox">Every study is named with its setting, and nothing is attributed to “the literature”.</label></li>
+<li><label><input type="checkbox">Every claim a reader could dispute has a source, and every hypothesis or opinion is marked as yours.</label></li>
+<li><label><input type="checkbox">No hype words. What is new is stated once, against the closest published study.</label></li>
+<li><label><input type="checkbox">Someone outside the team has read it for spelling and for sense.</label></li>
+</ul>
+</section>
+<section id="further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading">Further reading</h2>
+<ul>
+<li>Mensh and Kording (2017), <a href="https://doi.org/10.1371/journal.pcbi.1005619"><em>Ten simple rules for structuring papers</em></a>. Short and free.</li>
+<li>Przeworski and Salomon (1988, rev. 1995), <a href="https://law.uga.edu/sites/default/files/OnTheArtOfWritingProposals_SocialScienceResearchCouncilCompetiotions.pdf"><em>On the Art of Writing Proposals</em></a>. What a proposal’s reader looks for.</li>
+<li>Gopen and Swan (1990), <a href="https://www.jstor.org/stable/29774235"><em>The Science of Scientific Writing</em></a>, American Scientist 78(6). Readers look for information where they expect to find it.</li>
+<li>McCloskey (1985), <a href="https://doi.org/10.1111/j.1465-7295.1985.tb01761.x"><em>Economical Writing</em></a>, Economic Inquiry 23(2). A style guide written by an economist for economists.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/arielortizbobea\.github\.io\/aem6991\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

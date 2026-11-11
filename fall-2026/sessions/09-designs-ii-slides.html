@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
+
+  <title>AEM 6991 – AEM 6991 · 9 Research designs II</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-638d68159db5c4da088d5ac853e4cd78.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <p class="ttl-number">AEM 6991</p>
+  <p class="ttl-course">MPS Capstone Project I</p>
+  <p class="ttl-prof">Prof. Ariel Ortiz-Bobea</p>
+  <h1 class="title">9 · Research designs II</h1>
+  <p class="subtitle">Wednesday, October 21, 2026</p>
+  <img class="ttl-seal" src="../images/cornell_seal.svg" alt="Cornell University">
+</section>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
+<ol type="1">
+<li><strong>Fixed effects.</strong> Compare each unit with itself over time, which removes every trait that does not change.</li>
+<li><strong>Difference-in-differences and event studies.</strong> Add a comparison group, then follow the effect period by period, across adoption dates and doses.</li>
+<li><strong>Few treated units.</strong> With one treated state the usual standard errors are too small, and a weighted mix of other states can serve as its control.</li>
+<li><strong>Event studies in finance.</strong> A separate design with the same name, built on share prices around a dated announcement.</li>
+<li><strong>Matching a design to a question.</strong> Seven published studies that use the designs of meetings 8 and 9, each posed in the setting its authors faced.</li>
+</ol>
+<aside class="notes">
+<p>One minute. Section 1 compares each unit with itself, the panel tool every later design uses. Section 2 is one design built in four steps, as in the practitioner’s guide by Baker, Callaway, Cunningham, Goodman-Bacon and Sant’Anna: two groups and two periods, then many periods as an event study, then adoption on different dates, then different amounts of treatment. Section 3 is what to do when only one or a few units are treated. Section 4 is the finance event study, a different design that shares the name and that the finance teams will use. The running example in every animation is a coffee chain that launches a mobile-ordering app, with weekly sales per store as the outcome.</p>
+<p>Where this sits. Meeting 7’s bias table had a Solution column that named the designs: randomize, compare at the cutoff, use an instrument, hold the confounder fixed. Last week paid off the first three, and each needed an assignment the researcher can see: a coin, an instrument, a score with a cutoff. Most projects in this room have a change instead: a policy, a product launch, a regulation, a merger, an announcement, that reached some units and not others at a date they can name. Today’s designs use that change. With the same units observed before and after, anything about a unit that does not change over time can be removed by comparing the unit with itself. The confounders that survive are the ones that change over time, and each section adds an assumption about them.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section>
+<section id="fixed-effects" class="title-slide slide level1 center">
+<h1>1. Fixed effects</h1>
+<aside class="notes">
+<p>Thirty seconds. Comparing each unit with itself. Opened by women on corporate boards, then the graph, the two-way fixed-effects regression, and what fixed effects miss.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="women-on-boards-and-firm-value" class="slide level2 dense">
+<h2>Women on boards and firm value</h2>
+<ul>
+<li>Do boards with more women raise firm value? Norway and others mandate quotas.</li>
+<li>Adams and Ferreira followed 1,939 firms in the Standard &amp; Poor’s 1500 index, 1996–2003.</li>
+<li><strong>Tobin’s q</strong> is market value over the book value of assets.</li>
+<li>With industry and size controls, one more woman on a ten-seat board went with 2.2% higher q.</li>
+<li>Within each firm over time, one more woman went with 1.3% lower q.</li>
+<li>Both are significant only at 10%. Firm culture may be a <strong>confounder</strong>, affecting both board makeup and value.</li>
+</ul>
+<p><a href="https://doi.org/10.1016/j.jfineco.2008.10.007" style="font-size:0.55em; color:#6b6b6b">Adams and Ferreira (2009), <em>Women in the Boardroom and Their Impact on Governance and Performance</em>, Journal of Financial Economics 94, 291–309.</a></p>
+<aside class="notes">
+<p>Two and a half minutes.</p>
+<p>The setting. Governments and investors push for more women on boards, and Norway’s 2003 law required 40%. Earlier cross-sectional studies found that firms with more diverse boards were worth more. Adams and Ferreira asked whether women directors change how boards govern, and whether that raises firm value. Their data: 86,714 directorships in 8,253 firm-years on 1,939 firms in the S&amp;P 500, MidCap and SmallCap indexes, 1996 to 2003. Women held about 9% of seats; most firms had zero or one woman on the board.</p>
+<p>The two estimates, of the log of Tobin’s q on the fraction of women directors, with board size, independence, firm size, segments and year dummies. Pooled OLS with industry dummies: +0.221. With firm fixed effects: −0.135. Adding one woman to a ten-seat board raises the fraction by 0.1, which gives the 2.2% and −1.3% on the slide (my arithmetic from the coefficients). For return on assets the same reversal: +6.19 pooled, −6.17 with firm fixed effects.</p>
+<p>Why the sign changes. The authors name the confounder themselves: some firms may be more progressive than others, with both better governance and more women on the board. A trait like that does not change much over eight years, so the firm fixed effect absorbs it, and what is left compares the same firm in years with more and fewer women.</p>
+<p>Two cautions, both on the slide. Both estimates are significant only at the 10% level, so the honest summary is that the positive association does not survive the within-firm comparison, not that diversity lowers value. And the raw comparison goes the other way: firm-years with a woman on the board have a lower average q, 2.03 against 2.19, because they are larger firms. The positive pooled number needs the industry and size controls.</p>
+<p>What they found next: the negative average comes from firms with strong shareholder rights; in firms with many takeover defences, more women went with higher value, which they read as tougher monitoring helping where governance was weak. On Norway’s quota itself, the evidence is a dispute (Ahern and Dittmar 2012, QJE, https://doi.org/10.1093/qje/qjr049; Eckbo, Nygaard and Thorburn 2022, Management Science, https://doi.org/10.1287/mnsc.2021.4031).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="fixed-effects-remove-unchanging-confounders" class="slide level2">
+<h2>Fixed effects remove unchanging confounders</h2>
+<ul>
+<li>A <strong>unit fixed effect</strong> is a separate intercept for each unit. It absorbs every fixed trait whose effect is also fixed.</li>
+<li>A <strong>period fixed effect</strong> absorbs shocks common to all units in a period.</li>
+<li><strong>Two-way fixed effects</strong> (TWFE) include both. Units that never switch only help estimate the period effects.</li>
+</ul>
+<div class="m06" data-demo="pdag" data-design="fe" style="width:58%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Click the button three times.</p>
+<p>The coffee chain again, with a different rollout. Each store chooses when to adopt the app. Larger stores adopt earlier, and larger stores sell more, so store size confounds any comparison of adopters with non-adopters. That is the starting graph.</p>
+<p>Click once, “Add store fixed effects”. A separate intercept for each store absorbs its size, location and every other trait that does not change over the panel. Both arrows from store size are crossed. The regression now compares each store’s sales in months with the app to the same store’s sales in months without it. It is the panel version of Snow’s first subtraction, with many periods.</p>
+<p>Click again, “Add month fixed effects”. A separate intercept for each month absorbs anything that hit all stores in that month: the season, a price change, a national campaign. Adoption also rose over time, so without month effects the common growth in sales would be credited to the app. This is the second subtraction.</p>
+<p>Click again, “What survives”. Two kinds of arrow are left. Local demand that changes within a store over time, such as a new office building opening nearby, can drive both adoption and sales, and neither set of fixed effects removes it. The dashed arrow is feedback: last month’s sales influence whether a store adopts this month. The next slides take each in turn.</p>
+<p>The last bullet is the cost. With store fixed effects alone, a store that had the app all along, or never adopted, has no within-store variation in the treatment and contributes nothing. With month effects added, those stores still help estimate the month effects, so they act as controls. Fixed effects also cannot estimate the effect of anything that never changes within a unit, such as a manager’s gender in a manager fixed-effects model.</p>
+<p>Difference-in-differences with two groups and two periods is the simplest two-way fixed effects regression; with many units and many adoption dates, the same regression is what most papers run.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="two-way-fixed-effects-recover-the-apps-effect" class="slide level2">
+<h2>Two-way fixed effects recover the app’s effect</h2>
+<ul>
+<li>In this simulation 100 stores choose when to adopt the app. Larger stores adopt earlier and sell more.</li>
+<li>Every store’s sales also rise $250 a week each month. The app adds $4,000 a week.</li>
+<li>Across 500 samples <strong>pooled ordinary least squares</strong> (OLS), with no fixed effects, averages $11,300. Store fixed effects give $7,000. TWFE gives $4,000.</li>
+<li>66 of the 100 stores adopt during the panel. The other 34 only help estimate the month effects.</li>
+</ul>
+<div class="m06" data-demo="fe" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Start on “Only store size confounds”. Click “Draw one”, then “Draw 500”.</p>
+<p>The data-generating process. 100 stores over 24 months. Store size is fixed, and each store’s adoption month falls earlier the larger it is, with noise. Sales are $40,000 plus $6,000 per standard deviation of size, plus $250 a week for each month that passes, plus a small shock common to the month, plus $4,000 with the app, plus store-month noise. The left panel shows one sample, one row per store, red once the store has the app.</p>
+<p>One sample: 64 stores switch during the panel, 17 had the app from month 1 and 19 never adopt. The three estimates are 11.0, 7.1 and 4.4.</p>
+<p>Five hundred samples: pooled OLS averages 11.3, because adopters are larger. Store fixed effects remove size and average 7.0. The remaining 3 is the common trend: sales rise $250 a month for everyone, and the app is switched on more often in later months, so a store-only model credits part of the growth to the app (0.25 × 12 = 3.0). Two-way fixed effects remove both and average 4.0, with an SD of 0.23.</p>
+<p>The switchers bullet is the identifying variation. About 66 stores out of 100 change status. Their within-store before-and-after comparisons, relative to the month effects, are the whole estimate.</p>
+<p>The effect here is constant: the same $4,000 in every store and every month after adoption. Section 2 shows what two-way fixed effects do when the effect grows over time and stores adopt at different dates.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="fixed-effects-miss-confounders-that-change-over-time" class="slide level2">
+<h2>Fixed effects miss confounders that change over time</h2>
+<ul>
+<li>If local demand jumps $3,000 just before a store adopts, TWFE averages $6,000 against $4,000.</li>
+<li><strong>Strict exogeneity</strong> assumes treatment in any period is unrelated to shocks in every period.</li>
+<li><strong>Feedback</strong>, where past outcomes change later treatment, also breaks it.</li>
+<li><span class="solution"><strong>Solution</strong>: measure the changing confounder, or use treatment timing it cannot influence.</span></li>
+</ul>
+<div class="m06" data-demo="fe" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1111/ajps.12417" style="font-size:0.55em; color:#6b6b6b">Imai and Kim (2019), <em>When Should We Use Unit Fixed Effects Regression Models for Causal Inference with Longitudinal Data?</em>, American Journal of Political Science 63, 467–490.</a></p>
+<aside class="notes">
+<p>Two and a half minutes. Switch to “Local demand changes” and click “Draw 500”.</p>
+<p>The change to the simulation: two months before a store adopts, local demand rises by $3,000 a week and stays up. A franchisee who sees more customers coming in adopts the app. Store and month fixed effects absorb neither, because the rise happens at a different time in each store. The means across 500 samples: pooled 13.9, store fixed effects 9.4, two-way fixed effects 6.0, against a true 4.0. Every estimator carries the demand shock.</p>
+<p>Strict exogeneity, stated precisely: conditional on the unit’s fixed effect, the error in every period is mean-independent of the treatment in all periods. Imai and Kim spell out what that rules out with a unit fixed effect: no unobserved confounder that changes over time; past outcomes do not affect current treatment; past treatment does not affect current outcomes except through what is modelled. Imai and Kim note that many researchers miss the second and third.</p>
+<p>Feedback is the second. In Adams and Ferreira, boards may add or remove women after good or bad years; the authors say so and add an instrument and a lagged-outcome model. In meeting 7’s terms it is reverse causality inside each unit: cities hire police after crime rises, and they do it city by city, year by year.</p>
+<p>The solution has two parts. If the changing confounder can be measured, control for it, as long as it is not itself caused by the treatment. If not, the design has to supply timing the confounder cannot drive: a policy date set elsewhere, a lottery for the order of rollout, a sudden event. Sections 2 and 4 and several of this afternoon’s cases use timing of that kind. A check that helps: leads of the treatment, next month’s adoption in this month’s regression, should have no effect. Under feedback or anticipation they often do.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="fixed-effects-amplify-measurement-error" class="slide level2">
+<h2>Fixed effects amplify measurement error</h2>
+<ul>
+<li>If 10% of store-months record the app wrongly, TWFE keeps only 45% of its estimate.</li>
+<li>Pooled OLS keeps 80% of its own. Within a store true changes are rare, so errors are a larger share.</li>
+<li>Misreported union status creates false switchers. Within workers, the union wage premium fell by a third to a half.</li>
+<li><span class="solution"><strong>Solution</strong>: validate the treatment record, and check that each within-unit change is real.</span></li>
+</ul>
+<div class="m06" data-demo="fe" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1086/298021" style="font-size:0.55em; color:#6b6b6b">Freeman (1984), <em>Longitudinal Analyses of the Effects of Trade Unions</em>, Journal of Labor Economics 2, 1–26.</a></p>
+<aside class="notes">
+<p>Two minutes. Switch to “Adoption misrecorded” and click “Draw 500”.</p>
+<p>The change: in 10% of store-months the recorded app status is flipped. This is misclassification of a binary treatment, unrelated to sales. A flipped dummy can only err away from its true value, so by meeting 7’s definition the error is non-classical; misclassification of a binary treatment still biases the slope toward zero. The grey ticks mark each estimator’s mean with the true record. Pooled OLS falls from 11.3 to 9.0, 80% of its value; store fixed effects from 7.0 to 4.1, 59%; two-way fixed effects from 4.0 to 1.8, 45%.</p>
+<p>Read the shares, not the distances. Pooled OLS moves about as far in dollars, but it was biased by store size to begin with. The point is the share of the estimate each one keeps. Fixed effects throw away the variation between stores and keep only the changes within a store. Most of the true variation in app status is between stores; the recording errors are spread evenly. So the errors are 36% of the recorded dummy’s variance pooled, 53% within stores and 64% within stores and months, and attenuation toward zero grows with that share. Like meeting 7’s classical error, it biases the slope toward zero, and fixed effects make it worse.</p>
+<p>Freeman’s union example, from the 1983 working paper. Cross-sectional union wage premiums in four US surveys were 0.14 to 0.28 log points; comparing the same workers before and after joining or leaving a union gave 0.09 to 0.19. In the CPS, the National Longitudinal Survey and the Panel Study of Income Dynamics the premium fell by a third to a half; in the fourth, a small quality-of-employment survey, it did not. Survey respondents misreport union status a few percent of the time, and those misreports become a large share of the apparent switchers. He attributes 44% to 77% of the gap to misclassification. Griliches and Hausman (1986, Journal of Econometrics, https://doi.org/10.1016/0304-4076(86)90058-8) give the general result and a firm example: the employment–output slope falls from 0.97 pooled to 0.64 within firms and 0.48 in first differences, and recovers to 0.73 in long differences, where the signal is larger (numbers from the 1984 NBER draft).</p>
+<p>The solution: check the treatment record against a second source, such as the app vendor’s activation dates against the chain’s own store list, and look at the switchers by hand. Long differences, comparing periods further apart, also raise the signal relative to the noise.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="demeaning-only-the-outcome-biases-the-estimate" class="slide level2 dense">
+<h2>Demeaning only the outcome biases the estimate</h2>
+<ul>
+<li>Many finance papers subtract a group’s mean from the outcome, then run OLS.</li>
+<li>The treatment is left untransformed, so the estimator is inconsistent.</li>
+<li>Over 60 articles in three top finance journals, 2008–2010, used this or a related shortcut.</li>
+<li>For US listed firms, 1950–2010, the authors regressed leverage on profitability.</li>
+<li>Demeaning only leverage gave +0.051. Firm fixed effects gave −0.028.</li>
+<li><span class="solution"><strong>Solution</strong>: include the fixed effects, or demean outcome and treatment alike.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1093/rfs/hht047" style="font-size:0.55em; color:#6b6b6b">Gormley and Matsa (2014), <em>Common Errors: How to (and Not to) Control for Unobserved Heterogeneity</em>, Review of Financial Studies 27, 617–661.</a></p>
+<aside class="notes">
+<p>Two minutes. For the finance teams, who will meet this in the papers they cite.</p>
+<p>The shortcut. “Industry-adjusting” subtracts the industry average from the outcome, such as a firm’s return on assets minus its industry’s, and then runs OLS of the adjusted outcome on the treatment. It looks like a fixed effect. It is not one: the fixed-effects estimator demeans the outcome and the treatment alike. Leaving the treatment untransformed leaves the group mean of the treatment in the error, so the estimator is inconsistent: biased toward zero with one regressor, and of either sign with several, as in the leverage example, even when plain OLS would have been consistent. A second shortcut, adding the group mean of the outcome as a control, is worse: its bias does not have a predictable sign.</p>
+<p>The count. Gormley and Matsa found over 60 articles in the Journal of Finance, the Journal of Financial Economics and the Review of Financial Studies from 2008 to 2010 that used one of the two shortcuts.</p>
+<p>Their example, Compustat firms from 1950 to 2010, leverage regressed on firm characteristics with firms as the groups. The coefficient on profitability is −0.015 in OLS, −0.028 with firm fixed effects, +0.051 when only leverage is demeaned and +0.039 with the group-mean control. The shortcuts flip the sign. For fixed assets, the shortcuts give estimates 58% to 73% smaller than fixed effects.</p>
+<p>The fix is cheap: put the group indicators in the regression, or demean both sides. Their four conditions for fixed effects to help are worth reading out: unobserved group traits exist, they may be correlated with the treatment, the treatment varies within groups, and it is well measured.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="who-the-fixed-effects-estimate-is-about" class="slide level2">
+<h2>Who the fixed-effects estimate is about</h2>
+<ul>
+<li>The estimate comes from units whose treatment changed.</li>
+<li>Adams and Ferreira’s units added or lost a woman, often one director.</li>
+<li>That says little about a quota that changes many seats at once.</li>
+<li>Report how many units switch and how much treatment varies within them.</li>
+</ul>
+<p><a href="https://doi.org/10.1016/j.jfineco.2008.10.007" style="font-size:0.55em; color:#6b6b6b">Adams and Ferreira (2009), <em>Women in the Boardroom and Their Impact on Governance and Performance</em>, Journal of Financial Economics 94, 291–309.</a></p>
+<p><a href="https://doi.org/10.1111/ajps.12417" style="font-size:0.55em; color:#6b6b6b">Imai and Kim (2019), <em>When Should We Use Unit Fixed Effects Regression Models for Causal Inference with Longitudinal Data?</em>, American Journal of Political Science 63, 467–490.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>Imai and Kim show that the unit fixed-effects estimator of a binary treatment estimates the average effect among units whose treatment changes over time. Units that are always or never treated contribute nothing to it.</p>
+<p>For Adams and Ferreira, the identifying variation is boards that gained or lost a woman between 1996 and 2003, typically one director out of nine or ten. A quota that moves a board from one woman to four is far outside that range, so the within-firm estimate does not transfer to it without assumptions the data cannot check. That is why the Norway studies use the quota itself.</p>
+<p>The reporting list: the number of switchers; the share of the treatment’s variance that is within units, after the fixed effects; and both the pooled and the fixed-effects estimates, so the reader can see how much the fixed effects moved the result. Gormley and Matsa make the same request.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="difference-in-differences-and-event-studies" class="title-slide slide level1 center">
+<h1>2. Difference-in-differences and event studies</h1>
+<aside class="notes">
+<p>Thirty seconds. Snow first, then the app, then the same design with more periods, more adoption dates and more than one dose.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="difference-in-differences-in-four-steps" class="slide level2">
+<h2>Difference-in-differences in four steps</h2>
+<ol type="1">
+<li><strong>Two groups and two periods</strong>: the 2×2 comparison.</li>
+<li><strong>Many periods</strong>: the event study, one comparison for each period.</li>
+<li><strong>Adoption on different dates</strong>: staggered timing, where treated units can end up as controls.</li>
+<li><strong>Different amounts of treatment</strong>: continuous doses.</li>
+</ol>
+<p><a href="https://doi.org/10.1257/jel.20251650" style="font-size:0.55em; color:#6b6b6b">Baker, Callaway, Cunningham, Goodman-Bacon and Sant’Anna (2026), <em>Difference-in-Differences Designs: A Practitioner’s Guide</em>, Journal of Economic Literature 64, 498–557.</a></p>
+<aside class="notes">
+<p>One minute. The order follows the practitioner’s guide by Baker, Callaway, Cunningham, Goodman-Bacon and Sant’Anna, which builds every design from comparisons of two groups over two periods and then adds periods, adoption dates and doses. The Mixtape covers the first two in chapter 9 and staggered timing in chapter 10. Every step keeps the same idea: the untreated units’ change stands in for the treated units’ change without treatment. What changes is which units can play the untreated role, and in which periods.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="snow-studied-cholera-and-londons-water" class="slide level2">
+<h2>Snow studied cholera and London’s water</h2>
+<div class="columns">
+<div class="column" style="width:54%;">
+<div style="font-size:0.74em">
+<ul>
+<li>Cholera struck London in 1849 and again in 1854. Most doctors blamed foul air.</li>
+<li>John Snow, a London physician, argued that sewage in drinking water spread it.</li>
+<li>In 1849 two companies piped water to south London from the Thames in central London.</li>
+<li>In 1852 the Lambeth company moved its intake upstream, above the sewage. Southwark and Vauxhall did not.</li>
+<li>In many streets both companies’ pipes ran side by side, so neighbours drank different water.</li>
+</ul>
+</div>
+</div><div class="column" style="width:46%;">
+<p><img data-src="figures/snow-1855-map2.jpg" style="width:100.0%" alt="Snow's 1855 map of south London water supply: blue for the Southwark and Vauxhall company, red for the Lambeth company, purple where the pipes of both are intermingled"></p>
+<div style="font-size:0.5em; color:#6b6b6b; line-height:1.3">
+<p>On Snow’s map blue is Southwark and Vauxhall, red is Lambeth and purple is both.</p>
+</div>
+</div></div>
+<p><a href="https://archive.org/details/b28985266" style="font-size:0.55em; color:#6b6b6b">Snow (1855), <em>On the Mode of Communication of Cholera</em>, 2nd ed., John Churchill, London, pp.&nbsp;60–90 and Map 2.</a></p>
+<aside class="notes">
+<p>Two and a half minutes.</p>
+<p>The question Snow wanted answered: is cholera carried by water fouled with sewage? The medical consensus was the miasma view, that it came from bad air, so a water company’s intake did not matter.</p>
+<p>The setting, from his book. In 1849 the Southwark and Vauxhall company drew water from the Thames at Battersea Fields, and the Lambeth company opposite Hungerford Market, near today’s Charing Cross. Both were in central London, on the tidal river that received the city’s sewage, and Snow says the two waters were nearly equally impure in 1849. In 1852 Lambeth moved its works upstream to Thames Ditton, above Teddington Lock, “quite free from the sewage of London” (p.&nbsp;68). Southwark and Vauxhall had not finished moving by 1854.</p>
+<p>Why the design works. After competition began in the 1830s, both companies laid pipes down the same streets. Snow (p.&nbsp;75) says each company supplied rich and poor, large houses and small, with no difference in the condition or occupation of their customers, and that about 300,000 people were divided into two groups “without their choice”. Snow got the address of every cholera death and went from house to house to find the water company; residents rarely knew, so he used a salt test, since the two waters differed sharply in salt content.</p>
+<p>The map, from the same book, shows the supply areas. Blue is Southwark and Vauxhall only, red is Lambeth only, purple is where both companies’ pipes were intermingled. The next slide uses the blue and the purple areas.</p>
+<p>The Metropolis Water Act 1852 made it unlawful after 31 August 1855 for London companies to take Thames water below Teddington Lock (Chelsea had until 1856). Some textbooks say Lambeth was required by law to move; its works moved in 1852, three years before that deadline. Whether its decision predated the Act is not established in the sources checked.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cholera-deaths-before-and-after-lambeth-moved" class="slide level2">
+<h2>Cholera deaths before and after Lambeth moved</h2>
+<div style="font-size:0.66em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 64%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Cholera deaths per 10,000 residents</th>
+<th style="text-align: right;">1849</th>
+<th style="text-align: right;">1854</th>
+<th style="text-align: right;">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">12 sub-districts supplied only by Southwark and Vauxhall</td>
+<td style="text-align: right;">134.9</td>
+<td style="text-align: right;">146.6</td>
+<td style="text-align: right;">+11.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16 sub-districts supplied by both companies</td>
+<td style="text-align: right;">130.1</td>
+<td style="text-align: right;">84.9</td>
+<td style="text-align: right;">−45.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Difference-in-differences</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>−57</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>The Southwark-only districts show what changed with no new water.</li>
+<li><strong>Difference-in-differences</strong> (DiD) subtracts that change from the mixed districts’ change.</li>
+<li>Lambeth’s move cut deaths in the mixed districts by 57 per 10,000 residents.</li>
+<li>With a single earlier year, nobody can check that both groups were on the same path.</li>
+</ul>
+<p><a href="https://doi.org/10.2139/ssrn.3262234" style="font-size:0.55em; color:#6b6b6b">Deaths: Snow (1855), Table XII. Population: Table VIII, 1851 census. Rates as computed in Coleman (2019), <em>Causality in the Time of Cholera</em>, SSRN.</a></p>
+<aside class="notes">
+<p>Two and a half minutes.</p>
+<p>Read the table as two subtractions. The first column of changes: in the 12 sub-districts that only Southwark and Vauxhall supplied, deaths rose from 134.9 to 146.6 per 10,000 residents. Nothing about their water changed, so +11.7 is what the 1854 epidemic did differently from the 1849 one: a different season, a different strain, anything common to south London. In the 16 sub-districts where both companies laid pipes, deaths fell from 130.1 to 84.9. Part of that fall would have happened anyway, and the first row says how much: none of it, the comparison group got worse. The difference-in-differences is −45.2 − 11.7 = −56.9 per 10,000 from the rounded cells, −57.0 from the unrounded rates.</p>
+<p>Two cautions, both for questions. Snow never computed this number. His Table XII gives counts of deaths by sub-district in 1849 and 1854, and the rates use the 1851 census populations from his Table VIII. Coleman, and Huntington-Klein’s The Effect (Table 18.1), give exactly these four numbers, and the causaldata R package carries them. Both editions of the Mixtape print different Snow tables, with −78 and −97, built from mismatched denominators or from four Lambeth-only districts that had no piped water at all in 1849; do not use those.</p>
+<p>Second, the treated group is a mix. In the 16 sub-districts about half or more of the houses took Lambeth water (Coleman’s imputation is 58%), so −57 is the effect of the area’s change in supply, diluted toward zero for a household that actually switched. Snow’s own house-level comparison, his Table IX, is starker: in the first seven weeks of the 1854 epidemic, 315 deaths per 10,000 houses supplied by Southwark and Vauxhall against 37 per 10,000 Lambeth houses, in the same streets.</p>
+<p>The 1849 rates, 134.9 and 130.1, show similar levels, and Snow made the same point in words. Difference-in-differences needs similar changes, not similar levels, and one earlier year cannot show them. That is the fourth bullet, and the next slides return to it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="two-subtractions-remove-two-kinds-of-confounder" class="slide level2">
+<h2>Two subtractions remove two kinds of confounder</h2>
+<ul>
+<li>In month 7 a coffee chain launches a mobile-ordering app in its larger, busier region.</li>
+<li>Comparing each store with its own past removes every trait of the store that does not change.</li>
+<li>Subtracting the other region’s change removes shocks common to all stores, such as the season.</li>
+<li><strong>Parallel trends</strong> assumes both regions’ sales would have changed by the same amount without the app.</li>
+</ul>
+<div class="m06" data-demo="pdag" data-design="did" style="width:58%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Click the button three times.</p>
+<p>The running example for the rest of the lecture. A coffee chain launches a mobile-ordering app in month 7, in one region only. The outcome is weekly sales per store. The region that got the app is the larger, busier one, so comparing its stores with the others after the launch mixes the app with the region.</p>
+<p>Starting graph: store type (the region, the neighbourhood, the footfall) drives both which stores got the app and how much they sell. The month also matters: sales follow the season, and the app arrived in month 7, so a before-after comparison mixes the app with the season.</p>
+<p>Click once, “Compare each store with its own past”. The arrows from store type are crossed. Store type does not change between month 6 and month 7, so a store’s change in sales contains none of it. This is the Change column of Snow’s table: the mixed districts’ poverty and elevation were the same in 1849 and 1854.</p>
+<p>Click again, “Subtract the control group’s change”. The month’s arrows are crossed. The stores without the app went through the same season, so their change measures the season, and subtracting it leaves the app. This is Snow’s +11.7.</p>
+<p>Click again, “Name the assumption”. The one arrow that must be missing runs from a trend that differs by group into sales. If the app region was on a different path anyway, growing faster, recovering from a bad year, receiving a new office park, its change would differ from the other region’s for reasons other than the app. Parallel trends says it would not. It is a statement about the treated region’s sales without the app, which nobody observes, so no statistic can confirm it. The pre-period can refute it, which is the slide after next.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="difference-in-differences-recovers-the-apps-effect" class="slide level2">
+<h2>Difference-in-differences recovers the app’s effect</h2>
+<ul>
+<li>The app adds $4,000 a week in each of 40 stores. 40 stores elsewhere never get it.</li>
+<li>App-region stores sell $12,000 more to begin with. All sales rise $3,000 after month 6.</li>
+<li>Regions compared after launch differ by $16,000. The app region’s own change is $7,000.</li>
+<li>DiD averages $4,000 across 1,000 samples. Its <strong>standard error</strong> (SE), about $500, matches the <strong>standard deviation</strong> (SD) of the estimates.</li>
+</ul>
+<div class="m06" data-demo="did" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Start on “Parallel trends”. Click “Draw one”, then “Draw 1,000”.</p>
+<p>The data-generating process. 40 stores in the app region start at a level drawn around $52,000 a week, 40 elsewhere around $40,000. Every store follows the same seasonal path, which adds exactly $3,000 from the first six months to the last six. Store-month noise has an SD of $4,000. From month 7 the app adds $4,000 a week in every app-region store.</p>
+<p>One sample: the red line is the app region, grey the other region, and the dashed red line is the counterfactual, the app region’s pre-launch level plus the other region’s change. The readout gives the two changes, +6.6 and +2.9 (thousands), and their difference, +3.7, SE 0.5.</p>
+<p>A thousand samples: the estimates centre on 3.99 with an SD of 0.50, and the reported SE averages 0.51. The standard error here comes from each store’s own after-minus-before change, which is the same as clustering by store. Meeting 7’s rule is to cluster at the level of assignment, here the region, and with one treated region that is the few-treated-units problem of section 3. Store clustering is right here only because the simulation has no region-wide shocks.</p>
+<p>The two single differences, both on the slide. After the launch, app stores sell about $16,000 more than the others: $12,000 is the region and $4,000 the app. The app region’s own before-after change is about $7,000: $3,000 is the season and $4,000 the app. Each single comparison removes one confounder and keeps the other. The difference of the two removes both, under parallel trends.</p>
+<p>A regression gives the same number: sales on a treated-group dummy, a post-period dummy and their product, or with store and month fixed effects in place of the two dummies. The coefficient on the product is the difference-in-differences.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="parallel-trends-is-a-claim-about-a-counterfactual" class="slide level2">
+<h2>Parallel trends is a claim about a counterfactual</h2>
+<ul>
+<li>The dashed red line assumes parallel trends. The true <strong>counterfactual</strong>, sales without the app, is never observed.</li>
+<li>If app-region sales already grew $500 a month faster, DiD averages $7,000 against a true $4,000.</li>
+<li>The two groups’ <strong>pre-period</strong> paths are the main evidence on the assumption.</li>
+<li><span class="solution"><strong>Solution</strong>: plot both groups before the change, and choose controls whose earlier paths match.</span></li>
+</ul>
+<div class="m06" data-demo="did" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Two and a half minutes. Switch to “Treated stores were already growing faster” and click “Draw 1,000”.</p>
+<p>The same stores, the same draws, with one change: sales in the app region grow by $500 a week each month, app or no app. In the left panel the red line climbs faster than the grey line before month 7. The counterfactual dashed line still adds the grey region’s change to the red region’s starting level, so it misses the extra growth, and the estimate absorbs it. Across 1,000 samples: mean 6.99, SD 0.50, against a true 4.</p>
+<p>Two points. The standard error is unchanged at 0.5, so the interval is just as tight around the wrong value. And the failure is the assumption’s, not the estimator’s: the same subtraction is right when the trends are parallel.</p>
+<p>What the pre-period buys. Six months before the launch the faster growth is visible in the left panel. That is the check: draw both groups’ paths before the change. With one pre-period, as Snow had, there is nothing to plot but two levels. The event study later in this section turns this plot into a test, and shows that passing the test is weaker evidence than it looks.</p>
+<p>Choosing controls. If one comparison region trends differently, another may not: other cities, other store formats, other customer segments. That choice has to be made before seeing the post-period, or it becomes a specification search.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="job-trainees-earnings-fell-before-they-enrolled" class="slide level2 dense">
+<h2>Job trainees’ earnings fell before they enrolled</h2>
+<ul>
+<li>In 1976, 3,072 men began a US federal job-training program.</li>
+<li>The controls were men from the Current Population Survey, a national household survey.</li>
+<li>Trainees’ earnings fell from $2,970 in 1973 to $1,898 in 1975, in 1967 dollars.</li>
+<li>People enrol after a bad year, the <strong>Ashenfelter dip</strong>. From that year, the usual recovery looks like an effect.</li>
+</ul>
+<div style="font-size:0.58em; width:62%; margin:0 auto">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">“Before” year</th>
+<th style="text-align: right;">DiD estimate, 1978 earnings</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1975, the year of the dip</td>
+<td style="text-align: right;">+$785</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1974</td>
+<td style="text-align: right;">+$8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">1973</td>
+<td style="text-align: right;">−$473</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1970</td>
+<td style="text-align: right;">−$1,110</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><span class="solution"><strong>Solution</strong>: report several “before” years, and match on recent employment history.</span></li>
+</ul>
+<p><a href="https://doi.org/10.2307/1924810" style="font-size:0.55em; color:#6b6b6b">Ashenfelter and Card (1985), <em>Using the Longitudinal Structure of Earnings to Estimate the Effect of Training Programs</em>, Review of Economics and Statistics 67, 648–660, Tables 1–2.</a></p>
+<aside class="notes">
+<p>Two and a half minutes. Dollars are 1967 dollars. This is not LaLonde’s National Supported Work program from meetings 7 and 8, although the comparison group is again men from a national survey.</p>
+<p>The setting. The Comprehensive Employment and Training Act funded job training for disadvantaged workers. Ashenfelter and Card took the adult men who started training in 1976 and a comparison group from the March 1976 Current Population Survey, resampled to match the trainees’ ages, with Social Security earnings for both from 1970 to 1978. The question: did the training raise earnings?</p>
+<p>The dip. Trainees’ earnings rose to $2,970 in 1973, then fell to $2,785 in 1974 and $1,898 in 1975, the year before they enrolled. From 1970 to 1975 the comparison group’s earnings rose by about $1,700, while the trainees’ fell by about $200. People enter a training program after losing a job or hours, so their earnings were about to recover with or without the training. Ashenfelter (1978) first documented the dip, for the 1964 cohort of an earlier program, and his paper is credited with bringing difference-in-differences into program evaluation.</p>
+<p>The table is the parallel-trends failure in one column. The same data and the same estimator give +$785 when the “before” year is the dip year, because the recovery is credited to training, and −$1,110 when it is 1970, because trainees were already falling behind the comparison group over the early 1970s. Nothing in a single estimate says which base year is right. The authors concluded that randomized trials were needed.</p>
+<p>The experiment that settles it, if asked: Heckman and Smith (1999, Economic Journal, https://doi.org/10.1111/1468-0297.00451) used the randomized National Job Training Partnership Act Study. For adult men, the 18-month before-after estimate was $3,109 against an experimental $657 (figures from NBER working paper 6983). They found that unemployment, more than low earnings, predicts who enrolls, so the fix is to compare people with the same recent employment history: eligible applicants, or matches on labour-force status before enrollment.</p>
+<p>In the course’s terms: a consistent estimator, data that violate its assumption, because selection into treatment depends on a recent temporary shock to the outcome.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-tax-in-one-city-moved-sales-across-its-border" class="slide level2 dense">
+<h2>A tax in one city moved sales across its border</h2>
+<ul>
+<li>Philadelphia’s 2017 tax on sweetened drinks raised their prices 34%.</li>
+<li>City stores’ sales of taxed drinks fell 46%. Stores just outside sold more.</li>
+<li><strong>Spillover</strong> means the treatment changes outcomes in the control group.</li>
+<li>The DiD compares city stores with stores over 6 miles out, where sales did not rise.</li>
+<li>Counting the border gains, purchases fell 22%.</li>
+<li><span class="solution"><strong>Solution</strong>: choose controls beyond the spillover, and estimate it separately.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1177/0022243720969401" style="font-size:0.55em; color:#6b6b6b">Seiler, Tuchman and Yao (2021), <em>The Impact of Soda Taxes: Pass-Through, Tax Avoidance, and Nutritional Effects</em>, Journal of Marketing Research 58, 22–49.</a></p>
+<aside class="notes">
+<p>Two and a half minutes. Numbers are from the June 2020 working paper, whose headline figures match the published abstract.</p>
+<p>The setting. Philadelphia’s City Council passed a 1.5 cents per ounce tax on sweetened drinks, diet soda included, in June 2016, effective 1 January 2017. On a 2-litre bottle that is $1.01, against an average pre-tax price of $1.56. The researchers wanted to know how much of the tax reached shelf prices, how much less was bought, and how much buying moved to untaxed stores.</p>
+<p>The data. Weekly store-level scanner data from 2015 to 2018 for 357 stores in Philadelphia and 870 outside it, from 11 chains present on both sides of the city line.</p>
+<p>The results. Pass-through was 97%: prices rose 1.45 cents an ounce, 34%. Taxed volume in city stores fell 46%. Stores 0–2 miles outside the city gained 63,650 ounces per store per week, against a loss of about 56,000 per city store. Counting the gains within 6 miles, the net fall was 22%, and 52% of the city’s decline was offset by shoppers driving out.</p>
+<p>The design decision. The control group is stores more than 6 miles from the city limits, “to ensure the control group is not affected by the treatment through cross-shopping behavior”. They check it: stores 6–8 miles out show no increase. Had the 0–2 mile stores been the control, the estimate would add their rise to the city’s fall, roughly doubling it (my arithmetic, not the authors’: about −119,800 against −56,192 ounces per store per week).</p>
+<p>Last week’s term for this is interference: one unit’s treatment changes another unit’s outcome. In a difference-in-differences it contaminates the control group, and the usual direction is to exaggerate the effect when the treatment pushes activity to the controls, as here, or to hide it when the treatment’s benefits spread to them.</p>
+<p>A contrast for questions: Roberto et al.&nbsp;(2019, JAMA, https://doi.org/10.1001/jama.2019.4249) used Baltimore as the control and a 3-mile Pennsylvania border zone, and found a 24% offset and a 38% net fall. Seiler et al.&nbsp;reproduce most of the gap by restricting their data to Roberto’s store formats, geography and period (28% net) and to 51 border stores (34%).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="an-event-study-estimates-the-effect-month-by-month" class="slide level2">
+<h2>An event study estimates the effect month by month</h2>
+<ul>
+<li>App-region stores are compared with the others by month, with store and month fixed effects.</li>
+<li><strong>Leads</strong> and <strong>lags</strong> mark each month before and after the launch.</li>
+<li>Month −1 is the <strong>reference period</strong>, set to zero. Leads near zero support parallel trends.</li>
+<li>If the effect grows as customers learn the app, the lags climb from $1,000 to $7,000.</li>
+<li>A single DiD coefficient reports their average, $4,000, and hides the path.</li>
+</ul>
+<div class="m06" data-demo="event" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Start on “Effect constant”, click “Draw one”, then switch to “Effect grows” and click “Draw one” and “Draw 1,000”.</p>
+<p>An event study, in applied economics today, is this regression: unit and time fixed effects plus an indicator for each period before and after treatment, the leads and the lags, with one period before treatment left out as the reference (Miller 2023, Journal of Economic Perspectives, https://doi.org/10.1257/jep.37.2.203). The lags trace the effect over time; the leads are a placebo test, because the treatment cannot have an effect before it happens. Restricting all leads to zero and all lags to one common value gives back the difference-in-differences regression.</p>
+<p>The design: the two-region rollout from the DiD demo, 40 stores in the app region and 40 elsewhere, observed from six months before the launch to six months after. The regression has store fixed effects, month fixed effects and an indicator for each month relative to the launch in the app region, leaving out month −1. Standard errors are clustered by store, which, as in the DiD demo, assumes no region-wide shocks.</p>
+<p>Effect constant: the leads scatter around zero, the lags around $4,000, and the joint test that all five leads are zero has p = 0.98. Effect grows: the effect is $1,000 in the launch month, rising by $1,000 a month to $7,000. The lags trace it. A single difference-in-differences coefficient would average the post-launch months and report $4,000 in both settings, and the manager deciding whether to keep the app for a year needs the path.</p>
+<p>What the plot shows that the table does not. The leads are the pre-trend check made formal. The lags show whether the effect builds, fades or appears with a delay. This is the figure referees expect in any panel design, and the one the solar example in the project description brief uses.</p>
+<p>The leads are a test of a testable implication: if parallel trends hold, and units do not respond in advance, they should be zero. Anticipation, units reacting before the treatment because they know it is coming, is a reason they might not be, and a reason to choose the reference period before any announcement.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="choosing-a-did-or-an-event-study" class="slide level2">
+<h2>Choosing a DiD or an event study</h2>
+<div style="font-size:0.72em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 39%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Difference-in-differences</th>
+<th style="text-align: left;">Event study</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Reports</td>
+<td style="text-align: left;">One average effect after treatment</td>
+<td style="text-align: left;">One effect for each period, against a reference period</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Needs</td>
+<td style="text-align: left;">Two periods, or periods pooled before and after</td>
+<td style="text-align: left;">Several periods before and after</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Shows pre-trends</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Yes, in the leads</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Shows whether the effect builds or fades</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Yes, in the lags</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>With two periods the two are the same comparison.</li>
+<li>With more periods report both: the event study as the figure and the DiD as the summary.</li>
+</ul>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>They are one design. An event study is a set of differences-in- differences, each comparing one period with the same reference period. The DiD averages the periods after treatment against the periods before. With Snow’s two years there is only one comparison, and the two coincide.</p>
+<p>When to lead with which. The DiD when there are two periods, or when the decision needs one number, such as a cost-benefit calculation. The event study whenever there are several periods, because it shows the pre-trends in the leads and whether the effect builds, fades or arrives late in the lags, and referees expect the figure. The practitioner’s guide treats the event study as the multi-period version of the 2×2 and discusses averaging its estimates into a single summary.</p>
+<p>With adoption on different dates the event study lines units up by time since adoption rather than by calendar month. That is where the next step goes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-pre-trend-test-can-pass-when-parallel-trends-fails" class="slide level2">
+<h2>A pre-trend test can pass when parallel trends fails</h2>
+<ul>
+<li>Suppose app-region sales already rose $500 a month faster, app or no app.</li>
+<li>A <strong>pre-trend test</strong> that all leads are zero rejects in only 41% of samples.</li>
+<li>Samples that pass estimate $6,300. Roth shows the same risk in 12 published studies.</li>
+<li><span class="solution"><strong>Solution</strong>: report how large a violation of parallel trends would overturn the result.</span></li>
+</ul>
+<div class="m06" data-demo="event" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1257/aeri.20210236" style="font-size:0.55em; color:#6b6b6b">Roth (2022), <em>Pretest with Caution</em>, American Economic Review: Insights 4, 305–322.</a></p>
+<aside class="notes">
+<p>Three minutes. Switch to “Treated stores already trending up”, click “Draw one”, then “Draw 1,000”.</p>
+<p>The change: sales in the app region rise by $500 a week each month, before and after the launch, on top of a constant $4,000 effect. The first sample passes the pre-trend test (p = 0.44) and estimates $6,000. Across 1,000 samples, the joint test of the leads rejects at 5% in only 41%. Among the 594 samples that pass, the average post-launch estimate is $6,300; over all samples it is $6,000; the truth is $4,000. Passing the test did not protect the estimate, and conditioning on passing made the bias slightly larger.</p>
+<p>Why. Every lead and lag is measured against month −1. A low draw in month −1 raises the leads and the lags together, so they are positively correlated. The samples in which the leads happen to look flat are disproportionately those in which noise pushed the pre-period up toward zero, and the same noise pushes the post-period up too.</p>
+<p>Roth’s evidence. He took the 12 event studies published in the AER and the two AEJ applied journals from 2014 to 2018 that had replication data and a usable event-study plot, and imposed linear violations of parallel trends that the usual pre-test would detect only half the time. Those violations produced large biases; in the most extreme case, the bias was larger than the estimated effect and a nominal 95% interval covered the truth only 24% of the time. Conditioning on passing the pre-test made the bias larger in most specifications. Only one of the 12 papers reported a joint test of the leads.</p>
+<p>The solution. Rambachan and Roth (2023, Review of Economic Studies, https://doi.org/10.1093/restud/rdad018) replace “parallel trends holds” with a bound: each period-to-period change in the post-period violation is no larger than M̄ times the largest such change in the pre-period. They report a confidence interval valid under each M̄ and the breakdown value, the M̄ at which the interval first includes zero. In Benzarti and Carloni’s (2019) data on France’s July 2009 cut in the value-added tax on sit-down restaurants, the 2009 effect on profits survives up to M̄ of about 2; the average over all four post-years does not survive M̄ = 1. Their HonestDiD package for R and Stata does this, and Roth’s pretrends package computes the power of the pre-test.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="staggered-adoption-changes-who-serves-as-control" class="slide level2">
+<h2>Staggered adoption changes who serves as control</h2>
+<ul>
+<li>In <strong>staggered adoption</strong> units adopt on different dates, here months 4 and 12.</li>
+<li>TWFE compares every pair of groups over every pair of periods.</li>
+<li>After month 12 it uses early stores, which have the app, as controls for late stores.</li>
+</ul>
+<p><img data-src="figures/m09-staggered-roles.svg" class="" style="width:78.0%" alt="A grid of three groups of stores by month 1 to 16. Early stores have the app from month 4, late stores from month 12, and the third group never adopts. Below the grid: in months 1 to 3 no store is treated; in months 4 to 11 early stores are treated and late and never-adopting stores are clean controls; in months 12 to 16 early and late stores are treated, never-adopting stores are the only clean control, and early stores, already treated, serve as controls for late stores."></p>
+<aside class="notes">
+<p>Two minutes. Read the grid left to right, as time goes by.</p>
+<p>Months 1 to 3: no store has the app, and nothing can be compared.</p>
+<p>Months 4 to 11: early stores have the app. Late stores and the stores that never adopt have not, and either group is a clean control for the early stores: its change is what the early stores’ sales would have done without the app, under parallel trends.</p>
+<p>Months 12 to 16: late stores adopt. The stores that never adopt are still a clean control. But a two-way fixed-effects regression does not choose its controls. Goodman-Bacon (2021) shows that its estimate is a weighted average of every comparison of two groups over two periods in the data, and one of those compares the late stores’ change with the early stores’ change over the same months. The early stores already have the app, so their change includes their own app’s effect.</p>
+<p>The weights depend on group sizes and on when in the panel each group adopts: groups treated in the middle of the panel get the most. With several adoption dates and no never-treated group, every comparison after the first adoption uses some treated units as controls.</p>
+<p>Whether that matters depends on the effect. The next slide shows the case where it does.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="already-treated-controls-can-flip-the-sign" class="slide level2">
+<h2>Already-treated controls can flip the sign</h2>
+<ul>
+<li>The app’s effect grows by $1,000 a week each month after adoption.</li>
+<li>Early stores against late stores before month 12 is a clean comparison.</li>
+<li>Late stores against early stores subtracts the early stores’ growing effect.</li>
+</ul>
+<p><img data-src="figures/m09-staggered-comparisons.svg" class="" style="width:80.0%" alt="Two panels of weekly sales by month. Left: early stores adopt in month 4 and their sales climb while late stores stay flat; the comparison over months 1 to 11 estimates +3.5 against a true +3.5. Right: late stores adopt in month 12 and are compared with early stores, whose sales are still climbing from their own app; the comparison over months 4 to 16 estimates -4.5 against a true +2.0."></p>
+<aside class="notes">
+<p>Two and a half minutes. Left panel first, then the right.</p>
+<p>The setting: the coffee chain again, now with two groups of stores. Early stores adopt the app in month 4, late stores in month 12. Without the app every store’s sales would be flat, so parallel trends holds exactly. The app’s effect is zero in the adoption month and grows by $1,000 a week each month after, as customers learn to use it.</p>
+<p>These are the two comparisons from the grid that involve early and late stores, drawn as sales paths.</p>
+<p>Left panel: early stores against late stores, months 1 to 11, while the late stores have no app. The late stores’ change is zero, the early stores’ change is their average effect over months 4 to 11, and the difference is +3.5, the true effect. This is a clean comparison: the control group is untreated.</p>
+<p>Right panel: late stores against early stores, months 4 to 16. Now the early stores are the control group, and they already have the app. Their sales rise from 46 to 58 over the window because their own effect keeps growing. The subtraction treats that rise as the trend the late stores would have followed, so it removes 6.5 from the late stores’ change of 2.0: estimate −4.5 against a true +2.0. Papers on staggered designs call these forbidden comparisons.</p>
+<p>Why the growth matters. If the effect were a constant $4,000, the early stores’ sales would jump once in month 4 and stay flat, their change over the right panel’s window would be zero, and the right panel would also give the right answer. The problem needs effects that change over time, which is the usual case: customers learn an app, a law’s effects build, a program’s graduates accumulate.</p>
+<p>The next slide’s demo has three groups and shows the weights.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="growing-effects-bias-staggered-twfe-estimates" class="slide level2">
+<h2>Growing effects bias staggered TWFE estimates</h2>
+<ul>
+<li>Now three groups of 30 stores adopt in months 4, 8 and 12.</li>
+<li>TWFE also uses stores that already have the app as controls, with 60% of its weight.</li>
+<li>If effects grow with time, TWFE averages −$1,100, though no store’s true effect is negative.</li>
+<li><span class="solution"><strong>Solution</strong>: use <strong>Callaway–Sant’Anna</strong>, which compares only with not-yet- or never-treated units.</span></li>
+</ul>
+<div class="m06" data-demo="staggered" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.1016/j.jeconom.2021.03.014" style="font-size:0.55em; color:#6b6b6b">Goodman-Bacon (2021), <em>Difference-in-Differences with Variation in Treatment Timing</em>, Journal of Econometrics 225, 254–277.</a></p>
+<p><a href="https://doi.org/10.1016/j.jeconom.2020.12.001" style="font-size:0.55em; color:#6b6b6b">Callaway and Sant’Anna (2021), <em>Difference-in-Differences with Multiple Time Periods</em>, Journal of Econometrics 225, 200–230.</a></p>
+<aside class="notes">
+<p>Three and a half minutes. Start on “Effect constant” and “All adopt”, click “Draw 500”. Then switch to “Effect grows with time” and click “Draw 500”. Then switch to “Some never adopt” and draw again.</p>
+<p>The design: three groups of 30 stores adopt the app in months 4, 8 and 12 of a 16-month panel, and every store eventually adopts.</p>
+<p>Effect constant: two-way fixed effects average 4.00 and Callaway–Sant’Anna 3.95, both on target. When the effect is the same everywhere and always, the regression is fine.</p>
+<p>Effect grows: the effect is $1,000 for each month since adoption, starting at zero in the adoption month. Two-way fixed effects average −1.10, the wrong sign. The comparison that uses only stores not yet treated averages 2.79 against its truth of 2.83. That truth averages the store-months before month 12, because once every store has the app there is no untreated store left to compare with. Over every treated store-month the average effect is 4.59, so the two-way estimate has the wrong sign against either target.</p>
+<p>Why, from Goodman-Bacon’s decomposition. The two-way estimate is a weighted average of every two-group, two-period comparison in the data. Some are clean: early adopters against stores that have not yet adopted. Others use stores that already have the app as the control group for later adopters. When the effect grows, the already-treated stores’ sales are rising because of their own app, so the later adopters look worse by comparison, and those comparisons are negative. Here they get 60% of the weight: 8 against 4 at −2.5, 12 against 4 at −4.5, 12 against 8 at −2.5. The weighted sum is exactly −1.10.</p>
+<p>With some never-adopters, the weight on bad comparisons falls to 30% and two-way fixed effects average 1.30 against a truth of 4.59, still badly off.</p>
+<p>The solution, in software: Callaway and Sant’Anna (2021, https://doi.org/10.1016/j.jeconom.2020.12.001) estimate an effect for each adoption cohort in each period, using never-treated or not-yet-treated units as controls, and then average them; R package did, Stata csdid. Sun and Abraham (2021, https://doi.org/10.1016/j.jeconom.2020.09.006) do the same for event-study plots, and show that leads of a two-way event study can show a pre-trend that is only effect heterogeneity. Borusyak, Jaravel and Spiess (2024) impute each treated unit’s untreated outcome; the stacked design builds a clean comparison for each adoption date. The Remix chapter 10 works through all of them except the stacked design.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="staggered-designs-are-common-in-finance-research" class="slide level2">
+<h2>Staggered designs are common in finance research</h2>
+<ul>
+<li>In 2000–2019, 407 of 744 DiD papers in top finance and accounting journals were staggered.</li>
+<li>Baker, Larcker and Wang re-estimated two published results with newer estimators.</li>
+<li>Fauver and co-authors found board reforms in 41 countries raised Tobin’s q by 0.11. Newer estimators give an insignificant 0.06.</li>
+<li><span class="solution"><strong>Solution</strong>: plot adoption dates, decompose the TWFE estimate, and use a staggered-timing estimator.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1016/j.jfineco.2022.01.004" style="font-size:0.55em; color:#6b6b6b">Baker, Larcker and Wang (2022), <em>How Much Should We Trust Staggered Difference-in-Differences Estimates?</em>, Journal of Financial Economics 144, 370–395.</a></p>
+<p><a href="https://doi.org/10.1016/j.jfineco.2017.04.010" style="font-size:0.55em; color:#6b6b6b">Fauver, Hung, Li and Taboada (2017), <em>Board Reforms and Firm Value: Worldwide Evidence</em>, Journal of Financial Economics 125, 120–142.</a></p>
+<aside class="notes">
+<p>One and a half minutes. For the finance teams.</p>
+<p>The count. Baker, Larcker and Wang read every difference-in-differences paper published from 2000 to 2019 in the top five finance journals and the top five accounting journals: 744 papers, of which 407 (55%) used staggered adoption, 97% of those since 2010. The treatments are typically state or country laws adopted in different years: takeover laws, board reforms, banking rules.</p>
+<p>The re-examination on the slide. Fauver, Hung, Li and Taboada (2017, Journal of Financial Economics, https://doi.org/10.1016/j.jfineco.2017.04.010) studied 41 country-level board reforms, 1990 to 2012, such as requirements for independent directors or audit committees, and found that firm value rose: 0.110 in Tobin’s q without covariates, significant at 5%. With the Callaway–Sant’Anna estimator the effect is 0.062 with a standard error of 0.135. The stacked estimate for the first reform stays significant, which the re-analysis attributes partly to a pre-trend. The original authors replied that their conclusions hold with three never-reforming countries added (SSRN, https://doi.org/10.2139/ssrn.3885472).</p>
+<p>The second study they re-examined is one of this afternoon’s cases, so it is not named here.</p>
+<p>The solution list is theirs: plot when each unit is treated, run the Goodman-Bacon decomposition to see where the weight sits, show an event study without binning the end periods, and report at least one estimator built for staggered timing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="treatment-that-comes-in-doses" class="slide level2">
+<h2>Treatment that comes in doses</h2>
+<ul>
+<li>In April 1990 the federal minimum wage rose from $3.35 to $3.80 an hour.</li>
+<li>The <strong>dose</strong> was the share of a state’s teens paid $3.35–$3.79 in 1989: 0 in Alaska, 54% in West Virginia.</li>
+<li>Teen wages rose more where the dose was larger. Teen employment did not change significantly.</li>
+<li>Comparing doses needs <strong>strong parallel trends</strong>: no state got its dose because of what it would gain.</li>
+<li><span class="solution"><strong>Solution</strong>: compare each dose with untreated units, and defend strong parallel trends before reading a slope.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1177/001979399204600103" style="font-size:0.55em; color:#6b6b6b">Card (1992), <em>Using Regional Variation in Wages to Measure the Effects of the Federal Minimum Wage</em>, Industrial and Labor Relations Review 46, 22–37.</a> · <a href="https://doi.org/10.1257/aer.20240137" style="font-size:0.55em; color:#6b6b6b">Callaway, Goodman-Bacon and Sant’Anna (forthcoming), <em>Difference-in-Differences with a Continuous Treatment</em>, American Economic Review.</a></p>
+<aside class="notes">
+<p>Two minutes. The idea only; the estimators are in the paper.</p>
+<p>The setting. The federal minimum wage rose from $3.35 to $3.80 on 1 April 1990. Every state was exposed, but by 1989 sixteen states and DC already had their own minimum above $3.35, and wages differ across states, so the new minimum bound much harder in some places than in others. Card measured the bite as the share of teenage workers, ages 16 to 19, earning between $3.35 and $3.79 in 1989: 24% nationally, from 0 in Alaska to 54% in West Virginia. Data: the Current Population Survey’s outgoing rotation groups, April to December of 1989 and 1990, for the 50 states and DC. Numbers from the NBER working paper (w4058).</p>
+<p>The results. Regressing the change in the mean log teen wage on the fraction affected gives 0.15 (standard error 0.03): a state with 10 more points of its teenagers affected saw about 1.5% more wage growth. The same regression for the teen employment rate gives 0.02 (0.03), and about zero with controls for the state labour market.</p>
+<p>Two questions a dose design can answer. First: what did the dose do to the units that got it? Compare each dose group’s change with the untreated group’s change. That needs only the usual parallel trends, one for each dose. Second: how does the effect change with the dose, the slope? Comparing a high-dose state with a low-dose state mixes the effect of more dose with any difference in how those states respond. Callaway, Goodman-Bacon and Sant’Anna call that term a version of selection on gains. Strong parallel trends rules it out: a low-dose state would have responded to a high dose as the high-dose states did. Pre-trend tests cannot tell the two assumptions apart. Card’s 0.15 is a slope, so reading it as “more bite, more wage growth” leans on the stronger assumption.</p>
+<p>The regression most papers run puts the dose in a two-way fixed-effects regression. It averages slopes with weights that do not match the distribution of doses, and it carries the selection term unless strong parallel trends holds. In their application, Medicare’s 1983 switch to fixed payments per admission, with each hospital’s Medicare share as the dose, the average effect on capital intensity is clear, while the average slope is about zero and its sign changes across doses.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="who-the-did-estimate-is-about" class="slide level2">
+<h2>Who the DiD estimate is about</h2>
+<ul>
+<li>DiD estimates the <strong>average treatment effect on the treated</strong> (ATT): the effect on treated units in the periods observed.</li>
+<li>Snow’s estimate concerns 16 London sub-districts in 1854.</li>
+<li>In an event study each lag is the ATT that many periods after treatment.</li>
+<li>With staggered adoption distant lags come only from the earliest adopters.</li>
+<li>Report the 2×2 means, the pre-period paths, every lead and lag, and the estimator.</li>
+</ul>
+<p><a href="https://archive.org/details/b28985266" style="font-size:0.55em; color:#6b6b6b">Snow (1855), <em>On the Mode of Communication of Cholera</em>, 2nd ed., John Churchill, London.</a></p>
+<p><a href="https://doi.org/10.1016/j.jeconom.2023.03.008" style="font-size:0.55em; color:#6b6b6b">Roth, Sant’Anna, Bilinski and Poe (2023), <em>What’s Trending in Difference-in-Differences?</em>, Journal of Econometrics 235, 2218–2244.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>The parameter. A difference-in-differences compares the treated units with what they would have done untreated, so it estimates the effect on the treated, over the periods in the data. Whether the same effect would hold for the untreated units is a separate claim: they were not treated, often for a reason. The app region was the busier region; the effect of an app in a quiet region is not in the data.</p>
+<p>Snow’s estimate is the effect of the change in supply on 16 sub-districts in the 1854 epidemic. It is internally valid for those districts and says nothing directly about another city’s water.</p>
+<p>The event study. Each lag is an effect on the treated at that horizon, and with staggered adoption the units behind each lag differ: in a panel that ends in 2020, the effect ten years after adoption comes only from units that adopted by 2010. A lag that rises may be a growing effect or a change in which units are averaged. Callaway and Sant’Anna estimate a separate effect for each adoption group in each period, then average them by group, by calendar period or by time since adoption.</p>
+<p>The reporting list, for the proposal: the 2×2 table of means; a plot of both groups before and after; every lead and lag with its interval, not binned at the ends, and the reference period; when each unit is treated and which units serve as controls; how the standard errors are clustered and why; and the estimator. Roth and co-authors’ review ends with a practitioner’s checklist along these lines, and it is the best single reading for this section.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="few-treated-units" class="title-slide slide level1 center">
+<h1>3. Few treated units</h1>
+<aside class="notes">
+<p>Thirty seconds. One or a few treated units: first the standard errors, then synthetic control for the comparison itself.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="few-treated-units-break-clustered-standard-errors" class="slide level2 dense">
+<h2>Few treated units break clustered standard errors</h2>
+<ul>
+<li><strong>Clustered standard errors</strong> let a state’s errors correlate over time. They need many treated states.</li>
+<li>From 1993 Georgia’s HOPE scholarship paid tuition. The controls are 41 states without merit aid.</li>
+<li>It raised college enrollment by an estimated 7.8 percentage points.</li>
+<li>Clustered by state, the 95% confidence interval is 5.8 to 9.7.</li>
+<li>The <strong>Conley–Taber</strong> interval, built from the control states’ shocks, is −1 to 21.</li>
+<li>In simulations with one treated state, clustered 5% tests rejected a true zero effect 84% of the time.</li>
+<li><span class="solution"><strong>Solution</strong>: run a <strong>permutation test</strong>, treating each control as if treated, or use Conley–Taber.</span></li>
+</ul>
+<p><a href="https://doi.org/10.1162/REST_a_00049" style="font-size:0.55em; color:#6b6b6b">Conley and Taber (2011), <em>Inference with “Difference in Differences” with a Small Number of Policy Changes</em>, Review of Economics and Statistics 93, 113–125.</a></p>
+<aside class="notes">
+<p>Two minutes. Meeting 7 covered serial correlation and clustering by state with the Bertrand, Duflo and Mullainathan placebo laws. This slide adds only what happens when few units are treated.</p>
+<p>The setting. Georgia’s HOPE scholarship, from 1993, pays full tuition at in-state public colleges for students with a 3.0 high-school grade point average. Following Dynarski (2004), the outcome is college enrollment of 18- and 19-year-olds in the October Current Population Survey, 1989 to 2000, with 41 control states, after dropping the other states that adopted merit aid in those years.</p>
+<p>Why clustering fails here. With one treated state, the estimate is Georgia’s change minus the average change elsewhere, and its error is dominated by Georgia’s own state-by-year shocks, which do not shrink as the sample grows. The clustered standard error estimates that variance from Georgia’s residuals, which the regression forces toward zero. So the interval of 5.8 to 9.7 points is far too narrow. Conley and Taber use the 41 control states to learn the distribution of state-level shocks and build the interval from it: −1 to 21 points, which includes zero.</p>
+<p>The simulation numbers, from their Table 3: with 100 states, 10 periods and a true null, the state-clustered test rejects at a nominal 5% in 84% of samples with one treated state, 36% with two, 16% with five and 10% with ten. MacKinnon and Webb (2017, Journal of Applied Econometrics, https://doi.org/10.1002/jae.2508) find 75% in placebo laws on Current Population Survey data with one treated state, and that the wild cluster bootstrap is reliable only with about seven or more treated clusters.</p>
+<p>The permutation test is meeting 6’s: pretend each control state was treated, re-estimate, and read the p-value from the treated state’s rank. With 41 controls the smallest p-value is about 1/42. Both this and Conley–Taber assume the control states’ shocks are distributed like Georgia’s; states with small survey samples are noisier (Ferman and Pinto 2019, Review of Economics and Statistics, https://doi.org/10.1162/rest_a_00759). The Philadelphia tax in section 2 is a one-treated-city design too.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="californias-tobacco-program-had-no-matching-state" class="slide level2 dense">
+<h2>California’s tobacco program had no matching state</h2>
+<ul>
+<li>In 1988 California voters raised the cigarette tax 25 cents a pack and funded anti-smoking campaigns.</li>
+<li>California’s sales began falling in the late 1970s, while other states’ still rose.</li>
+<li><strong>Synthetic control</strong> weights untreated units to track the treated unit’s past.</li>
+<li>Synthetic California is 33% Utah, 23% Nevada, 20% Montana, 16% Colorado and 7% Connecticut.</li>
+<li>By 2000 California sold about 26 fewer packs per person than synthetic California.</li>
+</ul>
+<p><a href="https://doi.org/10.1198/jasa.2009.ap08746" style="font-size:0.55em; color:#6b6b6b">Abadie, Diamond and Hainmueller (2010), <em>Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California’s Tobacco Control Program</em>, Journal of the American Statistical Association 105, 493–505.</a></p>
+<aside class="notes">
+<p>Two and a half minutes.</p>
+<p>The setting. Proposition 99, passed in November 1988 and in force from January 1989, raised California’s cigarette tax by 25 cents a pack, earmarked the revenue for health and anti-smoking education, funded anti-smoking media campaigns, and spurred local smoke-free ordinances. The question: how much did cigarette consumption in California fall because of the program? The outcome is per-capita cigarette sales in packs, from state tax revenue, 1970 to 2000.</p>
+<p>Why difference-in-differences fails here. California’s consumption peaked and began to fall in the late 1970s while the rest of the country was still rising; by 1988 the rest of the United States was 27% higher. The trends were not parallel before the law, so a comparison with the average state credits California’s existing decline to the program.</p>
+<p>The design. Synthetic California is a weighted average of the 38 states that had no large tobacco program or tax rise of their own over 1989 to 2000, with weights that are non-negative and sum to one, chosen to reproduce California’s sales in the 19 years before the law and its cigarette prices, income, age structure and beer consumption. Five states get positive weight, Utah 0.334, Nevada 0.234, Montana 0.199, Colorado 0.164, Connecticut 0.069, and the other 33 get zero. The pre-period fit is close: mean squared error about 3, in packs squared.</p>
+<p>The result: about 26 fewer packs per person by 2000, and almost 20 a year on average over 1989 to 2000, about 25%. The estimate concerns the whole program, not the tax alone.</p>
+<p>If asked about newer estimators: synthetic difference-in-differences (Arkhangelsky et al.&nbsp;2021, AER, https://doi.org/10.1257/aer.20190159) on the same data gives −15.6 packs averaged over the post-period, against −19.6 for synthetic control and −27.3 for plain difference-in-differences. The estimator matters when trends are not parallel.</p>
+<p>A question for the room: is Utah, with the largest weight and unusually low smoking, a sensible stand-in for California? The method chose Utah because its sales path matched California’s. Whether its smoking culture matters is the open question.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="synthetic-control-weights-a-donor-pool" class="slide level2">
+<h2>Synthetic control weights a donor pool</h2>
+<ul>
+<li>The chain launches its app in one city. 20 cities without it form the <strong>donor pool</strong>.</li>
+<li>Before launch the <strong>root mean squared prediction error</strong> (RMSPE) is $6,100 for the donor average and $540 for the synthetic control.</li>
+<li>After launch the synthetic control’s gap averages $3,900, against a true $4,000.</li>
+<li>A <strong>placebo in space</strong> treats each donor as launched. The launch city ranks 1 of 21 on post/pre RMSPE.</li>
+</ul>
+<div class="m06" data-demo="synth" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Two and a half minutes. Click “Average of the donors”, then “Synthetic control”, then “Placebo in space”. The demo has no random draws.</p>
+<p>The data-generating process. Weekly sales per store, by month, in 21 cities over 36 months, built from three common factors with different loadings in each city, a shock common to all, and noise. The launch city’s loadings lie inside the donors’ range, so a weighted mix can match it. The app adds $4,000 a week from month 25.</p>
+<p>Average of the donors: the launch city sits above it and on a different path, with a pre-launch RMSPE of 6.1 and a mean gap of 11.1 after the launch. The donor average is the plain comparison, and it fails for the reason California’s did.</p>
+<p>Synthetic control: non-negative weights summing to one, chosen to minimize the pre-launch gap. Six cities get weight, the largest 0.30. The pre-launch RMSPE falls to 0.54, and the post-launch gap averages 3.9.</p>
+<p>Placebo in space: run the same method on each donor as if it had launched, and draw each placebo gap in grey. The test statistic is the ratio of post- to pre-launch RMSPE, so a placebo that fit badly before the launch does not count as a large effect. The launch city’s ratio is 7.3, the donors’ run from 0.7 to 2.1, so it ranks first of 21 and the permutation p-value is 1/21 = 0.048. California ranked first of 39 states, p = 1/39 = 0.026. With 17 units, as in the German reunification study, the smallest possible p-value is 1/17, above 5%.</p>
+<p>What the method needs (Abadie 2021, Journal of Economic Literature, https://doi.org/10.1257/jel.20191450): one or a few treated aggregate units, a long pre-period, donors untouched by the intervention, no anticipation, and a treated unit inside the donors’ range. When the pre-period fit is poor, Abadie advises against the method.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="event-studies-in-finance" class="title-slide slide level1 center">
+<h1>4. Event studies in finance</h1>
+<aside class="notes">
+<p>Thirty seconds. A different design with the same name as section 2’s event study, the one the finance teams will use. Opened by earnings announcements.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="earnings-news-moved-stock-prices-within-a-day" class="slide level2 dense">
+<h2>Earnings news moved stock prices within a day</h2>
+<ul>
+<li>Does earnings news change a firm’s stock price, and how fast?</li>
+<li>MacKinlay studied 600 announcements by the 30 Dow Jones firms, 1989–1993.</li>
+<li>Earnings beat analysts’ forecasts 189 times, missed them 238 times and were close 173 times.</li>
+<li>On the day, returns beyond the market’s move were +0.97% for good news and −0.68% for bad.</li>
+<li>Prices move daily for many reasons, so a raw return mixes the news with everything else.</li>
+<li><span class="solution"><strong>Solution</strong>: subtract the return the market alone would predict.</span></li>
+</ul>
+<p><a href="https://ideas.repec.org/a/aea/jeclit/v35y1997i1p13-39.html" style="font-size:0.55em; color:#6b6b6b">MacKinlay (1997), <em>Event Studies in Economics and Finance</em>, Journal of Economic Literature 35, 13–39.</a></p>
+<aside class="notes">
+<p>Two and a half minutes.</p>
+<p>The question. Regulators require firms to publish quarterly earnings so that investors are informed. Does the news actually move prices, and how quickly? If markets absorb information fast, the price should jump on the day of the announcement and then stay put.</p>
+<p>The data. The 30 firms of the Dow Jones Industrial Average, quarterly earnings announcements from the fourth quarter of 1988 to the third of 1993, 20 per firm, 600 in all. Announcement dates from Datastream, actual earnings from Compustat, and the expected earnings are the mean analyst forecast from I/B/E/S. Good news: actual earnings more than 2.5% above the forecast; bad news: more than 2.5% below; otherwise no news.</p>
+<p>The results, in daily returns relative to a market model. On day 0, good news +0.965% (standard error 0.104), bad news −0.679% (0.098), no news −0.09%. Day +1 adds a little, from announcements made after the close. After that, the cumulative effect is flat: the price adjusts within a day or two. Before day 0 there is some drift in the right direction, which MacKinlay reads as the market learning gradually.</p>
+<p>Why “above normal”. On any day the market as a whole moves, and a stock moves with it. A firm that rose 1.5% on its announcement day, on a day the market rose 1%, has not gained 1.5% from its news. The next slide makes “normal” precise.</p>
+<p>History, for questions. The method’s modern form is from Ball and Brown (1968) and Fama, Fisher, Jensen and Roll (1969, International Economic Review, https://doi.org/10.2307/2525569), who studied 940 stock splits on the New York Stock Exchange from 1927 to 1959 with monthly data. Their famous figure shows abnormal returns rising for 29 months before the split. That rise is selection, firms split after good runs, not an effect of the split, and after the split the cumulative abnormal return is flat.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="abnormal-returns-isolate-the-reaction-to-news" class="slide level2">
+<h2>Abnormal returns isolate the reaction to news</h2>
+<ul>
+<li>The <strong>market model</strong> <span class="math inline">R_{it} = \alpha_i + \beta_i R_{mt} + \varepsilon_{it}</span> links firm <span class="math inline">i</span>’s return on day <span class="math inline">t</span> to the market’s.</li>
+<li>The <strong>abnormal return</strong> is the return minus <span class="math inline">\hat\alpha_i + \hat\beta_i R_{mt}</span>, fit by OLS in an <strong>estimation window</strong>.</li>
+<li>One announcement’s <strong>cumulative abnormal return</strong> (CAR) over the <strong>event window</strong> is +2.5%, SE 2.4.</li>
+<li>The true effect is +3.5% over days −1 to +1. Averaged over 100 announcements, the CAR is +3.6%.</li>
+</ul>
+<div class="m06" data-demo="car" style="width:92%;margin:0 auto">
+
+</div>
+<aside class="notes">
+<p>Three minutes. Start on “Nothing else happened”. Click “One announcement”, then “Average of 100”.</p>
+<p>The setting in the simulation: the coffee chain’s stock on the day it announces the app, and 99 similar announcements by other firms on other dates. Each firm’s daily return is 0.02% plus 1.1 times the market’s return plus noise with an SD of 1.5%. The announcement adds 3.0% on day 0 and a leak adds 0.5% on day −1, so the true CAR over days −1 to +1 is +3.5%.</p>
+<p>Left panel: the estimation window, days −250 to −11, the firm’s daily return against the market’s, with the fitted line. That line, alpha-hat and beta-hat, is the counterfactual: what the stock would have returned on a given day with no news, given the market. MacKinlay’s worked example uses a 250-day estimation window and a 41-day event window; keeping the event window out of the estimation window keeps the event from contaminating the model.</p>
+<p>Right panel: the CAR over the event window, days −10 to +10, with a 95% band, and the true path in solid red. One announcement: +2.5% with a standard error of 2.4. A single firm’s returns are so noisy that one event says little: across 1,000 simulated single firms only 26% of the CARs are significant at 5%, although every one has a true 3.5% effect. That is why published event studies average over many events. Averaged over 100: +3.6%, SE 0.26.</p>
+<p>Why the model choice matters little in daily data: Brown and Warner (1985, Journal of Financial Economics, https://doi.org/10.1016/0304-405X(85)90042-X) simulated event studies on real daily returns and found that a market model, a market-adjusted return and a plain mean-adjusted return detect a 1% one-day effect in 50 firms about 76% to 80% of the time. Daily expected returns are tiny next to the news.</p>
+<p>Note on clicking: after “One announcement”, “Average of 100” gives the same +3.6%.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="other-news-in-the-window-enters-the-estimate" class="slide level2">
+<h2>Other news in the window enters the estimate</h2>
+<ul>
+<li>The design assumes nothing else moved the stock in the event window.</li>
+<li>If firms also release earnings that day, the average CAR is +5.7%, against a true +3.5%.</li>
+<li>US firms leaving apartheid South Africa had a CAR of −2.4%. Without firms with other news it was −1.0%.</li>
+<li><span class="solution"><strong>Solution</strong>: keep the window short, search the news, and drop events with other news.</span></li>
+</ul>
+<div class="m06" data-demo="car" style="width:92%;margin:0 auto">
+
+</div>
+<p><a href="https://doi.org/10.2307/257056" style="font-size:0.55em; color:#6b6b6b">McWilliams and Siegel (1997), <em>Event Studies in Management Research</em>, Academy of Management Journal 40, 626–657.</a></p>
+<aside class="notes">
+<p>Two and a half minutes. Switch to “Earnings released the same day” and click “Average of 100”. Switching resets the demo.</p>
+<p>The change: on day 0 each firm also releases earnings news worth about +2% on average. The market model has no way to tell the two pieces of news apart, and the CAR attributes both to the announcement: +5.7%, SE 0.31, against a true +3.5%. The interval is tight and wrong.</p>
+<p>The assumption, stated as McWilliams and Siegel list them: markets are efficient, the event was unanticipated, and there were no confounding events in the window. The third, in their words, is critical, because the method attributes the abnormal return to the event by definition.</p>
+<p>Their survey. They read all 29 event studies published in the Academy of Management Journal, the Strategic Management Journal and the Journal of Management from 1986 to 1995: corporate decisions such as layoffs, divestment from South Africa, product recalls, CEO turnover. Only 11 reported checking for other news, and 2 of those checked only the days around the event. Windows of 181 trading days were not unusual.</p>
+<p>The replication on the slide. An earlier study found that US firms announcing withdrawal from apartheid South Africa lost value. McWilliams and Siegel searched the Wall Street Journal for other news on each firm in each window, earnings, dividends, litigation, contracts, and dropped the firms that had any. Over days −5 to +5 the CAR went from −2.43% (z = −2.68, 39 firms) to −1.03% (insignificant, 19 firms). Over a 41-day window every firm had other news. A sceptic will note that dropping firms also cut the sample in half, so “not significant” partly reflects lost power; the authors say the replication cannot show the effect is zero.</p>
+<p>The solution, from their recommendations: a window of a day or two unless a longer one is justified, a news search for every firm and date, and dropping or adjusting the events with other news. Report the firm names and dates so others can check.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="two-designs-are-called-event-studies" class="slide level2">
+<h2>Two designs are called event studies</h2>
+<div style="font-size:0.62em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 39%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Finance event study</th>
+<th style="text-align: left;">Panel event study</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;">Each firm’s daily returns around its event</td>
+<td style="text-align: left;">Treated and untreated units over several periods</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Counterfactual</td>
+<td style="text-align: left;">The market model, fit before the event</td>
+<td style="text-align: left;">The untreated units’ change</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Assumption</td>
+<td style="text-align: left;">Nothing else moved the stock in the window</td>
+<td style="text-align: left;">Parallel trends; no anticipation</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Estimates</td>
+<td style="text-align: left;">Abnormal returns by day</td>
+<td style="text-align: left;">The effect in each period since treatment</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>The finance version needs no untreated firms. The market return stands in for calendar time.</li>
+<li><a href="https://theeffectbook.net">The Effect</a> covers the finance design in ch.&nbsp;17 and the panel design in ch.&nbsp;18.</li>
+</ul>
+<p><a href="https://doi.org/10.1257/jep.37.2.203" style="font-size:0.55em; color:#6b6b6b">Miller (2023), <em>An Introductory Guide to Event Study Models</em>, Journal of Economic Perspectives 37, 203–230.</a></p>
+<aside class="notes">
+<p>One and a half minutes.</p>
+<p>The name causes confusion, so say it once. In finance and accounting, an event study is the design of the last three slides: one return series per firm, a model of normal returns as the counterfactual, and abnormal returns around the date. It needs no untreated firms, because the market return stands in for everything that happens in calendar time.</p>
+<p>In applied economics today, an event study usually means section 2’s panel regression with leads and lags. Miller, at Cornell, wrote the introductory guide to that version.</p>
+<p>Which one fits a project. A dated announcement by a firm with traded shares: the finance design. A policy or product that reached some units and not others: the panel design. Teams D, E, F and H will mostly need the first; most of the others, the second.</p>
+<p>Miller also notes that event studies in economics papers took off around 2012, which is why the term now means the panel version to most economists. Huntington-Klein’s chapter 17 covers the finance kind and chapter 18 the panel kind.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="who-the-finance-event-study-estimate-is-about" class="slide level2">
+<h2>Who the finance event-study estimate is about</h2>
+<ul>
+<li>The estimate is how investors revalued the announcing firms.</li>
+<li>It captures only the news that investors did not already expect.</li>
+<li>Report the estimation and event windows and the news search.</li>
+</ul>
+<aside class="notes">
+<p>One minute.</p>
+<p>The abnormal return is the change in investors’ valuation of the firm’s future cash flows when the news arrived. It measures only what was news: if an announcement was expected, it was in the price before the window. It is a valuation by investors, not a realized change in profits, and it concerns the firms that made the announcements. Kothari and Warner’s handbook chapter (2007, https://doi.org/10.1016/B978-0-444-53265-7.50015-9) adds the horizon warning: short-window tests are reliable, while abnormal returns over a year or more depend heavily on the model of expected returns.</p>
+<p>The reporting list: the estimation window and the event window, the model of normal returns, the news search and the events it dropped, and the firm names and dates so others can check.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-each-design-assumes" class="slide level2">
+<h2>What each design assumes</h2>
+<div style="font-size:0.5em">
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 3%">
+<col style="width: 16%">
+<col style="width: 19%">
+<col style="width: 26%">
+<col style="width: 17%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Design</th>
+<th style="text-align: left;">Variation used</th>
+<th style="text-align: left;">Assumption</th>
+<th style="text-align: left;">Tests that could reject it</th>
+<th style="text-align: left;">The estimate is for</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Fixed effects</td>
+<td style="text-align: left;">Changes within each unit over time</td>
+<td style="text-align: left;">Strict exogeneity: no confounder that changes over time, no feedback</td>
+<td style="text-align: left;">Leads of the treatment; past outcomes predicting treatment</td>
+<td style="text-align: left;">Units whose treatment changed</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Difference-in-differences</td>
+<td style="text-align: left;">The treated units’ change against the untreated units’ change</td>
+<td style="text-align: left;">Parallel trends; no anticipation; no spillover onto the controls</td>
+<td style="text-align: left;">Pre-period paths; placebo dates and groups</td>
+<td style="text-align: left;">The treated units (ATT)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Event study</td>
+<td style="text-align: left;">The same comparison, period by period</td>
+<td style="text-align: left;">Parallel trends in every period</td>
+<td style="text-align: left;">Leads near zero</td>
+<td style="text-align: left;">The ATT by period since treatment</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Staggered adoption</td>
+<td style="text-align: left;">Each adoption group against units not yet or never treated</td>
+<td style="text-align: left;">Parallel trends for every adoption group</td>
+<td style="text-align: left;">Leads by adoption group; the Goodman-Bacon weights</td>
+<td style="text-align: left;">Each adoption group, period by period</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Continuous doses</td>
+<td style="text-align: left;">Units with more of the treatment against units with less or none</td>
+<td style="text-align: left;">Parallel trends for each dose; strong parallel trends to compare doses</td>
+<td style="text-align: left;">Pre-period paths by dose</td>
+<td style="text-align: left;">Units at each dose</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Synthetic control</td>
+<td style="text-align: left;">One treated unit against a weighted mix of untreated units</td>
+<td style="text-align: left;">The mix that tracked the past would track the future</td>
+<td style="text-align: left;">Pre-period fit; placebo in space</td>
+<td style="text-align: left;">The one treated unit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Finance event study</td>
+<td style="text-align: left;">Returns around a dated announcement</td>
+<td style="text-align: left;">No other news in the window</td>
+<td style="text-align: left;">Pre-event returns; a news search</td>
+<td style="text-align: left;">The announcing firms</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a href="https://doi.org/10.1016/j.jeconom.2021.03.014" style="font-size:0.55em; color:#6b6b6b">Goodman-Bacon (2021), <em>Difference-in-Differences with Variation in Treatment Timing</em>, Journal of Econometrics 225, 254–277.</a></p>
+<aside class="notes">
+<p>Two minutes. A reference slide for the session B cases. Rows are numbered by section; the four rows of section 2 are its four steps.</p>
+<p>Read the Assumption column down. Rows 1 to 3 rest on the same kind of claim about the units’ paths over time: that nothing that changes within a unit drives both its treatment and its outcome, that the treated and untreated units would have moved together, that a weighted mix of untreated units stands in for the treated one. Row 4 rests on nothing else happening on the day. None can be confirmed by a statistic. The tests column lists what can refute them: leads that are not flat, a placebo date or group with an effect, a poor pre-period fit, returns that move before the news.</p>
+<p>The estimate column ties back to the section ends: the units whose treatment changed, the treated units, each adoption group, one state, the announcing firms. Each is narrower than “the effect”.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="six-designs" class="slide level2">
+<h2>Six designs</h2>
+<div style="font-size:0.56em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 3%">
+<col style="width: 16%">
+<col style="width: 31%">
+<col style="width: 26%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Design</th>
+<th style="text-align: left;">Variation used</th>
+<th style="text-align: left;">Assumption carrying the estimate</th>
+<th style="text-align: left;">The estimate is for</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Randomized experiment</td>
+<td style="text-align: left;">A coin</td>
+<td style="text-align: left;">The coin alone decides who is treated</td>
+<td style="text-align: left;">The population randomized</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Instrumental variables</td>
+<td style="text-align: left;">The part of treatment an instrument, a variable that shifts it, moves</td>
+<td style="text-align: left;">Exclusion: the instrument reaches the outcome only through the treatment</td>
+<td style="text-align: left;">Compliers, the units the instrument moves into treatment</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Regression discontinuity</td>
+<td style="text-align: left;">Units just above and just below a cutoff</td>
+<td style="text-align: left;">Continuity: without treatment, outcomes change smoothly at the cutoff</td>
+<td style="text-align: left;">Units at the cutoff</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Difference-in-differences and fixed effects</td>
+<td style="text-align: left;">The treated units’ change against the untreated units’ change, over two or many periods</td>
+<td style="text-align: left;">Parallel trends</td>
+<td style="text-align: left;">The treated units</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Synthetic control</td>
+<td style="text-align: left;">One treated unit against a weighted mix of untreated units</td>
+<td style="text-align: left;">The mix that tracked the past would track the future</td>
+<td style="text-align: left;">The one treated unit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">Finance event study</td>
+<td style="text-align: left;">Returns around a dated announcement</td>
+<td style="text-align: left;">No other news in the window</td>
+<td style="text-align: left;">The announcing firms</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Your proposal names one row and defends its assumption against a sceptic.</li>
+</ul>
+<aside class="notes">
+<p>Two minutes. The slide to keep.</p>
+<p>Rows 1 to 3 are last week’s: the eBay ad experiment, the draft lottery, Yelp’s half stars. Rows 4 to 6 are today’s. Row 4 covers sections 1 to 3, with a staggered-timing estimator when units adopt on different dates. Read the assumption column as a ladder of how much the design asks the reader to believe. The coin is set by the procedure, and meeting 8’s joint balance test checks it. The exclusion restriction, parallel trends and the synthetic control’s stand-in are claims about unobserved counterfactuals, argued and never confirmed. Continuity and the no-other-news assumption sit in between: narrow, local, and checkable at their edges.</p>
+<p>Read the last column as the question a decision maker should ask: is this the population my decision is about? Compliers, units at a cutoff and the treated units are each a subset, and the proposal has to say whether that subset is the one that matters.</p>
+<p>The bullet is session B. Each team will put its own design up, in this table’s terms, and defend the assumption in its row.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="designs-this-course-does-not-cover" class="slide level2">
+<h2>Designs this course does not cover</h2>
+<div style="font-size:0.52em">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Design</th>
+<th style="text-align: left;">What it does</th>
+<th style="text-align: left;">Where to read</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Triple differences</td>
+<td style="text-align: left;">Subtracts a second DiD, for a group in the same places that the policy does not target</td>
+<td style="text-align: left;"><a href="https://mixtape.scunning.com/">Remix</a> 10.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">DiD with covariates</td>
+<td style="text-align: left;">Assumes parallel trends only among units with similar covariates, and reweights</td>
+<td style="text-align: left;"><a href="https://mixtape.scunning.com/">Remix</a> 10.3–10.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Synthetic difference-in-differences</td>
+<td style="text-align: left;">Combines synthetic-control weights with two-way fixed effects</td>
+<td style="text-align: left;"><a href="https://mixtape.scunning.com/">Remix</a> 11.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Partial identification</td>
+<td style="text-align: left;">Reports the range of effects the data allow under weaker assumptions</td>
+<td style="text-align: left;"><a href="https://theeffectbook.net">The Effect</a> ch.&nbsp;21</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bunching</td>
+<td style="text-align: left;">Measures the excess number of people at a kink or notch in a tax or price schedule</td>
+<td style="text-align: left;"><a href="https://doi.org/10.1146/annurev-economics-080315-015234">Kleven (2016)</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Shift-share instruments</td>
+<td style="text-align: left;">Combines regions’ industry shares with national industry shocks</td>
+<td style="text-align: left;"><a href="https://mixtape.scunning.com/">Remix</a> 7.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Regression kink</td>
+<td style="text-align: left;">Uses a change in the slope of a benefit formula at a threshold</td>
+<td style="text-align: left;"><a href="https://theeffectbook.net">The Effect</a> 20.3.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Double machine learning, causal forests</td>
+<td style="text-align: left;">Use machine learning for the controls, or for how effects vary</td>
+<td style="text-align: left;"><a href="https://theeffectbook.net">The Effect</a> 22.2.4, 22.3.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Structural estimation</td>
+<td style="text-align: left;">Fits an economic model and simulates policies never observed</td>
+<td style="text-align: left;"><a href="https://theeffectbook.net">The Effect</a> 22.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dynamic panels</td>
+<td style="text-align: left;">Instruments a lagged outcome when it sits alongside fixed effects</td>
+<td style="text-align: left;"><a href="https://www.mostlyharmlesseconometrics.com/">Mostly Harmless</a> 5.3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<p>One minute. Not to be taught, only to be recognized.</p>
+<p>Two of these are one step from today. Triple differences is the fix when parallel trends is doubtful between places but plausible within them: Gruber (1994) compared the wages of married women of childbearing age with other workers, in states with and without maternity-benefit mandates, before and after, and found the cost of the mandate shifted to wages. Synthetic difference-in-differences is the estimator that gave −15.6 packs for California.</p>
+<p>Partial identification goes beyond meeting 7’s Lee bounds, which bounded an effect when treatment changes who is observed. Two rows connect to meeting 8. Shift-share instruments are an instrument built from exposure to national shocks, and the regression kink is a discontinuity in a slope. Bunching turns last week’s density test into the estimate itself: the number of extra people at a kink in a tax schedule measures how strongly they respond.</p>
+<p>In their usual use, the machine-learning rows assume selection on observables, meeting 7’s control variables. Machine learning picks the controls; it does not supply the identification.</p>
+<p>Chapter numbers are for the online Remix (https://mixtape.scunning.com/) and the online second edition of The Effect (https://theeffectbook.net). The 2021 print Mixtape numbers its chapters differently.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="matching-a-design-to-a-question" class="title-slide slide level1 center">
+<h1>5. Matching a design to a question</h1>
+<aside class="notes">
+<p>Thirty seconds. Seven research questions, each from a published study and told as the setting its authors faced. For each, the room proposes a design and names the assumption before the click shows what the authors did. The cases run down the rows of the six-designs table, across both design meetings: an experiment, an instrument, a discontinuity, a difference-in-differences, a staggered rollout, a synthetic control and a finance event study. Budget about five minutes each.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="does-working-from-home-make-staff-more-productive" class="slide level2 case">
+<h2>Does working from home make staff more productive?</h2>
+<ul>
+<li>In 2010 Ctrip, a Chinese travel agency, considered home working for its Shanghai call center.</li>
+<li>Staff who choose home differ from those who stay, in commutes, children and motivation.</li>
+<li>Ctrip logs every call. 503 of about 1,000 staff in two departments volunteered.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: eligible volunteers born on even-numbered days worked from home four days a week for nine months.</li>
+<li>Calls rose 13%, mostly from more minutes per shift. Quits fell from 35% to 17%.</li>
+</ul>
+<p><a href="https://doi.org/10.1093/qje/qju032" style="font-size:0.55em; color:#6b6b6b">Bloom, Liang, Roberts and Ying (2015), <em>Does Working from Home Work? Evidence from a Chinese Experiment</em>, Quarterly Journal of Economics 130, 165–218.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. The answer to draw out: a randomized experiment among the volunteers. Comparing staff who chose home with staff who stayed mixes home working with whatever made people choose it. The firm controls who may go home, so it can flip a coin among those willing. The assumption: the coin alone decided who went home, and the home workers’ move did not change the office workers’ outcomes.</p>
+<p>The setting. Ctrip, listed on NASDAQ, ran the experiment in the airfare and hotel booking departments of its Shanghai call center from 6 December 2010, for nine months announced in advance. 503 of 994 employees volunteered, and 249 were eligible: at least six months’ tenure, broadband at home and a room of their own. The chairman drew a ball from an urn at a public ceremony, and even birthdates went home: 131 treatment, 118 control. The home group worked four shifts at home and the fifth in the office; the control group worked all five in the office, with the same schedule, equipment, call queue and pay system. Balance: 1 of 18 characteristics differed at 5% (having children), and the joint test gave p = 0.47, meeting 8’s balance check.</p>
+<p>The results (published version, Table II and pp.&nbsp;188–192). Log weekly calls rose 0.12, about 13%: minutes on the phone up 9.2% and calls per minute up 3.3%. About three quarters of the extra minutes came from shorter breaks and punctuality, a quarter from fewer sick days. Quality, measured by sales conversion and recorded-call scores, did not change. Attrition over the nine months: 17% at home against 35% in the office.</p>
+<p>What to press on. The Hawthorne effect: home workers knew they were watched. The authors answer that the gap widened after the experiment ended, when the firm had rolled the option out. A demoralized control group: the controls did no worse than another Ctrip call center or the eligible non-volunteers. Compliance was 80 to 90%, so the estimate is intention to treat. Quits differ by arm, so meeting 7’s Lee bounds apply; the upper bound is about 50% above the estimate.</p>
+<p>Who the estimate is about: eligible volunteers in a call-center job with about half of pay tied to performance. After the experiment everyone could choose again, over half of the experimental employees switched, and the performance gain rose to about 22 log points, because those who did badly at home went back to the office. That is selection on gains, and it is why the volunteers’ effect does not transfer to a mandate.</p>
+<p>Disclosure: James Liang, a co-author, co-founded Ctrip and was its chairman during the experiment.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="does-handing-a-firm-to-a-family-heir-hurt-it" class="slide level2 case">
+<h2>Does handing a firm to a family heir hurt it?</h2>
+<ul>
+<li>When a Danish firm’s chief executive officer (CEO) steps down, the successor may be a relative or an outsider.</li>
+<li>Families may keep the job in the family when they expect the firm to do well.</li>
+<li>Registers link each departing CEO to their children, with each child’s sex and birth order.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: used a firstborn son as an instrument for a family successor, in 4,692 successions.</li>
+<li>A firstborn son raised family succession from 29% to 39%. A family CEO cut operating return on assets by about 9 points, against 1.4 by OLS.</li>
+</ul>
+<p><a href="https://doi.org/10.1162/qjec.122.2.647" style="font-size:0.55em; color:#6b6b6b">Bennedsen, Nielsen, Pérez-González and Wolfenzon (2007), <em>Inside the Family Firm: The Role of Families in Succession Decisions and Performance</em>, Quarterly Journal of Economics 122, 647–691.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. The answer to draw out: an instrument, something that moves the choice of a family heir and reaches firm performance by no other route. Comparing firms that chose a relative with firms that chose an outsider mixes the choice with what the family knew about the firm’s prospects. The authors’ instrument is whether the departing CEO’s first child is a son. In these cohorts sons were more likely to take over, and a child’s sex is close to a coin.</p>
+<p>The data. 5,334 CEO successions in Danish limited liability firms, mostly private, 1994 to 2002, from the annual reports every such firm files, linked to the civil registration system’s family trees. A family succession is one where the departing and incoming CEO are related by blood or marriage: 1,776, a third of the total, half of them to children. The instrument sample is the 4,692 successions where the departing CEO had at least one child. The outcome is the change in industry-adjusted operating return on assets around the succession.</p>
+<p>The results (Tables IV to VI). OLS: family successions are followed by a fall of 1.4 percentage points, about a fifth of the mean. First stage: a firstborn son raises the probability of a family succession by 9.6 points, from 29.4% to 39.0%, with an F statistic of 48, strong by meeting 8’s rule. IV: −12.6 points without controls and −9.3 with controls, standard error 4.3, so the interval is wide. The abstract summarizes the paper’s estimates as “at least four percentage points”. The IV is larger than OLS: the authors read it as families keeping the firm in the family when its prospects look good, which hides part of the cost in OLS.</p>
+<p>What to press on: the exclusion restriction. Could a firstborn’s sex affect the firm another way? Son preference could change family size; the number of children, divorce and the number of spouses do not differ by the firstborn’s sex, and firm size, profitability and age before the succession are balanced. Over 80% of first births came before 1980, before parents could learn the sex in advance. Who the estimate is about: meeting 8’s compliers, the families whose choice of a relative turned on having a son first. The cost is larger in fast-growing industries and in those with skilled, well-paid workforces.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="does-better-governance-raise-firm-value" class="slide level2 case">
+<h2>Does better governance raise firm value?</h2>
+<ul>
+<li>Shareholders vote on governance proposals, such as removing a <strong>poison pill</strong>, a defence against takeovers.</li>
+<li>Firms where such proposals pass differ from firms where they fail.</li>
+<li>Riskmetrics records 3,984 proposals at large US firms, 1997–2007, with each vote share.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: compared vote-day abnormal returns for proposals just above and just below the threshold, usually 50%.</li>
+<li>Passing raised the share price 1.3% that day. Scaled by how often firms adopt passed proposals, adoption is worth about 2.8%.</li>
+</ul>
+<p><a href="https://doi.org/10.1111/j.1540-6261.2012.01776.x" style="font-size:0.55em; color:#6b6b6b">Cuñat, Gine and Guadalupe (2012), <em>The Vote Is Cast: The Effect of Corporate Governance on Shareholder Value</em>, Journal of Finance 67, 1943–1977.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. The answer to draw out: a regression discontinuity at the vote threshold. A proposal that wins 51% and one that wins 49% come from firms that are alike in everything but the outcome of the vote, so a jump in the stock price at the threshold measures what the market thinks passing is worth. The assumption: nothing else changes at the threshold, and nobody can push a close vote to one side of it.</p>
+<p>The data. 3,984 governance proposals classed by Riskmetrics at S&amp;P 1500 and other widely held firms, 1997 to 2007, at 948 firms. The running variable is the vote share minus the threshold, which is 50% in all but ten cases. Proposals to remove antitakeover provisions are the largest group, 1,558; near the threshold, 42% of them asked to declassify the board, so that all directors stand for election each year, and 25% to remove a poison pill.</p>
+<p>The checks, in meeting 8’s terms. The density of vote shares is smooth at the threshold (McCrary test), so there is no sign of sorting. Returns before the meeting, Tobin’s q, investment, ownership and a governance index are balanced at the threshold.</p>
+<p>The results (Table IV). The abnormal return on the day of the vote, from a four-factor model, is 1.31 percentage points higher when the proposal passes, standard error 0.49, and similar using only proposals within 5, 2 or 1 points of the threshold. Over the following week, 2.4%.</p>
+<p>The fuzzy part. Most proposals are non-binding: passed proposals are implemented about 31% of the time and failed ones about 3%. So 1.3% is an intention-to-treat effect of passing. Scaling by the jump in the chance of adoption, the authors value adopting one provision at about 2.8% of market value, roughly $600 million for the average firm. That is meeting 8’s instrument logic inside a discontinuity.</p>
+<p>Who the estimate is about: firms whose shareholders were split almost evenly, which may differ from firms where a proposal sails through. The case also combines two designs: a discontinuity for identification and section 4’s finance event study for the outcome.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="does-posting-calories-change-what-customers-buy" class="slide level2 case">
+<h2>Does posting calories change what customers buy?</h2>
+<ul>
+<li>In 2008 New York City required chains to post calories on menu boards. Starbucks began on 1 April.</li>
+<li>Starbucks shared every transaction at its New York, Boston and Philadelphia stores for 2008–09.</li>
+<li>Boston and Philadelphia had no such law.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: compared New York stores with Boston and Philadelphia stores, before and after 1 April 2008.</li>
+<li>Calories per transaction fell 6%, almost all from food. Revenue held, and rose 3.3% near a Dunkin’ Donuts, which also posted calories.</li>
+</ul>
+<p><a href="https://doi.org/10.1257/pol.3.1.91" style="font-size:0.55em; color:#6b6b6b">Bollinger, Leslie and Sorensen (2011), <em>Calorie Posting in Chain Restaurants</em>, American Economic Journal: Economic Policy 3, 91–128.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. The answer to draw out: difference-in-differences, New York against the two control cities, with a sharp start date. Store fixed effects, week fixed effects, weather. The assumption: without the law, calories per transaction in New York would have moved week by week like those in Boston and Philadelphia.</p>
+<p>The data: over 100 million transactions at all 222 company-owned Starbucks in New York and 94 in Boston and Philadelphia, 1 January 2008 to 28 February 2009, plus an anonymous loyalty-card panel of 7,520 New York and 3,772 control-city frequent customers. Before posting, an average New York transaction carried 247 calories, 143 from drinks and 104 from food.</p>
+<p>The results. Calories per transaction fell from 247 to 232, about 6%, lasting the ten months of data. Food calories fell 14%, drink calories 0.3%. Three quarters of the food effect is fewer food items. The loyalty-card panel, which compares the same person before and after, gives 5%, so it is not a change in who walked in. Revenue: no significant change on average, and +3.3% at the 37 stores within 100 metres of a Dunkin’ Donuts, whose customers also saw calories posted and seem to have switched their coffee.</p>
+<p>What to press on. One treated city: every New York store shares the same city-level shocks, which is the Conley–Taber problem from section 3; the authors’ defence is the sharp date and the event-study plot with no pre-trend. Other things changed in New York in April 2008: other chains posted at the same time, and the news covered it, so the estimate is for the policy episode, not for one menu board. A muffin skipped at Starbucks may be eaten elsewhere. A falsification-style check: Seattle posted only drinks, and there drink calories fell and food calories did not.</p>
+<p>The magnitude in their own terms: about 30 calories a day, which by the medical literature lowers long-run body weight by no more than 1%.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="did-bank-deregulation-reduce-income-inequality" class="slide level2 case">
+<h2>Did bank deregulation reduce income inequality?</h2>
+<ul>
+<li>Many US states once limited how many branches a bank could open.</li>
+<li>From the 1970s to 1999 every state lifted the limits, each in its own year.</li>
+<li>The Current Population Survey gives each state’s income inequality, 1976–2006.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: regressed state inequality on the staggered dates with state and year fixed effects. The <strong>Gini coefficient</strong>, from 0 to 1, fell about 2%.</li>
+<li>Baker, Larcker and Wang (2022) used only not-yet-deregulated states as controls and found no effect.</li>
+</ul>
+<p><a href="https://doi.org/10.1111/j.1540-6261.2010.01589.x" style="font-size:0.55em; color:#6b6b6b">Beck, Levine and Levkov (2010), <em>Big Bad Banks? The Winners and Losers from Bank Deregulation in the United States</em>, Journal of Finance 65, 1637–1667.</a> · <a href="https://doi.org/10.1016/j.jfineco.2022.01.004" style="font-size:0.55em; color:#6b6b6b">Baker, Larcker and Wang (2022), Journal of Financial Economics 144, 370–395.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. Define the Gini coefficient if asked: a measure of income inequality from 0, everyone equal, to 1, one person has everything. The mean state Gini here is 0.43.</p>
+<p>The answer to draw out: staggered difference-in-differences, states that deregulated against states that had not yet, with state and year fixed effects. The assumption: without deregulation, inequality in the deregulating states would have moved like that in the others. The attack the room should reach after section 2: every state eventually deregulates, about a dozen did so before the data start, and no state is untreated after 1999, so many comparisons use already-deregulated states as controls.</p>
+<p>The original study. In unit-banking states a bank could often operate only one office. The historical argument for the limits was that big banks would hurt the poor; the counter-argument was that protected local banks overcharged them. Beck, Levine and Levkov used the dates on which states allowed branching through mergers and acquisitions (Jayaratne and Strahan 1996) and state Gini coefficients from the Current Population Survey for 48 states and DC, and found that the log Gini fell by 0.022 (standard error 0.008), about 2%, growing to about 4% in their event study, with incomes rising below the 40th percentile. They argued the timing was driven by national technology and state politics and checked that pre-deregulation inequality did not predict the date.</p>
+<p>The re-analysis (Baker, Larcker and Wang, Section 5.1). The two-way estimate replicates exactly. The Goodman-Bacon decomposition puts 86% of its weight on comparisons that use earlier-deregulated states as controls for later ones, averaging −0.027, and 14% on the clean comparisons, averaging +0.005. With the Callaway–Sant’Anna estimator the effect is 0.001 (standard error 0.007), and with a stacked regression 0.000 (0.005), using only not-yet-treated states as controls. Without the normalization in the original event-study figure, most post-period intervals cover zero. Their words: the results raise doubts about whether banking deregulation impacted income inequality. No published reply by the original authors was found.</p>
+<p>The lesson is for the method, not the authors: in 2010 this was standard practice, and the newer estimators did not exist.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-did-terrorism-cost-the-basque-country" class="slide level2 case">
+<h2>What did terrorism cost the Basque Country?</h2>
+<ul>
+<li>ETA, a Basque separatist group, began killing in 1968. Its attacks peaked in 1978–1980.</li>
+<li>The Basque Country fell from third-richest of Spain’s 17 regions in the early 1970s to sixth by the late 1990s.</li>
+<li>The other 16 regions have economic data from the 1960s on.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: built a synthetic Basque Country from 85% Catalonia and 15% Madrid.</li>
+<li>Basque gross domestic product (GDP) per person ran about 10% below the synthetic region’s in the 1980s and 1990s.</li>
+</ul>
+<p><a href="https://doi.org/10.1257/000282803321455188" style="font-size:0.55em; color:#6b6b6b">Abadie and Gardeazabal (2003), <em>The Economic Costs of Conflict: A Case Study of the Basque Country</em>, American Economic Review 93, 113–132.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. The answer to draw out: one treated region and 16 possible controls, none of them like it, which is the synthetic-control setting. The Basque Country was richer, more industrial and more densely populated than the Spanish average in the 1960s, so the rest of Spain is a poor comparison, and Spain’s late-1970s downturn coincided with the worst of the violence, so a before-after comparison fails too. The assumption: without terrorism, Basque income per person would have followed the weighted combination that matched it in the 1960s.</p>
+<p>The paper was the first synthetic control. The weights: Catalonia 0.8508, Madrid 0.1492, matched on income per person, investment, population density, sectoral shares and schooling in the 1960s. The two paths move together until 1975; afterwards the Basque Country runs up to 12% below, narrowing to 8–9% in 1995–1997, about 10% over the 1980s and 1990s. Gaps widen after spikes in killings.</p>
+<p>The second half of the paper is the meeting’s other design. In September 1998 ETA declared a truce, and in November 1999 it ended it. A portfolio of 14 firms with substantial Basque business, against 59 others, earned a compounded abnormal return of +10.1% over the 22 trading days when the truce became credible and −11.2% over the 66 days as it collapsed. So investors priced the conflict too.</p>
+<p>What to press on. There is no sharp date: terrorism grew over a decade. Catalonia, 85% of the comparison, had its own boost from the 1992 Barcelona Olympics, which a placebo on Catalonia shows. The oil shocks hit heavy industry, and the Basque Country was Spain’s most industrial region. The good-news stock result disappears under a constant-mean return model.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-is-an-independent-director-worth" class="slide level2 case">
+<h2>What is an independent director worth?</h2>
+<ul>
+<li><strong>Independent directors</strong> have no job at the firm. Boards add them after poor results, which confounds comparisons.</li>
+<li>News and filings record 772 deaths of directors of US listed firms, 1994–2007.</li>
+<li>Some died suddenly, of heart attacks, strokes or accidents.</li>
+<li><strong>Which design could identify the effect, and what would it assume?</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>What the authors did</strong>: measured abnormal returns over days −1 to +2 around 108 sudden deaths of independent directors.</li>
+<li>Share prices fell 0.85% on average, almost $35 million for the average firm, and more for audit committee members.</li>
+</ul>
+<p><a href="https://doi.org/10.1016/j.jfineco.2010.07.004" style="font-size:0.55em; color:#6b6b6b">Nguyen and Nielsen (2010), <em>The Value of Independent Directors: Evidence from Sudden Deaths</em>, Journal of Financial Economics 98, 550–567.</a></p>
+</div>
+<aside class="notes">
+<p>Five minutes. The answer to draw out: a finance event study around an event nobody chose the timing of. An independent director’s sudden death removes them from the board on a date unrelated to the firm’s prospects, so the stock’s abnormal return measures what investors thought the director was worth. The assumption: nothing else moved the stock in the window, and the death was unexpected.</p>
+<p>The data. 229 sudden deaths among 772 director deaths found in news archives and filings; 279 directorships after dropping 17 with earnings, merger or other news in the window; 108 of them independent directors. Day −1 is in the window because some deaths follow a hospitalization, and news lags the death by about 1.7 trading days. The market model is estimated over days −300 to −46.</p>
+<p>The results. The CAR over days −1 to +2 is −0.85% for independent directors, with an average market value of $4 billion, almost $35 million. Larger falls for audit committee members (−2.0%) and when the death removed the board’s independent majority; smaller for directors appointed by the current CEO.</p>
+<p>What to press on. The main estimate is marginal: 43 of 108 returns are positive, and the 5% star on a Patell Z of −1.69 implies a one-sided test (two-sided p about 0.09, my calculation). Days −5 and −4, with no news, show abnormal returns of the same size. The raw difference between independent and inside directors’ deaths is not significant; it appears only with controls. A death at 80 surprises less than at 55, which is why the authors cut by age. This is the McWilliams and Siegel checklist applied by the authors themselves: short window, news search, events dropped.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="which-design-is-open-to-your-project" class="slide level2">
+<h2>Which design is open to your project?</h2>
+<ul>
+<li>Could you decide at random who gets the treatment?</li>
+<li>Does something unrelated to the outcome push some units into treatment?</li>
+<li>Does a score with a cutoff decide who is treated?</li>
+<li>Did a change reach some units and not others, on a date you can name?</li>
+<li>Did units start on different dates, or is only one unit treated?</li>
+<li>Is your event a dated announcement by a firm whose shares trade?</li>
+<li>If none applies, what do you defend in place of an identifying assumption?</li>
+</ul>
+<aside class="notes">
+<p>One minute. The session B defence starts from these.</p>
+<p>The questions run down the six-designs table. The first three are meeting 8’s: an experiment, if the team or a partner can assign the treatment; an instrument, if something the team can defend as unrelated to the outcome moves treatment; a discontinuity, if a rule with a cutoff decides it. The fourth asks whether a difference-in-differences exists at all: a change, a date, and data on both sides of it for treated and untreated units, and the team should already have the pre-period plot or know where the data for it come from. The fifth sends the team to a staggered-timing estimator or synthetic control. The sixth is the finance event study. The last is for the descriptive projects: they have no identifying assumption, and they still need to say what would make their description wrong, such as the sample, the measure or the period.</p>
+<p>Whatever survives the room’s attack this afternoon is the design figure for the identification section of the proposal, and the attack that landed is its limitations paragraph.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>AEM 6991</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <style>
+    /* Meeting 9: bullets on slides that carry a figure or an animation are set
+       at 74% so the figure, its controls, the readout and the source line fit. */
+    .reveal .slides section.slide.level2:has(> .m06) > ul,
+    .reveal .slides section.slide.level2:has(> .m06) > ol { font-size: 0.74em; }
+    /* Height caps per demo; the figure scales down and stays centered. The
+       960-wide demos are drawn about 262 tall, so at 92% width a cap near 262
+       leaves them at full size. Demos with two rows of controls get less. */
+    .reveal .m06[data-demo="pdag"] .m06-svg { max-height: 300px; }
+    .reveal .m06[data-demo="pdag"] .m06-controls { justify-content: center; }
+    .reveal .m06[data-demo="did"] .m06-svg { max-height: 240px; }
+    .reveal .m06[data-demo="fe"] .m06-svg { max-height: 236px; }
+    .reveal .m06[data-demo="car"] .m06-svg { max-height: 236px; }
+    .reveal .m06[data-demo="event"] .m06-svg { max-height: 236px; }
+    .reveal .m06[data-demo="staggered"] .m06-svg { max-height: 240px; }
+    .reveal .m06[data-demo="synth"] .m06-svg { max-height: 240px; }
+    .reveal section.case ul { font-size: 0.94em; }
+    /* Text slides that carry a table or many bullets, marked {.dense}. */
+    .reveal .slides section.dense > ul, .reveal .slides section.dense > ol { font-size: 0.86em; }
+    /* The solution line on each failure slide. */
+    .reveal .slides section .solution { color: #b31b1b; }
+    /* Source lines are 0.55em links inside a full-size paragraph. Size the paragraph instead. */
+    .reveal .slides section p:has(> a[style*="font-size:0.55em"]) { font-size: 0.55em; line-height: 1.3; margin: 0.5em 0 0; }
+    .reveal .slides section p:has(> a[style*="font-size:0.55em"]) > a { font-size: 1em !important; }
+    </style>
+    <script src="sim/m06-core.js"></script>
+    <script src="sim/m09-demos.js"></script>
+    <script>window.M06 && M06.init();</script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/arielortizbobea\.github\.io\/aem6991\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
